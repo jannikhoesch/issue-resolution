@@ -40,14 +40,14 @@ you took care of and where you spent your time, if that time exceeds
 
 ### Issue #2144
 
-Title: Configurable text line height in Canvas 
+Title: Configurable text line height in Canvas
 
 URL: https://github.com/beeware/toga/issues/2144
 
 The `write_text` and`measure_text` methods in Canvas support multiple lines but lack control over line spacing. Adding a`line_height` argument, similar to CSS, would allow users to specify spacing as a multiple of the font size for better text layout control.
 
 Scope (functionality and code affected).
-To change this, the core (interface layer) is affected 
+To change this, the core (interface layer) is affected
 
 ### Issue #2145
 
@@ -91,6 +91,10 @@ Optional (point 5): considered for acceptance (passes all automated checks).
 Overall results with link to a copy or excerpt of the logs (before/after
 refactoring).
 
+Before: [Logs](test_logs/logs_before)
+
+After: [Logs](test_logs/logs_after)
+
 
 ## UML class diagram and its description
 
@@ -101,7 +105,7 @@ Optional (point 1): Architectural overview.
 #### Core API - Canvas:
 ![classes_canvas](https://github.com/user-attachments/assets/fd89b88f-3903-46b6-a68f-579c1ca343ec)
 
-#### Backend - Windows: 
+#### Backend - Windows:
 ![classes_windows](https://github.com/user-attachments/assets/4599bf39-775a-4073-9195-c8398f44fbb5)
 
 Optional (point 2): relation to design pattern(s).
