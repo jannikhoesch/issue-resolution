@@ -44,6 +44,8 @@ Title: Configurable text line height in Canvas
 
 URL: https://github.com/beeware/toga/issues/2144
 
+Our fork: https://github.com/Heroldpls/toga-2144
+
 The `write_text` and`measure_text` methods in Canvas support multiple lines but lack control over line spacing. Adding a`line_height` argument, similar to CSS, would allow users to specify spacing as a multiple of the font size for better text layout control.
 
 Scope (functionality and code affected).
@@ -54,6 +56,8 @@ To change this, the core (interface layer) is affected
 Title: Configurable text line height in Label
 
 URL: https://github.com/beeware/toga/issues/2145
+
+Our fork: https://github.com/jannikhoesch/toga-2145
 
 What is the problem or limitation you are having?
 The Label accepts multiple lines, but there's no way to control their spacing.
@@ -91,9 +95,9 @@ Optional (point 5): considered for acceptance (passes all automated checks).
 Overall results with link to a copy or excerpt of the logs (before/after
 refactoring).
 
-Before: [Logs](test_logs/logs_before)
+Before: [Logs](logs_before)
 
-After: [Logs](test_logs/logs_after)
+After: [Logs](logs_after)
 
 
 ## UML class diagram and its description
