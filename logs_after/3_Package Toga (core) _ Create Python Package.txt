@@ -1,0 +1,1579 @@
+﻿2025-02-28T15:24:28.1548016Z Current runner version: '2.322.0'
+2025-02-28T15:24:28.1573727Z ##[group]Operating System
+2025-02-28T15:24:28.1574663Z Ubuntu
+2025-02-28T15:24:28.1575180Z 24.04.2
+2025-02-28T15:24:28.1575623Z LTS
+2025-02-28T15:24:28.1576201Z ##[endgroup]
+2025-02-28T15:24:28.1576720Z ##[group]Runner Image
+2025-02-28T15:24:28.1577590Z Image: ubuntu-24.04
+2025-02-28T15:24:28.1578141Z Version: 20250223.1.0
+2025-02-28T15:24:28.1579126Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20250223.1/images/ubuntu/Ubuntu2404-Readme.md
+2025-02-28T15:24:28.1580508Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250223.1
+2025-02-28T15:24:28.1581414Z ##[endgroup]
+2025-02-28T15:24:28.1581925Z ##[group]Runner Image Provisioner
+2025-02-28T15:24:28.1582590Z 2.0.422.1
+2025-02-28T15:24:28.1583078Z ##[endgroup]
+2025-02-28T15:24:28.1584210Z ##[group]GITHUB_TOKEN Permissions
+2025-02-28T15:24:28.1586025Z Attestations: read
+2025-02-28T15:24:28.1587259Z Contents: read
+2025-02-28T15:24:28.1588095Z Metadata: read
+2025-02-28T15:24:28.1588607Z ##[endgroup]
+2025-02-28T15:24:28.1592347Z Secret source: None
+2025-02-28T15:24:28.1593036Z Prepare workflow directory
+2025-02-28T15:24:28.2084904Z Prepare all required actions
+2025-02-28T15:24:28.2122459Z Getting action download info
+2025-02-28T15:24:28.4377996Z Download action repository 'actions/checkout@v4.2.2' (SHA:11bd71901bbe5b1630ceea73d27597364c9af683)
+2025-02-28T15:24:28.5252965Z Download action repository 'hynek/build-and-inspect-python-package@v2.12.0' (SHA:b5076c307dc91924a82ad150cdd1533b444d3310)
+2025-02-28T15:24:28.9066540Z Getting action download info
+2025-02-28T15:24:29.0798941Z Download action repository 'actions/setup-python@v5' (SHA:42375524e23c412d93fb67b49958b491fce71c38)
+2025-02-28T15:24:29.1726699Z Download action repository 'actions/cache@v4' (SHA:d4323d4df104b026a6aa633fdb11d772146be0bf)
+2025-02-28T15:24:29.5782965Z Download action repository 'actions/attest-build-provenance@v1' (SHA:ef244123eb79f2f7a7e75d99086184180e6d0018)
+2025-02-28T15:24:29.9555872Z Download action repository 'actions/upload-artifact@v4' (SHA:4cec3d8aa04e39d1a68397de0c4cd6fb9dce8ec1)
+2025-02-28T15:24:30.3891924Z Getting action download info
+2025-02-28T15:24:30.5437509Z Download action repository 'actions/attest-build-provenance@36fa7d009e22618ca7cd599486979b8150596c74' (SHA:36fa7d009e22618ca7cd599486979b8150596c74)
+2025-02-28T15:24:30.8974865Z Download action repository 'actions/attest@67422f5511b7ff725f4dbd6fb9bd2cd925c65a8d' (SHA:67422f5511b7ff725f4dbd6fb9bd2cd925c65a8d)
+2025-02-28T15:24:31.2950011Z Uses: beeware/.github/.github/workflows/python-package-create.yml@refs/heads/main (a66b93162808d34adf5280c28104b75f8e0d70d3)
+2025-02-28T15:24:31.2952017Z ##[group] Inputs
+2025-02-28T15:24:31.2952303Z   repository: beeware/toga
+2025-02-28T15:24:31.2952562Z   build-subdirectory: core
+2025-02-28T15:24:31.2952797Z   attest: 
+2025-02-28T15:24:31.2952988Z ##[endgroup]
+2025-02-28T15:24:31.2953293Z Complete job name: Package Toga (core) / Create Python Package
+2025-02-28T15:24:31.3597971Z ##[group]Run echo "repo-name=$(basename "${REPO}")" | tee -a ${GITHUB_OUTPUT}
+2025-02-28T15:24:31.3598583Z [36;1mecho "repo-name=$(basename "${REPO}")" | tee -a ${GITHUB_OUTPUT}[0m
+2025-02-28T15:24:31.3599055Z [36;1mecho "differentiator=${DIFFERENTIATOR}" | tee -a ${GITHUB_OUTPUT}[0m
+2025-02-28T15:24:31.3648666Z shell: /usr/bin/bash -e {0}
+2025-02-28T15:24:31.3649230Z env:
+2025-02-28T15:24:31.3649437Z   FORCE_COLOR: 1
+2025-02-28T15:24:31.3649648Z   REPO: beeware/toga
+2025-02-28T15:24:31.3649878Z   DIFFERENTIATOR: -core
+2025-02-28T15:24:31.3650100Z ##[endgroup]
+2025-02-28T15:24:31.3807593Z repo-name=toga
+2025-02-28T15:24:31.3808084Z differentiator=-core
+2025-02-28T15:24:31.3973162Z ##[group]Run actions/checkout@v4.2.2
+2025-02-28T15:24:31.3973511Z with:
+2025-02-28T15:24:31.3973746Z   repository: beeware/toga
+2025-02-28T15:24:31.3973982Z   fetch-depth: 0
+2025-02-28T15:24:31.3974362Z   token: ***
+2025-02-28T15:24:31.3974569Z   ssh-strict: true
+2025-02-28T15:24:31.3974768Z   ssh-user: git
+2025-02-28T15:24:31.3975220Z   persist-credentials: true
+2025-02-28T15:24:31.3975465Z   clean: true
+2025-02-28T15:24:31.3975676Z   sparse-checkout-cone-mode: true
+2025-02-28T15:24:31.3975934Z   fetch-tags: false
+2025-02-28T15:24:31.3976137Z   show-progress: true
+2025-02-28T15:24:31.3976340Z   lfs: false
+2025-02-28T15:24:31.3976529Z   submodules: false
+2025-02-28T15:24:31.3976733Z   set-safe-directory: true
+2025-02-28T15:24:31.3977114Z env:
+2025-02-28T15:24:31.3977290Z   FORCE_COLOR: 1
+2025-02-28T15:24:31.3977482Z ##[endgroup]
+2025-02-28T15:24:31.6038602Z Syncing repository: beeware/toga
+2025-02-28T15:24:31.6040344Z ##[group]Getting Git version info
+2025-02-28T15:24:31.6040819Z Working directory is '/home/runner/work/toga/toga'
+2025-02-28T15:24:31.6041373Z [command]/usr/bin/git version
+2025-02-28T15:24:31.6119047Z git version 2.48.1
+2025-02-28T15:24:31.6149205Z ##[endgroup]
+2025-02-28T15:24:31.6165588Z Temporarily overriding HOME='/home/runner/work/_temp/6388b27c-b715-42c7-8e54-262724749c0e' before making global git config changes
+2025-02-28T15:24:31.6167205Z Adding repository directory to the temporary git global config as a safe directory
+2025-02-28T15:24:31.6172321Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/toga/toga
+2025-02-28T15:24:31.6210607Z Deleting the contents of '/home/runner/work/toga/toga'
+2025-02-28T15:24:31.6215165Z ##[group]Initializing the repository
+2025-02-28T15:24:31.6220116Z [command]/usr/bin/git init /home/runner/work/toga/toga
+2025-02-28T15:24:31.6301106Z hint: Using 'master' as the name for the initial branch. This default branch name
+2025-02-28T15:24:31.6302092Z hint: is subject to change. To configure the initial branch name to use in all
+2025-02-28T15:24:31.6302707Z hint: of your new repositories, which will suppress this warning, call:
+2025-02-28T15:24:31.6303340Z hint:
+2025-02-28T15:24:31.6303631Z hint: 	git config --global init.defaultBranch <name>
+2025-02-28T15:24:31.6303940Z hint:
+2025-02-28T15:24:31.6304266Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2025-02-28T15:24:31.6304801Z hint: 'development'. The just-created branch can be renamed via this command:
+2025-02-28T15:24:31.6305180Z hint:
+2025-02-28T15:24:31.6305427Z hint: 	git branch -m <name>
+2025-02-28T15:24:31.6309993Z Initialized empty Git repository in /home/runner/work/toga/toga/.git/
+2025-02-28T15:24:31.6321793Z [command]/usr/bin/git remote add origin https://github.com/beeware/toga
+2025-02-28T15:24:31.6357971Z ##[endgroup]
+2025-02-28T15:24:31.6358393Z ##[group]Disabling automatic garbage collection
+2025-02-28T15:24:31.6362375Z [command]/usr/bin/git config --local gc.auto 0
+2025-02-28T15:24:31.6392142Z ##[endgroup]
+2025-02-28T15:24:31.6392562Z ##[group]Setting up auth
+2025-02-28T15:24:31.6399389Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-02-28T15:24:31.6430234Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-02-28T15:24:31.6747480Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-02-28T15:24:31.6777482Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-02-28T15:24:31.7021607Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2025-02-28T15:24:31.7063279Z ##[endgroup]
+2025-02-28T15:24:31.7064028Z ##[group]Fetching the repository
+2025-02-28T15:24:31.7074208Z [command]/usr/bin/git -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/* +68266e24a68fb42fbbeefb9a1fc4181dfda30fbe:refs/remotes/pull/3217/merge
+2025-02-28T15:24:34.0013268Z From https://github.com/beeware/toga
+2025-02-28T15:24:34.0014037Z  * [new branch]          main         -> origin/main
+2025-02-28T15:24:34.0015055Z  * [new branch]          pre-0.5      -> origin/pre-0.5
+2025-02-28T15:24:34.0015818Z  * [new tag]             0.2.6        -> 0.2.6
+2025-02-28T15:24:34.0016681Z  * [new tag]             v0.0.1rc1    -> v0.0.1rc1
+2025-02-28T15:24:34.0017486Z  * [new tag]             v0.0.1rc10   -> v0.0.1rc10
+2025-02-28T15:24:34.0018291Z  * [new tag]             v0.0.1rc5    -> v0.0.1rc5
+2025-02-28T15:24:34.0019522Z  * [new tag]             v0.0.1rc6    -> v0.0.1rc6
+2025-02-28T15:24:34.0023578Z  * [new tag]             v0.1.0       -> v0.1.0
+2025-02-28T15:24:34.0024144Z  * [new tag]             v0.1.1       -> v0.1.1
+2025-02-28T15:24:34.0024665Z  * [new tag]             v0.1.2       -> v0.1.2
+2025-02-28T15:24:34.0027848Z  * [new tag]             v0.2.0       -> v0.2.0
+2025-02-28T15:24:34.0028415Z  * [new tag]             v0.2.0.dev1  -> v0.2.0.dev1
+2025-02-28T15:24:34.0028931Z  * [new tag]             v0.2.1       -> v0.2.1
+2025-02-28T15:24:34.0029722Z  * [new tag]             v0.2.10      -> v0.2.10
+2025-02-28T15:24:34.0030356Z  * [new tag]             v0.2.11      -> v0.2.11
+2025-02-28T15:24:34.0030904Z  * [new tag]             v0.2.12      -> v0.2.12
+2025-02-28T15:24:34.0032272Z  * [new tag]             v0.2.13      -> v0.2.13
+2025-02-28T15:24:34.0038164Z  * [new tag]             v0.2.14      -> v0.2.14
+2025-02-28T15:24:34.0038715Z  * [new tag]             v0.2.15      -> v0.2.15
+2025-02-28T15:24:34.0039419Z  * [new tag]             v0.2.2       -> v0.2.2
+2025-02-28T15:24:34.0043380Z  * [new tag]             v0.2.3       -> v0.2.3
+2025-02-28T15:24:34.0043996Z  * [new tag]             v0.2.4       -> v0.2.4
+2025-02-28T15:24:34.0044510Z  * [new tag]             v0.2.5       -> v0.2.5
+2025-02-28T15:24:34.0044990Z  * [new tag]             v0.2.6       -> v0.2.6
+2025-02-28T15:24:34.0045470Z  * [new tag]             v0.2.7       -> v0.2.7
+2025-02-28T15:24:34.0045943Z  * [new tag]             v0.2.8       -> v0.2.8
+2025-02-28T15:24:34.0052244Z  * [new tag]             v0.2.9       -> v0.2.9
+2025-02-28T15:24:34.0054418Z  * [new tag]             v0.3.0       -> v0.3.0
+2025-02-28T15:24:34.0057946Z  * [new tag]             v0.3.0.dev1  -> v0.3.0.dev1
+2025-02-28T15:24:34.0060088Z  * [new tag]             v0.3.0.dev10 -> v0.3.0.dev10
+2025-02-28T15:24:34.0060658Z  * [new tag]             v0.3.0.dev11 -> v0.3.0.dev11
+2025-02-28T15:24:34.0061193Z  * [new tag]             v0.3.0.dev12 -> v0.3.0.dev12
+2025-02-28T15:24:34.0061701Z  * [new tag]             v0.3.0.dev13 -> v0.3.0.dev13
+2025-02-28T15:24:34.0062211Z  * [new tag]             v0.3.0.dev14 -> v0.3.0.dev14
+2025-02-28T15:24:34.0062714Z  * [new tag]             v0.3.0.dev15 -> v0.3.0.dev15
+2025-02-28T15:24:34.0063243Z  * [new tag]             v0.3.0.dev16 -> v0.3.0.dev16
+2025-02-28T15:24:34.0063771Z  * [new tag]             v0.3.0.dev17 -> v0.3.0.dev17
+2025-02-28T15:24:34.0065669Z  * [new tag]             v0.3.0.dev18 -> v0.3.0.dev18
+2025-02-28T15:24:34.0067740Z  * [new tag]             v0.3.0.dev19 -> v0.3.0.dev19
+2025-02-28T15:24:34.0068374Z  * [new tag]             v0.3.0.dev2  -> v0.3.0.dev2
+2025-02-28T15:24:34.0069954Z  * [new tag]             v0.3.0.dev20 -> v0.3.0.dev20
+2025-02-28T15:24:34.0070494Z  * [new tag]             v0.3.0.dev21 -> v0.3.0.dev21
+2025-02-28T15:24:34.0071045Z  * [new tag]             v0.3.0.dev22 -> v0.3.0.dev22
+2025-02-28T15:24:34.0071557Z  * [new tag]             v0.3.0.dev23 -> v0.3.0.dev23
+2025-02-28T15:24:34.0074461Z  * [new tag]             v0.3.0.dev24 -> v0.3.0.dev24
+2025-02-28T15:24:34.0075215Z  * [new tag]             v0.3.0.dev25 -> v0.3.0.dev25
+2025-02-28T15:24:34.0075819Z  * [new tag]             v0.3.0.dev26 -> v0.3.0.dev26
+2025-02-28T15:24:34.0078543Z  * [new tag]             v0.3.0.dev27 -> v0.3.0.dev27
+2025-02-28T15:24:34.0079192Z  * [new tag]             v0.3.0.dev28 -> v0.3.0.dev28
+2025-02-28T15:24:34.0080012Z  * [new tag]             v0.3.0.dev29 -> v0.3.0.dev29
+2025-02-28T15:24:34.0080599Z  * [new tag]             v0.3.0.dev3  -> v0.3.0.dev3
+2025-02-28T15:24:34.0083541Z  * [new tag]             v0.3.0.dev30 -> v0.3.0.dev30
+2025-02-28T15:24:34.0084497Z  * [new tag]             v0.3.0.dev32 -> v0.3.0.dev32
+2025-02-28T15:24:34.0087438Z  * [new tag]             v0.3.0.dev33 -> v0.3.0.dev33
+2025-02-28T15:24:34.0088273Z  * [new tag]             v0.3.0.dev34 -> v0.3.0.dev34
+2025-02-28T15:24:34.0089796Z  * [new tag]             v0.3.0.dev35 -> v0.3.0.dev35
+2025-02-28T15:24:34.0090327Z  * [new tag]             v0.3.0.dev36 -> v0.3.0.dev36
+2025-02-28T15:24:34.0091957Z  * [new tag]             v0.3.0.dev37 -> v0.3.0.dev37
+2025-02-28T15:24:34.0093513Z  * [new tag]             v0.3.0.dev38 -> v0.3.0.dev38
+2025-02-28T15:24:34.0094343Z  * [new tag]             v0.3.0.dev39 -> v0.3.0.dev39
+2025-02-28T15:24:34.0095641Z  * [new tag]             v0.3.0.dev4  -> v0.3.0.dev4
+2025-02-28T15:24:34.0097299Z  * [new tag]             v0.3.0.dev5  -> v0.3.0.dev5
+2025-02-28T15:24:34.0099054Z  * [new tag]             v0.3.0.dev6  -> v0.3.0.dev6
+2025-02-28T15:24:34.0100846Z  * [new tag]             v0.3.0.dev7  -> v0.3.0.dev7
+2025-02-28T15:24:34.0102044Z  * [new tag]             v0.3.0.dev8  -> v0.3.0.dev8
+2025-02-28T15:24:34.0103603Z  * [new tag]             v0.3.0.dev9  -> v0.3.0.dev9
+2025-02-28T15:24:34.0105014Z  * [new tag]             v0.3.0rc0    -> v0.3.0rc0
+2025-02-28T15:24:34.0106574Z  * [new tag]             v0.3.1       -> v0.3.1
+2025-02-28T15:24:34.0108215Z  * [new tag]             v0.4.0       -> v0.4.0
+2025-02-28T15:24:34.0109812Z  * [new tag]             v0.4.1       -> v0.4.1
+2025-02-28T15:24:34.0111280Z  * [new tag]             v0.4.2       -> v0.4.2
+2025-02-28T15:24:34.0112727Z  * [new tag]             v0.4.3       -> v0.4.3
+2025-02-28T15:24:34.0114267Z  * [new tag]             v0.4.4       -> v0.4.4
+2025-02-28T15:24:34.0115824Z  * [new tag]             v0.4.5       -> v0.4.5
+2025-02-28T15:24:34.0117704Z  * [new tag]             v0.4.6       -> v0.4.6
+2025-02-28T15:24:34.0119166Z  * [new tag]             v0.4.7       -> v0.4.7
+2025-02-28T15:24:34.0120543Z  * [new tag]             v0.4.8       -> v0.4.8
+2025-02-28T15:24:34.0122127Z  * [new tag]             v0.4.9       -> v0.4.9
+2025-02-28T15:24:34.0125850Z  * [new ref]             68266e24a68fb42fbbeefb9a1fc4181dfda30fbe -> pull/3217/merge
+2025-02-28T15:24:34.0172544Z ##[endgroup]
+2025-02-28T15:24:34.0173450Z ##[group]Determining the checkout info
+2025-02-28T15:24:34.0174408Z ##[endgroup]
+2025-02-28T15:24:34.0183012Z [command]/usr/bin/git sparse-checkout disable
+2025-02-28T15:24:34.0236019Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2025-02-28T15:24:34.0268116Z ##[group]Checking out the ref
+2025-02-28T15:24:34.0272075Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/3217/merge
+2025-02-28T15:24:34.2137826Z Note: switching to 'refs/remotes/pull/3217/merge'.
+2025-02-28T15:24:34.2138401Z 
+2025-02-28T15:24:34.2138711Z You are in 'detached HEAD' state. You can look around, make experimental
+2025-02-28T15:24:34.2139428Z changes and commit them, and you can discard any commits you make in this
+2025-02-28T15:24:34.2140090Z state without impacting any branches by switching back to a branch.
+2025-02-28T15:24:34.2140491Z 
+2025-02-28T15:24:34.2140750Z If you want to create a new branch to retain commits you create, you may
+2025-02-28T15:24:34.2141346Z do so (now or later) by using -c with the switch command. Example:
+2025-02-28T15:24:34.2141701Z 
+2025-02-28T15:24:34.2141847Z   git switch -c <new-branch-name>
+2025-02-28T15:24:34.2142101Z 
+2025-02-28T15:24:34.2142241Z Or undo this operation with:
+2025-02-28T15:24:34.2142465Z 
+2025-02-28T15:24:34.2142592Z   git switch -
+2025-02-28T15:24:34.2142762Z 
+2025-02-28T15:24:34.2143058Z Turn off this advice by setting config variable advice.detachedHead to false
+2025-02-28T15:24:34.2181149Z 
+2025-02-28T15:24:34.2181710Z HEAD is now at 68266e24a Merge ee512b602a87bb9213021e3ceab7c75b22852c2d into 39458b6f220cd2eeafe9dcf5d470bd504914850a
+2025-02-28T15:24:34.2183436Z ##[endgroup]
+2025-02-28T15:24:34.2204025Z [command]/usr/bin/git log -1 --format=%H
+2025-02-28T15:24:34.2228569Z 68266e24a68fb42fbbeefb9a1fc4181dfda30fbe
+2025-02-28T15:24:34.2508360Z ##[group]Run hynek/build-and-inspect-python-package@v2.12.0
+2025-02-28T15:24:34.2508726Z with:
+2025-02-28T15:24:34.2508910Z   path: core
+2025-02-28T15:24:34.2509123Z   upload-name-suffix: -toga-core
+2025-02-28T15:24:34.2509373Z   skip-wheel: false
+2025-02-28T15:24:34.2509562Z env:
+2025-02-28T15:24:34.2509735Z   FORCE_COLOR: 1
+2025-02-28T15:24:34.2509927Z ##[endgroup]
+2025-02-28T15:24:34.2620011Z ##[group]Run actions/setup-python@v5
+2025-02-28T15:24:34.2620280Z with:
+2025-02-28T15:24:34.2620473Z   python-version: 3.x
+2025-02-28T15:24:34.2620699Z   update-environment: false
+2025-02-28T15:24:34.2620932Z   check-latest: false
+2025-02-28T15:24:34.2621248Z   token: ***
+2025-02-28T15:24:34.2621455Z   allow-prereleases: false
+2025-02-28T15:24:34.2621689Z env:
+2025-02-28T15:24:34.2621855Z   FORCE_COLOR: 1
+2025-02-28T15:24:34.2622048Z ##[endgroup]
+2025-02-28T15:24:34.4337464Z ##[group]Installed versions
+2025-02-28T15:24:34.4387384Z Successfully set up CPython (3.13.2)
+2025-02-28T15:24:34.4388232Z ##[endgroup]
+2025-02-28T15:24:34.4481989Z ##[group]Run curl --location --silent --show-error --fail --proto '=https' --tlsv1.2 https://astral.sh/uv/install.sh | bash
+2025-02-28T15:24:34.4482771Z [36;1mcurl --location --silent --show-error --fail --proto '=https' --tlsv1.2 https://astral.sh/uv/install.sh | bash[0m
+2025-02-28T15:24:34.4530261Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:34.4530611Z env:
+2025-02-28T15:24:34.4530791Z   FORCE_COLOR: 1
+2025-02-28T15:24:34.4530988Z ##[endgroup]
+2025-02-28T15:24:34.9176578Z downloading uv 0.6.3 x86_64-unknown-linux-gnu
+2025-02-28T15:24:35.1821576Z no checksums to verify
+2025-02-28T15:24:35.4699991Z installing to /home/runner/.local/bin
+2025-02-28T15:24:35.4757888Z   uv
+2025-02-28T15:24:35.4787197Z   uvx
+2025-02-28T15:24:35.4787674Z everything's installed!
+2025-02-28T15:24:35.4891972Z ##[group]Run echo "UV_CACHE_DIR=/tmp/baipp-uv_cache_dir" >>$GITHUB_ENV
+2025-02-28T15:24:35.4892427Z [36;1mecho "UV_CACHE_DIR=/tmp/baipp-uv_cache_dir" >>$GITHUB_ENV[0m
+2025-02-28T15:24:35.4892745Z [36;1m[0m
+2025-02-28T15:24:35.4893345Z [36;1mecho "REQS_HASH=$(sha256sum /home/runner/work/_actions/hynek/build-and-inspect-python-package/v2.12.0/requirements/tools.txt | cut -d' ' -f1)" >>$GITHUB_ENV[0m
+2025-02-28T15:24:35.4940494Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:35.4940868Z env:
+2025-02-28T15:24:35.4941050Z   FORCE_COLOR: 1
+2025-02-28T15:24:35.4941234Z ##[endgroup]
+2025-02-28T15:24:35.5075511Z ##[group]Run actions/cache@v4
+2025-02-28T15:24:35.5075740Z with:
+2025-02-28T15:24:35.5075935Z   path: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:35.5076297Z   key: baipp-3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:35.5076675Z   enableCrossOsArchive: false
+2025-02-28T15:24:35.5077335Z   fail-on-cache-miss: false
+2025-02-28T15:24:35.5077570Z   lookup-only: false
+2025-02-28T15:24:35.5077786Z   save-always: false
+2025-02-28T15:24:35.5077977Z env:
+2025-02-28T15:24:35.5078161Z   FORCE_COLOR: 1
+2025-02-28T15:24:35.5078383Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:35.5078752Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:35.5079108Z ##[endgroup]
+2025-02-28T15:24:35.7495763Z Cache hit for: baipp-3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:36.1118723Z Received 2634960 of 2634960 (100.0%), 10.0 MBs/sec
+2025-02-28T15:24:36.1119333Z Cache Size: ~3 MB (2634960 B)
+2025-02-28T15:24:36.1147875Z [command]/usr/bin/tar -xf /home/runner/work/_temp/c1cab185-3549-4fad-bfcc-900fc2823614/cache.tzst -P -C /home/runner/work/toga/toga --use-compress-program unzstd
+2025-02-28T15:24:36.1416045Z Cache restored successfully
+2025-02-28T15:24:36.1617320Z Cache restored from key: baipp-3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:36.1688843Z ##[group]Run unset UV_SYSTEM_PYTHON
+2025-02-28T15:24:36.1689144Z [36;1munset UV_SYSTEM_PYTHON[0m
+2025-02-28T15:24:36.1689370Z [36;1m[0m
+2025-02-28T15:24:36.1689963Z [36;1muv venv \[0m
+2025-02-28T15:24:36.1690170Z [36;1m  /tmp/baipp \[0m
+2025-02-28T15:24:36.1690487Z [36;1m  --python /opt/hostedtoolcache/Python/3.13.2/x64/bin/python[0m
+2025-02-28T15:24:36.1736178Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:36.1736504Z env:
+2025-02-28T15:24:36.1736684Z   FORCE_COLOR: 1
+2025-02-28T15:24:36.1737081Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:36.1737449Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:36.1737804Z ##[endgroup]
+2025-02-28T15:24:36.8051277Z Using CPython 3.13.2 interpreter at: [36m/opt/hostedtoolcache/Python/3.13.2/x64/bin/python[39m
+2025-02-28T15:24:36.8051888Z Creating virtual environment at: [36m/tmp/baipp[39m
+2025-02-28T15:24:36.8094376Z ##[group]Run unset UV_SYSTEM_PYTHON
+2025-02-28T15:24:36.8094676Z [36;1munset UV_SYSTEM_PYTHON[0m
+2025-02-28T15:24:36.8094900Z [36;1m[0m
+2025-02-28T15:24:36.8095086Z [36;1muv pip sync \[0m
+2025-02-28T15:24:36.8095819Z [36;1m  /home/runner/work/_actions/hynek/build-and-inspect-python-package/v2.12.0/requirements/tools.txt[0m
+2025-02-28T15:24:36.8143232Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:36.8143743Z env:
+2025-02-28T15:24:36.8144033Z   FORCE_COLOR: 1
+2025-02-28T15:24:36.8144286Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:36.8144829Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:36.8145313Z   VIRTUAL_ENV: /tmp/baipp
+2025-02-28T15:24:36.8145655Z ##[endgroup]
+2025-02-28T15:24:36.9150839Z [2mUsing Python 3.13.2 environment at: /tmp/baipp[0m
+2025-02-28T15:24:37.0570839Z [2mResolved [1m36 packages[0m [2min 141ms[0m[0m
+2025-02-28T15:24:37.1284892Z [36m[1mDownloading[0m[39m cryptography [2m(4.0MiB)[0m
+2025-02-28T15:24:37.1298276Z [36m[1mDownloading[0m[39m pygments [2m(1.2MiB)[0m
+2025-02-28T15:24:37.1299053Z [36m[1mDownloading[0m[39m pydantic-core [2m(1.9MiB)[0m
+2025-02-28T15:24:37.2545071Z  [32m[1mDownloaded[0m[39m pydantic-core
+2025-02-28T15:24:37.2879736Z  [32m[1mDownloaded[0m[39m cryptography
+2025-02-28T15:24:37.3212904Z  [32m[1mDownloaded[0m[39m pygments
+2025-02-28T15:24:37.3214909Z [2mPrepared [1m36 packages[0m [2min 264ms[0m[0m
+2025-02-28T15:24:37.3396560Z [2mInstalled [1m36 packages[0m [2min 17ms[0m[0m
+2025-02-28T15:24:37.3397429Z  [32m+[39m [1mannotated-types[0m[2m==0.7.0[0m
+2025-02-28T15:24:37.3397998Z  [32m+[39m [1mattrs[0m[2m==24.3.0[0m
+2025-02-28T15:24:37.3398519Z  [32m+[39m [1mcertifi[0m[2m==2024.12.14[0m
+2025-02-28T15:24:37.3399036Z  [32m+[39m [1mcffi[0m[2m==1.17.1[0m
+2025-02-28T15:24:37.3399579Z  [32m+[39m [1mcharset-normalizer[0m[2m==3.4.1[0m
+2025-02-28T15:24:37.3400180Z  [32m+[39m [1mcheck-wheel-contents[0m[2m==0.6.1[0m
+2025-02-28T15:24:37.3400731Z  [32m+[39m [1mclick[0m[2m==8.1.8[0m
+2025-02-28T15:24:37.3401256Z  [32m+[39m [1mcryptography[0m[2m==44.0.0[0m
+2025-02-28T15:24:37.3401813Z  [32m+[39m [1mdocutils[0m[2m==0.21.2[0m
+2025-02-28T15:24:37.3402319Z  [32m+[39m [1mid[0m[2m==1.5.0[0m
+2025-02-28T15:24:37.3402769Z  [32m+[39m [1midna[0m[2m==3.10[0m
+2025-02-28T15:24:37.3403280Z  [32m+[39m [1mjaraco-classes[0m[2m==3.4.0[0m
+2025-02-28T15:24:37.3403824Z  [32m+[39m [1mjaraco-context[0m[2m==6.0.1[0m
+2025-02-28T15:24:37.3404353Z  [32m+[39m [1mjaraco-functools[0m[2m==4.1.0[0m
+2025-02-28T15:24:37.3404875Z  [32m+[39m [1mjeepney[0m[2m==0.8.0[0m
+2025-02-28T15:24:37.3405345Z  [32m+[39m [1mkeyring[0m[2m==25.6.0[0m
+2025-02-28T15:24:37.3405852Z  [32m+[39m [1mmarkdown-it-py[0m[2m==3.0.0[0m
+2025-02-28T15:24:37.3406365Z  [32m+[39m [1mmdurl[0m[2m==0.1.2[0m
+2025-02-28T15:24:37.3407076Z  [32m+[39m [1mmore-itertools[0m[2m==10.6.0[0m
+2025-02-28T15:24:37.3407575Z  [32m+[39m [1mnh3[0m[2m==0.2.20[0m
+2025-02-28T15:24:37.3408045Z  [32m+[39m [1mpackaging[0m[2m==24.2[0m
+2025-02-28T15:24:37.3408507Z  [32m+[39m [1mpycparser[0m[2m==2.22[0m
+2025-02-28T15:24:37.3409586Z  [32m+[39m [1mpydantic[0m[2m==2.10.5[0m
+2025-02-28T15:24:37.3410173Z  [32m+[39m [1mpydantic-core[0m[2m==2.27.2[0m
+2025-02-28T15:24:37.3410713Z  [32m+[39m [1mpygments[0m[2m==2.19.1[0m
+2025-02-28T15:24:37.3411172Z  [32m+[39m [1mreadme-renderer[0m[2m==44.0[0m
+2025-02-28T15:24:37.3411504Z  [32m+[39m [1mrequests[0m[2m==2.32.3[0m
+2025-02-28T15:24:37.3412062Z  [32m+[39m [1mrequests-toolbelt[0m[2m==1.0.0[0m
+2025-02-28T15:24:37.3412633Z  [32m+[39m [1mrfc3986[0m[2m==2.0.0[0m
+2025-02-28T15:24:37.3413135Z  [32m+[39m [1mrich[0m[2m==13.9.4[0m
+2025-02-28T15:24:37.3413672Z  [32m+[39m [1msecretstorage[0m[2m==3.3.3[0m
+2025-02-28T15:24:37.3414214Z  [32m+[39m [1mtwine[0m[2m==6.1.0[0m
+2025-02-28T15:24:37.3414705Z  [32m+[39m [1mtyping-extensions[0m[2m==4.12.2[0m
+2025-02-28T15:24:37.3415278Z  [32m+[39m [1murllib3[0m[2m==2.3.0[0m
+2025-02-28T15:24:37.3415806Z  [32m+[39m [1mwheel[0m[2m==0.45.1[0m
+2025-02-28T15:24:37.3416375Z  [32m+[39m [1mwheel-filename[0m[2m==1.4.2[0m
+2025-02-28T15:24:37.3504692Z ##[group]Run echo "name=Packages-toga-core" >>${GITHUB_OUTPUT}
+2025-02-28T15:24:37.3505362Z [36;1mecho "name=Packages-toga-core" >>${GITHUB_OUTPUT}[0m
+2025-02-28T15:24:37.3572530Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:37.3573083Z env:
+2025-02-28T15:24:37.3573386Z   FORCE_COLOR: 1
+2025-02-28T15:24:37.3573761Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:37.3574409Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:37.3575046Z ##[endgroup]
+2025-02-28T15:24:37.3673635Z ##[group]Run unset UV_SYSTEM_PYTHON
+2025-02-28T15:24:37.3673930Z [36;1munset UV_SYSTEM_PYTHON[0m
+2025-02-28T15:24:37.3674156Z [36;1m[0m
+2025-02-28T15:24:37.3674440Z [36;1mecho Setting SOURCE_DATE_EPOCH to $(git log -1 --pretty=%ct).[0m
+2025-02-28T15:24:37.3674869Z [36;1mexport SOURCE_DATE_EPOCH=$(git log -1 --pretty=%ct)[0m
+2025-02-28T15:24:37.3675231Z [36;1m[0m
+2025-02-28T15:24:37.3675450Z [36;1mif [[ "false" == "true" ]]; then[0m
+2025-02-28T15:24:37.3675741Z [36;1m  uv build --sdist --out-dir /tmp/baipp/dist[0m
+2025-02-28T15:24:37.3676020Z [36;1melse[0m
+2025-02-28T15:24:37.3676247Z [36;1m  uv build --out-dir /tmp/baipp/dist[0m
+2025-02-28T15:24:37.3676502Z [36;1mfi[0m
+2025-02-28T15:24:37.3676677Z [36;1m[0m
+2025-02-28T15:24:37.3677249Z [36;1m# We don't need .gitignores and it litters the provenance output.[0m
+2025-02-28T15:24:37.3677868Z [36;1mrm -f /tmp/baipp/dist/.gitignore[0m
+2025-02-28T15:24:37.3723370Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:37.3723900Z env:
+2025-02-28T15:24:37.3724175Z   FORCE_COLOR: 1
+2025-02-28T15:24:37.3724482Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:37.3724982Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:37.3725431Z ##[endgroup]
+2025-02-28T15:24:37.3818050Z Setting SOURCE_DATE_EPOCH to 1740756255.
+2025-02-28T15:24:37.4374462Z [1mBuilding source distribution...[0m
+2025-02-28T15:24:38.2479578Z running egg_info
+2025-02-28T15:24:38.2500002Z creating src/toga_core.egg-info
+2025-02-28T15:24:38.2501257Z writing src/toga_core.egg-info/PKG-INFO
+2025-02-28T15:24:38.2529866Z writing dependency_links to src/toga_core.egg-info/dependency_links.txt
+2025-02-28T15:24:38.2532587Z writing entry points to src/toga_core.egg-info/entry_points.txt
+2025-02-28T15:24:38.2550126Z writing requirements to src/toga_core.egg-info/requires.txt
+2025-02-28T15:24:38.2551362Z writing top-level names to src/toga_core.egg-info/top_level.txt
+2025-02-28T15:24:38.2552947Z writing manifest file 'src/toga_core.egg-info/SOURCES.txt'
+2025-02-28T15:24:38.4189286Z adding license file 'LICENSE'
+2025-02-28T15:24:38.4208915Z writing manifest file 'src/toga_core.egg-info/SOURCES.txt'
+2025-02-28T15:24:38.6757836Z running sdist
+2025-02-28T15:24:38.6758544Z running egg_info
+2025-02-28T15:24:38.6792871Z writing src/toga_core.egg-info/PKG-INFO
+2025-02-28T15:24:38.6823170Z writing dependency_links to src/toga_core.egg-info/dependency_links.txt
+2025-02-28T15:24:38.6825700Z writing entry points to src/toga_core.egg-info/entry_points.txt
+2025-02-28T15:24:38.6842981Z writing requirements to src/toga_core.egg-info/requires.txt
+2025-02-28T15:24:38.6845195Z writing top-level names to src/toga_core.egg-info/top_level.txt
+2025-02-28T15:24:38.8494631Z adding license file 'LICENSE'
+2025-02-28T15:24:38.8514659Z writing manifest file 'src/toga_core.egg-info/SOURCES.txt'
+2025-02-28T15:24:38.8517597Z running check
+2025-02-28T15:24:38.8552980Z creating toga_core-0.4.9.dev629+g68266e24a
+2025-02-28T15:24:38.8557683Z creating toga_core-0.4.9.dev629+g68266e24a/src/toga
+2025-02-28T15:24:38.8560085Z creating toga_core-0.4.9.dev629+g68266e24a/src/toga/constants
+2025-02-28T15:24:38.8561733Z creating toga_core-0.4.9.dev629+g68266e24a/src/toga/hardware
+2025-02-28T15:24:38.8563409Z creating toga_core-0.4.9.dev629+g68266e24a/src/toga/plugins
+2025-02-28T15:24:38.8565204Z creating toga_core-0.4.9.dev629+g68266e24a/src/toga/resources
+2025-02-28T15:24:38.8567076Z creating toga_core-0.4.9.dev629+g68266e24a/src/toga/sources
+2025-02-28T15:24:38.8569070Z creating toga_core-0.4.9.dev629+g68266e24a/src/toga/style
+2025-02-28T15:24:38.8570586Z creating toga_core-0.4.9.dev629+g68266e24a/src/toga/widgets
+2025-02-28T15:24:38.8572261Z creating toga_core-0.4.9.dev629+g68266e24a/src/toga/widgets/canvas
+2025-02-28T15:24:38.8574129Z creating toga_core-0.4.9.dev629+g68266e24a/src/toga_core.egg-info
+2025-02-28T15:24:38.8575688Z creating toga_core-0.4.9.dev629+g68266e24a/tests
+2025-02-28T15:24:38.8577064Z creating toga_core-0.4.9.dev629+g68266e24a/tests/app
+2025-02-28T15:24:38.8578928Z creating toga_core-0.4.9.dev629+g68266e24a/tests/command
+2025-02-28T15:24:38.8580659Z creating toga_core-0.4.9.dev629+g68266e24a/tests/hardware
+2025-02-28T15:24:38.8581919Z creating toga_core-0.4.9.dev629+g68266e24a/tests/resources
+2025-02-28T15:24:38.8583591Z creating toga_core-0.4.9.dev629+g68266e24a/tests/sources
+2025-02-28T15:24:38.8585172Z creating toga_core-0.4.9.dev629+g68266e24a/tests/statusicons
+2025-02-28T15:24:38.8586929Z creating toga_core-0.4.9.dev629+g68266e24a/tests/style
+2025-02-28T15:24:38.8588549Z creating toga_core-0.4.9.dev629+g68266e24a/tests/style/pack
+2025-02-28T15:24:38.8590154Z creating toga_core-0.4.9.dev629+g68266e24a/tests/style/pack/layout
+2025-02-28T15:24:38.8591759Z creating toga_core-0.4.9.dev629+g68266e24a/tests/testbed
+2025-02-28T15:24:38.8593557Z creating toga_core-0.4.9.dev629+g68266e24a/tests/testbed/customize
+2025-02-28T15:24:38.8594684Z creating toga_core-0.4.9.dev629+g68266e24a/tests/testbed/simple
+2025-02-28T15:24:38.8596438Z creating toga_core-0.4.9.dev629+g68266e24a/tests/testbed/subclassed
+2025-02-28T15:24:38.8598239Z creating toga_core-0.4.9.dev629+g68266e24a/tests/widgets
+2025-02-28T15:24:38.8599882Z creating toga_core-0.4.9.dev629+g68266e24a/tests/widgets/canvas
+2025-02-28T15:24:38.8601535Z creating toga_core-0.4.9.dev629+g68266e24a/tests/window
+2025-02-28T15:24:38.8602634Z copying files to toga_core-0.4.9.dev629+g68266e24a...
+2025-02-28T15:24:38.8603544Z copying CONTRIBUTING.md -> toga_core-0.4.9.dev629+g68266e24a
+2025-02-28T15:24:38.8605423Z copying LICENSE -> toga_core-0.4.9.dev629+g68266e24a
+2025-02-28T15:24:38.8607363Z copying README.rst -> toga_core-0.4.9.dev629+g68266e24a
+2025-02-28T15:24:38.8608877Z copying pyproject.toml -> toga_core-0.4.9.dev629+g68266e24a
+2025-02-28T15:24:38.8610174Z copying src/toga/__init__.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga
+2025-02-28T15:24:38.8611671Z copying src/toga/app.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga
+2025-02-28T15:24:38.8613659Z copying src/toga/colors.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga
+2025-02-28T15:24:38.8614935Z copying src/toga/command.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga
+2025-02-28T15:24:38.8617338Z copying src/toga/dialogs.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga
+2025-02-28T15:24:38.8619193Z copying src/toga/documents.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga
+2025-02-28T15:24:38.8621329Z copying src/toga/fonts.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga
+2025-02-28T15:24:38.8622904Z copying src/toga/handlers.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga
+2025-02-28T15:24:38.8624815Z copying src/toga/icons.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga
+2025-02-28T15:24:38.8626568Z copying src/toga/images.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga
+2025-02-28T15:24:38.8628659Z copying src/toga/keys.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga
+2025-02-28T15:24:38.8630298Z copying src/toga/paths.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga
+2025-02-28T15:24:38.8632008Z copying src/toga/platform.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga
+2025-02-28T15:24:38.8633864Z copying src/toga/py.typed -> toga_core-0.4.9.dev629+g68266e24a/src/toga
+2025-02-28T15:24:38.8635562Z copying src/toga/screens.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga
+2025-02-28T15:24:38.8637561Z copying src/toga/statusicons.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga
+2025-02-28T15:24:38.8639243Z copying src/toga/types.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga
+2025-02-28T15:24:38.8640777Z copying src/toga/validators.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga
+2025-02-28T15:24:38.8642701Z copying src/toga/window.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga
+2025-02-28T15:24:38.8644801Z copying src/toga/constants/__init__.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga/constants
+2025-02-28T15:24:38.8646412Z copying src/toga/hardware/__init__.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga/hardware
+2025-02-28T15:24:38.8648123Z copying src/toga/hardware/camera.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga/hardware
+2025-02-28T15:24:38.8649913Z copying src/toga/hardware/location.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga/hardware
+2025-02-28T15:24:38.8652311Z copying src/toga/plugins/__init__.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga/plugins
+2025-02-28T15:24:38.8653917Z copying src/toga/plugins/image_formats.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga/plugins
+2025-02-28T15:24:38.8655182Z copying src/toga/resources/__init__.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga/resources
+2025-02-28T15:24:38.8657319Z copying src/toga/sources/__init__.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga/sources
+2025-02-28T15:24:38.8658808Z copying src/toga/sources/accessors.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga/sources
+2025-02-28T15:24:38.8660226Z copying src/toga/sources/base.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga/sources
+2025-02-28T15:24:38.8661914Z copying src/toga/sources/list_source.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga/sources
+2025-02-28T15:24:38.8663652Z copying src/toga/sources/tree_source.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga/sources
+2025-02-28T15:24:38.8665463Z copying src/toga/sources/value_source.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga/sources
+2025-02-28T15:24:38.8667170Z copying src/toga/style/__init__.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga/style
+2025-02-28T15:24:38.8668947Z copying src/toga/style/applicator.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga/style
+2025-02-28T15:24:38.8670529Z copying src/toga/style/mixin.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga/style
+2025-02-28T15:24:38.8672316Z copying src/toga/style/pack.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga/style
+2025-02-28T15:24:38.8674428Z copying src/toga/widgets/__init__.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga/widgets
+2025-02-28T15:24:38.8676064Z copying src/toga/widgets/activityindicator.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga/widgets
+2025-02-28T15:24:38.8677712Z copying src/toga/widgets/base.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga/widgets
+2025-02-28T15:24:38.8679549Z copying src/toga/widgets/box.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga/widgets
+2025-02-28T15:24:38.8681318Z copying src/toga/widgets/button.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga/widgets
+2025-02-28T15:24:38.8682869Z copying src/toga/widgets/dateinput.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga/widgets
+2025-02-28T15:24:38.8685116Z copying src/toga/widgets/detailedlist.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga/widgets
+2025-02-28T15:24:38.8686713Z copying src/toga/widgets/divider.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga/widgets
+2025-02-28T15:24:38.8688417Z copying src/toga/widgets/imageview.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga/widgets
+2025-02-28T15:24:38.8690063Z copying src/toga/widgets/label.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga/widgets
+2025-02-28T15:24:38.8691490Z copying src/toga/widgets/mapview.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga/widgets
+2025-02-28T15:24:38.8693448Z copying src/toga/widgets/multilinetextinput.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga/widgets
+2025-02-28T15:24:38.8694954Z copying src/toga/widgets/numberinput.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga/widgets
+2025-02-28T15:24:38.8696714Z copying src/toga/widgets/optioncontainer.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga/widgets
+2025-02-28T15:24:38.8698813Z copying src/toga/widgets/passwordinput.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga/widgets
+2025-02-28T15:24:38.8700472Z copying src/toga/widgets/progressbar.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga/widgets
+2025-02-28T15:24:38.8702144Z copying src/toga/widgets/scrollcontainer.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga/widgets
+2025-02-28T15:24:38.8703880Z copying src/toga/widgets/selection.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga/widgets
+2025-02-28T15:24:38.8705570Z copying src/toga/widgets/slider.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga/widgets
+2025-02-28T15:24:38.8707638Z copying src/toga/widgets/splitcontainer.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga/widgets
+2025-02-28T15:24:38.8709258Z copying src/toga/widgets/switch.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga/widgets
+2025-02-28T15:24:38.8710911Z copying src/toga/widgets/table.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga/widgets
+2025-02-28T15:24:38.8712747Z copying src/toga/widgets/textinput.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga/widgets
+2025-02-28T15:24:38.8714582Z copying src/toga/widgets/timeinput.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga/widgets
+2025-02-28T15:24:38.8716095Z copying src/toga/widgets/tree.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga/widgets
+2025-02-28T15:24:38.8718203Z copying src/toga/widgets/webview.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga/widgets
+2025-02-28T15:24:38.8720177Z copying src/toga/widgets/canvas/__init__.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga/widgets/canvas
+2025-02-28T15:24:38.8721596Z copying src/toga/widgets/canvas/canvas.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga/widgets/canvas
+2025-02-28T15:24:38.8723371Z copying src/toga/widgets/canvas/context.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga/widgets/canvas
+2025-02-28T15:24:38.8725231Z copying src/toga/widgets/canvas/drawingobject.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga/widgets/canvas
+2025-02-28T15:24:38.8727041Z copying src/toga/widgets/canvas/geometry.py -> toga_core-0.4.9.dev629+g68266e24a/src/toga/widgets/canvas
+2025-02-28T15:24:38.8728692Z copying src/toga_core.egg-info/PKG-INFO -> toga_core-0.4.9.dev629+g68266e24a/src/toga_core.egg-info
+2025-02-28T15:24:38.8730337Z copying src/toga_core.egg-info/SOURCES.txt -> toga_core-0.4.9.dev629+g68266e24a/src/toga_core.egg-info
+2025-02-28T15:24:38.8731986Z copying src/toga_core.egg-info/dependency_links.txt -> toga_core-0.4.9.dev629+g68266e24a/src/toga_core.egg-info
+2025-02-28T15:24:38.8733581Z copying src/toga_core.egg-info/entry_points.txt -> toga_core-0.4.9.dev629+g68266e24a/src/toga_core.egg-info
+2025-02-28T15:24:38.8735189Z copying src/toga_core.egg-info/requires.txt -> toga_core-0.4.9.dev629+g68266e24a/src/toga_core.egg-info
+2025-02-28T15:24:38.8737089Z copying src/toga_core.egg-info/top_level.txt -> toga_core-0.4.9.dev629+g68266e24a/src/toga_core.egg-info
+2025-02-28T15:24:38.8738443Z copying tests/__init__.py -> toga_core-0.4.9.dev629+g68266e24a/tests
+2025-02-28T15:24:38.8739936Z copying tests/conftest.py -> toga_core-0.4.9.dev629+g68266e24a/tests
+2025-02-28T15:24:38.8741812Z copying tests/test_documents.py -> toga_core-0.4.9.dev629+g68266e24a/tests
+2025-02-28T15:24:38.8743159Z copying tests/test_fonts.py -> toga_core-0.4.9.dev629+g68266e24a/tests
+2025-02-28T15:24:38.8744824Z copying tests/test_handlers.py -> toga_core-0.4.9.dev629+g68266e24a/tests
+2025-02-28T15:24:38.8746720Z copying tests/test_icons.py -> toga_core-0.4.9.dev629+g68266e24a/tests
+2025-02-28T15:24:38.8748634Z copying tests/test_images.py -> toga_core-0.4.9.dev629+g68266e24a/tests
+2025-02-28T15:24:38.8750271Z copying tests/test_import.py -> toga_core-0.4.9.dev629+g68266e24a/tests
+2025-02-28T15:24:38.8751806Z copying tests/test_keys.py -> toga_core-0.4.9.dev629+g68266e24a/tests
+2025-02-28T15:24:38.8754120Z copying tests/test_paths.py -> toga_core-0.4.9.dev629+g68266e24a/tests
+2025-02-28T15:24:38.8755114Z copying tests/test_platform.py -> toga_core-0.4.9.dev629+g68266e24a/tests
+2025-02-28T15:24:38.8757022Z copying tests/test_types.py -> toga_core-0.4.9.dev629+g68266e24a/tests
+2025-02-28T15:24:38.8758741Z copying tests/test_validators.py -> toga_core-0.4.9.dev629+g68266e24a/tests
+2025-02-28T15:24:38.8760076Z copying tests/utils.py -> toga_core-0.4.9.dev629+g68266e24a/tests
+2025-02-28T15:24:38.8761820Z copying tests/app/__init__.py -> toga_core-0.4.9.dev629+g68266e24a/tests/app
+2025-02-28T15:24:38.8763324Z copying tests/app/test_app.py -> toga_core-0.4.9.dev629+g68266e24a/tests/app
+2025-02-28T15:24:38.8765209Z copying tests/app/test_background_app.py -> toga_core-0.4.9.dev629+g68266e24a/tests/app
+2025-02-28T15:24:38.8766400Z copying tests/app/test_dialogs.py -> toga_core-0.4.9.dev629+g68266e24a/tests/app
+2025-02-28T15:24:38.8768391Z copying tests/app/test_document_app.py -> toga_core-0.4.9.dev629+g68266e24a/tests/app
+2025-02-28T15:24:38.8770389Z copying tests/app/test_documentset.py -> toga_core-0.4.9.dev629+g68266e24a/tests/app
+2025-02-28T15:24:38.8771973Z copying tests/app/test_screens.py -> toga_core-0.4.9.dev629+g68266e24a/tests/app
+2025-02-28T15:24:38.8773581Z copying tests/app/test_simpleapp.py -> toga_core-0.4.9.dev629+g68266e24a/tests/app
+2025-02-28T15:24:38.8775267Z copying tests/app/test_widget_registry.py -> toga_core-0.4.9.dev629+g68266e24a/tests/app
+2025-02-28T15:24:38.8777065Z copying tests/app/test_windowset.py -> toga_core-0.4.9.dev629+g68266e24a/tests/app
+2025-02-28T15:24:38.8778766Z copying tests/command/__init__.py -> toga_core-0.4.9.dev629+g68266e24a/tests/command
+2025-02-28T15:24:38.8780509Z copying tests/command/conftest.py -> toga_core-0.4.9.dev629+g68266e24a/tests/command
+2025-02-28T15:24:38.8781694Z copying tests/command/test_command.py -> toga_core-0.4.9.dev629+g68266e24a/tests/command
+2025-02-28T15:24:38.8783446Z copying tests/command/test_commandset.py -> toga_core-0.4.9.dev629+g68266e24a/tests/command
+2025-02-28T15:24:38.8785241Z copying tests/command/test_group.py -> toga_core-0.4.9.dev629+g68266e24a/tests/command
+2025-02-28T15:24:38.8787158Z copying tests/hardware/__init__.py -> toga_core-0.4.9.dev629+g68266e24a/tests/hardware
+2025-02-28T15:24:38.8788758Z copying tests/hardware/test_camera.py -> toga_core-0.4.9.dev629+g68266e24a/tests/hardware
+2025-02-28T15:24:38.8790422Z copying tests/hardware/test_location.py -> toga_core-0.4.9.dev629+g68266e24a/tests/hardware
+2025-02-28T15:24:38.8792202Z copying tests/resources/blue.png -> toga_core-0.4.9.dev629+g68266e24a/tests/resources
+2025-02-28T15:24:38.8793862Z copying tests/resources/orange.bmp -> toga_core-0.4.9.dev629+g68266e24a/tests/resources
+2025-02-28T15:24:38.8795668Z copying tests/resources/orange.png -> toga_core-0.4.9.dev629+g68266e24a/tests/resources
+2025-02-28T15:24:38.8797449Z copying tests/resources/photo.png -> toga_core-0.4.9.dev629+g68266e24a/tests/resources
+2025-02-28T15:24:38.8805729Z copying tests/resources/red-16.png -> toga_core-0.4.9.dev629+g68266e24a/tests/resources
+2025-02-28T15:24:38.8807405Z copying tests/resources/red-32.png -> toga_core-0.4.9.dev629+g68266e24a/tests/resources
+2025-02-28T15:24:38.8809030Z copying tests/resources/red-72.png -> toga_core-0.4.9.dev629+g68266e24a/tests/resources
+2025-02-28T15:24:38.8810870Z copying tests/resources/red.png -> toga_core-0.4.9.dev629+g68266e24a/tests/resources
+2025-02-28T15:24:38.8812230Z copying tests/resources/sample-dummy.png -> toga_core-0.4.9.dev629+g68266e24a/tests/resources
+2025-02-28T15:24:38.8813959Z copying tests/resources/sample.png -> toga_core-0.4.9.dev629+g68266e24a/tests/resources
+2025-02-28T15:24:38.8815665Z copying tests/resources/toga.png -> toga_core-0.4.9.dev629+g68266e24a/tests/resources
+2025-02-28T15:24:38.8817601Z copying tests/sources/__init__.py -> toga_core-0.4.9.dev629+g68266e24a/tests/sources
+2025-02-28T15:24:38.8819397Z copying tests/sources/test_accessors.py -> toga_core-0.4.9.dev629+g68266e24a/tests/sources
+2025-02-28T15:24:38.8820515Z copying tests/sources/test_list_source.py -> toga_core-0.4.9.dev629+g68266e24a/tests/sources
+2025-02-28T15:24:38.8822296Z copying tests/sources/test_node.py -> toga_core-0.4.9.dev629+g68266e24a/tests/sources
+2025-02-28T15:24:38.8824004Z copying tests/sources/test_row.py -> toga_core-0.4.9.dev629+g68266e24a/tests/sources
+2025-02-28T15:24:38.8825672Z copying tests/sources/test_source.py -> toga_core-0.4.9.dev629+g68266e24a/tests/sources
+2025-02-28T15:24:38.8827625Z copying tests/sources/test_tree_source.py -> toga_core-0.4.9.dev629+g68266e24a/tests/sources
+2025-02-28T15:24:38.8829494Z copying tests/sources/test_value_source.py -> toga_core-0.4.9.dev629+g68266e24a/tests/sources
+2025-02-28T15:24:38.8831196Z copying tests/statusicons/__init__.py -> toga_core-0.4.9.dev629+g68266e24a/tests/statusicons
+2025-02-28T15:24:38.8833060Z copying tests/statusicons/test_menustatusicon.py -> toga_core-0.4.9.dev629+g68266e24a/tests/statusicons
+2025-02-28T15:24:38.8834218Z copying tests/statusicons/test_simplestatusicon.py -> toga_core-0.4.9.dev629+g68266e24a/tests/statusicons
+2025-02-28T15:24:38.8835986Z copying tests/statusicons/test_statusiconset.py -> toga_core-0.4.9.dev629+g68266e24a/tests/statusicons
+2025-02-28T15:24:38.8837886Z copying tests/style/__init__.py -> toga_core-0.4.9.dev629+g68266e24a/tests/style
+2025-02-28T15:24:38.8839671Z copying tests/style/test_applicator.py -> toga_core-0.4.9.dev629+g68266e24a/tests/style
+2025-02-28T15:24:38.8840900Z copying tests/style/test_mixin.py -> toga_core-0.4.9.dev629+g68266e24a/tests/style
+2025-02-28T15:24:38.8842684Z copying tests/style/pack/__init__.py -> toga_core-0.4.9.dev629+g68266e24a/tests/style/pack
+2025-02-28T15:24:38.8844468Z copying tests/style/pack/test_aliases.py -> toga_core-0.4.9.dev629+g68266e24a/tests/style/pack
+2025-02-28T15:24:38.8846200Z copying tests/style/pack/test_apply.py -> toga_core-0.4.9.dev629+g68266e24a/tests/style/pack
+2025-02-28T15:24:38.8847529Z copying tests/style/pack/test_css.py -> toga_core-0.4.9.dev629+g68266e24a/tests/style/pack
+2025-02-28T15:24:38.8849471Z copying tests/style/pack/test_deprecated_properties.py -> toga_core-0.4.9.dev629+g68266e24a/tests/style/pack
+2025-02-28T15:24:38.8851123Z copying tests/style/pack/utils.py -> toga_core-0.4.9.dev629+g68266e24a/tests/style/pack
+2025-02-28T15:24:38.8852843Z copying tests/style/pack/layout/__init__.py -> toga_core-0.4.9.dev629+g68266e24a/tests/style/pack/layout
+2025-02-28T15:24:38.8854746Z copying tests/style/pack/layout/test_beeliza.py -> toga_core-0.4.9.dev629+g68266e24a/tests/style/pack/layout
+2025-02-28T15:24:38.8855878Z copying tests/style/pack/layout/test_column_alignment.py -> toga_core-0.4.9.dev629+g68266e24a/tests/style/pack/layout
+2025-02-28T15:24:38.8857677Z copying tests/style/pack/layout/test_fixed.py -> toga_core-0.4.9.dev629+g68266e24a/tests/style/pack/layout
+2025-02-28T15:24:38.8859490Z copying tests/style/pack/layout/test_flex.py -> toga_core-0.4.9.dev629+g68266e24a/tests/style/pack/layout
+2025-02-28T15:24:38.8861406Z copying tests/style/pack/layout/test_gap.py -> toga_core-0.4.9.dev629+g68266e24a/tests/style/pack/layout
+2025-02-28T15:24:38.8863194Z copying tests/style/pack/layout/test_justify_content.py -> toga_core-0.4.9.dev629+g68266e24a/tests/style/pack/layout
+2025-02-28T15:24:38.8864924Z copying tests/style/pack/layout/test_row_alignment.py -> toga_core-0.4.9.dev629+g68266e24a/tests/style/pack/layout
+2025-02-28T15:24:38.8866879Z copying tests/style/pack/layout/test_rtl.py -> toga_core-0.4.9.dev629+g68266e24a/tests/style/pack/layout
+2025-02-28T15:24:38.8869604Z copying tests/style/pack/layout/test_tutorial0.py -> toga_core-0.4.9.dev629+g68266e24a/tests/style/pack/layout
+2025-02-28T15:24:38.8871558Z copying tests/style/pack/layout/test_tutorial1.py -> toga_core-0.4.9.dev629+g68266e24a/tests/style/pack/layout
+2025-02-28T15:24:38.8873237Z copying tests/style/pack/layout/test_tutorial3.py -> toga_core-0.4.9.dev629+g68266e24a/tests/style/pack/layout
+2025-02-28T15:24:38.8874459Z copying tests/testbed/interactive.py -> toga_core-0.4.9.dev629+g68266e24a/tests/testbed
+2025-02-28T15:24:38.8875739Z copying tests/testbed/customize/sitecustomize.py -> toga_core-0.4.9.dev629+g68266e24a/tests/testbed/customize
+2025-02-28T15:24:38.8877369Z copying tests/testbed/simple/__init__.py -> toga_core-0.4.9.dev629+g68266e24a/tests/testbed/simple
+2025-02-28T15:24:38.8878844Z copying tests/testbed/simple/__main__.py -> toga_core-0.4.9.dev629+g68266e24a/tests/testbed/simple
+2025-02-28T15:24:38.8880537Z copying tests/testbed/simple/app.py -> toga_core-0.4.9.dev629+g68266e24a/tests/testbed/simple
+2025-02-28T15:24:38.8882467Z copying tests/testbed/subclassed/__init__.py -> toga_core-0.4.9.dev629+g68266e24a/tests/testbed/subclassed
+2025-02-28T15:24:38.8884613Z copying tests/testbed/subclassed/__main__.py -> toga_core-0.4.9.dev629+g68266e24a/tests/testbed/subclassed
+2025-02-28T15:24:38.8885962Z copying tests/testbed/subclassed/app.py -> toga_core-0.4.9.dev629+g68266e24a/tests/testbed/subclassed
+2025-02-28T15:24:38.8887695Z copying tests/widgets/__init__.py -> toga_core-0.4.9.dev629+g68266e24a/tests/widgets
+2025-02-28T15:24:38.8888760Z copying tests/widgets/test_activityindicator.py -> toga_core-0.4.9.dev629+g68266e24a/tests/widgets
+2025-02-28T15:24:38.8890318Z copying tests/widgets/test_base.py -> toga_core-0.4.9.dev629+g68266e24a/tests/widgets
+2025-02-28T15:24:38.8892166Z copying tests/widgets/test_box.py -> toga_core-0.4.9.dev629+g68266e24a/tests/widgets
+2025-02-28T15:24:38.8893943Z copying tests/widgets/test_button.py -> toga_core-0.4.9.dev629+g68266e24a/tests/widgets
+2025-02-28T15:24:38.8895386Z copying tests/widgets/test_dateinput.py -> toga_core-0.4.9.dev629+g68266e24a/tests/widgets
+2025-02-28T15:24:38.8897195Z copying tests/widgets/test_detailedlist.py -> toga_core-0.4.9.dev629+g68266e24a/tests/widgets
+2025-02-28T15:24:38.8898885Z copying tests/widgets/test_divider.py -> toga_core-0.4.9.dev629+g68266e24a/tests/widgets
+2025-02-28T15:24:38.8900521Z copying tests/widgets/test_imageview.py -> toga_core-0.4.9.dev629+g68266e24a/tests/widgets
+2025-02-28T15:24:38.8902624Z copying tests/widgets/test_label.py -> toga_core-0.4.9.dev629+g68266e24a/tests/widgets
+2025-02-28T15:24:38.8903688Z copying tests/widgets/test_mapview.py -> toga_core-0.4.9.dev629+g68266e24a/tests/widgets
+2025-02-28T15:24:38.8906138Z copying tests/widgets/test_multilinetextinput.py -> toga_core-0.4.9.dev629+g68266e24a/tests/widgets
+2025-02-28T15:24:38.8908767Z copying tests/widgets/test_numberinput.py -> toga_core-0.4.9.dev629+g68266e24a/tests/widgets
+2025-02-28T15:24:38.8910955Z copying tests/widgets/test_optioncontainer.py -> toga_core-0.4.9.dev629+g68266e24a/tests/widgets
+2025-02-28T15:24:38.8913882Z copying tests/widgets/test_passwordinput.py -> toga_core-0.4.9.dev629+g68266e24a/tests/widgets
+2025-02-28T15:24:38.8914837Z copying tests/widgets/test_progressbar.py -> toga_core-0.4.9.dev629+g68266e24a/tests/widgets
+2025-02-28T15:24:38.8916949Z copying tests/widgets/test_scrollcontainer.py -> toga_core-0.4.9.dev629+g68266e24a/tests/widgets
+2025-02-28T15:24:38.8919802Z copying tests/widgets/test_selection.py -> toga_core-0.4.9.dev629+g68266e24a/tests/widgets
+2025-02-28T15:24:38.8920828Z copying tests/widgets/test_slider.py -> toga_core-0.4.9.dev629+g68266e24a/tests/widgets
+2025-02-28T15:24:38.8921872Z copying tests/widgets/test_splitcontainer.py -> toga_core-0.4.9.dev629+g68266e24a/tests/widgets
+2025-02-28T15:24:38.8923962Z copying tests/widgets/test_switch.py -> toga_core-0.4.9.dev629+g68266e24a/tests/widgets
+2025-02-28T15:24:38.8926028Z copying tests/widgets/test_table.py -> toga_core-0.4.9.dev629+g68266e24a/tests/widgets
+2025-02-28T15:24:38.8927256Z copying tests/widgets/test_textinput.py -> toga_core-0.4.9.dev629+g68266e24a/tests/widgets
+2025-02-28T15:24:38.8929825Z copying tests/widgets/test_timeinput.py -> toga_core-0.4.9.dev629+g68266e24a/tests/widgets
+2025-02-28T15:24:38.8932762Z copying tests/widgets/test_tree.py -> toga_core-0.4.9.dev629+g68266e24a/tests/widgets
+2025-02-28T15:24:38.8933674Z copying tests/widgets/test_webview.py -> toga_core-0.4.9.dev629+g68266e24a/tests/widgets
+2025-02-28T15:24:38.8934846Z copying tests/widgets/canvas/__init__.py -> toga_core-0.4.9.dev629+g68266e24a/tests/widgets/canvas
+2025-02-28T15:24:38.8938339Z copying tests/widgets/canvas/conftest.py -> toga_core-0.4.9.dev629+g68266e24a/tests/widgets/canvas
+2025-02-28T15:24:38.8939699Z copying tests/widgets/canvas/test_canvas.py -> toga_core-0.4.9.dev629+g68266e24a/tests/widgets/canvas
+2025-02-28T15:24:38.8940950Z copying tests/widgets/canvas/test_context_objects.py -> toga_core-0.4.9.dev629+g68266e24a/tests/widgets/canvas
+2025-02-28T15:24:38.8942820Z copying tests/widgets/canvas/test_draw_operations.py -> toga_core-0.4.9.dev629+g68266e24a/tests/widgets/canvas
+2025-02-28T15:24:38.8944087Z copying tests/widgets/canvas/test_helpers.py -> toga_core-0.4.9.dev629+g68266e24a/tests/widgets/canvas
+2025-02-28T15:24:38.8946526Z copying tests/window/__init__.py -> toga_core-0.4.9.dev629+g68266e24a/tests/window
+2025-02-28T15:24:38.8947692Z copying tests/window/conftest.py -> toga_core-0.4.9.dev629+g68266e24a/tests/window
+2025-02-28T15:24:38.8949348Z copying tests/window/test_dialogs.py -> toga_core-0.4.9.dev629+g68266e24a/tests/window
+2025-02-28T15:24:38.8950955Z copying tests/window/test_document_window.py -> toga_core-0.4.9.dev629+g68266e24a/tests/window
+2025-02-28T15:24:38.8952543Z copying tests/window/test_filtered_widget_registry.py -> toga_core-0.4.9.dev629+g68266e24a/tests/window
+2025-02-28T15:24:38.8954595Z copying tests/window/test_main_window.py -> toga_core-0.4.9.dev629+g68266e24a/tests/window
+2025-02-28T15:24:38.8955945Z copying tests/window/test_window.py -> toga_core-0.4.9.dev629+g68266e24a/tests/window
+2025-02-28T15:24:38.8959547Z copying src/toga_core.egg-info/SOURCES.txt -> toga_core-0.4.9.dev629+g68266e24a/src/toga_core.egg-info
+2025-02-28T15:24:38.8994653Z Writing toga_core-0.4.9.dev629+g68266e24a/setup.cfg
+2025-02-28T15:24:38.8995204Z Creating tar archive
+2025-02-28T15:24:39.0505280Z removing 'toga_core-0.4.9.dev629+g68266e24a' (and everything under it)
+2025-02-28T15:24:39.1374622Z [1mBuilding wheel from source distribution...[0m
+2025-02-28T15:24:39.6059819Z running egg_info
+2025-02-28T15:24:39.6078842Z writing src/toga_core.egg-info/PKG-INFO
+2025-02-28T15:24:39.6108004Z writing dependency_links to src/toga_core.egg-info/dependency_links.txt
+2025-02-28T15:24:39.6110617Z writing entry points to src/toga_core.egg-info/entry_points.txt
+2025-02-28T15:24:39.6127499Z writing requirements to src/toga_core.egg-info/requires.txt
+2025-02-28T15:24:39.6128936Z writing top-level names to src/toga_core.egg-info/top_level.txt
+2025-02-28T15:24:39.6289316Z ERROR setuptools_scm._file_finders.git listing git files failed - pretending there aren't any
+2025-02-28T15:24:40.2795960Z reading manifest file 'src/toga_core.egg-info/SOURCES.txt'
+2025-02-28T15:24:40.2817695Z adding license file 'LICENSE'
+2025-02-28T15:24:40.2838782Z writing manifest file 'src/toga_core.egg-info/SOURCES.txt'
+2025-02-28T15:24:40.4860393Z running bdist_wheel
+2025-02-28T15:24:40.4955411Z running build
+2025-02-28T15:24:40.4955857Z running build_py
+2025-02-28T15:24:40.4977657Z creating build/lib/toga
+2025-02-28T15:24:40.4981292Z copying src/toga/validators.py -> build/lib/toga
+2025-02-28T15:24:40.4984520Z copying src/toga/images.py -> build/lib/toga
+2025-02-28T15:24:40.4986991Z copying src/toga/colors.py -> build/lib/toga
+2025-02-28T15:24:40.4989429Z copying src/toga/screens.py -> build/lib/toga
+2025-02-28T15:24:40.4991904Z copying src/toga/dialogs.py -> build/lib/toga
+2025-02-28T15:24:40.4994086Z copying src/toga/window.py -> build/lib/toga
+2025-02-28T15:24:40.4996017Z copying src/toga/statusicons.py -> build/lib/toga
+2025-02-28T15:24:40.4998833Z copying src/toga/keys.py -> build/lib/toga
+2025-02-28T15:24:40.5000691Z copying src/toga/command.py -> build/lib/toga
+2025-02-28T15:24:40.5003336Z copying src/toga/app.py -> build/lib/toga
+2025-02-28T15:24:40.5010039Z copying src/toga/icons.py -> build/lib/toga
+2025-02-28T15:24:40.5012102Z copying src/toga/documents.py -> build/lib/toga
+2025-02-28T15:24:40.5012689Z copying src/toga/paths.py -> build/lib/toga
+2025-02-28T15:24:40.5014164Z copying src/toga/__init__.py -> build/lib/toga
+2025-02-28T15:24:40.5016395Z copying src/toga/platform.py -> build/lib/toga
+2025-02-28T15:24:40.5017729Z copying src/toga/fonts.py -> build/lib/toga
+2025-02-28T15:24:40.5019609Z copying src/toga/types.py -> build/lib/toga
+2025-02-28T15:24:40.5021917Z copying src/toga/handlers.py -> build/lib/toga
+2025-02-28T15:24:40.5025357Z creating build/lib/toga/style
+2025-02-28T15:24:40.5027444Z copying src/toga/style/mixin.py -> build/lib/toga/style
+2025-02-28T15:24:40.5029981Z copying src/toga/style/pack.py -> build/lib/toga/style
+2025-02-28T15:24:40.5032673Z copying src/toga/style/applicator.py -> build/lib/toga/style
+2025-02-28T15:24:40.5034268Z copying src/toga/style/__init__.py -> build/lib/toga/style
+2025-02-28T15:24:40.5037730Z creating build/lib/toga/constants
+2025-02-28T15:24:40.5038984Z copying src/toga/constants/__init__.py -> build/lib/toga/constants
+2025-02-28T15:24:40.5042628Z creating build/lib/toga/sources
+2025-02-28T15:24:40.5043768Z copying src/toga/sources/base.py -> build/lib/toga/sources
+2025-02-28T15:24:40.5046401Z copying src/toga/sources/value_source.py -> build/lib/toga/sources
+2025-02-28T15:24:40.5053080Z copying src/toga/sources/list_source.py -> build/lib/toga/sources
+2025-02-28T15:24:40.5053886Z copying src/toga/sources/tree_source.py -> build/lib/toga/sources
+2025-02-28T15:24:40.5054646Z copying src/toga/sources/__init__.py -> build/lib/toga/sources
+2025-02-28T15:24:40.5055408Z copying src/toga/sources/accessors.py -> build/lib/toga/sources
+2025-02-28T15:24:40.5058381Z creating build/lib/toga/hardware
+2025-02-28T15:24:40.5059699Z copying src/toga/hardware/camera.py -> build/lib/toga/hardware
+2025-02-28T15:24:40.5062331Z copying src/toga/hardware/location.py -> build/lib/toga/hardware
+2025-02-28T15:24:40.5063865Z copying src/toga/hardware/__init__.py -> build/lib/toga/hardware
+2025-02-28T15:24:40.5066048Z creating build/lib/toga/resources
+2025-02-28T15:24:40.5067612Z copying src/toga/resources/__init__.py -> build/lib/toga/resources
+2025-02-28T15:24:40.5071725Z creating build/lib/toga/widgets
+2025-02-28T15:24:40.5072932Z copying src/toga/widgets/timeinput.py -> build/lib/toga/widgets
+2025-02-28T15:24:40.5075866Z copying src/toga/widgets/activityindicator.py -> build/lib/toga/widgets
+2025-02-28T15:24:40.5077894Z copying src/toga/widgets/box.py -> build/lib/toga/widgets
+2025-02-28T15:24:40.5080719Z copying src/toga/widgets/multilinetextinput.py -> build/lib/toga/widgets
+2025-02-28T15:24:40.5083047Z copying src/toga/widgets/dateinput.py -> build/lib/toga/widgets
+2025-02-28T15:24:40.5085325Z copying src/toga/widgets/detailedlist.py -> build/lib/toga/widgets
+2025-02-28T15:24:40.5087942Z copying src/toga/widgets/tree.py -> build/lib/toga/widgets
+2025-02-28T15:24:40.5089549Z copying src/toga/widgets/base.py -> build/lib/toga/widgets
+2025-02-28T15:24:40.5091549Z copying src/toga/widgets/splitcontainer.py -> build/lib/toga/widgets
+2025-02-28T15:24:40.5093465Z copying src/toga/widgets/progressbar.py -> build/lib/toga/widgets
+2025-02-28T15:24:40.5095378Z copying src/toga/widgets/optioncontainer.py -> build/lib/toga/widgets
+2025-02-28T15:24:40.5097477Z copying src/toga/widgets/numberinput.py -> build/lib/toga/widgets
+2025-02-28T15:24:40.5106157Z copying src/toga/widgets/textinput.py -> build/lib/toga/widgets
+2025-02-28T15:24:40.5107341Z copying src/toga/widgets/selection.py -> build/lib/toga/widgets
+2025-02-28T15:24:40.5108852Z copying src/toga/widgets/table.py -> build/lib/toga/widgets
+2025-02-28T15:24:40.5109812Z copying src/toga/widgets/button.py -> build/lib/toga/widgets
+2025-02-28T15:24:40.5110902Z copying src/toga/widgets/__init__.py -> build/lib/toga/widgets
+2025-02-28T15:24:40.5111706Z copying src/toga/widgets/scrollcontainer.py -> build/lib/toga/widgets
+2025-02-28T15:24:40.5113259Z copying src/toga/widgets/imageview.py -> build/lib/toga/widgets
+2025-02-28T15:24:40.5115631Z copying src/toga/widgets/switch.py -> build/lib/toga/widgets
+2025-02-28T15:24:40.5118363Z copying src/toga/widgets/mapview.py -> build/lib/toga/widgets
+2025-02-28T15:24:40.5120337Z copying src/toga/widgets/webview.py -> build/lib/toga/widgets
+2025-02-28T15:24:40.5122680Z copying src/toga/widgets/passwordinput.py -> build/lib/toga/widgets
+2025-02-28T15:24:40.5124880Z copying src/toga/widgets/divider.py -> build/lib/toga/widgets
+2025-02-28T15:24:40.5127329Z copying src/toga/widgets/label.py -> build/lib/toga/widgets
+2025-02-28T15:24:40.5129632Z copying src/toga/widgets/slider.py -> build/lib/toga/widgets
+2025-02-28T15:24:40.5132827Z creating build/lib/toga/plugins
+2025-02-28T15:24:40.5134186Z copying src/toga/plugins/__init__.py -> build/lib/toga/plugins
+2025-02-28T15:24:40.5136445Z copying src/toga/plugins/image_formats.py -> build/lib/toga/plugins
+2025-02-28T15:24:40.5139908Z creating build/lib/toga/widgets/canvas
+2025-02-28T15:24:40.5141264Z copying src/toga/widgets/canvas/context.py -> build/lib/toga/widgets/canvas
+2025-02-28T15:24:40.5144015Z copying src/toga/widgets/canvas/canvas.py -> build/lib/toga/widgets/canvas
+2025-02-28T15:24:40.5146294Z copying src/toga/widgets/canvas/geometry.py -> build/lib/toga/widgets/canvas
+2025-02-28T15:24:40.5148625Z copying src/toga/widgets/canvas/__init__.py -> build/lib/toga/widgets/canvas
+2025-02-28T15:24:40.5150932Z copying src/toga/widgets/canvas/drawingobject.py -> build/lib/toga/widgets/canvas
+2025-02-28T15:24:40.5152875Z running egg_info
+2025-02-28T15:24:40.5172661Z writing src/toga_core.egg-info/PKG-INFO
+2025-02-28T15:24:40.5203853Z writing dependency_links to src/toga_core.egg-info/dependency_links.txt
+2025-02-28T15:24:40.5207501Z writing entry points to src/toga_core.egg-info/entry_points.txt
+2025-02-28T15:24:40.5225174Z writing requirements to src/toga_core.egg-info/requires.txt
+2025-02-28T15:24:40.5227090Z writing top-level names to src/toga_core.egg-info/top_level.txt
+2025-02-28T15:24:40.5328814Z ERROR setuptools_scm._file_finders.git listing git files failed - pretending there aren't any
+2025-02-28T15:24:40.6702759Z reading manifest file 'src/toga_core.egg-info/SOURCES.txt'
+2025-02-28T15:24:40.6725608Z adding license file 'LICENSE'
+2025-02-28T15:24:40.6746203Z writing manifest file 'src/toga_core.egg-info/SOURCES.txt'
+2025-02-28T15:24:40.6763704Z copying src/toga/py.typed -> build/lib/toga
+2025-02-28T15:24:40.6806665Z installing to build/bdist.linux-x86_64/wheel
+2025-02-28T15:24:40.6807432Z running install
+2025-02-28T15:24:40.6872171Z running install_lib
+2025-02-28T15:24:40.6889753Z creating build/bdist.linux-x86_64/wheel
+2025-02-28T15:24:40.6892490Z creating build/bdist.linux-x86_64/wheel/toga
+2025-02-28T15:24:40.6894154Z copying build/lib/toga/validators.py -> build/bdist.linux-x86_64/wheel/./toga
+2025-02-28T15:24:40.6896699Z creating build/bdist.linux-x86_64/wheel/toga/style
+2025-02-28T15:24:40.6898623Z copying build/lib/toga/style/mixin.py -> build/bdist.linux-x86_64/wheel/./toga/style
+2025-02-28T15:24:40.6900374Z copying build/lib/toga/style/pack.py -> build/bdist.linux-x86_64/wheel/./toga/style
+2025-02-28T15:24:40.6902572Z copying build/lib/toga/style/applicator.py -> build/bdist.linux-x86_64/wheel/./toga/style
+2025-02-28T15:24:40.6904321Z copying build/lib/toga/style/__init__.py -> build/bdist.linux-x86_64/wheel/./toga/style
+2025-02-28T15:24:40.6906517Z creating build/bdist.linux-x86_64/wheel/toga/constants
+2025-02-28T15:24:40.6908775Z copying build/lib/toga/constants/__init__.py -> build/bdist.linux-x86_64/wheel/./toga/constants
+2025-02-28T15:24:40.6909971Z copying build/lib/toga/images.py -> build/bdist.linux-x86_64/wheel/./toga
+2025-02-28T15:24:40.6912072Z copying build/lib/toga/colors.py -> build/bdist.linux-x86_64/wheel/./toga
+2025-02-28T15:24:40.6913415Z copying build/lib/toga/screens.py -> build/bdist.linux-x86_64/wheel/./toga
+2025-02-28T15:24:40.6915208Z copying build/lib/toga/dialogs.py -> build/bdist.linux-x86_64/wheel/./toga
+2025-02-28T15:24:40.6917147Z copying build/lib/toga/window.py -> build/bdist.linux-x86_64/wheel/./toga
+2025-02-28T15:24:40.6919307Z copying build/lib/toga/statusicons.py -> build/bdist.linux-x86_64/wheel/./toga
+2025-02-28T15:24:40.6921513Z creating build/bdist.linux-x86_64/wheel/toga/sources
+2025-02-28T15:24:40.6923460Z copying build/lib/toga/sources/base.py -> build/bdist.linux-x86_64/wheel/./toga/sources
+2025-02-28T15:24:40.6924780Z copying build/lib/toga/sources/value_source.py -> build/bdist.linux-x86_64/wheel/./toga/sources
+2025-02-28T15:24:40.6926592Z copying build/lib/toga/sources/list_source.py -> build/bdist.linux-x86_64/wheel/./toga/sources
+2025-02-28T15:24:40.6928752Z copying build/lib/toga/sources/tree_source.py -> build/bdist.linux-x86_64/wheel/./toga/sources
+2025-02-28T15:24:40.6930605Z copying build/lib/toga/sources/__init__.py -> build/bdist.linux-x86_64/wheel/./toga/sources
+2025-02-28T15:24:40.6932371Z copying build/lib/toga/sources/accessors.py -> build/bdist.linux-x86_64/wheel/./toga/sources
+2025-02-28T15:24:40.6934495Z creating build/bdist.linux-x86_64/wheel/toga/hardware
+2025-02-28T15:24:40.6936437Z copying build/lib/toga/hardware/camera.py -> build/bdist.linux-x86_64/wheel/./toga/hardware
+2025-02-28T15:24:40.6937893Z copying build/lib/toga/hardware/location.py -> build/bdist.linux-x86_64/wheel/./toga/hardware
+2025-02-28T15:24:40.6939810Z copying build/lib/toga/hardware/__init__.py -> build/bdist.linux-x86_64/wheel/./toga/hardware
+2025-02-28T15:24:40.6941495Z copying build/lib/toga/keys.py -> build/bdist.linux-x86_64/wheel/./toga
+2025-02-28T15:24:40.6942780Z copying build/lib/toga/command.py -> build/bdist.linux-x86_64/wheel/./toga
+2025-02-28T15:24:40.6944893Z copying build/lib/toga/app.py -> build/bdist.linux-x86_64/wheel/./toga
+2025-02-28T15:24:40.6947152Z copying build/lib/toga/icons.py -> build/bdist.linux-x86_64/wheel/./toga
+2025-02-28T15:24:40.6948958Z copying build/lib/toga/py.typed -> build/bdist.linux-x86_64/wheel/./toga
+2025-02-28T15:24:40.6951031Z creating build/bdist.linux-x86_64/wheel/toga/resources
+2025-02-28T15:24:40.6952968Z copying build/lib/toga/resources/__init__.py -> build/bdist.linux-x86_64/wheel/./toga/resources
+2025-02-28T15:24:40.6954847Z creating build/bdist.linux-x86_64/wheel/toga/widgets
+2025-02-28T15:24:40.6956178Z copying build/lib/toga/widgets/timeinput.py -> build/bdist.linux-x86_64/wheel/./toga/widgets
+2025-02-28T15:24:40.6958396Z copying build/lib/toga/widgets/activityindicator.py -> build/bdist.linux-x86_64/wheel/./toga/widgets
+2025-02-28T15:24:40.6960159Z copying build/lib/toga/widgets/box.py -> build/bdist.linux-x86_64/wheel/./toga/widgets
+2025-02-28T15:24:40.6962066Z copying build/lib/toga/widgets/multilinetextinput.py -> build/bdist.linux-x86_64/wheel/./toga/widgets
+2025-02-28T15:24:40.6963202Z copying build/lib/toga/widgets/dateinput.py -> build/bdist.linux-x86_64/wheel/./toga/widgets
+2025-02-28T15:24:40.6965501Z creating build/bdist.linux-x86_64/wheel/toga/widgets/canvas
+2025-02-28T15:24:40.6967731Z copying build/lib/toga/widgets/canvas/context.py -> build/bdist.linux-x86_64/wheel/./toga/widgets/canvas
+2025-02-28T15:24:40.6969420Z copying build/lib/toga/widgets/canvas/canvas.py -> build/bdist.linux-x86_64/wheel/./toga/widgets/canvas
+2025-02-28T15:24:40.6970970Z copying build/lib/toga/widgets/canvas/geometry.py -> build/bdist.linux-x86_64/wheel/./toga/widgets/canvas
+2025-02-28T15:24:40.6972391Z copying build/lib/toga/widgets/canvas/__init__.py -> build/bdist.linux-x86_64/wheel/./toga/widgets/canvas
+2025-02-28T15:24:40.6973708Z copying build/lib/toga/widgets/canvas/drawingobject.py -> build/bdist.linux-x86_64/wheel/./toga/widgets/canvas
+2025-02-28T15:24:40.6975586Z copying build/lib/toga/widgets/detailedlist.py -> build/bdist.linux-x86_64/wheel/./toga/widgets
+2025-02-28T15:24:40.6977857Z copying build/lib/toga/widgets/tree.py -> build/bdist.linux-x86_64/wheel/./toga/widgets
+2025-02-28T15:24:40.6979438Z copying build/lib/toga/widgets/base.py -> build/bdist.linux-x86_64/wheel/./toga/widgets
+2025-02-28T15:24:40.6981417Z copying build/lib/toga/widgets/splitcontainer.py -> build/bdist.linux-x86_64/wheel/./toga/widgets
+2025-02-28T15:24:40.6983215Z copying build/lib/toga/widgets/progressbar.py -> build/bdist.linux-x86_64/wheel/./toga/widgets
+2025-02-28T15:24:40.6985024Z copying build/lib/toga/widgets/optioncontainer.py -> build/bdist.linux-x86_64/wheel/./toga/widgets
+2025-02-28T15:24:40.6987153Z copying build/lib/toga/widgets/numberinput.py -> build/bdist.linux-x86_64/wheel/./toga/widgets
+2025-02-28T15:24:40.6989010Z copying build/lib/toga/widgets/textinput.py -> build/bdist.linux-x86_64/wheel/./toga/widgets
+2025-02-28T15:24:40.6990826Z copying build/lib/toga/widgets/selection.py -> build/bdist.linux-x86_64/wheel/./toga/widgets
+2025-02-28T15:24:40.6992616Z copying build/lib/toga/widgets/table.py -> build/bdist.linux-x86_64/wheel/./toga/widgets
+2025-02-28T15:24:40.6994515Z copying build/lib/toga/widgets/button.py -> build/bdist.linux-x86_64/wheel/./toga/widgets
+2025-02-28T15:24:40.6996278Z copying build/lib/toga/widgets/__init__.py -> build/bdist.linux-x86_64/wheel/./toga/widgets
+2025-02-28T15:24:40.6998350Z copying build/lib/toga/widgets/scrollcontainer.py -> build/bdist.linux-x86_64/wheel/./toga/widgets
+2025-02-28T15:24:40.6999624Z copying build/lib/toga/widgets/imageview.py -> build/bdist.linux-x86_64/wheel/./toga/widgets
+2025-02-28T15:24:40.7001105Z copying build/lib/toga/widgets/switch.py -> build/bdist.linux-x86_64/wheel/./toga/widgets
+2025-02-28T15:24:40.7002470Z copying build/lib/toga/widgets/mapview.py -> build/bdist.linux-x86_64/wheel/./toga/widgets
+2025-02-28T15:24:40.7003901Z copying build/lib/toga/widgets/webview.py -> build/bdist.linux-x86_64/wheel/./toga/widgets
+2025-02-28T15:24:40.7005421Z copying build/lib/toga/widgets/passwordinput.py -> build/bdist.linux-x86_64/wheel/./toga/widgets
+2025-02-28T15:24:40.7006882Z copying build/lib/toga/widgets/divider.py -> build/bdist.linux-x86_64/wheel/./toga/widgets
+2025-02-28T15:24:40.7008358Z copying build/lib/toga/widgets/label.py -> build/bdist.linux-x86_64/wheel/./toga/widgets
+2025-02-28T15:24:40.7009724Z copying build/lib/toga/widgets/slider.py -> build/bdist.linux-x86_64/wheel/./toga/widgets
+2025-02-28T15:24:40.7011202Z copying build/lib/toga/documents.py -> build/bdist.linux-x86_64/wheel/./toga
+2025-02-28T15:24:40.7013480Z creating build/bdist.linux-x86_64/wheel/toga/plugins
+2025-02-28T15:24:40.7014873Z copying build/lib/toga/plugins/__init__.py -> build/bdist.linux-x86_64/wheel/./toga/plugins
+2025-02-28T15:24:40.7016645Z copying build/lib/toga/plugins/image_formats.py -> build/bdist.linux-x86_64/wheel/./toga/plugins
+2025-02-28T15:24:40.7018534Z copying build/lib/toga/paths.py -> build/bdist.linux-x86_64/wheel/./toga
+2025-02-28T15:24:40.7020254Z copying build/lib/toga/__init__.py -> build/bdist.linux-x86_64/wheel/./toga
+2025-02-28T15:24:40.7021995Z copying build/lib/toga/platform.py -> build/bdist.linux-x86_64/wheel/./toga
+2025-02-28T15:24:40.7023773Z copying build/lib/toga/fonts.py -> build/bdist.linux-x86_64/wheel/./toga
+2025-02-28T15:24:40.7025543Z copying build/lib/toga/types.py -> build/bdist.linux-x86_64/wheel/./toga
+2025-02-28T15:24:40.7027504Z copying build/lib/toga/handlers.py -> build/bdist.linux-x86_64/wheel/./toga
+2025-02-28T15:24:40.7029248Z running install_egg_info
+2025-02-28T15:24:40.7048949Z Copying src/toga_core.egg-info to build/bdist.linux-x86_64/wheel/./toga_core-0.4.9.dev629+g68266e24a-py3.12.egg-info
+2025-02-28T15:24:40.7057702Z running install_scripts
+2025-02-28T15:24:40.7068831Z creating build/bdist.linux-x86_64/wheel/toga_core-0.4.9.dev629+g68266e24a.dist-info/WHEEL
+2025-02-28T15:24:40.7073161Z creating '/tmp/baipp/dist/.tmp-go7kwsxt/toga_core-0.4.9.dev629+g68266e24a-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+2025-02-28T15:24:40.7077571Z adding 'toga/__init__.py'
+2025-02-28T15:24:40.7091203Z adding 'toga/app.py'
+2025-02-28T15:24:40.7093919Z adding 'toga/colors.py'
+2025-02-28T15:24:40.7101674Z adding 'toga/command.py'
+2025-02-28T15:24:40.7105135Z adding 'toga/dialogs.py'
+2025-02-28T15:24:40.7111361Z adding 'toga/documents.py'
+2025-02-28T15:24:40.7114225Z adding 'toga/fonts.py'
+2025-02-28T15:24:40.7118285Z adding 'toga/handlers.py'
+2025-02-28T15:24:40.7121644Z adding 'toga/icons.py'
+2025-02-28T15:24:40.7125333Z adding 'toga/images.py'
+2025-02-28T15:24:40.7128697Z adding 'toga/keys.py'
+2025-02-28T15:24:40.7131059Z adding 'toga/paths.py'
+2025-02-28T15:24:40.7133897Z adding 'toga/platform.py'
+2025-02-28T15:24:40.7135502Z adding 'toga/py.typed'
+2025-02-28T15:24:40.7137884Z adding 'toga/screens.py'
+2025-02-28T15:24:40.7141294Z adding 'toga/statusicons.py'
+2025-02-28T15:24:40.7143268Z adding 'toga/types.py'
+2025-02-28T15:24:40.7147519Z adding 'toga/validators.py'
+2025-02-28T15:24:40.7157136Z adding 'toga/window.py'
+2025-02-28T15:24:40.7161424Z adding 'toga/constants/__init__.py'
+2025-02-28T15:24:40.7163446Z adding 'toga/hardware/__init__.py'
+2025-02-28T15:24:40.7166307Z adding 'toga/hardware/camera.py'
+2025-02-28T15:24:40.7169709Z adding 'toga/hardware/location.py'
+2025-02-28T15:24:40.7171599Z adding 'toga/plugins/__init__.py'
+2025-02-28T15:24:40.7173848Z adding 'toga/plugins/image_formats.py'
+2025-02-28T15:24:40.7175653Z adding 'toga/resources/__init__.py'
+2025-02-28T15:24:40.7178334Z adding 'toga/sources/__init__.py'
+2025-02-28T15:24:40.7180711Z adding 'toga/sources/accessors.py'
+2025-02-28T15:24:40.7182995Z adding 'toga/sources/base.py'
+2025-02-28T15:24:40.7186685Z adding 'toga/sources/list_source.py'
+2025-02-28T15:24:40.7191425Z adding 'toga/sources/tree_source.py'
+2025-02-28T15:24:40.7193387Z adding 'toga/sources/value_source.py'
+2025-02-28T15:24:40.7195619Z adding 'toga/style/__init__.py'
+2025-02-28T15:24:40.7198274Z adding 'toga/style/applicator.py'
+2025-02-28T15:24:40.7200275Z adding 'toga/style/mixin.py'
+2025-02-28T15:24:40.7210277Z adding 'toga/style/pack.py'
+2025-02-28T15:24:40.7213504Z adding 'toga/widgets/__init__.py'
+2025-02-28T15:24:40.7215859Z adding 'toga/widgets/activityindicator.py'
+2025-02-28T15:24:40.7220705Z adding 'toga/widgets/base.py'
+2025-02-28T15:24:40.7223021Z adding 'toga/widgets/box.py'
+2025-02-28T15:24:40.7226324Z adding 'toga/widgets/button.py'
+2025-02-28T15:24:40.7229482Z adding 'toga/widgets/dateinput.py'
+2025-02-28T15:24:40.7233132Z adding 'toga/widgets/detailedlist.py'
+2025-02-28T15:24:40.7235318Z adding 'toga/widgets/divider.py'
+2025-02-28T15:24:40.7238662Z adding 'toga/widgets/imageview.py'
+2025-02-28T15:24:40.7240623Z adding 'toga/widgets/label.py'
+2025-02-28T15:24:40.7244444Z adding 'toga/widgets/mapview.py'
+2025-02-28T15:24:40.7247082Z adding 'toga/widgets/multilinetextinput.py'
+2025-02-28T15:24:40.7251096Z adding 'toga/widgets/numberinput.py'
+2025-02-28T15:24:40.7257129Z adding 'toga/widgets/optioncontainer.py'
+2025-02-28T15:24:40.7259398Z adding 'toga/widgets/passwordinput.py'
+2025-02-28T15:24:40.7261934Z adding 'toga/widgets/progressbar.py'
+2025-02-28T15:24:40.7265251Z adding 'toga/widgets/scrollcontainer.py'
+2025-02-28T15:24:40.7268629Z adding 'toga/widgets/selection.py'
+2025-02-28T15:24:40.7272977Z adding 'toga/widgets/slider.py'
+2025-02-28T15:24:40.7276007Z adding 'toga/widgets/splitcontainer.py'
+2025-02-28T15:24:40.7278787Z adding 'toga/widgets/switch.py'
+2025-02-28T15:24:40.7282839Z adding 'toga/widgets/table.py'
+2025-02-28T15:24:40.7286095Z adding 'toga/widgets/textinput.py'
+2025-02-28T15:24:40.7316145Z adding 'toga/widgets/timeinput.py'
+2025-02-28T15:24:40.7316700Z adding 'toga/widgets/tree.py'
+2025-02-28T15:24:40.7317353Z adding 'toga/widgets/webview.py'
+2025-02-28T15:24:40.7317826Z adding 'toga/widgets/canvas/__init__.py'
+2025-02-28T15:24:40.7318345Z adding 'toga/widgets/canvas/canvas.py'
+2025-02-28T15:24:40.7318842Z adding 'toga/widgets/canvas/context.py'
+2025-02-28T15:24:40.7319339Z adding 'toga/widgets/canvas/drawingobject.py'
+2025-02-28T15:24:40.7319858Z adding 'toga/widgets/canvas/geometry.py'
+2025-02-28T15:24:40.7324369Z adding 'toga_core-0.4.9.dev629+g68266e24a.dist-info/LICENSE'
+2025-02-28T15:24:40.7325362Z adding 'toga_core-0.4.9.dev629+g68266e24a.dist-info/METADATA'
+2025-02-28T15:24:40.7327369Z adding 'toga_core-0.4.9.dev629+g68266e24a.dist-info/WHEEL'
+2025-02-28T15:24:40.7328113Z adding 'toga_core-0.4.9.dev629+g68266e24a.dist-info/entry_points.txt'
+2025-02-28T15:24:40.7329455Z adding 'toga_core-0.4.9.dev629+g68266e24a.dist-info/top_level.txt'
+2025-02-28T15:24:40.7333856Z adding 'toga_core-0.4.9.dev629+g68266e24a.dist-info/RECORD'
+2025-02-28T15:24:40.7337258Z removing build/bdist.linux-x86_64/wheel
+2025-02-28T15:24:40.7807820Z Successfully built [36m[1m/tmp/baipp/dist/toga_core-0.4.9.dev629+g68266e24a.tar.gz[0m[39m
+2025-02-28T15:24:40.7809320Z Successfully built [36m[1m/tmp/baipp/dist/toga_core-0.4.9.dev629+g68266e24a-py3-none-any.whl[0m[39m
+2025-02-28T15:24:40.7875360Z ##[group]Run uv cache prune --ci
+2025-02-28T15:24:40.7875656Z [36;1muv cache prune --ci[0m
+2025-02-28T15:24:40.7923027Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:40.7923392Z env:
+2025-02-28T15:24:40.7923575Z   FORCE_COLOR: 1
+2025-02-28T15:24:40.7923790Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:40.7924162Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:40.7924519Z ##[endgroup]
+2025-02-28T15:24:40.8052929Z Pruning cache at: [36m/tmp/baipp-uv_cache_dir[39m
+2025-02-28T15:24:40.8525904Z Removed 2121 files ([32m37.1MiB[39m)
+2025-02-28T15:24:40.8569209Z ##[group]Run echo -e '\n### Package Contents' >> $GITHUB_STEP_SUMMARY
+2025-02-28T15:24:40.8569649Z [36;1mecho -e '\n### Package Contents' >> $GITHUB_STEP_SUMMARY[0m
+2025-02-28T15:24:40.8616060Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:40.8616375Z env:
+2025-02-28T15:24:40.8616555Z   FORCE_COLOR: 1
+2025-02-28T15:24:40.8617098Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:40.8617480Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:40.8617832Z ##[endgroup]
+2025-02-28T15:24:40.8719255Z ##[group]Run echo "dist=/tmp/baipp/dist" >>$GITHUB_OUTPUT
+2025-02-28T15:24:40.8719625Z [36;1mecho "dist=/tmp/baipp/dist" >>$GITHUB_OUTPUT[0m
+2025-02-28T15:24:40.8765574Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:40.8765887Z env:
+2025-02-28T15:24:40.8766056Z   FORCE_COLOR: 1
+2025-02-28T15:24:40.8766265Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:40.8766628Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:40.8767199Z ##[endgroup]
+2025-02-28T15:24:40.8854892Z ##[group]Run ls -l /tmp/baipp/dist
+2025-02-28T15:24:40.8855172Z [36;1mls -l /tmp/baipp/dist[0m
+2025-02-28T15:24:40.8899923Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:40.8900256Z env:
+2025-02-28T15:24:40.8900428Z   FORCE_COLOR: 1
+2025-02-28T15:24:40.8900642Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:40.8901006Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:40.8901385Z ##[endgroup]
+2025-02-28T15:24:40.8984111Z total 1132
+2025-02-28T15:24:40.8984801Z -rw-r--r-- 1 runner docker  142978 Feb 28 15:24 toga_core-0.4.9.dev629+g68266e24a-py3-none-any.whl
+2025-02-28T15:24:40.8985638Z -rw-r--r-- 1 runner docker 1015657 Feb 28 15:24 toga_core-0.4.9.dev629+g68266e24a.tar.gz
+2025-02-28T15:24:40.9020952Z ##[group]Run actions/upload-artifact@v4
+2025-02-28T15:24:40.9021221Z with:
+2025-02-28T15:24:40.9021410Z   name: Packages-toga-core
+2025-02-28T15:24:40.9021647Z   path: /tmp/baipp/dist/*
+2025-02-28T15:24:40.9021876Z   if-no-files-found: warn
+2025-02-28T15:24:40.9022097Z   compression-level: 6
+2025-02-28T15:24:40.9022310Z   overwrite: false
+2025-02-28T15:24:40.9022511Z   include-hidden-files: false
+2025-02-28T15:24:40.9022732Z env:
+2025-02-28T15:24:40.9022907Z   FORCE_COLOR: 1
+2025-02-28T15:24:40.9023117Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:40.9023479Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:40.9024145Z ##[endgroup]
+2025-02-28T15:24:41.1377492Z With the provided path, there will be 2 files uploaded
+2025-02-28T15:24:41.1383258Z Artifact name is valid!
+2025-02-28T15:24:41.1384435Z Root directory input is valid!
+2025-02-28T15:24:41.2545612Z Beginning upload of artifact content to blob storage
+2025-02-28T15:24:41.5936469Z Uploaded bytes 1154108
+2025-02-28T15:24:41.6298648Z Finished uploading artifact content to blob storage!
+2025-02-28T15:24:41.6301444Z SHA256 hash of uploaded artifact zip is 906fa45167d1a9550fcf6157606c6834de1d88179d0d91f627f9d97c784e7032
+2025-02-28T15:24:41.6303432Z Finalizing artifact upload
+2025-02-28T15:24:41.7238072Z Artifact Packages-toga-core.zip successfully finalized. Artifact ID 2671286668
+2025-02-28T15:24:41.7239292Z Artifact Packages-toga-core has been successfully uploaded! Final size is 1154108 bytes. Artifact ID is 2671286668
+2025-02-28T15:24:41.7246627Z Artifact download URL: https://github.com/beeware/toga/actions/runs/13591189051/artifacts/2671286668
+2025-02-28T15:24:41.7341392Z ##[group]Run if [[ "false" != 'true' ]]; then
+2025-02-28T15:24:41.7341733Z [36;1mif [[ "false" != 'true' ]]; then[0m
+2025-02-28T15:24:41.7342071Z [36;1m  /tmp/baipp/bin/check-wheel-contents /tmp/baipp/dist/*.whl[0m
+2025-02-28T15:24:41.7342410Z [36;1mfi[0m
+2025-02-28T15:24:41.7391420Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:41.7391742Z env:
+2025-02-28T15:24:41.7391928Z   FORCE_COLOR: 1
+2025-02-28T15:24:41.7392143Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:41.7392520Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:41.7392878Z ##[endgroup]
+2025-02-28T15:24:42.6972918Z /tmp/baipp/dist/toga_core-0.4.9.dev629+g68266e24a-py3-none-any.whl: OK
+2025-02-28T15:24:42.7258782Z ##[group]Run /tmp/baipp/bin/python -m twine check --strict /tmp/baipp/dist/*
+2025-02-28T15:24:42.7259275Z [36;1m/tmp/baipp/bin/python -m twine check --strict /tmp/baipp/dist/*[0m
+2025-02-28T15:24:42.7305803Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:42.7306146Z env:
+2025-02-28T15:24:42.7306319Z   FORCE_COLOR: 1
+2025-02-28T15:24:42.7306531Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:42.7307116Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:42.7307499Z ##[endgroup]
+2025-02-28T15:24:44.1661744Z Checking /tmp/baipp/dist/toga_core-0.4.9.dev629+g68266e24a-py3-none-any.whl: [32mPASSED[0m
+2025-02-28T15:24:44.2045092Z Checking /tmp/baipp/dist/toga_core-0.4.9.dev629+g68266e24a.tar.gz: [32mPASSED[0m
+2025-02-28T15:24:44.2603278Z ##[group]Run cd /tmp/baipp/dist
+2025-02-28T15:24:44.2603781Z [36;1mcd /tmp/baipp/dist[0m
+2025-02-28T15:24:44.2604203Z [36;1mmkdir -p out/sdist[0m
+2025-02-28T15:24:44.2604615Z [36;1mtar xf *.tar.gz -C out/sdist[0m
+2025-02-28T15:24:44.2605038Z [36;1m[0m
+2025-02-28T15:24:44.2605401Z [36;1mif ! command -v tree &> /dev/null; then[0m
+2025-02-28T15:24:44.2605946Z [36;1m    sudo apt-get install tree[0m
+2025-02-28T15:24:44.2606438Z [36;1mfi[0m
+2025-02-28T15:24:44.2606954Z [36;1m[0m
+2025-02-28T15:24:44.2607501Z [36;1mecho -e '\n<details><summary>SDist contents</summary>\n' >> $GITHUB_STEP_SUMMARY[0m
+2025-02-28T15:24:44.2608480Z [36;1m(cd /tmp/baipp/dist/out/sdist && tree -Da --timefmt="%Y-%m-%dT%H:%M:%SZ" * | sed 's/^/    /' | tee -a $GITHUB_STEP_SUMMARY)[0m
+2025-02-28T15:24:44.2609354Z [36;1mecho -e '\n</details>\n' >> $GITHUB_STEP_SUMMARY[0m
+2025-02-28T15:24:44.2609888Z [36;1m[0m
+2025-02-28T15:24:44.2610210Z [36;1mif [[ "false" != 'true' ]]; then[0m
+2025-02-28T15:24:44.2610658Z [36;1m    mkdir -p out/wheels[0m
+2025-02-28T15:24:44.2611226Z [36;1m    /tmp/baipp/bin/python -m wheel unpack --dest out/wheels *.whl[0m
+2025-02-28T15:24:44.2611795Z [36;1m[0m
+2025-02-28T15:24:44.2612314Z [36;1m    echo -e '\n<details><summary>Wheel contents</summary>\n' >> $GITHUB_STEP_SUMMARY[0m
+2025-02-28T15:24:44.2613518Z [36;1m    (cd /tmp/baipp/dist/out/wheels && tree -a * | sed 's/^/    /' | tee -a $GITHUB_STEP_SUMMARY)[0m
+2025-02-28T15:24:44.2614566Z [36;1m    echo -e '\n</details>\n' >> $GITHUB_STEP_SUMMARY[0m
+2025-02-28T15:24:44.2615084Z [36;1mfi[0m
+2025-02-28T15:24:44.2615393Z [36;1m[0m
+2025-02-28T15:24:44.2615608Z [36;1mecho ----- Metadata Follows -----[0m
+2025-02-28T15:24:44.2615985Z [36;1mecho -e '\n<details><summary>Metadata</summary>\n' >> $GITHUB_STEP_SUMMARY[0m
+2025-02-28T15:24:44.2616473Z [36;1mcat out/sdist/*/PKG-INFO | sed 's/^/    /' | tee -a $GITHUB_STEP_SUMMARY[0m
+2025-02-28T15:24:44.2617120Z [36;1mecho -e '\n</details>\n' >> $GITHUB_STEP_SUMMARY[0m
+2025-02-28T15:24:44.2617430Z [36;1mecho ----- End of Metadata  -----[0m
+2025-02-28T15:24:44.2663889Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:44.2664216Z env:
+2025-02-28T15:24:44.2664399Z   FORCE_COLOR: 1
+2025-02-28T15:24:44.2664625Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:44.2665000Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:44.2665383Z ##[endgroup]
+2025-02-28T15:24:44.3206560Z     [2025-02-28T15:24:38Z]  toga_core-0.4.9.dev629+g68266e24a
+2025-02-28T15:24:44.3207747Z     ├── [2025-02-28T15:24:34Z]  CONTRIBUTING.md
+2025-02-28T15:24:44.3208303Z     ├── [2025-02-28T15:24:34Z]  LICENSE
+2025-02-28T15:24:44.3208808Z     ├── [2025-02-28T15:24:38Z]  PKG-INFO
+2025-02-28T15:24:44.3209346Z     ├── [2025-02-28T15:24:34Z]  README.rst
+2025-02-28T15:24:44.3209886Z     ├── [2025-02-28T15:24:34Z]  pyproject.toml
+2025-02-28T15:24:44.3210401Z     ├── [2025-02-28T15:24:38Z]  setup.cfg
+2025-02-28T15:24:44.3210888Z     ├── [2025-02-28T15:24:38Z]  src
+2025-02-28T15:24:44.3211357Z     │   ├── [2025-02-28T15:24:38Z]  toga
+2025-02-28T15:24:44.3211901Z     │   │   ├── [2025-02-28T15:24:34Z]  __init__.py
+2025-02-28T15:24:44.3212466Z     │   │   ├── [2025-02-28T15:24:34Z]  app.py
+2025-02-28T15:24:44.3213016Z     │   │   ├── [2025-02-28T15:24:34Z]  colors.py
+2025-02-28T15:24:44.3213573Z     │   │   ├── [2025-02-28T15:24:34Z]  command.py
+2025-02-28T15:24:44.3214178Z     │   │   ├── [2025-02-28T15:24:38Z]  constants
+2025-02-28T15:24:44.3214775Z     │   │   │   └── [2025-02-28T15:24:34Z]  __init__.py
+2025-02-28T15:24:44.3215395Z     │   │   ├── [2025-02-28T15:24:34Z]  dialogs.py
+2025-02-28T15:24:44.3215922Z     │   │   ├── [2025-02-28T15:24:34Z]  documents.py
+2025-02-28T15:24:44.3216447Z     │   │   ├── [2025-02-28T15:24:34Z]  fonts.py
+2025-02-28T15:24:44.3217230Z     │   │   ├── [2025-02-28T15:24:34Z]  handlers.py
+2025-02-28T15:24:44.3217794Z     │   │   ├── [2025-02-28T15:24:38Z]  hardware
+2025-02-28T15:24:44.3218341Z     │   │   │   ├── [2025-02-28T15:24:34Z]  __init__.py
+2025-02-28T15:24:44.3218891Z     │   │   │   ├── [2025-02-28T15:24:34Z]  camera.py
+2025-02-28T15:24:44.3219430Z     │   │   │   └── [2025-02-28T15:24:34Z]  location.py
+2025-02-28T15:24:44.3219967Z     │   │   ├── [2025-02-28T15:24:34Z]  icons.py
+2025-02-28T15:24:44.3220480Z     │   │   ├── [2025-02-28T15:24:34Z]  images.py
+2025-02-28T15:24:44.3220983Z     │   │   ├── [2025-02-28T15:24:34Z]  keys.py
+2025-02-28T15:24:44.3221530Z     │   │   ├── [2025-02-28T15:24:34Z]  paths.py
+2025-02-28T15:24:44.3222035Z     │   │   ├── [2025-02-28T15:24:34Z]  platform.py
+2025-02-28T15:24:44.3222543Z     │   │   ├── [2025-02-28T15:24:38Z]  plugins
+2025-02-28T15:24:44.3223048Z     │   │   │   ├── [2025-02-28T15:24:34Z]  __init__.py
+2025-02-28T15:24:44.3223390Z     │   │   │   └── [2025-02-28T15:24:34Z]  image_formats.py
+2025-02-28T15:24:44.3249237Z     │   │   ├── [2025-02-28T15:24:34Z]  py.typed
+2025-02-28T15:24:44.3249940Z     │   │   ├── [2025-02-28T15:24:38Z]  resources
+2025-02-28T15:24:44.3250483Z     │   │   │   └── [2025-02-28T15:24:34Z]  __init__.py
+2025-02-28T15:24:44.3251023Z     │   │   ├── [2025-02-28T15:24:34Z]  screens.py
+2025-02-28T15:24:44.3251356Z     │   │   ├── [2025-02-28T15:24:38Z]  sources
+2025-02-28T15:24:44.3251690Z     │   │   │   ├── [2025-02-28T15:24:34Z]  __init__.py
+2025-02-28T15:24:44.3252011Z     │   │   │   ├── [2025-02-28T15:24:34Z]  accessors.py
+2025-02-28T15:24:44.3252581Z     │   │   │   ├── [2025-02-28T15:24:34Z]  base.py
+2025-02-28T15:24:44.3253061Z     │   │   │   ├── [2025-02-28T15:24:34Z]  list_source.py
+2025-02-28T15:24:44.3253389Z     │   │   │   ├── [2025-02-28T15:24:34Z]  tree_source.py
+2025-02-28T15:24:44.3253704Z     │   │   │   └── [2025-02-28T15:24:34Z]  value_source.py
+2025-02-28T15:24:44.3254023Z     │   │   ├── [2025-02-28T15:24:34Z]  statusicons.py
+2025-02-28T15:24:44.3254325Z     │   │   ├── [2025-02-28T15:24:38Z]  style
+2025-02-28T15:24:44.3254628Z     │   │   │   ├── [2025-02-28T15:24:34Z]  __init__.py
+2025-02-28T15:24:44.3254944Z     │   │   │   ├── [2025-02-28T15:24:34Z]  applicator.py
+2025-02-28T15:24:44.3255251Z     │   │   │   ├── [2025-02-28T15:24:34Z]  mixin.py
+2025-02-28T15:24:44.3255557Z     │   │   │   └── [2025-02-28T15:24:34Z]  pack.py
+2025-02-28T15:24:44.3255858Z     │   │   ├── [2025-02-28T15:24:34Z]  types.py
+2025-02-28T15:24:44.3256164Z     │   │   ├── [2025-02-28T15:24:34Z]  validators.py
+2025-02-28T15:24:44.3256478Z     │   │   ├── [2025-02-28T15:24:38Z]  widgets
+2025-02-28T15:24:44.3257006Z     │   │   │   ├── [2025-02-28T15:24:34Z]  __init__.py
+2025-02-28T15:24:44.3257387Z     │   │   │   ├── [2025-02-28T15:24:34Z]  activityindicator.py
+2025-02-28T15:24:44.3257717Z     │   │   │   ├── [2025-02-28T15:24:34Z]  base.py
+2025-02-28T15:24:44.3258010Z     │   │   │   ├── [2025-02-28T15:24:34Z]  box.py
+2025-02-28T15:24:44.3258308Z     │   │   │   ├── [2025-02-28T15:24:34Z]  button.py
+2025-02-28T15:24:44.3258601Z     │   │   │   ├── [2025-02-28T15:24:38Z]  canvas
+2025-02-28T15:24:44.3258906Z     │   │   │   │   ├── [2025-02-28T15:24:34Z]  __init__.py
+2025-02-28T15:24:44.3259225Z     │   │   │   │   ├── [2025-02-28T15:24:34Z]  canvas.py
+2025-02-28T15:24:44.3259537Z     │   │   │   │   ├── [2025-02-28T15:24:34Z]  context.py
+2025-02-28T15:24:44.3259868Z     │   │   │   │   ├── [2025-02-28T15:24:34Z]  drawingobject.py
+2025-02-28T15:24:44.3260249Z     │   │   │   │   └── [2025-02-28T15:24:34Z]  geometry.py
+2025-02-28T15:24:44.3260584Z     │   │   │   ├── [2025-02-28T15:24:34Z]  dateinput.py
+2025-02-28T15:24:44.3260915Z     │   │   │   ├── [2025-02-28T15:24:34Z]  detailedlist.py
+2025-02-28T15:24:44.3261225Z     │   │   │   ├── [2025-02-28T15:24:34Z]  divider.py
+2025-02-28T15:24:44.3261530Z     │   │   │   ├── [2025-02-28T15:24:34Z]  imageview.py
+2025-02-28T15:24:44.3261833Z     │   │   │   ├── [2025-02-28T15:24:34Z]  label.py
+2025-02-28T15:24:44.3262138Z     │   │   │   ├── [2025-02-28T15:24:34Z]  mapview.py
+2025-02-28T15:24:44.3262474Z     │   │   │   ├── [2025-02-28T15:24:34Z]  multilinetextinput.py
+2025-02-28T15:24:44.3262816Z     │   │   │   ├── [2025-02-28T15:24:34Z]  numberinput.py
+2025-02-28T15:24:44.3263150Z     │   │   │   ├── [2025-02-28T15:24:34Z]  optioncontainer.py
+2025-02-28T15:24:44.3263493Z     │   │   │   ├── [2025-02-28T15:24:34Z]  passwordinput.py
+2025-02-28T15:24:44.3263821Z     │   │   │   ├── [2025-02-28T15:24:34Z]  progressbar.py
+2025-02-28T15:24:44.3264153Z     │   │   │   ├── [2025-02-28T15:24:34Z]  scrollcontainer.py
+2025-02-28T15:24:44.3264648Z     │   │   │   ├── [2025-02-28T15:24:34Z]  selection.py
+2025-02-28T15:24:44.3265128Z     │   │   │   ├── [2025-02-28T15:24:34Z]  slider.py
+2025-02-28T15:24:44.3265455Z     │   │   │   ├── [2025-02-28T15:24:34Z]  splitcontainer.py
+2025-02-28T15:24:44.3265769Z     │   │   │   ├── [2025-02-28T15:24:34Z]  switch.py
+2025-02-28T15:24:44.3266072Z     │   │   │   ├── [2025-02-28T15:24:34Z]  table.py
+2025-02-28T15:24:44.3266387Z     │   │   │   ├── [2025-02-28T15:24:34Z]  textinput.py
+2025-02-28T15:24:44.3266700Z     │   │   │   ├── [2025-02-28T15:24:34Z]  timeinput.py
+2025-02-28T15:24:44.3267316Z     │   │   │   ├── [2025-02-28T15:24:34Z]  tree.py
+2025-02-28T15:24:44.3267630Z     │   │   │   └── [2025-02-28T15:24:34Z]  webview.py
+2025-02-28T15:24:44.3267939Z     │   │   └── [2025-02-28T15:24:34Z]  window.py
+2025-02-28T15:24:44.3268258Z     │   └── [2025-02-28T15:24:38Z]  toga_core.egg-info
+2025-02-28T15:24:44.3268577Z     │       ├── [2025-02-28T15:24:38Z]  PKG-INFO
+2025-02-28T15:24:44.3268905Z     │       ├── [2025-02-28T15:24:38Z]  SOURCES.txt
+2025-02-28T15:24:44.3269252Z     │       ├── [2025-02-28T15:24:38Z]  dependency_links.txt
+2025-02-28T15:24:44.3269580Z     │       ├── [2025-02-28T15:24:38Z]  entry_points.txt
+2025-02-28T15:24:44.3269896Z     │       ├── [2025-02-28T15:24:38Z]  requires.txt
+2025-02-28T15:24:44.3270200Z     │       └── [2025-02-28T15:24:38Z]  top_level.txt
+2025-02-28T15:24:44.3270497Z     └── [2025-02-28T15:24:38Z]  tests
+2025-02-28T15:24:44.3270795Z         ├── [2025-02-28T15:24:34Z]  __init__.py
+2025-02-28T15:24:44.3271082Z         ├── [2025-02-28T15:24:38Z]  app
+2025-02-28T15:24:44.3271370Z         │   ├── [2025-02-28T15:24:34Z]  __init__.py
+2025-02-28T15:24:44.3271667Z         │   ├── [2025-02-28T15:24:34Z]  test_app.py
+2025-02-28T15:24:44.3271995Z         │   ├── [2025-02-28T15:24:34Z]  test_background_app.py
+2025-02-28T15:24:44.3272329Z         │   ├── [2025-02-28T15:24:34Z]  test_dialogs.py
+2025-02-28T15:24:44.3272649Z         │   ├── [2025-02-28T15:24:34Z]  test_document_app.py
+2025-02-28T15:24:44.3273010Z         │   ├── [2025-02-28T15:24:34Z]  test_documentset.py
+2025-02-28T15:24:44.3273334Z         │   ├── [2025-02-28T15:24:34Z]  test_screens.py
+2025-02-28T15:24:44.3273656Z         │   ├── [2025-02-28T15:24:34Z]  test_simpleapp.py
+2025-02-28T15:24:44.3273998Z         │   ├── [2025-02-28T15:24:34Z]  test_widget_registry.py
+2025-02-28T15:24:44.3274335Z         │   └── [2025-02-28T15:24:34Z]  test_windowset.py
+2025-02-28T15:24:44.3274630Z         ├── [2025-02-28T15:24:38Z]  command
+2025-02-28T15:24:44.3274923Z         │   ├── [2025-02-28T15:24:34Z]  __init__.py
+2025-02-28T15:24:44.3275228Z         │   ├── [2025-02-28T15:24:34Z]  conftest.py
+2025-02-28T15:24:44.3275534Z         │   ├── [2025-02-28T15:24:34Z]  test_command.py
+2025-02-28T15:24:44.3275859Z         │   ├── [2025-02-28T15:24:34Z]  test_commandset.py
+2025-02-28T15:24:44.3276168Z         │   └── [2025-02-28T15:24:34Z]  test_group.py
+2025-02-28T15:24:44.3276470Z         ├── [2025-02-28T15:24:34Z]  conftest.py
+2025-02-28T15:24:44.3276961Z         ├── [2025-02-28T15:24:38Z]  hardware
+2025-02-28T15:24:44.3277297Z         │   ├── [2025-02-28T15:24:34Z]  __init__.py
+2025-02-28T15:24:44.3277601Z         │   ├── [2025-02-28T15:24:34Z]  test_camera.py
+2025-02-28T15:24:44.3277915Z         │   └── [2025-02-28T15:24:34Z]  test_location.py
+2025-02-28T15:24:44.3278215Z         ├── [2025-02-28T15:24:38Z]  resources
+2025-02-28T15:24:44.3278514Z         │   ├── [2025-02-28T15:24:34Z]  blue.png
+2025-02-28T15:24:44.3278816Z         │   ├── [2025-02-28T15:24:34Z]  orange.bmp
+2025-02-28T15:24:44.3279118Z         │   ├── [2025-02-28T15:24:34Z]  orange.png
+2025-02-28T15:24:44.3279416Z         │   ├── [2025-02-28T15:24:34Z]  photo.png
+2025-02-28T15:24:44.3279715Z         │   ├── [2025-02-28T15:24:34Z]  red-16.png
+2025-02-28T15:24:44.3280012Z         │   ├── [2025-02-28T15:24:34Z]  red-32.png
+2025-02-28T15:24:44.3280306Z         │   ├── [2025-02-28T15:24:34Z]  red-72.png
+2025-02-28T15:24:44.3280593Z         │   ├── [2025-02-28T15:24:34Z]  red.png
+2025-02-28T15:24:44.3281067Z         │   ├── [2025-02-28T15:24:34Z]  sample-dummy.png
+2025-02-28T15:24:44.3281491Z         │   ├── [2025-02-28T15:24:34Z]  sample.png
+2025-02-28T15:24:44.3281788Z         │   └── [2025-02-28T15:24:34Z]  toga.png
+2025-02-28T15:24:44.3282078Z         ├── [2025-02-28T15:24:38Z]  sources
+2025-02-28T15:24:44.3282373Z         │   ├── [2025-02-28T15:24:34Z]  __init__.py
+2025-02-28T15:24:44.3282686Z         │   ├── [2025-02-28T15:24:34Z]  test_accessors.py
+2025-02-28T15:24:44.3283021Z         │   ├── [2025-02-28T15:24:34Z]  test_list_source.py
+2025-02-28T15:24:44.3283339Z         │   ├── [2025-02-28T15:24:34Z]  test_node.py
+2025-02-28T15:24:44.3283643Z         │   ├── [2025-02-28T15:24:34Z]  test_row.py
+2025-02-28T15:24:44.3283947Z         │   ├── [2025-02-28T15:24:34Z]  test_source.py
+2025-02-28T15:24:44.3284266Z         │   ├── [2025-02-28T15:24:34Z]  test_tree_source.py
+2025-02-28T15:24:44.3284599Z         │   └── [2025-02-28T15:24:34Z]  test_value_source.py
+2025-02-28T15:24:44.3284917Z         ├── [2025-02-28T15:24:38Z]  statusicons
+2025-02-28T15:24:44.3285223Z         │   ├── [2025-02-28T15:24:34Z]  __init__.py
+2025-02-28T15:24:44.3285553Z         │   ├── [2025-02-28T15:24:34Z]  test_menustatusicon.py
+2025-02-28T15:24:44.3285915Z         │   ├── [2025-02-28T15:24:34Z]  test_simplestatusicon.py
+2025-02-28T15:24:44.3286273Z         │   └── [2025-02-28T15:24:34Z]  test_statusiconset.py
+2025-02-28T15:24:44.3286586Z         ├── [2025-02-28T15:24:38Z]  style
+2025-02-28T15:24:44.3287133Z         │   ├── [2025-02-28T15:24:34Z]  __init__.py
+2025-02-28T15:24:44.3287442Z         │   ├── [2025-02-28T15:24:38Z]  pack
+2025-02-28T15:24:44.3287747Z         │   │   ├── [2025-02-28T15:24:34Z]  __init__.py
+2025-02-28T15:24:44.3288056Z         │   │   ├── [2025-02-28T15:24:38Z]  layout
+2025-02-28T15:24:44.3288368Z         │   │   │   ├── [2025-02-28T15:24:34Z]  __init__.py
+2025-02-28T15:24:44.3288698Z         │   │   │   ├── [2025-02-28T15:24:34Z]  test_beeliza.py
+2025-02-28T15:24:44.3289079Z         │   │   │   ├── [2025-02-28T15:24:34Z]  test_column_alignment.py
+2025-02-28T15:24:44.3289449Z         │   │   │   ├── [2025-02-28T15:24:34Z]  test_fixed.py
+2025-02-28T15:24:44.3289779Z         │   │   │   ├── [2025-02-28T15:24:34Z]  test_flex.py
+2025-02-28T15:24:44.3290099Z         │   │   │   ├── [2025-02-28T15:24:34Z]  test_gap.py
+2025-02-28T15:24:44.3290454Z         │   │   │   ├── [2025-02-28T15:24:34Z]  test_justify_content.py
+2025-02-28T15:24:44.3290819Z         │   │   │   ├── [2025-02-28T15:24:34Z]  test_row_alignment.py
+2025-02-28T15:24:44.3291153Z         │   │   │   ├── [2025-02-28T15:24:34Z]  test_rtl.py
+2025-02-28T15:24:44.3291489Z         │   │   │   ├── [2025-02-28T15:24:34Z]  test_tutorial0.py
+2025-02-28T15:24:44.3291839Z         │   │   │   ├── [2025-02-28T15:24:34Z]  test_tutorial1.py
+2025-02-28T15:24:44.3292171Z         │   │   │   └── [2025-02-28T15:24:34Z]  test_tutorial3.py
+2025-02-28T15:24:44.3292489Z         │   │   ├── [2025-02-28T15:24:34Z]  test_aliases.py
+2025-02-28T15:24:44.3292965Z         │   │   ├── [2025-02-28T15:24:34Z]  test_apply.py
+2025-02-28T15:24:44.3293409Z         │   │   ├── [2025-02-28T15:24:34Z]  test_css.py
+2025-02-28T15:24:44.3293771Z         │   │   ├── [2025-02-28T15:24:34Z]  test_deprecated_properties.py
+2025-02-28T15:24:44.3294128Z         │   │   └── [2025-02-28T15:24:34Z]  utils.py
+2025-02-28T15:24:44.3294450Z         │   ├── [2025-02-28T15:24:34Z]  test_applicator.py
+2025-02-28T15:24:44.3294768Z         │   └── [2025-02-28T15:24:34Z]  test_mixin.py
+2025-02-28T15:24:44.3295082Z         ├── [2025-02-28T15:24:34Z]  test_documents.py
+2025-02-28T15:24:44.3295391Z         ├── [2025-02-28T15:24:34Z]  test_fonts.py
+2025-02-28T15:24:44.3295706Z         ├── [2025-02-28T15:24:34Z]  test_handlers.py
+2025-02-28T15:24:44.3296009Z         ├── [2025-02-28T15:24:34Z]  test_icons.py
+2025-02-28T15:24:44.3296312Z         ├── [2025-02-28T15:24:34Z]  test_images.py
+2025-02-28T15:24:44.3296620Z         ├── [2025-02-28T15:24:34Z]  test_import.py
+2025-02-28T15:24:44.3297133Z         ├── [2025-02-28T15:24:34Z]  test_keys.py
+2025-02-28T15:24:44.3297452Z         ├── [2025-02-28T15:24:34Z]  test_paths.py
+2025-02-28T15:24:44.3297757Z         ├── [2025-02-28T15:24:34Z]  test_platform.py
+2025-02-28T15:24:44.3298062Z         ├── [2025-02-28T15:24:34Z]  test_types.py
+2025-02-28T15:24:44.3298372Z         ├── [2025-02-28T15:24:34Z]  test_validators.py
+2025-02-28T15:24:44.3298677Z         ├── [2025-02-28T15:24:38Z]  testbed
+2025-02-28T15:24:44.3298970Z         │   ├── [2025-02-28T15:24:38Z]  customize
+2025-02-28T15:24:44.3299286Z         │   │   └── [2025-02-28T15:24:34Z]  sitecustomize.py
+2025-02-28T15:24:44.3299612Z         │   ├── [2025-02-28T15:24:34Z]  interactive.py
+2025-02-28T15:24:44.3299910Z         │   ├── [2025-02-28T15:24:38Z]  simple
+2025-02-28T15:24:44.3300212Z         │   │   ├── [2025-02-28T15:24:34Z]  __init__.py
+2025-02-28T15:24:44.3300523Z         │   │   ├── [2025-02-28T15:24:34Z]  __main__.py
+2025-02-28T15:24:44.3300821Z         │   │   └── [2025-02-28T15:24:34Z]  app.py
+2025-02-28T15:24:44.3301129Z         │   └── [2025-02-28T15:24:38Z]  subclassed
+2025-02-28T15:24:44.3301437Z         │       ├── [2025-02-28T15:24:34Z]  __init__.py
+2025-02-28T15:24:44.3301738Z         │       ├── [2025-02-28T15:24:34Z]  __main__.py
+2025-02-28T15:24:44.3302037Z         │       └── [2025-02-28T15:24:34Z]  app.py
+2025-02-28T15:24:44.3302333Z         ├── [2025-02-28T15:24:34Z]  utils.py
+2025-02-28T15:24:44.3302623Z         ├── [2025-02-28T15:24:38Z]  widgets
+2025-02-28T15:24:44.3302917Z         │   ├── [2025-02-28T15:24:34Z]  __init__.py
+2025-02-28T15:24:44.3303208Z         │   ├── [2025-02-28T15:24:38Z]  canvas
+2025-02-28T15:24:44.3303509Z         │   │   ├── [2025-02-28T15:24:34Z]  __init__.py
+2025-02-28T15:24:44.3303815Z         │   │   ├── [2025-02-28T15:24:34Z]  conftest.py
+2025-02-28T15:24:44.3304125Z         │   │   ├── [2025-02-28T15:24:34Z]  test_canvas.py
+2025-02-28T15:24:44.3304473Z         │   │   ├── [2025-02-28T15:24:34Z]  test_context_objects.py
+2025-02-28T15:24:44.3304851Z         │   │   ├── [2025-02-28T15:24:34Z]  test_draw_operations.py
+2025-02-28T15:24:44.3305206Z         │   │   └── [2025-02-28T15:24:34Z]  test_helpers.py
+2025-02-28T15:24:44.3305556Z         │   ├── [2025-02-28T15:24:34Z]  test_activityindicator.py
+2025-02-28T15:24:44.3305894Z         │   ├── [2025-02-28T15:24:34Z]  test_base.py
+2025-02-28T15:24:44.3306200Z         │   ├── [2025-02-28T15:24:34Z]  test_box.py
+2025-02-28T15:24:44.3306506Z         │   ├── [2025-02-28T15:24:34Z]  test_button.py
+2025-02-28T15:24:44.3307020Z         │   ├── [2025-02-28T15:24:34Z]  test_dateinput.py
+2025-02-28T15:24:44.3307369Z         │   ├── [2025-02-28T15:24:34Z]  test_detailedlist.py
+2025-02-28T15:24:44.3307698Z         │   ├── [2025-02-28T15:24:34Z]  test_divider.py
+2025-02-28T15:24:44.3308016Z         │   ├── [2025-02-28T15:24:34Z]  test_imageview.py
+2025-02-28T15:24:44.3308331Z         │   ├── [2025-02-28T15:24:34Z]  test_label.py
+2025-02-28T15:24:44.3308636Z         │   ├── [2025-02-28T15:24:34Z]  test_mapview.py
+2025-02-28T15:24:44.3309139Z         │   ├── [2025-02-28T15:24:34Z]  test_multilinetextinput.py
+2025-02-28T15:24:44.3309615Z         │   ├── [2025-02-28T15:24:34Z]  test_numberinput.py
+2025-02-28T15:24:44.3309968Z         │   ├── [2025-02-28T15:24:34Z]  test_optioncontainer.py
+2025-02-28T15:24:44.3310329Z         │   ├── [2025-02-28T15:24:34Z]  test_passwordinput.py
+2025-02-28T15:24:44.3310669Z         │   ├── [2025-02-28T15:24:34Z]  test_progressbar.py
+2025-02-28T15:24:44.3311012Z         │   ├── [2025-02-28T15:24:34Z]  test_scrollcontainer.py
+2025-02-28T15:24:44.3311349Z         │   ├── [2025-02-28T15:24:34Z]  test_selection.py
+2025-02-28T15:24:44.3311669Z         │   ├── [2025-02-28T15:24:34Z]  test_slider.py
+2025-02-28T15:24:44.3312005Z         │   ├── [2025-02-28T15:24:34Z]  test_splitcontainer.py
+2025-02-28T15:24:44.3312337Z         │   ├── [2025-02-28T15:24:34Z]  test_switch.py
+2025-02-28T15:24:44.3312638Z         │   ├── [2025-02-28T15:24:34Z]  test_table.py
+2025-02-28T15:24:44.3312954Z         │   ├── [2025-02-28T15:24:34Z]  test_textinput.py
+2025-02-28T15:24:44.3313299Z         │   ├── [2025-02-28T15:24:34Z]  test_timeinput.py
+2025-02-28T15:24:44.3313619Z         │   ├── [2025-02-28T15:24:34Z]  test_tree.py
+2025-02-28T15:24:44.3313979Z         │   └── [2025-02-28T15:24:34Z]  test_webview.py
+2025-02-28T15:24:44.3314291Z         └── [2025-02-28T15:24:38Z]  window
+2025-02-28T15:24:44.3314584Z             ├── [2025-02-28T15:24:34Z]  __init__.py
+2025-02-28T15:24:44.3314888Z             ├── [2025-02-28T15:24:34Z]  conftest.py
+2025-02-28T15:24:44.3315241Z             ├── [2025-02-28T15:24:34Z]  test_dialogs.py
+2025-02-28T15:24:44.3315575Z             ├── [2025-02-28T15:24:34Z]  test_document_window.py
+2025-02-28T15:24:44.3315959Z             ├── [2025-02-28T15:24:34Z]  test_filtered_widget_registry.py
+2025-02-28T15:24:44.3316326Z             ├── [2025-02-28T15:24:34Z]  test_main_window.py
+2025-02-28T15:24:44.3316638Z             └── [2025-02-28T15:24:34Z]  test_window.py
+2025-02-28T15:24:44.3317131Z     
+2025-02-28T15:24:44.3317347Z     29 directories, 202 files
+2025-02-28T15:24:44.3887650Z Unpacking to: out/wheels/toga_core-0.4.9.dev629+g68266e24a...OK
+2025-02-28T15:24:44.3997625Z     toga_core-0.4.9.dev629+g68266e24a
+2025-02-28T15:24:44.3998350Z     ├── toga
+2025-02-28T15:24:44.3998739Z     │   ├── __init__.py
+2025-02-28T15:24:44.3999147Z     │   ├── app.py
+2025-02-28T15:24:44.3999519Z     │   ├── colors.py
+2025-02-28T15:24:44.3999900Z     │   ├── command.py
+2025-02-28T15:24:44.4000278Z     │   ├── constants
+2025-02-28T15:24:44.4000670Z     │   │   └── __init__.py
+2025-02-28T15:24:44.4001067Z     │   ├── dialogs.py
+2025-02-28T15:24:44.4001474Z     │   ├── documents.py
+2025-02-28T15:24:44.4001835Z     │   ├── fonts.py
+2025-02-28T15:24:44.4002158Z     │   ├── handlers.py
+2025-02-28T15:24:44.4002391Z     │   ├── hardware
+2025-02-28T15:24:44.4002616Z     │   │   ├── __init__.py
+2025-02-28T15:24:44.4002863Z     │   │   ├── camera.py
+2025-02-28T15:24:44.4003117Z     │   │   └── location.py
+2025-02-28T15:24:44.4003348Z     │   ├── icons.py
+2025-02-28T15:24:44.4003614Z     │   ├── images.py
+2025-02-28T15:24:44.4003847Z     │   ├── keys.py
+2025-02-28T15:24:44.4004062Z     │   ├── paths.py
+2025-02-28T15:24:44.4004282Z     │   ├── platform.py
+2025-02-28T15:24:44.4004496Z     │   ├── plugins
+2025-02-28T15:24:44.4004879Z     │   │   ├── __init__.py
+2025-02-28T15:24:44.4005308Z     │   │   └── image_formats.py
+2025-02-28T15:24:44.4005734Z     │   ├── py.typed
+2025-02-28T15:24:44.4006111Z     │   ├── resources
+2025-02-28T15:24:44.4006503Z     │   │   └── __init__.py
+2025-02-28T15:24:44.4007312Z     │   ├── screens.py
+2025-02-28T15:24:44.4007708Z     │   ├── sources
+2025-02-28T15:24:44.4008079Z     │   │   ├── __init__.py
+2025-02-28T15:24:44.4008500Z     │   │   ├── accessors.py
+2025-02-28T15:24:44.4008922Z     │   │   ├── base.py
+2025-02-28T15:24:44.4009346Z     │   │   ├── list_source.py
+2025-02-28T15:24:44.4009798Z     │   │   ├── tree_source.py
+2025-02-28T15:24:44.4010342Z     │   │   └── value_source.py
+2025-02-28T15:24:44.4010811Z     │   ├── statusicons.py
+2025-02-28T15:24:44.4011772Z     │   ├── style
+2025-02-28T15:24:44.4012214Z     │   │   ├── __init__.py
+2025-02-28T15:24:44.4012671Z     │   │   ├── applicator.py
+2025-02-28T15:24:44.4013129Z     │   │   ├── mixin.py
+2025-02-28T15:24:44.4013555Z     │   │   └── pack.py
+2025-02-28T15:24:44.4013943Z     │   ├── types.py
+2025-02-28T15:24:44.4014331Z     │   ├── validators.py
+2025-02-28T15:24:44.4014783Z     │   ├── widgets
+2025-02-28T15:24:44.4015168Z     │   │   ├── __init__.py
+2025-02-28T15:24:44.4015627Z     │   │   ├── activityindicator.py
+2025-02-28T15:24:44.4016082Z     │   │   ├── base.py
+2025-02-28T15:24:44.4016475Z     │   │   ├── box.py
+2025-02-28T15:24:44.4017136Z     │   │   ├── button.py
+2025-02-28T15:24:44.4017574Z     │   │   ├── canvas
+2025-02-28T15:24:44.4017991Z     │   │   │   ├── __init__.py
+2025-02-28T15:24:44.4018441Z     │   │   │   ├── canvas.py
+2025-02-28T15:24:44.4018885Z     │   │   │   ├── context.py
+2025-02-28T15:24:44.4019380Z     │   │   │   ├── drawingobject.py
+2025-02-28T15:24:44.4019906Z     │   │   │   └── geometry.py
+2025-02-28T15:24:44.4020416Z     │   │   ├── dateinput.py
+2025-02-28T15:24:44.4020863Z     │   │   ├── detailedlist.py
+2025-02-28T15:24:44.4021295Z     │   │   ├── divider.py
+2025-02-28T15:24:44.4021710Z     │   │   ├── imageview.py
+2025-02-28T15:24:44.4022119Z     │   │   ├── label.py
+2025-02-28T15:24:44.4022515Z     │   │   ├── mapview.py
+2025-02-28T15:24:44.4022784Z     │   │   ├── multilinetextinput.py
+2025-02-28T15:24:44.4023069Z     │   │   ├── numberinput.py
+2025-02-28T15:24:44.4023453Z     │   │   ├── optioncontainer.py
+2025-02-28T15:24:44.4023797Z     │   │   ├── passwordinput.py
+2025-02-28T15:24:44.4024062Z     │   │   ├── progressbar.py
+2025-02-28T15:24:44.4024317Z     │   │   ├── scrollcontainer.py
+2025-02-28T15:24:44.4024575Z     │   │   ├── selection.py
+2025-02-28T15:24:44.4024811Z     │   │   ├── slider.py
+2025-02-28T15:24:44.4025055Z     │   │   ├── splitcontainer.py
+2025-02-28T15:24:44.4025306Z     │   │   ├── switch.py
+2025-02-28T15:24:44.4025592Z     │   │   ├── table.py
+2025-02-28T15:24:44.4027009Z     │   │   ├── textinput.py
+2025-02-28T15:24:44.4027464Z     │   │   ├── timeinput.py
+2025-02-28T15:24:44.4027879Z     │   │   ├── tree.py
+2025-02-28T15:24:44.4028267Z     │   │   └── webview.py
+2025-02-28T15:24:44.4028654Z     │   └── window.py
+2025-02-28T15:24:44.4029128Z     └── toga_core-0.4.9.dev629+g68266e24a.dist-info
+2025-02-28T15:24:44.4029622Z         ├── LICENSE
+2025-02-28T15:24:44.4029879Z         ├── METADATA
+2025-02-28T15:24:44.4030098Z         ├── RECORD
+2025-02-28T15:24:44.4030301Z         ├── WHEEL
+2025-02-28T15:24:44.4030530Z         ├── entry_points.txt
+2025-02-28T15:24:44.4030778Z         └── top_level.txt
+2025-02-28T15:24:44.4030980Z     
+2025-02-28T15:24:44.4031164Z     11 directories, 73 files
+2025-02-28T15:24:44.4031393Z ----- Metadata Follows -----
+2025-02-28T15:24:44.4031664Z     Metadata-Version: 2.2
+2025-02-28T15:24:44.4031877Z     Name: toga-core
+2025-02-28T15:24:44.4032085Z     Version: 0.4.9.dev629+g68266e24a
+2025-02-28T15:24:44.4032573Z     Summary: A Python native, OS native GUI toolkit.
+2025-02-28T15:24:44.4033062Z     Author-email: Russell Keith-Magee <russell@keith-magee.com>
+2025-02-28T15:24:44.4033430Z     Maintainer-email: BeeWare Team <team@beeware.org>
+2025-02-28T15:24:44.4033715Z     License: New BSD
+2025-02-28T15:24:44.4034054Z     Project-URL: Homepage, https://beeware.org/project/projects/libraries/toga/
+2025-02-28T15:24:44.4034531Z     Project-URL: Funding, https://beeware.org/contributing/membership/
+2025-02-28T15:24:44.4034956Z     Project-URL: Documentation, https://toga.readthedocs.io/
+2025-02-28T15:24:44.4035347Z     Project-URL: Tracker, https://github.com/beeware/toga/issues
+2025-02-28T15:24:44.4035715Z     Project-URL: Source, https://github.com/beeware/toga
+2025-02-28T15:24:44.4036188Z     Project-URL: Changelog, https://toga.readthedocs.io/en/stable/background/project/releases.html
+2025-02-28T15:24:44.4037210Z     Keywords: gui,widget,cross-platform,toga,desktop,mobile,web,macOS,cocoa,iOS,android,windows,winforms,linux,freeBSD,gtk,console,web
+2025-02-28T15:24:44.4037920Z     Classifier: Development Status :: 4 - Beta
+2025-02-28T15:24:44.4038230Z     Classifier: Intended Audience :: Developers
+2025-02-28T15:24:44.4038544Z     Classifier: License :: OSI Approved :: BSD License
+2025-02-28T15:24:44.4038860Z     Classifier: Operating System :: OS Independent
+2025-02-28T15:24:44.4039167Z     Classifier: Programming Language :: Python :: 3
+2025-02-28T15:24:44.4039487Z     Classifier: Programming Language :: Python :: 3.9
+2025-02-28T15:24:44.4039809Z     Classifier: Programming Language :: Python :: 3.10
+2025-02-28T15:24:44.4040126Z     Classifier: Programming Language :: Python :: 3.11
+2025-02-28T15:24:44.4040439Z     Classifier: Programming Language :: Python :: 3.12
+2025-02-28T15:24:44.4040747Z     Classifier: Programming Language :: Python :: 3.13
+2025-02-28T15:24:44.4041074Z     Classifier: Programming Language :: Python :: 3 :: Only
+2025-02-28T15:24:44.4041396Z     Classifier: Topic :: Software Development
+2025-02-28T15:24:44.4041740Z     Classifier: Topic :: Software Development :: User Interfaces
+2025-02-28T15:24:44.4042116Z     Classifier: Topic :: Software Development :: Widget Sets
+2025-02-28T15:24:44.4042427Z     Requires-Python: >=3.9
+2025-02-28T15:24:44.4042675Z     Description-Content-Type: text/x-rst
+2025-02-28T15:24:44.4042939Z     License-File: LICENSE
+2025-02-28T15:24:44.4043193Z     Requires-Dist: travertino==0.4.9.dev629+g68266e24a
+2025-02-28T15:24:44.4043476Z     Provides-Extra: dev
+2025-02-28T15:24:44.4043729Z     Requires-Dist: coverage[toml]==7.6.12; extra == "dev"
+2025-02-28T15:24:44.4044113Z     Requires-Dist: coverage-conditional-plugin==0.9.0; extra == "dev"
+2025-02-28T15:24:44.4044475Z     Requires-Dist: Pillow==11.1.0; extra == "dev"
+2025-02-28T15:24:44.4044785Z     Requires-Dist: pre-commit==4.1.0; extra == "dev"
+2025-02-28T15:24:44.4045087Z     Requires-Dist: pytest==8.3.4; extra == "dev"
+2025-02-28T15:24:44.4045400Z     Requires-Dist: pytest-asyncio==0.25.3; extra == "dev"
+2025-02-28T15:24:44.4045736Z     Requires-Dist: pytest-freezer==0.4.9; extra == "dev"
+2025-02-28T15:24:44.4046066Z     Requires-Dist: setuptools-scm==8.1.0; extra == "dev"
+2025-02-28T15:24:44.4046369Z     Requires-Dist: tox==4.24.1; extra == "dev"
+2025-02-28T15:24:44.4047233Z     Requires-Dist: typing-extensions==4.12.2; python_version < "3.10" and extra == "dev"
+2025-02-28T15:24:44.4047650Z     Provides-Extra: docs
+2025-02-28T15:24:44.4047903Z     Requires-Dist: furo==2024.8.6; extra == "docs"
+2025-02-28T15:24:44.4048212Z     Requires-Dist: Pillow==11.1.0; extra == "docs"
+2025-02-28T15:24:44.4048513Z     Requires-Dist: pyenchant==3.2.2; extra == "docs"
+2025-02-28T15:24:44.4048824Z     Requires-Dist: sphinx==8.2.1; extra == "docs"
+2025-02-28T15:24:44.4049133Z     Requires-Dist: sphinx_tabs==3.4.5; extra == "docs"
+2025-02-28T15:24:44.4049484Z     Requires-Dist: sphinx-autobuild==2024.10.3; extra == "docs"
+2025-02-28T15:24:44.4049874Z     Requires-Dist: sphinx-csv-filter==0.4.2; extra == "docs"
+2025-02-28T15:24:44.4050374Z     Requires-Dist: sphinx-copybutton==0.5.2; extra == "docs"
+2025-02-28T15:24:44.4050902Z     Requires-Dist: sphinx-toolbox==3.8.3; extra == "docs"
+2025-02-28T15:24:44.4051272Z     Requires-Dist: sphinxcontrib-spelling==8.0.1; extra == "docs"
+2025-02-28T15:24:44.4051602Z     Dynamic: requires-dist
+2025-02-28T15:24:44.4051812Z     
+2025-02-28T15:24:44.4051978Z     Toga
+2025-02-28T15:24:44.4052139Z     ====
+2025-02-28T15:24:44.4052301Z     
+2025-02-28T15:24:44.4052495Z     A Python native, OS native GUI toolkit.
+2025-02-28T15:24:44.4052742Z     
+2025-02-28T15:24:44.4053030Z     This package provides the core Toga API. In order to use Toga, you'll also need to
+2025-02-28T15:24:44.4053502Z     install a backend that implements the core Toga API for that platform:
+2025-02-28T15:24:44.4053831Z     
+2025-02-28T15:24:44.4054096Z     * **Android** `toga-android <https://pypi.org/project/toga-android>`__
+2025-02-28T15:24:44.4054482Z     * **iOS** `toga-iOS <https://pypi.org/project/toga-iOS>`__
+2025-02-28T15:24:44.4054840Z     * **Linux** `toga-gtk <https://pypi.org/project/toga-gtk>`__
+2025-02-28T15:24:44.4055208Z     * **macOS** `toga-cocoa <https://pypi.org/project/toga-cocoa>`__
+2025-02-28T15:24:44.4055625Z     * **Textual** `toga-textual <https://pypi.org/project/toga-textual>`__
+2025-02-28T15:24:44.4055998Z     * **Web** `toga-web <https://pypi.org/project/toga-web>`__
+2025-02-28T15:24:44.4056384Z     * **Windows** `toga-winforms <https://pypi.org/project/toga-winforms>`__
+2025-02-28T15:24:44.4056718Z     
+2025-02-28T15:24:44.4057145Z     Minimum requirements
+2025-02-28T15:24:44.4057414Z     --------------------
+2025-02-28T15:24:44.4057612Z     
+2025-02-28T15:24:44.4057816Z     Toga requires **Python 3.9** or newer.
+2025-02-28T15:24:44.4058066Z     
+2025-02-28T15:24:44.4058373Z     Each backend also has specific requirements and pre-requisites. See the `platform
+2025-02-28T15:24:44.4058914Z     documentation <https://toga.readthedocs.io/en/latest/reference/platforms.html>`__ for
+2025-02-28T15:24:44.4059306Z     details.
+2025-02-28T15:24:44.4059494Z     
+2025-02-28T15:24:44.4059663Z     Quickstart
+2025-02-28T15:24:44.4059848Z     ----------
+2025-02-28T15:24:44.4060024Z     
+2025-02-28T15:24:44.4060295Z     To get a demonstration of the capabilities of Toga, run the following::
+2025-02-28T15:24:44.4060627Z     
+2025-02-28T15:24:44.4060816Z         $ python -m pip install toga-demo
+2025-02-28T15:24:44.4061066Z         $ toga-demo
+2025-02-28T15:24:44.4061251Z     
+2025-02-28T15:24:44.4061476Z     This will pop up a GUI window with some sample widgets.
+2025-02-28T15:24:44.4061760Z     
+2025-02-28T15:24:44.4061932Z     Documentation
+2025-02-28T15:24:44.4062125Z     -------------
+2025-02-28T15:24:44.4062301Z     
+2025-02-28T15:24:44.4062536Z     Documentation for Toga can be found on `Read The Docs`_.
+2025-02-28T15:24:44.4062824Z     
+2025-02-28T15:24:44.4063037Z     .. _Read The Docs: https://toga.readthedocs.io
+2025-02-28T15:24:44.4063308Z     
+2025-02-28T15:24:44.4063466Z     Community
+2025-02-28T15:24:44.4063646Z     ---------
+2025-02-28T15:24:44.4063830Z     
+2025-02-28T15:24:44.4064105Z     Toga is part of the `BeeWare suite`_. You can talk to the community through:
+2025-02-28T15:24:44.4064438Z     
+2025-02-28T15:24:44.4064627Z     * `@beeware@fosstodon.org on Mastodon`_
+2025-02-28T15:24:44.4064879Z     * `Discord`_
+2025-02-28T15:24:44.4065093Z     * The Toga `Github Discussions forum`_
+2025-02-28T15:24:44.4065339Z     
+2025-02-28T15:24:44.4065598Z     We foster a welcoming and respectful community as described in our
+2025-02-28T15:24:44.4065940Z     `BeeWare Community Code of Conduct`_.
+2025-02-28T15:24:44.4066186Z     
+2025-02-28T15:24:44.4066381Z     .. _BeeWare suite: https://beeware.org
+2025-02-28T15:24:44.4066874Z     .. _@beeware@fosstodon.org on Mastodon: https://fosstodon.org/@beeware
+2025-02-28T15:24:44.4067290Z     .. _Discord: https://beeware.org/bee/chat/
+2025-02-28T15:24:44.4067658Z     .. _Github Discussions forum: https://github.com/beeware/toga/discussions
+2025-02-28T15:24:44.4068280Z     .. _BeeWare Community Code of Conduct: https://beeware.org/community/behavior/
+2025-02-28T15:24:44.4068773Z     
+2025-02-28T15:24:44.4068943Z     Contributing
+2025-02-28T15:24:44.4069135Z     ------------
+2025-02-28T15:24:44.4069314Z     
+2025-02-28T15:24:44.4069584Z     If you'd like to contribute to Toga development, our `guide for first time
+2025-02-28T15:24:44.4069947Z     contributors`_ will help you get started.
+2025-02-28T15:24:44.4070205Z     
+2025-02-28T15:24:44.4070482Z     If you experience problems with Toga, `log them on GitHub`_. If you want to
+2025-02-28T15:24:44.4070925Z     contribute code, please `fork the code`_ and `submit a pull request`_.
+2025-02-28T15:24:44.4071246Z     
+2025-02-28T15:24:44.4071614Z     .. _guide for first time contributors: https://toga.readthedocs.io/en/latest/how-to/contribute/index.html
+2025-02-28T15:24:44.4072124Z     .. _log them on Github: https://github.com/beeware/toga/issues
+2025-02-28T15:24:44.4072471Z     .. _fork the code: https://github.com/beeware/toga
+2025-02-28T15:24:44.4072833Z     .. _submit a pull request: https://github.com/beeware/toga/pulls
+2025-02-28T15:24:44.4073154Z ----- End of Metadata -----
+2025-02-28T15:24:44.4160406Z ##[group]Run actions/upload-artifact@v4
+2025-02-28T15:24:44.4160676Z with:
+2025-02-28T15:24:44.4160873Z   name: Package Metadata-toga-core
+2025-02-28T15:24:44.4172711Z   path: /tmp/baipp/dist/out/sdist/*/PKG-INFO
+2025-02-28T15:24:44.4173067Z   if-no-files-found: warn
+2025-02-28T15:24:44.4173300Z   compression-level: 6
+2025-02-28T15:24:44.4173512Z   overwrite: false
+2025-02-28T15:24:44.4173729Z   include-hidden-files: false
+2025-02-28T15:24:44.4173958Z env:
+2025-02-28T15:24:44.4174128Z   FORCE_COLOR: 1
+2025-02-28T15:24:44.4174347Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:44.4174717Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:44.4175083Z ##[endgroup]
+2025-02-28T15:24:44.6350482Z With the provided path, there will be 1 file uploaded
+2025-02-28T15:24:44.6355672Z Artifact name is valid!
+2025-02-28T15:24:44.6357183Z Root directory input is valid!
+2025-02-28T15:24:44.7672069Z Beginning upload of artifact content to blob storage
+2025-02-28T15:24:44.9064110Z Uploaded bytes 2067
+2025-02-28T15:24:44.9432512Z Finished uploading artifact content to blob storage!
+2025-02-28T15:24:44.9435577Z SHA256 hash of uploaded artifact zip is b248337d768c4dcf657705085ba25724e2f69bcf1ea8f91c84723ffa5fe41acc
+2025-02-28T15:24:44.9437898Z Finalizing artifact upload
+2025-02-28T15:24:45.0437258Z Artifact Package Metadata-toga-core.zip successfully finalized. Artifact ID 2671287037
+2025-02-28T15:24:45.0438449Z Artifact Package Metadata-toga-core has been successfully uploaded! Final size is 2067 bytes. Artifact ID is 2671287037
+2025-02-28T15:24:45.0444843Z Artifact download URL: https://github.com/beeware/toga/actions/runs/13591189051/artifacts/2671287037
+2025-02-28T15:24:45.0539311Z ##[group]Run cat */PKG-INFO | python -c '
+2025-02-28T15:24:45.0539641Z [36;1mcat */PKG-INFO | python -c '[0m
+2025-02-28T15:24:45.0539932Z [36;1mimport email.parser[0m
+2025-02-28T15:24:45.0540168Z [36;1mimport sys[0m
+2025-02-28T15:24:45.0540367Z [36;1m[0m
+2025-02-28T15:24:45.0540620Z [36;1mem = email.parser.Parser().parsestr(sys.stdin.read())[0m
+2025-02-28T15:24:45.0540936Z [36;1msuffix = {[0m
+2025-02-28T15:24:45.0541149Z [36;1m    "text/markdown": "md",[0m
+2025-02-28T15:24:45.0541387Z [36;1m    "text/x-rst": "rst",[0m
+2025-02-28T15:24:45.0541651Z [36;1m}[em["Description-Content-Type"]][0m
+2025-02-28T15:24:45.0541961Z [36;1mwith open(f"PyPI-README.{suffix}", "w") as f:[0m
+2025-02-28T15:24:45.0542259Z [36;1m    f.write(em.get_payload())[0m
+2025-02-28T15:24:45.0542501Z [36;1m'[0m
+2025-02-28T15:24:45.0589017Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:45.0589346Z env:
+2025-02-28T15:24:45.0589524Z   FORCE_COLOR: 1
+2025-02-28T15:24:45.0589730Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:45.0590108Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:45.0590669Z ##[endgroup]
+2025-02-28T15:24:45.1073306Z ##[group]Run actions/upload-artifact@v4
+2025-02-28T15:24:45.1073734Z with:
+2025-02-28T15:24:45.1074055Z   name: PyPI README-toga-core
+2025-02-28T15:24:45.1074503Z   path: /tmp/baipp/dist/out/sdist/PyPI-README.*
+2025-02-28T15:24:45.1074971Z   if-no-files-found: warn
+2025-02-28T15:24:45.1075344Z   compression-level: 6
+2025-02-28T15:24:45.1075695Z   overwrite: false
+2025-02-28T15:24:45.1076038Z   include-hidden-files: false
+2025-02-28T15:24:45.1076421Z env:
+2025-02-28T15:24:45.1076707Z   FORCE_COLOR: 1
+2025-02-28T15:24:45.1077570Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:45.1078088Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:45.1078542Z ##[endgroup]
+2025-02-28T15:24:45.3249772Z With the provided path, there will be 1 file uploaded
+2025-02-28T15:24:45.3255305Z Artifact name is valid!
+2025-02-28T15:24:45.3256471Z Root directory input is valid!
+2025-02-28T15:24:45.4442427Z Beginning upload of artifact content to blob storage
+2025-02-28T15:24:45.5669124Z Uploaded bytes 1121
+2025-02-28T15:24:45.6031082Z Finished uploading artifact content to blob storage!
+2025-02-28T15:24:45.6033448Z SHA256 hash of uploaded artifact zip is c72b9713513dcbd31cd5fbb9fbaca85305030f7d4caa22a28f9f382bdf3838fe
+2025-02-28T15:24:45.6035612Z Finalizing artifact upload
+2025-02-28T15:24:45.6793933Z Artifact PyPI README-toga-core.zip successfully finalized. Artifact ID 2671287106
+2025-02-28T15:24:45.6795665Z Artifact PyPI README-toga-core has been successfully uploaded! Final size is 1121 bytes. Artifact ID is 2671287106
+2025-02-28T15:24:45.6802545Z Artifact download URL: https://github.com/beeware/toga/actions/runs/13591189051/artifacts/2671287106
+2025-02-28T15:24:45.6898650Z ##[group]Run cat */PKG-INFO | python -c '
+2025-02-28T15:24:45.6898971Z [36;1mcat */PKG-INFO | python -c '[0m
+2025-02-28T15:24:45.6899236Z [36;1mimport email.parser[0m
+2025-02-28T15:24:45.6899466Z [36;1mimport json, re, sys[0m
+2025-02-28T15:24:45.6899701Z [36;1m[0m
+2025-02-28T15:24:45.6899985Z [36;1mpkg_info = email.parser.Parser().parsestr(sys.stdin.read())[0m
+2025-02-28T15:24:45.6900307Z [36;1m[0m
+2025-02-28T15:24:45.6900489Z [36;1mversion_tokens = [][0m
+2025-02-28T15:24:45.6900784Z [36;1mfor classifier in pkg_info.get_all("Classifier", []):[0m
+2025-02-28T15:24:45.6901220Z [36;1m    if match := re.match(r"Programming Language :: Python :: (\d+\.\d+)$", classifier):[0m
+2025-02-28T15:24:45.6901635Z [36;1m        version_tokens.append(match.group(1))[0m
+2025-02-28T15:24:45.6901907Z [36;1m[0m
+2025-02-28T15:24:45.6902144Z [36;1mpackage_version = pkg_info.get("Version", "0.0.0")[0m
+2025-02-28T15:24:45.6902433Z [36;1m[0m
+2025-02-28T15:24:45.6902643Z [36;1mprint(f"package_version={package_version}")[0m
+2025-02-28T15:24:45.6903062Z [36;1mprint(f"supported_python_classifiers_json_array={json.dumps(version_tokens)}")[0m
+2025-02-28T15:24:45.6903696Z [36;1mprint(f"""supported_python_classifiers_json_job_matrix_value={json.dumps({"python-version": version_tokens})}""")[0m
+2025-02-28T15:24:45.6904185Z [36;1m' >> $GITHUB_OUTPUT[0m
+2025-02-28T15:24:45.6950704Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:45.6951024Z env:
+2025-02-28T15:24:45.6951201Z   FORCE_COLOR: 1
+2025-02-28T15:24:45.6951415Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:45.6951778Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:45.6952140Z ##[endgroup]
+2025-02-28T15:24:45.7466099Z ##[group]Run # trim the differentiator to generate the artifact's basename
+2025-02-28T15:24:45.7466591Z [36;1m# trim the differentiator to generate the artifact's basename[0m
+2025-02-28T15:24:45.7467600Z [36;1mecho "basename=${BASENAME%-core}" | tee -a ${GITHUB_OUTPUT}[0m
+2025-02-28T15:24:45.7513729Z shell: /usr/bin/bash -e {0}
+2025-02-28T15:24:45.7513978Z env:
+2025-02-28T15:24:45.7514155Z   FORCE_COLOR: 1
+2025-02-28T15:24:45.7514407Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:45.7514793Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:45.7515392Z   BASENAME: Packages-toga-core
+2025-02-28T15:24:45.7515624Z ##[endgroup]
+2025-02-28T15:24:45.7596993Z basename=Packages-toga
+2025-02-28T15:24:45.7738173Z Post job cleanup.
+2025-02-28T15:24:45.7767473Z Post job cleanup.
+2025-02-28T15:24:45.9067777Z Cache hit occurred on the primary key baipp-3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f, not saving cache.
+2025-02-28T15:24:45.9144973Z Post job cleanup.
+2025-02-28T15:24:46.0922392Z Post job cleanup.
+2025-02-28T15:24:46.1903787Z [command]/usr/bin/git version
+2025-02-28T15:24:46.1946611Z git version 2.48.1
+2025-02-28T15:24:46.1997231Z Temporarily overriding HOME='/home/runner/work/_temp/204a8fe3-94db-4ef3-bc92-744e1e39e13d' before making global git config changes
+2025-02-28T15:24:46.1998414Z Adding repository directory to the temporary git global config as a safe directory
+2025-02-28T15:24:46.2011269Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/toga/toga
+2025-02-28T15:24:46.2050915Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-02-28T15:24:46.2087420Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-02-28T15:24:46.2334238Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-02-28T15:24:46.2358512Z http.https://github.com/.extraheader
+2025-02-28T15:24:46.2372690Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2025-02-28T15:24:46.2408698Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-02-28T15:24:46.2762680Z Evaluate and set job outputs
+2025-02-28T15:24:46.2767637Z Set output 'artifact-name'
+2025-02-28T15:24:46.2769348Z Set output 'artifact-basename'
+2025-02-28T15:24:46.2770560Z Cleaning up orphan processes

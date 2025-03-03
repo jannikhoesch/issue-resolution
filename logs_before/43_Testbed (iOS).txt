@@ -1,0 +1,1404 @@
+﻿2025-02-24T05:29:46.2680810Z Current runner version: '2.322.0'
+2025-02-24T05:29:46.2699960Z ##[group]Operating System
+2025-02-24T05:29:46.2700480Z macOS
+2025-02-24T05:29:46.2700820Z 14.7.2
+2025-02-24T05:29:46.2701130Z 23H311
+2025-02-24T05:29:46.2701440Z ##[endgroup]
+2025-02-24T05:29:46.2701820Z ##[group]Runner Image
+2025-02-24T05:29:46.2702260Z Image: macos-14-arm64
+2025-02-24T05:29:46.2702760Z Version: 20250120.774
+2025-02-24T05:29:46.2703480Z Included Software: https://github.com/actions/runner-images/blob/macos-14-arm64/20250120.774/images/macos/macos-14-arm64-Readme.md
+2025-02-24T05:29:46.2704460Z Image Release: https://github.com/actions/runner-images/releases/tag/macos-14-arm64%2F20250120.774
+2025-02-24T05:29:46.2705140Z ##[endgroup]
+2025-02-24T05:29:46.2705510Z ##[group]Runner Image Provisioner
+2025-02-24T05:29:46.2705990Z 2.0.422.1+55c30c14fe2a0a1547db1b656933ae07d97649a9
+2025-02-24T05:29:46.2706430Z ##[endgroup]
+2025-02-24T05:29:46.2707970Z ##[group]GITHUB_TOKEN Permissions
+2025-02-24T05:29:46.2709340Z Actions: write
+2025-02-24T05:29:46.2709700Z Attestations: write
+2025-02-24T05:29:46.2710030Z Checks: write
+2025-02-24T05:29:46.2710370Z Contents: write
+2025-02-24T05:29:46.2710690Z Deployments: write
+2025-02-24T05:29:46.2711100Z Discussions: write
+2025-02-24T05:29:46.2711450Z Issues: write
+2025-02-24T05:29:46.2711770Z Metadata: read
+2025-02-24T05:29:46.2760630Z Packages: write
+2025-02-24T05:29:46.2761070Z Pages: write
+2025-02-24T05:29:46.2761390Z PullRequests: write
+2025-02-24T05:29:46.2761740Z RepositoryProjects: write
+2025-02-24T05:29:46.2762120Z SecurityEvents: write
+2025-02-24T05:29:46.2762460Z Statuses: write
+2025-02-24T05:29:46.2762780Z ##[endgroup]
+2025-02-24T05:29:46.2765960Z Secret source: Actions
+2025-02-24T05:29:46.2766390Z Prepare workflow directory
+2025-02-24T05:29:46.3026750Z Prepare all required actions
+2025-02-24T05:29:46.3053620Z Getting action download info
+2025-02-24T05:29:46.5907620Z Download action repository 'smorimoto/tune-github-hosted-runner-network@v1.0.0' (SHA:bb252dcb5c8609a31087e7993daa086f5a1c0069)
+2025-02-24T05:29:47.2749540Z ##[group]Download immutable action package 'actions/checkout@v4.2.2'
+2025-02-24T05:29:47.2750470Z Version: 4.2.2
+2025-02-24T05:29:47.2751370Z Digest: sha256:ccb2698953eaebd21c7bf6268a94f9c26518a7e38e27e0b83c1fe1ad049819b1
+2025-02-24T05:29:47.2752150Z Source commit SHA: 11bd71901bbe5b1630ceea73d27597364c9af683
+2025-02-24T05:29:47.2752690Z ##[endgroup]
+2025-02-24T05:29:47.4017890Z ##[group]Download immutable action package 'actions/setup-python@v5.4.0'
+2025-02-24T05:29:47.4018650Z Version: 5.4.0
+2025-02-24T05:29:47.4019250Z Digest: sha256:6003df952c8106bcd378d2ba997eef202da924317a57269dfa72449b135adb7f
+2025-02-24T05:29:47.4020140Z Source commit SHA: 42375524e23c412d93fb67b49958b491fce71c38
+2025-02-24T05:29:47.4020780Z ##[endgroup]
+2025-02-24T05:29:47.8250540Z ##[group]Download immutable action package 'actions/download-artifact@v4.1.8'
+2025-02-24T05:29:47.8251660Z Version: 4.1.8
+2025-02-24T05:29:47.8252510Z Digest: sha256:917365d881f32f077924458e108599cbeed2ddd6092ee5edbe0da4d4b2eba355
+2025-02-24T05:29:47.8253570Z Source commit SHA: fa0a91b85d4f404e444e00e005971372dc801d16
+2025-02-24T05:29:47.8254290Z ##[endgroup]
+2025-02-24T05:29:48.1815130Z ##[group]Download immutable action package 'actions/upload-artifact@v4.6.1'
+2025-02-24T05:29:48.1816860Z Version: 4.6.1
+2025-02-24T05:29:48.1818140Z Digest: sha256:3f6a28e7a1e0b5c8e2249e28da121a049fa5b91863b04390a46a82e4f8e2da98
+2025-02-24T05:29:48.1819890Z Source commit SHA: 4cec3d8aa04e39d1a68397de0c4cd6fb9dce8ec1
+2025-02-24T05:29:48.1821310Z ##[endgroup]
+2025-02-24T05:29:48.6984540Z Complete job name: Testbed (iOS)
+2025-02-24T05:29:48.7487730Z ##[group]Run smorimoto/tune-github-hosted-runner-network@v1.0.0
+2025-02-24T05:29:48.7489870Z env:
+2025-02-24T05:29:48.7490400Z   min_python_version: 3.9
+2025-02-24T05:29:48.7491000Z   max_python_version: 3.12
+2025-02-24T05:29:48.7491590Z   FORCE_COLOR: 1
+2025-02-24T05:29:48.7492110Z ##[endgroup]
+2025-02-24T05:29:48.7607910Z ##[group]Run sudo sysctl -w net.link.generic.system.hwcksum_tx=0
+2025-02-24T05:29:48.7609490Z [36;1msudo sysctl -w net.link.generic.system.hwcksum_tx=0[0m
+2025-02-24T05:29:48.7610470Z [36;1msudo sysctl -w net.link.generic.system.hwcksum_rx=0[0m
+2025-02-24T05:29:48.7668780Z shell: /bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-24T05:29:48.7669590Z env:
+2025-02-24T05:29:48.7670120Z   min_python_version: 3.9
+2025-02-24T05:29:48.7670720Z   max_python_version: 3.12
+2025-02-24T05:29:48.7671340Z   FORCE_COLOR: 1
+2025-02-24T05:29:48.7671880Z ##[endgroup]
+2025-02-24T05:29:48.8266120Z net.link.generic.system.hwcksum_tx: 1 -> 0
+2025-02-24T05:29:48.8373360Z net.link.generic.system.hwcksum_rx: 1 -> 0
+2025-02-24T05:29:48.8575880Z ##[group]Run actions/checkout@v4.2.2
+2025-02-24T05:29:48.8576650Z with:
+2025-02-24T05:29:48.8577190Z   fetch-depth: 0
+2025-02-24T05:29:48.8577760Z   repository: beeware/toga
+2025-02-24T05:29:48.8578750Z   token: ***
+2025-02-24T05:29:48.8579260Z   ssh-strict: true
+2025-02-24T05:29:48.8579800Z   ssh-user: git
+2025-02-24T05:29:48.8580360Z   persist-credentials: true
+2025-02-24T05:29:48.8581020Z   clean: true
+2025-02-24T05:29:48.8581580Z   sparse-checkout-cone-mode: true
+2025-02-24T05:29:48.8582240Z   fetch-tags: false
+2025-02-24T05:29:48.8582790Z   show-progress: true
+2025-02-24T05:29:48.8583330Z   lfs: false
+2025-02-24T05:29:48.8583870Z   submodules: false
+2025-02-24T05:29:48.8584440Z   set-safe-directory: true
+2025-02-24T05:29:48.8585150Z env:
+2025-02-24T05:29:48.8585660Z   min_python_version: 3.9
+2025-02-24T05:29:48.8586270Z   max_python_version: 3.12
+2025-02-24T05:29:48.8586870Z   FORCE_COLOR: 1
+2025-02-24T05:29:48.8587400Z ##[endgroup]
+2025-02-24T05:29:49.2675910Z Syncing repository: beeware/toga
+2025-02-24T05:29:49.2677980Z ##[group]Getting Git version info
+2025-02-24T05:29:49.2678770Z Working directory is '/Users/runner/work/toga/toga'
+2025-02-24T05:29:49.2682490Z [command]/opt/homebrew/bin/git version
+2025-02-24T05:29:49.3273320Z git version 2.48.1
+2025-02-24T05:29:49.3301410Z ##[endgroup]
+2025-02-24T05:29:49.3310710Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/d7403ea7-b295-4133-84e1-2159530c637c/.gitconfig'
+2025-02-24T05:29:49.3325900Z Temporarily overriding HOME='/Users/runner/work/_temp/d7403ea7-b295-4133-84e1-2159530c637c' before making global git config changes
+2025-02-24T05:29:49.3330490Z Adding repository directory to the temporary git global config as a safe directory
+2025-02-24T05:29:49.3338150Z [command]/opt/homebrew/bin/git config --global --add safe.directory /Users/runner/work/toga/toga
+2025-02-24T05:29:49.3457630Z Deleting the contents of '/Users/runner/work/toga/toga'
+2025-02-24T05:29:49.3461660Z ##[group]Initializing the repository
+2025-02-24T05:29:49.3466710Z [command]/opt/homebrew/bin/git init /Users/runner/work/toga/toga
+2025-02-24T05:29:49.3678560Z hint: Using 'master' as the name for the initial branch. This default branch name
+2025-02-24T05:29:49.3681930Z hint: is subject to change. To configure the initial branch name to use in all
+2025-02-24T05:29:49.3684840Z hint: of your new repositories, which will suppress this warning, call:
+2025-02-24T05:29:49.3687260Z hint:
+2025-02-24T05:29:49.3688880Z hint: 	git config --global init.defaultBranch <name>
+2025-02-24T05:29:49.3690680Z hint:
+2025-02-24T05:29:49.3692420Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2025-02-24T05:29:49.3695450Z hint: 'development'. The just-created branch can be renamed via this command:
+2025-02-24T05:29:49.3697790Z hint:
+2025-02-24T05:29:49.3699110Z hint: 	git branch -m <name>
+2025-02-24T05:29:49.3701280Z Initialized empty Git repository in /Users/runner/work/toga/toga/.git/
+2025-02-24T05:29:49.3707910Z [command]/opt/homebrew/bin/git remote add origin https://github.com/beeware/toga
+2025-02-24T05:29:49.3807910Z ##[endgroup]
+2025-02-24T05:29:49.3809090Z ##[group]Disabling automatic garbage collection
+2025-02-24T05:29:49.3815570Z [command]/opt/homebrew/bin/git config --local gc.auto 0
+2025-02-24T05:29:49.3881500Z ##[endgroup]
+2025-02-24T05:29:49.3884360Z ##[group]Setting up auth
+2025-02-24T05:29:49.3887180Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-02-24T05:29:49.3962360Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-02-24T05:29:49.4999060Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-02-24T05:29:49.5061280Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-02-24T05:29:49.5791330Z [command]/opt/homebrew/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2025-02-24T05:29:49.5883500Z ##[endgroup]
+2025-02-24T05:29:49.5885030Z ##[group]Fetching the repository
+2025-02-24T05:29:49.5887110Z [command]/opt/homebrew/bin/git -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+2025-02-24T05:29:52.2230650Z From https://github.com/beeware/toga
+2025-02-24T05:29:52.2331950Z  * [new branch]          main         -> origin/main
+2025-02-24T05:29:52.2366320Z  * [new branch]          pre-0.5      -> origin/pre-0.5
+2025-02-24T05:29:52.2389210Z  * [new tag]             0.2.6        -> 0.2.6
+2025-02-24T05:29:52.2389810Z  * [new tag]             v0.0.1rc1    -> v0.0.1rc1
+2025-02-24T05:29:52.2390250Z  * [new tag]             v0.0.1rc10   -> v0.0.1rc10
+2025-02-24T05:29:52.2390710Z  * [new tag]             v0.0.1rc5    -> v0.0.1rc5
+2025-02-24T05:29:52.2391070Z  * [new tag]             v0.0.1rc6    -> v0.0.1rc6
+2025-02-24T05:29:52.2391930Z  * [new tag]             v0.1.0       -> v0.1.0
+2025-02-24T05:29:52.2392460Z  * [new tag]             v0.1.1       -> v0.1.1
+2025-02-24T05:29:52.2392850Z  * [new tag]             v0.1.2       -> v0.1.2
+2025-02-24T05:29:52.2393220Z  * [new tag]             v0.2.0       -> v0.2.0
+2025-02-24T05:29:52.2393550Z  * [new tag]             v0.2.0.dev1  -> v0.2.0.dev1
+2025-02-24T05:29:52.2394420Z  * [new tag]             v0.2.1       -> v0.2.1
+2025-02-24T05:29:52.2394960Z  * [new tag]             v0.2.10      -> v0.2.10
+2025-02-24T05:29:52.2395470Z  * [new tag]             v0.2.11      -> v0.2.11
+2025-02-24T05:29:52.2396000Z  * [new tag]             v0.2.12      -> v0.2.12
+2025-02-24T05:29:52.2396710Z  * [new tag]             v0.2.13      -> v0.2.13
+2025-02-24T05:29:52.2397190Z  * [new tag]             v0.2.14      -> v0.2.14
+2025-02-24T05:29:52.2397790Z  * [new tag]             v0.2.15      -> v0.2.15
+2025-02-24T05:29:52.2398180Z  * [new tag]             v0.2.2       -> v0.2.2
+2025-02-24T05:29:52.2399630Z  * [new tag]             v0.2.3       -> v0.2.3
+2025-02-24T05:29:52.2400100Z  * [new tag]             v0.2.4       -> v0.2.4
+2025-02-24T05:29:52.2400550Z  * [new tag]             v0.2.5       -> v0.2.5
+2025-02-24T05:29:52.2400870Z  * [new tag]             v0.2.6       -> v0.2.6
+2025-02-24T05:29:52.2401520Z  * [new tag]             v0.2.7       -> v0.2.7
+2025-02-24T05:29:52.2401900Z  * [new tag]             v0.2.8       -> v0.2.8
+2025-02-24T05:29:52.2402290Z  * [new tag]             v0.2.9       -> v0.2.9
+2025-02-24T05:29:52.2403510Z  * [new tag]             v0.3.0       -> v0.3.0
+2025-02-24T05:29:52.2404250Z  * [new tag]             v0.3.0.dev1  -> v0.3.0.dev1
+2025-02-24T05:29:52.2404790Z  * [new tag]             v0.3.0.dev10 -> v0.3.0.dev10
+2025-02-24T05:29:52.2405270Z  * [new tag]             v0.3.0.dev11 -> v0.3.0.dev11
+2025-02-24T05:29:52.2405880Z  * [new tag]             v0.3.0.dev12 -> v0.3.0.dev12
+2025-02-24T05:29:52.2406300Z  * [new tag]             v0.3.0.dev13 -> v0.3.0.dev13
+2025-02-24T05:29:52.2408350Z  * [new tag]             v0.3.0.dev14 -> v0.3.0.dev14
+2025-02-24T05:29:52.2413460Z  * [new tag]             v0.3.0.dev15 -> v0.3.0.dev15
+2025-02-24T05:29:52.2413870Z  * [new tag]             v0.3.0.dev16 -> v0.3.0.dev16
+2025-02-24T05:29:52.2414420Z  * [new tag]             v0.3.0.dev17 -> v0.3.0.dev17
+2025-02-24T05:29:52.2415300Z  * [new tag]             v0.3.0.dev18 -> v0.3.0.dev18
+2025-02-24T05:29:52.2415620Z  * [new tag]             v0.3.0.dev19 -> v0.3.0.dev19
+2025-02-24T05:29:52.2415980Z  * [new tag]             v0.3.0.dev2  -> v0.3.0.dev2
+2025-02-24T05:29:52.2416400Z  * [new tag]             v0.3.0.dev20 -> v0.3.0.dev20
+2025-02-24T05:29:52.2416880Z  * [new tag]             v0.3.0.dev21 -> v0.3.0.dev21
+2025-02-24T05:29:52.2417270Z  * [new tag]             v0.3.0.dev22 -> v0.3.0.dev22
+2025-02-24T05:29:52.2417710Z  * [new tag]             v0.3.0.dev23 -> v0.3.0.dev23
+2025-02-24T05:29:52.2418360Z  * [new tag]             v0.3.0.dev24 -> v0.3.0.dev24
+2025-02-24T05:29:52.2418800Z  * [new tag]             v0.3.0.dev25 -> v0.3.0.dev25
+2025-02-24T05:29:52.2419240Z  * [new tag]             v0.3.0.dev26 -> v0.3.0.dev26
+2025-02-24T05:29:52.2419680Z  * [new tag]             v0.3.0.dev27 -> v0.3.0.dev27
+2025-02-24T05:29:52.2420090Z  * [new tag]             v0.3.0.dev28 -> v0.3.0.dev28
+2025-02-24T05:29:52.2420550Z  * [new tag]             v0.3.0.dev29 -> v0.3.0.dev29
+2025-02-24T05:29:52.2420910Z  * [new tag]             v0.3.0.dev3  -> v0.3.0.dev3
+2025-02-24T05:29:52.2421280Z  * [new tag]             v0.3.0.dev30 -> v0.3.0.dev30
+2025-02-24T05:29:52.2423790Z  * [new tag]             v0.3.0.dev32 -> v0.3.0.dev32
+2025-02-24T05:29:52.2424150Z  * [new tag]             v0.3.0.dev33 -> v0.3.0.dev33
+2025-02-24T05:29:52.2424530Z  * [new tag]             v0.3.0.dev34 -> v0.3.0.dev34
+2025-02-24T05:29:52.2424930Z  * [new tag]             v0.3.0.dev35 -> v0.3.0.dev35
+2025-02-24T05:29:52.2425390Z  * [new tag]             v0.3.0.dev36 -> v0.3.0.dev36
+2025-02-24T05:29:52.2425720Z  * [new tag]             v0.3.0.dev37 -> v0.3.0.dev37
+2025-02-24T05:29:52.2426030Z  * [new tag]             v0.3.0.dev38 -> v0.3.0.dev38
+2025-02-24T05:29:52.2426350Z  * [new tag]             v0.3.0.dev39 -> v0.3.0.dev39
+2025-02-24T05:29:52.2426670Z  * [new tag]             v0.3.0.dev4  -> v0.3.0.dev4
+2025-02-24T05:29:52.2428230Z  * [new tag]             v0.3.0.dev5  -> v0.3.0.dev5
+2025-02-24T05:29:52.2428570Z  * [new tag]             v0.3.0.dev6  -> v0.3.0.dev6
+2025-02-24T05:29:52.2428920Z  * [new tag]             v0.3.0.dev7  -> v0.3.0.dev7
+2025-02-24T05:29:52.2429560Z  * [new tag]             v0.3.0.dev8  -> v0.3.0.dev8
+2025-02-24T05:29:52.2429910Z  * [new tag]             v0.3.0.dev9  -> v0.3.0.dev9
+2025-02-24T05:29:52.2430220Z  * [new tag]             v0.3.0rc0    -> v0.3.0rc0
+2025-02-24T05:29:52.2430540Z  * [new tag]             v0.3.1       -> v0.3.1
+2025-02-24T05:29:52.2430850Z  * [new tag]             v0.4.0       -> v0.4.0
+2025-02-24T05:29:52.2431150Z  * [new tag]             v0.4.1       -> v0.4.1
+2025-02-24T05:29:52.2431450Z  * [new tag]             v0.4.2       -> v0.4.2
+2025-02-24T05:29:52.2431740Z  * [new tag]             v0.4.3       -> v0.4.3
+2025-02-24T05:29:52.2432080Z  * [new tag]             v0.4.4       -> v0.4.4
+2025-02-24T05:29:52.2432430Z  * [new tag]             v0.4.5       -> v0.4.5
+2025-02-24T05:29:52.2432730Z  * [new tag]             v0.4.6       -> v0.4.6
+2025-02-24T05:29:52.2433030Z  * [new tag]             v0.4.7       -> v0.4.7
+2025-02-24T05:29:52.2433340Z  * [new tag]             v0.4.8       -> v0.4.8
+2025-02-24T05:29:52.2433710Z  * [new tag]             v0.4.9       -> v0.4.9
+2025-02-24T05:29:52.2435220Z [command]/opt/homebrew/bin/git branch --list --remote origin/main
+2025-02-24T05:29:52.2471410Z   origin/main
+2025-02-24T05:29:52.2477200Z [command]/opt/homebrew/bin/git rev-parse refs/remotes/origin/main
+2025-02-24T05:29:52.2509150Z 01152b56b9607a5cc1dabb9e94970cc589baff01
+2025-02-24T05:29:52.2512570Z ##[endgroup]
+2025-02-24T05:29:52.2513000Z ##[group]Determining the checkout info
+2025-02-24T05:29:52.2513400Z ##[endgroup]
+2025-02-24T05:29:52.2516970Z [command]/opt/homebrew/bin/git sparse-checkout disable
+2025-02-24T05:29:52.2674690Z [command]/opt/homebrew/bin/git config --local --unset-all extensions.worktreeConfig
+2025-02-24T05:29:52.2710640Z ##[group]Checking out the ref
+2025-02-24T05:29:52.2711180Z [command]/opt/homebrew/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2025-02-24T05:29:52.6357050Z Switched to a new branch 'main'
+2025-02-24T05:29:52.6360450Z branch 'main' set up to track 'origin/main'.
+2025-02-24T05:29:52.6375450Z ##[endgroup]
+2025-02-24T05:29:52.6494010Z [command]/opt/homebrew/bin/git log -1 --format=%H
+2025-02-24T05:29:52.6515670Z 01152b56b9607a5cc1dabb9e94970cc589baff01
+2025-02-24T05:29:52.6757230Z ##[group]Run actions/setup-python@v5.4.0
+2025-02-24T05:29:52.6757940Z with:
+2025-02-24T05:29:52.6758370Z   python-version: 3.12
+2025-02-24T05:29:52.6758910Z   check-latest: false
+2025-02-24T05:29:52.6759820Z   token: ***
+2025-02-24T05:29:52.6760240Z   update-environment: true
+2025-02-24T05:29:52.6760750Z   allow-prereleases: false
+2025-02-24T05:29:52.6761200Z env:
+2025-02-24T05:29:52.6761580Z   min_python_version: 3.9
+2025-02-24T05:29:52.6762060Z   max_python_version: 3.12
+2025-02-24T05:29:52.6762520Z   FORCE_COLOR: 1
+2025-02-24T05:29:52.6784880Z ##[endgroup]
+2025-02-24T05:29:52.8784440Z ##[group]Installed versions
+2025-02-24T05:29:52.8920850Z Successfully set up CPython (3.12.8)
+2025-02-24T05:29:52.8921730Z ##[endgroup]
+2025-02-24T05:29:52.9007300Z ##[group]Run # Use the development version of Briefcase
+2025-02-24T05:29:52.9007620Z [36;1m[0m
+2025-02-24T05:29:52.9007800Z [36;1m# Use the development version of Briefcase[0m
+2025-02-24T05:29:52.9008060Z [36;1mpython -m pip install -U pip[0m
+2025-02-24T05:29:52.9008430Z [36;1mpython -m pip install git+https://github.com/beeware/briefcase.git[0m
+2025-02-24T05:29:52.9083770Z shell: /bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-24T05:29:52.9084050Z env:
+2025-02-24T05:29:52.9084200Z   min_python_version: 3.9
+2025-02-24T05:29:52.9084370Z   max_python_version: 3.12
+2025-02-24T05:29:52.9084570Z   FORCE_COLOR: 1
+2025-02-24T05:29:52.9084810Z   pythonLocation: /Users/runner/hostedtoolcache/Python/3.12.8/arm64
+2025-02-24T05:29:52.9085250Z   PKG_CONFIG_PATH: /Users/runner/hostedtoolcache/Python/3.12.8/arm64/lib/pkgconfig
+2025-02-24T05:29:52.9085700Z   Python_ROOT_DIR: /Users/runner/hostedtoolcache/Python/3.12.8/arm64
+2025-02-24T05:29:52.9086570Z   Python2_ROOT_DIR: /Users/runner/hostedtoolcache/Python/3.12.8/arm64
+2025-02-24T05:29:52.9086910Z   Python3_ROOT_DIR: /Users/runner/hostedtoolcache/Python/3.12.8/arm64
+2025-02-24T05:29:52.9087190Z   PIP_BREAK_SYSTEM_PACKAGES: 1
+2025-02-24T05:29:52.9087380Z ##[endgroup]
+2025-02-24T05:29:54.6744770Z Requirement already satisfied: pip in /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages (24.3.1)
+2025-02-24T05:29:54.8440760Z Collecting pip
+2025-02-24T05:29:54.8773600Z   Downloading pip-25.0.1-py3-none-any.whl.metadata (3.7 kB)
+2025-02-24T05:29:54.9254290Z Downloading pip-25.0.1-py3-none-any.whl (1.8 MB)
+2025-02-24T05:29:54.9720570Z [?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/1.8 MB[0m [31m?[0m eta [36m-:--:--[0m
+2025-02-24T05:29:54.9721160Z [2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1.8/1.8 MB[0m [31m54.1 MB/s[0m eta [36m0:00:00[0m
+2025-02-24T05:29:54.9928510Z [?25hInstalling collected packages: pip
+2025-02-24T05:29:54.9929560Z   Attempting uninstall: pip
+2025-02-24T05:29:54.9942330Z     Found existing installation: pip 24.3.1
+2025-02-24T05:29:55.0264520Z     Uninstalling pip-24.3.1:
+2025-02-24T05:29:55.2626150Z       Successfully uninstalled pip-24.3.1
+2025-02-24T05:29:56.1267480Z Successfully installed pip-25.0.1
+2025-02-24T05:29:56.7372380Z Collecting git+https://github.com/beeware/briefcase.git
+2025-02-24T05:29:56.7672680Z   Cloning https://github.com/beeware/briefcase.git to /private/var/folders/2s/h6hvv9ps03xgz_krkkstvq_r0000gn/T/pip-req-build-joaeqnen
+2025-02-24T05:29:56.7876580Z   Running command git clone --filter=blob:none --quiet https://github.com/beeware/briefcase.git /private/var/folders/2s/h6hvv9ps03xgz_krkkstvq_r0000gn/T/pip-req-build-joaeqnen
+2025-02-24T05:29:58.5996610Z   Resolved https://github.com/beeware/briefcase.git to commit 647c8ff5965677d4cee5cccaa37536b2d744096e
+2025-02-24T05:29:58.6069190Z   Installing build dependencies: started
+2025-02-24T05:30:00.1367470Z   Installing build dependencies: finished with status 'done'
+2025-02-24T05:30:00.1373970Z   Getting requirements to build wheel: started
+2025-02-24T05:30:00.5543580Z   Getting requirements to build wheel: finished with status 'done'
+2025-02-24T05:30:00.5553610Z   Preparing metadata (pyproject.toml): started
+2025-02-24T05:30:00.9332420Z   Preparing metadata (pyproject.toml): finished with status 'done'
+2025-02-24T05:30:00.9716710Z Collecting packaging>=24.2 (from briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:00.9729980Z   Using cached packaging-24.2-py3-none-any.whl.metadata (3.2 kB)
+2025-02-24T05:30:00.9747300Z Requirement already satisfied: pip>=24.3 in /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages (from briefcase==0.3.23.dev11+g647c8ff5) (25.0.1)
+2025-02-24T05:30:01.0457450Z Collecting setuptools>=60 (from briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:01.0469170Z   Using cached setuptools-75.8.0-py3-none-any.whl.metadata (6.7 kB)
+2025-02-24T05:30:01.0790120Z Collecting wheel>=0.37 (from briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:01.1127250Z   Downloading wheel-0.45.1-py3-none-any.whl.metadata (2.3 kB)
+2025-02-24T05:30:01.1455240Z Collecting build>=0.10 (from briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:01.1546770Z   Downloading build-1.2.2.post1-py3-none-any.whl.metadata (6.5 kB)
+2025-02-24T05:30:01.1794840Z Collecting cookiecutter<3.0,>=2.6.0 (from briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:01.1889110Z   Downloading cookiecutter-2.6.0-py3-none-any.whl.metadata (7.3 kB)
+2025-02-24T05:30:01.2830880Z Collecting dmgbuild<2.0,>=1.6.4 (from briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:01.2901440Z   Downloading dmgbuild-1.6.4-py3-none-any.whl.metadata (3.2 kB)
+2025-02-24T05:30:01.3186770Z Collecting GitPython<4.0,>=3.1 (from briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:01.3338030Z   Downloading GitPython-3.1.44-py3-none-any.whl.metadata (13 kB)
+2025-02-24T05:30:01.3695950Z Collecting platformdirs<5.0,>=2.6 (from briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:01.3792680Z   Downloading platformdirs-4.3.6-py3-none-any.whl.metadata (11 kB)
+2025-02-24T05:30:01.4415850Z Collecting psutil<8.0,>=5.9 (from briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:01.4502290Z   Downloading psutil-7.0.0-cp36-abi3-macosx_11_0_arm64.whl.metadata (22 kB)
+2025-02-24T05:30:01.4698120Z Collecting python-dateutil>=2.9.0.post0 (from briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:01.4748540Z   Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+2025-02-24T05:30:01.4987590Z Collecting httpx<1.0,>=0.20 (from briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:01.5046800Z   Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+2025-02-24T05:30:01.5359360Z Collecting rich<14.0,>=12.6 (from briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:01.5401270Z   Downloading rich-13.9.4-py3-none-any.whl.metadata (18 kB)
+2025-02-24T05:30:01.5581850Z Collecting tomli_w<2.0,>=1.0 (from briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:01.5642140Z   Downloading tomli_w-1.2.0-py3-none-any.whl.metadata (5.7 kB)
+2025-02-24T05:30:01.5802620Z Collecting pyproject_hooks (from build>=0.10->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:01.5838270Z   Downloading pyproject_hooks-1.2.0-py3-none-any.whl.metadata (1.3 kB)
+2025-02-24T05:30:01.6033950Z Collecting binaryornot>=0.4.4 (from cookiecutter<3.0,>=2.6.0->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:01.6141680Z   Downloading binaryornot-0.4.4-py2.py3-none-any.whl.metadata (6.0 kB)
+2025-02-24T05:30:01.6285100Z Collecting Jinja2<4.0.0,>=2.7 (from cookiecutter<3.0,>=2.6.0->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:01.6467170Z   Downloading jinja2-3.1.5-py3-none-any.whl.metadata (2.6 kB)
+2025-02-24T05:30:01.6621130Z Collecting click<9.0.0,>=7.0 (from cookiecutter<3.0,>=2.6.0->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:01.6722310Z   Downloading click-8.1.8-py3-none-any.whl.metadata (2.3 kB)
+2025-02-24T05:30:01.6960430Z Collecting pyyaml>=5.3.1 (from cookiecutter<3.0,>=2.6.0->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:01.7013190Z   Downloading PyYAML-6.0.2-cp312-cp312-macosx_11_0_arm64.whl.metadata (2.1 kB)
+2025-02-24T05:30:01.7168150Z Collecting python-slugify>=4.0.0 (from cookiecutter<3.0,>=2.6.0->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:01.7203920Z   Downloading python_slugify-8.0.4-py2.py3-none-any.whl.metadata (8.5 kB)
+2025-02-24T05:30:01.7396270Z Collecting requests>=2.23.0 (from cookiecutter<3.0,>=2.6.0->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:01.7436720Z   Downloading requests-2.32.3-py3-none-any.whl.metadata (4.6 kB)
+2025-02-24T05:30:01.7639820Z Collecting arrow (from cookiecutter<3.0,>=2.6.0->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:01.7695640Z   Downloading arrow-1.3.0-py3-none-any.whl.metadata (7.5 kB)
+2025-02-24T05:30:01.8573430Z Collecting ds_store>=1.1.0 (from dmgbuild<2.0,>=1.6.4->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:01.8625210Z   Downloading ds_store-1.3.1-py3-none-any.whl.metadata (3.0 kB)
+2025-02-24T05:30:01.9477260Z Collecting mac_alias>=2.0.1 (from dmgbuild<2.0,>=1.6.4->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:01.9523260Z   Downloading mac_alias-2.2.2-py3-none-any.whl.metadata (3.1 kB)
+2025-02-24T05:30:01.9662590Z Collecting gitdb<5,>=4.0.1 (from GitPython<4.0,>=3.1->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:01.9695440Z   Downloading gitdb-4.0.12-py3-none-any.whl.metadata (1.2 kB)
+2025-02-24T05:30:01.9860590Z Collecting anyio (from httpx<1.0,>=0.20->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:01.9897530Z   Downloading anyio-4.8.0-py3-none-any.whl.metadata (4.6 kB)
+2025-02-24T05:30:01.9963510Z Requirement already satisfied: certifi in /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages (from httpx<1.0,>=0.20->briefcase==0.3.23.dev11+g647c8ff5) (2024.12.14)
+2025-02-24T05:30:02.0090450Z Collecting httpcore==1.* (from httpx<1.0,>=0.20->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:02.0129970Z   Downloading httpcore-1.0.7-py3-none-any.whl.metadata (21 kB)
+2025-02-24T05:30:02.0282370Z Collecting idna (from httpx<1.0,>=0.20->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:02.0319330Z   Downloading idna-3.10-py3-none-any.whl.metadata (10 kB)
+2025-02-24T05:30:02.0454170Z Collecting h11<0.15,>=0.13 (from httpcore==1.*->httpx<1.0,>=0.20->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:02.0497140Z   Downloading h11-0.14.0-py3-none-any.whl.metadata (8.2 kB)
+2025-02-24T05:30:02.0655240Z Collecting six>=1.5 (from python-dateutil>=2.9.0.post0->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:02.0689590Z   Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+2025-02-24T05:30:02.0866630Z Collecting markdown-it-py>=2.2.0 (from rich<14.0,>=12.6->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:02.0915150Z   Downloading markdown_it_py-3.0.0-py3-none-any.whl.metadata (6.9 kB)
+2025-02-24T05:30:02.1141600Z Collecting pygments<3.0.0,>=2.13.0 (from rich<14.0,>=12.6->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:02.1164650Z   Downloading pygments-2.19.1-py3-none-any.whl.metadata (2.5 kB)
+2025-02-24T05:30:02.1307970Z Collecting chardet>=3.0.2 (from binaryornot>=0.4.4->cookiecutter<3.0,>=2.6.0->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:02.1369600Z   Downloading chardet-5.2.0-py3-none-any.whl.metadata (3.4 kB)
+2025-02-24T05:30:02.1523430Z Collecting smmap<6,>=3.0.1 (from gitdb<5,>=4.0.1->GitPython<4.0,>=3.1->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:02.1562530Z   Downloading smmap-5.0.2-py3-none-any.whl.metadata (4.3 kB)
+2025-02-24T05:30:02.1868440Z Collecting MarkupSafe>=2.0 (from Jinja2<4.0.0,>=2.7->cookiecutter<3.0,>=2.6.0->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:02.2052090Z   Downloading MarkupSafe-3.0.2-cp312-cp312-macosx_11_0_arm64.whl.metadata (4.0 kB)
+2025-02-24T05:30:02.2182610Z Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich<14.0,>=12.6->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:02.2220300Z   Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+2025-02-24T05:30:02.2363920Z Collecting text-unidecode>=1.3 (from python-slugify>=4.0.0->cookiecutter<3.0,>=2.6.0->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:02.2396580Z   Downloading text_unidecode-1.3-py2.py3-none-any.whl.metadata (2.4 kB)
+2025-02-24T05:30:02.2789180Z Collecting charset-normalizer<4,>=2 (from requests>=2.23.0->cookiecutter<3.0,>=2.6.0->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:02.2834870Z   Downloading charset_normalizer-3.4.1-cp312-cp312-macosx_10_13_universal2.whl.metadata (35 kB)
+2025-02-24T05:30:02.3082270Z Collecting urllib3<3,>=1.21.1 (from requests>=2.23.0->cookiecutter<3.0,>=2.6.0->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:02.3112970Z   Downloading urllib3-2.3.0-py3-none-any.whl.metadata (6.5 kB)
+2025-02-24T05:30:02.3276460Z Collecting sniffio>=1.1 (from anyio->httpx<1.0,>=0.20->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:02.3313800Z   Downloading sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+2025-02-24T05:30:02.3464160Z Collecting typing_extensions>=4.5 (from anyio->httpx<1.0,>=0.20->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:02.3500580Z   Downloading typing_extensions-4.12.2-py3-none-any.whl.metadata (3.0 kB)
+2025-02-24T05:30:02.3695100Z Collecting types-python-dateutil>=2.8.10 (from arrow->cookiecutter<3.0,>=2.6.0->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:02.3732830Z   Downloading types_python_dateutil-2.9.0.20241206-py3-none-any.whl.metadata (2.1 kB)
+2025-02-24T05:30:02.3904140Z Downloading build-1.2.2.post1-py3-none-any.whl (22 kB)
+2025-02-24T05:30:02.3978820Z Downloading cookiecutter-2.6.0-py3-none-any.whl (39 kB)
+2025-02-24T05:30:02.4040930Z Downloading dmgbuild-1.6.4-py3-none-any.whl (34 kB)
+2025-02-24T05:30:02.4103740Z Downloading GitPython-3.1.44-py3-none-any.whl (207 kB)
+2025-02-24T05:30:02.4204060Z Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+2025-02-24T05:30:02.4272640Z Downloading httpcore-1.0.7-py3-none-any.whl (78 kB)
+2025-02-24T05:30:02.4574170Z Using cached packaging-24.2-py3-none-any.whl (65 kB)
+2025-02-24T05:30:02.4611340Z Downloading platformdirs-4.3.6-py3-none-any.whl (18 kB)
+2025-02-24T05:30:02.4697070Z Downloading psutil-7.0.0-cp36-abi3-macosx_11_0_arm64.whl (239 kB)
+2025-02-24T05:30:02.4801440Z Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+2025-02-24T05:30:02.4896190Z Downloading rich-13.9.4-py3-none-any.whl (242 kB)
+2025-02-24T05:30:02.4946690Z Using cached setuptools-75.8.0-py3-none-any.whl (1.2 MB)
+2025-02-24T05:30:02.4991360Z Downloading tomli_w-1.2.0-py3-none-any.whl (6.7 kB)
+2025-02-24T05:30:02.5065280Z Downloading wheel-0.45.1-py3-none-any.whl (72 kB)
+2025-02-24T05:30:02.5165510Z Downloading binaryornot-0.4.4-py2.py3-none-any.whl (9.0 kB)
+2025-02-24T05:30:02.5237030Z Downloading click-8.1.8-py3-none-any.whl (98 kB)
+2025-02-24T05:30:02.5345930Z Downloading ds_store-1.3.1-py3-none-any.whl (16 kB)
+2025-02-24T05:30:02.5420220Z Downloading gitdb-4.0.12-py3-none-any.whl (62 kB)
+2025-02-24T05:30:02.5492170Z Downloading jinja2-3.1.5-py3-none-any.whl (134 kB)
+2025-02-24T05:30:02.5588700Z Downloading mac_alias-2.2.2-py3-none-any.whl (21 kB)
+2025-02-24T05:30:02.5654530Z Downloading markdown_it_py-3.0.0-py3-none-any.whl (87 kB)
+2025-02-24T05:30:02.5748980Z Downloading pygments-2.19.1-py3-none-any.whl (1.2 MB)
+2025-02-24T05:30:02.5897170Z [?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/1.2 MB[0m [31m?[0m eta [36m-:--:--[0m
+2025-02-24T05:30:02.5897920Z [2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1.2/1.2 MB[0m [31m84.9 MB/s[0m eta [36m0:00:00[0m
+2025-02-24T05:30:02.5944000Z [?25hDownloading python_slugify-8.0.4-py2.py3-none-any.whl (10 kB)
+2025-02-24T05:30:02.6058260Z Downloading PyYAML-6.0.2-cp312-cp312-macosx_11_0_arm64.whl (173 kB)
+2025-02-24T05:30:02.6179640Z Downloading requests-2.32.3-py3-none-any.whl (64 kB)
+2025-02-24T05:30:02.6301540Z Downloading idna-3.10-py3-none-any.whl (70 kB)
+2025-02-24T05:30:02.6415010Z Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+2025-02-24T05:30:02.6509760Z Downloading anyio-4.8.0-py3-none-any.whl (96 kB)
+2025-02-24T05:30:02.6616160Z Downloading arrow-1.3.0-py3-none-any.whl (66 kB)
+2025-02-24T05:30:02.6707550Z Downloading pyproject_hooks-1.2.0-py3-none-any.whl (10 kB)
+2025-02-24T05:30:02.7349890Z Downloading chardet-5.2.0-py3-none-any.whl (199 kB)
+2025-02-24T05:30:02.7938830Z Downloading charset_normalizer-3.4.1-cp312-cp312-macosx_10_13_universal2.whl (196 kB)
+2025-02-24T05:30:02.8744650Z Downloading h11-0.14.0-py3-none-any.whl (58 kB)
+2025-02-24T05:30:02.9113340Z Downloading MarkupSafe-3.0.2-cp312-cp312-macosx_11_0_arm64.whl (12 kB)
+2025-02-24T05:30:02.9186510Z Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+2025-02-24T05:30:02.9314170Z Downloading smmap-5.0.2-py3-none-any.whl (24 kB)
+2025-02-24T05:30:02.9552510Z Downloading sniffio-1.3.1-py3-none-any.whl (10 kB)
+2025-02-24T05:30:02.9650330Z Downloading text_unidecode-1.3-py2.py3-none-any.whl (78 kB)
+2025-02-24T05:30:02.9731910Z Downloading types_python_dateutil-2.9.0.20241206-py3-none-any.whl (14 kB)
+2025-02-24T05:30:02.9816420Z Downloading typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+2025-02-24T05:30:02.9979550Z Downloading urllib3-2.3.0-py3-none-any.whl (128 kB)
+2025-02-24T05:30:03.0297370Z Building wheels for collected packages: briefcase
+2025-02-24T05:30:03.0308920Z   Building wheel for briefcase (pyproject.toml): started
+2025-02-24T05:30:03.4586810Z   Building wheel for briefcase (pyproject.toml): finished with status 'done'
+2025-02-24T05:30:03.4605240Z   Created wheel for briefcase: filename=briefcase-0.3.23.dev11+g647c8ff5-py3-none-any.whl size=240736 sha256=142f31a2ae9338529752693127033ff6a851c366ac2a7187c9810dce366e97d5
+2025-02-24T05:30:03.4606420Z   Stored in directory: /private/var/folders/2s/h6hvv9ps03xgz_krkkstvq_r0000gn/T/pip-ephem-wheel-cache-qi23m2re/wheels/c5/04/18/55524f7f66d67aa89c0ad161b560d13d7948240e6934e45f7e
+2025-02-24T05:30:03.4627820Z Successfully built briefcase
+2025-02-24T05:30:03.5040030Z Installing collected packages: text-unidecode, wheel, urllib3, typing_extensions, types-python-dateutil, tomli_w, sniffio, smmap, six, setuptools, pyyaml, python-slugify, pyproject_hooks, pygments, psutil, platformdirs, packaging, mdurl, MarkupSafe, mac_alias, idna, h11, click, charset-normalizer, chardet, requests, python-dateutil, markdown-it-py, Jinja2, httpcore, gitdb, ds_store, build, binaryornot, anyio, rich, httpx, GitPython, dmgbuild, arrow, cookiecutter, briefcase
+2025-02-24T05:30:06.8062610Z Successfully installed GitPython-3.1.44 Jinja2-3.1.5 MarkupSafe-3.0.2 anyio-4.8.0 arrow-1.3.0 binaryornot-0.4.4 briefcase-0.3.23.dev11+g647c8ff5 build-1.2.2.post1 chardet-5.2.0 charset-normalizer-3.4.1 click-8.1.8 cookiecutter-2.6.0 dmgbuild-1.6.4 ds_store-1.3.1 gitdb-4.0.12 h11-0.14.0 httpcore-1.0.7 httpx-0.28.1 idna-3.10 mac_alias-2.2.2 markdown-it-py-3.0.0 mdurl-0.1.2 packaging-24.2 platformdirs-4.3.6 psutil-7.0.0 pygments-2.19.1 pyproject_hooks-1.2.0 python-dateutil-2.9.0.post0 python-slugify-8.0.4 pyyaml-6.0.2 requests-2.32.3 rich-13.9.4 setuptools-75.8.0 six-1.17.0 smmap-5.0.2 sniffio-1.3.1 text-unidecode-1.3 tomli_w-1.2.0 types-python-dateutil-2.9.0.20241206 typing_extensions-4.12.2 urllib3-2.3.0 wheel-0.45.1
+2025-02-24T05:30:07.0360590Z ##[group]Run actions/download-artifact@v4.1.8
+2025-02-24T05:30:07.0360840Z with:
+2025-02-24T05:30:07.0361010Z   pattern: Packages-toga-*
+2025-02-24T05:30:07.0361200Z   merge-multiple: true
+2025-02-24T05:30:07.0361340Z   path: dist
+2025-02-24T05:30:07.0361470Z   repository: beeware/toga
+2025-02-24T05:30:07.0361630Z   run-id: 13491433041
+2025-02-24T05:30:07.0362160Z env:
+2025-02-24T05:30:07.0362340Z   min_python_version: 3.9
+2025-02-24T05:30:07.0362750Z   max_python_version: 3.12
+2025-02-24T05:30:07.0362950Z   FORCE_COLOR: 1
+2025-02-24T05:30:07.0363200Z   pythonLocation: /Users/runner/hostedtoolcache/Python/3.12.8/arm64
+2025-02-24T05:30:07.0363590Z   PKG_CONFIG_PATH: /Users/runner/hostedtoolcache/Python/3.12.8/arm64/lib/pkgconfig
+2025-02-24T05:30:07.0363980Z   Python_ROOT_DIR: /Users/runner/hostedtoolcache/Python/3.12.8/arm64
+2025-02-24T05:30:07.0364300Z   Python2_ROOT_DIR: /Users/runner/hostedtoolcache/Python/3.12.8/arm64
+2025-02-24T05:30:07.0365180Z   Python3_ROOT_DIR: /Users/runner/hostedtoolcache/Python/3.12.8/arm64
+2025-02-24T05:30:07.0365440Z ##[endgroup]
+2025-02-24T05:30:07.7347280Z Found 56 artifact(s)
+2025-02-24T05:30:07.7347940Z Filtering artifacts by pattern 'Packages-toga-*'
+2025-02-24T05:30:07.7437460Z Preparing to download the following artifacts:
+2025-02-24T05:30:07.7461490Z - Packages-toga-winforms (ID: 2639028467, Size: 912617)
+2025-02-24T05:30:07.7462710Z - Packages-toga-android (ID: 2639028440, Size: 138194)
+2025-02-24T05:30:07.7465090Z - Packages-toga-gtk (ID: 2639028386, Size: 142074)
+2025-02-24T05:30:07.7466600Z - Packages-toga-iOS (ID: 2639028383, Size: 872356)
+2025-02-24T05:30:07.7466980Z - Packages-toga-toga (ID: 2639028349, Size: 7274)
+2025-02-24T05:30:07.7467330Z - Packages-toga-core (ID: 2639028344, Size: 1153697)
+2025-02-24T05:30:07.7469510Z - Packages-toga-dummy (ID: 2639028309, Size: 148484)
+2025-02-24T05:30:07.7470270Z - Packages-toga-web (ID: 2639028241, Size: 34922)
+2025-02-24T05:30:07.7471630Z - Packages-toga-textual (ID: 2639028202, Size: 32035)
+2025-02-24T05:30:07.7473430Z - Packages-toga-travertino (ID: 2639028133, Size: 62305)
+2025-02-24T05:30:07.7473990Z - Packages-toga-demo (ID: 2639028110, Size: 1242381)
+2025-02-24T05:30:07.7474360Z - Packages-toga-cocoa (ID: 2639028073, Size: 929338)
+2025-02-24T05:30:07.9364940Z Redirecting to blob download url: https://productionresultssa12.blob.core.windows.net/actions-results/cf52b554-71be-4a91-94b2-8eec2b4d890b/workflow-job-run-3124742b-843a-5b41-b426-aef8afedb9f7/artifacts/442c3fefacaa5f4a317396d7241d3673a3eab28c29b7e651a0b97534d592e35d.zip
+2025-02-24T05:30:07.9521710Z Starting download of artifact to: /Users/runner/work/toga/toga/dist
+2025-02-24T05:30:08.0990690Z Redirecting to blob download url: https://productionresultssa12.blob.core.windows.net/actions-results/cf52b554-71be-4a91-94b2-8eec2b4d890b/workflow-job-run-7815ca6b-1b41-513e-fbe7-8eccb083611a/artifacts/1660c57eb65463a413672e3e25e0e2a0d8c8794547115554b39228f20230f22e.zip
+2025-02-24T05:30:08.1005990Z Starting download of artifact to: /Users/runner/work/toga/toga/dist
+2025-02-24T05:30:08.1065880Z Redirecting to blob download url: https://productionresultssa12.blob.core.windows.net/actions-results/cf52b554-71be-4a91-94b2-8eec2b4d890b/workflow-job-run-18bbcbc6-8763-5d15-2620-0ac883eea9b0/artifacts/42ca5e4547811af7883a91d6c65b481266e15c0cdc8d243ec9aae2b558253c02.zip
+2025-02-24T05:30:08.1066950Z Starting download of artifact to: /Users/runner/work/toga/toga/dist
+2025-02-24T05:30:08.1069770Z Redirecting to blob download url: https://productionresultssa12.blob.core.windows.net/actions-results/cf52b554-71be-4a91-94b2-8eec2b4d890b/workflow-job-run-137efbf3-bb9f-5901-016f-a9ca027ec083/artifacts/3f2c1a4e1441705d00c0abbd5f3913c6b215c2d9365be6ffa9fcc342e7742def.zip
+2025-02-24T05:30:08.1070720Z Starting download of artifact to: /Users/runner/work/toga/toga/dist
+2025-02-24T05:30:08.1183260Z Redirecting to blob download url: https://productionresultssa12.blob.core.windows.net/actions-results/cf52b554-71be-4a91-94b2-8eec2b4d890b/workflow-job-run-996a8579-f179-559d-4190-0dfa80ff20d7/artifacts/78e64f25892d1e62a7fba16b04b2d38f38656067df6d708afd5432245debf794.zip
+2025-02-24T05:30:08.1214070Z Starting download of artifact to: /Users/runner/work/toga/toga/dist
+2025-02-24T05:30:08.1252740Z Redirecting to blob download url: https://productionresultssa12.blob.core.windows.net/actions-results/cf52b554-71be-4a91-94b2-8eec2b4d890b/workflow-job-run-46aa3184-e851-51af-58d5-831072cd673f/artifacts/485660db63ec446c9f562cc6bdf49c64bf27c37a329b95a30a2467812096f020.zip
+2025-02-24T05:30:08.1254120Z Starting download of artifact to: /Users/runner/work/toga/toga/dist
+2025-02-24T05:30:08.1264540Z Redirecting to blob download url: https://productionresultssa12.blob.core.windows.net/actions-results/cf52b554-71be-4a91-94b2-8eec2b4d890b/workflow-job-run-e2a6fa47-47a3-5188-27fb-56f4e71042c8/artifacts/5425332638acb926f3e0f42935440601f1f6cf4c943281c5f8b926bd1948bc25.zip
+2025-02-24T05:30:08.1267880Z Starting download of artifact to: /Users/runner/work/toga/toga/dist
+2025-02-24T05:30:08.1281930Z Redirecting to blob download url: https://productionresultssa12.blob.core.windows.net/actions-results/cf52b554-71be-4a91-94b2-8eec2b4d890b/workflow-job-run-866e389a-a1a0-5c67-a00f-72c22223abfe/artifacts/b4bca85baf5c112d5a88797759fe2e27b3de49b97e7268608199152765d6405a.zip
+2025-02-24T05:30:08.1284460Z Starting download of artifact to: /Users/runner/work/toga/toga/dist
+2025-02-24T05:30:08.1308530Z Redirecting to blob download url: https://productionresultssa12.blob.core.windows.net/actions-results/cf52b554-71be-4a91-94b2-8eec2b4d890b/workflow-job-run-f1ed5179-285b-5126-8d3b-2df284d1f11c/artifacts/a55c024fa54bd7854415e2c7edfeb2c5046af07e859f8da7b852b08eadc84e2a.zip
+2025-02-24T05:30:08.1311150Z Starting download of artifact to: /Users/runner/work/toga/toga/dist
+2025-02-24T05:30:08.1322840Z Redirecting to blob download url: https://productionresultssa12.blob.core.windows.net/actions-results/cf52b554-71be-4a91-94b2-8eec2b4d890b/workflow-job-run-832e8880-3eb6-5d89-0c04-ef547b46a59e/artifacts/dd722970e727682fe8f4f464e3511dbda02932b6586e5f2f8ac9f8f11f50cdc9.zip
+2025-02-24T05:30:08.1324360Z Starting download of artifact to: /Users/runner/work/toga/toga/dist
+2025-02-24T05:30:08.1366640Z Redirecting to blob download url: https://productionresultssa12.blob.core.windows.net/actions-results/cf52b554-71be-4a91-94b2-8eec2b4d890b/workflow-job-run-98be74ae-5157-5c81-b7d0-b2ef5821a81e/artifacts/6e0cae3735cba3d010b2e4c6917aa1f2ffe72638fbddcfcf5e7d00e456e64178.zip
+2025-02-24T05:30:08.1369540Z Starting download of artifact to: /Users/runner/work/toga/toga/dist
+2025-02-24T05:30:08.1446310Z Redirecting to blob download url: https://productionresultssa12.blob.core.windows.net/actions-results/cf52b554-71be-4a91-94b2-8eec2b4d890b/workflow-job-run-c851c84b-57ed-5071-9878-2279ccd891b8/artifacts/5eb57499beb40f05e15583bbf1c077df75bc75fa11156590733b79c2f9774e5a.zip
+2025-02-24T05:30:08.1449140Z Starting download of artifact to: /Users/runner/work/toga/toga/dist
+2025-02-24T05:30:08.2994100Z (node:2766) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+2025-02-24T05:30:08.2996290Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2025-02-24T05:30:08.4664470Z Artifact download completed successfully.
+2025-02-24T05:30:08.5464100Z Artifact download completed successfully.
+2025-02-24T05:30:08.5752810Z Artifact download completed successfully.
+2025-02-24T05:30:08.6217340Z Artifact download completed successfully.
+2025-02-24T05:30:08.6594550Z Artifact download completed successfully.
+2025-02-24T05:30:08.6595610Z Artifact download completed successfully.
+2025-02-24T05:30:08.6969140Z Artifact download completed successfully.
+2025-02-24T05:30:08.8725870Z Artifact download completed successfully.
+2025-02-24T05:30:08.9419490Z Artifact download completed successfully.
+2025-02-24T05:30:08.9629180Z Artifact download completed successfully.
+2025-02-24T05:30:09.0473010Z Artifact download completed successfully.
+2025-02-24T05:30:09.1294970Z Artifact download completed successfully.
+2025-02-24T05:30:09.1296210Z Total of 12 artifact(s) downloaded
+2025-02-24T05:30:09.1308370Z Download artifact has finished successfully
+2025-02-24T05:30:09.1511870Z ##[group]Run \
+2025-02-24T05:30:09.1512070Z [36;1m \[0m
+2025-02-24T05:30:09.1512350Z [36;1m  briefcase run iOS --log --test --device 'iPhone SE (3rd generation)' -- --ci[0m
+2025-02-24T05:30:09.1575560Z shell: /bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-24T05:30:09.1576000Z env:
+2025-02-24T05:30:09.1576160Z   min_python_version: 3.9
+2025-02-24T05:30:09.1576330Z   max_python_version: 3.12
+2025-02-24T05:30:09.1576490Z   FORCE_COLOR: 1
+2025-02-24T05:30:09.1576720Z   pythonLocation: /Users/runner/hostedtoolcache/Python/3.12.8/arm64
+2025-02-24T05:30:09.1577900Z   PKG_CONFIG_PATH: /Users/runner/hostedtoolcache/Python/3.12.8/arm64/lib/pkgconfig
+2025-02-24T05:30:09.1578580Z   Python_ROOT_DIR: /Users/runner/hostedtoolcache/Python/3.12.8/arm64
+2025-02-24T05:30:09.1579500Z   Python2_ROOT_DIR: /Users/runner/hostedtoolcache/Python/3.12.8/arm64
+2025-02-24T05:30:09.1579850Z   Python3_ROOT_DIR: /Users/runner/hostedtoolcache/Python/3.12.8/arm64
+2025-02-24T05:30:09.1580240Z ##[endgroup]
+2025-02-24T05:30:11.5459220Z 
+2025-02-24T05:30:11.5465850Z [2m[testbed][0m Generating application template...
+2025-02-24T05:30:11.5482670Z Using app template: [4;94mhttps://github.com/beeware/briefcase-iOS-Xcode-template.git,[0m branch v0.3.23
+2025-02-24T05:30:11.5486200Z Cloning template '[4;94mhttps://github.com/beeware/briefcase-iOS-Xcode-template.git[0m'...
+2025-02-24T05:30:12.3464110Z Template branch v0.3.23 not found; falling back to development template
+2025-02-24T05:30:12.6744570Z Using existing template (sha 0fc505dc734032e67350d8e75ec80bc3d7baae61, updated Thu Feb 13 22:16:32 2025)
+2025-02-24T05:30:13.1877540Z 
+2025-02-24T05:30:13.1980010Z [2m[testbed][0m Installing support package...
+2025-02-24T05:30:13.2084490Z Using support package [4;94mhttps://briefcase-support.s3.amazonaws.com/python/3.12/iOS/Python-3.12-iOS-support.b6.tar.gz[0m
+2025-02-24T05:30:13.5947620Z Downloading Python-3.12-iOS-support.b6.tar.gz...
+2025-02-24T05:30:14.3886830Z Unpacking support package... started
+2025-02-24T05:30:17.4278090Z Unpacking support package... done
+2025-02-24T05:30:17.4387350Z 
+2025-02-24T05:30:17.4488910Z [2m[testbed][0m Installing application code...
+2025-02-24T05:30:17.4521080Z Installing src/testbed... started
+2025-02-24T05:30:17.4989190Z Installing src/testbed... done
+2025-02-24T05:30:17.5000910Z Installing tests... started
+2025-02-24T05:30:17.5447720Z Installing tests... done
+2025-02-24T05:30:17.5451200Z Installing ../iOS/tests_backend... started
+2025-02-24T05:30:17.5638520Z Installing ../iOS/tests_backend... done
+2025-02-24T05:30:17.5642990Z 
+2025-02-24T05:30:17.5647620Z [2m[testbed][0m Installing requirements...
+2025-02-24T05:30:17.5662900Z Installing app requirements for iPhone device... started
+2025-02-24T05:30:18.9887890Z Looking in indexes: [4;94mhttps://pypi.org/simple,[0m [4;94mhttps://pypi.anaconda.org/beeware/simple[0m
+2025-02-24T05:30:18.9892640Z Looking in links: /Users/runner/work/toga/toga/dist
+2025-02-24T05:30:18.9896150Z Processing /Users/runner/work/toga/toga/travertino
+2025-02-24T05:30:18.9949470Z   Installing build dependencies: started
+2025-02-24T05:30:21.6645310Z   Installing build dependencies: finished with status 'done'
+2025-02-24T05:30:21.6648900Z   Getting requirements to build wheel: started
+2025-02-24T05:30:22.8979380Z   Getting requirements to build wheel: finished with status 'done'
+2025-02-24T05:30:22.8989970Z   Preparing metadata (pyproject.toml): started
+2025-02-24T05:30:23.4222410Z   Preparing metadata (pyproject.toml): finished with status 'done'
+2025-02-24T05:30:23.4262930Z Processing /Users/runner/work/toga/toga/core
+2025-02-24T05:30:23.4281200Z   Installing build dependencies: started
+2025-02-24T05:30:25.8088650Z   Installing build dependencies: finished with status 'done'
+2025-02-24T05:30:25.8100400Z   Getting requirements to build wheel: started
+2025-02-24T05:30:26.2876720Z   Getting requirements to build wheel: finished with status 'done'
+2025-02-24T05:30:26.2899870Z   Preparing metadata (pyproject.toml): started
+2025-02-24T05:30:26.8065050Z   Preparing metadata (pyproject.toml): finished with status 'done'
+2025-02-24T05:30:26.8089420Z Processing /Users/runner/work/toga/toga/iOS
+2025-02-24T05:30:26.8104590Z   Installing build dependencies: started
+2025-02-24T05:30:29.0058910Z   Installing build dependencies: finished with status 'done'
+2025-02-24T05:30:29.0071510Z   Getting requirements to build wheel: started
+2025-02-24T05:30:29.3953340Z   Getting requirements to build wheel: finished with status 'done'
+2025-02-24T05:30:29.4032640Z   Preparing metadata (pyproject.toml): started
+2025-02-24T05:30:29.8839900Z   Preparing metadata (pyproject.toml): finished with status 'done'
+2025-02-24T05:30:29.8857480Z Ignoring fonttools: markers 'sys_platform == "linux"' don't match your environment
+2025-02-24T05:30:30.2124770Z Collecting std-nslog~=1.0.0
+2025-02-24T05:30:30.2471830Z   Downloading std_nslog-1.0.3-py3-none-any.whl.metadata (3.6 kB)
+2025-02-24T05:30:30.6521490Z Collecting coverage==7.6.12
+2025-02-24T05:30:30.6576610Z   Downloading coverage-7.6.12-py3-none-any.whl.metadata (8.5 kB)
+2025-02-24T05:30:30.8070630Z Collecting coverage-conditional-plugin==0.9.0
+2025-02-24T05:30:30.8188280Z   Downloading coverage_conditional_plugin-0.9.0-py3-none-any.whl.metadata (6.9 kB)
+2025-02-24T05:30:31.3376880Z Collecting pillow==11.0.0
+2025-02-24T05:30:31.8863520Z   Downloading [4;94mhttps://pypi.anaconda.org/beeware/simple/pillow/11.0.0/pillow-11.0.0-cp312-cp312-ios_13_0_arm64_iphoneos.whl[0m (1.0 MB)
+2025-02-24T05:30:32.1300340Z [?25l     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/1.0 MB[0m [31m?[0m eta [36m-:--:--[0m
+2025-02-24T05:30:32.2517430Z [2K     [91m━━━━━━━━━━[0m[90m╺[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.3/1.0 MB[0m [31m?[0m eta [36m-:--:--[0m
+2025-02-24T05:30:32.2529130Z [2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1.0/1.0 MB[0m [31m5.0 MB/s[0m eta [36m0:00:00[0m
+2025-02-24T05:30:32.4023890Z [?25hCollecting pytest==8.3.4
+2025-02-24T05:30:32.4087800Z   Downloading pytest-8.3.4-py3-none-any.whl.metadata (7.5 kB)
+2025-02-24T05:30:32.5751040Z Collecting pytest-asyncio==0.25.3
+2025-02-24T05:30:32.5785200Z   Downloading pytest_asyncio-0.25.3-py3-none-any.whl.metadata (3.9 kB)
+2025-02-24T05:30:32.7198400Z Collecting packaging>=20.4 (from coverage-conditional-plugin==0.9.0)
+2025-02-24T05:30:32.7212330Z   Using cached packaging-24.2-py3-none-any.whl.metadata (3.2 kB)
+2025-02-24T05:30:32.8842430Z Collecting iniconfig (from pytest==8.3.4)
+2025-02-24T05:30:32.8880960Z   Downloading iniconfig-2.0.0-py3-none-any.whl.metadata (2.6 kB)
+2025-02-24T05:30:33.0200260Z Collecting pluggy<2,>=1.5 (from pytest==8.3.4)
+2025-02-24T05:30:33.0270140Z   Downloading pluggy-1.5.0-py3-none-any.whl.metadata (4.8 kB)
+2025-02-24T05:30:33.2290970Z Collecting fonttools<5.0.0,>=4.42.1 (from toga-iOS==0.4.9.dev608+g01152b56b)
+2025-02-24T05:30:33.2378070Z   Downloading fonttools-4.56.0-py3-none-any.whl.metadata (101 kB)
+2025-02-24T05:30:33.7260070Z Collecting rubicon-objc<0.6.0,>=0.5.0 (from toga-iOS==0.4.9.dev608+g01152b56b)
+2025-02-24T05:30:33.7417560Z   Downloading rubicon_objc-0.5.0-py3-none-any.whl.metadata (5.5 kB)
+2025-02-24T05:30:33.7549820Z Downloading coverage-7.6.12-py3-none-any.whl (200 kB)
+2025-02-24T05:30:33.7655420Z Downloading coverage_conditional_plugin-0.9.0-py3-none-any.whl (7.3 kB)
+2025-02-24T05:30:33.7741450Z Downloading pytest-8.3.4-py3-none-any.whl (343 kB)
+2025-02-24T05:30:33.7836190Z Downloading pytest_asyncio-0.25.3-py3-none-any.whl (19 kB)
+2025-02-24T05:30:33.7973250Z Downloading std_nslog-1.0.3-py3-none-any.whl (4.8 kB)
+2025-02-24T05:30:33.8074670Z Downloading fonttools-4.56.0-py3-none-any.whl (1.1 MB)
+2025-02-24T05:30:33.8219960Z [?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/1.1 MB[0m [31m?[0m eta [36m-:--:--[0m
+2025-02-24T05:30:33.8224220Z [2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1.1/1.1 MB[0m [31m95.7 MB/s[0m eta [36m0:00:00[0m
+2025-02-24T05:30:33.8241470Z [?25hUsing cached packaging-24.2-py3-none-any.whl (65 kB)
+2025-02-24T05:30:33.8292650Z Downloading pluggy-1.5.0-py3-none-any.whl (20 kB)
+2025-02-24T05:30:33.8367890Z Downloading rubicon_objc-0.5.0-py3-none-any.whl (62 kB)
+2025-02-24T05:30:33.8464270Z Downloading iniconfig-2.0.0-py3-none-any.whl (5.9 kB)
+2025-02-24T05:30:33.8581310Z Building wheels for collected packages: travertino, toga-core, toga-iOS
+2025-02-24T05:30:33.8591530Z   Building wheel for travertino (pyproject.toml): started
+2025-02-24T05:30:34.2416770Z   Building wheel for travertino (pyproject.toml): finished with status 'done'
+2025-02-24T05:30:34.2433120Z   Created wheel for travertino: filename=travertino-0.4.9.dev608+g01152b56b-py3-none-any.whl size=22881 sha256=3c04b6878a582dba46a16c6c2af95b56726c18b8550015c819b3a38e93c9d142
+2025-02-24T05:30:34.2437020Z   Stored in directory: /private/var/folders/2s/h6hvv9ps03xgz_krkkstvq_r0000gn/T/pip-ephem-wheel-cache-673kpdte/wheels/fb/03/30/94bfd0cf122995590b1f326d3b00ed8b247f6304287450f1c9
+2025-02-24T05:30:34.2451340Z   Building wheel for toga-core (pyproject.toml): started
+2025-02-24T05:30:34.9208060Z   Building wheel for toga-core (pyproject.toml): finished with status 'done'
+2025-02-24T05:30:34.9219810Z   Created wheel for toga-core: filename=toga_core-0.4.9.dev608+g01152b56b-py3-none-any.whl size=142837 sha256=f6c166b873a8a316bf0653669ce43c814b8a707c9af970beef7bacb30e7190fd
+2025-02-24T05:30:34.9233080Z   Stored in directory: /private/var/folders/2s/h6hvv9ps03xgz_krkkstvq_r0000gn/T/pip-ephem-wheel-cache-673kpdte/wheels/9e/e8/ee/76b71fb42aa09373531dc76326216b74a6f01a510db217f28d
+2025-02-24T05:30:34.9236610Z   Building wheel for toga-iOS (pyproject.toml): started
+2025-02-24T05:30:35.4375760Z   Building wheel for toga-iOS (pyproject.toml): finished with status 'done'
+2025-02-24T05:30:35.4380830Z   Created wheel for toga-iOS: filename=toga_iOS-0.4.9.dev608+g01152b56b-py3-none-any.whl size=436930 sha256=6e0b9647ac22d5b2c337d0d7285d60af877f54c11b644ee9ed05abce0fef4aee
+2025-02-24T05:30:35.4384900Z   Stored in directory: /private/var/folders/2s/h6hvv9ps03xgz_krkkstvq_r0000gn/T/pip-ephem-wheel-cache-673kpdte/wheels/86/ff/af/239e4f5850166993a9ff13b44bbec25c3b209fa92e40dd3eea
+2025-02-24T05:30:35.4393780Z Successfully built travertino toga-core toga-iOS
+2025-02-24T05:30:35.4935530Z Installing collected packages: travertino, std-nslog, rubicon-objc, pluggy, pillow, packaging, iniconfig, fonttools, coverage, toga-core, pytest, coverage-conditional-plugin, toga-iOS, pytest-asyncio
+2025-02-24T05:30:36.7328360Z Successfully installed coverage-7.6.12 coverage-conditional-plugin-0.9.0 fonttools-4.56.0 iniconfig-2.0.0 packaging-24.2 pillow-11.0.0 pluggy-1.5.0 pytest-8.3.4 pytest-asyncio-0.25.3 rubicon-objc-0.5.0 std-nslog-1.0.3 toga-core-0.4.9.dev608+g01152b56b toga-iOS-0.4.9.dev608+g01152b56b travertino-0.4.9.dev608+g01152b56b
+2025-02-24T05:30:37.0056770Z Installing app requirements for iPhone device... done
+2025-02-24T05:30:37.0158330Z Installing app requirements for iPhone simulator... started
+2025-02-24T05:30:37.3461070Z Looking in indexes: [4;94mhttps://pypi.org/simple,[0m [4;94mhttps://pypi.anaconda.org/beeware/simple[0m
+2025-02-24T05:30:37.3478640Z Looking in links: /Users/runner/work/toga/toga/dist
+2025-02-24T05:30:37.3484100Z Processing /Users/runner/work/toga/toga/travertino
+2025-02-24T05:30:37.3485140Z   Installing build dependencies: started
+2025-02-24T05:30:39.0410340Z   Installing build dependencies: finished with status 'done'
+2025-02-24T05:30:39.0417110Z   Getting requirements to build wheel: started
+2025-02-24T05:30:39.3575430Z   Getting requirements to build wheel: finished with status 'done'
+2025-02-24T05:30:39.3585580Z   Preparing metadata (pyproject.toml): started
+2025-02-24T05:30:39.7122800Z   Preparing metadata (pyproject.toml): finished with status 'done'
+2025-02-24T05:30:39.7145250Z Processing /Users/runner/work/toga/toga/core
+2025-02-24T05:30:39.7158580Z   Installing build dependencies: started
+2025-02-24T05:30:41.6171420Z   Installing build dependencies: finished with status 'done'
+2025-02-24T05:30:41.6176480Z   Getting requirements to build wheel: started
+2025-02-24T05:30:41.9999910Z   Getting requirements to build wheel: finished with status 'done'
+2025-02-24T05:30:42.0000900Z   Preparing metadata (pyproject.toml): started
+2025-02-24T05:30:42.3479480Z   Preparing metadata (pyproject.toml): finished with status 'done'
+2025-02-24T05:30:42.3504430Z Processing /Users/runner/work/toga/toga/iOS
+2025-02-24T05:30:42.3522620Z   Installing build dependencies: started
+2025-02-24T05:30:44.1898710Z   Installing build dependencies: finished with status 'done'
+2025-02-24T05:30:44.1911030Z   Getting requirements to build wheel: started
+2025-02-24T05:30:44.6332110Z   Getting requirements to build wheel: finished with status 'done'
+2025-02-24T05:30:44.6344540Z   Preparing metadata (pyproject.toml): started
+2025-02-24T05:30:45.1510880Z   Preparing metadata (pyproject.toml): finished with status 'done'
+2025-02-24T05:30:45.1533690Z Ignoring fonttools: markers 'sys_platform == "linux"' don't match your environment
+2025-02-24T05:30:45.5213710Z Collecting std-nslog~=1.0.0
+2025-02-24T05:30:45.5226900Z   Using cached std_nslog-1.0.3-py3-none-any.whl.metadata (3.6 kB)
+2025-02-24T05:30:45.6627040Z [33mWARNING: Cache entry deserialization failed, entry ignored[0m[33m
+2025-02-24T05:30:45.8589770Z [0mCollecting coverage==7.6.12
+2025-02-24T05:30:45.8603310Z   Using cached coverage-7.6.12-py3-none-any.whl.metadata (8.5 kB)
+2025-02-24T05:30:46.0421730Z Collecting coverage-conditional-plugin==0.9.0
+2025-02-24T05:30:46.0434690Z   Using cached coverage_conditional_plugin-0.9.0-py3-none-any.whl.metadata (6.9 kB)
+2025-02-24T05:30:46.1064240Z [33mWARNING: Cache entry deserialization failed, entry ignored[0m[33m
+2025-02-24T05:30:46.6302390Z [0mCollecting pillow==11.0.0
+2025-02-24T05:30:47.1443890Z   Downloading [4;94mhttps://pypi.anaconda.org/beeware/simple/pillow/11.0.0/pillow-11.0.0-cp312-cp312-ios_13_0_arm64_iphonesimulator.whl[0m (1.1 MB)
+2025-02-24T05:30:47.4035930Z [?25l     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/1.1 MB[0m [31m?[0m eta [36m-:--:--[0m
+2025-02-24T05:30:47.5139770Z [2K     [91m━━━━━━━━━[0m[91m╸[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.3/1.1 MB[0m [31m?[0m eta [36m-:--:--[0m
+2025-02-24T05:30:47.5146370Z [2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1.1/1.1 MB[0m [31m5.2 MB/s[0m eta [36m0:00:00[0m
+2025-02-24T05:30:47.6919400Z [?25hCollecting pytest==8.3.4
+2025-02-24T05:30:47.6934380Z   Using cached pytest-8.3.4-py3-none-any.whl.metadata (7.5 kB)
+2025-02-24T05:30:47.8565800Z Collecting pytest-asyncio==0.25.3
+2025-02-24T05:30:47.8577540Z   Using cached pytest_asyncio-0.25.3-py3-none-any.whl.metadata (3.9 kB)
+2025-02-24T05:30:48.0225850Z Collecting packaging>=20.4 (from coverage-conditional-plugin==0.9.0)
+2025-02-24T05:30:48.0237130Z   Using cached packaging-24.2-py3-none-any.whl.metadata (3.2 kB)
+2025-02-24T05:30:48.1798100Z Collecting iniconfig (from pytest==8.3.4)
+2025-02-24T05:30:48.1839510Z   Using cached iniconfig-2.0.0-py3-none-any.whl.metadata (2.6 kB)
+2025-02-24T05:30:48.3110390Z Collecting pluggy<2,>=1.5 (from pytest==8.3.4)
+2025-02-24T05:30:48.3160890Z   Using cached pluggy-1.5.0-py3-none-any.whl.metadata (4.8 kB)
+2025-02-24T05:30:48.5204500Z Collecting fonttools<5.0.0,>=4.42.1 (from toga-iOS==0.4.9.dev608+g01152b56b)
+2025-02-24T05:30:48.5217380Z   Using cached fonttools-4.56.0-py3-none-any.whl.metadata (101 kB)
+2025-02-24T05:30:48.6772110Z Collecting rubicon-objc<0.6.0,>=0.5.0 (from toga-iOS==0.4.9.dev608+g01152b56b)
+2025-02-24T05:30:48.6873570Z   Using cached rubicon_objc-0.5.0-py3-none-any.whl.metadata (5.5 kB)
+2025-02-24T05:30:48.6966150Z Using cached coverage-7.6.12-py3-none-any.whl (200 kB)
+2025-02-24T05:30:48.6966810Z Using cached coverage_conditional_plugin-0.9.0-py3-none-any.whl (7.3 kB)
+2025-02-24T05:30:48.6967320Z Using cached pytest-8.3.4-py3-none-any.whl (343 kB)
+2025-02-24T05:30:48.6967780Z Using cached pytest_asyncio-0.25.3-py3-none-any.whl (19 kB)
+2025-02-24T05:30:48.6972670Z Using cached std_nslog-1.0.3-py3-none-any.whl (4.8 kB)
+2025-02-24T05:30:48.7255750Z Using cached fonttools-4.56.0-py3-none-any.whl (1.1 MB)
+2025-02-24T05:30:48.7300000Z Using cached packaging-24.2-py3-none-any.whl (65 kB)
+2025-02-24T05:30:48.7309600Z Using cached pluggy-1.5.0-py3-none-any.whl (20 kB)
+2025-02-24T05:30:48.7327280Z Using cached rubicon_objc-0.5.0-py3-none-any.whl (62 kB)
+2025-02-24T05:30:48.7343830Z Using cached iniconfig-2.0.0-py3-none-any.whl (5.9 kB)
+2025-02-24T05:30:48.7412130Z Building wheels for collected packages: travertino, toga-core, toga-iOS
+2025-02-24T05:30:48.7422450Z   Building wheel for travertino (pyproject.toml): started
+2025-02-24T05:30:49.1820710Z   Building wheel for travertino (pyproject.toml): finished with status 'done'
+2025-02-24T05:30:49.1827590Z   Created wheel for travertino: filename=travertino-0.4.9.dev608+g01152b56b-py3-none-any.whl size=22881 sha256=d2aa0d91020289561b0f2098422524e0512ae704ebaa542d0b45010aa0e8e26b
+2025-02-24T05:30:49.1831580Z   Stored in directory: /private/var/folders/2s/h6hvv9ps03xgz_krkkstvq_r0000gn/T/pip-ephem-wheel-cache-631jgkwj/wheels/fb/03/30/94bfd0cf122995590b1f326d3b00ed8b247f6304287450f1c9
+2025-02-24T05:30:49.1856170Z   Building wheel for toga-core (pyproject.toml): started
+2025-02-24T05:30:49.7756130Z   Building wheel for toga-core (pyproject.toml): finished with status 'done'
+2025-02-24T05:30:49.7768340Z   Created wheel for toga-core: filename=toga_core-0.4.9.dev608+g01152b56b-py3-none-any.whl size=142837 sha256=340c82de86b55f52d32e196318545990a51593cb6e2590d99aef17c6d7cb2647
+2025-02-24T05:30:49.7775230Z   Stored in directory: /private/var/folders/2s/h6hvv9ps03xgz_krkkstvq_r0000gn/T/pip-ephem-wheel-cache-631jgkwj/wheels/9e/e8/ee/76b71fb42aa09373531dc76326216b74a6f01a510db217f28d
+2025-02-24T05:30:49.7824450Z   Building wheel for toga-iOS (pyproject.toml): started
+2025-02-24T05:30:50.2845720Z   Building wheel for toga-iOS (pyproject.toml): finished with status 'done'
+2025-02-24T05:30:50.2855640Z   Created wheel for toga-iOS: filename=toga_iOS-0.4.9.dev608+g01152b56b-py3-none-any.whl size=436930 sha256=bd9ffb4c40a738cc9bc686a89a180e7d954179053e481de8210cc11c269cb898
+2025-02-24T05:30:50.2860660Z   Stored in directory: /private/var/folders/2s/h6hvv9ps03xgz_krkkstvq_r0000gn/T/pip-ephem-wheel-cache-631jgkwj/wheels/86/ff/af/239e4f5850166993a9ff13b44bbec25c3b209fa92e40dd3eea
+2025-02-24T05:30:50.2874070Z Successfully built travertino toga-core toga-iOS
+2025-02-24T05:30:50.3370450Z Installing collected packages: travertino, std-nslog, rubicon-objc, pluggy, pillow, packaging, iniconfig, fonttools, coverage, toga-core, pytest, coverage-conditional-plugin, toga-iOS, pytest-asyncio
+2025-02-24T05:30:51.6858520Z Successfully installed coverage-7.6.12 coverage-conditional-plugin-0.9.0 fonttools-4.56.0 iniconfig-2.0.0 packaging-24.2 pillow-11.0.0 pluggy-1.5.0 pytest-8.3.4 pytest-asyncio-0.25.3 rubicon-objc-0.5.0 std-nslog-1.0.3 toga-core-0.4.9.dev608+g01152b56b toga-iOS-0.4.9.dev608+g01152b56b travertino-0.4.9.dev608+g01152b56b
+2025-02-24T05:30:51.9271770Z Installing app requirements for iPhone simulator... done
+2025-02-24T05:30:51.9277430Z 
+2025-02-24T05:30:51.9282940Z [2m[testbed][0m Installing application resources...
+2025-02-24T05:30:51.9290350Z Installing icons/testbed-20.png as 20px application icon... started
+2025-02-24T05:30:51.9303810Z Installing icons/testbed-20.png as 20px application icon... done
+2025-02-24T05:30:51.9309160Z Installing icons/testbed-29.png as 29px application icon... started
+2025-02-24T05:30:51.9317130Z Installing icons/testbed-29.png as 29px application icon... done
+2025-02-24T05:30:51.9321180Z Installing icons/testbed-40.png as 40px application icon... started
+2025-02-24T05:30:51.9331230Z Installing icons/testbed-40.png as 40px application icon... done
+2025-02-24T05:30:51.9335630Z Installing icons/testbed-58.png as 58px application icon... started
+2025-02-24T05:30:51.9344920Z Installing icons/testbed-58.png as 58px application icon... done
+2025-02-24T05:30:51.9348440Z Installing icons/testbed-60.png as 60px application icon... started
+2025-02-24T05:30:51.9354500Z Installing icons/testbed-60.png as 60px application icon... done
+2025-02-24T05:30:51.9358990Z Installing icons/testbed-76.png as 76px application icon... started
+2025-02-24T05:30:51.9366280Z Installing icons/testbed-76.png as 76px application icon... done
+2025-02-24T05:30:51.9370300Z Installing icons/testbed-80.png as 80px application icon... started
+2025-02-24T05:30:51.9378470Z Installing icons/testbed-80.png as 80px application icon... done
+2025-02-24T05:30:51.9382520Z Installing icons/testbed-87.png as 87px application icon... started
+2025-02-24T05:30:51.9392060Z Installing icons/testbed-87.png as 87px application icon... done
+2025-02-24T05:30:51.9395920Z Installing icons/testbed-120.png as 120px application icon... started
+2025-02-24T05:30:51.9403580Z Installing icons/testbed-120.png as 120px application icon... done
+2025-02-24T05:30:51.9407230Z Installing icons/testbed-152.png as 152px application icon... started
+2025-02-24T05:30:51.9415040Z Installing icons/testbed-152.png as 152px application icon... done
+2025-02-24T05:30:51.9418510Z Installing icons/testbed-167.png as 167px application icon... started
+2025-02-24T05:30:51.9426050Z Installing icons/testbed-167.png as 167px application icon... done
+2025-02-24T05:30:51.9430030Z Installing icons/testbed-180.png as 180px application icon... started
+2025-02-24T05:30:51.9436170Z Installing icons/testbed-180.png as 180px application icon... done
+2025-02-24T05:30:51.9440220Z Unable to find icons/testbed-640.png for 640px application icon; using default
+2025-02-24T05:30:51.9443730Z Installing icons/testbed-1024.png as 1024px application icon... started
+2025-02-24T05:30:51.9455650Z Installing icons/testbed-1024.png as 1024px application icon... done
+2025-02-24T05:30:51.9459240Z Unable to find icons/testbed-1280.png for 1280px application icon; using default
+2025-02-24T05:30:51.9462650Z Unable to find icons/testbed-1920.png for 1920px application icon; using default
+2025-02-24T05:30:51.9465770Z 
+2025-02-24T05:30:51.9469240Z [2m[testbed][0m Removing unneeded app content...
+2025-02-24T05:30:51.9472580Z Removing unneeded app bundle content... started
+2025-02-24T05:30:52.0832290Z Removing unneeded app bundle content... done
+2025-02-24T05:30:52.0834760Z 
+2025-02-24T05:30:52.0838500Z [2m[testbed][0m Created build/testbed/ios/xcode
+2025-02-24T05:30:52.0850720Z 
+2025-02-24T05:30:52.0854400Z [2m[testbed][0m Updating app metadata...
+2025-02-24T05:30:52.0857560Z Setting main module... started
+2025-02-24T05:30:52.0868020Z Setting main module... done
+2025-02-24T05:30:52.0871490Z 
+2025-02-24T05:30:52.0875020Z [2m[testbed][0m Building Xcode project...
+2025-02-24T05:30:52.0878380Z Building... started
+2025-02-24T05:31:21.3380020Z Building... done
+2025-02-24T05:31:21.3392660Z 
+2025-02-24T05:31:21.3401250Z [2m[testbed][0m Built build/testbed/ios/xcode/build/Debug-iphonesimulator/Toga Testbed.app (test mode)
+2025-02-24T05:31:24.0458770Z 
+2025-02-24T05:31:24.0463200Z [2m[testbed][0m Starting test suite on an iPhone SE (3rd generation) running iOS 18.1 (device UDID 03E2A155-84FC-4069-995D-7F5D60C0AE0E)
+2025-02-24T05:31:24.4564670Z Booting simulator... started
+2025-02-24T05:31:33.8577260Z Booting simulator... done
+2025-02-24T05:31:33.9370620Z 
+2025-02-24T05:31:34.0939370Z [2m[testbed][0m Installing test suite...
+2025-02-24T05:31:34.1723790Z Uninstalling any existing app version... started
+2025-02-24T05:31:44.3279560Z ... still waiting
+2025-02-24T05:31:54.6343030Z ... still waiting
+2025-02-24T05:32:03.2312990Z Uninstalling any existing app version... done
+2025-02-24T05:32:03.5472040Z Installing new test suite version... started
+2025-02-24T05:32:14.5844110Z ... still waiting
+2025-02-24T05:32:24.7730450Z ... still waiting
+2025-02-24T05:32:33.3814100Z Installing new test suite version... done
+2025-02-24T05:32:34.1162880Z 
+2025-02-24T05:32:34.1409690Z [2m[testbed][0m Starting test suite...
+2025-02-24T05:32:34.1410170Z Launching test suite... started
+2025-02-24T05:32:41.6354920Z Launching test suite... done
+2025-02-24T05:32:41.6476010Z 
+2025-02-24T05:32:41.6590460Z [2m[testbed][0m Following simulator log output (type CTRL-C to stop log)...
+2025-02-24T05:32:41.6709690Z ===========================================================================
+2025-02-24T05:32:42.8737340Z WARNING: Can't find app icon; falling back to default icon
+2025-02-24T05:32:42.8867470Z Waiting for app to be ready for testing... App finished launching.
+2025-02-24T05:32:42.9422010Z /Users/runner/Library/Developer/CoreSimulator/Devices/03E2A155-84FC-4069-995D-7F5D60C0AE0E/data/Containers/Bundle/Application/CA0F56E1-B25D-4EE6-BCBE-C088EB703F97/Toga Testbed.app/app_packages/toga/__init__.py:105: NotImplementedWarning: [iOS] Not implemented: Status Icons
+2025-02-24T05:32:42.9547460Z   warnings.warn(NotImplementedWarning(f"[{platform}] Not implemented: {feature}"))
+2025-02-24T05:32:43.0360370Z App became active.
+2025-02-24T05:32:43.0463990Z ready.
+2025-02-24T05:32:43.4240080Z ============================= test session starts ==============================
+2025-02-24T05:32:55.9571020Z collecting ... collected 539 items / 2 skipped
+2025-02-24T05:32:55.9855490Z 
+2025-02-24T05:32:56.0324100Z tests/app/test_app.py::test_main_window_toolbar SKIPPED (Toolbars not
+2025-02-24T05:32:56.0646330Z implemented on iOS)                                                      [  0%]
+2025-02-24T05:32:56.0874440Z tests/app/test_app.py::test_system_menus SKIPPED (Menus not implemented
+2025-02-24T05:32:56.1155330Z on iOS)                                                                  [  0%]
+2025-02-24T05:32:56.1914450Z tests/app/test_app.py::test_menu_about SKIPPED (Menus not implemented on
+2025-02-24T05:32:56.2032010Z iOS)                                                                     [  0%]
+2025-02-24T05:32:56.2145220Z tests/app/test_app.py::test_menu_visit_homepage SKIPPED (Menus not
+2025-02-24T05:32:56.2256650Z implemented on iOS)                                                      [  0%]
+2025-02-24T05:32:56.2375260Z tests/app/test_app.py::test_menu_items SKIPPED (Menus not implemented on
+2025-02-24T05:32:56.2484430Z iOS)                                                                     [  0%]
+2025-02-24T05:32:56.4520500Z tests/app/test_app.py::test_beep PASSED                                  [  1%]
+2025-02-24T05:32:56.5338230Z tests/app/test_app.py::test_screens PASSED                               [  1%]
+2025-02-24T05:32:56.7141230Z tests/app/test_app.py::test_app_icon XFAIL (iOS apps don't have app
+2025-02-24T05:32:56.7713760Z icons at runtime)                                                        [  1%]
+2025-02-24T05:32:56.9833640Z tests/app/test_app.py::test_dark_mode_state_read PASSED                  [  1%]
+2025-02-24T05:32:56.9834840Z tests/app/test_dialogs.py::test_info_dialog PASSED                       [  1%]
+2025-02-24T05:32:57.3471860Z tests/app/test_dialogs.py::test_question_dialog[False] PASSED            [  2%]
+2025-02-24T05:32:57.4764800Z tests/app/test_dialogs.py::test_question_dialog[True] PASSED             [  2%]
+2025-02-24T05:32:57.6743440Z tests/app/test_dialogs.py::test_confirm_dialog[False] PASSED             [  2%]
+2025-02-24T05:32:58.0900520Z tests/app/test_dialogs.py::test_confirm_dialog[True] PASSED              [  2%]
+2025-02-24T05:32:58.3378000Z tests/app/test_dialogs.py::test_error_dialog PASSED                      [  2%]
+2025-02-24T05:32:58.3847380Z tests/app/test_dialogs.py::test_stack_trace_dialog[None] SKIPPED (Stack
+2025-02-24T05:32:58.3950600Z Trace dialog not implemented on iOS)                                     [  2%]
+2025-02-24T05:32:58.4065300Z tests/app/test_dialogs.py::test_stack_trace_dialog[False] SKIPPED (Stack
+2025-02-24T05:32:58.4186370Z Trace dialog not implemented on iOS)                                     [  3%]
+2025-02-24T05:32:58.4290500Z tests/app/test_dialogs.py::test_stack_trace_dialog[True] SKIPPED (Stack
+2025-02-24T05:32:58.4435760Z Trace dialog not implemented on iOS)                                     [  3%]
+2025-02-24T05:32:58.4996860Z tests/app/test_dialogs.py::test_save_file_dialog[/path/to/file.txt-None-result0] SKIPPED [  3%]
+2025-02-24T05:32:58.5464960Z tests/app/test_dialogs.py::test_save_file_dialog[/path/to/file.txt-None-None] SKIPPED [  3%]
+2025-02-24T05:32:59.1273750Z tests/app/test_dialogs.py::test_save_file_dialog[/path/to/file.txt-file_types2-result2] SKIPPED [  3%]
+2025-02-24T05:32:59.1274910Z tests/app/test_dialogs.py::test_save_file_dialog[/path/to/file.txt-file_types3-None] SKIPPED [  4%]
+2025-02-24T05:32:59.1275660Z tests/app/test_dialogs.py::test_open_file_dialog[initial_directory0-None-False-result0] SKIPPED [  4%]
+2025-02-24T05:32:59.1333700Z tests/app/test_dialogs.py::test_open_file_dialog[initial_directory1-None-False-None] SKIPPED [  4%]
+2025-02-24T05:32:59.1334380Z tests/app/test_dialogs.py::test_open_file_dialog[None-None-False-result2] SKIPPED [  4%]
+2025-02-24T05:32:59.1335070Z tests/app/test_dialogs.py::test_open_file_dialog[initial_directory3-file_types3-False-result3] SKIPPED [  4%]
+2025-02-24T05:32:59.1354900Z tests/app/test_dialogs.py::test_open_file_dialog[initial_directory4-None-True-result4] SKIPPED [  5%]
+2025-02-24T05:32:59.1355540Z tests/app/test_dialogs.py::test_open_file_dialog[initial_directory5-None-True-result5] SKIPPED [  5%]
+2025-02-24T05:32:59.1556400Z tests/app/test_dialogs.py::test_open_file_dialog[initial_directory6-None-True-None] SKIPPED [  5%]
+2025-02-24T05:32:59.1692860Z tests/app/test_dialogs.py::test_open_file_dialog[None-None-True-result7] SKIPPED [  5%]
+2025-02-24T05:32:59.1881460Z tests/app/test_dialogs.py::test_open_file_dialog[initial_directory8-file_types8-True-result8] SKIPPED [  5%]
+2025-02-24T05:32:59.1995060Z tests/app/test_dialogs.py::test_select_folder_dialog[initial_directory0-False-result0] SKIPPED [  5%]
+2025-02-24T05:32:59.2097300Z tests/app/test_dialogs.py::test_select_folder_dialog[initial_directory1-False-None] SKIPPED [  6%]
+2025-02-24T05:32:59.2514570Z tests/app/test_dialogs.py::test_select_folder_dialog[None-False-result2] SKIPPED [  6%]
+2025-02-24T05:32:59.3048330Z tests/app/test_dialogs.py::test_select_folder_dialog[initial_directory3-True-result3] SKIPPED [  6%]
+2025-02-24T05:32:59.3552810Z tests/app/test_dialogs.py::test_select_folder_dialog[initial_directory4-True-result4] SKIPPED [  6%]
+2025-02-24T05:32:59.3920140Z tests/app/test_dialogs.py::test_select_folder_dialog[initial_directory5-True-None] SKIPPED [  6%]
+2025-02-24T05:32:59.4781450Z tests/app/test_mobile.py::test_content_size PASSED                       [  7%]
+2025-02-24T05:32:59.5089330Z tests/app/test_mobile.py::test_show_hide_cursor PASSED                   [  7%]
+2025-02-24T05:32:59.5429650Z tests/app/test_mobile.py::test_presentation_mode XFAIL (This backend
+2025-02-24T05:32:59.5632830Z doesn't support presentation window state.)                              [  7%]
+2025-02-24T05:33:00.1691200Z tests/app/test_mobile.py::test_current_window PASSED                     [  7%]
+2025-02-24T05:33:00.1794330Z tests/app/test_mobile.py::test_app_lifecycle PASSED                      [  7%]
+2025-02-24T05:33:00.1795320Z tests/app/test_mobile.py::test_device_rotation PASSED                    [  7%]
+2025-02-24T05:33:00.2241120Z tests/app/test_mobile.py::test_session_based_app PASSED                  [  8%]
+2025-02-24T05:33:00.2903520Z tests/app/test_mobile.py::test_background_app PASSED                     [  8%]
+2025-02-24T05:33:00.3925970Z tests/app/test_screens.py::test_name PASSED                              [  8%]
+2025-02-24T05:33:00.4436720Z tests/app/test_screens.py::test_origin PASSED                            [  8%]
+2025-02-24T05:33:00.5054320Z tests/app/test_screens.py::test_size PASSED                              [  8%]
+2025-02-24T05:33:00.9060930Z tests/app/test_screens.py::test_as_image PASSED                          [  9%]
+2025-02-24T05:33:01.0968540Z tests/hardware/test_camera.py::test_camera_properties[CameraProbe] PASSED [  9%]
+2025-02-24T05:33:01.1325080Z tests/hardware/test_camera.py::test_grant_permission[CameraProbe] PASSED [  9%]
+2025-02-24T05:33:01.1965270Z tests/hardware/test_camera.py::test_deny_permission[CameraProbe] PASSED  [  9%]
+2025-02-24T05:33:04.3840220Z tests/hardware/test_camera.py::test_take_photo[CameraProbe] PASSED       [  9%]
+2025-02-24T05:33:07.4978490Z tests/hardware/test_camera.py::test_flash_mode[CameraProbe] PASSED       [ 10%]
+2025-02-24T05:33:08.5881200Z tests/hardware/test_camera.py::test_take_photo_unknown_permission[CameraProbe] PASSED [ 10%]
+2025-02-24T05:33:09.6506800Z tests/hardware/test_camera.py::test_cancel_photo[CameraProbe] PASSED     [ 10%]
+2025-02-24T05:33:09.7343540Z tests/hardware/test_camera.py::test_take_photo_no_permission[CameraProbe] PASSED [ 10%]
+2025-02-24T05:33:10.7912150Z tests/hardware/test_camera.py::test_change_camera[CameraProbe] PASSED    [ 10%]
+2025-02-24T05:33:10.8777730Z tests/hardware/test_camera.py::test_no_cameras[CameraProbe] PASSED       [ 10%]
+2025-02-24T05:33:10.9606510Z tests/hardware/test_location.py::test_grant_permission[LocationProbe] PASSED [ 11%]
+2025-02-24T05:33:11.0301720Z tests/hardware/test_location.py::test_deny_permission[LocationProbe] PASSED [ 11%]
+2025-02-24T05:33:11.1013970Z tests/hardware/test_location.py::test_grant_background_permission[LocationProbe] PASSED [ 11%]
+2025-02-24T05:33:11.1914160Z tests/hardware/test_location.py::test_deny_background_permission[LocationProbe] PASSED [ 11%]
+2025-02-24T05:33:11.2759820Z tests/hardware/test_location.py::test_current_location[LocationProbe] PASSED [ 11%]
+2025-02-24T05:33:11.3642950Z tests/hardware/test_location.py::test_track_location[LocationProbe] PASSED [ 12%]
+2025-02-24T05:33:11.4259690Z tests/hardware/test_location.py::test_track_location_retrack[LocationProbe] PASSED [ 12%]
+2025-02-24T05:33:11.4988950Z tests/hardware/test_location.py::test_stop_tracking_when_already_stopped[LocationProbe] PASSED [ 12%]
+2025-02-24T05:33:11.5919470Z tests/hardware/test_location.py::test_location_error[LocationProbe] PASSED [ 12%]
+2025-02-24T05:33:11.6649230Z tests/hardware/test_location.py::test_location_tracking_start_error[LocationProbe] XFAIL [ 12%]
+2025-02-24T05:33:11.7376200Z tests/hardware/test_location.py::test_no_permission[LocationProbe] PASSED [ 12%]
+2025-02-24T05:33:11.7903060Z tests/test_command.py::test_unknown_system_command PASSED                [ 13%]
+2025-02-24T05:33:12.0487510Z tests/test_fonts.py::test_use_system_font_fallback PASSED                [ 13%]
+2025-02-24T05:33:13.6294680Z tests/test_fonts.py::test_font_options PASSED                            [ 13%]
+2025-02-24T05:33:13.9753440Z tests/test_fonts.py::test_font_file_loaded[Font Awesome 5 Free Solid-resources/fonts/Font Awesome 5 Free-Solid-900.otf-font_kwargs0-False] PASSED [ 13%]
+2025-02-24T05:33:14.1540490Z tests/test_fonts.py::test_font_file_loaded[Endor-resources/fonts/ENDOR___.ttf-font_kwargs1-False] PASSED [ 13%]
+2025-02-24T05:33:14.3560530Z tests/test_fonts.py::test_font_file_loaded[Endor-resources/fonts/ENDOR___.ttf-font_kwargs2-True] PASSED [ 14%]
+2025-02-24T05:33:14.5485470Z tests/test_fonts.py::test_font_file_loaded[Roboto-resources/fonts/Roboto-Bold.ttf-font_kwargs3-False] PASSED [ 14%]
+2025-02-24T05:33:14.7464890Z tests/test_fonts.py::test_font_file_loaded[Roboto-resources/fonts/Roboto-Italic.ttf-font_kwargs4-False] PASSED [ 14%]
+2025-02-24T05:33:14.9514870Z tests/test_fonts.py::test_font_file_loaded[Roboto-resources/fonts/Roboto-BoldItalic.ttf-font_kwargs5-False] PASSED [ 14%]
+2025-02-24T05:33:15.0411880Z tests/test_fonts.py::test_non_existent_font_file PASSED                  [ 14%]
+2025-02-24T05:33:15.1979780Z tests/test_fonts.py::test_corrupted_font_file PASSED                     [ 15%]
+2025-02-24T05:33:15.3029030Z tests/test_icons.py::test_icon PASSED                                    [ 15%]
+2025-02-24T05:33:15.3246740Z tests/test_icons.py::test_app_icon XFAIL (iOS apps don't have app icons
+2025-02-24T05:33:15.3467720Z at runtime)                                                              [ 15%]
+2025-02-24T05:33:15.4083110Z tests/test_icons.py::test_system_icon PASSED                             [ 15%]
+2025-02-24T05:33:15.4829770Z tests/test_icons.py::test_platform_icon PASSED                           [ 15%]
+2025-02-24T05:33:15.5692460Z tests/test_icons.py::test_bad_icon_file PASSED                           [ 15%]
+2025-02-24T05:33:15.6198480Z tests/test_images.py::test_local_image PASSED                            [ 16%]
+2025-02-24T05:33:15.6801230Z tests/test_images.py::test_raw_image PASSED                              [ 16%]
+2025-02-24T05:33:15.7542930Z tests/test_images.py::test_bad_image_file PASSED                         [ 16%]
+2025-02-24T05:33:15.8334940Z tests/test_images.py::test_buffer_image PASSED                           [ 16%]
+2025-02-24T05:33:15.8981510Z tests/test_images.py::test_pil_raw_and_data_image PASSED                 [ 16%]
+2025-02-24T05:33:15.9628910Z tests/test_images.py::test_bad_image_data PASSED                         [ 17%]
+2025-02-24T05:33:16.1361740Z tests/test_images.py::test_save PASSED                                   [ 17%]
+2025-02-24T05:33:16.1749370Z tests/test_keys.py::test_key_combinations[a-key_data0] XFAIL (This
+2025-02-24T05:33:16.1952560Z backend doesn't use keyboard shortcuts)                                  [ 17%]
+2025-02-24T05:33:16.2269560Z tests/test_keys.py::test_key_combinations[A-key_data1] XFAIL (This
+2025-02-24T05:33:16.2614320Z backend doesn't use keyboard shortcuts)                                  [ 17%]
+2025-02-24T05:33:16.3525060Z tests/test_keys.py::test_key_combinations[<mod 1>a-key_data2] XFAIL      [ 17%]
+2025-02-24T05:33:16.3728250Z tests/test_keys.py::test_key_combinations[<mod 2>a-key_data3] XFAIL      [ 17%]
+2025-02-24T05:33:16.4289530Z tests/test_keys.py::test_key_combinations[<mod 3>a-key_data4] XFAIL      [ 18%]
+2025-02-24T05:33:16.4844760Z tests/test_keys.py::test_key_combinations[<mod 1><mod 2>a-key_data5] XFAIL [ 18%]
+2025-02-24T05:33:16.5449000Z tests/test_keys.py::test_key_combinations[<mod 2><mod 1>a-key_data6] XFAIL [ 18%]
+2025-02-24T05:33:16.6007410Z tests/test_keys.py::test_key_combinations[<mod 1><mod 2><mod 3>A-key_data7] XFAIL [ 18%]
+2025-02-24T05:33:16.6356310Z tests/test_keys.py::test_key_combinations[1-key_data8] XFAIL (This
+2025-02-24T05:33:16.6611110Z backend doesn't use keyboard shortcuts)                                  [ 18%]
+2025-02-24T05:33:16.6991370Z tests/test_keys.py::test_key_combinations[!-key_data9] XFAIL (This
+2025-02-24T05:33:16.7170810Z backend doesn't use keyboard shortcuts)                                  [ 19%]
+2025-02-24T05:33:16.7567400Z tests/test_keys.py::test_key_combinations[Key.F5-key_data10] XFAIL (This
+2025-02-24T05:33:16.7770130Z backend doesn't use keyboard shortcuts)                                  [ 19%]
+2025-02-24T05:33:16.8332950Z tests/test_keys.py::test_key_combinations[Key.HOME-key_data11] XFAIL     [ 19%]
+2025-02-24T05:33:16.8917600Z tests/test_keys.py::test_key_combinations[<home><mod 1>-key_data12] XFAIL [ 19%]
+2025-02-24T05:33:16.9562750Z tests/test_keys.py::test_key_combinations[numpad:5<mod 1>-key_data13] XFAIL [ 19%]
+2025-02-24T05:33:17.0332650Z tests/test_keys.py::test_key_combinations[<mod 1>;-key_data14] XFAIL     [ 20%]
+2025-02-24T05:33:17.0706080Z tests/test_keys.py::test_key_combinations[<mod 1> -key_data15] XFAIL     [ 20%]
+2025-02-24T05:33:17.1351050Z tests/test_keys.py::test_key_combinations[<mod 1>'-key_data16] XFAIL     [ 20%]
+2025-02-24T05:33:17.2224480Z tests/test_keys.py::test_key_combinations[<mod 1>|-key_data17] XFAIL     [ 20%]
+2025-02-24T05:33:17.2835460Z tests/test_paths.py::test_app_paths[config] PASSED                       [ 20%]
+2025-02-24T05:33:17.3827720Z tests/test_paths.py::test_app_paths[data] PASSED                         [ 20%]
+2025-02-24T05:33:17.4838150Z tests/test_paths.py::test_app_paths[cache] PASSED                        [ 21%]
+2025-02-24T05:33:17.5809200Z tests/test_paths.py::test_app_paths[logs] PASSED                         [ 21%]
+2025-02-24T05:33:17.6148870Z tests/test_statusicons.py::test_add_remove XFAIL (Status icons not
+2025-02-24T05:33:17.6397250Z implemented on iOS)                                                      [ 21%]
+2025-02-24T05:33:17.6715820Z tests/test_statusicons.py::test_unknown_status_icon XFAIL (Status icons
+2025-02-24T05:33:17.6961880Z not implemented on iOS)                                                  [ 21%]
+2025-02-24T05:33:17.7313030Z tests/test_statusicons.py::test_activate_button_icon XFAIL (Status icons
+2025-02-24T05:33:17.7540660Z not implemented on iOS)                                                  [ 21%]
+2025-02-24T05:33:17.7920280Z tests/test_statusicons.py::test_activate_status_menu_item XFAIL (Status
+2025-02-24T05:33:17.8205890Z icons not implemented on iOS)                                            [ 22%]
+2025-02-24T05:33:17.9818370Z tests/widgets/test_activityindicator.py::test_enable_noop <- tests/widgets/properties.py PASSED [ 22%]
+2025-02-24T05:33:19.0494470Z tests/widgets/test_activityindicator.py::test_focus_noop <- tests/widgets/properties.py PASSED [ 22%]
+2025-02-24T05:33:19.0600760Z tests/widgets/test_activityindicator.py::test_cleanup <- tests/widgets/conftest.py PASSED [ 22%]
+2025-02-24T05:33:19.2547780Z tests/widgets/test_activityindicator.py::test_start_stop PASSED          [ 22%]
+2025-02-24T05:33:19.3036780Z tests/widgets/test_activityindicator.py::test_fixed_square_widget_size PASSED [ 23%]
+2025-02-24T05:33:20.0567520Z tests/widgets/test_base.py::test_visibility PASSED                       [ 23%]
+2025-02-24T05:33:20.0886370Z tests/widgets/test_base.py::test_parenting PASSED                        [ 23%]
+2025-02-24T05:33:20.0996660Z tests/widgets/test_base.py::test_tab_index PASSED                        [ 23%]
+2025-02-24T05:33:20.1606370Z tests/widgets/test_box.py::test_background_color <- tests/widgets/properties.py PASSED [ 23%]
+2025-02-24T05:33:20.2327970Z tests/widgets/test_box.py::test_background_color_reset <- tests/widgets/properties.py PASSED [ 23%]
+2025-02-24T05:33:20.3545130Z tests/widgets/test_box.py::test_background_color_transparent <- tests/widgets/properties.py PASSED [ 24%]
+2025-02-24T05:33:20.5375800Z tests/widgets/test_box.py::test_enable_noop <- tests/widgets/properties.py PASSED [ 24%]
+2025-02-24T05:33:20.7002280Z tests/widgets/test_box.py::test_flex_widget_size <- tests/widgets/properties.py PASSED [ 24%]
+2025-02-24T05:33:20.9800390Z tests/widgets/test_box.py::test_focus_noop <- tests/widgets/properties.py PASSED [ 24%]
+2025-02-24T05:33:21.0772650Z tests/widgets/test_box.py::test_cleanup <- tests/widgets/conftest.py PASSED [ 24%]
+2025-02-24T05:33:21.1803480Z tests/widgets/test_button.py::test_background_color <- tests/widgets/properties.py PASSED [ 25%]
+2025-02-24T05:33:21.3144220Z tests/widgets/test_button.py::test_background_color_reset <- tests/widgets/properties.py PASSED [ 25%]
+2025-02-24T05:33:21.4689250Z tests/widgets/test_button.py::test_color <- tests/widgets/properties.py PASSED [ 25%]
+2025-02-24T05:33:21.6239090Z tests/widgets/test_button.py::test_color_reset <- tests/widgets/properties.py PASSED [ 25%]
+2025-02-24T05:33:21.7779560Z tests/widgets/test_button.py::test_enabled <- tests/widgets/properties.py PASSED [ 25%]
+2025-02-24T05:33:21.9044920Z tests/widgets/test_button.py::test_flex_horizontal_widget_size <- tests/widgets/properties.py PASSED [ 25%]
+2025-02-24T05:33:22.0832680Z tests/widgets/test_button.py::test_font <- tests/widgets/properties.py PASSED [ 26%]
+2025-02-24T05:33:22.3197030Z tests/widgets/test_button.py::test_font_attrs <- tests/widgets/properties.py PASSED [ 26%]
+2025-02-24T05:33:22.4726120Z tests/widgets/test_button.py::test_text_width_change <- tests/widgets/properties.py PASSED [ 26%]
+2025-02-24T05:33:22.8899470Z tests/widgets/test_button.py::test_focus_noop <- tests/widgets/properties.py PASSED [ 26%]
+2025-02-24T05:33:22.9912370Z tests/widgets/test_button.py::test_cleanup <- tests/widgets/conftest.py PASSED [ 26%]
+2025-02-24T05:33:23.3122310Z tests/widgets/test_button.py::test_text PASSED                           [ 27%]
+2025-02-24T05:33:23.5175240Z tests/widgets/test_button.py::test_icon PASSED                           [ 27%]
+2025-02-24T05:33:23.6323130Z tests/widgets/test_button.py::test_press PASSED                          [ 27%]
+2025-02-24T05:33:23.7701150Z tests/widgets/test_button.py::test_background_color_transparent PASSED   [ 27%]
+2025-02-24T05:33:23.9705470Z tests/widgets/test_canvas.py::test_background_color <- tests/widgets/properties.py PASSED [ 27%]
+2025-02-24T05:33:24.0774460Z tests/widgets/test_canvas.py::test_background_color_reset <- tests/widgets/properties.py PASSED [ 28%]
+2025-02-24T05:33:24.1915550Z tests/widgets/test_canvas.py::test_background_color_transparent <- tests/widgets/properties.py PASSED [ 28%]
+2025-02-24T05:33:24.3102080Z tests/widgets/test_canvas.py::test_enable_noop <- tests/widgets/properties.py PASSED [ 28%]
+2025-02-24T05:33:24.4560930Z tests/widgets/test_canvas.py::test_flex_widget_size <- tests/widgets/properties.py PASSED [ 28%]
+2025-02-24T05:33:24.7091810Z tests/widgets/test_canvas.py::test_focus_noop <- tests/widgets/properties.py PASSED [ 28%]
+2025-02-24T05:33:24.7599970Z tests/widgets/test_canvas.py::test_cleanup <- tests/widgets/conftest.py PASSED [ 28%]
+2025-02-24T05:33:24.8920010Z tests/widgets/test_canvas.py::test_resize PASSED                         [ 29%]
+2025-02-24T05:33:25.0574430Z tests/widgets/test_canvas.py::test_press PASSED                          [ 29%]
+2025-02-24T05:33:25.1395980Z tests/widgets/test_canvas.py::test_activate SKIPPED (Activation not
+2025-02-24T05:33:25.1801630Z supported on iOS)                                                        [ 29%]
+2025-02-24T05:33:25.3253700Z tests/widgets/test_canvas.py::test_drag PASSED                           [ 29%]
+2025-02-24T05:33:25.4098920Z tests/widgets/test_canvas.py::test_alt_press SKIPPED (Alternate handling
+2025-02-24T05:33:25.4406760Z not supported on iOS)                                                    [ 29%]
+2025-02-24T05:33:25.5322890Z tests/widgets/test_canvas.py::test_alt_drag SKIPPED (Alternate handling
+2025-02-24T05:33:25.5833070Z not supported on iOS)                                                    [ 30%]
+2025-02-24T05:33:25.7867120Z tests/widgets/test_canvas.py::test_image_data PASSED                     [ 30%]
+2025-02-24T05:33:26.6688270Z tests/widgets/test_canvas.py::test_transparency PASSED                   [ 30%]
+2025-02-24T05:33:27.5413770Z tests/widgets/test_canvas.py::test_paths PASSED                          [ 30%]
+2025-02-24T05:33:28.3977040Z tests/widgets/test_canvas.py::test_bezier_curve PASSED                   [ 30%]
+2025-02-24T05:33:29.2718600Z tests/widgets/test_canvas.py::test_quadratic_curve PASSED                [ 30%]
+2025-02-24T05:33:30.2126700Z tests/widgets/test_canvas.py::test_arc PASSED                            [ 31%]
+2025-02-24T05:33:31.1253740Z tests/widgets/test_canvas.py::test_ellipse PASSED                        [ 31%]
+2025-02-24T05:33:32.7302820Z tests/widgets/test_canvas.py::test_ellipse_path PASSED                   [ 31%]
+2025-02-24T05:33:32.7946820Z === Messages dropped during live streaming (use `log show` to see what they were)
+2025-02-24T05:33:32.8048810Z === Messages dropped during live streaming (use `log show` to see what they were)
+2025-02-24T05:33:32.8149410Z === Messages dropped during live streaming (use `log show` to see what they were)
+2025-02-24T05:33:32.8251620Z === Messages dropped during live streaming (use `log show` to see what they were)
+2025-02-24T05:33:32.8352990Z === Messages dropped during live streaming (use `log show` to see what they were)
+2025-02-24T05:33:32.8460320Z === Messages dropped during live streaming (use `log show` to see what they were)
+2025-02-24T05:33:32.8561900Z === Messages dropped during live streaming (use `log show` to see what they were)
+2025-02-24T05:33:32.8686870Z === Messages dropped during live streaming (use `log show` to see what they were)
+2025-02-24T05:33:32.8790110Z === Messages dropped during live streaming (use `log show` to see what they were)
+2025-02-24T05:33:32.8892090Z === Messages dropped during live streaming (use `log show` to see what they were)
+2025-02-24T05:33:32.9727130Z tests/widgets/test_canvas.py::test_rect PASSED                           [ 31%]
+2025-02-24T05:33:33.6737640Z tests/widgets/test_canvas.py::test_fill PASSED                           [ 31%]
+2025-02-24T05:33:34.5544620Z tests/widgets/test_canvas.py::test_stroke PASSED                         [ 32%]
+2025-02-24T05:33:35.4772340Z tests/widgets/test_canvas.py::test_closed_path_context PASSED            [ 32%]
+2025-02-24T05:33:36.3127820Z tests/widgets/test_canvas.py::test_fill_context PASSED                   [ 32%]
+2025-02-24T05:33:37.2139020Z tests/widgets/test_canvas.py::test_stroke_context PASSED                 [ 32%]
+2025-02-24T05:33:38.1150440Z tests/widgets/test_canvas.py::test_transforms PASSED                     [ 32%]
+2025-02-24T05:33:39.0750540Z tests/widgets/test_canvas.py::test_write_text PASSED                     [ 33%]
+2025-02-24T05:33:40.0273390Z tests/widgets/test_canvas.py::test_multiline_text PASSED                 [ 33%]
+2025-02-24T05:33:40.0904510Z tests/widgets/test_dateinput.py::test_background_color <- tests/widgets/properties.py SKIPPED [ 33%]
+2025-02-24T05:33:40.1554930Z tests/widgets/test_dateinput.py::test_background_color_reset <- tests/widgets/properties.py SKIPPED [ 33%]
+2025-02-24T05:33:40.2209430Z tests/widgets/test_dateinput.py::test_background_color_transparent <- tests/widgets/properties.py SKIPPED [ 33%]
+2025-02-24T05:33:40.2829040Z tests/widgets/test_dateinput.py::test_color <- tests/widgets/properties.py SKIPPED [ 33%]
+2025-02-24T05:33:40.3453050Z tests/widgets/test_dateinput.py::test_color_reset <- tests/widgets/properties.py SKIPPED [ 34%]
+2025-02-24T05:33:40.4059750Z tests/widgets/test_dateinput.py::test_enabled <- tests/widgets/properties.py SKIPPED [ 34%]
+2025-02-24T05:33:40.4839070Z tests/widgets/test_dateinput.py::test_flex_horizontal_widget_size <- tests/widgets/properties.py SKIPPED [ 34%]
+2025-02-24T05:33:40.5377350Z tests/widgets/test_dateinput.py::test_cleanup <- tests/widgets/conftest.py SKIPPED [ 34%]
+2025-02-24T05:33:40.5996810Z tests/widgets/test_dateinput.py::test_init SKIPPED (not yet implemented
+2025-02-24T05:33:40.5997310Z on iOS)                                                                  [ 34%]
+2025-02-24T05:33:40.6352020Z tests/widgets/test_dateinput.py::test_value SKIPPED (not yet implemented
+2025-02-24T05:33:40.6648710Z on iOS)                                                                  [ 35%]
+2025-02-24T05:33:40.6985070Z tests/widgets/test_dateinput.py::test_change SKIPPED (not yet
+2025-02-24T05:33:40.7309790Z implemented on iOS)                                                      [ 35%]
+2025-02-24T05:33:40.7627010Z tests/widgets/test_dateinput.py::test_min SKIPPED (not yet implemented
+2025-02-24T05:33:40.8089270Z on iOS)                                                                  [ 35%]
+2025-02-24T05:33:40.8241410Z tests/widgets/test_dateinput.py::test_max SKIPPED (not yet implemented
+2025-02-24T05:33:40.8563530Z on iOS)                                                                  [ 35%]
+2025-02-24T05:33:41.3069140Z tests/widgets/test_detailedlist.py::test_enable_noop <- tests/widgets/properties.py PASSED [ 35%]
+2025-02-24T05:33:41.6757450Z tests/widgets/test_detailedlist.py::test_flex_widget_size <- tests/widgets/properties.py PASSED [ 35%]
+2025-02-24T05:33:42.1953210Z tests/widgets/test_detailedlist.py::test_focus_noop <- tests/widgets/properties.py PASSED [ 36%]
+2025-02-24T05:33:42.2677250Z tests/widgets/test_detailedlist.py::test_cleanup <- tests/widgets/conftest.py PASSED [ 36%]
+2025-02-24T05:33:42.8858230Z tests/widgets/test_detailedlist.py::test_scroll PASSED                   [ 36%]
+2025-02-24T05:33:43.0786030Z tests/widgets/test_detailedlist.py::test_select PASSED                   [ 36%]
+2025-02-24T05:33:43.4632400Z tests/widgets/test_detailedlist.py::test_row_changes PASSED              [ 36%]
+2025-02-24T05:33:43.9104950Z tests/widgets/test_detailedlist.py::test_refresh PASSED                  [ 37%]
+2025-02-24T05:33:44.1558060Z tests/widgets/test_detailedlist.py::test_actions PASSED                  [ 37%]
+2025-02-24T05:33:44.2999180Z tests/widgets/test_divider.py::test_enable_noop <- tests/widgets/properties.py PASSED [ 37%]
+2025-02-24T05:33:44.6404320Z tests/widgets/test_divider.py::test_focus_noop <- tests/widgets/properties.py PASSED [ 37%]
+2025-02-24T05:33:44.7335880Z tests/widgets/test_divider.py::test_cleanup <- tests/widgets/conftest.py PASSED [ 37%]
+2025-02-24T05:33:44.9122250Z tests/widgets/test_divider.py::test_directions PASSED                    [ 38%]
+2025-02-24T05:33:45.0658850Z tests/widgets/test_imageview.py::test_background_color <- tests/widgets/properties.py PASSED [ 38%]
+2025-02-24T05:33:45.2132300Z tests/widgets/test_imageview.py::test_background_color_reset <- tests/widgets/properties.py PASSED [ 38%]
+2025-02-24T05:33:45.3560560Z tests/widgets/test_imageview.py::test_background_color_transparent <- tests/widgets/properties.py PASSED [ 38%]
+2025-02-24T05:33:45.5054100Z tests/widgets/test_imageview.py::test_enable_noop <- tests/widgets/properties.py PASSED [ 38%]
+2025-02-24T05:33:45.8296750Z tests/widgets/test_imageview.py::test_focus_noop <- tests/widgets/properties.py PASSED [ 38%]
+2025-02-24T05:33:45.9546210Z tests/widgets/test_imageview.py::test_cleanup <- tests/widgets/conftest.py PASSED [ 39%]
+2025-02-24T05:33:46.1150290Z tests/widgets/test_imageview.py::test_implicit_size PASSED               [ 39%]
+2025-02-24T05:33:46.2918640Z tests/widgets/test_imageview.py::test_explicit_width PASSED              [ 39%]
+2025-02-24T05:33:46.4535860Z tests/widgets/test_imageview.py::test_explicit_height PASSED             [ 39%]
+2025-02-24T05:33:46.6172890Z tests/widgets/test_imageview.py::test_explicit_size PASSED               [ 39%]
+2025-02-24T05:33:46.8240690Z tests/widgets/test_label.py::test_background_color <- tests/widgets/properties.py PASSED [ 40%]
+2025-02-24T05:33:47.0023400Z tests/widgets/test_label.py::test_background_color_reset <- tests/widgets/properties.py PASSED [ 40%]
+2025-02-24T05:33:47.2157360Z tests/widgets/test_label.py::test_background_color_transparent <- tests/widgets/properties.py PASSED [ 40%]
+2025-02-24T05:33:47.4490170Z tests/widgets/test_label.py::test_color <- tests/widgets/properties.py PASSED [ 40%]
+2025-02-24T05:33:47.6373710Z tests/widgets/test_label.py::test_color_reset <- tests/widgets/properties.py PASSED [ 40%]
+2025-02-24T05:33:47.8202180Z tests/widgets/test_label.py::test_enabled <- tests/widgets/properties.py PASSED [ 41%]
+2025-02-24T05:33:48.0143330Z tests/widgets/test_label.py::test_flex_horizontal_widget_size <- tests/widgets/properties.py PASSED [ 41%]
+2025-02-24T05:33:48.4406580Z tests/widgets/test_label.py::test_focus_noop <- tests/widgets/properties.py PASSED [ 41%]
+2025-02-24T05:33:48.6298380Z tests/widgets/test_label.py::test_font <- tests/widgets/properties.py PASSED [ 41%]
+2025-02-24T05:33:48.9851830Z tests/widgets/test_label.py::test_font_attrs <- tests/widgets/properties.py PASSED [ 41%]
+2025-02-24T05:33:49.2808900Z tests/widgets/test_label.py::test_text <- tests/widgets/properties.py PASSED [ 41%]
+2025-02-24T05:33:49.4197320Z tests/widgets/test_label.py::test_text_align <- tests/widgets/properties.py PASSED [ 42%]
+2025-02-24T05:33:49.6312880Z tests/widgets/test_label.py::test_text_width_change <- tests/widgets/properties.py PASSED [ 42%]
+2025-02-24T05:33:49.7946760Z tests/widgets/test_label.py::test_cleanup <- tests/widgets/conftest.py PASSED [ 42%]
+2025-02-24T05:33:50.0734120Z tests/widgets/test_label.py::test_multiline PASSED                       [ 42%]
+2025-02-24T05:33:52.4533470Z tests/widgets/test_mapview.py::test_flex_widget_size <- tests/widgets/properties.py PASSED [ 42%]
+2025-02-24T05:33:54.6360440Z tests/widgets/test_mapview.py::test_focus_noop <- tests/widgets/properties.py PASSED [ 43%]
+2025-02-24T05:33:54.8255400Z tests/widgets/test_mapview.py::test_cleanup <- tests/widgets/conftest.py PASSED [ 43%]
+2025-02-24T05:33:59.4430170Z tests/widgets/test_mapview.py::test_location PASSED                      [ 43%]
+2025-02-24T05:34:09.0886990Z tests/widgets/test_mapview.py::test_zoom PASSED                          [ 43%]
+2025-02-24T05:34:13.2511450Z tests/widgets/test_mapview.py::test_add_pins PASSED                      [ 43%]
+2025-02-24T05:34:16.2556380Z tests/widgets/test_mapview.py::test_select_pin PASSED                    [ 43%]
+2025-02-24T05:34:16.9771400Z tests/widgets/test_multilinetextinput.py::test_background_color <- tests/widgets/properties.py PASSED [ 44%]
+2025-02-24T05:34:16.9813740Z tests/widgets/test_multilinetextinput.py::test_background_color_reset <- tests/widgets/properties.py PASSED [ 44%]
+2025-02-24T05:34:17.1671100Z tests/widgets/test_multilinetextinput.py::test_background_color_transparent <- tests/widgets/properties.py PASSED [ 44%]
+2025-02-24T05:34:17.4250750Z tests/widgets/test_multilinetextinput.py::test_color <- tests/widgets/properties.py PASSED [ 44%]
+2025-02-24T05:34:17.6453170Z tests/widgets/test_multilinetextinput.py::test_color_reset <- tests/widgets/properties.py PASSED [ 44%]
+2025-02-24T05:34:17.9271770Z tests/widgets/test_multilinetextinput.py::test_enabled <- tests/widgets/properties.py PASSED [ 45%]
+2025-02-24T05:34:18.1601310Z tests/widgets/test_multilinetextinput.py::test_flex_widget_size <- tests/widgets/properties.py PASSED [ 45%]
+2025-02-24T05:34:18.8050490Z tests/widgets/test_multilinetextinput.py::test_focus <- tests/widgets/properties.py PASSED [ 45%]
+2025-02-24T05:34:19.0728440Z tests/widgets/test_multilinetextinput.py::test_font <- tests/widgets/properties.py PASSED [ 45%]
+2025-02-24T05:34:19.4302890Z tests/widgets/test_multilinetextinput.py::test_font_attrs <- tests/widgets/properties.py PASSED [ 45%]
+2025-02-24T05:34:19.7402710Z tests/widgets/test_multilinetextinput.py::test_placeholder <- tests/widgets/properties.py PASSED [ 46%]
+2025-02-24T05:34:20.0499760Z tests/widgets/test_multilinetextinput.py::test_placeholder_color <- tests/widgets/properties.py PASSED [ 46%]
+2025-02-24T05:34:20.7877430Z tests/widgets/test_multilinetextinput.py::test_placeholder_focus <- tests/widgets/properties.py PASSED [ 46%]
+2025-02-24T05:34:20.9715220Z tests/widgets/test_multilinetextinput.py::test_readonly <- tests/widgets/properties.py PASSED [ 46%]
+2025-02-24T05:34:21.1720690Z tests/widgets/test_multilinetextinput.py::test_text_align <- tests/widgets/properties.py PASSED [ 46%]
+2025-02-24T05:34:21.5164970Z tests/widgets/test_multilinetextinput.py::test_text_value <- tests/widgets/properties.py PASSED [ 46%]
+2025-02-24T05:34:22.2972460Z tests/widgets/test_multilinetextinput.py::test_on_change_focus[True-] <- tests/widgets/test_textinput.py PASSED [ 47%]
+2025-02-24T05:34:22.9202730Z tests/widgets/test_multilinetextinput.py::test_on_change_focus[True-placeholder] <- tests/widgets/test_textinput.py PASSED [ 47%]
+2025-02-24T05:34:23.5996690Z tests/widgets/test_multilinetextinput.py::test_on_change_focus[False-] <- tests/widgets/test_textinput.py PASSED [ 47%]
+2025-02-24T05:34:24.2426080Z tests/widgets/test_multilinetextinput.py::test_on_change_focus[False-placeholder] <- tests/widgets/test_textinput.py PASSED [ 47%]
+2025-02-24T05:34:24.7393310Z tests/widgets/test_multilinetextinput.py::test_on_change_programmatic[True-] <- tests/widgets/test_textinput.py PASSED [ 47%]
+2025-02-24T05:34:25.1389350Z tests/widgets/test_multilinetextinput.py::test_on_change_programmatic[True-placeholder] <- tests/widgets/test_textinput.py PASSED [ 48%]
+2025-02-24T05:34:25.4534360Z tests/widgets/test_multilinetextinput.py::test_on_change_programmatic[False-] <- tests/widgets/test_textinput.py PASSED [ 48%]
+2025-02-24T05:34:25.7574210Z tests/widgets/test_multilinetextinput.py::test_on_change_programmatic[False-placeholder] <- tests/widgets/test_textinput.py PASSED [ 48%]
+2025-02-24T05:34:26.1381630Z tests/widgets/test_multilinetextinput.py::test_on_change_user <- tests/widgets/test_textinput.py PASSED [ 48%]
+2025-02-24T05:34:26.4358660Z tests/widgets/test_multilinetextinput.py::test_undo_redo <- tests/widgets/test_textinput.py SKIPPED [ 48%]
+2025-02-24T05:34:26.5939220Z tests/widgets/test_multilinetextinput.py::test_value_not_hidden <- tests/widgets/test_textinput.py PASSED [ 48%]
+2025-02-24T05:34:26.7826660Z tests/widgets/test_multilinetextinput.py::test_cleanup <- tests/widgets/conftest.py PASSED [ 49%]
+2025-02-24T05:34:27.9394150Z tests/widgets/test_multilinetextinput.py::test_scroll_position PASSED    [ 49%]
+2025-02-24T05:34:28.1434880Z tests/widgets/test_numberinput.py::test_background_color <- tests/widgets/properties.py PASSED [ 49%]
+2025-02-24T05:34:28.2885240Z tests/widgets/test_numberinput.py::test_background_color_reset <- tests/widgets/properties.py PASSED [ 49%]
+2025-02-24T05:34:28.4336040Z tests/widgets/test_numberinput.py::test_background_color_transparent <- tests/widgets/properties.py PASSED [ 49%]
+2025-02-24T05:34:28.5867280Z tests/widgets/test_numberinput.py::test_color <- tests/widgets/properties.py PASSED [ 50%]
+2025-02-24T05:34:28.7336410Z tests/widgets/test_numberinput.py::test_color_reset <- tests/widgets/properties.py PASSED [ 50%]
+2025-02-24T05:34:28.8904430Z tests/widgets/test_numberinput.py::test_enabled <- tests/widgets/properties.py PASSED [ 50%]
+2025-02-24T05:34:29.0688350Z tests/widgets/test_numberinput.py::test_flex_horizontal_widget_size <- tests/widgets/properties.py PASSED [ 50%]
+2025-02-24T05:34:29.4264570Z tests/widgets/test_numberinput.py::test_focus <- tests/widgets/properties.py PASSED [ 50%]
+2025-02-24T05:34:29.6012140Z tests/widgets/test_numberinput.py::test_font <- tests/widgets/properties.py PASSED [ 51%]
+2025-02-24T05:34:29.7888570Z tests/widgets/test_numberinput.py::test_font_attrs <- tests/widgets/properties.py PASSED [ 51%]
+2025-02-24T05:34:30.0029440Z tests/widgets/test_numberinput.py::test_readonly <- tests/widgets/properties.py PASSED [ 51%]
+2025-02-24T05:34:30.0812410Z tests/widgets/test_numberinput.py::test_text_align <- tests/widgets/properties.py PASSED [ 51%]
+2025-02-24T05:34:30.2295660Z tests/widgets/test_numberinput.py::test_cleanup <- tests/widgets/conftest.py PASSED [ 51%]
+2025-02-24T05:34:30.6577320Z tests/widgets/test_numberinput.py::test_on_change_handler PASSED         [ 51%]
+2025-02-24T05:34:31.0786880Z tests/widgets/test_numberinput.py::test_focus_value_clipping PASSED      [ 52%]
+2025-02-24T05:34:31.3009910Z tests/widgets/test_numberinput.py::test_value PASSED                     [ 52%]
+2025-02-24T05:34:31.4289250Z tests/widgets/test_numberinput.py::test_increment_decrement XFAIL (iOS
+2025-02-24T05:34:31.5001300Z doesn't support stepped increments)                                      [ 52%]
+2025-02-24T05:34:31.6009600Z tests/widgets/test_numberinput.py::test_undo_redo SKIPPED (not yet
+2025-02-24T05:34:31.6586720Z implemented on iOS)                                                      [ 52%]
+2025-02-24T05:34:32.0778100Z tests/widgets/test_optioncontainer.py::test_enable_noop <- tests/widgets/properties.py PASSED [ 52%]
+2025-02-24T05:34:32.5123260Z tests/widgets/test_optioncontainer.py::test_flex_widget_size <- tests/widgets/properties.py PASSED [ 53%]
+2025-02-24T05:34:32.9468630Z tests/widgets/test_optioncontainer.py::test_focus_noop <- tests/widgets/properties.py PASSED [ 53%]
+2025-02-24T05:34:33.2300690Z tests/widgets/test_optioncontainer.py::test_cleanup <- tests/widgets/conftest.py PASSED [ 53%]
+2025-02-24T05:34:33.9574710Z tests/widgets/test_optioncontainer.py::test_select_tab PASSED            [ 53%]
+2025-02-24T05:34:35.4939670Z tests/widgets/test_optioncontainer.py::test_select_tab_overflow PASSED   [ 53%]
+2025-02-24T05:34:36.5868820Z tests/widgets/test_optioncontainer.py::test_enable_tab PASSED            [ 53%]
+2025-02-24T05:34:37.9291440Z tests/widgets/test_optioncontainer.py::test_change_content PASSED        [ 54%]
+2025-02-24T05:34:38.1520520Z tests/widgets/test_passwordinput.py::test_background_color <- tests/widgets/properties.py PASSED [ 54%]
+2025-02-24T05:34:38.2471330Z tests/widgets/test_passwordinput.py::test_background_color_reset <- tests/widgets/properties.py PASSED [ 54%]
+2025-02-24T05:34:38.3683280Z tests/widgets/test_passwordinput.py::test_background_color_transparent <- tests/widgets/properties.py PASSED [ 54%]
+2025-02-24T05:34:38.5175820Z tests/widgets/test_passwordinput.py::test_color <- tests/widgets/properties.py PASSED [ 54%]
+2025-02-24T05:34:38.6743220Z tests/widgets/test_passwordinput.py::test_color_reset <- tests/widgets/properties.py PASSED [ 55%]
+2025-02-24T05:34:38.8432280Z tests/widgets/test_passwordinput.py::test_enabled <- tests/widgets/properties.py PASSED [ 55%]
+2025-02-24T05:34:38.9737040Z tests/widgets/test_passwordinput.py::test_flex_horizontal_widget_size <- tests/widgets/properties.py PASSED [ 55%]
+2025-02-24T05:34:39.3357760Z tests/widgets/test_passwordinput.py::test_focus <- tests/widgets/properties.py PASSED [ 55%]
+2025-02-24T05:34:39.4758570Z tests/widgets/test_passwordinput.py::test_font <- tests/widgets/properties.py PASSED [ 55%]
+2025-02-24T05:34:39.6740240Z tests/widgets/test_passwordinput.py::test_font_attrs <- tests/widgets/properties.py PASSED [ 56%]
+2025-02-24T05:34:39.8399890Z tests/widgets/test_passwordinput.py::test_placeholder <- tests/widgets/properties.py PASSED [ 56%]
+2025-02-24T05:34:40.0029300Z tests/widgets/test_passwordinput.py::test_placeholder_color <- tests/widgets/properties.py PASSED [ 56%]
+2025-02-24T05:34:40.4630330Z tests/widgets/test_passwordinput.py::test_placeholder_focus <- tests/widgets/properties.py PASSED [ 56%]
+2025-02-24T05:34:40.6063820Z tests/widgets/test_passwordinput.py::test_readonly <- tests/widgets/properties.py PASSED [ 56%]
+2025-02-24T05:34:40.7675290Z tests/widgets/test_passwordinput.py::test_text_align <- tests/widgets/properties.py PASSED [ 56%]
+2025-02-24T05:34:41.2240340Z tests/widgets/test_passwordinput.py::test_on_change_focus[True-] <- tests/widgets/test_textinput.py PASSED [ 57%]
+2025-02-24T05:34:41.6197470Z tests/widgets/test_passwordinput.py::test_on_change_focus[True-placeholder] <- tests/widgets/test_textinput.py PASSED [ 57%]
+2025-02-24T05:34:41.8690710Z tests/widgets/test_passwordinput.py::test_on_change_focus[False-] <- tests/widgets/test_textinput.py PASSED [ 57%]
+2025-02-24T05:34:42.5704960Z tests/widgets/test_passwordinput.py::test_on_change_focus[False-placeholder] <- tests/widgets/test_textinput.py PASSED [ 57%]
+2025-02-24T05:34:42.6045400Z tests/widgets/test_passwordinput.py::test_on_change_programmatic[True-] <- tests/widgets/test_textinput.py PASSED [ 57%]
+2025-02-24T05:34:42.8861420Z tests/widgets/test_passwordinput.py::test_on_change_programmatic[True-placeholder] <- tests/widgets/test_textinput.py PASSED [ 58%]
+2025-02-24T05:34:43.1989040Z tests/widgets/test_passwordinput.py::test_on_change_programmatic[False-] <- tests/widgets/test_textinput.py PASSED [ 58%]
+2025-02-24T05:34:43.4138470Z tests/widgets/test_passwordinput.py::test_on_change_programmatic[False-placeholder] <- tests/widgets/test_textinput.py PASSED [ 58%]
+2025-02-24T05:34:43.7538570Z tests/widgets/test_passwordinput.py::test_on_change_user <- tests/widgets/test_textinput.py PASSED [ 58%]
+2025-02-24T05:34:44.1037010Z tests/widgets/test_passwordinput.py::test_on_confirm <- tests/widgets/test_textinput.py PASSED [ 58%]
+2025-02-24T05:34:44.2970420Z tests/widgets/test_passwordinput.py::test_text_value <- tests/widgets/test_textinput.py PASSED [ 58%]
+2025-02-24T05:34:44.7596210Z tests/widgets/test_passwordinput.py::test_undo_redo <- tests/widgets/test_textinput.py SKIPPED [ 59%]
+2025-02-24T05:34:44.9509390Z tests/widgets/test_passwordinput.py::test_validation <- tests/widgets/test_textinput.py PASSED [ 59%]
+2025-02-24T05:34:45.0902510Z tests/widgets/test_passwordinput.py::test_cleanup <- tests/widgets/conftest.py PASSED [ 59%]
+2025-02-24T05:34:45.3162790Z tests/widgets/test_passwordinput.py::test_value_hidden PASSED            [ 59%]
+2025-02-24T05:34:45.4795790Z tests/widgets/test_progressbar.py::test_enable_noop <- tests/widgets/properties.py PASSED [ 59%]
+2025-02-24T05:34:45.6217960Z tests/widgets/test_progressbar.py::test_flex_horizontal_widget_size <- tests/widgets/properties.py PASSED [ 60%]
+2025-02-24T05:34:45.8873050Z tests/widgets/test_progressbar.py::test_focus_noop <- tests/widgets/properties.py PASSED [ 60%]
+2025-02-24T05:34:45.9647150Z tests/widgets/test_progressbar.py::test_cleanup <- tests/widgets/conftest.py PASSED [ 60%]
+2025-02-24T05:34:46.0875620Z tests/widgets/test_progressbar.py::test_start_stop_determinate PASSED    [ 60%]
+2025-02-24T05:34:46.6513960Z tests/widgets/test_progressbar.py::test_start_stop_indeterminate PASSED  [ 60%]
+2025-02-24T05:34:47.0068750Z tests/widgets/test_progressbar.py::test_animation_starts_on_max_change PASSED [ 61%]
+2025-02-24T05:34:47.1257890Z tests/widgets/test_progressbar.py::test_position_change_on_max_change PASSED [ 61%]
+2025-02-24T05:34:48.2470230Z tests/widgets/test_scrollcontainer.py::test_background_color <- tests/widgets/properties.py PASSED [ 61%]
+2025-02-24T05:34:49.3203150Z tests/widgets/test_scrollcontainer.py::test_background_color_reset <- tests/widgets/properties.py PASSED [ 61%]
+2025-02-24T05:34:50.3963440Z tests/widgets/test_scrollcontainer.py::test_background_color_transparent <- tests/widgets/properties.py PASSED [ 61%]
+2025-02-24T05:34:51.4967160Z tests/widgets/test_scrollcontainer.py::test_enable_noop <- tests/widgets/properties.py PASSED [ 61%]
+2025-02-24T05:34:53.4996300Z tests/widgets/test_scrollcontainer.py::test_flex_widget_size <- tests/widgets/properties.py PASSED [ 62%]
+2025-02-24T05:34:55.0533210Z tests/widgets/test_scrollcontainer.py::test_focus_noop <- tests/widgets/properties.py PASSED [ 62%]
+2025-02-24T05:34:55.2815000Z tests/widgets/test_scrollcontainer.py::test_cleanup <- tests/widgets/conftest.py PASSED [ 62%]
+2025-02-24T05:34:56.4531640Z tests/widgets/test_scrollcontainer.py::test_clear_content PASSED         [ 62%]
+2025-02-24T05:34:58.4154410Z tests/widgets/test_scrollcontainer.py::test_margin PASSED                [ 62%]
+2025-02-24T05:35:01.4889230Z tests/widgets/test_scrollcontainer.py::test_enable_horizontal_scrolling PASSED [ 63%]
+2025-02-24T05:35:05.3051710Z === Messages dropped during live streaming (use `log show` to see what they were)
+2025-02-24T05:35:05.3071430Z === Messages dropped during live streaming (use `log show` to see what they were)
+2025-02-24T05:35:05.3467260Z tests/widgets/test_scrollcontainer.py::test_enable_vertical_scrolling PASSED [ 63%]
+2025-02-24T05:35:08.3641320Z tests/widgets/test_scrollcontainer.py::test_vertical_scroll PASSED       [ 63%]
+2025-02-24T05:35:10.2002360Z tests/widgets/test_scrollcontainer.py::test_vertical_scroll_small_content PASSED [ 63%]
+2025-02-24T05:35:13.7450100Z tests/widgets/test_scrollcontainer.py::test_horizontal_scroll PASSED     [ 63%]
+2025-02-24T05:35:15.7508480Z tests/widgets/test_scrollcontainer.py::test_horizontal_scroll_small_content PASSED [ 64%]
+2025-02-24T05:35:18.7970790Z tests/widgets/test_scrollcontainer.py::test_scroll_both PASSED           [ 64%]
+2025-02-24T05:35:20.8281070Z tests/widgets/test_scrollcontainer.py::test_manual_scroll PASSED         [ 64%]
+2025-02-24T05:35:23.2088530Z tests/widgets/test_scrollcontainer.py::test_no_content PASSED            [ 64%]
+2025-02-24T05:35:23.7408280Z tests/widgets/test_selection.py::test_background_color <- tests/widgets/properties.py PASSED [ 64%]
+2025-02-24T05:35:23.9570290Z tests/widgets/test_selection.py::test_background_color_reset <- tests/widgets/properties.py PASSED [ 64%]
+2025-02-24T05:35:24.1910920Z tests/widgets/test_selection.py::test_background_color_transparent <- tests/widgets/properties.py PASSED [ 65%]
+2025-02-24T05:35:24.4223210Z tests/widgets/test_selection.py::test_color <- tests/widgets/properties.py PASSED [ 65%]
+2025-02-24T05:35:24.6533580Z tests/widgets/test_selection.py::test_color_reset <- tests/widgets/properties.py PASSED [ 65%]
+2025-02-24T05:35:24.9053250Z tests/widgets/test_selection.py::test_enabled <- tests/widgets/properties.py PASSED [ 65%]
+2025-02-24T05:35:25.1914060Z tests/widgets/test_selection.py::test_flex_horizontal_widget_size <- tests/widgets/properties.py PASSED [ 65%]
+2025-02-24T05:35:25.5495580Z tests/widgets/test_selection.py::test_font <- tests/widgets/properties.py PASSED [ 66%]
+2025-02-24T05:35:25.8997240Z tests/widgets/test_selection.py::test_font_attrs <- tests/widgets/properties.py PASSED [ 66%]
+2025-02-24T05:35:26.1806950Z tests/widgets/test_selection.py::test_text_align <- tests/widgets/properties.py PASSED [ 66%]
+2025-02-24T05:35:27.1795780Z tests/widgets/test_selection.py::test_focus <- tests/widgets/properties.py PASSED [ 66%]
+2025-02-24T05:35:27.2274770Z tests/widgets/test_selection.py::test_cleanup <- tests/widgets/conftest.py PASSED [ 66%]
+2025-02-24T05:35:27.2920530Z tests/widgets/test_selection.py::test_item_titles PASSED                 [ 66%]
+2025-02-24T05:35:27.9802390Z tests/widgets/test_selection.py::test_selection_change PASSED            [ 67%]
+2025-02-24T05:35:28.1819060Z tests/widgets/test_selection.py::test_source_changes PASSED              [ 67%]
+2025-02-24T05:35:28.4074560Z tests/widgets/test_selection.py::test_resize_on_content_change XFAIL     [ 67%]
+2025-02-24T05:35:28.8367670Z tests/widgets/test_slider.py::test_enabled <- tests/widgets/properties.py PASSED [ 67%]
+2025-02-24T05:35:29.0634300Z tests/widgets/test_slider.py::test_flex_horizontal_widget_size <- tests/widgets/properties.py PASSED [ 67%]
+2025-02-24T05:35:29.6281330Z tests/widgets/test_slider.py::test_focus_noop <- tests/widgets/properties.py PASSED [ 68%]
+2025-02-24T05:35:29.8052850Z tests/widgets/test_slider.py::test_cleanup <- tests/widgets/conftest.py PASSED [ 68%]
+2025-02-24T05:35:29.8998390Z tests/widgets/test_slider.py::test_init PASSED                           [ 68%]
+2025-02-24T05:35:29.9789070Z tests/widgets/test_slider.py::test_init_handlers PASSED                  [ 68%]
+2025-02-24T05:35:30.3295420Z tests/widgets/test_slider.py::test_value PASSED                          [ 68%]
+2025-02-24T05:35:30.6564080Z tests/widgets/test_slider.py::test_change PASSED                         [ 69%]
+2025-02-24T05:35:30.9485320Z tests/widgets/test_slider.py::test_min PASSED                            [ 69%]
+2025-02-24T05:35:31.1320370Z tests/widgets/test_slider.py::test_max PASSED                            [ 69%]
+2025-02-24T05:35:31.3660680Z tests/widgets/test_slider.py::test_ticks PASSED                          [ 69%]
+2025-02-24T05:35:31.5642620Z tests/widgets/test_slider.py::test_value_with_ticks PASSED               [ 69%]
+2025-02-24T05:35:31.7848530Z tests/widgets/test_slider.py::test_range_with_ticks PASSED               [ 69%]
+2025-02-24T05:35:31.9733920Z tests/widgets/test_slider.py::test_press_release[press] PASSED           [ 70%]
+2025-02-24T05:35:32.0975260Z tests/widgets/test_slider.py::test_press_release[release] PASSED         [ 70%]
+2025-02-24T05:35:32.2484590Z tests/widgets/test_splitcontainer.py::test_enable_noop <- tests/widgets/properties.py SKIPPED [ 70%]
+2025-02-24T05:35:32.3902690Z tests/widgets/test_splitcontainer.py::test_flex_widget_size <- tests/widgets/properties.py SKIPPED [ 70%]
+2025-02-24T05:35:32.5489960Z tests/widgets/test_splitcontainer.py::test_focus_noop <- tests/widgets/properties.py SKIPPED [ 70%]
+2025-02-24T05:35:32.6884530Z tests/widgets/test_splitcontainer.py::test_cleanup <- tests/widgets/conftest.py SKIPPED [ 71%]
+2025-02-24T05:35:32.7915650Z tests/widgets/test_splitcontainer.py::test_set_content SKIPPED (not yet
+2025-02-24T05:35:32.8623250Z implemented on iOS)                                                      [ 71%]
+2025-02-24T05:35:33.0016410Z tests/widgets/test_splitcontainer.py::test_set_direction SKIPPED (not
+2025-02-24T05:35:33.0653490Z yet implemented on iOS)                                                  [ 71%]
+2025-02-24T05:35:33.1919640Z tests/widgets/test_splitcontainer.py::test_move_splitter SKIPPED (not
+2025-02-24T05:35:33.2543980Z yet implemented on iOS)                                                  [ 71%]
+2025-02-24T05:35:33.7336760Z tests/widgets/test_switch.py::test_color <- tests/widgets/properties.py PASSED [ 71%]
+2025-02-24T05:35:33.9050000Z tests/widgets/test_switch.py::test_color_reset <- tests/widgets/properties.py PASSED [ 71%]
+2025-02-24T05:35:34.2661460Z tests/widgets/test_switch.py::test_enabled <- tests/widgets/properties.py PASSED [ 72%]
+2025-02-24T05:35:34.5060430Z tests/widgets/test_switch.py::test_flex_horizontal_widget_size <- tests/widgets/properties.py PASSED [ 72%]
+2025-02-24T05:35:34.7292970Z tests/widgets/test_switch.py::test_font <- tests/widgets/properties.py PASSED [ 72%]
+2025-02-24T05:35:35.0206600Z tests/widgets/test_switch.py::test_font_attrs <- tests/widgets/properties.py PASSED [ 72%]
+2025-02-24T05:35:35.3229660Z tests/widgets/test_switch.py::test_text_width_change <- tests/widgets/properties.py PASSED [ 72%]
+2025-02-24T05:35:35.8875050Z tests/widgets/test_switch.py::test_focus_noop <- tests/widgets/properties.py PASSED [ 73%]
+2025-02-24T05:35:35.8948580Z tests/widgets/test_switch.py::test_cleanup <- tests/widgets/conftest.py PASSED [ 73%]
+2025-02-24T05:35:36.0722420Z tests/widgets/test_switch.py::test_text PASSED                           [ 73%]
+2025-02-24T05:35:36.2609950Z tests/widgets/test_switch.py::test_press PASSED                          [ 73%]
+2025-02-24T05:35:36.4960780Z tests/widgets/test_switch.py::test_change_value PASSED                   [ 73%]
+2025-02-24T05:35:36.6235860Z tests/widgets/test_table.py::test_background_color <- tests/widgets/properties.py SKIPPED [ 74%]
+2025-02-24T05:35:36.7748380Z tests/widgets/test_table.py::test_background_color_reset <- tests/widgets/properties.py SKIPPED [ 74%]
+2025-02-24T05:35:36.8658340Z tests/widgets/test_table.py::test_enable_noop <- tests/widgets/properties.py SKIPPED [ 74%]
+2025-02-24T05:35:36.9545250Z tests/widgets/test_table.py::test_flex_widget_size <- tests/widgets/properties.py SKIPPED [ 74%]
+2025-02-24T05:35:37.0770830Z tests/widgets/test_table.py::test_focus_noop <- tests/widgets/properties.py SKIPPED [ 74%]
+2025-02-24T05:35:37.1949200Z tests/widgets/test_table.py::test_font <- tests/widgets/properties.py SKIPPED [ 74%]
+2025-02-24T05:35:37.2944690Z tests/widgets/test_table.py::test_cleanup <- tests/widgets/conftest.py SKIPPED [ 75%]
+2025-02-24T05:35:37.3333190Z tests/widgets/test_table.py::test_scroll SKIPPED (not yet implemented on
+2025-02-24T05:35:37.3780010Z iOS)                                                                     [ 75%]
+2025-02-24T05:35:37.4253000Z tests/widgets/test_table.py::test_keyboard_navigation SKIPPED (not yet
+2025-02-24T05:35:37.4699720Z implemented on iOS)                                                      [ 75%]
+2025-02-24T05:35:37.5277860Z tests/widgets/test_table.py::test_select SKIPPED (not yet implemented on
+2025-02-24T05:35:37.5747630Z iOS)                                                                     [ 75%]
+2025-02-24T05:35:37.6237430Z tests/widgets/test_table.py::test_activate SKIPPED (not yet implemented
+2025-02-24T05:35:37.6672300Z on iOS)                                                                  [ 75%]
+2025-02-24T05:35:37.7130720Z tests/widgets/test_table.py::test_multiselect SKIPPED (not yet
+2025-02-24T05:35:37.7558370Z implemented on iOS)                                                      [ 76%]
+2025-02-24T05:35:37.8073770Z tests/widgets/test_table.py::test_row_changes SKIPPED (not yet
+2025-02-24T05:35:37.8518010Z implemented on iOS)                                                      [ 76%]
+2025-02-24T05:35:37.9148300Z tests/widgets/test_table.py::test_headerless_row_changes SKIPPED (not
+2025-02-24T05:35:37.9913260Z yet implemented on iOS)                                                  [ 76%]
+2025-02-24T05:35:38.0328730Z tests/widgets/test_table.py::test_column_changes SKIPPED (not yet
+2025-02-24T05:35:38.0752750Z implemented on iOS)                                                      [ 76%]
+2025-02-24T05:35:38.1386780Z tests/widgets/test_table.py::test_headerless_column_changes SKIPPED (not
+2025-02-24T05:35:38.2022330Z yet implemented on iOS)                                                  [ 76%]
+2025-02-24T05:35:38.2637480Z tests/widgets/test_table.py::test_remove_all_columns SKIPPED (not yet
+2025-02-24T05:35:38.3210890Z implemented on iOS)                                                      [ 76%]
+2025-02-24T05:35:38.4299320Z tests/widgets/test_table.py::test_cell_icon SKIPPED (not yet implemented
+2025-02-24T05:35:38.4388300Z on iOS)                                                                  [ 77%]
+2025-02-24T05:35:38.4878270Z tests/widgets/test_table.py::test_cell_widget SKIPPED (not yet
+2025-02-24T05:35:38.5427590Z implemented on iOS)                                                      [ 77%]
+2025-02-24T05:35:38.7440510Z tests/widgets/test_textinput.py::test_background_color <- tests/widgets/properties.py PASSED [ 77%]
+2025-02-24T05:35:38.9994730Z tests/widgets/test_textinput.py::test_background_color_reset <- tests/widgets/properties.py PASSED [ 77%]
+2025-02-24T05:35:39.1807200Z tests/widgets/test_textinput.py::test_background_color_transparent <- tests/widgets/properties.py PASSED [ 77%]
+2025-02-24T05:35:39.3737520Z tests/widgets/test_textinput.py::test_color <- tests/widgets/properties.py PASSED [ 78%]
+2025-02-24T05:35:39.5589330Z tests/widgets/test_textinput.py::test_color_reset <- tests/widgets/properties.py PASSED [ 78%]
+2025-02-24T05:35:39.7351540Z tests/widgets/test_textinput.py::test_enabled <- tests/widgets/properties.py PASSED [ 78%]
+2025-02-24T05:35:39.9398530Z tests/widgets/test_textinput.py::test_flex_horizontal_widget_size <- tests/widgets/properties.py PASSED [ 78%]
+2025-02-24T05:35:40.4680590Z tests/widgets/test_textinput.py::test_focus <- tests/widgets/properties.py PASSED [ 78%]
+2025-02-24T05:35:40.5905790Z tests/widgets/test_textinput.py::test_font <- tests/widgets/properties.py PASSED [ 79%]
+2025-02-24T05:35:40.8507550Z tests/widgets/test_textinput.py::test_font_attrs <- tests/widgets/properties.py PASSED [ 79%]
+2025-02-24T05:35:41.0982530Z tests/widgets/test_textinput.py::test_placeholder <- tests/widgets/properties.py PASSED [ 79%]
+2025-02-24T05:35:41.2900000Z tests/widgets/test_textinput.py::test_placeholder_color <- tests/widgets/properties.py PASSED [ 79%]
+2025-02-24T05:35:41.9512250Z tests/widgets/test_textinput.py::test_placeholder_focus <- tests/widgets/properties.py PASSED [ 79%]
+2025-02-24T05:35:42.0486650Z tests/widgets/test_textinput.py::test_readonly <- tests/widgets/properties.py PASSED [ 79%]
+2025-02-24T05:35:42.2976140Z tests/widgets/test_textinput.py::test_text_align <- tests/widgets/properties.py PASSED [ 80%]
+2025-02-24T05:35:42.4538060Z tests/widgets/test_textinput.py::test_cleanup <- tests/widgets/conftest.py PASSED [ 80%]
+2025-02-24T05:35:42.6429980Z tests/widgets/test_textinput.py::test_value_not_hidden PASSED            [ 80%]
+2025-02-24T05:35:43.0853530Z tests/widgets/test_textinput.py::test_on_change_programmatic[True-] PASSED [ 80%]
+2025-02-24T05:35:43.4571010Z tests/widgets/test_textinput.py::test_on_change_programmatic[True-placeholder] PASSED [ 80%]
+2025-02-24T05:35:43.7485810Z tests/widgets/test_textinput.py::test_on_change_programmatic[False-] PASSED [ 81%]
+2025-02-24T05:35:44.0613610Z tests/widgets/test_textinput.py::test_on_change_programmatic[False-placeholder] PASSED [ 81%]
+2025-02-24T05:35:44.4610420Z tests/widgets/test_textinput.py::test_on_change_user PASSED              [ 81%]
+2025-02-24T05:35:44.9951600Z tests/widgets/test_textinput.py::test_on_change_focus[True-] PASSED      [ 81%]
+2025-02-24T05:35:45.4533080Z tests/widgets/test_textinput.py::test_on_change_focus[True-placeholder] PASSED [ 81%]
+2025-02-24T05:35:46.4242960Z tests/widgets/test_textinput.py::test_on_change_focus[False-] PASSED     [ 82%]
+2025-02-24T05:35:46.4245340Z tests/widgets/test_textinput.py::test_on_change_focus[False-placeholder] PASSED [ 82%]
+2025-02-24T05:35:46.6819730Z tests/widgets/test_textinput.py::test_on_confirm PASSED                  [ 82%]
+2025-02-24T05:35:46.9897610Z tests/widgets/test_textinput.py::test_validation PASSED                  [ 82%]
+2025-02-24T05:35:47.2641120Z tests/widgets/test_textinput.py::test_text_value PASSED                  [ 82%]
+2025-02-24T05:35:47.6152690Z tests/widgets/test_textinput.py::test_undo_redo SKIPPED (Cursor
+2025-02-24T05:35:47.6481220Z positioning not supported on this platform)                              [ 82%]
+2025-02-24T05:35:47.7122840Z tests/widgets/test_timeinput.py::test_background_color <- tests/widgets/properties.py SKIPPED [ 83%]
+2025-02-24T05:35:47.7731700Z tests/widgets/test_timeinput.py::test_background_color_reset <- tests/widgets/properties.py SKIPPED [ 83%]
+2025-02-24T05:35:47.8661480Z tests/widgets/test_timeinput.py::test_background_color_transparent <- tests/widgets/properties.py SKIPPED [ 83%]
+2025-02-24T05:35:47.9722100Z tests/widgets/test_timeinput.py::test_color <- tests/widgets/properties.py SKIPPED [ 83%]
+2025-02-24T05:35:48.0851150Z tests/widgets/test_timeinput.py::test_color_reset <- tests/widgets/properties.py SKIPPED [ 83%]
+2025-02-24T05:35:48.1843970Z tests/widgets/test_timeinput.py::test_enabled <- tests/widgets/properties.py SKIPPED [ 84%]
+2025-02-24T05:35:48.2701780Z tests/widgets/test_timeinput.py::test_flex_horizontal_widget_size <- tests/widgets/properties.py SKIPPED [ 84%]
+2025-02-24T05:35:48.3626790Z tests/widgets/test_timeinput.py::test_max <- tests/widgets/test_dateinput.py SKIPPED [ 84%]
+2025-02-24T05:35:48.4550890Z tests/widgets/test_timeinput.py::test_min <- tests/widgets/test_dateinput.py SKIPPED [ 84%]
+2025-02-24T05:35:48.5477720Z tests/widgets/test_timeinput.py::test_value <- tests/widgets/test_dateinput.py SKIPPED [ 84%]
+2025-02-24T05:35:48.6728500Z tests/widgets/test_timeinput.py::test_cleanup <- tests/widgets/conftest.py SKIPPED [ 84%]
+2025-02-24T05:35:48.7158520Z tests/widgets/test_timeinput.py::test_init SKIPPED (not yet implemented
+2025-02-24T05:35:48.7638570Z on iOS)                                                                  [ 85%]
+2025-02-24T05:35:48.8243520Z tests/widgets/test_timeinput.py::test_change SKIPPED (not yet
+2025-02-24T05:35:48.8670080Z implemented on iOS)                                                      [ 85%]
+2025-02-24T05:35:48.9510420Z tests/widgets/test_tree.py::test_background_color <- tests/widgets/properties.py SKIPPED [ 85%]
+2025-02-24T05:35:49.0370540Z tests/widgets/test_tree.py::test_background_color_reset <- tests/widgets/properties.py SKIPPED [ 85%]
+2025-02-24T05:35:49.1402350Z tests/widgets/test_tree.py::test_enable_noop <- tests/widgets/properties.py SKIPPED [ 85%]
+2025-02-24T05:35:49.2650020Z tests/widgets/test_tree.py::test_flex_widget_size <- tests/widgets/properties.py SKIPPED [ 86%]
+2025-02-24T05:35:49.3613570Z tests/widgets/test_tree.py::test_focus_noop <- tests/widgets/properties.py SKIPPED [ 86%]
+2025-02-24T05:35:49.4306860Z tests/widgets/test_tree.py::test_font <- tests/widgets/properties.py SKIPPED [ 86%]
+2025-02-24T05:35:49.5601500Z tests/widgets/test_tree.py::test_cleanup <- tests/widgets/conftest.py SKIPPED [ 86%]
+2025-02-24T05:35:49.6192930Z tests/widgets/test_tree.py::test_select SKIPPED (not yet implemented on
+2025-02-24T05:35:49.6207410Z iOS)                                                                     [ 86%]
+2025-02-24T05:35:49.6658880Z tests/widgets/test_tree.py::test_expand_collapse SKIPPED (not yet
+2025-02-24T05:35:49.7055380Z implemented on iOS)                                                      [ 87%]
+2025-02-24T05:35:49.7515020Z tests/widgets/test_tree.py::test_activate SKIPPED (not yet implemented
+2025-02-24T05:35:49.7906670Z on iOS)                                                                  [ 87%]
+2025-02-24T05:35:49.8355330Z tests/widgets/test_tree.py::test_multiselect SKIPPED (not yet
+2025-02-24T05:35:49.8766370Z implemented on iOS)                                                      [ 87%]
+2025-02-24T05:35:49.9514620Z tests/widgets/test_tree.py::test_row_changes SKIPPED (not yet
+2025-02-24T05:35:49.9913400Z implemented on iOS)                                                      [ 87%]
+2025-02-24T05:35:50.0797670Z tests/widgets/test_tree.py::test_headerless_row_changes SKIPPED (not yet
+2025-02-24T05:35:50.0815190Z implemented on iOS)                                                      [ 87%]
+2025-02-24T05:35:50.1269720Z tests/widgets/test_tree.py::test_column_changes SKIPPED (not yet
+2025-02-24T05:35:50.1667080Z implemented on iOS)                                                      [ 87%]
+2025-02-24T05:35:50.2127090Z tests/widgets/test_tree.py::test_headerless_column_changes SKIPPED (not
+2025-02-24T05:35:50.3504570Z yet implemented on iOS)                                                  [ 88%]
+2025-02-24T05:35:50.3785490Z tests/widgets/test_tree.py::test_cell_icon SKIPPED (not yet implemented
+2025-02-24T05:35:50.4174130Z on iOS)                                                                  [ 88%]
+2025-02-24T05:35:50.4594090Z tests/widgets/test_tree.py::test_cell_widget SKIPPED (not yet
+2025-02-24T05:35:50.5002880Z implemented on iOS)                                                      [ 88%]
+2025-02-24T05:35:52.5708780Z tests/widgets/test_webview.py::test_flex_widget_size <- tests/widgets/properties.py PASSED [ 88%]
+2025-02-24T05:35:52.6337190Z tests/widgets/test_webview.py::test_focus <- tests/widgets/properties.py PASSED [ 88%]
+2025-02-24T05:35:52.6466730Z tests/widgets/test_webview.py::test_cleanup <- tests/widgets/conftest.py PASSED [ 89%]
+2025-02-24T05:35:54.2247700Z tests/widgets/test_webview.py::test_set_url PASSED                       [ 89%]
+2025-02-24T05:35:54.2680400Z tests/widgets/test_webview.py::test_clear_url PASSED                     [ 89%]
+2025-02-24T05:35:54.4179160Z tests/widgets/test_webview.py::test_load_empty_url PASSED                [ 89%]
+2025-02-24T05:35:54.9894280Z tests/widgets/test_webview.py::test_load_url PASSED                      [ 89%]
+2025-02-24T05:35:55.4464710Z tests/widgets/test_webview.py::test_static_content PASSED                [ 89%]
+2025-02-24T05:35:55.8500060Z tests/widgets/test_webview.py::test_user_agent PASSED                    [ 90%]
+2025-02-24T05:35:56.0383930Z tests/widgets/test_webview.py::test_evaluate_javascript PASSED           [ 90%]
+2025-02-24T05:35:56.5272030Z tests/widgets/test_webview.py::test_evaluate_javascript_no_handler PASSED [ 90%]
+2025-02-24T05:35:56.9161420Z tests/widgets/test_webview.py::test_evaluate_javascript_error PASSED     [ 90%]
+2025-02-24T05:35:57.3588330Z tests/widgets/test_webview.py::test_evaluate_javascript_error_without_handler PASSED [ 90%]
+2025-02-24T05:35:58.7668130Z tests/widgets/test_webview.py::test_dom_storage_enabled PASSED           [ 91%]
+2025-02-24T05:35:59.7452160Z === Messages dropped during live streaming (use `log show` to see what they were)
+2025-02-24T05:35:59.7456780Z === Messages dropped during live streaming (use `log show` to see what they were)
+2025-02-24T05:35:59.7458310Z === Messages dropped during live streaming (use `log show` to see what they were)
+2025-02-24T05:35:59.7459630Z === Messages dropped during live streaming (use `log show` to see what they were)
+2025-02-24T05:35:59.7460420Z === Messages dropped during live streaming (use `log show` to see what they were)
+2025-02-24T05:35:59.7461140Z === Messages dropped during live streaming (use `log show` to see what they were)
+2025-02-24T05:35:59.7462220Z tests/widgets/test_webview.py::test_retrieve_cookies PASSED              [ 91%]
+2025-02-24T05:35:59.8366610Z === Messages dropped during live streaming (use `log show` to see what they were)
+2025-02-24T05:35:59.8371840Z tests/window/test_dialogs.py::test_info_dialog PASSED                    [ 91%]
+2025-02-24T05:36:00.2057650Z tests/window/test_dialogs.py::test_question_dialog[False] PASSED         [ 91%]
+2025-02-24T05:36:00.5465050Z tests/window/test_dialogs.py::test_question_dialog[True] PASSED          [ 91%]
+2025-02-24T05:36:00.8471090Z tests/window/test_dialogs.py::test_confirm_dialog[False] PASSED          [ 92%]
+2025-02-24T05:36:01.2130760Z tests/window/test_dialogs.py::test_confirm_dialog[True] PASSED           [ 92%]
+2025-02-24T05:36:01.5275200Z tests/window/test_dialogs.py::test_error_dialog PASSED                   [ 92%]
+2025-02-24T05:36:01.6232870Z tests/window/test_dialogs.py::test_stack_trace_dialog[None] SKIPPED      [ 92%]
+2025-02-24T05:36:01.7314880Z tests/window/test_dialogs.py::test_stack_trace_dialog[False] SKIPPED     [ 92%]
+2025-02-24T05:36:01.8187000Z tests/window/test_dialogs.py::test_stack_trace_dialog[True] SKIPPED      [ 92%]
+2025-02-24T05:36:01.9020170Z tests/window/test_dialogs.py::test_save_file_dialog[/path/to/file.txt-None-result0] SKIPPED [ 93%]
+2025-02-24T05:36:01.9949700Z tests/window/test_dialogs.py::test_save_file_dialog[/path/to/file.txt-None-None] SKIPPED [ 93%]
+2025-02-24T05:36:02.0980840Z tests/window/test_dialogs.py::test_save_file_dialog[/path/to/file.txt-file_types2-result2] SKIPPED [ 93%]
+2025-02-24T05:36:02.2312660Z tests/window/test_dialogs.py::test_save_file_dialog[/path/to/file.txt-file_types3-None] SKIPPED [ 93%]
+2025-02-24T05:36:02.3271290Z tests/window/test_dialogs.py::test_open_file_dialog[initial_directory0-None-False-result0] SKIPPED [ 93%]
+2025-02-24T05:36:02.4446180Z tests/window/test_dialogs.py::test_open_file_dialog[initial_directory1-None-False-None] SKIPPED [ 94%]
+2025-02-24T05:36:02.6153940Z tests/window/test_dialogs.py::test_open_file_dialog[None-None-False-result2] SKIPPED [ 94%]
+2025-02-24T05:36:02.6957140Z tests/window/test_dialogs.py::test_open_file_dialog[initial_directory3-file_types3-False-result3] SKIPPED [ 94%]
+2025-02-24T05:36:02.7993230Z tests/window/test_dialogs.py::test_open_file_dialog[initial_directory4-None-True-result4] SKIPPED [ 94%]
+2025-02-24T05:36:02.9528130Z tests/window/test_dialogs.py::test_open_file_dialog[initial_directory5-None-True-result5] SKIPPED [ 94%]
+2025-02-24T05:36:03.1047830Z tests/window/test_dialogs.py::test_open_file_dialog[initial_directory6-None-True-None] SKIPPED [ 94%]
+2025-02-24T05:36:03.1893270Z tests/window/test_dialogs.py::test_open_file_dialog[None-None-True-result7] SKIPPED [ 95%]
+2025-02-24T05:36:03.3077520Z tests/window/test_dialogs.py::test_open_file_dialog[initial_directory8-file_types8-True-result8] SKIPPED [ 95%]
+2025-02-24T05:36:03.4071320Z tests/window/test_dialogs.py::test_select_folder_dialog[initial_directory0-False-result0] SKIPPED [ 95%]
+2025-02-24T05:36:03.5428240Z tests/window/test_dialogs.py::test_select_folder_dialog[initial_directory1-False-None] SKIPPED [ 95%]
+2025-02-24T05:36:03.6300070Z tests/window/test_dialogs.py::test_select_folder_dialog[None-False-result2] SKIPPED [ 95%]
+2025-02-24T05:36:03.7404140Z tests/window/test_dialogs.py::test_select_folder_dialog[initial_directory3-True-result3] SKIPPED [ 96%]
+2025-02-24T05:36:03.8555760Z tests/window/test_dialogs.py::test_select_folder_dialog[initial_directory4-True-result4] SKIPPED [ 96%]
+2025-02-24T05:36:03.9353000Z tests/window/test_dialogs.py::test_select_folder_dialog[initial_directory5-True-None] SKIPPED [ 96%]
+2025-02-24T05:36:04.0581020Z tests/window/test_window.py::test_title PASSED                           [ 96%]
+2025-02-24T05:36:04.1526970Z tests/window/test_window.py::test_visibility PASSED                      [ 96%]
+2025-02-24T05:36:04.2522110Z tests/window/test_window.py::test_secondary_window PASSED                [ 97%]
+2025-02-24T05:36:04.4366430Z tests/window/test_window.py::test_move_and_resize PASSED                 [ 97%]
+2025-02-24T05:36:04.5695170Z tests/window/test_window.py::test_window_state_change[WindowState.NORMAL-WindowState.FULLSCREEN] XFAIL [ 97%]
+2025-02-24T05:36:04.6541960Z tests/window/test_window.py::test_window_state_change[WindowState.NORMAL-WindowState.PRESENTATION] XFAIL [ 97%]
+2025-02-24T05:36:04.7625940Z tests/window/test_window.py::test_window_state_change[WindowState.FULLSCREEN-WindowState.NORMAL] XFAIL [ 97%]
+2025-02-24T05:36:04.8740350Z tests/window/test_window.py::test_window_state_change[WindowState.FULLSCREEN-WindowState.PRESENTATION] XFAIL [ 97%]
+2025-02-24T05:36:04.9648590Z tests/window/test_window.py::test_window_state_change[WindowState.PRESENTATION-WindowState.NORMAL] XFAIL [ 98%]
+2025-02-24T05:36:05.0778210Z tests/window/test_window.py::test_window_state_change[WindowState.PRESENTATION-WindowState.FULLSCREEN] XFAIL [ 98%]
+2025-02-24T05:36:05.1642000Z tests/window/test_window.py::test_window_state_same_as_current_without_intermediate_states[WindowState.NORMAL] PASSED [ 98%]
+2025-02-24T05:36:05.2747110Z tests/window/test_window.py::test_window_state_same_as_current_without_intermediate_states[WindowState.FULLSCREEN] XFAIL [ 98%]
+2025-02-24T05:36:05.3543580Z tests/window/test_window.py::test_window_state_same_as_current_without_intermediate_states[WindowState.PRESENTATION] XFAIL [ 98%]
+2025-02-24T05:36:05.4444820Z tests/window/test_window.py::test_window_state_content_size_increase[WindowState.FULLSCREEN] XFAIL [ 99%]
+2025-02-24T05:36:05.5688980Z tests/window/test_window.py::test_window_state_content_size_increase[WindowState.PRESENTATION] XFAIL [ 99%]
+2025-02-24T05:36:05.6574290Z tests/window/test_window.py::test_window_state_no_op_states[WindowState.MINIMIZED] PASSED [ 99%]
+2025-02-24T05:36:05.7584800Z tests/window/test_window.py::test_window_state_no_op_states[WindowState.MAXIMIZED] PASSED [ 99%]
+2025-02-24T05:36:05.8579620Z tests/window/test_window.py::test_screen PASSED                          [ 99%]
+2025-02-24T05:36:06.2775600Z tests/window/test_window.py::test_as_image PASSED                        [100%]
+2025-02-24T05:36:06.2780660Z 
+2025-02-24T05:36:06.2781060Z =========== 376 passed, 127 skipped, 38 xfailed in 202.84s (0:03:22) ===========
+2025-02-24T05:36:06.6586080Z Name    Stmts   Miss Branch BrPart   Cover   Missing
+2025-02-24T05:36:06.6587570Z ----------------------------------------------------
+2025-02-24T05:36:06.6588930Z TOTAL    2470      0    232      0  100.0%
+2025-02-24T05:36:06.6590290Z 
+2025-02-24T05:36:06.6593730Z 49 files skipped due to complete coverage.
+2025-02-24T05:36:09.9511370Z 
+2025-02-24T05:36:09.9658080Z [2m[testbed][0m Test suite passed!
+2025-02-24T05:36:09.9658520Z Saving log... started
+2025-02-24T05:36:09.9658660Z 
+2025-02-24T05:36:10.1996120Z [1;33mLog saved to /Users/runner/work/toga/toga/testbed/logs/briefcase.2025_02_24-05_36_09.run.log[0m[1;33m
+2025-02-24T05:36:10.2116980Z [0m
+2025-02-24T05:36:10.2119240Z Saving log... done
+2025-02-24T05:36:10.6750920Z Post job cleanup.
+2025-02-24T05:36:12.4487450Z Post job cleanup.
+2025-02-24T05:36:12.7186720Z [command]/opt/homebrew/bin/git version
+2025-02-24T05:36:12.7688860Z git version 2.48.1
+2025-02-24T05:36:12.7735870Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/ba16e732-6b70-4df2-8d5c-6611637147ba/.gitconfig'
+2025-02-24T05:36:12.7740650Z Temporarily overriding HOME='/Users/runner/work/_temp/ba16e732-6b70-4df2-8d5c-6611637147ba' before making global git config changes
+2025-02-24T05:36:12.7755180Z Adding repository directory to the temporary git global config as a safe directory
+2025-02-24T05:36:12.7756710Z [command]/opt/homebrew/bin/git config --global --add safe.directory /Users/runner/work/toga/toga
+2025-02-24T05:36:12.8012820Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-02-24T05:36:12.8049240Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-02-24T05:36:13.0062480Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-02-24T05:36:13.0231500Z http.https://github.com/.extraheader
+2025-02-24T05:36:13.0237010Z [command]/opt/homebrew/bin/git config --local --unset-all http.https://github.com/.extraheader
+2025-02-24T05:36:13.0322280Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-02-24T05:36:13.1829920Z Cleaning up orphan processes

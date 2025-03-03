@@ -1,0 +1,1209 @@
+﻿2025-02-28T15:24:28.9779146Z Current runner version: '2.322.0'
+2025-02-28T15:24:28.9806049Z ##[group]Operating System
+2025-02-28T15:24:28.9806949Z Ubuntu
+2025-02-28T15:24:28.9807472Z 24.04.2
+2025-02-28T15:24:28.9807958Z LTS
+2025-02-28T15:24:28.9808601Z ##[endgroup]
+2025-02-28T15:24:28.9809114Z ##[group]Runner Image
+2025-02-28T15:24:28.9809632Z Image: ubuntu-24.04
+2025-02-28T15:24:28.9810245Z Version: 20250223.1.0
+2025-02-28T15:24:28.9811278Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20250223.1/images/ubuntu/Ubuntu2404-Readme.md
+2025-02-28T15:24:28.9812887Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250223.1
+2025-02-28T15:24:28.9813804Z ##[endgroup]
+2025-02-28T15:24:28.9814340Z ##[group]Runner Image Provisioner
+2025-02-28T15:24:28.9814927Z 2.0.422.1
+2025-02-28T15:24:28.9815417Z ##[endgroup]
+2025-02-28T15:24:28.9816515Z ##[group]GITHUB_TOKEN Permissions
+2025-02-28T15:24:28.9818421Z Attestations: read
+2025-02-28T15:24:28.9819173Z Contents: read
+2025-02-28T15:24:28.9819929Z Metadata: read
+2025-02-28T15:24:28.9820401Z ##[endgroup]
+2025-02-28T15:24:28.9823632Z Secret source: None
+2025-02-28T15:24:28.9824372Z Prepare workflow directory
+2025-02-28T15:24:29.0293849Z Prepare all required actions
+2025-02-28T15:24:29.0330537Z Getting action download info
+2025-02-28T15:24:29.2099918Z Download action repository 'actions/checkout@v4.2.2' (SHA:11bd71901bbe5b1630ceea73d27597364c9af683)
+2025-02-28T15:24:29.3094985Z Download action repository 'hynek/build-and-inspect-python-package@v2.12.0' (SHA:b5076c307dc91924a82ad150cdd1533b444d3310)
+2025-02-28T15:24:29.7232332Z Getting action download info
+2025-02-28T15:24:29.8999036Z Download action repository 'actions/setup-python@v5' (SHA:42375524e23c412d93fb67b49958b491fce71c38)
+2025-02-28T15:24:29.9941205Z Download action repository 'actions/cache@v4' (SHA:d4323d4df104b026a6aa633fdb11d772146be0bf)
+2025-02-28T15:24:30.4910492Z Download action repository 'actions/attest-build-provenance@v1' (SHA:ef244123eb79f2f7a7e75d99086184180e6d0018)
+2025-02-28T15:24:30.8145212Z Download action repository 'actions/upload-artifact@v4' (SHA:4cec3d8aa04e39d1a68397de0c4cd6fb9dce8ec1)
+2025-02-28T15:24:31.3033355Z Getting action download info
+2025-02-28T15:24:31.4391262Z Download action repository 'actions/attest-build-provenance@36fa7d009e22618ca7cd599486979b8150596c74' (SHA:36fa7d009e22618ca7cd599486979b8150596c74)
+2025-02-28T15:24:31.7578963Z Download action repository 'actions/attest@67422f5511b7ff725f4dbd6fb9bd2cd925c65a8d' (SHA:67422f5511b7ff725f4dbd6fb9bd2cd925c65a8d)
+2025-02-28T15:24:32.2067905Z Uses: beeware/.github/.github/workflows/python-package-create.yml@refs/heads/main (a66b93162808d34adf5280c28104b75f8e0d70d3)
+2025-02-28T15:24:32.2071013Z ##[group] Inputs
+2025-02-28T15:24:32.2071803Z   repository: beeware/toga
+2025-02-28T15:24:32.2072437Z   build-subdirectory: iOS
+2025-02-28T15:24:32.2073007Z   attest: 
+2025-02-28T15:24:32.2073430Z ##[endgroup]
+2025-02-28T15:24:32.2074139Z Complete job name: Package Toga (iOS) / Create Python Package
+2025-02-28T15:24:32.2768977Z ##[group]Run echo "repo-name=$(basename "${REPO}")" | tee -a ${GITHUB_OUTPUT}
+2025-02-28T15:24:32.2770484Z [36;1mecho "repo-name=$(basename "${REPO}")" | tee -a ${GITHUB_OUTPUT}[0m
+2025-02-28T15:24:32.2772020Z [36;1mecho "differentiator=${DIFFERENTIATOR}" | tee -a ${GITHUB_OUTPUT}[0m
+2025-02-28T15:24:32.2830119Z shell: /usr/bin/bash -e {0}
+2025-02-28T15:24:32.2831018Z env:
+2025-02-28T15:24:32.2831457Z   FORCE_COLOR: 1
+2025-02-28T15:24:32.2832207Z   REPO: beeware/toga
+2025-02-28T15:24:32.2832763Z   DIFFERENTIATOR: -iOS
+2025-02-28T15:24:32.2833310Z ##[endgroup]
+2025-02-28T15:24:32.2988368Z repo-name=toga
+2025-02-28T15:24:32.2990003Z differentiator=-iOS
+2025-02-28T15:24:32.3210068Z ##[group]Run actions/checkout@v4.2.2
+2025-02-28T15:24:32.3210820Z with:
+2025-02-28T15:24:32.3211283Z   repository: beeware/toga
+2025-02-28T15:24:32.3212088Z   fetch-depth: 0
+2025-02-28T15:24:32.3212863Z   token: ***
+2025-02-28T15:24:32.3213346Z   ssh-strict: true
+2025-02-28T15:24:32.3213864Z   ssh-user: git
+2025-02-28T15:24:32.3214636Z   persist-credentials: true
+2025-02-28T15:24:32.3215229Z   clean: true
+2025-02-28T15:24:32.3215739Z   sparse-checkout-cone-mode: true
+2025-02-28T15:24:32.3216406Z   fetch-tags: false
+2025-02-28T15:24:32.3216914Z   show-progress: true
+2025-02-28T15:24:32.3217436Z   lfs: false
+2025-02-28T15:24:32.3217899Z   submodules: false
+2025-02-28T15:24:32.3218433Z   set-safe-directory: true
+2025-02-28T15:24:32.3218986Z env:
+2025-02-28T15:24:32.3219398Z   FORCE_COLOR: 1
+2025-02-28T15:24:32.3219872Z ##[endgroup]
+2025-02-28T15:24:32.5215272Z Syncing repository: beeware/toga
+2025-02-28T15:24:32.5217274Z ##[group]Getting Git version info
+2025-02-28T15:24:32.5218193Z Working directory is '/home/runner/work/toga/toga'
+2025-02-28T15:24:32.5219442Z [command]/usr/bin/git version
+2025-02-28T15:24:32.5279227Z git version 2.48.1
+2025-02-28T15:24:32.5311166Z ##[endgroup]
+2025-02-28T15:24:32.5327054Z Temporarily overriding HOME='/home/runner/work/_temp/9122dda1-26a9-4cbc-9334-3439d74b3872' before making global git config changes
+2025-02-28T15:24:32.5331001Z Adding repository directory to the temporary git global config as a safe directory
+2025-02-28T15:24:32.5334135Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/toga/toga
+2025-02-28T15:24:32.5376523Z Deleting the contents of '/home/runner/work/toga/toga'
+2025-02-28T15:24:32.5380748Z ##[group]Initializing the repository
+2025-02-28T15:24:32.5385270Z [command]/usr/bin/git init /home/runner/work/toga/toga
+2025-02-28T15:24:32.5455211Z hint: Using 'master' as the name for the initial branch. This default branch name
+2025-02-28T15:24:32.5457300Z hint: is subject to change. To configure the initial branch name to use in all
+2025-02-28T15:24:32.5459760Z hint: of your new repositories, which will suppress this warning, call:
+2025-02-28T15:24:32.5461414Z hint:
+2025-02-28T15:24:32.5462238Z hint: 	git config --global init.defaultBranch <name>
+2025-02-28T15:24:32.5463047Z hint:
+2025-02-28T15:24:32.5463805Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2025-02-28T15:24:32.5465240Z hint: 'development'. The just-created branch can be renamed via this command:
+2025-02-28T15:24:32.5466776Z hint:
+2025-02-28T15:24:32.5467249Z hint: 	git branch -m <name>
+2025-02-28T15:24:32.5468207Z Initialized empty Git repository in /home/runner/work/toga/toga/.git/
+2025-02-28T15:24:32.5471426Z [command]/usr/bin/git remote add origin https://github.com/beeware/toga
+2025-02-28T15:24:32.5504829Z ##[endgroup]
+2025-02-28T15:24:32.5505780Z ##[group]Disabling automatic garbage collection
+2025-02-28T15:24:32.5508579Z [command]/usr/bin/git config --local gc.auto 0
+2025-02-28T15:24:32.5538065Z ##[endgroup]
+2025-02-28T15:24:32.5538953Z ##[group]Setting up auth
+2025-02-28T15:24:32.5545829Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-02-28T15:24:32.5576469Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-02-28T15:24:32.5870708Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-02-28T15:24:32.5903775Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-02-28T15:24:32.6134488Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2025-02-28T15:24:32.6181468Z ##[endgroup]
+2025-02-28T15:24:32.6183282Z ##[group]Fetching the repository
+2025-02-28T15:24:32.6194374Z [command]/usr/bin/git -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/* +68266e24a68fb42fbbeefb9a1fc4181dfda30fbe:refs/remotes/pull/3217/merge
+2025-02-28T15:24:34.8512546Z From https://github.com/beeware/toga
+2025-02-28T15:24:34.8513523Z  * [new branch]          main         -> origin/main
+2025-02-28T15:24:34.8514661Z  * [new branch]          pre-0.5      -> origin/pre-0.5
+2025-02-28T15:24:34.8515285Z  * [new tag]             0.2.6        -> 0.2.6
+2025-02-28T15:24:34.8515849Z  * [new tag]             v0.0.1rc1    -> v0.0.1rc1
+2025-02-28T15:24:34.8516468Z  * [new tag]             v0.0.1rc10   -> v0.0.1rc10
+2025-02-28T15:24:34.8517040Z  * [new tag]             v0.0.1rc5    -> v0.0.1rc5
+2025-02-28T15:24:34.8517631Z  * [new tag]             v0.0.1rc6    -> v0.0.1rc6
+2025-02-28T15:24:34.8518317Z  * [new tag]             v0.1.0       -> v0.1.0
+2025-02-28T15:24:34.8519551Z  * [new tag]             v0.1.1       -> v0.1.1
+2025-02-28T15:24:34.8520661Z  * [new tag]             v0.1.2       -> v0.1.2
+2025-02-28T15:24:34.8522229Z  * [new tag]             v0.2.0       -> v0.2.0
+2025-02-28T15:24:34.8523388Z  * [new tag]             v0.2.0.dev1  -> v0.2.0.dev1
+2025-02-28T15:24:34.8524583Z  * [new tag]             v0.2.1       -> v0.2.1
+2025-02-28T15:24:34.8526023Z  * [new tag]             v0.2.10      -> v0.2.10
+2025-02-28T15:24:34.8527421Z  * [new tag]             v0.2.11      -> v0.2.11
+2025-02-28T15:24:34.8528729Z  * [new tag]             v0.2.12      -> v0.2.12
+2025-02-28T15:24:34.8530139Z  * [new tag]             v0.2.13      -> v0.2.13
+2025-02-28T15:24:34.8531846Z  * [new tag]             v0.2.14      -> v0.2.14
+2025-02-28T15:24:34.8533158Z  * [new tag]             v0.2.15      -> v0.2.15
+2025-02-28T15:24:34.8534339Z  * [new tag]             v0.2.2       -> v0.2.2
+2025-02-28T15:24:34.8535644Z  * [new tag]             v0.2.3       -> v0.2.3
+2025-02-28T15:24:34.8536957Z  * [new tag]             v0.2.4       -> v0.2.4
+2025-02-28T15:24:34.8538291Z  * [new tag]             v0.2.5       -> v0.2.5
+2025-02-28T15:24:34.8539685Z  * [new tag]             v0.2.6       -> v0.2.6
+2025-02-28T15:24:34.8540914Z  * [new tag]             v0.2.7       -> v0.2.7
+2025-02-28T15:24:34.8542349Z  * [new tag]             v0.2.8       -> v0.2.8
+2025-02-28T15:24:34.8543829Z  * [new tag]             v0.2.9       -> v0.2.9
+2025-02-28T15:24:34.8545977Z  * [new tag]             v0.3.0       -> v0.3.0
+2025-02-28T15:24:34.8546903Z  * [new tag]             v0.3.0.dev1  -> v0.3.0.dev1
+2025-02-28T15:24:34.8548079Z  * [new tag]             v0.3.0.dev10 -> v0.3.0.dev10
+2025-02-28T15:24:34.8549572Z  * [new tag]             v0.3.0.dev11 -> v0.3.0.dev11
+2025-02-28T15:24:34.8550907Z  * [new tag]             v0.3.0.dev12 -> v0.3.0.dev12
+2025-02-28T15:24:34.8552528Z  * [new tag]             v0.3.0.dev13 -> v0.3.0.dev13
+2025-02-28T15:24:34.8554013Z  * [new tag]             v0.3.0.dev14 -> v0.3.0.dev14
+2025-02-28T15:24:34.8555245Z  * [new tag]             v0.3.0.dev15 -> v0.3.0.dev15
+2025-02-28T15:24:34.8556745Z  * [new tag]             v0.3.0.dev16 -> v0.3.0.dev16
+2025-02-28T15:24:34.8558196Z  * [new tag]             v0.3.0.dev17 -> v0.3.0.dev17
+2025-02-28T15:24:34.8559594Z  * [new tag]             v0.3.0.dev18 -> v0.3.0.dev18
+2025-02-28T15:24:34.8561099Z  * [new tag]             v0.3.0.dev19 -> v0.3.0.dev19
+2025-02-28T15:24:34.8563009Z  * [new tag]             v0.3.0.dev2  -> v0.3.0.dev2
+2025-02-28T15:24:34.8564468Z  * [new tag]             v0.3.0.dev20 -> v0.3.0.dev20
+2025-02-28T15:24:34.8565932Z  * [new tag]             v0.3.0.dev21 -> v0.3.0.dev21
+2025-02-28T15:24:34.8567382Z  * [new tag]             v0.3.0.dev22 -> v0.3.0.dev22
+2025-02-28T15:24:34.8568918Z  * [new tag]             v0.3.0.dev23 -> v0.3.0.dev23
+2025-02-28T15:24:34.8570484Z  * [new tag]             v0.3.0.dev24 -> v0.3.0.dev24
+2025-02-28T15:24:34.8571990Z  * [new tag]             v0.3.0.dev25 -> v0.3.0.dev25
+2025-02-28T15:24:34.8573511Z  * [new tag]             v0.3.0.dev26 -> v0.3.0.dev26
+2025-02-28T15:24:34.8575202Z  * [new tag]             v0.3.0.dev27 -> v0.3.0.dev27
+2025-02-28T15:24:34.8576387Z  * [new tag]             v0.3.0.dev28 -> v0.3.0.dev28
+2025-02-28T15:24:34.8578012Z  * [new tag]             v0.3.0.dev29 -> v0.3.0.dev29
+2025-02-28T15:24:34.8579448Z  * [new tag]             v0.3.0.dev3  -> v0.3.0.dev3
+2025-02-28T15:24:34.8580850Z  * [new tag]             v0.3.0.dev30 -> v0.3.0.dev30
+2025-02-28T15:24:34.8582463Z  * [new tag]             v0.3.0.dev32 -> v0.3.0.dev32
+2025-02-28T15:24:34.8583932Z  * [new tag]             v0.3.0.dev33 -> v0.3.0.dev33
+2025-02-28T15:24:34.8585411Z  * [new tag]             v0.3.0.dev34 -> v0.3.0.dev34
+2025-02-28T15:24:34.8586824Z  * [new tag]             v0.3.0.dev35 -> v0.3.0.dev35
+2025-02-28T15:24:34.8588299Z  * [new tag]             v0.3.0.dev36 -> v0.3.0.dev36
+2025-02-28T15:24:34.8589666Z  * [new tag]             v0.3.0.dev37 -> v0.3.0.dev37
+2025-02-28T15:24:34.8591126Z  * [new tag]             v0.3.0.dev38 -> v0.3.0.dev38
+2025-02-28T15:24:34.8592801Z  * [new tag]             v0.3.0.dev39 -> v0.3.0.dev39
+2025-02-28T15:24:34.8594594Z  * [new tag]             v0.3.0.dev4  -> v0.3.0.dev4
+2025-02-28T15:24:34.8595835Z  * [new tag]             v0.3.0.dev5  -> v0.3.0.dev5
+2025-02-28T15:24:34.8597168Z  * [new tag]             v0.3.0.dev6  -> v0.3.0.dev6
+2025-02-28T15:24:34.8598683Z  * [new tag]             v0.3.0.dev7  -> v0.3.0.dev7
+2025-02-28T15:24:34.8600225Z  * [new tag]             v0.3.0.dev8  -> v0.3.0.dev8
+2025-02-28T15:24:34.8601909Z  * [new tag]             v0.3.0.dev9  -> v0.3.0.dev9
+2025-02-28T15:24:34.8603437Z  * [new tag]             v0.3.0rc0    -> v0.3.0rc0
+2025-02-28T15:24:34.8605451Z  * [new tag]             v0.3.1       -> v0.3.1
+2025-02-28T15:24:34.8606571Z  * [new tag]             v0.4.0       -> v0.4.0
+2025-02-28T15:24:34.8609564Z  * [new tag]             v0.4.1       -> v0.4.1
+2025-02-28T15:24:34.8610875Z  * [new tag]             v0.4.2       -> v0.4.2
+2025-02-28T15:24:34.8612401Z  * [new tag]             v0.4.3       -> v0.4.3
+2025-02-28T15:24:34.8613767Z  * [new tag]             v0.4.4       -> v0.4.4
+2025-02-28T15:24:34.8615231Z  * [new tag]             v0.4.5       -> v0.4.5
+2025-02-28T15:24:34.8617112Z  * [new tag]             v0.4.6       -> v0.4.6
+2025-02-28T15:24:34.8618653Z  * [new tag]             v0.4.7       -> v0.4.7
+2025-02-28T15:24:34.8620182Z  * [new tag]             v0.4.8       -> v0.4.8
+2025-02-28T15:24:34.8621251Z  * [new tag]             v0.4.9       -> v0.4.9
+2025-02-28T15:24:34.8625406Z  * [new ref]             68266e24a68fb42fbbeefb9a1fc4181dfda30fbe -> pull/3217/merge
+2025-02-28T15:24:34.8675626Z ##[endgroup]
+2025-02-28T15:24:34.8676267Z ##[group]Determining the checkout info
+2025-02-28T15:24:34.8677217Z ##[endgroup]
+2025-02-28T15:24:34.8683204Z [command]/usr/bin/git sparse-checkout disable
+2025-02-28T15:24:34.8724482Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2025-02-28T15:24:34.8752499Z ##[group]Checking out the ref
+2025-02-28T15:24:34.8756233Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/3217/merge
+2025-02-28T15:24:35.0546788Z Note: switching to 'refs/remotes/pull/3217/merge'.
+2025-02-28T15:24:35.0547417Z 
+2025-02-28T15:24:35.0548115Z You are in 'detached HEAD' state. You can look around, make experimental
+2025-02-28T15:24:35.0549001Z changes and commit them, and you can discard any commits you make in this
+2025-02-28T15:24:35.0549890Z state without impacting any branches by switching back to a branch.
+2025-02-28T15:24:35.0550405Z 
+2025-02-28T15:24:35.0550787Z If you want to create a new branch to retain commits you create, you may
+2025-02-28T15:24:35.0551580Z do so (now or later) by using -c with the switch command. Example:
+2025-02-28T15:24:35.0552275Z 
+2025-02-28T15:24:35.0552514Z   git switch -c <new-branch-name>
+2025-02-28T15:24:35.0552842Z 
+2025-02-28T15:24:35.0553024Z Or undo this operation with:
+2025-02-28T15:24:35.0553303Z 
+2025-02-28T15:24:35.0553449Z   git switch -
+2025-02-28T15:24:35.0553674Z 
+2025-02-28T15:24:35.0554039Z Turn off this advice by setting config variable advice.detachedHead to false
+2025-02-28T15:24:35.0554867Z 
+2025-02-28T15:24:35.0555544Z HEAD is now at 68266e24a Merge ee512b602a87bb9213021e3ceab7c75b22852c2d into 39458b6f220cd2eeafe9dcf5d470bd504914850a
+2025-02-28T15:24:35.0565768Z ##[endgroup]
+2025-02-28T15:24:35.0612994Z [command]/usr/bin/git log -1 --format=%H
+2025-02-28T15:24:35.0638556Z 68266e24a68fb42fbbeefb9a1fc4181dfda30fbe
+2025-02-28T15:24:35.0949866Z ##[group]Run hynek/build-and-inspect-python-package@v2.12.0
+2025-02-28T15:24:35.0950236Z with:
+2025-02-28T15:24:35.0950413Z   path: iOS
+2025-02-28T15:24:35.0950655Z   upload-name-suffix: -toga-iOS
+2025-02-28T15:24:35.0950899Z   skip-wheel: false
+2025-02-28T15:24:35.0951105Z env:
+2025-02-28T15:24:35.0951266Z   FORCE_COLOR: 1
+2025-02-28T15:24:35.0951455Z ##[endgroup]
+2025-02-28T15:24:35.1073032Z ##[group]Run actions/setup-python@v5
+2025-02-28T15:24:35.1073314Z with:
+2025-02-28T15:24:35.1073501Z   python-version: 3.x
+2025-02-28T15:24:35.1073737Z   update-environment: false
+2025-02-28T15:24:35.1073972Z   check-latest: false
+2025-02-28T15:24:35.1074292Z   token: ***
+2025-02-28T15:24:35.1074501Z   allow-prereleases: false
+2025-02-28T15:24:35.1074725Z env:
+2025-02-28T15:24:35.1074892Z   FORCE_COLOR: 1
+2025-02-28T15:24:35.1075083Z ##[endgroup]
+2025-02-28T15:24:35.2785318Z ##[group]Installed versions
+2025-02-28T15:24:35.2836312Z Successfully set up CPython (3.13.2)
+2025-02-28T15:24:35.2837180Z ##[endgroup]
+2025-02-28T15:24:35.2933870Z ##[group]Run curl --location --silent --show-error --fail --proto '=https' --tlsv1.2 https://astral.sh/uv/install.sh | bash
+2025-02-28T15:24:35.2934667Z [36;1mcurl --location --silent --show-error --fail --proto '=https' --tlsv1.2 https://astral.sh/uv/install.sh | bash[0m
+2025-02-28T15:24:35.2983183Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:35.2983535Z env:
+2025-02-28T15:24:35.2983738Z   FORCE_COLOR: 1
+2025-02-28T15:24:35.2983962Z ##[endgroup]
+2025-02-28T15:24:35.6334095Z downloading uv 0.6.3 x86_64-unknown-linux-gnu
+2025-02-28T15:24:35.8888221Z no checksums to verify
+2025-02-28T15:24:36.1921952Z installing to /home/runner/.local/bin
+2025-02-28T15:24:36.1977479Z   uv
+2025-02-28T15:24:36.2006988Z   uvx
+2025-02-28T15:24:36.2007312Z everything's installed!
+2025-02-28T15:24:36.2109553Z ##[group]Run echo "UV_CACHE_DIR=/tmp/baipp-uv_cache_dir" >>$GITHUB_ENV
+2025-02-28T15:24:36.2110011Z [36;1mecho "UV_CACHE_DIR=/tmp/baipp-uv_cache_dir" >>$GITHUB_ENV[0m
+2025-02-28T15:24:36.2110336Z [36;1m[0m
+2025-02-28T15:24:36.2110943Z [36;1mecho "REQS_HASH=$(sha256sum /home/runner/work/_actions/hynek/build-and-inspect-python-package/v2.12.0/requirements/tools.txt | cut -d' ' -f1)" >>$GITHUB_ENV[0m
+2025-02-28T15:24:36.2156791Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:36.2157120Z env:
+2025-02-28T15:24:36.2157296Z   FORCE_COLOR: 1
+2025-02-28T15:24:36.2157489Z ##[endgroup]
+2025-02-28T15:24:36.2364479Z ##[group]Run actions/cache@v4
+2025-02-28T15:24:36.2364717Z with:
+2025-02-28T15:24:36.2364919Z   path: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:36.2365290Z   key: baipp-3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:36.2365682Z   enableCrossOsArchive: false
+2025-02-28T15:24:36.2365917Z   fail-on-cache-miss: false
+2025-02-28T15:24:36.2366137Z   lookup-only: false
+2025-02-28T15:24:36.2366338Z   save-always: false
+2025-02-28T15:24:36.2366527Z env:
+2025-02-28T15:24:36.2366706Z   FORCE_COLOR: 1
+2025-02-28T15:24:36.2366928Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:36.2367290Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:36.2367637Z ##[endgroup]
+2025-02-28T15:24:36.4869078Z Cache hit for: baipp-3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:36.9009473Z Received 2634960 of 2634960 (100.0%), 8.3 MBs/sec
+2025-02-28T15:24:36.9010126Z Cache Size: ~3 MB (2634960 B)
+2025-02-28T15:24:36.9037190Z [command]/usr/bin/tar -xf /home/runner/work/_temp/0e914c90-d792-4ef8-98c6-0dfdbfa3f583/cache.tzst -P -C /home/runner/work/toga/toga --use-compress-program unzstd
+2025-02-28T15:24:36.9305659Z Cache restored successfully
+2025-02-28T15:24:36.9540280Z Cache restored from key: baipp-3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:36.9611124Z ##[group]Run unset UV_SYSTEM_PYTHON
+2025-02-28T15:24:36.9611428Z [36;1munset UV_SYSTEM_PYTHON[0m
+2025-02-28T15:24:36.9612067Z [36;1m[0m
+2025-02-28T15:24:36.9612709Z [36;1muv venv \[0m
+2025-02-28T15:24:36.9612919Z [36;1m  /tmp/baipp \[0m
+2025-02-28T15:24:36.9613243Z [36;1m  --python /opt/hostedtoolcache/Python/3.13.2/x64/bin/python[0m
+2025-02-28T15:24:36.9659194Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:36.9659509Z env:
+2025-02-28T15:24:36.9659688Z   FORCE_COLOR: 1
+2025-02-28T15:24:36.9659906Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:36.9660281Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:36.9660642Z ##[endgroup]
+2025-02-28T15:24:37.6574488Z Using CPython 3.13.2 interpreter at: [36m/opt/hostedtoolcache/Python/3.13.2/x64/bin/python[39m
+2025-02-28T15:24:37.6575197Z Creating virtual environment at: [36m/tmp/baipp[39m
+2025-02-28T15:24:37.6626769Z ##[group]Run unset UV_SYSTEM_PYTHON
+2025-02-28T15:24:37.6627271Z [36;1munset UV_SYSTEM_PYTHON[0m
+2025-02-28T15:24:37.6627681Z [36;1m[0m
+2025-02-28T15:24:37.6628011Z [36;1muv pip sync \[0m
+2025-02-28T15:24:37.6628834Z [36;1m  /home/runner/work/_actions/hynek/build-and-inspect-python-package/v2.12.0/requirements/tools.txt[0m
+2025-02-28T15:24:37.6694585Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:37.6695149Z env:
+2025-02-28T15:24:37.6695460Z   FORCE_COLOR: 1
+2025-02-28T15:24:37.6695843Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:37.6696541Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:37.6697231Z   VIRTUAL_ENV: /tmp/baipp
+2025-02-28T15:24:37.6697624Z ##[endgroup]
+2025-02-28T15:24:37.7400102Z [2mUsing Python 3.13.2 environment at: /tmp/baipp[0m
+2025-02-28T15:24:37.8794353Z [2mResolved [1m36 packages[0m [2min 138ms[0m[0m
+2025-02-28T15:24:37.9036980Z [36m[1mDownloading[0m[39m pygments [2m(1.2MiB)[0m
+2025-02-28T15:24:37.9088905Z [36m[1mDownloading[0m[39m pydantic-core [2m(1.9MiB)[0m
+2025-02-28T15:24:37.9096673Z [36m[1mDownloading[0m[39m cryptography [2m(4.0MiB)[0m
+2025-02-28T15:24:37.9799033Z  [32m[1mDownloaded[0m[39m pydantic-core
+2025-02-28T15:24:38.0611110Z  [32m[1mDownloaded[0m[39m cryptography
+2025-02-28T15:24:38.0905813Z  [32m[1mDownloaded[0m[39m pygments
+2025-02-28T15:24:38.0907278Z [2mPrepared [1m36 packages[0m [2min 211ms[0m[0m
+2025-02-28T15:24:38.1096710Z [2mInstalled [1m36 packages[0m [2min 18ms[0m[0m
+2025-02-28T15:24:38.1097713Z  [32m+[39m [1mannotated-types[0m[2m==0.7.0[0m
+2025-02-28T15:24:38.1098304Z  [32m+[39m [1mattrs[0m[2m==24.3.0[0m
+2025-02-28T15:24:38.1098874Z  [32m+[39m [1mcertifi[0m[2m==2024.12.14[0m
+2025-02-28T15:24:38.1099414Z  [32m+[39m [1mcffi[0m[2m==1.17.1[0m
+2025-02-28T15:24:38.1099987Z  [32m+[39m [1mcharset-normalizer[0m[2m==3.4.1[0m
+2025-02-28T15:24:38.1100650Z  [32m+[39m [1mcheck-wheel-contents[0m[2m==0.6.1[0m
+2025-02-28T15:24:38.1101222Z  [32m+[39m [1mclick[0m[2m==8.1.8[0m
+2025-02-28T15:24:38.1102189Z  [32m+[39m [1mcryptography[0m[2m==44.0.0[0m
+2025-02-28T15:24:38.1102837Z  [32m+[39m [1mdocutils[0m[2m==0.21.2[0m
+2025-02-28T15:24:38.1103373Z  [32m+[39m [1mid[0m[2m==1.5.0[0m
+2025-02-28T15:24:38.1103851Z  [32m+[39m [1midna[0m[2m==3.10[0m
+2025-02-28T15:24:38.1104373Z  [32m+[39m [1mjaraco-classes[0m[2m==3.4.0[0m
+2025-02-28T15:24:38.1104947Z  [32m+[39m [1mjaraco-context[0m[2m==6.0.1[0m
+2025-02-28T15:24:38.1105502Z  [32m+[39m [1mjaraco-functools[0m[2m==4.1.0[0m
+2025-02-28T15:24:38.1106059Z  [32m+[39m [1mjeepney[0m[2m==0.8.0[0m
+2025-02-28T15:24:38.1106547Z  [32m+[39m [1mkeyring[0m[2m==25.6.0[0m
+2025-02-28T15:24:38.1107084Z  [32m+[39m [1mmarkdown-it-py[0m[2m==3.0.0[0m
+2025-02-28T15:24:38.1107585Z  [32m+[39m [1mmdurl[0m[2m==0.1.2[0m
+2025-02-28T15:24:38.1108082Z  [32m+[39m [1mmore-itertools[0m[2m==10.6.0[0m
+2025-02-28T15:24:38.1108578Z  [32m+[39m [1mnh3[0m[2m==0.2.20[0m
+2025-02-28T15:24:38.1109062Z  [32m+[39m [1mpackaging[0m[2m==24.2[0m
+2025-02-28T15:24:38.1109548Z  [32m+[39m [1mpycparser[0m[2m==2.22[0m
+2025-02-28T15:24:38.1110705Z  [32m+[39m [1mpydantic[0m[2m==2.10.5[0m
+2025-02-28T15:24:38.1111328Z  [32m+[39m [1mpydantic-core[0m[2m==2.27.2[0m
+2025-02-28T15:24:38.1112110Z  [32m+[39m [1mpygments[0m[2m==2.19.1[0m
+2025-02-28T15:24:38.1112688Z  [32m+[39m [1mreadme-renderer[0m[2m==44.0[0m
+2025-02-28T15:24:38.1113227Z  [32m+[39m [1mrequests[0m[2m==2.32.3[0m
+2025-02-28T15:24:38.1113797Z  [32m+[39m [1mrequests-toolbelt[0m[2m==1.0.0[0m
+2025-02-28T15:24:38.1114368Z  [32m+[39m [1mrfc3986[0m[2m==2.0.0[0m
+2025-02-28T15:24:38.1114900Z  [32m+[39m [1mrich[0m[2m==13.9.4[0m
+2025-02-28T15:24:38.1115418Z  [32m+[39m [1msecretstorage[0m[2m==3.3.3[0m
+2025-02-28T15:24:38.1115959Z  [32m+[39m [1mtwine[0m[2m==6.1.0[0m
+2025-02-28T15:24:38.1116537Z  [32m+[39m [1mtyping-extensions[0m[2m==4.12.2[0m
+2025-02-28T15:24:38.1117100Z  [32m+[39m [1murllib3[0m[2m==2.3.0[0m
+2025-02-28T15:24:38.1117576Z  [32m+[39m [1mwheel[0m[2m==0.45.1[0m
+2025-02-28T15:24:38.1118108Z  [32m+[39m [1mwheel-filename[0m[2m==1.4.2[0m
+2025-02-28T15:24:38.1179667Z ##[group]Run echo "name=Packages-toga-iOS" >>${GITHUB_OUTPUT}
+2025-02-28T15:24:38.1180068Z [36;1mecho "name=Packages-toga-iOS" >>${GITHUB_OUTPUT}[0m
+2025-02-28T15:24:38.1227235Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:38.1227580Z env:
+2025-02-28T15:24:38.1227752Z   FORCE_COLOR: 1
+2025-02-28T15:24:38.1227975Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:38.1228351Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:38.1228742Z ##[endgroup]
+2025-02-28T15:24:38.1319181Z ##[group]Run unset UV_SYSTEM_PYTHON
+2025-02-28T15:24:38.1319487Z [36;1munset UV_SYSTEM_PYTHON[0m
+2025-02-28T15:24:38.1319714Z [36;1m[0m
+2025-02-28T15:24:38.1320087Z [36;1mecho Setting SOURCE_DATE_EPOCH to $(git log -1 --pretty=%ct).[0m
+2025-02-28T15:24:38.1320515Z [36;1mexport SOURCE_DATE_EPOCH=$(git log -1 --pretty=%ct)[0m
+2025-02-28T15:24:38.1320916Z [36;1m[0m
+2025-02-28T15:24:38.1321134Z [36;1mif [[ "false" == "true" ]]; then[0m
+2025-02-28T15:24:38.1321502Z [36;1m  uv build --sdist --out-dir /tmp/baipp/dist[0m
+2025-02-28T15:24:38.1321978Z [36;1melse[0m
+2025-02-28T15:24:38.1322203Z [36;1m  uv build --out-dir /tmp/baipp/dist[0m
+2025-02-28T15:24:38.1322544Z [36;1mfi[0m
+2025-02-28T15:24:38.1322720Z [36;1m[0m
+2025-02-28T15:24:38.1323000Z [36;1m# We don't need .gitignores and it litters the provenance output.[0m
+2025-02-28T15:24:38.1323433Z [36;1mrm -f /tmp/baipp/dist/.gitignore[0m
+2025-02-28T15:24:38.1368281Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:38.1368618Z env:
+2025-02-28T15:24:38.1368793Z   FORCE_COLOR: 1
+2025-02-28T15:24:38.1369019Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:38.1369486Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:38.1370103Z ##[endgroup]
+2025-02-28T15:24:38.1461164Z Setting SOURCE_DATE_EPOCH to 1740756255.
+2025-02-28T15:24:38.2005522Z [1mBuilding source distribution...[0m
+2025-02-28T15:24:38.8322395Z running egg_info
+2025-02-28T15:24:38.8348707Z creating src/toga_iOS.egg-info
+2025-02-28T15:24:38.8350348Z writing src/toga_iOS.egg-info/PKG-INFO
+2025-02-28T15:24:38.8355293Z writing dependency_links to src/toga_iOS.egg-info/dependency_links.txt
+2025-02-28T15:24:38.8357602Z writing entry points to src/toga_iOS.egg-info/entry_points.txt
+2025-02-28T15:24:38.8359257Z writing requirements to src/toga_iOS.egg-info/requires.txt
+2025-02-28T15:24:38.8360524Z writing top-level names to src/toga_iOS.egg-info/top_level.txt
+2025-02-28T15:24:38.8361942Z writing manifest file 'src/toga_iOS.egg-info/SOURCES.txt'
+2025-02-28T15:24:38.9916449Z adding license file 'LICENSE'
+2025-02-28T15:24:38.9928982Z writing manifest file 'src/toga_iOS.egg-info/SOURCES.txt'
+2025-02-28T15:24:39.2265979Z running sdist
+2025-02-28T15:24:39.2267087Z running egg_info
+2025-02-28T15:24:39.2309365Z writing src/toga_iOS.egg-info/PKG-INFO
+2025-02-28T15:24:39.2314383Z writing dependency_links to src/toga_iOS.egg-info/dependency_links.txt
+2025-02-28T15:24:39.2317102Z writing entry points to src/toga_iOS.egg-info/entry_points.txt
+2025-02-28T15:24:39.2319072Z writing requirements to src/toga_iOS.egg-info/requires.txt
+2025-02-28T15:24:39.2320349Z writing top-level names to src/toga_iOS.egg-info/top_level.txt
+2025-02-28T15:24:39.3862531Z adding license file 'LICENSE'
+2025-02-28T15:24:39.3875532Z writing manifest file 'src/toga_iOS.egg-info/SOURCES.txt'
+2025-02-28T15:24:39.3877944Z running check
+2025-02-28T15:24:39.3912165Z creating toga_ios-0.4.9.dev629+g68266e24a
+2025-02-28T15:24:39.3915636Z creating toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS
+2025-02-28T15:24:39.3917875Z creating toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS.egg-info
+2025-02-28T15:24:39.3919860Z creating toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS/hardware
+2025-02-28T15:24:39.3921330Z creating toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS/libs
+2025-02-28T15:24:39.3922914Z creating toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS/resources
+2025-02-28T15:24:39.3924811Z creating toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS/widgets
+2025-02-28T15:24:39.3926556Z creating toga_ios-0.4.9.dev629+g68266e24a/tests_backend
+2025-02-28T15:24:39.3927829Z creating toga_ios-0.4.9.dev629+g68266e24a/tests_backend/hardware
+2025-02-28T15:24:39.3929636Z creating toga_ios-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:39.3930465Z copying files to toga_ios-0.4.9.dev629+g68266e24a...
+2025-02-28T15:24:39.3931335Z copying CONTRIBUTING.md -> toga_ios-0.4.9.dev629+g68266e24a
+2025-02-28T15:24:39.3933427Z copying LICENSE -> toga_ios-0.4.9.dev629+g68266e24a
+2025-02-28T15:24:39.3935051Z copying README.rst -> toga_ios-0.4.9.dev629+g68266e24a
+2025-02-28T15:24:39.3936580Z copying pyproject.toml -> toga_ios-0.4.9.dev629+g68266e24a
+2025-02-28T15:24:39.3937995Z copying src/toga_iOS/__init__.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS
+2025-02-28T15:24:39.3939338Z copying src/toga_iOS/app.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS
+2025-02-28T15:24:39.3940859Z copying src/toga_iOS/colors.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS
+2025-02-28T15:24:39.3942285Z copying src/toga_iOS/command.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS
+2025-02-28T15:24:39.3943757Z copying src/toga_iOS/constraints.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS
+2025-02-28T15:24:39.3945195Z copying src/toga_iOS/container.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS
+2025-02-28T15:24:39.3946529Z copying src/toga_iOS/dialogs.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS
+2025-02-28T15:24:39.3948036Z copying src/toga_iOS/factory.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS
+2025-02-28T15:24:39.3949504Z copying src/toga_iOS/fonts.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS
+2025-02-28T15:24:39.3950699Z copying src/toga_iOS/icons.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS
+2025-02-28T15:24:39.3952582Z copying src/toga_iOS/images.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS
+2025-02-28T15:24:39.3954269Z copying src/toga_iOS/paths.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS
+2025-02-28T15:24:39.3955892Z copying src/toga_iOS/screens.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS
+2025-02-28T15:24:39.3957654Z copying src/toga_iOS/statusicons.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS
+2025-02-28T15:24:39.3959232Z copying src/toga_iOS/window.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS
+2025-02-28T15:24:39.3961215Z copying src/toga_iOS.egg-info/PKG-INFO -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS.egg-info
+2025-02-28T15:24:39.3963112Z copying src/toga_iOS.egg-info/SOURCES.txt -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS.egg-info
+2025-02-28T15:24:39.3964841Z copying src/toga_iOS.egg-info/dependency_links.txt -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS.egg-info
+2025-02-28T15:24:39.3966672Z copying src/toga_iOS.egg-info/entry_points.txt -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS.egg-info
+2025-02-28T15:24:39.3968950Z copying src/toga_iOS.egg-info/requires.txt -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS.egg-info
+2025-02-28T15:24:39.3970565Z copying src/toga_iOS.egg-info/top_level.txt -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS.egg-info
+2025-02-28T15:24:39.3972261Z copying src/toga_iOS/hardware/__init__.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS/hardware
+2025-02-28T15:24:39.3973576Z copying src/toga_iOS/hardware/camera.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS/hardware
+2025-02-28T15:24:39.3975125Z copying src/toga_iOS/hardware/location.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS/hardware
+2025-02-28T15:24:39.3976848Z copying src/toga_iOS/libs/__init__.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS/libs
+2025-02-28T15:24:39.3978558Z copying src/toga_iOS/libs/av_foundation.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS/libs
+2025-02-28T15:24:39.3980139Z copying src/toga_iOS/libs/core_graphics.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS/libs
+2025-02-28T15:24:39.3982086Z copying src/toga_iOS/libs/core_location.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS/libs
+2025-02-28T15:24:39.3983828Z copying src/toga_iOS/libs/core_text.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS/libs
+2025-02-28T15:24:39.3985603Z copying src/toga_iOS/libs/foundation.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS/libs
+2025-02-28T15:24:39.3987170Z copying src/toga_iOS/libs/mapkit.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS/libs
+2025-02-28T15:24:39.3988784Z copying src/toga_iOS/libs/uikit.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS/libs
+2025-02-28T15:24:39.3990733Z copying src/toga_iOS/libs/webkit.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS/libs
+2025-02-28T15:24:39.3992612Z copying src/toga_iOS/resources/optioncontainer-tab.png -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS/resources
+2025-02-28T15:24:39.3994164Z copying src/toga_iOS/resources/toga.icns -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS/resources
+2025-02-28T15:24:39.3999725Z copying src/toga_iOS/widgets/__init__.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS/widgets
+2025-02-28T15:24:39.4001185Z copying src/toga_iOS/widgets/activityindicator.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS/widgets
+2025-02-28T15:24:39.4002838Z copying src/toga_iOS/widgets/base.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS/widgets
+2025-02-28T15:24:39.4004150Z copying src/toga_iOS/widgets/box.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS/widgets
+2025-02-28T15:24:39.4005842Z copying src/toga_iOS/widgets/button.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS/widgets
+2025-02-28T15:24:39.4007648Z copying src/toga_iOS/widgets/canvas.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS/widgets
+2025-02-28T15:24:39.4009363Z copying src/toga_iOS/widgets/detailedlist.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS/widgets
+2025-02-28T15:24:39.4010888Z copying src/toga_iOS/widgets/divider.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS/widgets
+2025-02-28T15:24:39.4012670Z copying src/toga_iOS/widgets/imageview.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS/widgets
+2025-02-28T15:24:39.4014308Z copying src/toga_iOS/widgets/label.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS/widgets
+2025-02-28T15:24:39.4015968Z copying src/toga_iOS/widgets/mapview.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS/widgets
+2025-02-28T15:24:39.4017775Z copying src/toga_iOS/widgets/multilinetextinput.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS/widgets
+2025-02-28T15:24:39.4019266Z copying src/toga_iOS/widgets/numberinput.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS/widgets
+2025-02-28T15:24:39.4021117Z copying src/toga_iOS/widgets/optioncontainer.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS/widgets
+2025-02-28T15:24:39.4022958Z copying src/toga_iOS/widgets/passwordinput.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS/widgets
+2025-02-28T15:24:39.4024559Z copying src/toga_iOS/widgets/progressbar.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS/widgets
+2025-02-28T15:24:39.4026408Z copying src/toga_iOS/widgets/scrollcontainer.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS/widgets
+2025-02-28T15:24:39.4028266Z copying src/toga_iOS/widgets/selection.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS/widgets
+2025-02-28T15:24:39.4029479Z copying src/toga_iOS/widgets/slider.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS/widgets
+2025-02-28T15:24:39.4031019Z copying src/toga_iOS/widgets/switch.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS/widgets
+2025-02-28T15:24:39.4032999Z copying src/toga_iOS/widgets/textinput.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS/widgets
+2025-02-28T15:24:39.4034684Z copying src/toga_iOS/widgets/webview.py -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS/widgets
+2025-02-28T15:24:39.4037037Z copying tests_backend/__init__.py -> toga_ios-0.4.9.dev629+g68266e24a/tests_backend
+2025-02-28T15:24:39.4038365Z copying tests_backend/app.py -> toga_ios-0.4.9.dev629+g68266e24a/tests_backend
+2025-02-28T15:24:39.4039696Z copying tests_backend/dialogs.py -> toga_ios-0.4.9.dev629+g68266e24a/tests_backend
+2025-02-28T15:24:39.4042051Z copying tests_backend/fonts.py -> toga_ios-0.4.9.dev629+g68266e24a/tests_backend
+2025-02-28T15:24:39.4043268Z copying tests_backend/icons.py -> toga_ios-0.4.9.dev629+g68266e24a/tests_backend
+2025-02-28T15:24:39.4045386Z copying tests_backend/images.py -> toga_ios-0.4.9.dev629+g68266e24a/tests_backend
+2025-02-28T15:24:39.4047906Z copying tests_backend/probe.py -> toga_ios-0.4.9.dev629+g68266e24a/tests_backend
+2025-02-28T15:24:39.4050271Z copying tests_backend/screens.py -> toga_ios-0.4.9.dev629+g68266e24a/tests_backend
+2025-02-28T15:24:39.4051519Z copying tests_backend/window.py -> toga_ios-0.4.9.dev629+g68266e24a/tests_backend
+2025-02-28T15:24:39.4054184Z copying tests_backend/hardware/__init__.py -> toga_ios-0.4.9.dev629+g68266e24a/tests_backend/hardware
+2025-02-28T15:24:39.4055618Z copying tests_backend/hardware/camera.py -> toga_ios-0.4.9.dev629+g68266e24a/tests_backend/hardware
+2025-02-28T15:24:39.4056977Z copying tests_backend/hardware/location.py -> toga_ios-0.4.9.dev629+g68266e24a/tests_backend/hardware
+2025-02-28T15:24:39.4058303Z copying tests_backend/widgets/__init__.py -> toga_ios-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:39.4059789Z copying tests_backend/widgets/activityindicator.py -> toga_ios-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:39.4061133Z copying tests_backend/widgets/base.py -> toga_ios-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:39.4062512Z copying tests_backend/widgets/box.py -> toga_ios-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:39.4063827Z copying tests_backend/widgets/button.py -> toga_ios-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:39.4065059Z copying tests_backend/widgets/canvas.py -> toga_ios-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:39.4066371Z copying tests_backend/widgets/detailedlist.py -> toga_ios-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:39.4067790Z copying tests_backend/widgets/divider.py -> toga_ios-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:39.4069122Z copying tests_backend/widgets/imageview.py -> toga_ios-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:39.4070521Z copying tests_backend/widgets/label.py -> toga_ios-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:39.4072174Z copying tests_backend/widgets/mapview.py -> toga_ios-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:39.4073852Z copying tests_backend/widgets/multilinetextinput.py -> toga_ios-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:39.4075513Z copying tests_backend/widgets/numberinput.py -> toga_ios-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:39.4077082Z copying tests_backend/widgets/optioncontainer.py -> toga_ios-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:39.4078727Z copying tests_backend/widgets/passwordinput.py -> toga_ios-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:39.4080535Z copying tests_backend/widgets/progressbar.py -> toga_ios-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:39.4082381Z copying tests_backend/widgets/properties.py -> toga_ios-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:39.4083869Z copying tests_backend/widgets/scrollcontainer.py -> toga_ios-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:39.4085497Z copying tests_backend/widgets/selection.py -> toga_ios-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:39.4087102Z copying tests_backend/widgets/slider.py -> toga_ios-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:39.4088914Z copying tests_backend/widgets/switch.py -> toga_ios-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:39.4090356Z copying tests_backend/widgets/textinput.py -> toga_ios-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:39.4092177Z copying tests_backend/widgets/webview.py -> toga_ios-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:39.4093867Z copying src/toga_iOS.egg-info/SOURCES.txt -> toga_ios-0.4.9.dev629+g68266e24a/src/toga_iOS.egg-info
+2025-02-28T15:24:39.4099931Z Writing toga_ios-0.4.9.dev629+g68266e24a/setup.cfg
+2025-02-28T15:24:39.4102011Z Creating tar archive
+2025-02-28T15:24:39.4591148Z removing 'toga_ios-0.4.9.dev629+g68266e24a' (and everything under it)
+2025-02-28T15:24:39.5092430Z [1mBuilding wheel from source distribution...[0m
+2025-02-28T15:24:39.9664527Z running egg_info
+2025-02-28T15:24:39.9686275Z writing src/toga_iOS.egg-info/PKG-INFO
+2025-02-28T15:24:39.9691843Z writing dependency_links to src/toga_iOS.egg-info/dependency_links.txt
+2025-02-28T15:24:39.9694897Z writing entry points to src/toga_iOS.egg-info/entry_points.txt
+2025-02-28T15:24:39.9697627Z writing requirements to src/toga_iOS.egg-info/requires.txt
+2025-02-28T15:24:39.9698561Z writing top-level names to src/toga_iOS.egg-info/top_level.txt
+2025-02-28T15:24:39.9853480Z ERROR setuptools_scm._file_finders.git listing git files failed - pretending there aren't any
+2025-02-28T15:24:40.1762802Z reading manifest file 'src/toga_iOS.egg-info/SOURCES.txt'
+2025-02-28T15:24:40.1775628Z adding license file 'LICENSE'
+2025-02-28T15:24:40.1789985Z writing manifest file 'src/toga_iOS.egg-info/SOURCES.txt'
+2025-02-28T15:24:40.3692521Z running bdist_wheel
+2025-02-28T15:24:40.3781420Z running build
+2025-02-28T15:24:40.3781946Z running build_py
+2025-02-28T15:24:40.3801095Z creating build/lib/toga_iOS
+2025-02-28T15:24:40.3804148Z copying src/toga_iOS/images.py -> build/lib/toga_iOS
+2025-02-28T15:24:40.3806371Z copying src/toga_iOS/colors.py -> build/lib/toga_iOS
+2025-02-28T15:24:40.3808370Z copying src/toga_iOS/screens.py -> build/lib/toga_iOS
+2025-02-28T15:24:40.3810345Z copying src/toga_iOS/dialogs.py -> build/lib/toga_iOS
+2025-02-28T15:24:40.3812497Z copying src/toga_iOS/window.py -> build/lib/toga_iOS
+2025-02-28T15:24:40.3814636Z copying src/toga_iOS/factory.py -> build/lib/toga_iOS
+2025-02-28T15:24:40.3816603Z copying src/toga_iOS/statusicons.py -> build/lib/toga_iOS
+2025-02-28T15:24:40.3818472Z copying src/toga_iOS/command.py -> build/lib/toga_iOS
+2025-02-28T15:24:40.3820385Z copying src/toga_iOS/app.py -> build/lib/toga_iOS
+2025-02-28T15:24:40.3822378Z copying src/toga_iOS/icons.py -> build/lib/toga_iOS
+2025-02-28T15:24:40.3824380Z copying src/toga_iOS/paths.py -> build/lib/toga_iOS
+2025-02-28T15:24:40.3826374Z copying src/toga_iOS/__init__.py -> build/lib/toga_iOS
+2025-02-28T15:24:40.3828324Z copying src/toga_iOS/container.py -> build/lib/toga_iOS
+2025-02-28T15:24:40.3830235Z copying src/toga_iOS/fonts.py -> build/lib/toga_iOS
+2025-02-28T15:24:40.3832302Z copying src/toga_iOS/constraints.py -> build/lib/toga_iOS
+2025-02-28T15:24:40.3835123Z creating build/lib/toga_iOS/hardware
+2025-02-28T15:24:40.3837362Z copying src/toga_iOS/hardware/camera.py -> build/lib/toga_iOS/hardware
+2025-02-28T15:24:40.3838973Z copying src/toga_iOS/hardware/location.py -> build/lib/toga_iOS/hardware
+2025-02-28T15:24:40.3841362Z copying src/toga_iOS/hardware/__init__.py -> build/lib/toga_iOS/hardware
+2025-02-28T15:24:40.3845960Z creating build/lib/toga_iOS/widgets
+2025-02-28T15:24:40.3847673Z copying src/toga_iOS/widgets/activityindicator.py -> build/lib/toga_iOS/widgets
+2025-02-28T15:24:40.3849342Z copying src/toga_iOS/widgets/box.py -> build/lib/toga_iOS/widgets
+2025-02-28T15:24:40.3851988Z copying src/toga_iOS/widgets/multilinetextinput.py -> build/lib/toga_iOS/widgets
+2025-02-28T15:24:40.3853958Z copying src/toga_iOS/widgets/detailedlist.py -> build/lib/toga_iOS/widgets
+2025-02-28T15:24:40.3856255Z copying src/toga_iOS/widgets/base.py -> build/lib/toga_iOS/widgets
+2025-02-28T15:24:40.3858633Z copying src/toga_iOS/widgets/progressbar.py -> build/lib/toga_iOS/widgets
+2025-02-28T15:24:40.3860499Z copying src/toga_iOS/widgets/optioncontainer.py -> build/lib/toga_iOS/widgets
+2025-02-28T15:24:40.3863070Z copying src/toga_iOS/widgets/numberinput.py -> build/lib/toga_iOS/widgets
+2025-02-28T15:24:40.3864973Z copying src/toga_iOS/widgets/textinput.py -> build/lib/toga_iOS/widgets
+2025-02-28T15:24:40.3867244Z copying src/toga_iOS/widgets/canvas.py -> build/lib/toga_iOS/widgets
+2025-02-28T15:24:40.3869593Z copying src/toga_iOS/widgets/selection.py -> build/lib/toga_iOS/widgets
+2025-02-28T15:24:40.3871465Z copying src/toga_iOS/widgets/button.py -> build/lib/toga_iOS/widgets
+2025-02-28T15:24:40.3873879Z copying src/toga_iOS/widgets/__init__.py -> build/lib/toga_iOS/widgets
+2025-02-28T15:24:40.3875665Z copying src/toga_iOS/widgets/scrollcontainer.py -> build/lib/toga_iOS/widgets
+2025-02-28T15:24:40.3877995Z copying src/toga_iOS/widgets/imageview.py -> build/lib/toga_iOS/widgets
+2025-02-28T15:24:40.3880011Z copying src/toga_iOS/widgets/switch.py -> build/lib/toga_iOS/widgets
+2025-02-28T15:24:40.3882359Z copying src/toga_iOS/widgets/mapview.py -> build/lib/toga_iOS/widgets
+2025-02-28T15:24:40.3884623Z copying src/toga_iOS/widgets/webview.py -> build/lib/toga_iOS/widgets
+2025-02-28T15:24:40.3886607Z copying src/toga_iOS/widgets/passwordinput.py -> build/lib/toga_iOS/widgets
+2025-02-28T15:24:40.3888836Z copying src/toga_iOS/widgets/divider.py -> build/lib/toga_iOS/widgets
+2025-02-28T15:24:40.3890999Z copying src/toga_iOS/widgets/label.py -> build/lib/toga_iOS/widgets
+2025-02-28T15:24:40.3893330Z copying src/toga_iOS/widgets/slider.py -> build/lib/toga_iOS/widgets
+2025-02-28T15:24:40.3896678Z creating build/lib/toga_iOS/libs
+2025-02-28T15:24:40.3898105Z copying src/toga_iOS/libs/core_location.py -> build/lib/toga_iOS/libs
+2025-02-28T15:24:40.3900407Z copying src/toga_iOS/libs/uikit.py -> build/lib/toga_iOS/libs
+2025-02-28T15:24:40.3902952Z copying src/toga_iOS/libs/av_foundation.py -> build/lib/toga_iOS/libs
+2025-02-28T15:24:40.3904789Z copying src/toga_iOS/libs/core_graphics.py -> build/lib/toga_iOS/libs
+2025-02-28T15:24:40.3907070Z copying src/toga_iOS/libs/webkit.py -> build/lib/toga_iOS/libs
+2025-02-28T15:24:40.3909137Z copying src/toga_iOS/libs/mapkit.py -> build/lib/toga_iOS/libs
+2025-02-28T15:24:40.3911180Z copying src/toga_iOS/libs/__init__.py -> build/lib/toga_iOS/libs
+2025-02-28T15:24:40.3913601Z copying src/toga_iOS/libs/core_text.py -> build/lib/toga_iOS/libs
+2025-02-28T15:24:40.3915731Z copying src/toga_iOS/libs/foundation.py -> build/lib/toga_iOS/libs
+2025-02-28T15:24:40.3917096Z running egg_info
+2025-02-28T15:24:40.3936108Z writing src/toga_iOS.egg-info/PKG-INFO
+2025-02-28T15:24:40.3941265Z writing dependency_links to src/toga_iOS.egg-info/dependency_links.txt
+2025-02-28T15:24:40.3944838Z writing entry points to src/toga_iOS.egg-info/entry_points.txt
+2025-02-28T15:24:40.3947138Z writing requirements to src/toga_iOS.egg-info/requires.txt
+2025-02-28T15:24:40.3948354Z writing top-level names to src/toga_iOS.egg-info/top_level.txt
+2025-02-28T15:24:40.4039494Z ERROR setuptools_scm._file_finders.git listing git files failed - pretending there aren't any
+2025-02-28T15:24:40.5366457Z reading manifest file 'src/toga_iOS.egg-info/SOURCES.txt'
+2025-02-28T15:24:40.5382676Z adding license file 'LICENSE'
+2025-02-28T15:24:40.5398573Z writing manifest file 'src/toga_iOS.egg-info/SOURCES.txt'
+2025-02-28T15:24:40.5408638Z creating build/lib/toga_iOS/resources
+2025-02-28T15:24:40.5410945Z copying src/toga_iOS/resources/optioncontainer-tab.png -> build/lib/toga_iOS/resources
+2025-02-28T15:24:40.5416497Z copying src/toga_iOS/resources/toga.icns -> build/lib/toga_iOS/resources
+2025-02-28T15:24:40.5457412Z installing to build/bdist.linux-x86_64/wheel
+2025-02-28T15:24:40.5457880Z running install
+2025-02-28T15:24:40.5520096Z running install_lib
+2025-02-28T15:24:40.5537438Z creating build/bdist.linux-x86_64/wheel
+2025-02-28T15:24:40.5539902Z creating build/bdist.linux-x86_64/wheel/toga_iOS
+2025-02-28T15:24:40.5541411Z copying build/lib/toga_iOS/images.py -> build/bdist.linux-x86_64/wheel/./toga_iOS
+2025-02-28T15:24:40.5543627Z copying build/lib/toga_iOS/colors.py -> build/bdist.linux-x86_64/wheel/./toga_iOS
+2025-02-28T15:24:40.5545363Z copying build/lib/toga_iOS/screens.py -> build/bdist.linux-x86_64/wheel/./toga_iOS
+2025-02-28T15:24:40.5547160Z copying build/lib/toga_iOS/dialogs.py -> build/bdist.linux-x86_64/wheel/./toga_iOS
+2025-02-28T15:24:40.5548913Z copying build/lib/toga_iOS/window.py -> build/bdist.linux-x86_64/wheel/./toga_iOS
+2025-02-28T15:24:40.5550758Z copying build/lib/toga_iOS/factory.py -> build/bdist.linux-x86_64/wheel/./toga_iOS
+2025-02-28T15:24:40.5552601Z copying build/lib/toga_iOS/statusicons.py -> build/bdist.linux-x86_64/wheel/./toga_iOS
+2025-02-28T15:24:40.5554817Z creating build/bdist.linux-x86_64/wheel/toga_iOS/hardware
+2025-02-28T15:24:40.5556750Z copying build/lib/toga_iOS/hardware/camera.py -> build/bdist.linux-x86_64/wheel/./toga_iOS/hardware
+2025-02-28T15:24:40.5558671Z copying build/lib/toga_iOS/hardware/location.py -> build/bdist.linux-x86_64/wheel/./toga_iOS/hardware
+2025-02-28T15:24:40.5560406Z copying build/lib/toga_iOS/hardware/__init__.py -> build/bdist.linux-x86_64/wheel/./toga_iOS/hardware
+2025-02-28T15:24:40.5562119Z copying build/lib/toga_iOS/command.py -> build/bdist.linux-x86_64/wheel/./toga_iOS
+2025-02-28T15:24:40.5563863Z copying build/lib/toga_iOS/app.py -> build/bdist.linux-x86_64/wheel/./toga_iOS
+2025-02-28T15:24:40.5565620Z copying build/lib/toga_iOS/icons.py -> build/bdist.linux-x86_64/wheel/./toga_iOS
+2025-02-28T15:24:40.5567797Z creating build/bdist.linux-x86_64/wheel/toga_iOS/resources
+2025-02-28T15:24:40.5569858Z copying build/lib/toga_iOS/resources/toga.icns -> build/bdist.linux-x86_64/wheel/./toga_iOS/resources
+2025-02-28T15:24:40.5575027Z copying build/lib/toga_iOS/resources/optioncontainer-tab.png -> build/bdist.linux-x86_64/wheel/./toga_iOS/resources
+2025-02-28T15:24:40.5576659Z creating build/bdist.linux-x86_64/wheel/toga_iOS/widgets
+2025-02-28T15:24:40.5578100Z copying build/lib/toga_iOS/widgets/activityindicator.py -> build/bdist.linux-x86_64/wheel/./toga_iOS/widgets
+2025-02-28T15:24:40.5579839Z copying build/lib/toga_iOS/widgets/box.py -> build/bdist.linux-x86_64/wheel/./toga_iOS/widgets
+2025-02-28T15:24:40.5581751Z copying build/lib/toga_iOS/widgets/multilinetextinput.py -> build/bdist.linux-x86_64/wheel/./toga_iOS/widgets
+2025-02-28T15:24:40.5583595Z copying build/lib/toga_iOS/widgets/detailedlist.py -> build/bdist.linux-x86_64/wheel/./toga_iOS/widgets
+2025-02-28T15:24:40.5585261Z copying build/lib/toga_iOS/widgets/base.py -> build/bdist.linux-x86_64/wheel/./toga_iOS/widgets
+2025-02-28T15:24:40.5586998Z copying build/lib/toga_iOS/widgets/progressbar.py -> build/bdist.linux-x86_64/wheel/./toga_iOS/widgets
+2025-02-28T15:24:40.5588750Z copying build/lib/toga_iOS/widgets/optioncontainer.py -> build/bdist.linux-x86_64/wheel/./toga_iOS/widgets
+2025-02-28T15:24:40.5590523Z copying build/lib/toga_iOS/widgets/numberinput.py -> build/bdist.linux-x86_64/wheel/./toga_iOS/widgets
+2025-02-28T15:24:40.5592485Z copying build/lib/toga_iOS/widgets/textinput.py -> build/bdist.linux-x86_64/wheel/./toga_iOS/widgets
+2025-02-28T15:24:40.5594275Z copying build/lib/toga_iOS/widgets/canvas.py -> build/bdist.linux-x86_64/wheel/./toga_iOS/widgets
+2025-02-28T15:24:40.5596113Z copying build/lib/toga_iOS/widgets/selection.py -> build/bdist.linux-x86_64/wheel/./toga_iOS/widgets
+2025-02-28T15:24:40.5597942Z copying build/lib/toga_iOS/widgets/button.py -> build/bdist.linux-x86_64/wheel/./toga_iOS/widgets
+2025-02-28T15:24:40.5599747Z copying build/lib/toga_iOS/widgets/__init__.py -> build/bdist.linux-x86_64/wheel/./toga_iOS/widgets
+2025-02-28T15:24:40.5601258Z copying build/lib/toga_iOS/widgets/scrollcontainer.py -> build/bdist.linux-x86_64/wheel/./toga_iOS/widgets
+2025-02-28T15:24:40.5603297Z copying build/lib/toga_iOS/widgets/imageview.py -> build/bdist.linux-x86_64/wheel/./toga_iOS/widgets
+2025-02-28T15:24:40.5605074Z copying build/lib/toga_iOS/widgets/switch.py -> build/bdist.linux-x86_64/wheel/./toga_iOS/widgets
+2025-02-28T15:24:40.5606837Z copying build/lib/toga_iOS/widgets/mapview.py -> build/bdist.linux-x86_64/wheel/./toga_iOS/widgets
+2025-02-28T15:24:40.5608767Z copying build/lib/toga_iOS/widgets/webview.py -> build/bdist.linux-x86_64/wheel/./toga_iOS/widgets
+2025-02-28T15:24:40.5610565Z copying build/lib/toga_iOS/widgets/passwordinput.py -> build/bdist.linux-x86_64/wheel/./toga_iOS/widgets
+2025-02-28T15:24:40.5612321Z copying build/lib/toga_iOS/widgets/divider.py -> build/bdist.linux-x86_64/wheel/./toga_iOS/widgets
+2025-02-28T15:24:40.5614150Z copying build/lib/toga_iOS/widgets/label.py -> build/bdist.linux-x86_64/wheel/./toga_iOS/widgets
+2025-02-28T15:24:40.5615902Z copying build/lib/toga_iOS/widgets/slider.py -> build/bdist.linux-x86_64/wheel/./toga_iOS/widgets
+2025-02-28T15:24:40.5618157Z creating build/bdist.linux-x86_64/wheel/toga_iOS/libs
+2025-02-28T15:24:40.5619946Z copying build/lib/toga_iOS/libs/core_location.py -> build/bdist.linux-x86_64/wheel/./toga_iOS/libs
+2025-02-28T15:24:40.5621833Z copying build/lib/toga_iOS/libs/uikit.py -> build/bdist.linux-x86_64/wheel/./toga_iOS/libs
+2025-02-28T15:24:40.5623826Z copying build/lib/toga_iOS/libs/av_foundation.py -> build/bdist.linux-x86_64/wheel/./toga_iOS/libs
+2025-02-28T15:24:40.5625593Z copying build/lib/toga_iOS/libs/core_graphics.py -> build/bdist.linux-x86_64/wheel/./toga_iOS/libs
+2025-02-28T15:24:40.5627308Z copying build/lib/toga_iOS/libs/webkit.py -> build/bdist.linux-x86_64/wheel/./toga_iOS/libs
+2025-02-28T15:24:40.5629040Z copying build/lib/toga_iOS/libs/mapkit.py -> build/bdist.linux-x86_64/wheel/./toga_iOS/libs
+2025-02-28T15:24:40.5630793Z copying build/lib/toga_iOS/libs/__init__.py -> build/bdist.linux-x86_64/wheel/./toga_iOS/libs
+2025-02-28T15:24:40.5632697Z copying build/lib/toga_iOS/libs/core_text.py -> build/bdist.linux-x86_64/wheel/./toga_iOS/libs
+2025-02-28T15:24:40.5634498Z copying build/lib/toga_iOS/libs/foundation.py -> build/bdist.linux-x86_64/wheel/./toga_iOS/libs
+2025-02-28T15:24:40.5636219Z copying build/lib/toga_iOS/paths.py -> build/bdist.linux-x86_64/wheel/./toga_iOS
+2025-02-28T15:24:40.5638008Z copying build/lib/toga_iOS/__init__.py -> build/bdist.linux-x86_64/wheel/./toga_iOS
+2025-02-28T15:24:40.5639778Z copying build/lib/toga_iOS/container.py -> build/bdist.linux-x86_64/wheel/./toga_iOS
+2025-02-28T15:24:40.5641547Z copying build/lib/toga_iOS/fonts.py -> build/bdist.linux-x86_64/wheel/./toga_iOS
+2025-02-28T15:24:40.5643566Z copying build/lib/toga_iOS/constraints.py -> build/bdist.linux-x86_64/wheel/./toga_iOS
+2025-02-28T15:24:40.5645187Z running install_egg_info
+2025-02-28T15:24:40.5663894Z Copying src/toga_iOS.egg-info to build/bdist.linux-x86_64/wheel/./toga_iOS-0.4.9.dev629+g68266e24a-py3.12.egg-info
+2025-02-28T15:24:40.5672098Z running install_scripts
+2025-02-28T15:24:40.5682936Z creating build/bdist.linux-x86_64/wheel/toga_iOS-0.4.9.dev629+g68266e24a.dist-info/WHEEL
+2025-02-28T15:24:40.5687245Z creating '/tmp/baipp/dist/.tmp-l6g9aya_/toga_iOS-0.4.9.dev629+g68266e24a-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+2025-02-28T15:24:40.5690806Z adding 'toga_iOS/__init__.py'
+2025-02-28T15:24:40.5694711Z adding 'toga_iOS/app.py'
+2025-02-28T15:24:40.5697074Z adding 'toga_iOS/colors.py'
+2025-02-28T15:24:40.5699231Z adding 'toga_iOS/command.py'
+2025-02-28T15:24:40.5702113Z adding 'toga_iOS/constraints.py'
+2025-02-28T15:24:40.5705270Z adding 'toga_iOS/container.py'
+2025-02-28T15:24:40.5707800Z adding 'toga_iOS/dialogs.py'
+2025-02-28T15:24:40.5710075Z adding 'toga_iOS/factory.py'
+2025-02-28T15:24:40.5713431Z adding 'toga_iOS/fonts.py'
+2025-02-28T15:24:40.5714858Z adding 'toga_iOS/icons.py'
+2025-02-28T15:24:40.5717344Z adding 'toga_iOS/images.py'
+2025-02-28T15:24:40.5719258Z adding 'toga_iOS/paths.py'
+2025-02-28T15:24:40.5721464Z adding 'toga_iOS/screens.py'
+2025-02-28T15:24:40.5723607Z adding 'toga_iOS/statusicons.py'
+2025-02-28T15:24:40.5727296Z adding 'toga_iOS/window.py'
+2025-02-28T15:24:40.5729566Z adding 'toga_iOS/hardware/__init__.py'
+2025-02-28T15:24:40.5732572Z adding 'toga_iOS/hardware/camera.py'
+2025-02-28T15:24:40.5735621Z adding 'toga_iOS/hardware/location.py'
+2025-02-28T15:24:40.5737782Z adding 'toga_iOS/libs/__init__.py'
+2025-02-28T15:24:40.5739807Z adding 'toga_iOS/libs/av_foundation.py'
+2025-02-28T15:24:40.5742608Z adding 'toga_iOS/libs/core_graphics.py'
+2025-02-28T15:24:40.5744839Z adding 'toga_iOS/libs/core_location.py'
+2025-02-28T15:24:40.5746779Z adding 'toga_iOS/libs/core_text.py'
+2025-02-28T15:24:40.5749088Z adding 'toga_iOS/libs/foundation.py'
+2025-02-28T15:24:40.5751259Z adding 'toga_iOS/libs/mapkit.py'
+2025-02-28T15:24:40.5756407Z adding 'toga_iOS/libs/uikit.py'
+2025-02-28T15:24:40.5758422Z adding 'toga_iOS/libs/webkit.py'
+2025-02-28T15:24:40.5761325Z adding 'toga_iOS/resources/optioncontainer-tab.png'
+2025-02-28T15:24:40.5872174Z adding 'toga_iOS/resources/toga.icns'
+2025-02-28T15:24:40.5876729Z adding 'toga_iOS/widgets/__init__.py'
+2025-02-28T15:24:40.5878758Z adding 'toga_iOS/widgets/activityindicator.py'
+2025-02-28T15:24:40.5881504Z adding 'toga_iOS/widgets/base.py'
+2025-02-28T15:24:40.5883613Z adding 'toga_iOS/widgets/box.py'
+2025-02-28T15:24:40.5886080Z adding 'toga_iOS/widgets/button.py'
+2025-02-28T15:24:40.5890149Z adding 'toga_iOS/widgets/canvas.py'
+2025-02-28T15:24:40.5893418Z adding 'toga_iOS/widgets/detailedlist.py'
+2025-02-28T15:24:40.5895489Z adding 'toga_iOS/widgets/divider.py'
+2025-02-28T15:24:40.5897774Z adding 'toga_iOS/widgets/imageview.py'
+2025-02-28T15:24:40.5900143Z adding 'toga_iOS/widgets/label.py'
+2025-02-28T15:24:40.5903711Z adding 'toga_iOS/widgets/mapview.py'
+2025-02-28T15:24:40.5906515Z adding 'toga_iOS/widgets/multilinetextinput.py'
+2025-02-28T15:24:40.5909064Z adding 'toga_iOS/widgets/numberinput.py'
+2025-02-28T15:24:40.5912342Z adding 'toga_iOS/widgets/optioncontainer.py'
+2025-02-28T15:24:40.5914228Z adding 'toga_iOS/widgets/passwordinput.py'
+2025-02-28T15:24:40.5916458Z adding 'toga_iOS/widgets/progressbar.py'
+2025-02-28T15:24:40.5918922Z adding 'toga_iOS/widgets/scrollcontainer.py'
+2025-02-28T15:24:40.5921831Z adding 'toga_iOS/widgets/selection.py'
+2025-02-28T15:24:40.5924064Z adding 'toga_iOS/widgets/slider.py'
+2025-02-28T15:24:40.5926144Z adding 'toga_iOS/widgets/switch.py'
+2025-02-28T15:24:40.5928943Z adding 'toga_iOS/widgets/textinput.py'
+2025-02-28T15:24:40.5931890Z adding 'toga_iOS/widgets/webview.py'
+2025-02-28T15:24:40.5935464Z adding 'toga_iOS-0.4.9.dev629+g68266e24a.dist-info/LICENSE'
+2025-02-28T15:24:40.5937591Z adding 'toga_iOS-0.4.9.dev629+g68266e24a.dist-info/METADATA'
+2025-02-28T15:24:40.5938787Z adding 'toga_iOS-0.4.9.dev629+g68266e24a.dist-info/WHEEL'
+2025-02-28T15:24:40.5940198Z adding 'toga_iOS-0.4.9.dev629+g68266e24a.dist-info/entry_points.txt'
+2025-02-28T15:24:40.5941425Z adding 'toga_iOS-0.4.9.dev629+g68266e24a.dist-info/top_level.txt'
+2025-02-28T15:24:40.5945360Z adding 'toga_iOS-0.4.9.dev629+g68266e24a.dist-info/RECORD'
+2025-02-28T15:24:40.5947967Z removing build/bdist.linux-x86_64/wheel
+2025-02-28T15:24:40.6351119Z Successfully built [36m[1m/tmp/baipp/dist/toga_ios-0.4.9.dev629+g68266e24a.tar.gz[0m[39m
+2025-02-28T15:24:40.6352947Z Successfully built [36m[1m/tmp/baipp/dist/toga_iOS-0.4.9.dev629+g68266e24a-py3-none-any.whl[0m[39m
+2025-02-28T15:24:40.6424233Z ##[group]Run uv cache prune --ci
+2025-02-28T15:24:40.6424718Z [36;1muv cache prune --ci[0m
+2025-02-28T15:24:40.6479750Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:40.6480326Z env:
+2025-02-28T15:24:40.6480595Z   FORCE_COLOR: 1
+2025-02-28T15:24:40.6480851Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:40.6481480Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:40.6482246Z ##[endgroup]
+2025-02-28T15:24:40.6611387Z Pruning cache at: [36m/tmp/baipp-uv_cache_dir[39m
+2025-02-28T15:24:40.7089972Z Removed 2121 files ([32m37.1MiB[39m)
+2025-02-28T15:24:40.7133519Z ##[group]Run echo -e '\n### Package Contents' >> $GITHUB_STEP_SUMMARY
+2025-02-28T15:24:40.7133956Z [36;1mecho -e '\n### Package Contents' >> $GITHUB_STEP_SUMMARY[0m
+2025-02-28T15:24:40.7179297Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:40.7179637Z env:
+2025-02-28T15:24:40.7179811Z   FORCE_COLOR: 1
+2025-02-28T15:24:40.7180037Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:40.7180431Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:40.7180813Z ##[endgroup]
+2025-02-28T15:24:40.7295026Z ##[group]Run echo "dist=/tmp/baipp/dist" >>$GITHUB_OUTPUT
+2025-02-28T15:24:40.7295665Z [36;1mecho "dist=/tmp/baipp/dist" >>$GITHUB_OUTPUT[0m
+2025-02-28T15:24:40.7339485Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:40.7339823Z env:
+2025-02-28T15:24:40.7340002Z   FORCE_COLOR: 1
+2025-02-28T15:24:40.7340210Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:40.7340573Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:40.7340926Z ##[endgroup]
+2025-02-28T15:24:40.7429230Z ##[group]Run ls -l /tmp/baipp/dist
+2025-02-28T15:24:40.7429510Z [36;1mls -l /tmp/baipp/dist[0m
+2025-02-28T15:24:40.7472279Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:40.7472599Z env:
+2025-02-28T15:24:40.7472777Z   FORCE_COLOR: 1
+2025-02-28T15:24:40.7472985Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:40.7473358Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:40.7473724Z ##[endgroup]
+2025-02-28T15:24:40.7548534Z total 860
+2025-02-28T15:24:40.7549170Z -rw-r--r-- 1 runner docker 436944 Feb 28 15:24 toga_iOS-0.4.9.dev629+g68266e24a-py3-none-any.whl
+2025-02-28T15:24:40.7550016Z -rw-r--r-- 1 runner docker 439461 Feb 28 15:24 toga_ios-0.4.9.dev629+g68266e24a.tar.gz
+2025-02-28T15:24:40.7583339Z ##[group]Run actions/upload-artifact@v4
+2025-02-28T15:24:40.7583605Z with:
+2025-02-28T15:24:40.7583792Z   name: Packages-toga-iOS
+2025-02-28T15:24:40.7584023Z   path: /tmp/baipp/dist/*
+2025-02-28T15:24:40.7584252Z   if-no-files-found: warn
+2025-02-28T15:24:40.7584472Z   compression-level: 6
+2025-02-28T15:24:40.7584682Z   overwrite: false
+2025-02-28T15:24:40.7584880Z   include-hidden-files: false
+2025-02-28T15:24:40.7585102Z env:
+2025-02-28T15:24:40.7585272Z   FORCE_COLOR: 1
+2025-02-28T15:24:40.7585482Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:40.7585857Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:40.7586215Z ##[endgroup]
+2025-02-28T15:24:40.9762979Z With the provided path, there will be 2 files uploaded
+2025-02-28T15:24:40.9763726Z Artifact name is valid!
+2025-02-28T15:24:40.9764008Z Root directory input is valid!
+2025-02-28T15:24:41.0956094Z Beginning upload of artifact content to blob storage
+2025-02-28T15:24:41.3655838Z Uploaded bytes 872393
+2025-02-28T15:24:41.3981188Z Finished uploading artifact content to blob storage!
+2025-02-28T15:24:41.3984388Z SHA256 hash of uploaded artifact zip is 43ad6031c7aab5123339fb8766f8edf6e32ee89136a709cbb40db5c16a05c5c5
+2025-02-28T15:24:41.3986011Z Finalizing artifact upload
+2025-02-28T15:24:41.4817743Z Artifact Packages-toga-iOS.zip successfully finalized. Artifact ID 2671286641
+2025-02-28T15:24:41.4819039Z Artifact Packages-toga-iOS has been successfully uploaded! Final size is 872393 bytes. Artifact ID is 2671286641
+2025-02-28T15:24:41.4825413Z Artifact download URL: https://github.com/beeware/toga/actions/runs/13591189051/artifacts/2671286641
+2025-02-28T15:24:41.4924389Z ##[group]Run if [[ "false" != 'true' ]]; then
+2025-02-28T15:24:41.4924704Z [36;1mif [[ "false" != 'true' ]]; then[0m
+2025-02-28T15:24:41.4925227Z [36;1m  /tmp/baipp/bin/check-wheel-contents /tmp/baipp/dist/*.whl[0m
+2025-02-28T15:24:41.4925721Z [36;1mfi[0m
+2025-02-28T15:24:41.4970768Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:41.4971099Z env:
+2025-02-28T15:24:41.4971282Z   FORCE_COLOR: 1
+2025-02-28T15:24:41.4971508Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:41.4972016Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:41.4972384Z ##[endgroup]
+2025-02-28T15:24:42.4236034Z /tmp/baipp/dist/toga_iOS-0.4.9.dev629+g68266e24a-py3-none-any.whl: OK
+2025-02-28T15:24:42.4499853Z ##[group]Run /tmp/baipp/bin/python -m twine check --strict /tmp/baipp/dist/*
+2025-02-28T15:24:42.4500368Z [36;1m/tmp/baipp/bin/python -m twine check --strict /tmp/baipp/dist/*[0m
+2025-02-28T15:24:42.4546480Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:42.4546811Z env:
+2025-02-28T15:24:42.4546985Z   FORCE_COLOR: 1
+2025-02-28T15:24:42.4547205Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:42.4547606Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:42.4547986Z ##[endgroup]
+2025-02-28T15:24:43.8312086Z Checking /tmp/baipp/dist/toga_iOS-0.4.9.dev629+g68266e24a-py3-none-any.whl: [32mPASSED[0m
+2025-02-28T15:24:43.8522374Z Checking /tmp/baipp/dist/toga_ios-0.4.9.dev629+g68266e24a.tar.gz: [32mPASSED[0m
+2025-02-28T15:24:43.8981181Z ##[group]Run cd /tmp/baipp/dist
+2025-02-28T15:24:43.8981487Z [36;1mcd /tmp/baipp/dist[0m
+2025-02-28T15:24:43.8981883Z [36;1mmkdir -p out/sdist[0m
+2025-02-28T15:24:43.8982135Z [36;1mtar xf *.tar.gz -C out/sdist[0m
+2025-02-28T15:24:43.8982385Z [36;1m[0m
+2025-02-28T15:24:43.8982601Z [36;1mif ! command -v tree &> /dev/null; then[0m
+2025-02-28T15:24:43.8982888Z [36;1m    sudo apt-get install tree[0m
+2025-02-28T15:24:43.8983134Z [36;1mfi[0m
+2025-02-28T15:24:43.8983306Z [36;1m[0m
+2025-02-28T15:24:43.8983620Z [36;1mecho -e '\n<details><summary>SDist contents</summary>\n' >> $GITHUB_STEP_SUMMARY[0m
+2025-02-28T15:24:43.8984233Z [36;1m(cd /tmp/baipp/dist/out/sdist && tree -Da --timefmt="%Y-%m-%dT%H:%M:%SZ" * | sed 's/^/    /' | tee -a $GITHUB_STEP_SUMMARY)[0m
+2025-02-28T15:24:43.8984743Z [36;1mecho -e '\n</details>\n' >> $GITHUB_STEP_SUMMARY[0m
+2025-02-28T15:24:43.8985016Z [36;1m[0m
+2025-02-28T15:24:43.8985201Z [36;1mif [[ "false" != 'true' ]]; then[0m
+2025-02-28T15:24:43.8985463Z [36;1m    mkdir -p out/wheels[0m
+2025-02-28T15:24:43.8985808Z [36;1m    /tmp/baipp/bin/python -m wheel unpack --dest out/wheels *.whl[0m
+2025-02-28T15:24:43.8986142Z [36;1m[0m
+2025-02-28T15:24:43.8986444Z [36;1m    echo -e '\n<details><summary>Wheel contents</summary>\n' >> $GITHUB_STEP_SUMMARY[0m
+2025-02-28T15:24:43.8986970Z [36;1m    (cd /tmp/baipp/dist/out/wheels && tree -a * | sed 's/^/    /' | tee -a $GITHUB_STEP_SUMMARY)[0m
+2025-02-28T15:24:43.8987408Z [36;1m    echo -e '\n</details>\n' >> $GITHUB_STEP_SUMMARY[0m
+2025-02-28T15:24:43.8987682Z [36;1mfi[0m
+2025-02-28T15:24:43.8987857Z [36;1m[0m
+2025-02-28T15:24:43.8988060Z [36;1mecho ----- Metadata Follows -----[0m
+2025-02-28T15:24:43.8988437Z [36;1mecho -e '\n<details><summary>Metadata</summary>\n' >> $GITHUB_STEP_SUMMARY[0m
+2025-02-28T15:24:43.8988904Z [36;1mcat out/sdist/*/PKG-INFO | sed 's/^/    /' | tee -a $GITHUB_STEP_SUMMARY[0m
+2025-02-28T15:24:43.8989298Z [36;1mecho -e '\n</details>\n' >> $GITHUB_STEP_SUMMARY[0m
+2025-02-28T15:24:43.8989600Z [36;1mecho ----- End of Metadata  -----[0m
+2025-02-28T15:24:43.9035889Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:43.9036210Z env:
+2025-02-28T15:24:43.9036386Z   FORCE_COLOR: 1
+2025-02-28T15:24:43.9036601Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:43.9036974Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:43.9037338Z ##[endgroup]
+2025-02-28T15:24:43.9428094Z     [2025-02-28T15:24:39Z]  toga_ios-0.4.9.dev629+g68266e24a
+2025-02-28T15:24:43.9429021Z     ├── [2025-02-28T15:24:35Z]  CONTRIBUTING.md
+2025-02-28T15:24:43.9429771Z     ├── [2025-02-28T15:24:35Z]  LICENSE
+2025-02-28T15:24:43.9430474Z     ├── [2025-02-28T15:24:39Z]  PKG-INFO
+2025-02-28T15:24:43.9430929Z     ├── [2025-02-28T15:24:35Z]  README.rst
+2025-02-28T15:24:43.9431434Z     ├── [2025-02-28T15:24:35Z]  pyproject.toml
+2025-02-28T15:24:43.9432226Z     ├── [2025-02-28T15:24:39Z]  setup.cfg
+2025-02-28T15:24:43.9432825Z     ├── [2025-02-28T15:24:39Z]  src
+2025-02-28T15:24:43.9433380Z     │   ├── [2025-02-28T15:24:39Z]  toga_iOS
+2025-02-28T15:24:43.9434080Z     │   │   ├── [2025-02-28T15:24:35Z]  __init__.py
+2025-02-28T15:24:43.9434718Z     │   │   ├── [2025-02-28T15:24:35Z]  app.py
+2025-02-28T15:24:43.9435321Z     │   │   ├── [2025-02-28T15:24:35Z]  colors.py
+2025-02-28T15:24:43.9435880Z     │   │   ├── [2025-02-28T15:24:35Z]  command.py
+2025-02-28T15:24:43.9436282Z     │   │   ├── [2025-02-28T15:24:35Z]  constraints.py
+2025-02-28T15:24:43.9436687Z     │   │   ├── [2025-02-28T15:24:35Z]  container.py
+2025-02-28T15:24:43.9437088Z     │   │   ├── [2025-02-28T15:24:35Z]  dialogs.py
+2025-02-28T15:24:43.9437496Z     │   │   ├── [2025-02-28T15:24:35Z]  factory.py
+2025-02-28T15:24:43.9437853Z     │   │   ├── [2025-02-28T15:24:35Z]  fonts.py
+2025-02-28T15:24:43.9438187Z     │   │   ├── [2025-02-28T15:24:39Z]  hardware
+2025-02-28T15:24:43.9438540Z     │   │   │   ├── [2025-02-28T15:24:35Z]  __init__.py
+2025-02-28T15:24:43.9438897Z     │   │   │   ├── [2025-02-28T15:24:35Z]  camera.py
+2025-02-28T15:24:43.9439255Z     │   │   │   └── [2025-02-28T15:24:35Z]  location.py
+2025-02-28T15:24:43.9439736Z     │   │   ├── [2025-02-28T15:24:35Z]  icons.py
+2025-02-28T15:24:43.9440094Z     │   │   ├── [2025-02-28T15:24:35Z]  images.py
+2025-02-28T15:24:43.9440551Z     │   │   ├── [2025-02-28T15:24:39Z]  libs
+2025-02-28T15:24:43.9440904Z     │   │   │   ├── [2025-02-28T15:24:35Z]  __init__.py
+2025-02-28T15:24:43.9441282Z     │   │   │   ├── [2025-02-28T15:24:35Z]  av_foundation.py
+2025-02-28T15:24:43.9441852Z     │   │   │   ├── [2025-02-28T15:24:35Z]  core_graphics.py
+2025-02-28T15:24:43.9442258Z     │   │   │   ├── [2025-02-28T15:24:35Z]  core_location.py
+2025-02-28T15:24:43.9442628Z     │   │   │   ├── [2025-02-28T15:24:35Z]  core_text.py
+2025-02-28T15:24:43.9442987Z     │   │   │   ├── [2025-02-28T15:24:35Z]  foundation.py
+2025-02-28T15:24:43.9443343Z     │   │   │   ├── [2025-02-28T15:24:35Z]  mapkit.py
+2025-02-28T15:24:43.9443692Z     │   │   │   ├── [2025-02-28T15:24:35Z]  uikit.py
+2025-02-28T15:24:43.9444038Z     │   │   │   └── [2025-02-28T15:24:35Z]  webkit.py
+2025-02-28T15:24:43.9444376Z     │   │   ├── [2025-02-28T15:24:35Z]  paths.py
+2025-02-28T15:24:43.9444714Z     │   │   ├── [2025-02-28T15:24:39Z]  resources
+2025-02-28T15:24:43.9445109Z     │   │   │   ├── [2025-02-28T15:24:35Z]  optioncontainer-tab.png
+2025-02-28T15:24:43.9445491Z     │   │   │   └── [2025-02-28T15:24:35Z]  toga.icns
+2025-02-28T15:24:43.9445833Z     │   │   ├── [2025-02-28T15:24:35Z]  screens.py
+2025-02-28T15:24:43.9446183Z     │   │   ├── [2025-02-28T15:24:35Z]  statusicons.py
+2025-02-28T15:24:43.9446534Z     │   │   ├── [2025-02-28T15:24:39Z]  widgets
+2025-02-28T15:24:43.9446903Z     │   │   │   ├── [2025-02-28T15:24:35Z]  __init__.py
+2025-02-28T15:24:43.9447283Z     │   │   │   ├── [2025-02-28T15:24:35Z]  activityindicator.py
+2025-02-28T15:24:43.9447662Z     │   │   │   ├── [2025-02-28T15:24:35Z]  base.py
+2025-02-28T15:24:43.9448006Z     │   │   │   ├── [2025-02-28T15:24:35Z]  box.py
+2025-02-28T15:24:43.9448331Z     │   │   │   ├── [2025-02-28T15:24:35Z]  button.py
+2025-02-28T15:24:43.9448664Z     │   │   │   ├── [2025-02-28T15:24:35Z]  canvas.py
+2025-02-28T15:24:43.9449014Z     │   │   │   ├── [2025-02-28T15:24:35Z]  detailedlist.py
+2025-02-28T15:24:43.9449368Z     │   │   │   ├── [2025-02-28T15:24:35Z]  divider.py
+2025-02-28T15:24:43.9449710Z     │   │   │   ├── [2025-02-28T15:24:35Z]  imageview.py
+2025-02-28T15:24:43.9450049Z     │   │   │   ├── [2025-02-28T15:24:35Z]  label.py
+2025-02-28T15:24:43.9450378Z     │   │   │   ├── [2025-02-28T15:24:35Z]  mapview.py
+2025-02-28T15:24:43.9450940Z     │   │   │   ├── [2025-02-28T15:24:35Z]  multilinetextinput.py
+2025-02-28T15:24:43.9451480Z     │   │   │   ├── [2025-02-28T15:24:35Z]  numberinput.py
+2025-02-28T15:24:43.9452059Z     │   │   │   ├── [2025-02-28T15:24:35Z]  optioncontainer.py
+2025-02-28T15:24:43.9452448Z     │   │   │   ├── [2025-02-28T15:24:35Z]  passwordinput.py
+2025-02-28T15:24:43.9452837Z     │   │   │   ├── [2025-02-28T15:24:35Z]  progressbar.py
+2025-02-28T15:24:43.9453200Z     │   │   │   ├── [2025-02-28T15:24:35Z]  scrollcontainer.py
+2025-02-28T15:24:43.9453692Z     │   │   │   ├── [2025-02-28T15:24:35Z]  selection.py
+2025-02-28T15:24:43.9454059Z     │   │   │   ├── [2025-02-28T15:24:35Z]  slider.py
+2025-02-28T15:24:43.9454504Z     │   │   │   ├── [2025-02-28T15:24:35Z]  switch.py
+2025-02-28T15:24:43.9454845Z     │   │   │   ├── [2025-02-28T15:24:35Z]  textinput.py
+2025-02-28T15:24:43.9455190Z     │   │   │   └── [2025-02-28T15:24:35Z]  webview.py
+2025-02-28T15:24:43.9455518Z     │   │   └── [2025-02-28T15:24:35Z]  window.py
+2025-02-28T15:24:43.9455874Z     │   └── [2025-02-28T15:24:39Z]  toga_iOS.egg-info
+2025-02-28T15:24:43.9456225Z     │       ├── [2025-02-28T15:24:39Z]  PKG-INFO
+2025-02-28T15:24:43.9456555Z     │       ├── [2025-02-28T15:24:39Z]  SOURCES.txt
+2025-02-28T15:24:43.9456917Z     │       ├── [2025-02-28T15:24:39Z]  dependency_links.txt
+2025-02-28T15:24:43.9457269Z     │       ├── [2025-02-28T15:24:39Z]  entry_points.txt
+2025-02-28T15:24:43.9457608Z     │       ├── [2025-02-28T15:24:39Z]  requires.txt
+2025-02-28T15:24:43.9457940Z     │       └── [2025-02-28T15:24:39Z]  top_level.txt
+2025-02-28T15:24:43.9458269Z     └── [2025-02-28T15:24:39Z]  tests_backend
+2025-02-28T15:24:43.9458595Z         ├── [2025-02-28T15:24:35Z]  __init__.py
+2025-02-28T15:24:43.9458918Z         ├── [2025-02-28T15:24:35Z]  app.py
+2025-02-28T15:24:43.9459237Z         ├── [2025-02-28T15:24:35Z]  dialogs.py
+2025-02-28T15:24:43.9459558Z         ├── [2025-02-28T15:24:35Z]  fonts.py
+2025-02-28T15:24:43.9459870Z         ├── [2025-02-28T15:24:39Z]  hardware
+2025-02-28T15:24:43.9460201Z         │   ├── [2025-02-28T15:24:35Z]  __init__.py
+2025-02-28T15:24:43.9460541Z         │   ├── [2025-02-28T15:24:35Z]  camera.py
+2025-02-28T15:24:43.9460867Z         │   └── [2025-02-28T15:24:35Z]  location.py
+2025-02-28T15:24:43.9461188Z         ├── [2025-02-28T15:24:35Z]  icons.py
+2025-02-28T15:24:43.9461509Z         ├── [2025-02-28T15:24:35Z]  images.py
+2025-02-28T15:24:43.9462014Z         ├── [2025-02-28T15:24:35Z]  probe.py
+2025-02-28T15:24:43.9462332Z         ├── [2025-02-28T15:24:35Z]  screens.py
+2025-02-28T15:24:43.9462636Z         ├── [2025-02-28T15:24:39Z]  widgets
+2025-02-28T15:24:43.9462954Z         │   ├── [2025-02-28T15:24:35Z]  __init__.py
+2025-02-28T15:24:43.9463305Z         │   ├── [2025-02-28T15:24:35Z]  activityindicator.py
+2025-02-28T15:24:43.9463657Z         │   ├── [2025-02-28T15:24:35Z]  base.py
+2025-02-28T15:24:43.9463974Z         │   ├── [2025-02-28T15:24:35Z]  box.py
+2025-02-28T15:24:43.9464286Z         │   ├── [2025-02-28T15:24:35Z]  button.py
+2025-02-28T15:24:43.9464770Z         │   ├── [2025-02-28T15:24:35Z]  canvas.py
+2025-02-28T15:24:43.9465252Z         │   ├── [2025-02-28T15:24:35Z]  detailedlist.py
+2025-02-28T15:24:43.9465597Z         │   ├── [2025-02-28T15:24:35Z]  divider.py
+2025-02-28T15:24:43.9465935Z         │   ├── [2025-02-28T15:24:35Z]  imageview.py
+2025-02-28T15:24:43.9466260Z         │   ├── [2025-02-28T15:24:35Z]  label.py
+2025-02-28T15:24:43.9466590Z         │   ├── [2025-02-28T15:24:35Z]  mapview.py
+2025-02-28T15:24:43.9466956Z         │   ├── [2025-02-28T15:24:35Z]  multilinetextinput.py
+2025-02-28T15:24:43.9467324Z         │   ├── [2025-02-28T15:24:35Z]  numberinput.py
+2025-02-28T15:24:43.9467681Z         │   ├── [2025-02-28T15:24:35Z]  optioncontainer.py
+2025-02-28T15:24:43.9468047Z         │   ├── [2025-02-28T15:24:35Z]  passwordinput.py
+2025-02-28T15:24:43.9468389Z         │   ├── [2025-02-28T15:24:35Z]  progressbar.py
+2025-02-28T15:24:43.9468732Z         │   ├── [2025-02-28T15:24:35Z]  properties.py
+2025-02-28T15:24:43.9469095Z         │   ├── [2025-02-28T15:24:35Z]  scrollcontainer.py
+2025-02-28T15:24:43.9469452Z         │   ├── [2025-02-28T15:24:35Z]  selection.py
+2025-02-28T15:24:43.9469783Z         │   ├── [2025-02-28T15:24:35Z]  slider.py
+2025-02-28T15:24:43.9470104Z         │   ├── [2025-02-28T15:24:35Z]  switch.py
+2025-02-28T15:24:43.9470436Z         │   ├── [2025-02-28T15:24:35Z]  textinput.py
+2025-02-28T15:24:43.9470767Z         │   └── [2025-02-28T15:24:35Z]  webview.py
+2025-02-28T15:24:43.9471089Z         └── [2025-02-28T15:24:35Z]  window.py
+2025-02-28T15:24:43.9471352Z     
+2025-02-28T15:24:43.9471556Z     11 directories, 98 files
+2025-02-28T15:24:44.0061929Z Unpacking to: out/wheels/toga_iOS-0.4.9.dev629+g68266e24a...OK
+2025-02-28T15:24:44.0171815Z     toga_iOS-0.4.9.dev629+g68266e24a
+2025-02-28T15:24:44.0172609Z     ├── toga_iOS
+2025-02-28T15:24:44.0173050Z     │   ├── __init__.py
+2025-02-28T15:24:44.0173481Z     │   ├── app.py
+2025-02-28T15:24:44.0173866Z     │   ├── colors.py
+2025-02-28T15:24:44.0174263Z     │   ├── command.py
+2025-02-28T15:24:44.0174733Z     │   ├── constraints.py
+2025-02-28T15:24:44.0175190Z     │   ├── container.py
+2025-02-28T15:24:44.0175603Z     │   ├── dialogs.py
+2025-02-28T15:24:44.0176039Z     │   ├── factory.py
+2025-02-28T15:24:44.0176430Z     │   ├── fonts.py
+2025-02-28T15:24:44.0176803Z     │   ├── hardware
+2025-02-28T15:24:44.0177108Z     │   │   ├── __init__.py
+2025-02-28T15:24:44.0177399Z     │   │   ├── camera.py
+2025-02-28T15:24:44.0177681Z     │   │   └── location.py
+2025-02-28T15:24:44.0177935Z     │   ├── icons.py
+2025-02-28T15:24:44.0178181Z     │   ├── images.py
+2025-02-28T15:24:44.0178425Z     │   ├── libs
+2025-02-28T15:24:44.0178778Z     │   │   ├── __init__.py
+2025-02-28T15:24:44.0179242Z     │   │   ├── av_foundation.py
+2025-02-28T15:24:44.0179721Z     │   │   ├── core_graphics.py
+2025-02-28T15:24:44.0180202Z     │   │   ├── core_location.py
+2025-02-28T15:24:44.0180665Z     │   │   ├── core_text.py
+2025-02-28T15:24:44.0181116Z     │   │   ├── foundation.py
+2025-02-28T15:24:44.0181567Z     │   │   ├── mapkit.py
+2025-02-28T15:24:44.0182437Z     │   │   ├── uikit.py
+2025-02-28T15:24:44.0182881Z     │   │   └── webkit.py
+2025-02-28T15:24:44.0183316Z     │   ├── paths.py
+2025-02-28T15:24:44.0183765Z     │   ├── resources
+2025-02-28T15:24:44.0184302Z     │   │   ├── optioncontainer-tab.png
+2025-02-28T15:24:44.0184826Z     │   │   └── toga.icns
+2025-02-28T15:24:44.0185269Z     │   ├── screens.py
+2025-02-28T15:24:44.0185718Z     │   ├── statusicons.py
+2025-02-28T15:24:44.0186157Z     │   ├── widgets
+2025-02-28T15:24:44.0186560Z     │   │   ├── __init__.py
+2025-02-28T15:24:44.0187051Z     │   │   ├── activityindicator.py
+2025-02-28T15:24:44.0187555Z     │   │   ├── base.py
+2025-02-28T15:24:44.0187963Z     │   │   ├── box.py
+2025-02-28T15:24:44.0188377Z     │   │   ├── button.py
+2025-02-28T15:24:44.0188800Z     │   │   ├── canvas.py
+2025-02-28T15:24:44.0189284Z     │   │   ├── detailedlist.py
+2025-02-28T15:24:44.0189754Z     │   │   ├── divider.py
+2025-02-28T15:24:44.0190205Z     │   │   ├── imageview.py
+2025-02-28T15:24:44.0190977Z     │   │   ├── label.py
+2025-02-28T15:24:44.0191874Z     │   │   ├── mapview.py
+2025-02-28T15:24:44.0192386Z     │   │   ├── multilinetextinput.py
+2025-02-28T15:24:44.0192913Z     │   │   ├── numberinput.py
+2025-02-28T15:24:44.0193421Z     │   │   ├── optioncontainer.py
+2025-02-28T15:24:44.0193974Z     │   │   ├── passwordinput.py
+2025-02-28T15:24:44.0194450Z     │   │   ├── progressbar.py
+2025-02-28T15:24:44.0194917Z     │   │   ├── scrollcontainer.py
+2025-02-28T15:24:44.0195396Z     │   │   ├── selection.py
+2025-02-28T15:24:44.0195794Z     │   │   ├── slider.py
+2025-02-28T15:24:44.0196060Z     │   │   ├── switch.py
+2025-02-28T15:24:44.0196320Z     │   │   ├── textinput.py
+2025-02-28T15:24:44.0196710Z     │   │   └── webview.py
+2025-02-28T15:24:44.0196993Z     │   └── window.py
+2025-02-28T15:24:44.0197305Z     └── toga_iOS-0.4.9.dev629+g68266e24a.dist-info
+2025-02-28T15:24:44.0197625Z         ├── LICENSE
+2025-02-28T15:24:44.0197868Z         ├── METADATA
+2025-02-28T15:24:44.0198099Z         ├── RECORD
+2025-02-28T15:24:44.0198363Z         ├── WHEEL
+2025-02-28T15:24:44.0198607Z         ├── entry_points.txt
+2025-02-28T15:24:44.0198961Z         └── top_level.txt
+2025-02-28T15:24:44.0199314Z     
+2025-02-28T15:24:44.0199644Z     7 directories, 57 files
+2025-02-28T15:24:44.0200039Z ----- Metadata Follows -----
+2025-02-28T15:24:44.0200499Z     Metadata-Version: 2.2
+2025-02-28T15:24:44.0200873Z     Name: toga-iOS
+2025-02-28T15:24:44.0201226Z     Version: 0.4.9.dev629+g68266e24a
+2025-02-28T15:24:44.0201902Z     Summary: An iOS backend for the Toga widget toolkit.
+2025-02-28T15:24:44.0202534Z     Author-email: Russell Keith-Magee <russell@keith-magee.com>
+2025-02-28T15:24:44.0203202Z     Maintainer-email: BeeWare Team <team@beeware.org>
+2025-02-28T15:24:44.0203544Z     License: New BSD
+2025-02-28T15:24:44.0203933Z     Project-URL: Homepage, https://beeware.org/project/projects/libraries/toga/
+2025-02-28T15:24:44.0204456Z     Project-URL: Funding, https://beeware.org/contributing/membership/
+2025-02-28T15:24:44.0204912Z     Project-URL: Documentation, https://toga.readthedocs.io/
+2025-02-28T15:24:44.0205348Z     Project-URL: Tracker, https://github.com/beeware/toga/issues
+2025-02-28T15:24:44.0205755Z     Project-URL: Source, https://github.com/beeware/toga
+2025-02-28T15:24:44.0206265Z     Project-URL: Changelog, https://toga.readthedocs.io/en/stable/background/project/releases.html
+2025-02-28T15:24:44.0206771Z     Keywords: gui,widget,cross-platform,toga,mobile,iOS
+2025-02-28T15:24:44.0207157Z     Classifier: Development Status :: 4 - Beta
+2025-02-28T15:24:44.0207483Z     Classifier: Intended Audience :: Developers
+2025-02-28T15:24:44.0207817Z     Classifier: License :: OSI Approved :: BSD License
+2025-02-28T15:24:44.0208167Z     Classifier: Operating System :: OS Independent
+2025-02-28T15:24:44.0208511Z     Classifier: Programming Language :: Python :: 3
+2025-02-28T15:24:44.0208850Z     Classifier: Programming Language :: Python :: 3.9
+2025-02-28T15:24:44.0209205Z     Classifier: Programming Language :: Python :: 3.10
+2025-02-28T15:24:44.0209877Z     Classifier: Programming Language :: Python :: 3.11
+2025-02-28T15:24:44.0210228Z     Classifier: Programming Language :: Python :: 3.12
+2025-02-28T15:24:44.0210568Z     Classifier: Programming Language :: Python :: 3.13
+2025-02-28T15:24:44.0210930Z     Classifier: Programming Language :: Python :: 3 :: Only
+2025-02-28T15:24:44.0211272Z     Classifier: Topic :: Software Development
+2025-02-28T15:24:44.0212086Z     Classifier: Topic :: Software Development :: User Interfaces
+2025-02-28T15:24:44.0212515Z     Classifier: Topic :: Software Development :: Widget Sets
+2025-02-28T15:24:44.0212852Z     Requires-Python: >=3.9
+2025-02-28T15:24:44.0213126Z     Description-Content-Type: text/x-rst
+2025-02-28T15:24:44.0213411Z     License-File: LICENSE
+2025-02-28T15:24:44.0213673Z     Requires-Dist: fonttools<5.0.0,>=4.42.1
+2025-02-28T15:24:44.0213976Z     Requires-Dist: rubicon-objc<0.6.0,>=0.5.0
+2025-02-28T15:24:44.0214299Z     Requires-Dist: toga-core==0.4.9.dev629+g68266e24a
+2025-02-28T15:24:44.0214615Z     Dynamic: requires-dist
+2025-02-28T15:24:44.0214850Z     
+2025-02-28T15:24:44.0215032Z     toga-iOS
+2025-02-28T15:24:44.0215231Z     ========
+2025-02-28T15:24:44.0215419Z     
+2025-02-28T15:24:44.0215644Z     An iOS backend for the `Toga widget toolkit`_.
+2025-02-28T15:24:44.0215917Z     
+2025-02-28T15:24:44.0216262Z     This package isn't much use by itself; it needs to be combined with `the core Toga library`_.
+2025-02-28T15:24:44.0216703Z     
+2025-02-28T15:24:44.0217089Z     For platform requirements, see the `iOS platform documentation
+2025-02-28T15:24:44.0217618Z     <https://toga.readthedocs.io/en/latest/reference/platforms/iOS.html#prerequisites>`__.
+2025-02-28T15:24:44.0218047Z     
+2025-02-28T15:24:44.0218282Z     For more details, see the `Toga project on Github`_.
+2025-02-28T15:24:44.0243852Z     
+2025-02-28T15:24:44.0244175Z     .. _Toga widget toolkit: https://beeware.org/toga
+2025-02-28T15:24:44.0244622Z     .. _the core Toga library: https://pypi.python.org/pypi/toga-core
+2025-02-28T15:24:44.0245088Z     .. _Toga project on Github: https://github.com/beeware/toga
+2025-02-28T15:24:44.0245408Z     
+2025-02-28T15:24:44.0245589Z     Community
+2025-02-28T15:24:44.0245790Z     ---------
+2025-02-28T15:24:44.0245981Z     
+2025-02-28T15:24:44.0246283Z     Toga is part of the `BeeWare suite`_. You can talk to the community through:
+2025-02-28T15:24:44.0246648Z     
+2025-02-28T15:24:44.0246860Z     * `@beeware@fosstodon.org on Mastodon`_
+2025-02-28T15:24:44.0247131Z     * `Discord`_
+2025-02-28T15:24:44.0247366Z     * The Toga `Github Discussions forum`_
+2025-02-28T15:24:44.0247631Z     
+2025-02-28T15:24:44.0247903Z     We foster a welcoming and respectful community as described in our
+2025-02-28T15:24:44.0248267Z     `BeeWare Community Code of Conduct`_.
+2025-02-28T15:24:44.0248524Z     
+2025-02-28T15:24:44.0248740Z     .. _BeeWare suite: https://beeware.org
+2025-02-28T15:24:44.0249122Z     .. _@beeware@fosstodon.org on Mastodon: https://fosstodon.org/@beeware
+2025-02-28T15:24:44.0249524Z     .. _Discord: https://beeware.org/bee/chat/
+2025-02-28T15:24:44.0249923Z     .. _Github Discussions forum: https://github.com/beeware/toga/discussions
+2025-02-28T15:24:44.0250440Z     .. _BeeWare Community Code of Conduct: https://beeware.org/community/behavior/
+2025-02-28T15:24:44.0250806Z     
+2025-02-28T15:24:44.0250993Z     Contributing
+2025-02-28T15:24:44.0251196Z     ------------
+2025-02-28T15:24:44.0251385Z     
+2025-02-28T15:24:44.0251882Z     If you experience problems with this backend, `log them on GitHub`_. If you
+2025-02-28T15:24:44.0252376Z     want to contribute code, please `fork the code`_ and `submit a pull request`_.
+2025-02-28T15:24:44.0252739Z     
+2025-02-28T15:24:44.0252993Z     .. _log them on Github: https://github.com/beeware/toga/issues
+2025-02-28T15:24:44.0253360Z     .. _fork the code: https://github.com/beeware/toga
+2025-02-28T15:24:44.0253735Z     .. _submit a pull request: https://github.com/beeware/toga/pulls
+2025-02-28T15:24:44.0254078Z ----- End of Metadata -----
+2025-02-28T15:24:44.0322010Z ##[group]Run actions/upload-artifact@v4
+2025-02-28T15:24:44.0322448Z with:
+2025-02-28T15:24:44.0322666Z   name: Package Metadata-toga-iOS
+2025-02-28T15:24:44.0322963Z   path: /tmp/baipp/dist/out/sdist/*/PKG-INFO
+2025-02-28T15:24:44.0323265Z   if-no-files-found: warn
+2025-02-28T15:24:44.0323513Z   compression-level: 6
+2025-02-28T15:24:44.0323746Z   overwrite: false
+2025-02-28T15:24:44.0323976Z   include-hidden-files: false
+2025-02-28T15:24:44.0324212Z env:
+2025-02-28T15:24:44.0324407Z   FORCE_COLOR: 1
+2025-02-28T15:24:44.0324637Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:44.0325043Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:44.0325493Z ##[endgroup]
+2025-02-28T15:24:44.2486567Z With the provided path, there will be 1 file uploaded
+2025-02-28T15:24:44.2491266Z Artifact name is valid!
+2025-02-28T15:24:44.2492906Z Root directory input is valid!
+2025-02-28T15:24:44.3871895Z Beginning upload of artifact content to blob storage
+2025-02-28T15:24:44.5160435Z Uploaded bytes 1401
+2025-02-28T15:24:44.5492916Z Finished uploading artifact content to blob storage!
+2025-02-28T15:24:44.5496261Z SHA256 hash of uploaded artifact zip is 9a2c66f45afaed51b442fdfe23dc8a02e996c81e07bea4b924aa9ab735dd4ead
+2025-02-28T15:24:44.5497951Z Finalizing artifact upload
+2025-02-28T15:24:44.6399119Z Artifact Package Metadata-toga-iOS.zip successfully finalized. Artifact ID 2671286990
+2025-02-28T15:24:44.6400663Z Artifact Package Metadata-toga-iOS has been successfully uploaded! Final size is 1401 bytes. Artifact ID is 2671286990
+2025-02-28T15:24:44.6408658Z Artifact download URL: https://github.com/beeware/toga/actions/runs/13591189051/artifacts/2671286990
+2025-02-28T15:24:44.6503717Z ##[group]Run cat */PKG-INFO | python -c '
+2025-02-28T15:24:44.6504034Z [36;1mcat */PKG-INFO | python -c '[0m
+2025-02-28T15:24:44.6504304Z [36;1mimport email.parser[0m
+2025-02-28T15:24:44.6504530Z [36;1mimport sys[0m
+2025-02-28T15:24:44.6504722Z [36;1m[0m
+2025-02-28T15:24:44.6504994Z [36;1mem = email.parser.Parser().parsestr(sys.stdin.read())[0m
+2025-02-28T15:24:44.6505326Z [36;1msuffix = {[0m
+2025-02-28T15:24:44.6505534Z [36;1m    "text/markdown": "md",[0m
+2025-02-28T15:24:44.6505774Z [36;1m    "text/x-rst": "rst",[0m
+2025-02-28T15:24:44.6506038Z [36;1m}[em["Description-Content-Type"]][0m
+2025-02-28T15:24:44.6506349Z [36;1mwith open(f"PyPI-README.{suffix}", "w") as f:[0m
+2025-02-28T15:24:44.6506652Z [36;1m    f.write(em.get_payload())[0m
+2025-02-28T15:24:44.6506891Z [36;1m'[0m
+2025-02-28T15:24:44.6554398Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:44.6554723Z env:
+2025-02-28T15:24:44.6554891Z   FORCE_COLOR: 1
+2025-02-28T15:24:44.6555104Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:44.6555478Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:44.6555837Z ##[endgroup]
+2025-02-28T15:24:44.7081389Z ##[group]Run actions/upload-artifact@v4
+2025-02-28T15:24:44.7082041Z with:
+2025-02-28T15:24:44.7082395Z   name: PyPI README-toga-iOS
+2025-02-28T15:24:44.7082886Z   path: /tmp/baipp/dist/out/sdist/PyPI-README.*
+2025-02-28T15:24:44.7083389Z   if-no-files-found: warn
+2025-02-28T15:24:44.7083768Z   compression-level: 6
+2025-02-28T15:24:44.7084108Z   overwrite: false
+2025-02-28T15:24:44.7084471Z   include-hidden-files: false
+2025-02-28T15:24:44.7084865Z env:
+2025-02-28T15:24:44.7085154Z   FORCE_COLOR: 1
+2025-02-28T15:24:44.7085589Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:44.7086249Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:44.7086894Z ##[endgroup]
+2025-02-28T15:24:44.9258166Z With the provided path, there will be 1 file uploaded
+2025-02-28T15:24:44.9263848Z Artifact name is valid!
+2025-02-28T15:24:44.9265109Z Root directory input is valid!
+2025-02-28T15:24:45.0440542Z Beginning upload of artifact content to blob storage
+2025-02-28T15:24:45.1659902Z Uploaded bytes 774
+2025-02-28T15:24:45.1994988Z Finished uploading artifact content to blob storage!
+2025-02-28T15:24:45.1998099Z SHA256 hash of uploaded artifact zip is 47a209313a1fffae19b70899298fb73946fddee1ecb5dd32c224a5967ad28c22
+2025-02-28T15:24:45.1999833Z Finalizing artifact upload
+2025-02-28T15:24:45.2838156Z Artifact PyPI README-toga-iOS.zip successfully finalized. Artifact ID 2671287060
+2025-02-28T15:24:45.2839746Z Artifact PyPI README-toga-iOS has been successfully uploaded! Final size is 774 bytes. Artifact ID is 2671287060
+2025-02-28T15:24:45.2847355Z Artifact download URL: https://github.com/beeware/toga/actions/runs/13591189051/artifacts/2671287060
+2025-02-28T15:24:45.2937591Z ##[group]Run cat */PKG-INFO | python -c '
+2025-02-28T15:24:45.2937925Z [36;1mcat */PKG-INFO | python -c '[0m
+2025-02-28T15:24:45.2938205Z [36;1mimport email.parser[0m
+2025-02-28T15:24:45.2938444Z [36;1mimport json, re, sys[0m
+2025-02-28T15:24:45.2938664Z [36;1m[0m
+2025-02-28T15:24:45.2938942Z [36;1mpkg_info = email.parser.Parser().parsestr(sys.stdin.read())[0m
+2025-02-28T15:24:45.2939287Z [36;1m[0m
+2025-02-28T15:24:45.2939486Z [36;1mversion_tokens = [][0m
+2025-02-28T15:24:45.2939780Z [36;1mfor classifier in pkg_info.get_all("Classifier", []):[0m
+2025-02-28T15:24:45.2940227Z [36;1m    if match := re.match(r"Programming Language :: Python :: (\d+\.\d+)$", classifier):[0m
+2025-02-28T15:24:45.2940652Z [36;1m        version_tokens.append(match.group(1))[0m
+2025-02-28T15:24:45.2940919Z [36;1m[0m
+2025-02-28T15:24:45.2941150Z [36;1mpackage_version = pkg_info.get("Version", "0.0.0")[0m
+2025-02-28T15:24:45.2941439Z [36;1m[0m
+2025-02-28T15:24:45.2941856Z [36;1mprint(f"package_version={package_version}")[0m
+2025-02-28T15:24:45.2942288Z [36;1mprint(f"supported_python_classifiers_json_array={json.dumps(version_tokens)}")[0m
+2025-02-28T15:24:45.2942916Z [36;1mprint(f"""supported_python_classifiers_json_job_matrix_value={json.dumps({"python-version": version_tokens})}""")[0m
+2025-02-28T15:24:45.2943401Z [36;1m' >> $GITHUB_OUTPUT[0m
+2025-02-28T15:24:45.2988876Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:45.2989228Z env:
+2025-02-28T15:24:45.2989401Z   FORCE_COLOR: 1
+2025-02-28T15:24:45.2989621Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:45.2990001Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:45.2990358Z ##[endgroup]
+2025-02-28T15:24:45.3519612Z ##[group]Run # trim the differentiator to generate the artifact's basename
+2025-02-28T15:24:45.3520099Z [36;1m# trim the differentiator to generate the artifact's basename[0m
+2025-02-28T15:24:45.3520541Z [36;1mecho "basename=${BASENAME%-iOS}" | tee -a ${GITHUB_OUTPUT}[0m
+2025-02-28T15:24:45.3565816Z shell: /usr/bin/bash -e {0}
+2025-02-28T15:24:45.3566054Z env:
+2025-02-28T15:24:45.3566232Z   FORCE_COLOR: 1
+2025-02-28T15:24:45.3566448Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:45.3566826Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:45.3567204Z   BASENAME: Packages-toga-iOS
+2025-02-28T15:24:45.3567436Z ##[endgroup]
+2025-02-28T15:24:45.3642824Z basename=Packages-toga
+2025-02-28T15:24:45.3795612Z Post job cleanup.
+2025-02-28T15:24:45.3824349Z Post job cleanup.
+2025-02-28T15:24:45.5097113Z Cache hit occurred on the primary key baipp-3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f, not saving cache.
+2025-02-28T15:24:45.5175175Z Post job cleanup.
+2025-02-28T15:24:45.6868550Z Post job cleanup.
+2025-02-28T15:24:45.7845581Z [command]/usr/bin/git version
+2025-02-28T15:24:45.7885363Z git version 2.48.1
+2025-02-28T15:24:45.7936124Z Temporarily overriding HOME='/home/runner/work/_temp/42870b4f-a835-42ca-956c-8211e58ebaa3' before making global git config changes
+2025-02-28T15:24:45.7937373Z Adding repository directory to the temporary git global config as a safe directory
+2025-02-28T15:24:45.7941904Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/toga/toga
+2025-02-28T15:24:45.7983694Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-02-28T15:24:45.8018289Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-02-28T15:24:45.8260098Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-02-28T15:24:45.8284405Z http.https://github.com/.extraheader
+2025-02-28T15:24:45.8297821Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2025-02-28T15:24:45.8330791Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-02-28T15:24:45.8676660Z Evaluate and set job outputs
+2025-02-28T15:24:45.8681503Z Set output 'artifact-name'
+2025-02-28T15:24:45.8683438Z Set output 'artifact-basename'
+2025-02-28T15:24:45.8684759Z Cleaning up orphan processes

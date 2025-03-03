@@ -1,0 +1,1304 @@
+﻿2025-02-24T05:29:47.7196430Z Current runner version: '2.322.0'
+2025-02-24T05:29:47.7228260Z ##[group]Operating System
+2025-02-24T05:29:47.7229150Z macOS
+2025-02-24T05:29:47.7229750Z 13.7.2
+2025-02-24T05:29:47.7230350Z 22H313
+2025-02-24T05:29:47.7231280Z ##[endgroup]
+2025-02-24T05:29:47.7231960Z ##[group]Runner Image
+2025-02-24T05:29:47.7232630Z Image: macos-13
+2025-02-24T05:29:47.7233270Z Version: 20250129.634
+2025-02-24T05:29:47.7234640Z Included Software: https://github.com/actions/runner-images/blob/macos-13/20250129.634/images/macos/macos-13-Readme.md
+2025-02-24T05:29:47.7236940Z Image Release: https://github.com/actions/runner-images/releases/tag/macos-13%2F20250129.634
+2025-02-24T05:29:47.7238540Z ##[endgroup]
+2025-02-24T05:29:47.7239430Z ##[group]Runner Image Provisioner
+2025-02-24T05:29:47.7240290Z 2.0.422.1+55c30c14fe2a0a1547db1b656933ae07d97649a9
+2025-02-24T05:29:47.7241130Z ##[endgroup]
+2025-02-24T05:29:47.7244300Z ##[group]GITHUB_TOKEN Permissions
+2025-02-24T05:29:47.7246650Z Actions: write
+2025-02-24T05:29:47.7247950Z Attestations: write
+2025-02-24T05:29:47.7310570Z Checks: write
+2025-02-24T05:29:47.7311390Z Contents: write
+2025-02-24T05:29:47.7312430Z Deployments: write
+2025-02-24T05:29:47.7313150Z Discussions: write
+2025-02-24T05:29:47.7314390Z Issues: write
+2025-02-24T05:29:47.7315050Z Metadata: read
+2025-02-24T05:29:47.7315610Z Packages: write
+2025-02-24T05:29:47.7316160Z Pages: write
+2025-02-24T05:29:47.7316690Z PullRequests: write
+2025-02-24T05:29:47.7317280Z RepositoryProjects: write
+2025-02-24T05:29:47.7317930Z SecurityEvents: write
+2025-02-24T05:29:47.7318520Z Statuses: write
+2025-02-24T05:29:47.7319070Z ##[endgroup]
+2025-02-24T05:29:47.7323010Z Secret source: Actions
+2025-02-24T05:29:47.7323750Z Prepare workflow directory
+2025-02-24T05:29:47.7780210Z Prepare all required actions
+2025-02-24T05:29:47.7823930Z Getting action download info
+2025-02-24T05:29:48.0009740Z Download action repository 'smorimoto/tune-github-hosted-runner-network@v1.0.0' (SHA:bb252dcb5c8609a31087e7993daa086f5a1c0069)
+2025-02-24T05:29:49.1378150Z ##[group]Download immutable action package 'actions/checkout@v4.2.2'
+2025-02-24T05:29:49.1380260Z Version: 4.2.2
+2025-02-24T05:29:49.1382100Z Digest: sha256:ccb2698953eaebd21c7bf6268a94f9c26518a7e38e27e0b83c1fe1ad049819b1
+2025-02-24T05:29:49.1384160Z Source commit SHA: 11bd71901bbe5b1630ceea73d27597364c9af683
+2025-02-24T05:29:49.1385570Z ##[endgroup]
+2025-02-24T05:29:49.2254020Z ##[group]Download immutable action package 'actions/setup-python@v5.4.0'
+2025-02-24T05:29:49.2256690Z Version: 5.4.0
+2025-02-24T05:29:49.2259120Z Digest: sha256:6003df952c8106bcd378d2ba997eef202da924317a57269dfa72449b135adb7f
+2025-02-24T05:29:49.2262360Z Source commit SHA: 42375524e23c412d93fb67b49958b491fce71c38
+2025-02-24T05:29:49.2264790Z ##[endgroup]
+2025-02-24T05:29:49.8329160Z ##[group]Download immutable action package 'actions/download-artifact@v4.1.8'
+2025-02-24T05:29:49.8331800Z Version: 4.1.8
+2025-02-24T05:29:49.8334080Z Digest: sha256:917365d881f32f077924458e108599cbeed2ddd6092ee5edbe0da4d4b2eba355
+2025-02-24T05:29:49.8337200Z Source commit SHA: fa0a91b85d4f404e444e00e005971372dc801d16
+2025-02-24T05:29:49.8339250Z ##[endgroup]
+2025-02-24T05:29:50.3929230Z ##[group]Download immutable action package 'actions/upload-artifact@v4.6.1'
+2025-02-24T05:29:50.3931810Z Version: 4.6.1
+2025-02-24T05:29:50.3935440Z Digest: sha256:3f6a28e7a1e0b5c8e2249e28da121a049fa5b91863b04390a46a82e4f8e2da98
+2025-02-24T05:29:50.3938640Z Source commit SHA: 4cec3d8aa04e39d1a68397de0c4cd6fb9dce8ec1
+2025-02-24T05:29:50.3940770Z ##[endgroup]
+2025-02-24T05:29:51.1999680Z Complete job name: Testbed (macOS-x86_64)
+2025-02-24T05:29:51.2630140Z ##[group]Run smorimoto/tune-github-hosted-runner-network@v1.0.0
+2025-02-24T05:29:51.2631470Z env:
+2025-02-24T05:29:51.2631850Z   min_python_version: 3.9
+2025-02-24T05:29:51.2632300Z   max_python_version: 3.12
+2025-02-24T05:29:51.2632720Z   FORCE_COLOR: 1
+2025-02-24T05:29:51.2633090Z ##[endgroup]
+2025-02-24T05:29:51.2803160Z ##[group]Run sudo sysctl -w net.link.generic.system.hwcksum_tx=0
+2025-02-24T05:29:51.2804060Z [36;1msudo sysctl -w net.link.generic.system.hwcksum_tx=0[0m
+2025-02-24T05:29:51.2805440Z [36;1msudo sysctl -w net.link.generic.system.hwcksum_rx=0[0m
+2025-02-24T05:29:51.2937590Z shell: /bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-24T05:29:51.2938370Z env:
+2025-02-24T05:29:51.2938830Z   min_python_version: 3.9
+2025-02-24T05:29:51.2939360Z   max_python_version: 3.12
+2025-02-24T05:29:51.2939930Z   FORCE_COLOR: 1
+2025-02-24T05:29:51.2940360Z ##[endgroup]
+2025-02-24T05:29:51.3452020Z net.link.generic.system.hwcksum_tx: 1 -> 0
+2025-02-24T05:29:51.3588700Z net.link.generic.system.hwcksum_rx: 1 -> 0
+2025-02-24T05:29:51.3809840Z ##[group]Run actions/checkout@v4.2.2
+2025-02-24T05:29:51.3810490Z with:
+2025-02-24T05:29:51.3810910Z   fetch-depth: 0
+2025-02-24T05:29:51.3811380Z   repository: beeware/toga
+2025-02-24T05:29:51.3812140Z   token: ***
+2025-02-24T05:29:51.3812540Z   ssh-strict: true
+2025-02-24T05:29:51.3812980Z   ssh-user: git
+2025-02-24T05:29:51.3813420Z   persist-credentials: true
+2025-02-24T05:29:51.3813990Z   clean: true
+2025-02-24T05:29:51.3814430Z   sparse-checkout-cone-mode: true
+2025-02-24T05:29:51.3814980Z   fetch-tags: false
+2025-02-24T05:29:51.3815430Z   show-progress: true
+2025-02-24T05:29:51.3815990Z   lfs: false
+2025-02-24T05:29:51.3816410Z   submodules: false
+2025-02-24T05:29:51.3816860Z   set-safe-directory: true
+2025-02-24T05:29:51.3817330Z env:
+2025-02-24T05:29:51.3817730Z   min_python_version: 3.9
+2025-02-24T05:29:51.3818230Z   max_python_version: 3.12
+2025-02-24T05:29:51.3818710Z   FORCE_COLOR: 1
+2025-02-24T05:29:51.3819110Z ##[endgroup]
+2025-02-24T05:29:51.7235250Z Syncing repository: beeware/toga
+2025-02-24T05:29:51.7237310Z ##[group]Getting Git version info
+2025-02-24T05:29:51.7238020Z Working directory is '/Users/runner/work/toga/toga'
+2025-02-24T05:29:51.7239080Z [command]/usr/local/bin/git version
+2025-02-24T05:29:51.7536090Z git version 2.48.1
+2025-02-24T05:29:51.7573970Z ##[endgroup]
+2025-02-24T05:29:51.7593260Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/8beae325-1719-4eec-94c2-5f29cc256d95/.gitconfig'
+2025-02-24T05:29:51.7607940Z Temporarily overriding HOME='/Users/runner/work/_temp/8beae325-1719-4eec-94c2-5f29cc256d95' before making global git config changes
+2025-02-24T05:29:51.7609510Z Adding repository directory to the temporary git global config as a safe directory
+2025-02-24T05:29:51.7613550Z [command]/usr/local/bin/git config --global --add safe.directory /Users/runner/work/toga/toga
+2025-02-24T05:29:51.7708980Z Deleting the contents of '/Users/runner/work/toga/toga'
+2025-02-24T05:29:51.7714240Z ##[group]Initializing the repository
+2025-02-24T05:29:51.7719220Z [command]/usr/local/bin/git init /Users/runner/work/toga/toga
+2025-02-24T05:29:51.7945910Z hint: Using 'master' as the name for the initial branch. This default branch name
+2025-02-24T05:29:51.7947130Z hint: is subject to change. To configure the initial branch name to use in all
+2025-02-24T05:29:51.7948240Z hint: of your new repositories, which will suppress this warning, call:
+2025-02-24T05:29:51.7949060Z hint:
+2025-02-24T05:29:51.7949690Z hint: 	git config --global init.defaultBranch <name>
+2025-02-24T05:29:51.7950380Z hint:
+2025-02-24T05:29:51.7951080Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2025-02-24T05:29:51.7952100Z hint: 'development'. The just-created branch can be renamed via this command:
+2025-02-24T05:29:51.7952910Z hint:
+2025-02-24T05:29:51.7953330Z hint: 	git branch -m <name>
+2025-02-24T05:29:51.7954050Z Initialized empty Git repository in /Users/runner/work/toga/toga/.git/
+2025-02-24T05:29:51.7958980Z [command]/usr/local/bin/git remote add origin https://github.com/beeware/toga
+2025-02-24T05:29:51.8046500Z ##[endgroup]
+2025-02-24T05:29:51.8047330Z ##[group]Disabling automatic garbage collection
+2025-02-24T05:29:51.8051910Z [command]/usr/local/bin/git config --local gc.auto 0
+2025-02-24T05:29:51.8124660Z ##[endgroup]
+2025-02-24T05:29:51.8126140Z ##[group]Setting up auth
+2025-02-24T05:29:51.8131630Z [command]/usr/local/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-02-24T05:29:51.8203790Z [command]/usr/local/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-02-24T05:29:51.9282130Z [command]/usr/local/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-02-24T05:29:51.9355220Z [command]/usr/local/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-02-24T05:29:52.0294350Z [command]/usr/local/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2025-02-24T05:29:52.0386650Z ##[endgroup]
+2025-02-24T05:29:52.0387420Z ##[group]Fetching the repository
+2025-02-24T05:29:52.0397070Z [command]/usr/local/bin/git -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+2025-02-24T05:29:55.6488190Z From https://github.com/beeware/toga
+2025-02-24T05:29:55.6489020Z  * [new branch]          main         -> origin/main
+2025-02-24T05:29:55.6489660Z  * [new branch]          pre-0.5      -> origin/pre-0.5
+2025-02-24T05:29:55.6493750Z  * [new tag]             0.2.6        -> 0.2.6
+2025-02-24T05:29:55.6496680Z  * [new tag]             v0.0.1rc1    -> v0.0.1rc1
+2025-02-24T05:29:55.6499490Z  * [new tag]             v0.0.1rc10   -> v0.0.1rc10
+2025-02-24T05:29:55.6503640Z  * [new tag]             v0.0.1rc5    -> v0.0.1rc5
+2025-02-24T05:29:55.6505390Z  * [new tag]             v0.0.1rc6    -> v0.0.1rc6
+2025-02-24T05:29:55.6508790Z  * [new tag]             v0.1.0       -> v0.1.0
+2025-02-24T05:29:55.6511600Z  * [new tag]             v0.1.1       -> v0.1.1
+2025-02-24T05:29:55.6514700Z  * [new tag]             v0.1.2       -> v0.1.2
+2025-02-24T05:29:55.6517730Z  * [new tag]             v0.2.0       -> v0.2.0
+2025-02-24T05:29:55.6520920Z  * [new tag]             v0.2.0.dev1  -> v0.2.0.dev1
+2025-02-24T05:29:55.6524030Z  * [new tag]             v0.2.1       -> v0.2.1
+2025-02-24T05:29:55.6528270Z  * [new tag]             v0.2.10      -> v0.2.10
+2025-02-24T05:29:55.6531980Z  * [new tag]             v0.2.11      -> v0.2.11
+2025-02-24T05:29:55.6538030Z  * [new tag]             v0.2.12      -> v0.2.12
+2025-02-24T05:29:55.6540940Z  * [new tag]             v0.2.13      -> v0.2.13
+2025-02-24T05:29:55.6544630Z  * [new tag]             v0.2.14      -> v0.2.14
+2025-02-24T05:29:55.6548800Z  * [new tag]             v0.2.15      -> v0.2.15
+2025-02-24T05:29:55.6551760Z  * [new tag]             v0.2.2       -> v0.2.2
+2025-02-24T05:29:55.6555740Z  * [new tag]             v0.2.3       -> v0.2.3
+2025-02-24T05:29:55.6558610Z  * [new tag]             v0.2.4       -> v0.2.4
+2025-02-24T05:29:55.6561600Z  * [new tag]             v0.2.5       -> v0.2.5
+2025-02-24T05:29:55.6564150Z  * [new tag]             v0.2.6       -> v0.2.6
+2025-02-24T05:29:55.6567250Z  * [new tag]             v0.2.7       -> v0.2.7
+2025-02-24T05:29:55.6570200Z  * [new tag]             v0.2.8       -> v0.2.8
+2025-02-24T05:29:55.6573430Z  * [new tag]             v0.2.9       -> v0.2.9
+2025-02-24T05:29:55.6576570Z  * [new tag]             v0.3.0       -> v0.3.0
+2025-02-24T05:29:55.6579560Z  * [new tag]             v0.3.0.dev1  -> v0.3.0.dev1
+2025-02-24T05:29:55.6582520Z  * [new tag]             v0.3.0.dev10 -> v0.3.0.dev10
+2025-02-24T05:29:55.6586850Z  * [new tag]             v0.3.0.dev11 -> v0.3.0.dev11
+2025-02-24T05:29:55.6591950Z  * [new tag]             v0.3.0.dev12 -> v0.3.0.dev12
+2025-02-24T05:29:55.6594850Z  * [new tag]             v0.3.0.dev13 -> v0.3.0.dev13
+2025-02-24T05:29:55.6598480Z  * [new tag]             v0.3.0.dev14 -> v0.3.0.dev14
+2025-02-24T05:29:55.6601550Z  * [new tag]             v0.3.0.dev15 -> v0.3.0.dev15
+2025-02-24T05:29:55.6604590Z  * [new tag]             v0.3.0.dev16 -> v0.3.0.dev16
+2025-02-24T05:29:55.6607480Z  * [new tag]             v0.3.0.dev17 -> v0.3.0.dev17
+2025-02-24T05:29:55.6611190Z  * [new tag]             v0.3.0.dev18 -> v0.3.0.dev18
+2025-02-24T05:29:55.6614640Z  * [new tag]             v0.3.0.dev19 -> v0.3.0.dev19
+2025-02-24T05:29:55.6618330Z  * [new tag]             v0.3.0.dev2  -> v0.3.0.dev2
+2025-02-24T05:29:55.6621060Z  * [new tag]             v0.3.0.dev20 -> v0.3.0.dev20
+2025-02-24T05:29:55.6623780Z  * [new tag]             v0.3.0.dev21 -> v0.3.0.dev21
+2025-02-24T05:29:55.6627850Z  * [new tag]             v0.3.0.dev22 -> v0.3.0.dev22
+2025-02-24T05:29:55.6632240Z  * [new tag]             v0.3.0.dev23 -> v0.3.0.dev23
+2025-02-24T05:29:55.6636510Z  * [new tag]             v0.3.0.dev24 -> v0.3.0.dev24
+2025-02-24T05:29:55.6639290Z  * [new tag]             v0.3.0.dev25 -> v0.3.0.dev25
+2025-02-24T05:29:55.6642600Z  * [new tag]             v0.3.0.dev26 -> v0.3.0.dev26
+2025-02-24T05:29:55.6646110Z  * [new tag]             v0.3.0.dev27 -> v0.3.0.dev27
+2025-02-24T05:29:55.6651000Z  * [new tag]             v0.3.0.dev28 -> v0.3.0.dev28
+2025-02-24T05:29:55.6654130Z  * [new tag]             v0.3.0.dev29 -> v0.3.0.dev29
+2025-02-24T05:29:55.6657400Z  * [new tag]             v0.3.0.dev3  -> v0.3.0.dev3
+2025-02-24T05:29:55.6660740Z  * [new tag]             v0.3.0.dev30 -> v0.3.0.dev30
+2025-02-24T05:29:55.6665530Z  * [new tag]             v0.3.0.dev32 -> v0.3.0.dev32
+2025-02-24T05:29:55.6668600Z  * [new tag]             v0.3.0.dev33 -> v0.3.0.dev33
+2025-02-24T05:29:55.6671850Z  * [new tag]             v0.3.0.dev34 -> v0.3.0.dev34
+2025-02-24T05:29:55.6675350Z  * [new tag]             v0.3.0.dev35 -> v0.3.0.dev35
+2025-02-24T05:29:55.6677980Z  * [new tag]             v0.3.0.dev36 -> v0.3.0.dev36
+2025-02-24T05:29:55.6681620Z  * [new tag]             v0.3.0.dev37 -> v0.3.0.dev37
+2025-02-24T05:29:55.6686000Z  * [new tag]             v0.3.0.dev38 -> v0.3.0.dev38
+2025-02-24T05:29:55.6689260Z  * [new tag]             v0.3.0.dev39 -> v0.3.0.dev39
+2025-02-24T05:29:55.6692420Z  * [new tag]             v0.3.0.dev4  -> v0.3.0.dev4
+2025-02-24T05:29:55.6695450Z  * [new tag]             v0.3.0.dev5  -> v0.3.0.dev5
+2025-02-24T05:29:55.6698190Z  * [new tag]             v0.3.0.dev6  -> v0.3.0.dev6
+2025-02-24T05:29:55.6702320Z  * [new tag]             v0.3.0.dev7  -> v0.3.0.dev7
+2025-02-24T05:29:55.6705570Z  * [new tag]             v0.3.0.dev8  -> v0.3.0.dev8
+2025-02-24T05:29:55.6708820Z  * [new tag]             v0.3.0.dev9  -> v0.3.0.dev9
+2025-02-24T05:29:55.6711930Z  * [new tag]             v0.3.0rc0    -> v0.3.0rc0
+2025-02-24T05:29:55.6714550Z  * [new tag]             v0.3.1       -> v0.3.1
+2025-02-24T05:29:55.6717810Z  * [new tag]             v0.4.0       -> v0.4.0
+2025-02-24T05:29:55.6721140Z  * [new tag]             v0.4.1       -> v0.4.1
+2025-02-24T05:29:55.6723760Z  * [new tag]             v0.4.2       -> v0.4.2
+2025-02-24T05:29:55.6726540Z  * [new tag]             v0.4.3       -> v0.4.3
+2025-02-24T05:29:55.6729520Z  * [new tag]             v0.4.4       -> v0.4.4
+2025-02-24T05:29:55.6732130Z  * [new tag]             v0.4.5       -> v0.4.5
+2025-02-24T05:29:55.6735190Z  * [new tag]             v0.4.6       -> v0.4.6
+2025-02-24T05:29:55.6738280Z  * [new tag]             v0.4.7       -> v0.4.7
+2025-02-24T05:29:55.6741430Z  * [new tag]             v0.4.8       -> v0.4.8
+2025-02-24T05:29:55.6743800Z  * [new tag]             v0.4.9       -> v0.4.9
+2025-02-24T05:29:55.6855370Z [command]/usr/local/bin/git branch --list --remote origin/main
+2025-02-24T05:29:55.6914910Z   origin/main
+2025-02-24T05:29:55.6925390Z [command]/usr/local/bin/git rev-parse refs/remotes/origin/main
+2025-02-24T05:29:55.6981220Z 01152b56b9607a5cc1dabb9e94970cc589baff01
+2025-02-24T05:29:55.6987600Z ##[endgroup]
+2025-02-24T05:29:55.6988180Z ##[group]Determining the checkout info
+2025-02-24T05:29:55.6988830Z ##[endgroup]
+2025-02-24T05:29:55.6994180Z [command]/usr/local/bin/git sparse-checkout disable
+2025-02-24T05:29:55.7077520Z [command]/usr/local/bin/git config --local --unset-all extensions.worktreeConfig
+2025-02-24T05:29:55.7143320Z ##[group]Checking out the ref
+2025-02-24T05:29:55.7149100Z [command]/usr/local/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2025-02-24T05:29:56.3398210Z Switched to a new branch 'main'
+2025-02-24T05:29:56.3405370Z branch 'main' set up to track 'origin/main'.
+2025-02-24T05:29:56.3422150Z ##[endgroup]
+2025-02-24T05:29:56.3521750Z [command]/usr/local/bin/git log -1 --format=%H
+2025-02-24T05:29:56.3589850Z 01152b56b9607a5cc1dabb9e94970cc589baff01
+2025-02-24T05:29:56.3786390Z ##[group]Run actions/setup-python@v5.4.0
+2025-02-24T05:29:56.3787000Z with:
+2025-02-24T05:29:56.3787430Z   python-version: 3.12
+2025-02-24T05:29:56.3787880Z   check-latest: false
+2025-02-24T05:29:56.3788450Z   token: ***
+2025-02-24T05:29:56.3788870Z   update-environment: true
+2025-02-24T05:29:56.3789300Z   allow-prereleases: false
+2025-02-24T05:29:56.3789750Z env:
+2025-02-24T05:29:56.3790130Z   min_python_version: 3.9
+2025-02-24T05:29:56.3790580Z   max_python_version: 3.12
+2025-02-24T05:29:56.3791050Z   FORCE_COLOR: 1
+2025-02-24T05:29:56.3791410Z ##[endgroup]
+2025-02-24T05:29:56.6572540Z ##[group]Installed versions
+2025-02-24T05:29:56.6667650Z Successfully set up CPython (3.12.8)
+2025-02-24T05:29:56.6668630Z ##[endgroup]
+2025-02-24T05:29:56.6814060Z ##[group]Run # Use the development version of Briefcase
+2025-02-24T05:29:56.6814690Z [36;1m[0m
+2025-02-24T05:29:56.6815110Z [36;1m# Use the development version of Briefcase[0m
+2025-02-24T05:29:56.6815670Z [36;1mpython -m pip install -U pip[0m
+2025-02-24T05:29:56.6816410Z [36;1mpython -m pip install git+https://github.com/beeware/briefcase.git[0m
+2025-02-24T05:29:56.6937180Z shell: /bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-24T05:29:56.6937780Z env:
+2025-02-24T05:29:56.6938120Z   min_python_version: 3.9
+2025-02-24T05:29:56.6938550Z   max_python_version: 3.12
+2025-02-24T05:29:56.6938970Z   FORCE_COLOR: 1
+2025-02-24T05:29:56.6939500Z   pythonLocation: /Users/runner/hostedtoolcache/Python/3.12.8/x64
+2025-02-24T05:29:56.6940420Z   PKG_CONFIG_PATH: /Users/runner/hostedtoolcache/Python/3.12.8/x64/lib/pkgconfig
+2025-02-24T05:29:56.6941320Z   Python_ROOT_DIR: /Users/runner/hostedtoolcache/Python/3.12.8/x64
+2025-02-24T05:29:56.6942230Z   Python2_ROOT_DIR: /Users/runner/hostedtoolcache/Python/3.12.8/x64
+2025-02-24T05:29:56.6943020Z   Python3_ROOT_DIR: /Users/runner/hostedtoolcache/Python/3.12.8/x64
+2025-02-24T05:29:56.6943690Z   PIP_BREAK_SYSTEM_PACKAGES: 1
+2025-02-24T05:29:56.6944150Z ##[endgroup]
+2025-02-24T05:29:58.3383310Z Requirement already satisfied: pip in /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages (25.0)
+2025-02-24T05:29:58.4379260Z Collecting pip
+2025-02-24T05:29:58.4678330Z   Downloading pip-25.0.1-py3-none-any.whl.metadata (3.7 kB)
+2025-02-24T05:29:58.4821650Z Downloading pip-25.0.1-py3-none-any.whl (1.8 MB)
+2025-02-24T05:29:58.5076360Z [?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/1.8 MB[0m [31m?[0m eta [36m-:--:--[0m
+2025-02-24T05:29:58.5117680Z [2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1.8/1.8 MB[0m [31m81.6 MB/s[0m eta [36m0:00:00[0m
+2025-02-24T05:29:58.5377560Z [?25hInstalling collected packages: pip
+2025-02-24T05:29:58.6379900Z   Attempting uninstall: pip
+2025-02-24T05:29:58.7072270Z     Found existing installation: pip 25.0
+2025-02-24T05:29:58.7074770Z     Uninstalling pip-25.0:
+2025-02-24T05:29:58.9004250Z       Successfully uninstalled pip-25.0
+2025-02-24T05:30:00.1509780Z Successfully installed pip-25.0.1
+2025-02-24T05:30:01.0002930Z Collecting git+https://github.com/beeware/briefcase.git
+2025-02-24T05:30:01.0017670Z   Cloning https://github.com/beeware/briefcase.git to /private/var/folders/db/x5_t5x655c9_rftmy0wp2t2w0000gn/T/pip-req-build-94yky5c0
+2025-02-24T05:30:01.0100370Z   Running command git clone --filter=blob:none --quiet https://github.com/beeware/briefcase.git /private/var/folders/db/x5_t5x655c9_rftmy0wp2t2w0000gn/T/pip-req-build-94yky5c0
+2025-02-24T05:30:04.0538840Z   Resolved https://github.com/beeware/briefcase.git to commit 647c8ff5965677d4cee5cccaa37536b2d744096e
+2025-02-24T05:30:04.0720830Z   Installing build dependencies: started
+2025-02-24T05:30:06.2492460Z   Installing build dependencies: finished with status 'done'
+2025-02-24T05:30:06.2504840Z   Getting requirements to build wheel: started
+2025-02-24T05:30:06.8527110Z   Getting requirements to build wheel: finished with status 'done'
+2025-02-24T05:30:06.8545120Z   Preparing metadata (pyproject.toml): started
+2025-02-24T05:30:07.4908740Z   Preparing metadata (pyproject.toml): finished with status 'done'
+2025-02-24T05:30:07.5601740Z Collecting packaging>=24.2 (from briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:07.5631430Z   Using cached packaging-24.2-py3-none-any.whl.metadata (3.2 kB)
+2025-02-24T05:30:07.5670720Z Requirement already satisfied: pip>=24.3 in /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages (from briefcase==0.3.23.dev11+g647c8ff5) (25.0.1)
+2025-02-24T05:30:07.7369580Z Collecting setuptools>=60 (from briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:07.7390270Z   Using cached setuptools-75.8.0-py3-none-any.whl.metadata (6.7 kB)
+2025-02-24T05:30:07.8080090Z Collecting wheel>=0.37 (from briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:07.8265180Z   Downloading wheel-0.45.1-py3-none-any.whl.metadata (2.3 kB)
+2025-02-24T05:30:07.8508440Z Collecting build>=0.10 (from briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:07.8550800Z   Downloading build-1.2.2.post1-py3-none-any.whl.metadata (6.5 kB)
+2025-02-24T05:30:07.8864900Z Collecting cookiecutter<3.0,>=2.6.0 (from briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:07.8909060Z   Downloading cookiecutter-2.6.0-py3-none-any.whl.metadata (7.3 kB)
+2025-02-24T05:30:07.9136460Z Collecting dmgbuild<2.0,>=1.6.4 (from briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:07.9206410Z   Downloading dmgbuild-1.6.4-py3-none-any.whl.metadata (3.2 kB)
+2025-02-24T05:30:08.0460900Z Collecting GitPython<4.0,>=3.1 (from briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:08.0519270Z   Downloading GitPython-3.1.44-py3-none-any.whl.metadata (13 kB)
+2025-02-24T05:30:08.0520810Z Collecting platformdirs<5.0,>=2.6 (from briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:08.0521790Z   Downloading platformdirs-4.3.6-py3-none-any.whl.metadata (11 kB)
+2025-02-24T05:30:08.1490340Z Collecting psutil<8.0,>=5.9 (from briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:08.1557920Z   Downloading psutil-7.0.0-cp36-abi3-macosx_10_9_x86_64.whl.metadata (22 kB)
+2025-02-24T05:30:08.1882810Z Collecting python-dateutil>=2.9.0.post0 (from briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:08.1932030Z   Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+2025-02-24T05:30:08.2306440Z Collecting httpx<1.0,>=0.20 (from briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:08.2352220Z   Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+2025-02-24T05:30:08.3049040Z Collecting rich<14.0,>=12.6 (from briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:08.3095250Z   Downloading rich-13.9.4-py3-none-any.whl.metadata (18 kB)
+2025-02-24T05:30:08.3374090Z Collecting tomli_w<2.0,>=1.0 (from briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:08.3418150Z   Downloading tomli_w-1.2.0-py3-none-any.whl.metadata (5.7 kB)
+2025-02-24T05:30:08.3704090Z Collecting pyproject_hooks (from build>=0.10->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:08.3745970Z   Downloading pyproject_hooks-1.2.0-py3-none-any.whl.metadata (1.3 kB)
+2025-02-24T05:30:08.3941100Z Collecting binaryornot>=0.4.4 (from cookiecutter<3.0,>=2.6.0->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:08.3984760Z   Downloading binaryornot-0.4.4-py2.py3-none-any.whl.metadata (6.0 kB)
+2025-02-24T05:30:08.4276320Z Collecting Jinja2<4.0.0,>=2.7 (from cookiecutter<3.0,>=2.6.0->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:08.4324030Z   Downloading jinja2-3.1.5-py3-none-any.whl.metadata (2.6 kB)
+2025-02-24T05:30:08.4632700Z Collecting click<9.0.0,>=7.0 (from cookiecutter<3.0,>=2.6.0->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:08.4676490Z   Downloading click-8.1.8-py3-none-any.whl.metadata (2.3 kB)
+2025-02-24T05:30:08.5146640Z Collecting pyyaml>=5.3.1 (from cookiecutter<3.0,>=2.6.0->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:08.5211480Z   Downloading PyYAML-6.0.2-cp312-cp312-macosx_10_9_x86_64.whl.metadata (2.1 kB)
+2025-02-24T05:30:08.5479240Z Collecting python-slugify>=4.0.0 (from cookiecutter<3.0,>=2.6.0->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:08.5525880Z   Downloading python_slugify-8.0.4-py2.py3-none-any.whl.metadata (8.5 kB)
+2025-02-24T05:30:08.5944400Z Collecting requests>=2.23.0 (from cookiecutter<3.0,>=2.6.0->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:08.5990270Z   Downloading requests-2.32.3-py3-none-any.whl.metadata (4.6 kB)
+2025-02-24T05:30:08.6285050Z Collecting arrow (from cookiecutter<3.0,>=2.6.0->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:08.6330750Z   Downloading arrow-1.3.0-py3-none-any.whl.metadata (7.5 kB)
+2025-02-24T05:30:08.6578600Z Collecting ds_store>=1.1.0 (from dmgbuild<2.0,>=1.6.4->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:08.6638760Z   Downloading ds_store-1.3.1-py3-none-any.whl.metadata (3.0 kB)
+2025-02-24T05:30:08.6870510Z Collecting mac_alias>=2.0.1 (from dmgbuild<2.0,>=1.6.4->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:08.6921710Z   Downloading mac_alias-2.2.2-py3-none-any.whl.metadata (3.1 kB)
+2025-02-24T05:30:08.7179330Z Collecting gitdb<5,>=4.0.1 (from GitPython<4.0,>=3.1->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:08.7226290Z   Downloading gitdb-4.0.12-py3-none-any.whl.metadata (1.2 kB)
+2025-02-24T05:30:08.7565920Z Collecting anyio (from httpx<1.0,>=0.20->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:08.7607280Z   Downloading anyio-4.8.0-py3-none-any.whl.metadata (4.6 kB)
+2025-02-24T05:30:08.7719820Z Requirement already satisfied: certifi in /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages (from httpx<1.0,>=0.20->briefcase==0.3.23.dev11+g647c8ff5) (2024.12.14)
+2025-02-24T05:30:08.7975630Z Collecting httpcore==1.* (from httpx<1.0,>=0.20->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:08.8018560Z   Downloading httpcore-1.0.7-py3-none-any.whl.metadata (21 kB)
+2025-02-24T05:30:08.8318790Z Collecting idna (from httpx<1.0,>=0.20->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:08.8359890Z   Downloading idna-3.10-py3-none-any.whl.metadata (10 kB)
+2025-02-24T05:30:08.8753230Z Collecting h11<0.15,>=0.13 (from httpcore==1.*->httpx<1.0,>=0.20->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:08.8793930Z   Downloading h11-0.14.0-py3-none-any.whl.metadata (8.2 kB)
+2025-02-24T05:30:08.9115210Z Collecting six>=1.5 (from python-dateutil>=2.9.0.post0->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:08.9164940Z   Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+2025-02-24T05:30:08.9477430Z Collecting markdown-it-py>=2.2.0 (from rich<14.0,>=12.6->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:08.9496100Z   Downloading markdown_it_py-3.0.0-py3-none-any.whl.metadata (6.9 kB)
+2025-02-24T05:30:08.9893640Z Collecting pygments<3.0.0,>=2.13.0 (from rich<14.0,>=12.6->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:08.9936050Z   Downloading pygments-2.19.1-py3-none-any.whl.metadata (2.5 kB)
+2025-02-24T05:30:09.0245640Z Collecting chardet>=3.0.2 (from binaryornot>=0.4.4->cookiecutter<3.0,>=2.6.0->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:09.0288810Z   Downloading chardet-5.2.0-py3-none-any.whl.metadata (3.4 kB)
+2025-02-24T05:30:09.0582720Z Collecting smmap<6,>=3.0.1 (from gitdb<5,>=4.0.1->GitPython<4.0,>=3.1->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:09.0625830Z   Downloading smmap-5.0.2-py3-none-any.whl.metadata (4.3 kB)
+2025-02-24T05:30:09.1332660Z Collecting MarkupSafe>=2.0 (from Jinja2<4.0.0,>=2.7->cookiecutter<3.0,>=2.6.0->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:09.1400710Z   Downloading MarkupSafe-3.0.2-cp312-cp312-macosx_10_13_universal2.whl.metadata (4.0 kB)
+2025-02-24T05:30:09.1642040Z Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich<14.0,>=12.6->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:09.1682050Z   Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+2025-02-24T05:30:09.1919290Z Collecting text-unidecode>=1.3 (from python-slugify>=4.0.0->cookiecutter<3.0,>=2.6.0->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:09.1961300Z   Downloading text_unidecode-1.3-py2.py3-none-any.whl.metadata (2.4 kB)
+2025-02-24T05:30:09.2918190Z Collecting charset-normalizer<4,>=2 (from requests>=2.23.0->cookiecutter<3.0,>=2.6.0->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:09.2968460Z   Downloading charset_normalizer-3.4.1-cp312-cp312-macosx_10_13_universal2.whl.metadata (35 kB)
+2025-02-24T05:30:09.3494770Z Collecting urllib3<3,>=1.21.1 (from requests>=2.23.0->cookiecutter<3.0,>=2.6.0->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:09.3537870Z   Downloading urllib3-2.3.0-py3-none-any.whl.metadata (6.5 kB)
+2025-02-24T05:30:09.3891950Z Collecting sniffio>=1.1 (from anyio->httpx<1.0,>=0.20->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:09.3930960Z   Downloading sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+2025-02-24T05:30:09.4224670Z Collecting typing_extensions>=4.5 (from anyio->httpx<1.0,>=0.20->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:09.4270130Z   Downloading typing_extensions-4.12.2-py3-none-any.whl.metadata (3.0 kB)
+2025-02-24T05:30:09.4650540Z Collecting types-python-dateutil>=2.8.10 (from arrow->cookiecutter<3.0,>=2.6.0->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:09.4699250Z   Downloading types_python_dateutil-2.9.0.20241206-py3-none-any.whl.metadata (2.1 kB)
+2025-02-24T05:30:09.5061340Z Downloading build-1.2.2.post1-py3-none-any.whl (22 kB)
+2025-02-24T05:30:09.5261780Z Downloading cookiecutter-2.6.0-py3-none-any.whl (39 kB)
+2025-02-24T05:30:09.5321280Z Downloading dmgbuild-1.6.4-py3-none-any.whl (34 kB)
+2025-02-24T05:30:09.5429240Z Downloading GitPython-3.1.44-py3-none-any.whl (207 kB)
+2025-02-24T05:30:09.5546240Z Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+2025-02-24T05:30:09.5645460Z Downloading httpcore-1.0.7-py3-none-any.whl (78 kB)
+2025-02-24T05:30:09.5725000Z Using cached packaging-24.2-py3-none-any.whl (65 kB)
+2025-02-24T05:30:09.5784260Z Downloading platformdirs-4.3.6-py3-none-any.whl (18 kB)
+2025-02-24T05:30:09.5913230Z Downloading psutil-7.0.0-cp36-abi3-macosx_10_9_x86_64.whl (238 kB)
+2025-02-24T05:30:09.6028140Z Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+2025-02-24T05:30:09.6134180Z Downloading rich-13.9.4-py3-none-any.whl (242 kB)
+2025-02-24T05:30:09.6224350Z Using cached setuptools-75.8.0-py3-none-any.whl (1.2 MB)
+2025-02-24T05:30:09.6274450Z Downloading tomli_w-1.2.0-py3-none-any.whl (6.7 kB)
+2025-02-24T05:30:09.6392960Z Downloading wheel-0.45.1-py3-none-any.whl (72 kB)
+2025-02-24T05:30:09.6487120Z Downloading binaryornot-0.4.4-py2.py3-none-any.whl (9.0 kB)
+2025-02-24T05:30:09.6590410Z Downloading click-8.1.8-py3-none-any.whl (98 kB)
+2025-02-24T05:30:09.6710930Z Downloading ds_store-1.3.1-py3-none-any.whl (16 kB)
+2025-02-24T05:30:09.6818600Z Downloading gitdb-4.0.12-py3-none-any.whl (62 kB)
+2025-02-24T05:30:09.6922930Z Downloading jinja2-3.1.5-py3-none-any.whl (134 kB)
+2025-02-24T05:30:09.7058800Z Downloading mac_alias-2.2.2-py3-none-any.whl (21 kB)
+2025-02-24T05:30:09.7162410Z Downloading markdown_it_py-3.0.0-py3-none-any.whl (87 kB)
+2025-02-24T05:30:09.7304310Z Downloading pygments-2.19.1-py3-none-any.whl (1.2 MB)
+2025-02-24T05:30:09.7490630Z [?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/1.2 MB[0m [31m?[0m eta [36m-:--:--[0m
+2025-02-24T05:30:09.7492760Z [2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1.2/1.2 MB[0m [31m78.7 MB/s[0m eta [36m0:00:00[0m
+2025-02-24T05:30:09.7566430Z [?25hDownloading python_slugify-8.0.4-py2.py3-none-any.whl (10 kB)
+2025-02-24T05:30:09.7720220Z Downloading PyYAML-6.0.2-cp312-cp312-macosx_10_9_x86_64.whl (183 kB)
+2025-02-24T05:30:09.7844280Z Downloading requests-2.32.3-py3-none-any.whl (64 kB)
+2025-02-24T05:30:09.7946430Z Downloading idna-3.10-py3-none-any.whl (70 kB)
+2025-02-24T05:30:09.8043600Z Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+2025-02-24T05:30:09.8142720Z Downloading anyio-4.8.0-py3-none-any.whl (96 kB)
+2025-02-24T05:30:09.8258360Z Downloading arrow-1.3.0-py3-none-any.whl (66 kB)
+2025-02-24T05:30:09.8368900Z Downloading pyproject_hooks-1.2.0-py3-none-any.whl (10 kB)
+2025-02-24T05:30:09.8464790Z Downloading chardet-5.2.0-py3-none-any.whl (199 kB)
+2025-02-24T05:30:09.8584730Z Downloading charset_normalizer-3.4.1-cp312-cp312-macosx_10_13_universal2.whl (196 kB)
+2025-02-24T05:30:09.8695680Z Downloading h11-0.14.0-py3-none-any.whl (58 kB)
+2025-02-24T05:30:09.8819170Z Downloading MarkupSafe-3.0.2-cp312-cp312-macosx_10_13_universal2.whl (14 kB)
+2025-02-24T05:30:09.8948900Z Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+2025-02-24T05:30:09.9079720Z Downloading smmap-5.0.2-py3-none-any.whl (24 kB)
+2025-02-24T05:30:09.9179730Z Downloading sniffio-1.3.1-py3-none-any.whl (10 kB)
+2025-02-24T05:30:09.9293380Z Downloading text_unidecode-1.3-py2.py3-none-any.whl (78 kB)
+2025-02-24T05:30:09.9403680Z Downloading types_python_dateutil-2.9.0.20241206-py3-none-any.whl (14 kB)
+2025-02-24T05:30:09.9517290Z Downloading typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+2025-02-24T05:30:09.9620580Z Downloading urllib3-2.3.0-py3-none-any.whl (128 kB)
+2025-02-24T05:30:10.0230020Z Building wheels for collected packages: briefcase
+2025-02-24T05:30:10.0242680Z   Building wheel for briefcase (pyproject.toml): started
+2025-02-24T05:30:10.7801740Z   Building wheel for briefcase (pyproject.toml): finished with status 'done'
+2025-02-24T05:30:10.7818910Z   Created wheel for briefcase: filename=briefcase-0.3.23.dev11+g647c8ff5-py3-none-any.whl size=240736 sha256=6d1a35b9e491ce8021133ebf8448b2a21ceab98a6044af778f5f800dbf3ed450
+2025-02-24T05:30:10.7821240Z   Stored in directory: /private/var/folders/db/x5_t5x655c9_rftmy0wp2t2w0000gn/T/pip-ephem-wheel-cache-3x5ks1sw/wheels/c5/04/18/55524f7f66d67aa89c0ad161b560d13d7948240e6934e45f7e
+2025-02-24T05:30:10.7864030Z Successfully built briefcase
+2025-02-24T05:30:10.8761900Z Installing collected packages: text-unidecode, wheel, urllib3, typing_extensions, types-python-dateutil, tomli_w, sniffio, smmap, six, setuptools, pyyaml, python-slugify, pyproject_hooks, pygments, psutil, platformdirs, packaging, mdurl, MarkupSafe, mac_alias, idna, h11, click, charset-normalizer, chardet, requests, python-dateutil, markdown-it-py, Jinja2, httpcore, gitdb, ds_store, build, binaryornot, anyio, rich, httpx, GitPython, dmgbuild, arrow, cookiecutter, briefcase
+2025-02-24T05:30:15.2012360Z Successfully installed GitPython-3.1.44 Jinja2-3.1.5 MarkupSafe-3.0.2 anyio-4.8.0 arrow-1.3.0 binaryornot-0.4.4 briefcase-0.3.23.dev11+g647c8ff5 build-1.2.2.post1 chardet-5.2.0 charset-normalizer-3.4.1 click-8.1.8 cookiecutter-2.6.0 dmgbuild-1.6.4 ds_store-1.3.1 gitdb-4.0.12 h11-0.14.0 httpcore-1.0.7 httpx-0.28.1 idna-3.10 mac_alias-2.2.2 markdown-it-py-3.0.0 mdurl-0.1.2 packaging-24.2 platformdirs-4.3.6 psutil-7.0.0 pygments-2.19.1 pyproject_hooks-1.2.0 python-dateutil-2.9.0.post0 python-slugify-8.0.4 pyyaml-6.0.2 requests-2.32.3 rich-13.9.4 setuptools-75.8.0 six-1.17.0 smmap-5.0.2 sniffio-1.3.1 text-unidecode-1.3 tomli_w-1.2.0 types-python-dateutil-2.9.0.20241206 typing_extensions-4.12.2 urllib3-2.3.0 wheel-0.45.1
+2025-02-24T05:30:15.5440280Z ##[group]Run actions/download-artifact@v4.1.8
+2025-02-24T05:30:15.5440800Z with:
+2025-02-24T05:30:15.5441110Z   pattern: Packages-toga-*
+2025-02-24T05:30:15.5441490Z   merge-multiple: true
+2025-02-24T05:30:15.5441820Z   path: dist
+2025-02-24T05:30:15.5442130Z   repository: beeware/toga
+2025-02-24T05:30:15.5442480Z   run-id: 13491433041
+2025-02-24T05:30:15.5442780Z env:
+2025-02-24T05:30:15.5443060Z   min_python_version: 3.9
+2025-02-24T05:30:15.5443430Z   max_python_version: 3.12
+2025-02-24T05:30:15.5443780Z   FORCE_COLOR: 1
+2025-02-24T05:30:15.5444260Z   pythonLocation: /Users/runner/hostedtoolcache/Python/3.12.8/x64
+2025-02-24T05:30:15.5445120Z   PKG_CONFIG_PATH: /Users/runner/hostedtoolcache/Python/3.12.8/x64/lib/pkgconfig
+2025-02-24T05:30:15.5445960Z   Python_ROOT_DIR: /Users/runner/hostedtoolcache/Python/3.12.8/x64
+2025-02-24T05:30:15.5446700Z   Python2_ROOT_DIR: /Users/runner/hostedtoolcache/Python/3.12.8/x64
+2025-02-24T05:30:15.5447480Z   Python3_ROOT_DIR: /Users/runner/hostedtoolcache/Python/3.12.8/x64
+2025-02-24T05:30:15.5448430Z ##[endgroup]
+2025-02-24T05:30:15.9661950Z Found 56 artifact(s)
+2025-02-24T05:30:15.9663520Z Filtering artifacts by pattern 'Packages-toga-*'
+2025-02-24T05:30:15.9684140Z Preparing to download the following artifacts:
+2025-02-24T05:30:15.9684830Z - Packages-toga-winforms (ID: 2639028467, Size: 912617)
+2025-02-24T05:30:15.9685510Z - Packages-toga-android (ID: 2639028440, Size: 138194)
+2025-02-24T05:30:15.9686160Z - Packages-toga-gtk (ID: 2639028386, Size: 142074)
+2025-02-24T05:30:15.9686770Z - Packages-toga-iOS (ID: 2639028383, Size: 872356)
+2025-02-24T05:30:15.9687350Z - Packages-toga-toga (ID: 2639028349, Size: 7274)
+2025-02-24T05:30:15.9687990Z - Packages-toga-core (ID: 2639028344, Size: 1153697)
+2025-02-24T05:30:15.9688610Z - Packages-toga-dummy (ID: 2639028309, Size: 148484)
+2025-02-24T05:30:15.9689230Z - Packages-toga-web (ID: 2639028241, Size: 34922)
+2025-02-24T05:30:15.9689850Z - Packages-toga-textual (ID: 2639028202, Size: 32035)
+2025-02-24T05:30:15.9690650Z - Packages-toga-travertino (ID: 2639028133, Size: 62305)
+2025-02-24T05:30:15.9691280Z - Packages-toga-demo (ID: 2639028110, Size: 1242381)
+2025-02-24T05:30:15.9691910Z - Packages-toga-cocoa (ID: 2639028073, Size: 929338)
+2025-02-24T05:30:16.0382230Z Redirecting to blob download url: https://productionresultssa12.blob.core.windows.net/actions-results/cf52b554-71be-4a91-94b2-8eec2b4d890b/workflow-job-run-3124742b-843a-5b41-b426-aef8afedb9f7/artifacts/442c3fefacaa5f4a317396d7241d3673a3eab28c29b7e651a0b97534d592e35d.zip
+2025-02-24T05:30:16.0384720Z Starting download of artifact to: /Users/runner/work/toga/toga/dist
+2025-02-24T05:30:16.0559020Z Redirecting to blob download url: https://productionresultssa12.blob.core.windows.net/actions-results/cf52b554-71be-4a91-94b2-8eec2b4d890b/workflow-job-run-c851c84b-57ed-5071-9878-2279ccd891b8/artifacts/5eb57499beb40f05e15583bbf1c077df75bc75fa11156590733b79c2f9774e5a.zip
+2025-02-24T05:30:16.0561540Z Starting download of artifact to: /Users/runner/work/toga/toga/dist
+2025-02-24T05:30:16.0679630Z Redirecting to blob download url: https://productionresultssa12.blob.core.windows.net/actions-results/cf52b554-71be-4a91-94b2-8eec2b4d890b/workflow-job-run-866e389a-a1a0-5c67-a00f-72c22223abfe/artifacts/b4bca85baf5c112d5a88797759fe2e27b3de49b97e7268608199152765d6405a.zip
+2025-02-24T05:30:16.0686030Z Starting download of artifact to: /Users/runner/work/toga/toga/dist
+2025-02-24T05:30:16.0719470Z Redirecting to blob download url: https://productionresultssa12.blob.core.windows.net/actions-results/cf52b554-71be-4a91-94b2-8eec2b4d890b/workflow-job-run-18bbcbc6-8763-5d15-2620-0ac883eea9b0/artifacts/42ca5e4547811af7883a91d6c65b481266e15c0cdc8d243ec9aae2b558253c02.zip
+2025-02-24T05:30:16.0722000Z Starting download of artifact to: /Users/runner/work/toga/toga/dist
+2025-02-24T05:30:16.0747500Z Redirecting to blob download url: https://productionresultssa12.blob.core.windows.net/actions-results/cf52b554-71be-4a91-94b2-8eec2b4d890b/workflow-job-run-46aa3184-e851-51af-58d5-831072cd673f/artifacts/485660db63ec446c9f562cc6bdf49c64bf27c37a329b95a30a2467812096f020.zip
+2025-02-24T05:30:16.0750860Z Starting download of artifact to: /Users/runner/work/toga/toga/dist
+2025-02-24T05:30:16.0768180Z Redirecting to blob download url: https://productionresultssa12.blob.core.windows.net/actions-results/cf52b554-71be-4a91-94b2-8eec2b4d890b/workflow-job-run-e2a6fa47-47a3-5188-27fb-56f4e71042c8/artifacts/5425332638acb926f3e0f42935440601f1f6cf4c943281c5f8b926bd1948bc25.zip
+2025-02-24T05:30:16.0770650Z Starting download of artifact to: /Users/runner/work/toga/toga/dist
+2025-02-24T05:30:16.0789710Z Redirecting to blob download url: https://productionresultssa12.blob.core.windows.net/actions-results/cf52b554-71be-4a91-94b2-8eec2b4d890b/workflow-job-run-f1ed5179-285b-5126-8d3b-2df284d1f11c/artifacts/a55c024fa54bd7854415e2c7edfeb2c5046af07e859f8da7b852b08eadc84e2a.zip
+2025-02-24T05:30:16.0792360Z Starting download of artifact to: /Users/runner/work/toga/toga/dist
+2025-02-24T05:30:16.0813000Z Redirecting to blob download url: https://productionresultssa12.blob.core.windows.net/actions-results/cf52b554-71be-4a91-94b2-8eec2b4d890b/workflow-job-run-98be74ae-5157-5c81-b7d0-b2ef5821a81e/artifacts/6e0cae3735cba3d010b2e4c6917aa1f2ffe72638fbddcfcf5e7d00e456e64178.zip
+2025-02-24T05:30:16.0816520Z Starting download of artifact to: /Users/runner/work/toga/toga/dist
+2025-02-24T05:30:16.0884520Z (node:6335) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+2025-02-24T05:30:16.0886210Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2025-02-24T05:30:16.0936260Z Redirecting to blob download url: https://productionresultssa12.blob.core.windows.net/actions-results/cf52b554-71be-4a91-94b2-8eec2b4d890b/workflow-job-run-996a8579-f179-559d-4190-0dfa80ff20d7/artifacts/78e64f25892d1e62a7fba16b04b2d38f38656067df6d708afd5432245debf794.zip
+2025-02-24T05:30:16.0939040Z Starting download of artifact to: /Users/runner/work/toga/toga/dist
+2025-02-24T05:30:16.0943650Z Redirecting to blob download url: https://productionresultssa12.blob.core.windows.net/actions-results/cf52b554-71be-4a91-94b2-8eec2b4d890b/workflow-job-run-7815ca6b-1b41-513e-fbe7-8eccb083611a/artifacts/1660c57eb65463a413672e3e25e0e2a0d8c8794547115554b39228f20230f22e.zip
+2025-02-24T05:30:16.0946220Z Starting download of artifact to: /Users/runner/work/toga/toga/dist
+2025-02-24T05:30:16.1110000Z Artifact download completed successfully.
+2025-02-24T05:30:16.1129460Z Redirecting to blob download url: https://productionresultssa12.blob.core.windows.net/actions-results/cf52b554-71be-4a91-94b2-8eec2b4d890b/workflow-job-run-137efbf3-bb9f-5901-016f-a9ca027ec083/artifacts/3f2c1a4e1441705d00c0abbd5f3913c6b215c2d9365be6ffa9fcc342e7742def.zip
+2025-02-24T05:30:16.1131920Z Starting download of artifact to: /Users/runner/work/toga/toga/dist
+2025-02-24T05:30:16.1214470Z Redirecting to blob download url: https://productionresultssa12.blob.core.windows.net/actions-results/cf52b554-71be-4a91-94b2-8eec2b4d890b/workflow-job-run-832e8880-3eb6-5d89-0c04-ef547b46a59e/artifacts/dd722970e727682fe8f4f464e3511dbda02932b6586e5f2f8ac9f8f11f50cdc9.zip
+2025-02-24T05:30:16.1217400Z Starting download of artifact to: /Users/runner/work/toga/toga/dist
+2025-02-24T05:30:16.1700050Z Artifact download completed successfully.
+2025-02-24T05:30:16.1705810Z Artifact download completed successfully.
+2025-02-24T05:30:16.1722910Z Artifact download completed successfully.
+2025-02-24T05:30:16.1771800Z Artifact download completed successfully.
+2025-02-24T05:30:16.1791410Z Artifact download completed successfully.
+2025-02-24T05:30:16.1807760Z Artifact download completed successfully.
+2025-02-24T05:30:16.2598590Z Artifact download completed successfully.
+2025-02-24T05:30:16.2646270Z Artifact download completed successfully.
+2025-02-24T05:30:16.2903910Z Artifact download completed successfully.
+2025-02-24T05:30:16.2938140Z Artifact download completed successfully.
+2025-02-24T05:30:16.3022610Z Artifact download completed successfully.
+2025-02-24T05:30:16.3023270Z Total of 12 artifact(s) downloaded
+2025-02-24T05:30:16.3031680Z Download artifact has finished successfully
+2025-02-24T05:30:16.3189810Z ##[group]Run \
+2025-02-24T05:30:16.3190220Z [36;1m \[0m
+2025-02-24T05:30:16.3190640Z [36;1m  briefcase run macOS --log --test  -- --ci[0m
+2025-02-24T05:30:16.3312190Z shell: /bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-24T05:30:16.3312780Z env:
+2025-02-24T05:30:16.3313110Z   min_python_version: 3.9
+2025-02-24T05:30:16.3313530Z   max_python_version: 3.12
+2025-02-24T05:30:16.3313950Z   FORCE_COLOR: 1
+2025-02-24T05:30:16.3314510Z   pythonLocation: /Users/runner/hostedtoolcache/Python/3.12.8/x64
+2025-02-24T05:30:16.3315410Z   PKG_CONFIG_PATH: /Users/runner/hostedtoolcache/Python/3.12.8/x64/lib/pkgconfig
+2025-02-24T05:30:16.3316260Z   Python_ROOT_DIR: /Users/runner/hostedtoolcache/Python/3.12.8/x64
+2025-02-24T05:30:16.3317070Z   Python2_ROOT_DIR: /Users/runner/hostedtoolcache/Python/3.12.8/x64
+2025-02-24T05:30:16.3318270Z   Python3_ROOT_DIR: /Users/runner/hostedtoolcache/Python/3.12.8/x64
+2025-02-24T05:30:16.3318900Z ##[endgroup]
+2025-02-24T05:30:16.9206980Z 
+2025-02-24T05:30:16.9224110Z [2m[testbed][0m Generating application template...
+2025-02-24T05:30:16.9251750Z Using app template: [4;94mhttps://github.com/beeware/briefcase-macOS-app-template.git,[0m branch v0.3.23
+2025-02-24T05:30:16.9261980Z Cloning template '[4;94mhttps://github.com/beeware/briefcase-macOS-app-template.git[0m'...
+2025-02-24T05:30:18.3622670Z Template branch v0.3.23 not found; falling back to development template
+2025-02-24T05:30:19.0108760Z Using existing template (sha e8082ea4d3310d7605e12f4ab1fa7ff7b637b974, updated Thu Jan 23 22:43:48 2025)
+2025-02-24T05:30:20.0455570Z 
+2025-02-24T05:30:20.0469350Z [2m[testbed][0m Installing support package...
+2025-02-24T05:30:20.0484550Z Using support package [4;94mhttps://briefcase-support.s3.amazonaws.com/python/3.12/macOS/Python-3.12-macOS-support.b6.tar.gz[0m
+2025-02-24T05:30:20.4569270Z Downloading Python-3.12-macOS-support.b6.tar.gz...
+2025-02-24T05:30:21.7069160Z Unpacking support package... started
+2025-02-24T05:30:25.8979450Z Unpacking support package... done
+2025-02-24T05:30:25.8989670Z Copying standard library into app bundle... started
+2025-02-24T05:30:27.7019880Z Copying standard library into app bundle... done
+2025-02-24T05:30:27.7020840Z 
+2025-02-24T05:30:27.7156540Z [2m[testbed][0m Installing stub binary...
+2025-02-24T05:30:27.7212910Z Using stub binary [4;94mhttps://briefcase-support.s3.amazonaws.com/python/3.12/macOS/GUI-Stub-3.12-b10.zip[0m
+2025-02-24T05:30:28.0885630Z Downloading GUI-Stub-3.12-b10.zip...
+2025-02-24T05:30:28.0920150Z Installing stub binary... started
+2025-02-24T05:30:28.0949590Z Installing stub binary... done
+2025-02-24T05:30:28.0963150Z 
+2025-02-24T05:30:28.0980860Z [2m[testbed][0m Installing application code...
+2025-02-24T05:30:28.1177950Z Installing src/testbed... started
+2025-02-24T05:30:28.2683930Z Installing src/testbed... done
+2025-02-24T05:30:28.3070480Z Installing tests... started
+2025-02-24T05:30:28.3167960Z Installing tests... done
+2025-02-24T05:30:28.3196270Z Installing ../cocoa/tests_backend... started
+2025-02-24T05:30:28.3280090Z Installing ../cocoa/tests_backend... done
+2025-02-24T05:30:28.3309250Z 
+2025-02-24T05:30:28.3333080Z [2m[testbed][0m Installing requirements...
+2025-02-24T05:30:28.3364100Z Installing app requirements... started
+2025-02-24T05:30:29.1450640Z Looking in links: /Users/runner/work/toga/toga/dist
+2025-02-24T05:30:29.1475030Z Processing /Users/runner/work/toga/toga/travertino
+2025-02-24T05:30:29.1499080Z   Installing build dependencies: started
+2025-02-24T05:30:31.4436360Z   Installing build dependencies: finished with status 'done'
+2025-02-24T05:30:31.4447840Z   Getting requirements to build wheel: started
+2025-02-24T05:30:32.1332690Z   Getting requirements to build wheel: finished with status 'done'
+2025-02-24T05:30:32.1351340Z   Preparing metadata (pyproject.toml): started
+2025-02-24T05:30:32.7651730Z   Preparing metadata (pyproject.toml): finished with status 'done'
+2025-02-24T05:30:32.7706890Z Processing /Users/runner/work/toga/toga/core
+2025-02-24T05:30:32.7743020Z   Installing build dependencies: started
+2025-02-24T05:30:35.2487420Z   Installing build dependencies: finished with status 'done'
+2025-02-24T05:30:35.2501060Z   Getting requirements to build wheel: started
+2025-02-24T05:30:35.9114270Z   Getting requirements to build wheel: finished with status 'done'
+2025-02-24T05:30:35.9418260Z   Preparing metadata (pyproject.toml): started
+2025-02-24T05:30:36.5809580Z   Preparing metadata (pyproject.toml): finished with status 'done'
+2025-02-24T05:30:36.5863850Z Processing /Users/runner/work/toga/toga/cocoa
+2025-02-24T05:30:36.5891260Z   Installing build dependencies: started
+2025-02-24T05:30:38.8429930Z   Installing build dependencies: finished with status 'done'
+2025-02-24T05:30:38.8440060Z   Getting requirements to build wheel: started
+2025-02-24T05:30:39.4928860Z   Getting requirements to build wheel: finished with status 'done'
+2025-02-24T05:30:39.4945320Z   Preparing metadata (pyproject.toml): started
+2025-02-24T05:30:40.1357680Z   Preparing metadata (pyproject.toml): finished with status 'done'
+2025-02-24T05:30:40.1386800Z Ignoring fonttools: markers 'sys_platform == "linux"' don't match your environment
+2025-02-24T05:30:40.1968030Z Collecting std-nslog~=1.0.0
+2025-02-24T05:30:40.2166980Z   Downloading std_nslog-1.0.3-py3-none-any.whl.metadata (3.6 kB)
+2025-02-24T05:30:40.5428100Z Collecting coverage==7.6.12
+2025-02-24T05:30:40.5478070Z   Downloading coverage-7.6.12-cp312-cp312-macosx_10_13_x86_64.whl.metadata (8.5 kB)
+2025-02-24T05:30:40.5727130Z Collecting coverage-conditional-plugin==0.9.0
+2025-02-24T05:30:40.5781250Z   Downloading coverage_conditional_plugin-0.9.0-py3-none-any.whl.metadata (6.9 kB)
+2025-02-24T05:30:40.7820350Z Collecting pillow==11.0.0
+2025-02-24T05:30:40.8220420Z   Downloading pillow-11.0.0-cp312-cp312-macosx_10_13_x86_64.whl.metadata (9.1 kB)
+2025-02-24T05:30:40.8385810Z Collecting pytest==8.3.4
+2025-02-24T05:30:40.8427560Z   Downloading pytest-8.3.4-py3-none-any.whl.metadata (7.5 kB)
+2025-02-24T05:30:40.8753160Z Collecting pytest-asyncio==0.25.3
+2025-02-24T05:30:40.8795230Z   Downloading pytest_asyncio-0.25.3-py3-none-any.whl.metadata (3.9 kB)
+2025-02-24T05:30:40.9073710Z Collecting packaging>=20.4 (from coverage-conditional-plugin==0.9.0)
+2025-02-24T05:30:40.9093020Z   Using cached packaging-24.2-py3-none-any.whl.metadata (3.2 kB)
+2025-02-24T05:30:40.9264380Z Collecting iniconfig (from pytest==8.3.4)
+2025-02-24T05:30:40.9305450Z   Downloading iniconfig-2.0.0-py3-none-any.whl.metadata (2.6 kB)
+2025-02-24T05:30:40.9522460Z Collecting pluggy<2,>=1.5 (from pytest==8.3.4)
+2025-02-24T05:30:40.9567800Z   Downloading pluggy-1.5.0-py3-none-any.whl.metadata (4.8 kB)
+2025-02-24T05:30:41.1175620Z Collecting fonttools<5.0.0,>=4.42.1 (from toga-cocoa==0.4.9.dev608+g01152b56b)
+2025-02-24T05:30:41.1241090Z   Downloading fonttools-4.56.0-cp312-cp312-macosx_10_13_x86_64.whl.metadata (101 kB)
+2025-02-24T05:30:41.1658150Z Collecting rubicon-objc<0.6.0,>=0.5.0 (from toga-cocoa==0.4.9.dev608+g01152b56b)
+2025-02-24T05:30:41.1712290Z   Downloading rubicon_objc-0.5.0-py3-none-any.whl.metadata (5.5 kB)
+2025-02-24T05:30:41.1925050Z Downloading coverage-7.6.12-cp312-cp312-macosx_10_13_x86_64.whl (208 kB)
+2025-02-24T05:30:41.2041920Z Downloading coverage_conditional_plugin-0.9.0-py3-none-any.whl (7.3 kB)
+2025-02-24T05:30:41.2173610Z Downloading pillow-11.0.0-cp312-cp312-macosx_10_13_x86_64.whl (3.1 MB)
+2025-02-24T05:30:41.2469620Z [?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/3.1 MB[0m [31m?[0m eta [36m-:--:--[0m
+2025-02-24T05:30:41.2481370Z [2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m3.1/3.1 MB[0m [31m119.0 MB/s[0m eta [36m0:00:00[0m
+2025-02-24T05:30:41.2517970Z [?25hDownloading pytest-8.3.4-py3-none-any.whl (343 kB)
+2025-02-24T05:30:41.2685150Z Downloading pytest_asyncio-0.25.3-py3-none-any.whl (19 kB)
+2025-02-24T05:30:41.2805780Z Downloading std_nslog-1.0.3-py3-none-any.whl (4.8 kB)
+2025-02-24T05:30:41.2933590Z Downloading fonttools-4.56.0-cp312-cp312-macosx_10_13_x86_64.whl (2.3 MB)
+2025-02-24T05:30:41.3194050Z [?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/2.3 MB[0m [31m?[0m eta [36m-:--:--[0m
+2025-02-24T05:30:41.3203530Z [2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m2.3/2.3 MB[0m [31m94.1 MB/s[0m eta [36m0:00:00[0m
+2025-02-24T05:30:41.3215130Z [?25hUsing cached packaging-24.2-py3-none-any.whl (65 kB)
+2025-02-24T05:30:41.3256210Z Downloading pluggy-1.5.0-py3-none-any.whl (20 kB)
+2025-02-24T05:30:41.3410210Z Downloading rubicon_objc-0.5.0-py3-none-any.whl (62 kB)
+2025-02-24T05:30:41.3507260Z Downloading iniconfig-2.0.0-py3-none-any.whl (5.9 kB)
+2025-02-24T05:30:41.3830680Z Building wheels for collected packages: travertino, toga-core, toga-cocoa
+2025-02-24T05:30:41.3841960Z   Building wheel for travertino (pyproject.toml): started
+2025-02-24T05:30:42.0654920Z   Building wheel for travertino (pyproject.toml): finished with status 'done'
+2025-02-24T05:30:42.1667390Z   Created wheel for travertino: filename=travertino-0.4.9.dev608+g01152b56b-py3-none-any.whl size=22881 sha256=e35d2107fe30dca9f9ebb06ea4c907c9246e03338df98a615235a2e0efb38d7d
+2025-02-24T05:30:42.1896740Z   Stored in directory: /private/var/folders/db/x5_t5x655c9_rftmy0wp2t2w0000gn/T/pip-ephem-wheel-cache-lqrf59yb/wheels/fb/03/30/94bfd0cf122995590b1f326d3b00ed8b247f6304287450f1c9
+2025-02-24T05:30:42.1957520Z   Building wheel for toga-core (pyproject.toml): started
+2025-02-24T05:30:42.9541930Z   Building wheel for toga-core (pyproject.toml): finished with status 'done'
+2025-02-24T05:30:42.9556450Z   Created wheel for toga-core: filename=toga_core-0.4.9.dev608+g01152b56b-py3-none-any.whl size=142837 sha256=eb981097a3c005c52ef1acd4f5ccf7d74692003476d761513f40267596975194
+2025-02-24T05:30:42.9565960Z   Stored in directory: /private/var/folders/db/x5_t5x655c9_rftmy0wp2t2w0000gn/T/pip-ephem-wheel-cache-lqrf59yb/wheels/9e/e8/ee/76b71fb42aa09373531dc76326216b74a6f01a510db217f28d
+2025-02-24T05:30:42.9609110Z   Building wheel for toga-cocoa (pyproject.toml): started
+2025-02-24T05:30:43.7877140Z   Building wheel for toga-cocoa (pyproject.toml): finished with status 'done'
+2025-02-24T05:30:43.7898880Z   Created wheel for toga-cocoa: filename=toga_cocoa-0.4.9.dev608+g01152b56b-py3-none-any.whl size=465441 sha256=554ae3e7c83aad016a9b16e2b78db250dc2978ad5dd423037a71c9f41bdd97ad
+2025-02-24T05:30:43.7909230Z   Stored in directory: /private/var/folders/db/x5_t5x655c9_rftmy0wp2t2w0000gn/T/pip-ephem-wheel-cache-lqrf59yb/wheels/86/ef/d1/42797be250353a77cb37d181b1b71efc9c429671ede4b810e1
+2025-02-24T05:30:43.7934690Z Successfully built travertino toga-core toga-cocoa
+2025-02-24T05:30:44.0238220Z Installing collected packages: travertino, std-nslog, rubicon-objc, pluggy, pillow, packaging, iniconfig, fonttools, coverage, toga-core, pytest, coverage-conditional-plugin, toga-cocoa, pytest-asyncio
+2025-02-24T05:30:46.2105030Z Successfully installed coverage-7.6.12 coverage-conditional-plugin-0.9.0 fonttools-4.56.0 iniconfig-2.0.0 packaging-24.2 pillow-11.0.0 pluggy-1.5.0 pytest-8.3.4 pytest-asyncio-0.25.3 rubicon-objc-0.5.0 std-nslog-1.0.3 toga-cocoa-0.4.9.dev608+g01152b56b toga-core-0.4.9.dev608+g01152b56b travertino-0.4.9.dev608+g01152b56b
+2025-02-24T05:30:46.6227610Z Installing app requirements... done
+2025-02-24T05:30:46.6362410Z Installing binary app requirements for arm64... started
+2025-02-24T05:30:47.2093420Z Looking in links: /Users/runner/work/toga/toga/dist
+2025-02-24T05:30:47.5743620Z Collecting coverage==7.6.12
+2025-02-24T05:30:47.5966330Z   Downloading coverage-7.6.12-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.5 kB)
+2025-02-24T05:30:47.7463980Z Collecting fonttools==4.56.0
+2025-02-24T05:30:47.7524930Z   Downloading fonttools-4.56.0-cp312-cp312-macosx_10_13_universal2.whl.metadata (101 kB)
+2025-02-24T05:30:47.9536980Z Collecting pillow==11.0.0
+2025-02-24T05:30:47.9588390Z   Downloading pillow-11.0.0-cp312-cp312-macosx_11_0_arm64.whl.metadata (9.1 kB)
+2025-02-24T05:30:48.0555020Z Downloading coverage-7.6.12-cp312-cp312-macosx_11_0_arm64.whl (208 kB)
+2025-02-24T05:30:48.0725400Z Downloading fonttools-4.56.0-cp312-cp312-macosx_10_13_universal2.whl (2.7 MB)
+2025-02-24T05:30:48.0963460Z [?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/2.7 MB[0m [31m?[0m eta [36m-:--:--[0m
+2025-02-24T05:30:48.0976180Z [2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m2.7/2.7 MB[0m [31m136.4 MB/s[0m eta [36m0:00:00[0m
+2025-02-24T05:30:48.1051340Z [?25hDownloading pillow-11.0.0-cp312-cp312-macosx_11_0_arm64.whl (3.0 MB)
+2025-02-24T05:30:48.1688100Z [?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/3.0 MB[0m [31m?[0m eta [36m-:--:--[0m
+2025-02-24T05:30:48.1851780Z [2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m3.0/3.0 MB[0m [31m47.6 MB/s[0m eta [36m0:00:00[0m
+2025-02-24T05:30:48.1902030Z [?25hInstalling collected packages: pillow, fonttools, coverage
+2025-02-24T05:30:49.7145270Z Successfully installed coverage-7.6.12 fonttools-4.56.0 pillow-11.0.0
+2025-02-24T05:30:49.8576800Z Installing binary app requirements for arm64... done
+2025-02-24T05:30:49.8703950Z Thinning libraries in app_packages.arm64...
+2025-02-24T05:30:55.9964240Z Merging app_packages.x86_64... started
+2025-02-24T05:30:57.1626890Z Merging app_packages.x86_64... done
+2025-02-24T05:30:57.1943740Z Merging app_packages.arm64... started
+2025-02-24T05:30:57.4258920Z Merging app_packages.arm64... done
+2025-02-24T05:30:57.4269980Z Merging libraries...
+2025-02-24T05:30:58.1831800Z 
+2025-02-24T05:30:58.1998890Z [2m[testbed][0m Installing application resources...
+2025-02-24T05:30:58.1999720Z Installing icons/testbed.icns as application icon... started
+2025-02-24T05:30:58.2000530Z Installing icons/testbed.icns as application icon... done
+2025-02-24T05:30:58.2001180Z 
+2025-02-24T05:30:58.2002270Z [2m[testbed][0m Removing unneeded app content...
+2025-02-24T05:30:58.2002950Z Removing unneeded app bundle content... started
+2025-02-24T05:30:59.0282860Z Removing unneeded app bundle content... done
+2025-02-24T05:30:59.0292420Z 
+2025-02-24T05:30:59.0302540Z [2m[testbed][0m Created build/testbed/macos/app
+2025-02-24T05:30:59.0316640Z 
+2025-02-24T05:30:59.0325870Z [2m[testbed][0m Building App...
+2025-02-24T05:30:59.0338080Z Renaming stub binary... started
+2025-02-24T05:30:59.0349290Z Renaming stub binary... done
+2025-02-24T05:30:59.0358500Z 
+2025-02-24T05:30:59.0369420Z [2m[testbed][0m Ad-hoc signing app...
+2025-02-24T05:31:05.2137610Z 
+2025-02-24T05:31:05.2148420Z [2m[testbed][0m Built build/testbed/macos/app/Toga Testbed.app (test mode)
+2025-02-24T05:31:05.4993250Z 
+2025-02-24T05:31:05.5013640Z [2m[testbed][0m Starting test_suite...
+2025-02-24T05:31:05.7767520Z ===========================================================================
+2025-02-24T05:31:07.8634160Z Waiting for app to be ready for testing... ready.
+2025-02-24T05:31:08.0986480Z ============================= test session starts ==============================
+2025-02-24T05:31:12.1183960Z collecting ... collected 604 items / 1 skipped
+2025-02-24T05:31:12.1239630Z 
+2025-02-24T05:31:12.8904190Z tests/app/test_app.py::test_main_window_toolbar PASSED                   [  0%]
+2025-02-24T05:31:13.0695940Z tests/app/test_app.py::test_system_menus PASSED                          [  0%]
+2025-02-24T05:31:13.5638890Z tests/app/test_app.py::test_menu_about PASSED                            [  0%]
+2025-02-24T05:31:13.7280780Z tests/app/test_app.py::test_menu_visit_homepage PASSED                   [  0%]
+2025-02-24T05:31:13.9490820Z tests/app/test_app.py::test_menu_items PASSED                            [  0%]
+2025-02-24T05:31:14.1745230Z tests/app/test_app.py::test_beep PASSED                                  [  0%]
+2025-02-24T05:31:14.3369660Z tests/app/test_app.py::test_screens PASSED                               [  1%]
+2025-02-24T05:31:14.6110710Z tests/app/test_app.py::test_app_icon PASSED                              [  1%]
+2025-02-24T05:31:14.7999310Z tests/app/test_app.py::test_dark_mode_state_read PASSED                  [  1%]
+2025-02-24T05:31:15.2772600Z tests/app/test_desktop.py::test_exit_on_close_main_window PASSED         [  1%]
+2025-02-24T05:31:15.4430450Z tests/app/test_desktop.py::test_menu_exit PASSED                         [  1%]
+2025-02-24T05:31:15.7108650Z tests/app/test_desktop.py::test_menu_close_windows PASSED                [  1%]
+2025-02-24T05:31:16.4483240Z tests/app/test_desktop.py::test_menu_minimize PASSED                     [  2%]
+2025-02-24T05:31:17.9207160Z tests/app/test_desktop.py::test_app_level_menu_hide PASSED               [  2%]
+2025-02-24T05:31:19.8896900Z tests/app/test_desktop.py::test_presentation_mode PASSED                 [  2%]
+2025-02-24T05:31:22.5136350Z tests/app/test_desktop.py::test_window_presentation_exit_on_another_window_presentation PASSED [  2%]
+2025-02-24T05:31:26.7373740Z tests/app/test_desktop.py::test_presentation_mode_exit_on_window_state_change[WindowState.MINIMIZED] PASSED [  2%]
+2025-02-24T05:31:30.6395090Z tests/app/test_desktop.py::test_presentation_mode_exit_on_window_state_change[WindowState.MAXIMIZED] PASSED [  2%]
+2025-02-24T05:31:35.1963900Z tests/app/test_desktop.py::test_presentation_mode_exit_on_window_state_change[WindowState.FULLSCREEN] PASSED [  3%]
+2025-02-24T05:31:35.5775010Z tests/app/test_desktop.py::test_show_hide_cursor PASSED                  [  3%]
+2025-02-24T05:31:37.5032310Z tests/app/test_desktop.py::test_current_window PASSED                    [  3%]
+2025-02-24T05:31:37.9916240Z tests/app/test_desktop.py::test_system_dpi_change[1.0-SystemEvents.DisplaySettingsChanged] XFAIL [  3%]
+2025-02-24T05:31:38.1527210Z tests/app/test_desktop.py::test_system_dpi_change[1.0-Form.LocationChanged] XFAIL [  3%]
+2025-02-24T05:31:38.3166880Z tests/app/test_desktop.py::test_system_dpi_change[1.0-Form.Resize] XFAIL [  3%]
+2025-02-24T05:31:38.4795850Z tests/app/test_desktop.py::test_system_dpi_change[1.25-SystemEvents.DisplaySettingsChanged] XFAIL [  4%]
+2025-02-24T05:31:38.6399420Z tests/app/test_desktop.py::test_system_dpi_change[1.25-Form.LocationChanged] XFAIL [  4%]
+2025-02-24T05:31:38.8026370Z tests/app/test_desktop.py::test_system_dpi_change[1.25-Form.Resize] XFAIL [  4%]
+2025-02-24T05:31:38.9685140Z tests/app/test_desktop.py::test_system_dpi_change[1.5-SystemEvents.DisplaySettingsChanged] XFAIL [  4%]
+2025-02-24T05:31:39.1319350Z tests/app/test_desktop.py::test_system_dpi_change[1.5-Form.LocationChanged] XFAIL [  4%]
+2025-02-24T05:31:39.3036670Z tests/app/test_desktop.py::test_system_dpi_change[1.5-Form.Resize] XFAIL [  4%]
+2025-02-24T05:31:39.4711120Z tests/app/test_desktop.py::test_system_dpi_change[1.75-SystemEvents.DisplaySettingsChanged] XFAIL [  5%]
+2025-02-24T05:31:39.6360550Z tests/app/test_desktop.py::test_system_dpi_change[1.75-Form.LocationChanged] XFAIL [  5%]
+2025-02-24T05:31:39.8020190Z tests/app/test_desktop.py::test_system_dpi_change[1.75-Form.Resize] XFAIL [  5%]
+2025-02-24T05:31:39.9664100Z tests/app/test_desktop.py::test_system_dpi_change[2.0-SystemEvents.DisplaySettingsChanged] XFAIL [  5%]
+2025-02-24T05:31:40.1381100Z tests/app/test_desktop.py::test_system_dpi_change[2.0-Form.LocationChanged] XFAIL [  5%]
+2025-02-24T05:31:40.3129650Z tests/app/test_desktop.py::test_system_dpi_change[2.0-Form.Resize] XFAIL [  5%]
+2025-02-24T05:31:40.6069650Z tests/app/test_desktop.py::test_session_based_app PASSED                 [  6%]
+2025-02-24T05:31:40.9416090Z tests/app/test_desktop.py::test_background_app PASSED                    [  6%]
+2025-02-24T05:31:41.6971030Z tests/app/test_dialogs.py::test_info_dialog PASSED                       [  6%]
+2025-02-24T05:31:42.4483090Z tests/app/test_dialogs.py::test_question_dialog[False] PASSED            [  6%]
+2025-02-24T05:31:43.2062630Z tests/app/test_dialogs.py::test_question_dialog[True] PASSED             [  6%]
+2025-02-24T05:31:43.9588930Z tests/app/test_dialogs.py::test_confirm_dialog[False] PASSED             [  6%]
+2025-02-24T05:31:44.7122490Z tests/app/test_dialogs.py::test_confirm_dialog[True] PASSED              [  7%]
+2025-02-24T05:31:45.5093380Z tests/app/test_dialogs.py::test_error_dialog PASSED                      [  7%]
+2025-02-24T05:31:46.4679130Z tests/app/test_dialogs.py::test_stack_trace_dialog[None] PASSED          [  7%]
+2025-02-24T05:31:47.2416490Z tests/app/test_dialogs.py::test_stack_trace_dialog[False] PASSED         [  7%]
+2025-02-24T05:31:48.0160350Z tests/app/test_dialogs.py::test_stack_trace_dialog[True] PASSED          [  7%]
+2025-02-24T05:31:49.7046490Z tests/app/test_dialogs.py::test_save_file_dialog[/path/to/file.txt-None-result0] PASSED [  7%]
+2025-02-24T05:31:50.2496890Z tests/app/test_dialogs.py::test_save_file_dialog[/path/to/file.txt-None-None] PASSED [  8%]
+2025-02-24T05:31:50.8025170Z tests/app/test_dialogs.py::test_save_file_dialog[/path/to/file.txt-file_types2-result2] PASSED [  8%]
+2025-02-24T05:31:51.3267110Z tests/app/test_dialogs.py::test_save_file_dialog[/path/to/file.txt-file_types3-None] PASSED [  8%]
+2025-02-24T05:31:52.0375100Z tests/app/test_dialogs.py::test_open_file_dialog[initial_directory0-None-False-result0] PASSED [  8%]
+2025-02-24T05:31:52.8968720Z tests/app/test_dialogs.py::test_open_file_dialog[initial_directory1-None-False-None] PASSED [  8%]
+2025-02-24T05:31:53.4751780Z tests/app/test_dialogs.py::test_open_file_dialog[None-None-False-result2] PASSED [  8%]
+2025-02-24T05:31:54.1728130Z tests/app/test_dialogs.py::test_open_file_dialog[initial_directory3-file_types3-False-result3] PASSED [  9%]
+2025-02-24T05:31:54.8773150Z tests/app/test_dialogs.py::test_open_file_dialog[initial_directory4-None-True-result4] PASSED [  9%]
+2025-02-24T05:31:55.5664290Z tests/app/test_dialogs.py::test_open_file_dialog[initial_directory5-None-True-result5] PASSED [  9%]
+2025-02-24T05:31:56.2773470Z tests/app/test_dialogs.py::test_open_file_dialog[initial_directory6-None-True-None] PASSED [  9%]
+2025-02-24T05:31:56.8650620Z tests/app/test_dialogs.py::test_open_file_dialog[None-None-True-result7] PASSED [  9%]
+2025-02-24T05:31:57.5708690Z tests/app/test_dialogs.py::test_open_file_dialog[initial_directory8-file_types8-True-result8] PASSED [  9%]
+2025-02-24T05:31:58.3135440Z tests/app/test_dialogs.py::test_select_folder_dialog[initial_directory0-False-result0] PASSED [ 10%]
+2025-02-24T05:31:59.0189270Z tests/app/test_dialogs.py::test_select_folder_dialog[initial_directory1-False-None] PASSED [ 10%]
+2025-02-24T05:31:59.6004880Z tests/app/test_dialogs.py::test_select_folder_dialog[None-False-result2] PASSED [ 10%]
+2025-02-24T05:32:00.3365550Z tests/app/test_dialogs.py::test_select_folder_dialog[initial_directory3-True-result3] PASSED [ 10%]
+2025-02-24T05:32:01.0753290Z tests/app/test_dialogs.py::test_select_folder_dialog[initial_directory4-True-result4] PASSED [ 10%]
+2025-02-24T05:32:01.7802200Z tests/app/test_dialogs.py::test_select_folder_dialog[initial_directory5-True-None] PASSED [ 10%]
+2025-02-24T05:32:01.9720000Z tests/app/test_document_app.py::test_new_document PASSED                 [ 11%]
+2025-02-24T05:32:02.3763510Z tests/app/test_document_app.py::test_open_document PASSED                [ 11%]
+2025-02-24T05:32:02.6802340Z tests/app/test_document_app.py::test_open_missing_document PASSED        [ 11%]
+2025-02-24T05:32:02.8815790Z tests/app/test_document_app.py::test_open_bad_document PASSED            [ 11%]
+2025-02-24T05:32:03.1518440Z tests/app/test_document_app.py::test_open_initial_document PASSED        [ 11%]
+2025-02-24T05:32:04.4690160Z tests/app/test_document_app.py::test_open_document_by_drag PASSED        [ 11%]
+2025-02-24T05:32:04.8752490Z tests/app/test_document_app.py::test_save_document PASSED                [ 12%]
+2025-02-24T05:32:05.4421450Z tests/app/test_document_app.py::test_save_as_document PASSED             [ 12%]
+2025-02-24T05:32:05.8466500Z tests/app/test_document_app.py::test_save_all_documents PASSED           [ 12%]
+2025-02-24T05:32:06.1264770Z tests/app/test_screens.py::test_name PASSED                              [ 12%]
+2025-02-24T05:32:06.2961690Z tests/app/test_screens.py::test_origin PASSED                            [ 12%]
+2025-02-24T05:32:06.4607020Z tests/app/test_screens.py::test_size PASSED                              [ 12%]
+2025-02-24T05:32:07.0062510Z tests/app/test_screens.py::test_as_image PASSED                          [ 13%]
+2025-02-24T05:32:07.1945220Z tests/hardware/test_camera.py::test_camera_properties[CameraProbe] PASSED [ 13%]
+2025-02-24T05:32:07.3832990Z tests/hardware/test_camera.py::test_grant_permission[CameraProbe] PASSED [ 13%]
+2025-02-24T05:32:07.5497820Z tests/hardware/test_camera.py::test_deny_permission[CameraProbe] PASSED  [ 13%]
+2025-02-24T05:32:08.5533500Z tests/hardware/test_camera.py::test_take_photo[CameraProbe] PASSED       [ 13%]
+2025-02-24T05:32:09.3673300Z tests/hardware/test_camera.py::test_flash_mode[CameraProbe] PASSED       [ 13%]
+2025-02-24T05:32:09.7592520Z tests/hardware/test_camera.py::test_take_photo_unknown_permission[CameraProbe] PASSED [ 14%]
+2025-02-24T05:32:10.1520540Z tests/hardware/test_camera.py::test_cancel_photo[CameraProbe] PASSED     [ 14%]
+2025-02-24T05:32:10.3197500Z tests/hardware/test_camera.py::test_take_photo_no_permission[CameraProbe] PASSED [ 14%]
+2025-02-24T05:32:10.7279160Z tests/hardware/test_camera.py::test_change_camera[CameraProbe] PASSED    [ 14%]
+2025-02-24T05:32:11.1391920Z tests/hardware/test_camera.py::test_no_cameras[CameraProbe] PASSED       [ 14%]
+2025-02-24T05:32:11.3246070Z tests/hardware/test_location.py::test_grant_permission[LocationProbe] PASSED [ 14%]
+2025-02-24T05:32:11.5010360Z tests/hardware/test_location.py::test_deny_permission[LocationProbe] PASSED [ 15%]
+2025-02-24T05:32:11.6790110Z tests/hardware/test_location.py::test_grant_background_permission[LocationProbe] PASSED [ 15%]
+2025-02-24T05:32:11.8513180Z tests/hardware/test_location.py::test_deny_background_permission[LocationProbe] PASSED [ 15%]
+2025-02-24T05:32:12.0432490Z tests/hardware/test_location.py::test_current_location[LocationProbe] PASSED [ 15%]
+2025-02-24T05:32:12.2265230Z tests/hardware/test_location.py::test_track_location[LocationProbe] PASSED [ 15%]
+2025-02-24T05:32:12.4022310Z tests/hardware/test_location.py::test_track_location_retrack[LocationProbe] PASSED [ 15%]
+2025-02-24T05:32:12.5762550Z tests/hardware/test_location.py::test_stop_tracking_when_already_stopped[LocationProbe] PASSED [ 16%]
+2025-02-24T05:32:12.7727220Z tests/hardware/test_location.py::test_location_error[LocationProbe] PASSED [ 16%]
+2025-02-24T05:32:12.9478270Z tests/hardware/test_location.py::test_location_tracking_start_error[LocationProbe] XFAIL [ 16%]
+2025-02-24T05:32:13.1205910Z tests/hardware/test_location.py::test_no_permission[LocationProbe] PASSED [ 16%]
+2025-02-24T05:32:13.2929860Z tests/test_command.py::test_unknown_system_command PASSED                [ 16%]
+2025-02-24T05:32:13.5194810Z tests/test_fonts.py::test_use_system_font_fallback PASSED                [ 16%]
+2025-02-24T05:32:14.5628790Z tests/test_fonts.py::test_font_options PASSED                            [ 17%]
+2025-02-24T05:32:14.9697720Z tests/test_fonts.py::test_font_file_loaded[Font Awesome 5 Free Solid-resources/fonts/Font Awesome 5 Free-Solid-900.otf-font_kwargs0-False] PASSED [ 17%]
+2025-02-24T05:32:15.2027450Z tests/test_fonts.py::test_font_file_loaded[Endor-resources/fonts/ENDOR___.ttf-font_kwargs1-False] PASSED [ 17%]
+2025-02-24T05:32:15.4176430Z tests/test_fonts.py::test_font_file_loaded[Endor-resources/fonts/ENDOR___.ttf-font_kwargs2-True] PASSED [ 17%]
+2025-02-24T05:32:15.6487620Z tests/test_fonts.py::test_font_file_loaded[Roboto-resources/fonts/Roboto-Bold.ttf-font_kwargs3-False] PASSED [ 17%]
+2025-02-24T05:32:15.8840040Z tests/test_fonts.py::test_font_file_loaded[Roboto-resources/fonts/Roboto-Italic.ttf-font_kwargs4-False] PASSED [ 17%]
+2025-02-24T05:32:16.1147770Z tests/test_fonts.py::test_font_file_loaded[Roboto-resources/fonts/Roboto-BoldItalic.ttf-font_kwargs5-False] PASSED [ 18%]
+2025-02-24T05:32:16.2991760Z tests/test_fonts.py::test_non_existent_font_file PASSED                  [ 18%]
+2025-02-24T05:32:16.5127260Z tests/test_fonts.py::test_corrupted_font_file PASSED                     [ 18%]
+2025-02-24T05:32:16.7152210Z tests/test_icons.py::test_icon PASSED                                    [ 18%]
+2025-02-24T05:32:16.9546510Z tests/test_icons.py::test_app_icon PASSED                                [ 18%]
+2025-02-24T05:32:17.1336840Z tests/test_icons.py::test_system_icon PASSED                             [ 18%]
+2025-02-24T05:32:17.3114310Z tests/test_icons.py::test_platform_icon PASSED                           [ 19%]
+2025-02-24T05:32:17.4992180Z tests/test_icons.py::test_bad_icon_file PASSED                           [ 19%]
+2025-02-24T05:32:17.6826490Z tests/test_images.py::test_local_image PASSED                            [ 19%]
+2025-02-24T05:32:17.8594620Z tests/test_images.py::test_raw_image PASSED                              [ 19%]
+2025-02-24T05:32:18.0433350Z tests/test_images.py::test_bad_image_file PASSED                         [ 19%]
+2025-02-24T05:32:18.2399490Z tests/test_images.py::test_buffer_image PASSED                           [ 19%]
+2025-02-24T05:32:18.4261560Z tests/test_images.py::test_pil_raw_and_data_image PASSED                 [ 20%]
+2025-02-24T05:32:18.6107970Z tests/test_images.py::test_bad_image_data PASSED                         [ 20%]
+2025-02-24T05:32:18.8229260Z tests/test_images.py::test_save PASSED                                   [ 20%]
+2025-02-24T05:32:19.0107600Z tests/test_keys.py::test_key_combinations[a-key_data0] PASSED            [ 20%]
+2025-02-24T05:32:19.1866790Z tests/test_keys.py::test_key_combinations[A-key_data1] PASSED            [ 20%]
+2025-02-24T05:32:19.3642470Z tests/test_keys.py::test_key_combinations[<mod 1>a-key_data2] PASSED     [ 20%]
+2025-02-24T05:32:19.5421470Z tests/test_keys.py::test_key_combinations[<mod 2>a-key_data3] PASSED     [ 21%]
+2025-02-24T05:32:19.7238750Z tests/test_keys.py::test_key_combinations[<mod 3>a-key_data4] PASSED     [ 21%]
+2025-02-24T05:32:19.9054000Z tests/test_keys.py::test_key_combinations[<mod 1><mod 2>a-key_data5] PASSED [ 21%]
+2025-02-24T05:32:20.0891290Z tests/test_keys.py::test_key_combinations[<mod 2><mod 1>a-key_data6] PASSED [ 21%]
+2025-02-24T05:32:20.2678220Z tests/test_keys.py::test_key_combinations[<mod 1><mod 2><mod 3>A-key_data7] PASSED [ 21%]
+2025-02-24T05:32:20.4443070Z tests/test_keys.py::test_key_combinations[1-key_data8] PASSED            [ 21%]
+2025-02-24T05:32:20.6178870Z tests/test_keys.py::test_key_combinations[!-key_data9] PASSED            [ 22%]
+2025-02-24T05:32:20.7999800Z tests/test_keys.py::test_key_combinations[Key.F5-key_data10] PASSED      [ 22%]
+2025-02-24T05:32:20.9822980Z tests/test_keys.py::test_key_combinations[Key.HOME-key_data11] PASSED    [ 22%]
+2025-02-24T05:32:21.1687180Z tests/test_keys.py::test_key_combinations[<home><mod 1>-key_data12] PASSED [ 22%]
+2025-02-24T05:32:21.3585610Z tests/test_keys.py::test_key_combinations[numpad:5<mod 1>-key_data13] PASSED [ 22%]
+2025-02-24T05:32:21.5403840Z tests/test_keys.py::test_key_combinations[<mod 1>;-key_data14] PASSED    [ 22%]
+2025-02-24T05:32:21.7362700Z tests/test_keys.py::test_key_combinations[<mod 1> -key_data15] PASSED    [ 23%]
+2025-02-24T05:32:21.9454030Z tests/test_keys.py::test_key_combinations[<mod 1>'-key_data16] PASSED    [ 23%]
+2025-02-24T05:32:22.2224420Z tests/test_keys.py::test_key_combinations[<mod 1>|-key_data17] PASSED    [ 23%]
+2025-02-24T05:32:22.4678240Z tests/test_paths.py::test_app_paths[config] PASSED                       [ 23%]
+2025-02-24T05:32:22.6972990Z tests/test_paths.py::test_app_paths[data] PASSED                         [ 23%]
+2025-02-24T05:32:22.8847990Z tests/test_paths.py::test_app_paths[cache] PASSED                        [ 23%]
+2025-02-24T05:32:23.1620400Z tests/test_paths.py::test_app_paths[logs] PASSED                         [ 24%]
+2025-02-24T05:32:23.7883520Z tests/test_statusicons.py::test_add_remove PASSED                        [ 24%]
+2025-02-24T05:32:24.0245710Z tests/test_statusicons.py::test_unknown_status_icon PASSED               [ 24%]
+2025-02-24T05:32:24.3468970Z tests/test_statusicons.py::test_activate_button_icon PASSED              [ 24%]
+2025-02-24T05:32:24.5325020Z tests/test_statusicons.py::test_activate_status_menu_item PASSED         [ 24%]
+2025-02-24T05:32:24.7783070Z tests/widgets/test_activityindicator.py::test_enable_noop <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 24%]
+2025-02-24T05:32:25.1365210Z tests/widgets/test_activityindicator.py::test_focus_noop <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 25%]
+2025-02-24T05:32:25.3520810Z tests/widgets/test_activityindicator.py::test_cleanup <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/conftest.py PASSED [ 25%]
+2025-02-24T05:32:25.5662370Z tests/widgets/test_activityindicator.py::test_start_stop PASSED          [ 25%]
+2025-02-24T05:32:25.7697020Z tests/widgets/test_activityindicator.py::test_fixed_square_widget_size PASSED [ 25%]
+2025-02-24T05:32:26.0343650Z tests/widgets/test_base.py::test_visibility PASSED                       [ 25%]
+2025-02-24T05:32:26.2802840Z tests/widgets/test_base.py::test_parenting PASSED                        [ 25%]
+2025-02-24T05:32:26.4937690Z tests/widgets/test_base.py::test_tab_index PASSED                        [ 25%]
+2025-02-24T05:32:26.7181790Z tests/widgets/test_box.py::test_background_color <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 26%]
+2025-02-24T05:32:26.9233020Z tests/widgets/test_box.py::test_background_color_reset <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 26%]
+2025-02-24T05:32:27.1362650Z tests/widgets/test_box.py::test_background_color_transparent <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 26%]
+2025-02-24T05:32:27.3431060Z tests/widgets/test_box.py::test_enable_noop <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 26%]
+2025-02-24T05:32:27.5556480Z tests/widgets/test_box.py::test_flex_widget_size <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 26%]
+2025-02-24T05:32:27.7893570Z tests/widgets/test_box.py::test_focus_noop <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 26%]
+2025-02-24T05:32:28.0030650Z tests/widgets/test_box.py::test_cleanup <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/conftest.py PASSED [ 27%]
+2025-02-24T05:32:28.2403980Z tests/widgets/test_button.py::test_background_color <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 27%]
+2025-02-24T05:32:28.4621800Z tests/widgets/test_button.py::test_background_color_reset <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 27%]
+2025-02-24T05:32:28.6810960Z tests/widgets/test_button.py::test_color <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py XFAIL [ 27%]
+2025-02-24T05:32:28.9019500Z tests/widgets/test_button.py::test_color_reset <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py XFAIL [ 27%]
+2025-02-24T05:32:29.1176090Z tests/widgets/test_button.py::test_enabled <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 27%]
+2025-02-24T05:32:29.3641180Z tests/widgets/test_button.py::test_flex_horizontal_widget_size <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 28%]
+2025-02-24T05:32:29.6073580Z tests/widgets/test_button.py::test_font <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 28%]
+2025-02-24T05:32:29.8732840Z tests/widgets/test_button.py::test_font_attrs <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 28%]
+2025-02-24T05:32:30.0976730Z tests/widgets/test_button.py::test_text_width_change <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 28%]
+2025-02-24T05:32:30.3687230Z tests/widgets/test_button.py::test_focus <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 28%]
+2025-02-24T05:32:30.5905710Z tests/widgets/test_button.py::test_cleanup <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/conftest.py PASSED [ 28%]
+2025-02-24T05:32:30.8986600Z tests/widgets/test_button.py::test_text PASSED                           [ 29%]
+2025-02-24T05:32:31.1369640Z tests/widgets/test_button.py::test_icon PASSED                           [ 29%]
+2025-02-24T05:32:31.5774400Z tests/widgets/test_button.py::test_press PASSED                          [ 29%]
+2025-02-24T05:32:31.7996410Z tests/widgets/test_button.py::test_background_color_transparent PASSED   [ 29%]
+2025-02-24T05:32:32.0814110Z tests/widgets/test_canvas.py::test_background_color <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 29%]
+2025-02-24T05:32:32.2945630Z tests/widgets/test_canvas.py::test_background_color_reset <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 29%]
+2025-02-24T05:32:32.5116820Z tests/widgets/test_canvas.py::test_background_color_transparent <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 30%]
+2025-02-24T05:32:32.7247200Z tests/widgets/test_canvas.py::test_enable_noop <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 30%]
+2025-02-24T05:32:32.9584460Z tests/widgets/test_canvas.py::test_flex_widget_size <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 30%]
+2025-02-24T05:32:33.2131590Z tests/widgets/test_canvas.py::test_focus_noop <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 30%]
+2025-02-24T05:32:33.4281290Z tests/widgets/test_canvas.py::test_cleanup <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/conftest.py PASSED [ 30%]
+2025-02-24T05:32:33.6499790Z tests/widgets/test_canvas.py::test_resize PASSED                         [ 30%]
+2025-02-24T05:32:33.9000490Z tests/widgets/test_canvas.py::test_press PASSED                          [ 31%]
+2025-02-24T05:32:34.1276610Z tests/widgets/test_canvas.py::test_activate PASSED                       [ 31%]
+2025-02-24T05:32:34.3572360Z tests/widgets/test_canvas.py::test_drag PASSED                           [ 31%]
+2025-02-24T05:32:34.5868690Z tests/widgets/test_canvas.py::test_alt_press PASSED                      [ 31%]
+2025-02-24T05:32:34.8162780Z tests/widgets/test_canvas.py::test_alt_drag PASSED                       [ 31%]
+2025-02-24T05:32:35.1213690Z tests/widgets/test_canvas.py::test_image_data PASSED                     [ 31%]
+2025-02-24T05:32:35.7802410Z tests/widgets/test_canvas.py::test_transparency PASSED                   [ 32%]
+2025-02-24T05:32:36.4452710Z tests/widgets/test_canvas.py::test_paths PASSED                          [ 32%]
+2025-02-24T05:32:37.1012420Z tests/widgets/test_canvas.py::test_bezier_curve PASSED                   [ 32%]
+2025-02-24T05:32:37.7723700Z tests/widgets/test_canvas.py::test_quadratic_curve PASSED                [ 32%]
+2025-02-24T05:32:38.4373390Z tests/widgets/test_canvas.py::test_arc PASSED                            [ 32%]
+2025-02-24T05:32:39.1018290Z tests/widgets/test_canvas.py::test_ellipse PASSED                        [ 32%]
+2025-02-24T05:32:39.7596220Z tests/widgets/test_canvas.py::test_ellipse_path PASSED                   [ 33%]
+2025-02-24T05:32:40.4310130Z tests/widgets/test_canvas.py::test_rect PASSED                           [ 33%]
+2025-02-24T05:32:41.0928810Z tests/widgets/test_canvas.py::test_fill PASSED                           [ 33%]
+2025-02-24T05:32:41.7573360Z tests/widgets/test_canvas.py::test_stroke PASSED                         [ 33%]
+2025-02-24T05:32:42.4287170Z tests/widgets/test_canvas.py::test_closed_path_context PASSED            [ 33%]
+2025-02-24T05:32:43.0907560Z tests/widgets/test_canvas.py::test_fill_context PASSED                   [ 33%]
+2025-02-24T05:32:43.7486540Z tests/widgets/test_canvas.py::test_stroke_context PASSED                 [ 34%]
+2025-02-24T05:32:44.4151490Z tests/widgets/test_canvas.py::test_transforms PASSED                     [ 34%]
+2025-02-24T05:32:45.1530850Z tests/widgets/test_canvas.py::test_write_text PASSED                     [ 34%]
+2025-02-24T05:32:45.8778980Z tests/widgets/test_canvas.py::test_multiline_text PASSED                 [ 34%]
+2025-02-24T05:32:46.0619350Z tests/widgets/test_dateinput.py::test_background_color <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py SKIPPED [ 34%]
+2025-02-24T05:32:46.2422340Z tests/widgets/test_dateinput.py::test_background_color_reset <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py SKIPPED [ 34%]
+2025-02-24T05:32:46.4271660Z tests/widgets/test_dateinput.py::test_background_color_transparent <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py SKIPPED [ 35%]
+2025-02-24T05:32:46.6096090Z tests/widgets/test_dateinput.py::test_color <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py SKIPPED [ 35%]
+2025-02-24T05:32:46.7934070Z tests/widgets/test_dateinput.py::test_color_reset <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py SKIPPED [ 35%]
+2025-02-24T05:32:46.9786150Z tests/widgets/test_dateinput.py::test_enabled <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py SKIPPED [ 35%]
+2025-02-24T05:32:47.1671480Z tests/widgets/test_dateinput.py::test_flex_horizontal_widget_size <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py SKIPPED [ 35%]
+2025-02-24T05:32:47.3577300Z tests/widgets/test_dateinput.py::test_cleanup <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/conftest.py SKIPPED [ 35%]
+2025-02-24T05:32:47.5082250Z tests/widgets/test_dateinput.py::test_init SKIPPED (not yet implemented
+2025-02-24T05:32:47.5456600Z on macOS)                                                                [ 36%]
+2025-02-24T05:32:47.6880540Z tests/widgets/test_dateinput.py::test_value SKIPPED (not yet implemented
+2025-02-24T05:32:47.7275760Z on macOS)                                                                [ 36%]
+2025-02-24T05:32:47.8803790Z tests/widgets/test_dateinput.py::test_change SKIPPED (not yet
+2025-02-24T05:32:47.9180120Z implemented on macOS)                                                    [ 36%]
+2025-02-24T05:32:48.0613390Z tests/widgets/test_dateinput.py::test_min SKIPPED (not yet implemented
+2025-02-24T05:32:48.0986840Z on macOS)                                                                [ 36%]
+2025-02-24T05:32:48.2414990Z tests/widgets/test_dateinput.py::test_max SKIPPED (not yet implemented
+2025-02-24T05:32:48.2812620Z on macOS)                                                                [ 36%]
+2025-02-24T05:32:48.9271010Z tests/widgets/test_detailedlist.py::test_enable_noop <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 36%]
+2025-02-24T05:32:49.6460980Z tests/widgets/test_detailedlist.py::test_flex_widget_size <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 37%]
+2025-02-24T05:32:50.2023470Z tests/widgets/test_detailedlist.py::test_focus_noop <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 37%]
+2025-02-24T05:32:50.4590570Z tests/widgets/test_detailedlist.py::test_cleanup <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/conftest.py PASSED [ 37%]
+2025-02-24T05:32:51.1696120Z tests/widgets/test_detailedlist.py::test_scroll PASSED                   [ 37%]
+2025-02-24T05:32:52.0887470Z tests/widgets/test_detailedlist.py::test_select PASSED                   [ 37%]
+2025-02-24T05:32:52.6659320Z tests/widgets/test_detailedlist.py::test_row_changes PASSED              [ 37%]
+2025-02-24T05:32:53.6833850Z tests/widgets/test_detailedlist.py::test_refresh PASSED                  [ 38%]
+2025-02-24T05:32:55.9612540Z tests/widgets/test_detailedlist.py::test_actions PASSED                  [ 38%]
+2025-02-24T05:32:56.2017640Z tests/widgets/test_divider.py::test_enable_noop <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 38%]
+2025-02-24T05:32:56.4502880Z tests/widgets/test_divider.py::test_focus_noop <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 38%]
+2025-02-24T05:32:56.6859820Z tests/widgets/test_divider.py::test_cleanup <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/conftest.py PASSED [ 38%]
+2025-02-24T05:32:56.9167570Z tests/widgets/test_divider.py::test_directions PASSED                    [ 38%]
+2025-02-24T05:32:57.1640010Z tests/widgets/test_imageview.py::test_background_color <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 39%]
+2025-02-24T05:32:57.4026950Z tests/widgets/test_imageview.py::test_background_color_reset <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 39%]
+2025-02-24T05:32:57.6308120Z tests/widgets/test_imageview.py::test_background_color_transparent <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 39%]
+2025-02-24T05:32:57.8581030Z tests/widgets/test_imageview.py::test_enable_noop <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 39%]
+2025-02-24T05:32:58.1221890Z tests/widgets/test_imageview.py::test_focus_noop <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 39%]
+2025-02-24T05:32:58.3544370Z tests/widgets/test_imageview.py::test_cleanup <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/conftest.py PASSED [ 39%]
+2025-02-24T05:32:58.6009410Z tests/widgets/test_imageview.py::test_implicit_size PASSED               [ 40%]
+2025-02-24T05:32:58.8333140Z tests/widgets/test_imageview.py::test_explicit_width PASSED              [ 40%]
+2025-02-24T05:32:59.0679550Z tests/widgets/test_imageview.py::test_explicit_height PASSED             [ 40%]
+2025-02-24T05:32:59.2981230Z tests/widgets/test_imageview.py::test_explicit_size PASSED               [ 40%]
+2025-02-24T05:32:59.5217210Z tests/widgets/test_label.py::test_background_color <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 40%]
+2025-02-24T05:32:59.7377370Z tests/widgets/test_label.py::test_background_color_reset <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 40%]
+2025-02-24T05:32:59.9643950Z tests/widgets/test_label.py::test_background_color_transparent <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 41%]
+2025-02-24T05:33:00.1913020Z tests/widgets/test_label.py::test_color <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 41%]
+2025-02-24T05:33:00.4152330Z tests/widgets/test_label.py::test_color_reset <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 41%]
+2025-02-24T05:33:00.6492260Z tests/widgets/test_label.py::test_enabled <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 41%]
+2025-02-24T05:33:00.8900890Z tests/widgets/test_label.py::test_flex_horizontal_widget_size <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 41%]
+2025-02-24T05:33:01.1484130Z tests/widgets/test_label.py::test_focus_noop <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 41%]
+2025-02-24T05:33:01.3817950Z tests/widgets/test_label.py::test_font <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 42%]
+2025-02-24T05:33:01.6371710Z tests/widgets/test_label.py::test_font_attrs <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 42%]
+2025-02-24T05:33:01.9096110Z tests/widgets/test_label.py::test_text <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 42%]
+2025-02-24T05:33:02.1338410Z tests/widgets/test_label.py::test_text_align <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 42%]
+2025-02-24T05:33:02.3528600Z tests/widgets/test_label.py::test_text_width_change <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 42%]
+2025-02-24T05:33:02.5990410Z tests/widgets/test_label.py::test_cleanup <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/conftest.py PASSED [ 42%]
+2025-02-24T05:33:02.8329200Z tests/widgets/test_label.py::test_multiline PASSED                       [ 43%]
+2025-02-24T05:33:04.4055870Z tests/widgets/test_mapview.py::test_flex_widget_size <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 43%]
+2025-02-24T05:33:05.6948530Z tests/widgets/test_mapview.py::test_focus <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 43%]
+2025-02-24T05:33:06.0014870Z tests/widgets/test_mapview.py::test_cleanup <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/conftest.py PASSED [ 43%]
+2025-02-24T05:33:10.4669780Z tests/widgets/test_mapview.py::test_location XPASS (Test is unreliable
+2025-02-24T05:33:10.5193170Z on macOS x86_64)                                                         [ 43%]
+2025-02-24T05:33:20.1585080Z tests/widgets/test_mapview.py::test_zoom XPASS (Test is unreliable on
+2025-02-24T05:33:20.2172260Z macOS x86_64)                                                            [ 43%]
+2025-02-24T05:33:24.1254230Z === Messages dropped during live streaming (use `log show` to see what they were)
+2025-02-24T05:33:24.1265040Z === Messages dropped during live streaming (use `log show` to see what they were)
+2025-02-24T05:33:24.1277160Z tests/widgets/test_mapview.py::test_add_pins PASSED                      [ 44%]
+2025-02-24T05:33:27.0562380Z tests/widgets/test_mapview.py::test_select_pin PASSED                    [ 44%]
+2025-02-24T05:33:27.4061050Z tests/widgets/test_multilinetextinput.py::test_background_color <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 44%]
+2025-02-24T05:33:27.6502880Z tests/widgets/test_multilinetextinput.py::test_background_color_reset <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 44%]
+2025-02-24T05:33:27.8954460Z tests/widgets/test_multilinetextinput.py::test_background_color_transparent <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 44%]
+2025-02-24T05:33:28.1454070Z tests/widgets/test_multilinetextinput.py::test_color <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 44%]
+2025-02-24T05:33:28.3847430Z tests/widgets/test_multilinetextinput.py::test_color_reset <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 45%]
+2025-02-24T05:33:28.6287890Z tests/widgets/test_multilinetextinput.py::test_enabled <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 45%]
+2025-02-24T05:33:28.9088290Z tests/widgets/test_multilinetextinput.py::test_flex_widget_size <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 45%]
+2025-02-24T05:33:29.2173310Z tests/widgets/test_multilinetextinput.py::test_focus <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 45%]
+2025-02-24T05:33:29.4715030Z tests/widgets/test_multilinetextinput.py::test_font <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 45%]
+2025-02-24T05:33:29.7479890Z tests/widgets/test_multilinetextinput.py::test_font_attrs <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 45%]
+2025-02-24T05:33:30.0278990Z tests/widgets/test_multilinetextinput.py::test_placeholder <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 46%]
+2025-02-24T05:33:30.3012140Z tests/widgets/test_multilinetextinput.py::test_placeholder_color <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 46%]
+2025-02-24T05:33:30.6201940Z tests/widgets/test_multilinetextinput.py::test_placeholder_focus <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 46%]
+2025-02-24T05:33:30.8716400Z tests/widgets/test_multilinetextinput.py::test_readonly <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 46%]
+2025-02-24T05:33:31.1274220Z tests/widgets/test_multilinetextinput.py::test_text_align <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 46%]
+2025-02-24T05:33:31.4304760Z tests/widgets/test_multilinetextinput.py::test_text_value <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 46%]
+2025-02-24T05:33:31.7252950Z tests/widgets/test_multilinetextinput.py::test_on_change_focus[True-] <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/test_textinput.py PASSED [ 47%]
+2025-02-24T05:33:32.0406630Z tests/widgets/test_multilinetextinput.py::test_on_change_focus[True-placeholder] <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/test_textinput.py PASSED [ 47%]
+2025-02-24T05:33:32.3252110Z tests/widgets/test_multilinetextinput.py::test_on_change_focus[False-] <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/test_textinput.py PASSED [ 47%]
+2025-02-24T05:33:32.6110160Z tests/widgets/test_multilinetextinput.py::test_on_change_focus[False-placeholder] <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/test_textinput.py PASSED [ 47%]
+2025-02-24T05:33:32.8880560Z tests/widgets/test_multilinetextinput.py::test_on_change_programmatic[True-] <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/test_textinput.py PASSED [ 47%]
+2025-02-24T05:33:33.1642200Z tests/widgets/test_multilinetextinput.py::test_on_change_programmatic[True-placeholder] <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/test_textinput.py PASSED [ 47%]
+2025-02-24T05:33:33.4685070Z tests/widgets/test_multilinetextinput.py::test_on_change_programmatic[False-] <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/test_textinput.py PASSED [ 48%]
+2025-02-24T05:33:33.7639100Z tests/widgets/test_multilinetextinput.py::test_on_change_programmatic[False-placeholder] <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/test_textinput.py PASSED [ 48%]
+2025-02-24T05:33:34.1092890Z tests/widgets/test_multilinetextinput.py::test_on_change_user <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/test_textinput.py PASSED [ 48%]
+2025-02-24T05:33:34.4936690Z tests/widgets/test_multilinetextinput.py::test_undo_redo <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/test_textinput.py PASSED [ 48%]
+2025-02-24T05:33:34.7423570Z tests/widgets/test_multilinetextinput.py::test_value_not_hidden <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/test_textinput.py PASSED [ 48%]
+2025-02-24T05:33:34.9892620Z tests/widgets/test_multilinetextinput.py::test_cleanup <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/conftest.py PASSED [ 48%]
+2025-02-24T05:33:35.2902340Z tests/widgets/test_multilinetextinput.py::test_scroll_position PASSED    [ 49%]
+2025-02-24T05:33:35.6760980Z tests/widgets/test_numberinput.py::test_background_color <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 49%]
+2025-02-24T05:33:35.9208790Z tests/widgets/test_numberinput.py::test_background_color_reset <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 49%]
+2025-02-24T05:33:36.1700320Z tests/widgets/test_numberinput.py::test_background_color_transparent <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 49%]
+2025-02-24T05:33:36.4061320Z tests/widgets/test_numberinput.py::test_color <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 49%]
+2025-02-24T05:33:36.6356310Z tests/widgets/test_numberinput.py::test_color_reset <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 49%]
+2025-02-24T05:33:36.8925830Z tests/widgets/test_numberinput.py::test_enabled <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 50%]
+2025-02-24T05:33:37.1434930Z tests/widgets/test_numberinput.py::test_flex_horizontal_widget_size <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 50%]
+2025-02-24T05:33:37.4547640Z tests/widgets/test_numberinput.py::test_focus <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 50%]
+2025-02-24T05:33:37.7051740Z tests/widgets/test_numberinput.py::test_font <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 50%]
+2025-02-24T05:33:37.9759250Z tests/widgets/test_numberinput.py::test_font_attrs <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 50%]
+2025-02-24T05:33:38.2318250Z tests/widgets/test_numberinput.py::test_readonly <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 50%]
+2025-02-24T05:33:38.4772340Z tests/widgets/test_numberinput.py::test_text_align <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 50%]
+2025-02-24T05:33:38.7226600Z tests/widgets/test_numberinput.py::test_cleanup <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/conftest.py PASSED [ 51%]
+2025-02-24T05:33:39.0428580Z tests/widgets/test_numberinput.py::test_on_change_handler PASSED         [ 51%]
+2025-02-24T05:33:39.3507380Z tests/widgets/test_numberinput.py::test_focus_value_clipping PASSED      [ 51%]
+2025-02-24T05:33:39.6026710Z tests/widgets/test_numberinput.py::test_value PASSED                     [ 51%]
+2025-02-24T05:33:39.9429420Z tests/widgets/test_numberinput.py::test_increment_decrement PASSED       [ 51%]
+2025-02-24T05:33:40.3227560Z tests/widgets/test_numberinput.py::test_undo_redo PASSED                 [ 51%]
+2025-02-24T05:33:40.6600150Z tests/widgets/test_optioncontainer.py::test_enable_noop <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 52%]
+2025-02-24T05:33:41.0001430Z tests/widgets/test_optioncontainer.py::test_flex_widget_size <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 52%]
+2025-02-24T05:33:41.3103980Z tests/widgets/test_optioncontainer.py::test_focus_noop <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 52%]
+2025-02-24T05:33:41.5669070Z tests/widgets/test_optioncontainer.py::test_cleanup <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/conftest.py PASSED [ 52%]
+2025-02-24T05:33:41.8612890Z tests/widgets/test_optioncontainer.py::test_select_tab PASSED            [ 52%]
+2025-02-24T05:33:42.2943170Z tests/widgets/test_optioncontainer.py::test_select_tab_overflow PASSED   [ 52%]
+2025-02-24T05:33:42.5900380Z tests/widgets/test_optioncontainer.py::test_enable_tab PASSED            [ 53%]
+2025-02-24T05:33:42.9406670Z tests/widgets/test_optioncontainer.py::test_change_content PASSED        [ 53%]
+2025-02-24T05:33:43.2829780Z tests/widgets/test_passwordinput.py::test_background_color <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 53%]
+2025-02-24T05:33:43.5354170Z tests/widgets/test_passwordinput.py::test_background_color_reset <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 53%]
+2025-02-24T05:33:43.7893290Z tests/widgets/test_passwordinput.py::test_background_color_transparent <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 53%]
+2025-02-24T05:33:44.0480380Z tests/widgets/test_passwordinput.py::test_color <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 53%]
+2025-02-24T05:33:44.2983260Z tests/widgets/test_passwordinput.py::test_color_reset <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 54%]
+2025-02-24T05:33:44.5642000Z tests/widgets/test_passwordinput.py::test_enabled <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 54%]
+2025-02-24T05:33:44.8281410Z tests/widgets/test_passwordinput.py::test_flex_horizontal_widget_size <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 54%]
+2025-02-24T05:33:45.1753920Z tests/widgets/test_passwordinput.py::test_focus <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 54%]
+2025-02-24T05:33:45.4642130Z tests/widgets/test_passwordinput.py::test_font <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 54%]
+2025-02-24T05:33:45.7922220Z tests/widgets/test_passwordinput.py::test_font_attrs <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 54%]
+2025-02-24T05:33:46.1183720Z tests/widgets/test_passwordinput.py::test_placeholder <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 55%]
+2025-02-24T05:33:46.3993250Z tests/widgets/test_passwordinput.py::test_placeholder_color <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 55%]
+2025-02-24T05:33:46.8356700Z tests/widgets/test_passwordinput.py::test_placeholder_focus <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 55%]
+2025-02-24T05:33:47.1077890Z tests/widgets/test_passwordinput.py::test_readonly <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 55%]
+2025-02-24T05:33:47.3705700Z tests/widgets/test_passwordinput.py::test_text_align <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 55%]
+2025-02-24T05:33:47.7294460Z tests/widgets/test_passwordinput.py::test_on_change_focus[True-] <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/test_textinput.py PASSED [ 55%]
+2025-02-24T05:33:48.0891700Z tests/widgets/test_passwordinput.py::test_on_change_focus[True-placeholder] <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/test_textinput.py PASSED [ 56%]
+2025-02-24T05:33:48.4495440Z tests/widgets/test_passwordinput.py::test_on_change_focus[False-] <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/test_textinput.py PASSED [ 56%]
+2025-02-24T05:33:48.8138940Z tests/widgets/test_passwordinput.py::test_on_change_focus[False-placeholder] <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/test_textinput.py PASSED [ 56%]
+2025-02-24T05:33:49.1308030Z tests/widgets/test_passwordinput.py::test_on_change_programmatic[True-] <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/test_textinput.py PASSED [ 56%]
+2025-02-24T05:33:49.4467250Z tests/widgets/test_passwordinput.py::test_on_change_programmatic[True-placeholder] <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/test_textinput.py PASSED [ 56%]
+2025-02-24T05:33:49.7513720Z tests/widgets/test_passwordinput.py::test_on_change_programmatic[False-] <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/test_textinput.py PASSED [ 56%]
+2025-02-24T05:33:50.0591340Z tests/widgets/test_passwordinput.py::test_on_change_programmatic[False-placeholder] <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/test_textinput.py PASSED [ 57%]
+2025-02-24T05:33:50.4175740Z tests/widgets/test_passwordinput.py::test_on_change_user <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/test_textinput.py PASSED [ 57%]
+2025-02-24T05:33:50.7161530Z tests/widgets/test_passwordinput.py::test_on_confirm <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/test_textinput.py PASSED [ 57%]
+2025-02-24T05:33:51.0194320Z tests/widgets/test_passwordinput.py::test_text_value <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/test_textinput.py PASSED [ 57%]
+2025-02-24T05:33:51.4634020Z tests/widgets/test_passwordinput.py::test_undo_redo <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/test_textinput.py PASSED [ 57%]
+2025-02-24T05:33:51.7847750Z tests/widgets/test_passwordinput.py::test_validation <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/test_textinput.py PASSED [ 57%]
+2025-02-24T05:33:52.0575020Z tests/widgets/test_passwordinput.py::test_cleanup <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/conftest.py PASSED [ 58%]
+2025-02-24T05:33:52.3120190Z tests/widgets/test_passwordinput.py::test_value_hidden PASSED            [ 58%]
+2025-02-24T05:33:52.5485630Z tests/widgets/test_progressbar.py::test_enable_noop <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 58%]
+2025-02-24T05:33:52.7846810Z tests/widgets/test_progressbar.py::test_flex_horizontal_widget_size <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 58%]
+2025-02-24T05:33:53.0593630Z tests/widgets/test_progressbar.py::test_focus <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 58%]
+2025-02-24T05:33:53.3135380Z tests/widgets/test_progressbar.py::test_cleanup <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/conftest.py PASSED [ 58%]
+2025-02-24T05:33:53.5435140Z tests/widgets/test_progressbar.py::test_start_stop_determinate PASSED    [ 59%]
+2025-02-24T05:33:53.7707510Z tests/widgets/test_progressbar.py::test_start_stop_indeterminate PASSED  [ 59%]
+2025-02-24T05:33:53.9945580Z tests/widgets/test_progressbar.py::test_animation_starts_on_max_change PASSED [ 59%]
+2025-02-24T05:33:54.2254430Z tests/widgets/test_progressbar.py::test_position_change_on_max_change PASSED [ 59%]
+2025-02-24T05:33:55.2228060Z tests/widgets/test_scrollcontainer.py::test_background_color <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 59%]
+2025-02-24T05:33:56.1555150Z tests/widgets/test_scrollcontainer.py::test_background_color_reset <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 59%]
+2025-02-24T05:33:57.0762660Z tests/widgets/test_scrollcontainer.py::test_background_color_transparent <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 60%]
+2025-02-24T05:33:57.9980910Z tests/widgets/test_scrollcontainer.py::test_enable_noop <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 60%]
+2025-02-24T05:33:59.5673530Z tests/widgets/test_scrollcontainer.py::test_flex_widget_size <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 60%]
+2025-02-24T05:34:00.6047580Z tests/widgets/test_scrollcontainer.py::test_focus_noop <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 60%]
+2025-02-24T05:34:00.8688670Z tests/widgets/test_scrollcontainer.py::test_cleanup <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/conftest.py PASSED [ 60%]
+2025-02-24T05:34:01.8587220Z tests/widgets/test_scrollcontainer.py::test_clear_content PASSED         [ 60%]
+2025-02-24T05:34:03.3266670Z tests/widgets/test_scrollcontainer.py::test_margin PASSED                [ 61%]
+2025-02-24T05:34:04.7712730Z tests/widgets/test_scrollcontainer.py::test_enable_horizontal_scrolling PASSED [ 61%]
+2025-02-24T05:34:06.1896580Z tests/widgets/test_scrollcontainer.py::test_enable_vertical_scrolling PASSED [ 61%]
+2025-02-24T05:34:07.1200730Z tests/widgets/test_scrollcontainer.py::test_vertical_scroll PASSED       [ 61%]
+2025-02-24T05:34:08.0871380Z tests/widgets/test_scrollcontainer.py::test_vertical_scroll_small_content PASSED [ 61%]
+2025-02-24T05:34:09.1083370Z tests/widgets/test_scrollcontainer.py::test_horizontal_scroll PASSED     [ 61%]
+2025-02-24T05:34:10.0788200Z tests/widgets/test_scrollcontainer.py::test_horizontal_scroll_small_content PASSED [ 62%]
+2025-02-24T05:34:11.0909170Z tests/widgets/test_scrollcontainer.py::test_scroll_both PASSED           [ 62%]
+2025-02-24T05:34:12.1577020Z tests/widgets/test_scrollcontainer.py::test_manual_scroll PASSED         [ 62%]
+2025-02-24T05:34:13.4744390Z tests/widgets/test_scrollcontainer.py::test_no_content PASSED            [ 62%]
+2025-02-24T05:34:13.7405370Z tests/widgets/test_selection.py::test_background_color <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py XFAIL [ 62%]
+2025-02-24T05:34:13.9789410Z tests/widgets/test_selection.py::test_background_color_reset <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py XFAIL [ 62%]
+2025-02-24T05:34:14.2230910Z tests/widgets/test_selection.py::test_background_color_transparent <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py XFAIL [ 63%]
+2025-02-24T05:34:14.4775230Z tests/widgets/test_selection.py::test_color <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py XFAIL [ 63%]
+2025-02-24T05:34:14.7188640Z tests/widgets/test_selection.py::test_color_reset <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py XFAIL [ 63%]
+2025-02-24T05:34:14.9772630Z tests/widgets/test_selection.py::test_enabled <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 63%]
+2025-02-24T05:34:15.2539190Z tests/widgets/test_selection.py::test_flex_horizontal_widget_size <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 63%]
+2025-02-24T05:34:15.4980810Z tests/widgets/test_selection.py::test_font <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py XFAIL [ 63%]
+2025-02-24T05:34:15.7379550Z tests/widgets/test_selection.py::test_font_attrs <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py XFAIL [ 64%]
+2025-02-24T05:34:15.9827120Z tests/widgets/test_selection.py::test_text_align <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py XFAIL [ 64%]
+2025-02-24T05:34:16.2707930Z tests/widgets/test_selection.py::test_focus <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 64%]
+2025-02-24T05:34:16.5323140Z tests/widgets/test_selection.py::test_cleanup <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/conftest.py PASSED [ 64%]
+2025-02-24T05:34:16.8711250Z tests/widgets/test_selection.py::test_item_titles PASSED                 [ 64%]
+2025-02-24T05:34:17.4881100Z tests/widgets/test_selection.py::test_selection_change PASSED            [ 64%]
+2025-02-24T05:34:17.7943620Z tests/widgets/test_selection.py::test_source_changes PASSED              [ 65%]
+2025-02-24T05:34:18.0628840Z tests/widgets/test_selection.py::test_resize_on_content_change PASSED    [ 65%]
+2025-02-24T05:34:18.4151440Z tests/widgets/test_slider.py::test_enabled <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 65%]
+2025-02-24T05:34:18.7187920Z tests/widgets/test_slider.py::test_flex_horizontal_widget_size <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 65%]
+2025-02-24T05:34:19.0218350Z tests/widgets/test_slider.py::test_focus <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 65%]
+2025-02-24T05:34:19.2877530Z tests/widgets/test_slider.py::test_cleanup <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/conftest.py PASSED [ 65%]
+2025-02-24T05:34:19.5299870Z tests/widgets/test_slider.py::test_init PASSED                           [ 66%]
+2025-02-24T05:34:19.7427090Z tests/widgets/test_slider.py::test_init_handlers PASSED                  [ 66%]
+2025-02-24T05:34:20.1288070Z tests/widgets/test_slider.py::test_value PASSED                          [ 66%]
+2025-02-24T05:34:20.7496300Z tests/widgets/test_slider.py::test_change PASSED                         [ 66%]
+2025-02-24T05:34:21.0086510Z tests/widgets/test_slider.py::test_min PASSED                            [ 66%]
+2025-02-24T05:34:21.2690590Z tests/widgets/test_slider.py::test_max PASSED                            [ 66%]
+2025-02-24T05:34:21.6062800Z tests/widgets/test_slider.py::test_ticks PASSED                          [ 67%]
+2025-02-24T05:34:21.9007270Z tests/widgets/test_slider.py::test_value_with_ticks PASSED               [ 67%]
+2025-02-24T05:34:22.3123680Z tests/widgets/test_slider.py::test_range_with_ticks PASSED               [ 67%]
+2025-02-24T05:34:22.8388430Z tests/widgets/test_slider.py::test_press_release[press] PASSED           [ 67%]
+2025-02-24T05:34:23.0926940Z tests/widgets/test_slider.py::test_press_release[release] PASSED         [ 67%]
+2025-02-24T05:34:23.4660780Z tests/widgets/test_splitcontainer.py::test_enable_noop <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 67%]
+2025-02-24T05:34:23.8722690Z tests/widgets/test_splitcontainer.py::test_flex_widget_size <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 68%]
+2025-02-24T05:34:24.2188610Z tests/widgets/test_splitcontainer.py::test_focus_noop <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 68%]
+2025-02-24T05:34:24.4904650Z tests/widgets/test_splitcontainer.py::test_cleanup <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/conftest.py PASSED [ 68%]
+2025-02-24T05:34:25.1456550Z tests/widgets/test_splitcontainer.py::test_set_content PASSED            [ 68%]
+2025-02-24T05:34:25.7886050Z tests/widgets/test_splitcontainer.py::test_set_direction PASSED          [ 68%]
+2025-02-24T05:34:26.3371420Z tests/widgets/test_splitcontainer.py::test_move_splitter PASSED          [ 68%]
+2025-02-24T05:34:26.6470240Z tests/widgets/test_switch.py::test_color <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py XFAIL [ 69%]
+2025-02-24T05:34:26.9158540Z tests/widgets/test_switch.py::test_color_reset <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py XFAIL [ 69%]
+2025-02-24T05:34:27.1870330Z tests/widgets/test_switch.py::test_enabled <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 69%]
+2025-02-24T05:34:27.4779330Z tests/widgets/test_switch.py::test_flex_horizontal_widget_size <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 69%]
+2025-02-24T05:34:27.7665030Z tests/widgets/test_switch.py::test_font <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 69%]
+2025-02-24T05:34:28.0852280Z tests/widgets/test_switch.py::test_font_attrs <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 69%]
+2025-02-24T05:34:28.3449940Z tests/widgets/test_switch.py::test_text_width_change <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 70%]
+2025-02-24T05:34:28.6740910Z tests/widgets/test_switch.py::test_focus <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 70%]
+2025-02-24T05:34:28.9554260Z tests/widgets/test_switch.py::test_cleanup <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/conftest.py PASSED [ 70%]
+2025-02-24T05:34:29.3087110Z tests/widgets/test_switch.py::test_text PASSED                           [ 70%]
+2025-02-24T05:34:29.7939660Z tests/widgets/test_switch.py::test_press PASSED                          [ 70%]
+2025-02-24T05:34:30.0498720Z tests/widgets/test_switch.py::test_change_value PASSED                   [ 70%]
+2025-02-24T05:34:30.9308940Z tests/widgets/test_table.py::test_background_color <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 71%]
+2025-02-24T05:34:31.6561090Z tests/widgets/test_table.py::test_background_color_reset <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 71%]
+2025-02-24T05:34:32.3930240Z tests/widgets/test_table.py::test_enable_noop <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 71%]
+2025-02-24T05:34:33.2602160Z tests/widgets/test_table.py::test_flex_widget_size <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 71%]
+2025-02-24T05:34:34.0496720Z tests/widgets/test_table.py::test_focus_noop <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 71%]
+2025-02-24T05:34:34.7814550Z tests/widgets/test_table.py::test_font <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py SKIPPED [ 71%]
+2025-02-24T05:34:35.0718860Z tests/widgets/test_table.py::test_cleanup <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/conftest.py PASSED [ 72%]
+2025-02-24T05:34:36.2915910Z tests/widgets/test_table.py::test_scroll PASSED                          [ 72%]
+2025-02-24T05:34:37.5787800Z tests/widgets/test_table.py::test_keyboard_navigation PASSED             [ 72%]
+2025-02-24T05:34:39.2375200Z tests/widgets/test_table.py::test_select PASSED                          [ 72%]
+2025-02-24T05:34:40.3972190Z tests/widgets/test_table.py::test_activate PASSED                        [ 72%]
+2025-02-24T05:34:41.8479560Z tests/widgets/test_table.py::test_multiselect PASSED                     [ 72%]
+2025-02-24T05:34:42.8757400Z tests/widgets/test_table.py::test_row_changes PASSED                     [ 73%]
+2025-02-24T05:34:43.9118540Z tests/widgets/test_table.py::test_headerless_row_changes PASSED          [ 73%]
+2025-02-24T05:34:45.2250990Z tests/widgets/test_table.py::test_column_changes PASSED                  [ 73%]
+2025-02-24T05:34:46.4604970Z tests/widgets/test_table.py::test_headerless_column_changes PASSED       [ 73%]
+2025-02-24T05:34:47.2633120Z tests/widgets/test_table.py::test_remove_all_columns PASSED              [ 73%]
+2025-02-24T05:34:48.2371070Z tests/widgets/test_table.py::test_cell_icon PASSED                       [ 73%]
+2025-02-24T05:34:49.4533460Z tests/widgets/test_table.py::test_cell_widget PASSED                     [ 74%]
+2025-02-24T05:34:49.7248960Z tests/widgets/test_textinput.py::test_background_color <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 74%]
+2025-02-24T05:34:49.9768350Z tests/widgets/test_textinput.py::test_background_color_reset <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 74%]
+2025-02-24T05:34:50.2228410Z tests/widgets/test_textinput.py::test_background_color_transparent <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 74%]
+2025-02-24T05:34:50.4728850Z tests/widgets/test_textinput.py::test_color <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 74%]
+2025-02-24T05:34:50.7130660Z tests/widgets/test_textinput.py::test_color_reset <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 74%]
+2025-02-24T05:34:50.9773600Z tests/widgets/test_textinput.py::test_enabled <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 75%]
+2025-02-24T05:34:51.2279820Z tests/widgets/test_textinput.py::test_flex_horizontal_widget_size <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 75%]
+2025-02-24T05:34:51.5609920Z tests/widgets/test_textinput.py::test_focus <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 75%]
+2025-02-24T05:34:51.8289760Z tests/widgets/test_textinput.py::test_font <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 75%]
+2025-02-24T05:34:52.1116370Z tests/widgets/test_textinput.py::test_font_attrs <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 75%]
+2025-02-24T05:34:52.3730960Z tests/widgets/test_textinput.py::test_placeholder <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 75%]
+2025-02-24T05:34:52.6320720Z tests/widgets/test_textinput.py::test_placeholder_color <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 75%]
+2025-02-24T05:34:52.9725000Z tests/widgets/test_textinput.py::test_placeholder_focus <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 76%]
+2025-02-24T05:34:53.2341940Z tests/widgets/test_textinput.py::test_readonly <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 76%]
+2025-02-24T05:34:53.4967420Z tests/widgets/test_textinput.py::test_text_align <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 76%]
+2025-02-24T05:34:53.7703140Z tests/widgets/test_textinput.py::test_cleanup <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/conftest.py PASSED [ 76%]
+2025-02-24T05:34:54.0131120Z tests/widgets/test_textinput.py::test_value_not_hidden PASSED            [ 76%]
+2025-02-24T05:34:54.3012430Z tests/widgets/test_textinput.py::test_on_change_programmatic[True-] PASSED [ 76%]
+2025-02-24T05:34:54.5912390Z tests/widgets/test_textinput.py::test_on_change_programmatic[True-placeholder] PASSED [ 77%]
+2025-02-24T05:34:54.8788240Z tests/widgets/test_textinput.py::test_on_change_programmatic[False-] PASSED [ 77%]
+2025-02-24T05:34:55.1540160Z tests/widgets/test_textinput.py::test_on_change_programmatic[False-placeholder] PASSED [ 77%]
+2025-02-24T05:34:55.5374020Z tests/widgets/test_textinput.py::test_on_change_user PASSED              [ 77%]
+2025-02-24T05:34:55.8264010Z tests/widgets/test_textinput.py::test_on_change_focus[True-] PASSED      [ 77%]
+2025-02-24T05:34:56.1193010Z tests/widgets/test_textinput.py::test_on_change_focus[True-placeholder] PASSED [ 77%]
+2025-02-24T05:34:56.4100290Z tests/widgets/test_textinput.py::test_on_change_focus[False-] PASSED     [ 78%]
+2025-02-24T05:34:56.6970380Z tests/widgets/test_textinput.py::test_on_change_focus[False-placeholder] PASSED [ 78%]
+2025-02-24T05:34:56.9894960Z tests/widgets/test_textinput.py::test_on_confirm PASSED                  [ 78%]
+2025-02-24T05:34:57.2824130Z tests/widgets/test_textinput.py::test_validation PASSED                  [ 78%]
+2025-02-24T05:34:57.5825760Z tests/widgets/test_textinput.py::test_text_value PASSED                  [ 78%]
+2025-02-24T05:34:57.9785130Z tests/widgets/test_textinput.py::test_undo_redo PASSED                   [ 78%]
+2025-02-24T05:34:58.1960060Z tests/widgets/test_timeinput.py::test_background_color <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py SKIPPED [ 79%]
+2025-02-24T05:34:58.4121720Z tests/widgets/test_timeinput.py::test_background_color_reset <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py SKIPPED [ 79%]
+2025-02-24T05:34:58.6301010Z tests/widgets/test_timeinput.py::test_background_color_transparent <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py SKIPPED [ 79%]
+2025-02-24T05:34:58.8516920Z tests/widgets/test_timeinput.py::test_color <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py SKIPPED [ 79%]
+2025-02-24T05:34:59.0705110Z tests/widgets/test_timeinput.py::test_color_reset <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py SKIPPED [ 79%]
+2025-02-24T05:34:59.2830620Z tests/widgets/test_timeinput.py::test_enabled <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py SKIPPED [ 79%]
+2025-02-24T05:34:59.4985720Z tests/widgets/test_timeinput.py::test_flex_horizontal_widget_size <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py SKIPPED [ 80%]
+2025-02-24T05:34:59.7119470Z tests/widgets/test_timeinput.py::test_max <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/test_dateinput.py SKIPPED [ 80%]
+2025-02-24T05:34:59.9363310Z tests/widgets/test_timeinput.py::test_min <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/test_dateinput.py SKIPPED [ 80%]
+2025-02-24T05:35:00.1633050Z tests/widgets/test_timeinput.py::test_value <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/test_dateinput.py SKIPPED [ 80%]
+2025-02-24T05:35:00.3807960Z tests/widgets/test_timeinput.py::test_cleanup <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/conftest.py SKIPPED [ 80%]
+2025-02-24T05:35:00.5428260Z tests/widgets/test_timeinput.py::test_init SKIPPED (not yet implemented
+2025-02-24T05:35:00.5972130Z on macOS)                                                                [ 80%]
+2025-02-24T05:35:00.7574730Z tests/widgets/test_timeinput.py::test_change SKIPPED (not yet
+2025-02-24T05:35:00.8119830Z implemented on macOS)                                                    [ 81%]
+2025-02-24T05:35:01.5429510Z tests/widgets/test_tree.py::test_background_color <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 81%]
+2025-02-24T05:35:02.1344690Z tests/widgets/test_tree.py::test_background_color_reset <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 81%]
+2025-02-24T05:35:02.7120990Z tests/widgets/test_tree.py::test_enable_noop <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 81%]
+2025-02-24T05:35:03.3944400Z tests/widgets/test_tree.py::test_flex_widget_size <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 81%]
+2025-02-24T05:35:04.0378770Z tests/widgets/test_tree.py::test_focus_noop <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 81%]
+2025-02-24T05:35:04.6245960Z tests/widgets/test_tree.py::test_font <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py SKIPPED [ 82%]
+2025-02-24T05:35:04.9269250Z tests/widgets/test_tree.py::test_cleanup <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/conftest.py PASSED [ 82%]
+2025-02-24T05:35:07.0010340Z tests/widgets/test_tree.py::test_select PASSED                           [ 82%]
+2025-02-24T05:35:08.5081290Z tests/widgets/test_tree.py::test_expand_collapse PASSED                  [ 82%]
+2025-02-24T05:35:10.0477210Z tests/widgets/test_tree.py::test_activate PASSED                         [ 82%]
+2025-02-24T05:35:12.0762150Z tests/widgets/test_tree.py::test_multiselect PASSED                      [ 82%]
+2025-02-24T05:35:13.1940050Z tests/widgets/test_tree.py::test_row_changes PASSED                      [ 83%]
+2025-02-24T05:35:14.2451780Z tests/widgets/test_tree.py::test_headerless_row_changes PASSED           [ 83%]
+2025-02-24T05:35:15.1808570Z tests/widgets/test_tree.py::test_column_changes PASSED                   [ 83%]
+2025-02-24T05:35:16.0693650Z tests/widgets/test_tree.py::test_headerless_column_changes PASSED        [ 83%]
+2025-02-24T05:35:17.1315670Z tests/widgets/test_tree.py::test_cell_icon PASSED                        [ 83%]
+2025-02-24T05:35:18.2657320Z tests/widgets/test_tree.py::test_cell_widget PASSED                      [ 83%]
+2025-02-24T05:35:18.8829030Z tests/widgets/test_webview.py::test_flex_widget_size <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 84%]
+2025-02-24T05:35:19.2275400Z tests/widgets/test_webview.py::test_focus <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/properties.py PASSED [ 84%]
+2025-02-24T05:35:19.5415550Z tests/widgets/test_webview.py::test_cleanup <- build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app/tests/widgets/conftest.py PASSED [ 84%]
+2025-02-24T05:35:20.1763760Z tests/widgets/test_webview.py::test_set_url PASSED                       [ 84%]
+2025-02-24T05:35:20.5171370Z tests/widgets/test_webview.py::test_clear_url PASSED                     [ 84%]
+2025-02-24T05:35:20.8891560Z tests/widgets/test_webview.py::test_load_empty_url PASSED                [ 84%]
+2025-02-24T05:35:21.3060790Z tests/widgets/test_webview.py::test_load_url PASSED                      [ 85%]
+2025-02-24T05:35:21.7448070Z tests/widgets/test_webview.py::test_static_content PASSED                [ 85%]
+2025-02-24T05:35:22.0410790Z tests/widgets/test_webview.py::test_user_agent PASSED                    [ 85%]
+2025-02-24T05:35:22.4227710Z tests/widgets/test_webview.py::test_evaluate_javascript PASSED           [ 85%]
+2025-02-24T05:35:22.7896380Z tests/widgets/test_webview.py::test_evaluate_javascript_no_handler PASSED [ 85%]
+2025-02-24T05:35:23.1687610Z tests/widgets/test_webview.py::test_evaluate_javascript_error PASSED     [ 85%]
+2025-02-24T05:35:23.5439470Z tests/widgets/test_webview.py::test_evaluate_javascript_error_without_handler PASSED [ 86%]
+2025-02-24T05:35:24.2797630Z tests/widgets/test_webview.py::test_dom_storage_enabled PASSED           [ 86%]
+2025-02-24T05:35:25.3441720Z === Messages dropped during live streaming (use `log show` to see what they were)
+2025-02-24T05:35:25.3455740Z tests/widgets/test_webview.py::test_retrieve_cookies PASSED              [ 86%]
+2025-02-24T05:35:26.1502300Z tests/window/test_dialogs.py::test_info_dialog PASSED                    [ 86%]
+2025-02-24T05:35:26.9575640Z tests/window/test_dialogs.py::test_question_dialog[False] PASSED         [ 86%]
+2025-02-24T05:35:27.7602390Z tests/window/test_dialogs.py::test_question_dialog[True] PASSED          [ 86%]
+2025-02-24T05:35:28.5592720Z tests/window/test_dialogs.py::test_confirm_dialog[False] PASSED          [ 87%]
+2025-02-24T05:35:29.3634750Z tests/window/test_dialogs.py::test_confirm_dialog[True] PASSED           [ 87%]
+2025-02-24T05:35:30.1730190Z tests/window/test_dialogs.py::test_error_dialog PASSED                   [ 87%]
+2025-02-24T05:35:30.9872160Z tests/window/test_dialogs.py::test_stack_trace_dialog[None] PASSED       [ 87%]
+2025-02-24T05:35:31.8068800Z tests/window/test_dialogs.py::test_stack_trace_dialog[False] PASSED      [ 87%]
+2025-02-24T05:35:32.6316860Z tests/window/test_dialogs.py::test_stack_trace_dialog[True] PASSED       [ 87%]
+2025-02-24T05:35:33.6414900Z tests/window/test_dialogs.py::test_save_file_dialog[/path/to/file.txt-None-result0] PASSED [ 88%]
+2025-02-24T05:35:34.5769240Z tests/window/test_dialogs.py::test_save_file_dialog[/path/to/file.txt-None-None] PASSED [ 88%]
+2025-02-24T05:35:35.5187390Z tests/window/test_dialogs.py::test_save_file_dialog[/path/to/file.txt-file_types2-result2] PASSED [ 88%]
+2025-02-24T05:35:36.4411690Z tests/window/test_dialogs.py::test_save_file_dialog[/path/to/file.txt-file_types3-None] PASSED [ 88%]
+2025-02-24T05:35:37.4450260Z tests/window/test_dialogs.py::test_open_file_dialog[initial_directory0-None-False-result0] PASSED [ 88%]
+2025-02-24T05:35:38.4468840Z tests/window/test_dialogs.py::test_open_file_dialog[initial_directory1-None-False-None] PASSED [ 88%]
+2025-02-24T05:35:39.4679160Z tests/window/test_dialogs.py::test_open_file_dialog[None-None-False-result2] PASSED [ 89%]
+2025-02-24T05:35:40.4906900Z tests/window/test_dialogs.py::test_open_file_dialog[initial_directory3-file_types3-False-result3] PASSED [ 89%]
+2025-02-24T05:35:41.5018950Z tests/window/test_dialogs.py::test_open_file_dialog[initial_directory4-None-True-result4] PASSED [ 89%]
+2025-02-24T05:35:42.5120700Z tests/window/test_dialogs.py::test_open_file_dialog[initial_directory5-None-True-result5] PASSED [ 89%]
+2025-02-24T05:35:43.5104870Z tests/window/test_dialogs.py::test_open_file_dialog[initial_directory6-None-True-None] PASSED [ 89%]
+2025-02-24T05:35:44.5093140Z tests/window/test_dialogs.py::test_open_file_dialog[None-None-True-result7] PASSED [ 89%]
+2025-02-24T05:35:45.5188180Z tests/window/test_dialogs.py::test_open_file_dialog[initial_directory8-file_types8-True-result8] PASSED [ 90%]
+2025-02-24T05:35:46.5295700Z tests/window/test_dialogs.py::test_select_folder_dialog[initial_directory0-False-result0] PASSED [ 90%]
+2025-02-24T05:35:47.5422710Z tests/window/test_dialogs.py::test_select_folder_dialog[initial_directory1-False-None] PASSED [ 90%]
+2025-02-24T05:35:48.5532470Z tests/window/test_dialogs.py::test_select_folder_dialog[None-False-result2] PASSED [ 90%]
+2025-02-24T05:35:49.5772240Z tests/window/test_dialogs.py::test_select_folder_dialog[initial_directory3-True-result3] PASSED [ 90%]
+2025-02-24T05:35:50.6085040Z tests/window/test_dialogs.py::test_select_folder_dialog[initial_directory4-True-result4] PASSED [ 90%]
+2025-02-24T05:35:51.6117320Z tests/window/test_dialogs.py::test_select_folder_dialog[initial_directory5-True-None] PASSED [ 91%]
+2025-02-24T05:35:52.1768690Z tests/window/test_window.py::test_title PASSED                           [ 91%]
+2025-02-24T05:35:52.6535870Z tests/window/test_window.py::test_secondary_window[Window-second_window_kwargs0] PASSED [ 91%]
+2025-02-24T05:35:53.4436410Z tests/window/test_window.py::test_secondary_window_with_args[Window-second_window_kwargs0] PASSED [ 91%]
+2025-02-24T05:35:53.8212330Z tests/window/test_window.py::test_secondary_window_with_content PASSED   [ 91%]
+2025-02-24T05:35:54.1600590Z tests/window/test_window.py::test_secondary_window_cleanup PASSED        [ 91%]
+2025-02-24T05:35:54.6232970Z tests/window/test_window.py::test_secondary_window_toolbar[MainWindow-second_window_kwargs0] PASSED [ 92%]
+2025-02-24T05:35:55.1083890Z tests/window/test_window.py::test_non_resizable[Window-second_window_kwargs0] PASSED [ 92%]
+2025-02-24T05:35:55.8043990Z tests/window/test_window.py::test_non_closable[Window-second_window_kwargs0] PASSED [ 92%]
+2025-02-24T05:35:56.2852730Z tests/window/test_window.py::test_non_minimizable[Window-second_window_kwargs0] PASSED [ 92%]
+2025-02-24T05:35:58.7218110Z tests/window/test_window.py::test_visibility[Window-second_window_kwargs0] PASSED [ 92%]
+2025-02-24T05:36:00.1495890Z tests/window/test_window.py::test_move_and_resize[Window-second_window_kwargs0] PASSED [ 92%]
+2025-02-24T05:36:01.4899970Z tests/window/test_window.py::test_window_state_change[MainWindow-second_window_kwargs0-WindowState.NORMAL-WindowState.MINIMIZED] PASSED [ 93%]
+2025-02-24T05:36:03.1252700Z tests/window/test_window.py::test_window_state_change[MainWindow-second_window_kwargs0-WindowState.NORMAL-WindowState.MAXIMIZED] PASSED [ 93%]
+2025-02-24T05:36:04.5386720Z tests/window/test_window.py::test_window_state_change[MainWindow-second_window_kwargs0-WindowState.NORMAL-WindowState.FULLSCREEN] PASSED [ 93%]
+2025-02-24T05:36:06.3665950Z tests/window/test_window.py::test_window_state_change[MainWindow-second_window_kwargs0-WindowState.NORMAL-WindowState.PRESENTATION] PASSED [ 93%]
+2025-02-24T05:36:07.2323080Z tests/window/test_window.py::test_window_state_change[MainWindow-second_window_kwargs0-WindowState.NORMAL-WindowState.NORMAL] PASSED [ 93%]
+2025-02-24T05:36:09.0047010Z tests/window/test_window.py::test_window_state_change[MainWindow-second_window_kwargs0-WindowState.MINIMIZED-WindowState.NORMAL] PASSED [ 93%]
+2025-02-24T05:36:11.1264990Z tests/window/test_window.py::test_window_state_change[MainWindow-second_window_kwargs0-WindowState.MINIMIZED-WindowState.MAXIMIZED] PASSED [ 94%]
+2025-02-24T05:36:13.5355530Z tests/window/test_window.py::test_window_state_change[MainWindow-second_window_kwargs0-WindowState.MINIMIZED-WindowState.FULLSCREEN] PASSED [ 94%]
+2025-02-24T05:36:16.2376000Z tests/window/test_window.py::test_window_state_change[MainWindow-second_window_kwargs0-WindowState.MINIMIZED-WindowState.PRESENTATION] PASSED [ 94%]
+2025-02-24T05:36:17.5836540Z tests/window/test_window.py::test_window_state_change[MainWindow-second_window_kwargs0-WindowState.MINIMIZED-WindowState.MINIMIZED] PASSED [ 94%]
+2025-02-24T05:36:19.5773430Z tests/window/test_window.py::test_window_state_change[MainWindow-second_window_kwargs0-WindowState.MAXIMIZED-WindowState.NORMAL] PASSED [ 94%]
+2025-02-24T05:36:21.6486290Z tests/window/test_window.py::test_window_state_change[MainWindow-second_window_kwargs0-WindowState.MAXIMIZED-WindowState.MINIMIZED] PASSED [ 94%]
+2025-02-24T05:36:24.6681140Z tests/window/test_window.py::test_window_state_change[MainWindow-second_window_kwargs0-WindowState.MAXIMIZED-WindowState.FULLSCREEN] PASSED [ 95%]
+2025-02-24T05:36:27.2033030Z tests/window/test_window.py::test_window_state_change[MainWindow-second_window_kwargs0-WindowState.MAXIMIZED-WindowState.PRESENTATION] PASSED [ 95%]
+2025-02-24T05:36:28.4350610Z tests/window/test_window.py::test_window_state_change[MainWindow-second_window_kwargs0-WindowState.MAXIMIZED-WindowState.MAXIMIZED] PASSED [ 95%]
+2025-02-24T05:36:30.4123660Z tests/window/test_window.py::test_window_state_change[MainWindow-second_window_kwargs0-WindowState.FULLSCREEN-WindowState.NORMAL] PASSED [ 95%]
+2025-02-24T05:36:32.9352620Z tests/window/test_window.py::test_window_state_change[MainWindow-second_window_kwargs0-WindowState.FULLSCREEN-WindowState.MINIMIZED] PASSED [ 95%]
+2025-02-24T05:36:35.6580100Z tests/window/test_window.py::test_window_state_change[MainWindow-second_window_kwargs0-WindowState.FULLSCREEN-WindowState.MAXIMIZED] PASSED [ 95%]
+2025-02-24T05:36:37.6567890Z tests/window/test_window.py::test_window_state_change[MainWindow-second_window_kwargs0-WindowState.FULLSCREEN-WindowState.PRESENTATION] PASSED [ 96%]
+2025-02-24T05:36:39.1305020Z tests/window/test_window.py::test_window_state_change[MainWindow-second_window_kwargs0-WindowState.FULLSCREEN-WindowState.FULLSCREEN] PASSED [ 96%]
+2025-02-24T05:36:41.4848100Z tests/window/test_window.py::test_window_state_change[MainWindow-second_window_kwargs0-WindowState.PRESENTATION-WindowState.NORMAL] PASSED [ 96%]
+2025-02-24T05:36:43.4086250Z tests/window/test_window.py::test_window_state_change[MainWindow-second_window_kwargs0-WindowState.PRESENTATION-WindowState.MINIMIZED] PASSED [ 96%]
+2025-02-24T05:36:45.6230400Z tests/window/test_window.py::test_window_state_change[MainWindow-second_window_kwargs0-WindowState.PRESENTATION-WindowState.MAXIMIZED] PASSED [ 96%]
+2025-02-24T05:36:47.6690990Z tests/window/test_window.py::test_window_state_change[MainWindow-second_window_kwargs0-WindowState.PRESENTATION-WindowState.FULLSCREEN] PASSED [ 96%]
+2025-02-24T05:36:49.4914570Z tests/window/test_window.py::test_window_state_change[MainWindow-second_window_kwargs0-WindowState.PRESENTATION-WindowState.PRESENTATION] PASSED [ 97%]
+2025-02-24T05:36:51.9224740Z tests/window/test_window.py::test_window_state_rapid_assignment[MainWindow-second_window_kwargs0-states0] PASSED [ 97%]
+2025-02-24T05:36:55.3556650Z tests/window/test_window.py::test_window_state_rapid_assignment[MainWindow-second_window_kwargs0-states1] PASSED [ 97%]
+2025-02-24T05:36:57.7628770Z tests/window/test_window.py::test_window_state_rapid_assignment[MainWindow-second_window_kwargs0-states2] PASSED [ 97%]
+2025-02-24T05:36:59.0932020Z tests/window/test_window.py::test_window_state_rapid_assignment[MainWindow-second_window_kwargs0-states3] PASSED [ 97%]
+2025-02-24T05:36:59.7938460Z tests/window/test_window.py::test_window_state_same_as_current_without_intermediate_states[Window-second_window_kwargs0-WindowState.NORMAL] PASSED [ 97%]
+2025-02-24T05:37:00.9384510Z tests/window/test_window.py::test_window_state_same_as_current_without_intermediate_states[Window-second_window_kwargs0-WindowState.MINIMIZED] PASSED [ 98%]
+2025-02-24T05:37:02.3947910Z tests/window/test_window.py::test_window_state_same_as_current_without_intermediate_states[Window-second_window_kwargs0-WindowState.MAXIMIZED] PASSED [ 98%]
+2025-02-24T05:37:03.6824720Z tests/window/test_window.py::test_window_state_same_as_current_without_intermediate_states[Window-second_window_kwargs0-WindowState.FULLSCREEN] PASSED [ 98%]
+2025-02-24T05:37:05.3194810Z tests/window/test_window.py::test_window_state_same_as_current_without_intermediate_states[Window-second_window_kwargs0-WindowState.PRESENTATION] PASSED [ 98%]
+2025-02-24T05:37:06.9451740Z tests/window/test_window.py::test_window_state_content_size_increase[Window-second_window_kwargs0-WindowState.MAXIMIZED] PASSED [ 98%]
+2025-02-24T05:37:08.9450540Z tests/window/test_window.py::test_window_state_content_size_increase[Window-second_window_kwargs0-WindowState.FULLSCREEN] PASSED [ 98%]
+2025-02-24T05:37:10.4124710Z tests/window/test_window.py::test_window_state_content_size_increase[Window-second_window_kwargs0-WindowState.PRESENTATION] PASSED [ 99%]
+2025-02-24T05:37:11.2094590Z tests/window/test_window.py::test_window_state_when_window_hidden[Window-second_window_kwargs0-WindowState.NORMAL] PASSED [ 99%]
+2025-02-24T05:37:12.3623750Z tests/window/test_window.py::test_window_state_when_window_hidden[Window-second_window_kwargs0-WindowState.MAXIMIZED] PASSED [ 99%]
+2025-02-24T05:37:13.0646270Z tests/window/test_window.py::test_focus_events[Window-second_window_kwargs0] PASSED [ 99%]
+2025-02-24T05:37:13.7756830Z tests/window/test_window.py::test_visibility_events[Window-second_window_kwargs0] PASSED [ 99%]
+2025-02-24T05:37:14.4807010Z tests/window/test_window.py::test_screen[Window-second_window_kwargs0] PASSED [ 99%]
+2025-02-24T05:37:14.9285180Z tests/window/test_window.py::test_as_image PASSED                        [100%]
+2025-02-24T05:37:14.9294040Z 
+2025-02-24T05:37:14.9303770Z ====== 546 passed, 29 skipped, 28 xfailed, 2 xpassed in 366.83s (0:06:06) ======
+2025-02-24T05:37:15.7577450Z Name    Stmts   Miss Branch BrPart   Cover   Missing
+2025-02-24T05:37:15.7587440Z ----------------------------------------------------
+2025-02-24T05:37:15.7596380Z TOTAL    3683      0    502      0  100.0%
+2025-02-24T05:37:15.7604410Z 
+2025-02-24T05:37:15.7613350Z 57 files skipped due to complete coverage.
+2025-02-24T05:37:18.9807340Z 
+2025-02-24T05:37:18.9973430Z [2m[testbed][0m Test suite passed!
+2025-02-24T05:37:18.9973920Z Saving log... started
+2025-02-24T05:37:18.9974140Z 
+2025-02-24T05:37:19.0318450Z [1;33mLog saved to /Users/runner/work/toga/toga/testbed/logs/briefcase.2025_02_24-05_37_18.run.log[0m[1;33m
+2025-02-24T05:37:19.0330770Z [0m
+2025-02-24T05:37:19.0331350Z Saving log... done
+2025-02-24T05:37:19.1773030Z Post job cleanup.
+2025-02-24T05:37:19.4128080Z Post job cleanup.
+2025-02-24T05:37:19.7033920Z [command]/usr/local/bin/git version
+2025-02-24T05:37:19.7037900Z git version 2.48.1
+2025-02-24T05:37:19.7047240Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/ecccf231-eb9e-4c5f-ade1-a5c75f334485/.gitconfig'
+2025-02-24T05:37:19.7049960Z Temporarily overriding HOME='/Users/runner/work/_temp/ecccf231-eb9e-4c5f-ade1-a5c75f334485' before making global git config changes
+2025-02-24T05:37:19.7053100Z Adding repository directory to the temporary git global config as a safe directory
+2025-02-24T05:37:19.7055310Z [command]/usr/local/bin/git config --global --add safe.directory /Users/runner/work/toga/toga
+2025-02-24T05:37:19.7060200Z [command]/usr/local/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-02-24T05:37:19.7065670Z [command]/usr/local/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-02-24T05:37:19.7898210Z [command]/usr/local/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-02-24T05:37:19.7979360Z http.https://github.com/.extraheader
+2025-02-24T05:37:19.8063710Z [command]/usr/local/bin/git config --local --unset-all http.https://github.com/.extraheader
+2025-02-24T05:37:19.8130170Z [command]/usr/local/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-02-24T05:37:19.9263860Z Cleaning up orphan processes

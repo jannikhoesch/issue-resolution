@@ -1,0 +1,977 @@
+﻿2025-02-28T15:24:28.8257859Z Current runner version: '2.322.0'
+2025-02-28T15:24:28.8284622Z ##[group]Operating System
+2025-02-28T15:24:28.8285448Z Ubuntu
+2025-02-28T15:24:28.8286017Z 24.04.2
+2025-02-28T15:24:28.8286554Z LTS
+2025-02-28T15:24:28.8286994Z ##[endgroup]
+2025-02-28T15:24:28.8287564Z ##[group]Runner Image
+2025-02-28T15:24:28.8288182Z Image: ubuntu-24.04
+2025-02-28T15:24:28.8288709Z Version: 20250223.1.0
+2025-02-28T15:24:28.8290177Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20250223.1/images/ubuntu/Ubuntu2404-Readme.md
+2025-02-28T15:24:28.8291720Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250223.1
+2025-02-28T15:24:28.8292640Z ##[endgroup]
+2025-02-28T15:24:28.8293261Z ##[group]Runner Image Provisioner
+2025-02-28T15:24:28.8294122Z 2.0.422.1
+2025-02-28T15:24:28.8294624Z ##[endgroup]
+2025-02-28T15:24:28.8295836Z ##[group]GITHUB_TOKEN Permissions
+2025-02-28T15:24:28.8297716Z Attestations: read
+2025-02-28T15:24:28.8298612Z Contents: read
+2025-02-28T15:24:28.8299446Z Metadata: read
+2025-02-28T15:24:28.8300035Z ##[endgroup]
+2025-02-28T15:24:28.8303610Z Secret source: None
+2025-02-28T15:24:28.8304665Z Prepare workflow directory
+2025-02-28T15:24:28.8800389Z Prepare all required actions
+2025-02-28T15:24:28.8837386Z Getting action download info
+2025-02-28T15:24:29.0290223Z Download action repository 'actions/checkout@v4.2.2' (SHA:11bd71901bbe5b1630ceea73d27597364c9af683)
+2025-02-28T15:24:29.1212369Z Download action repository 'hynek/build-and-inspect-python-package@v2.12.0' (SHA:b5076c307dc91924a82ad150cdd1533b444d3310)
+2025-02-28T15:24:29.4583928Z Getting action download info
+2025-02-28T15:24:29.6312950Z Download action repository 'actions/setup-python@v5' (SHA:42375524e23c412d93fb67b49958b491fce71c38)
+2025-02-28T15:24:29.7239509Z Download action repository 'actions/cache@v4' (SHA:d4323d4df104b026a6aa633fdb11d772146be0bf)
+2025-02-28T15:24:30.0107001Z Download action repository 'actions/attest-build-provenance@v1' (SHA:ef244123eb79f2f7a7e75d99086184180e6d0018)
+2025-02-28T15:24:30.1556062Z Download action repository 'actions/upload-artifact@v4' (SHA:4cec3d8aa04e39d1a68397de0c4cd6fb9dce8ec1)
+2025-02-28T15:24:30.4503915Z Getting action download info
+2025-02-28T15:24:30.5686011Z Download action repository 'actions/attest-build-provenance@36fa7d009e22618ca7cd599486979b8150596c74' (SHA:36fa7d009e22618ca7cd599486979b8150596c74)
+2025-02-28T15:24:30.7312463Z Download action repository 'actions/attest@67422f5511b7ff725f4dbd6fb9bd2cd925c65a8d' (SHA:67422f5511b7ff725f4dbd6fb9bd2cd925c65a8d)
+2025-02-28T15:24:30.9848657Z Uses: beeware/.github/.github/workflows/python-package-create.yml@refs/heads/main (a66b93162808d34adf5280c28104b75f8e0d70d3)
+2025-02-28T15:24:30.9852382Z ##[group] Inputs
+2025-02-28T15:24:30.9853299Z   repository: beeware/toga
+2025-02-28T15:24:30.9854246Z   build-subdirectory: travertino
+2025-02-28T15:24:30.9855210Z   attest: 
+2025-02-28T15:24:30.9855964Z ##[endgroup]
+2025-02-28T15:24:30.9857109Z Complete job name: Package Toga (travertino) / Create Python Package
+2025-02-28T15:24:31.0645795Z ##[group]Run echo "repo-name=$(basename "${REPO}")" | tee -a ${GITHUB_OUTPUT}
+2025-02-28T15:24:31.0647768Z [36;1mecho "repo-name=$(basename "${REPO}")" | tee -a ${GITHUB_OUTPUT}[0m
+2025-02-28T15:24:31.0649638Z [36;1mecho "differentiator=${DIFFERENTIATOR}" | tee -a ${GITHUB_OUTPUT}[0m
+2025-02-28T15:24:31.0713684Z shell: /usr/bin/bash -e {0}
+2025-02-28T15:24:31.0714978Z env:
+2025-02-28T15:24:31.0715708Z   FORCE_COLOR: 1
+2025-02-28T15:24:31.0716496Z   REPO: beeware/toga
+2025-02-28T15:24:31.0717410Z   DIFFERENTIATOR: -travertino
+2025-02-28T15:24:31.0718326Z ##[endgroup]
+2025-02-28T15:24:31.0897820Z repo-name=toga
+2025-02-28T15:24:31.0899556Z differentiator=-travertino
+2025-02-28T15:24:31.1158316Z ##[group]Run actions/checkout@v4.2.2
+2025-02-28T15:24:31.1159539Z with:
+2025-02-28T15:24:31.1160278Z   repository: beeware/toga
+2025-02-28T15:24:31.1161154Z   fetch-depth: 0
+2025-02-28T15:24:31.1162270Z   token: ***
+2025-02-28T15:24:31.1163009Z   ssh-strict: true
+2025-02-28T15:24:31.1163770Z   ssh-user: git
+2025-02-28T15:24:31.1164837Z   persist-credentials: true
+2025-02-28T15:24:31.1165708Z   clean: true
+2025-02-28T15:24:31.1166509Z   sparse-checkout-cone-mode: true
+2025-02-28T15:24:31.1167448Z   fetch-tags: false
+2025-02-28T15:24:31.1168227Z   show-progress: true
+2025-02-28T15:24:31.1169316Z   lfs: false
+2025-02-28T15:24:31.1170392Z   submodules: false
+2025-02-28T15:24:31.1171620Z   set-safe-directory: true
+2025-02-28T15:24:31.1172840Z env:
+2025-02-28T15:24:31.1174003Z   FORCE_COLOR: 1
+2025-02-28T15:24:31.1175211Z ##[endgroup]
+2025-02-28T15:24:31.3073413Z Syncing repository: beeware/toga
+2025-02-28T15:24:31.3076147Z ##[group]Getting Git version info
+2025-02-28T15:24:31.3077611Z Working directory is '/home/runner/work/toga/toga'
+2025-02-28T15:24:31.3079798Z [command]/usr/bin/git version
+2025-02-28T15:24:31.3134502Z git version 2.48.1
+2025-02-28T15:24:31.3163585Z ##[endgroup]
+2025-02-28T15:24:31.3178646Z Temporarily overriding HOME='/home/runner/work/_temp/3eef5927-9a99-454f-b004-28275876ff93' before making global git config changes
+2025-02-28T15:24:31.3181814Z Adding repository directory to the temporary git global config as a safe directory
+2025-02-28T15:24:31.3184803Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/toga/toga
+2025-02-28T15:24:31.3223070Z Deleting the contents of '/home/runner/work/toga/toga'
+2025-02-28T15:24:31.3227177Z ##[group]Initializing the repository
+2025-02-28T15:24:31.3231522Z [command]/usr/bin/git init /home/runner/work/toga/toga
+2025-02-28T15:24:31.3310835Z hint: Using 'master' as the name for the initial branch. This default branch name
+2025-02-28T15:24:31.3313805Z hint: is subject to change. To configure the initial branch name to use in all
+2025-02-28T15:24:31.3317026Z hint: of your new repositories, which will suppress this warning, call:
+2025-02-28T15:24:31.3318723Z hint:
+2025-02-28T15:24:31.3319887Z hint: 	git config --global init.defaultBranch <name>
+2025-02-28T15:24:31.3320987Z hint:
+2025-02-28T15:24:31.3322036Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2025-02-28T15:24:31.3324293Z hint: 'development'. The just-created branch can be renamed via this command:
+2025-02-28T15:24:31.3325656Z hint:
+2025-02-28T15:24:31.3326385Z hint: 	git branch -m <name>
+2025-02-28T15:24:31.3327629Z Initialized empty Git repository in /home/runner/work/toga/toga/.git/
+2025-02-28T15:24:31.3331205Z [command]/usr/bin/git remote add origin https://github.com/beeware/toga
+2025-02-28T15:24:31.3368928Z ##[endgroup]
+2025-02-28T15:24:31.3370659Z ##[group]Disabling automatic garbage collection
+2025-02-28T15:24:31.3372568Z [command]/usr/bin/git config --local gc.auto 0
+2025-02-28T15:24:31.3404078Z ##[endgroup]
+2025-02-28T15:24:31.3405401Z ##[group]Setting up auth
+2025-02-28T15:24:31.3411268Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-02-28T15:24:31.3446907Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-02-28T15:24:31.3773868Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-02-28T15:24:31.3810834Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-02-28T15:24:31.4054902Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2025-02-28T15:24:31.4099607Z ##[endgroup]
+2025-02-28T15:24:31.4101024Z ##[group]Fetching the repository
+2025-02-28T15:24:31.4110727Z [command]/usr/bin/git -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/* +68266e24a68fb42fbbeefb9a1fc4181dfda30fbe:refs/remotes/pull/3217/merge
+2025-02-28T15:24:33.5430393Z From https://github.com/beeware/toga
+2025-02-28T15:24:33.5432260Z  * [new branch]          main         -> origin/main
+2025-02-28T15:24:33.5433656Z  * [new branch]          pre-0.5      -> origin/pre-0.5
+2025-02-28T15:24:33.5434256Z  * [new tag]             0.2.6        -> 0.2.6
+2025-02-28T15:24:33.5434808Z  * [new tag]             v0.0.1rc1    -> v0.0.1rc1
+2025-02-28T15:24:33.5435392Z  * [new tag]             v0.0.1rc10   -> v0.0.1rc10
+2025-02-28T15:24:33.5439396Z  * [new tag]             v0.0.1rc5    -> v0.0.1rc5
+2025-02-28T15:24:33.5440040Z  * [new tag]             v0.0.1rc6    -> v0.0.1rc6
+2025-02-28T15:24:33.5440471Z  * [new tag]             v0.1.0       -> v0.1.0
+2025-02-28T15:24:33.5441027Z  * [new tag]             v0.1.1       -> v0.1.1
+2025-02-28T15:24:33.5442297Z  * [new tag]             v0.1.2       -> v0.1.2
+2025-02-28T15:24:33.5443421Z  * [new tag]             v0.2.0       -> v0.2.0
+2025-02-28T15:24:33.5444520Z  * [new tag]             v0.2.0.dev1  -> v0.2.0.dev1
+2025-02-28T15:24:33.5445852Z  * [new tag]             v0.2.1       -> v0.2.1
+2025-02-28T15:24:33.5447649Z  * [new tag]             v0.2.10      -> v0.2.10
+2025-02-28T15:24:33.5449091Z  * [new tag]             v0.2.11      -> v0.2.11
+2025-02-28T15:24:33.5450778Z  * [new tag]             v0.2.12      -> v0.2.12
+2025-02-28T15:24:33.5451930Z  * [new tag]             v0.2.13      -> v0.2.13
+2025-02-28T15:24:33.5453465Z  * [new tag]             v0.2.14      -> v0.2.14
+2025-02-28T15:24:33.5454783Z  * [new tag]             v0.2.15      -> v0.2.15
+2025-02-28T15:24:33.5456126Z  * [new tag]             v0.2.2       -> v0.2.2
+2025-02-28T15:24:33.5457457Z  * [new tag]             v0.2.3       -> v0.2.3
+2025-02-28T15:24:33.5459134Z  * [new tag]             v0.2.4       -> v0.2.4
+2025-02-28T15:24:33.5460468Z  * [new tag]             v0.2.5       -> v0.2.5
+2025-02-28T15:24:33.5461622Z  * [new tag]             v0.2.6       -> v0.2.6
+2025-02-28T15:24:33.5463249Z  * [new tag]             v0.2.7       -> v0.2.7
+2025-02-28T15:24:33.5464557Z  * [new tag]             v0.2.8       -> v0.2.8
+2025-02-28T15:24:33.5465924Z  * [new tag]             v0.2.9       -> v0.2.9
+2025-02-28T15:24:33.5467582Z  * [new tag]             v0.3.0       -> v0.3.0
+2025-02-28T15:24:33.5469709Z  * [new tag]             v0.3.0.dev1  -> v0.3.0.dev1
+2025-02-28T15:24:33.5470700Z  * [new tag]             v0.3.0.dev10 -> v0.3.0.dev10
+2025-02-28T15:24:33.5472072Z  * [new tag]             v0.3.0.dev11 -> v0.3.0.dev11
+2025-02-28T15:24:33.5473770Z  * [new tag]             v0.3.0.dev12 -> v0.3.0.dev12
+2025-02-28T15:24:33.5474967Z  * [new tag]             v0.3.0.dev13 -> v0.3.0.dev13
+2025-02-28T15:24:33.5476627Z  * [new tag]             v0.3.0.dev14 -> v0.3.0.dev14
+2025-02-28T15:24:33.5477870Z  * [new tag]             v0.3.0.dev15 -> v0.3.0.dev15
+2025-02-28T15:24:33.5479644Z  * [new tag]             v0.3.0.dev16 -> v0.3.0.dev16
+2025-02-28T15:24:33.5481096Z  * [new tag]             v0.3.0.dev17 -> v0.3.0.dev17
+2025-02-28T15:24:33.5482429Z  * [new tag]             v0.3.0.dev18 -> v0.3.0.dev18
+2025-02-28T15:24:33.5484112Z  * [new tag]             v0.3.0.dev19 -> v0.3.0.dev19
+2025-02-28T15:24:33.5485364Z  * [new tag]             v0.3.0.dev2  -> v0.3.0.dev2
+2025-02-28T15:24:33.5487037Z  * [new tag]             v0.3.0.dev20 -> v0.3.0.dev20
+2025-02-28T15:24:33.5488411Z  * [new tag]             v0.3.0.dev21 -> v0.3.0.dev21
+2025-02-28T15:24:33.5490363Z  * [new tag]             v0.3.0.dev22 -> v0.3.0.dev22
+2025-02-28T15:24:33.5491776Z  * [new tag]             v0.3.0.dev23 -> v0.3.0.dev23
+2025-02-28T15:24:33.5493498Z  * [new tag]             v0.3.0.dev24 -> v0.3.0.dev24
+2025-02-28T15:24:33.5494769Z  * [new tag]             v0.3.0.dev25 -> v0.3.0.dev25
+2025-02-28T15:24:33.5496401Z  * [new tag]             v0.3.0.dev26 -> v0.3.0.dev26
+2025-02-28T15:24:33.5497919Z  * [new tag]             v0.3.0.dev27 -> v0.3.0.dev27
+2025-02-28T15:24:33.5499422Z  * [new tag]             v0.3.0.dev28 -> v0.3.0.dev28
+2025-02-28T15:24:33.5501024Z  * [new tag]             v0.3.0.dev29 -> v0.3.0.dev29
+2025-02-28T15:24:33.5502406Z  * [new tag]             v0.3.0.dev3  -> v0.3.0.dev3
+2025-02-28T15:24:33.5504026Z  * [new tag]             v0.3.0.dev30 -> v0.3.0.dev30
+2025-02-28T15:24:33.5505435Z  * [new tag]             v0.3.0.dev32 -> v0.3.0.dev32
+2025-02-28T15:24:33.5507104Z  * [new tag]             v0.3.0.dev33 -> v0.3.0.dev33
+2025-02-28T15:24:33.5508460Z  * [new tag]             v0.3.0.dev34 -> v0.3.0.dev34
+2025-02-28T15:24:33.5510345Z  * [new tag]             v0.3.0.dev35 -> v0.3.0.dev35
+2025-02-28T15:24:33.5511728Z  * [new tag]             v0.3.0.dev36 -> v0.3.0.dev36
+2025-02-28T15:24:33.5513318Z  * [new tag]             v0.3.0.dev37 -> v0.3.0.dev37
+2025-02-28T15:24:33.5514704Z  * [new tag]             v0.3.0.dev38 -> v0.3.0.dev38
+2025-02-28T15:24:33.5516498Z  * [new tag]             v0.3.0.dev39 -> v0.3.0.dev39
+2025-02-28T15:24:33.5517914Z  * [new tag]             v0.3.0.dev4  -> v0.3.0.dev4
+2025-02-28T15:24:33.5519692Z  * [new tag]             v0.3.0.dev5  -> v0.3.0.dev5
+2025-02-28T15:24:33.5521385Z  * [new tag]             v0.3.0.dev6  -> v0.3.0.dev6
+2025-02-28T15:24:33.5522734Z  * [new tag]             v0.3.0.dev7  -> v0.3.0.dev7
+2025-02-28T15:24:33.5524171Z  * [new tag]             v0.3.0.dev8  -> v0.3.0.dev8
+2025-02-28T15:24:33.5525802Z  * [new tag]             v0.3.0.dev9  -> v0.3.0.dev9
+2025-02-28T15:24:33.5527124Z  * [new tag]             v0.3.0rc0    -> v0.3.0rc0
+2025-02-28T15:24:33.5529017Z  * [new tag]             v0.3.1       -> v0.3.1
+2025-02-28T15:24:33.5530630Z  * [new tag]             v0.4.0       -> v0.4.0
+2025-02-28T15:24:33.5532035Z  * [new tag]             v0.4.1       -> v0.4.1
+2025-02-28T15:24:33.5533681Z  * [new tag]             v0.4.2       -> v0.4.2
+2025-02-28T15:24:33.5535255Z  * [new tag]             v0.4.3       -> v0.4.3
+2025-02-28T15:24:33.5536658Z  * [new tag]             v0.4.4       -> v0.4.4
+2025-02-28T15:24:33.5538333Z  * [new tag]             v0.4.5       -> v0.4.5
+2025-02-28T15:24:33.5539718Z  * [new tag]             v0.4.6       -> v0.4.6
+2025-02-28T15:24:33.5541467Z  * [new tag]             v0.4.7       -> v0.4.7
+2025-02-28T15:24:33.5542849Z  * [new tag]             v0.4.8       -> v0.4.8
+2025-02-28T15:24:33.5544116Z  * [new tag]             v0.4.9       -> v0.4.9
+2025-02-28T15:24:33.5547707Z  * [new ref]             68266e24a68fb42fbbeefb9a1fc4181dfda30fbe -> pull/3217/merge
+2025-02-28T15:24:33.5593556Z ##[endgroup]
+2025-02-28T15:24:33.5594284Z ##[group]Determining the checkout info
+2025-02-28T15:24:33.5595064Z ##[endgroup]
+2025-02-28T15:24:33.5600602Z [command]/usr/bin/git sparse-checkout disable
+2025-02-28T15:24:33.5644298Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2025-02-28T15:24:33.5673302Z ##[group]Checking out the ref
+2025-02-28T15:24:33.5677625Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/3217/merge
+2025-02-28T15:24:33.7480968Z Note: switching to 'refs/remotes/pull/3217/merge'.
+2025-02-28T15:24:33.7482548Z 
+2025-02-28T15:24:33.7482965Z You are in 'detached HEAD' state. You can look around, make experimental
+2025-02-28T15:24:33.7483842Z changes and commit them, and you can discard any commits you make in this
+2025-02-28T15:24:33.7484706Z state without impacting any branches by switching back to a branch.
+2025-02-28T15:24:33.7485221Z 
+2025-02-28T15:24:33.7485593Z If you want to create a new branch to retain commits you create, you may
+2025-02-28T15:24:33.7486386Z do so (now or later) by using -c with the switch command. Example:
+2025-02-28T15:24:33.7486819Z 
+2025-02-28T15:24:33.7487036Z   git switch -c <new-branch-name>
+2025-02-28T15:24:33.7487345Z 
+2025-02-28T15:24:33.7487619Z Or undo this operation with:
+2025-02-28T15:24:33.7487911Z 
+2025-02-28T15:24:33.7488079Z   git switch -
+2025-02-28T15:24:33.7488306Z 
+2025-02-28T15:24:33.7488719Z Turn off this advice by setting config variable advice.detachedHead to false
+2025-02-28T15:24:33.7489841Z 
+2025-02-28T15:24:33.7490575Z HEAD is now at 68266e24a Merge ee512b602a87bb9213021e3ceab7c75b22852c2d into 39458b6f220cd2eeafe9dcf5d470bd504914850a
+2025-02-28T15:24:33.7503257Z ##[endgroup]
+2025-02-28T15:24:33.7579436Z [command]/usr/bin/git log -1 --format=%H
+2025-02-28T15:24:33.7580058Z 68266e24a68fb42fbbeefb9a1fc4181dfda30fbe
+2025-02-28T15:24:33.7893442Z ##[group]Run hynek/build-and-inspect-python-package@v2.12.0
+2025-02-28T15:24:33.7893867Z with:
+2025-02-28T15:24:33.7894089Z   path: travertino
+2025-02-28T15:24:33.7894351Z   upload-name-suffix: -toga-travertino
+2025-02-28T15:24:33.7894642Z   skip-wheel: false
+2025-02-28T15:24:33.7894897Z env:
+2025-02-28T15:24:33.7895104Z   FORCE_COLOR: 1
+2025-02-28T15:24:33.7895332Z ##[endgroup]
+2025-02-28T15:24:33.8029545Z ##[group]Run actions/setup-python@v5
+2025-02-28T15:24:33.8029857Z with:
+2025-02-28T15:24:33.8030086Z   python-version: 3.x
+2025-02-28T15:24:33.8030349Z   update-environment: false
+2025-02-28T15:24:33.8030614Z   check-latest: false
+2025-02-28T15:24:33.8030974Z   token: ***
+2025-02-28T15:24:33.8031211Z   allow-prereleases: false
+2025-02-28T15:24:33.8031470Z env:
+2025-02-28T15:24:33.8031670Z   FORCE_COLOR: 1
+2025-02-28T15:24:33.8031897Z ##[endgroup]
+2025-02-28T15:24:33.9783504Z ##[group]Installed versions
+2025-02-28T15:24:33.9837000Z Successfully set up CPython (3.13.2)
+2025-02-28T15:24:33.9837853Z ##[endgroup]
+2025-02-28T15:24:33.9941449Z ##[group]Run curl --location --silent --show-error --fail --proto '=https' --tlsv1.2 https://astral.sh/uv/install.sh | bash
+2025-02-28T15:24:33.9942296Z [36;1mcurl --location --silent --show-error --fail --proto '=https' --tlsv1.2 https://astral.sh/uv/install.sh | bash[0m
+2025-02-28T15:24:33.9993576Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:33.9993943Z env:
+2025-02-28T15:24:33.9994160Z   FORCE_COLOR: 1
+2025-02-28T15:24:33.9994388Z ##[endgroup]
+2025-02-28T15:24:34.2169970Z downloading uv 0.6.3 x86_64-unknown-linux-gnu
+2025-02-28T15:24:34.8350377Z no checksums to verify
+2025-02-28T15:24:35.1292008Z installing to /home/runner/.local/bin
+2025-02-28T15:24:35.1352439Z   uv
+2025-02-28T15:24:35.1381873Z   uvx
+2025-02-28T15:24:35.1382312Z everything's installed!
+2025-02-28T15:24:35.1492271Z ##[group]Run echo "UV_CACHE_DIR=/tmp/baipp-uv_cache_dir" >>$GITHUB_ENV
+2025-02-28T15:24:35.1492741Z [36;1mecho "UV_CACHE_DIR=/tmp/baipp-uv_cache_dir" >>$GITHUB_ENV[0m
+2025-02-28T15:24:35.1493069Z [36;1m[0m
+2025-02-28T15:24:35.1493665Z [36;1mecho "REQS_HASH=$(sha256sum /home/runner/work/_actions/hynek/build-and-inspect-python-package/v2.12.0/requirements/tools.txt | cut -d' ' -f1)" >>$GITHUB_ENV[0m
+2025-02-28T15:24:35.1541849Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:35.1542186Z env:
+2025-02-28T15:24:35.1542371Z   FORCE_COLOR: 1
+2025-02-28T15:24:35.1542570Z ##[endgroup]
+2025-02-28T15:24:35.1689482Z ##[group]Run actions/cache@v4
+2025-02-28T15:24:35.1689732Z with:
+2025-02-28T15:24:35.1689933Z   path: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:35.1690296Z   key: baipp-3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:35.1690685Z   enableCrossOsArchive: false
+2025-02-28T15:24:35.1690926Z   fail-on-cache-miss: false
+2025-02-28T15:24:35.1691151Z   lookup-only: false
+2025-02-28T15:24:35.1691350Z   save-always: false
+2025-02-28T15:24:35.1691534Z env:
+2025-02-28T15:24:35.1691730Z   FORCE_COLOR: 1
+2025-02-28T15:24:35.1691939Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:35.1692302Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:35.1692657Z ##[endgroup]
+2025-02-28T15:24:35.3694593Z Cache hit for: baipp-3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:35.5082567Z Received 2634960 of 2634960 (100.0%), 31.4 MBs/sec
+2025-02-28T15:24:35.5083374Z Cache Size: ~3 MB (2634960 B)
+2025-02-28T15:24:35.5110942Z [command]/usr/bin/tar -xf /home/runner/work/_temp/224cba93-b1cd-4b89-8d50-1aec737d5dcc/cache.tzst -P -C /home/runner/work/toga/toga --use-compress-program unzstd
+2025-02-28T15:24:35.5380657Z Cache restored successfully
+2025-02-28T15:24:35.5577448Z Cache restored from key: baipp-3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:35.5663513Z ##[group]Run unset UV_SYSTEM_PYTHON
+2025-02-28T15:24:35.5663826Z [36;1munset UV_SYSTEM_PYTHON[0m
+2025-02-28T15:24:35.5664409Z [36;1m[0m
+2025-02-28T15:24:35.5664593Z [36;1muv venv \[0m
+2025-02-28T15:24:35.5664785Z [36;1m  /tmp/baipp \[0m
+2025-02-28T15:24:35.5665095Z [36;1m  --python /opt/hostedtoolcache/Python/3.13.2/x64/bin/python[0m
+2025-02-28T15:24:35.5711996Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:35.5712318Z env:
+2025-02-28T15:24:35.5712496Z   FORCE_COLOR: 1
+2025-02-28T15:24:35.5712713Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:35.5713099Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:35.5713469Z ##[endgroup]
+2025-02-28T15:24:36.1757377Z Using CPython 3.13.2 interpreter at: [36m/opt/hostedtoolcache/Python/3.13.2/x64/bin/python[39m
+2025-02-28T15:24:36.1758099Z Creating virtual environment at: [36m/tmp/baipp[39m
+2025-02-28T15:24:36.1810254Z ##[group]Run unset UV_SYSTEM_PYTHON
+2025-02-28T15:24:36.1810765Z [36;1munset UV_SYSTEM_PYTHON[0m
+2025-02-28T15:24:36.1811152Z [36;1m[0m
+2025-02-28T15:24:36.1811477Z [36;1muv pip sync \[0m
+2025-02-28T15:24:36.1812288Z [36;1m  /home/runner/work/_actions/hynek/build-and-inspect-python-package/v2.12.0/requirements/tools.txt[0m
+2025-02-28T15:24:36.1879444Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:36.1879996Z env:
+2025-02-28T15:24:36.1880297Z   FORCE_COLOR: 1
+2025-02-28T15:24:36.1880666Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:36.1881330Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:36.1882500Z   VIRTUAL_ENV: /tmp/baipp
+2025-02-28T15:24:36.1883115Z ##[endgroup]
+2025-02-28T15:24:36.2600866Z [2mUsing Python 3.13.2 environment at: /tmp/baipp[0m
+2025-02-28T15:24:36.3935201Z [2mResolved [1m36 packages[0m [2min 132ms[0m[0m
+2025-02-28T15:24:36.4206127Z [36m[1mDownloading[0m[39m cryptography [2m(4.0MiB)[0m
+2025-02-28T15:24:36.4210012Z [36m[1mDownloading[0m[39m pygments [2m(1.2MiB)[0m
+2025-02-28T15:24:36.4255584Z [36m[1mDownloading[0m[39m pydantic-core [2m(1.9MiB)[0m
+2025-02-28T15:24:36.4936681Z  [32m[1mDownloaded[0m[39m pydantic-core
+2025-02-28T15:24:36.5696248Z  [32m[1mDownloaded[0m[39m cryptography
+2025-02-28T15:24:36.6016702Z  [32m[1mDownloaded[0m[39m pygments
+2025-02-28T15:24:36.6018640Z [2mPrepared [1m36 packages[0m [2min 208ms[0m[0m
+2025-02-28T15:24:36.6196964Z [2mInstalled [1m36 packages[0m [2min 17ms[0m[0m
+2025-02-28T15:24:36.6197602Z  [32m+[39m [1mannotated-types[0m[2m==0.7.0[0m
+2025-02-28T15:24:36.6198184Z  [32m+[39m [1mattrs[0m[2m==24.3.0[0m
+2025-02-28T15:24:36.6198719Z  [32m+[39m [1mcertifi[0m[2m==2024.12.14[0m
+2025-02-28T15:24:36.6199488Z  [32m+[39m [1mcffi[0m[2m==1.17.1[0m
+2025-02-28T15:24:36.6200068Z  [32m+[39m [1mcharset-normalizer[0m[2m==3.4.1[0m
+2025-02-28T15:24:36.6200670Z  [32m+[39m [1mcheck-wheel-contents[0m[2m==0.6.1[0m
+2025-02-28T15:24:36.6201267Z  [32m+[39m [1mclick[0m[2m==8.1.8[0m
+2025-02-28T15:24:36.6201794Z  [32m+[39m [1mcryptography[0m[2m==44.0.0[0m
+2025-02-28T15:24:36.6202662Z  [32m+[39m [1mdocutils[0m[2m==0.21.2[0m
+2025-02-28T15:24:36.6203274Z  [32m+[39m [1mid[0m[2m==1.5.0[0m
+2025-02-28T15:24:36.6204168Z  [32m+[39m [1midna[0m[2m==3.10[0m
+2025-02-28T15:24:36.6204756Z  [32m+[39m [1mjaraco-classes[0m[2m==3.4.0[0m
+2025-02-28T15:24:36.6205346Z  [32m+[39m [1mjaraco-context[0m[2m==6.0.1[0m
+2025-02-28T15:24:36.6205893Z  [32m+[39m [1mjaraco-functools[0m[2m==4.1.0[0m
+2025-02-28T15:24:36.6206419Z  [32m+[39m [1mjeepney[0m[2m==0.8.0[0m
+2025-02-28T15:24:36.6206887Z  [32m+[39m [1mkeyring[0m[2m==25.6.0[0m
+2025-02-28T15:24:36.6207415Z  [32m+[39m [1mmarkdown-it-py[0m[2m==3.0.0[0m
+2025-02-28T15:24:36.6207914Z  [32m+[39m [1mmdurl[0m[2m==0.1.2[0m
+2025-02-28T15:24:36.6208397Z  [32m+[39m [1mmore-itertools[0m[2m==10.6.0[0m
+2025-02-28T15:24:36.6209167Z  [32m+[39m [1mnh3[0m[2m==0.2.20[0m
+2025-02-28T15:24:36.6209696Z  [32m+[39m [1mpackaging[0m[2m==24.2[0m
+2025-02-28T15:24:36.6210218Z  [32m+[39m [1mpycparser[0m[2m==2.22[0m
+2025-02-28T15:24:36.6211281Z  [32m+[39m [1mpydantic[0m[2m==2.10.5[0m
+2025-02-28T15:24:36.6211834Z  [32m+[39m [1mpydantic-core[0m[2m==2.27.2[0m
+2025-02-28T15:24:36.6212381Z  [32m+[39m [1mpygments[0m[2m==2.19.1[0m
+2025-02-28T15:24:36.6212913Z  [32m+[39m [1mreadme-renderer[0m[2m==44.0[0m
+2025-02-28T15:24:36.6213462Z  [32m+[39m [1mrequests[0m[2m==2.32.3[0m
+2025-02-28T15:24:36.6214018Z  [32m+[39m [1mrequests-toolbelt[0m[2m==1.0.0[0m
+2025-02-28T15:24:36.6214551Z  [32m+[39m [1mrfc3986[0m[2m==2.0.0[0m
+2025-02-28T15:24:36.6215062Z  [32m+[39m [1mrich[0m[2m==13.9.4[0m
+2025-02-28T15:24:36.6215588Z  [32m+[39m [1msecretstorage[0m[2m==3.3.3[0m
+2025-02-28T15:24:36.6216124Z  [32m+[39m [1mtwine[0m[2m==6.1.0[0m
+2025-02-28T15:24:36.6216685Z  [32m+[39m [1mtyping-extensions[0m[2m==4.12.2[0m
+2025-02-28T15:24:36.6217244Z  [32m+[39m [1murllib3[0m[2m==2.3.0[0m
+2025-02-28T15:24:36.6217599Z  [32m+[39m [1mwheel[0m[2m==0.45.1[0m
+2025-02-28T15:24:36.6217938Z  [32m+[39m [1mwheel-filename[0m[2m==1.4.2[0m
+2025-02-28T15:24:36.6282446Z ##[group]Run echo "name=Packages-toga-travertino" >>${GITHUB_OUTPUT}
+2025-02-28T15:24:36.6282900Z [36;1mecho "name=Packages-toga-travertino" >>${GITHUB_OUTPUT}[0m
+2025-02-28T15:24:36.6330917Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:36.6331256Z env:
+2025-02-28T15:24:36.6331433Z   FORCE_COLOR: 1
+2025-02-28T15:24:36.6331662Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:36.6332049Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:36.6332407Z ##[endgroup]
+2025-02-28T15:24:36.6423684Z ##[group]Run unset UV_SYSTEM_PYTHON
+2025-02-28T15:24:36.6423981Z [36;1munset UV_SYSTEM_PYTHON[0m
+2025-02-28T15:24:36.6424202Z [36;1m[0m
+2025-02-28T15:24:36.6424480Z [36;1mecho Setting SOURCE_DATE_EPOCH to $(git log -1 --pretty=%ct).[0m
+2025-02-28T15:24:36.6424893Z [36;1mexport SOURCE_DATE_EPOCH=$(git log -1 --pretty=%ct)[0m
+2025-02-28T15:24:36.6425222Z [36;1m[0m
+2025-02-28T15:24:36.6425421Z [36;1mif [[ "false" == "true" ]]; then[0m
+2025-02-28T15:24:36.6425708Z [36;1m  uv build --sdist --out-dir /tmp/baipp/dist[0m
+2025-02-28T15:24:36.6425981Z [36;1melse[0m
+2025-02-28T15:24:36.6426193Z [36;1m  uv build --out-dir /tmp/baipp/dist[0m
+2025-02-28T15:24:36.6426449Z [36;1mfi[0m
+2025-02-28T15:24:36.6426625Z [36;1m[0m
+2025-02-28T15:24:36.6426914Z [36;1m# We don't need .gitignores and it litters the provenance output.[0m
+2025-02-28T15:24:36.6427266Z [36;1mrm -f /tmp/baipp/dist/.gitignore[0m
+2025-02-28T15:24:36.6473627Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:36.6473957Z env:
+2025-02-28T15:24:36.6474141Z   FORCE_COLOR: 1
+2025-02-28T15:24:36.6474357Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:36.6474734Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:36.6475091Z ##[endgroup]
+2025-02-28T15:24:36.6569860Z Setting SOURCE_DATE_EPOCH to 1740756255.
+2025-02-28T15:24:36.7145076Z [1mBuilding source distribution...[0m
+2025-02-28T15:24:37.4302608Z running egg_info
+2025-02-28T15:24:37.4336308Z creating src/travertino.egg-info
+2025-02-28T15:24:37.4337378Z writing src/travertino.egg-info/PKG-INFO
+2025-02-28T15:24:37.4354947Z writing dependency_links to src/travertino.egg-info/dependency_links.txt
+2025-02-28T15:24:37.4362514Z writing requirements to src/travertino.egg-info/requires.txt
+2025-02-28T15:24:37.4363588Z writing top-level names to src/travertino.egg-info/top_level.txt
+2025-02-28T15:24:37.4365316Z writing manifest file 'src/travertino.egg-info/SOURCES.txt'
+2025-02-28T15:24:37.5941844Z adding license file 'LICENSE'
+2025-02-28T15:24:37.5942460Z adding license file 'AUTHORS'
+2025-02-28T15:24:37.5950746Z writing manifest file 'src/travertino.egg-info/SOURCES.txt'
+2025-02-28T15:24:37.8543710Z running sdist
+2025-02-28T15:24:37.8544598Z running egg_info
+2025-02-28T15:24:37.8590010Z writing src/travertino.egg-info/PKG-INFO
+2025-02-28T15:24:37.8602928Z writing dependency_links to src/travertino.egg-info/dependency_links.txt
+2025-02-28T15:24:37.8610664Z writing requirements to src/travertino.egg-info/requires.txt
+2025-02-28T15:24:37.8611780Z writing top-level names to src/travertino.egg-info/top_level.txt
+2025-02-28T15:24:38.0119997Z adding license file 'LICENSE'
+2025-02-28T15:24:38.0120676Z adding license file 'AUTHORS'
+2025-02-28T15:24:38.0130398Z writing manifest file 'src/travertino.egg-info/SOURCES.txt'
+2025-02-28T15:24:38.0132979Z running check
+2025-02-28T15:24:38.0168016Z creating travertino-0.4.9.dev629+g68266e24a
+2025-02-28T15:24:38.0171550Z creating travertino-0.4.9.dev629+g68266e24a/src/travertino
+2025-02-28T15:24:38.0173425Z creating travertino-0.4.9.dev629+g68266e24a/src/travertino.egg-info
+2025-02-28T15:24:38.0175014Z creating travertino-0.4.9.dev629+g68266e24a/src/travertino/properties
+2025-02-28T15:24:38.0176510Z creating travertino-0.4.9.dev629+g68266e24a/tests
+2025-02-28T15:24:38.0178243Z creating travertino-0.4.9.dev629+g68266e24a/tests/colors
+2025-02-28T15:24:38.0179777Z copying files to travertino-0.4.9.dev629+g68266e24a...
+2025-02-28T15:24:38.0180748Z copying AUTHORS -> travertino-0.4.9.dev629+g68266e24a
+2025-02-28T15:24:38.0182921Z copying CHANGELOG.rst -> travertino-0.4.9.dev629+g68266e24a
+2025-02-28T15:24:38.0184954Z copying CONTRIBUTING.md -> travertino-0.4.9.dev629+g68266e24a
+2025-02-28T15:24:38.0186477Z copying LICENSE -> travertino-0.4.9.dev629+g68266e24a
+2025-02-28T15:24:38.0188198Z copying README.rst -> travertino-0.4.9.dev629+g68266e24a
+2025-02-28T15:24:38.0190217Z copying pyproject.toml -> travertino-0.4.9.dev629+g68266e24a
+2025-02-28T15:24:38.0192076Z copying src/travertino/__init__.py -> travertino-0.4.9.dev629+g68266e24a/src/travertino
+2025-02-28T15:24:38.0193742Z copying src/travertino/colors.py -> travertino-0.4.9.dev629+g68266e24a/src/travertino
+2025-02-28T15:24:38.0195807Z copying src/travertino/constants.py -> travertino-0.4.9.dev629+g68266e24a/src/travertino
+2025-02-28T15:24:38.0197548Z copying src/travertino/declaration.py -> travertino-0.4.9.dev629+g68266e24a/src/travertino
+2025-02-28T15:24:38.0199545Z copying src/travertino/fonts.py -> travertino-0.4.9.dev629+g68266e24a/src/travertino
+2025-02-28T15:24:38.0201238Z copying src/travertino/layout.py -> travertino-0.4.9.dev629+g68266e24a/src/travertino
+2025-02-28T15:24:38.0203030Z copying src/travertino/node.py -> travertino-0.4.9.dev629+g68266e24a/src/travertino
+2025-02-28T15:24:38.0204911Z copying src/travertino/size.py -> travertino-0.4.9.dev629+g68266e24a/src/travertino
+2025-02-28T15:24:38.0206490Z copying src/travertino/style.py -> travertino-0.4.9.dev629+g68266e24a/src/travertino
+2025-02-28T15:24:38.0208375Z copying src/travertino.egg-info/PKG-INFO -> travertino-0.4.9.dev629+g68266e24a/src/travertino.egg-info
+2025-02-28T15:24:38.0210390Z copying src/travertino.egg-info/SOURCES.txt -> travertino-0.4.9.dev629+g68266e24a/src/travertino.egg-info
+2025-02-28T15:24:38.0212212Z copying src/travertino.egg-info/dependency_links.txt -> travertino-0.4.9.dev629+g68266e24a/src/travertino.egg-info
+2025-02-28T15:24:38.0213876Z copying src/travertino.egg-info/requires.txt -> travertino-0.4.9.dev629+g68266e24a/src/travertino.egg-info
+2025-02-28T15:24:38.0215735Z copying src/travertino.egg-info/top_level.txt -> travertino-0.4.9.dev629+g68266e24a/src/travertino.egg-info
+2025-02-28T15:24:38.0217131Z copying src/travertino/properties/choices.py -> travertino-0.4.9.dev629+g68266e24a/src/travertino/properties
+2025-02-28T15:24:38.0218515Z copying src/travertino/properties/immutablelist.py -> travertino-0.4.9.dev629+g68266e24a/src/travertino/properties
+2025-02-28T15:24:38.0220330Z copying src/travertino/properties/shorthand.py -> travertino-0.4.9.dev629+g68266e24a/src/travertino/properties
+2025-02-28T15:24:38.0222191Z copying src/travertino/properties/validated.py -> travertino-0.4.9.dev629+g68266e24a/src/travertino/properties
+2025-02-28T15:24:38.0223136Z copying tests/__init__.py -> travertino-0.4.9.dev629+g68266e24a/tests
+2025-02-28T15:24:38.0224859Z copying tests/test_choices.py -> travertino-0.4.9.dev629+g68266e24a/tests
+2025-02-28T15:24:38.0226728Z copying tests/test_fonts.py -> travertino-0.4.9.dev629+g68266e24a/tests
+2025-02-28T15:24:38.0228456Z copying tests/test_layout.py -> travertino-0.4.9.dev629+g68266e24a/tests
+2025-02-28T15:24:38.0230331Z copying tests/test_node.py -> travertino-0.4.9.dev629+g68266e24a/tests
+2025-02-28T15:24:38.0232085Z copying tests/test_size.py -> travertino-0.4.9.dev629+g68266e24a/tests
+2025-02-28T15:24:38.0233786Z copying tests/test_style.py -> travertino-0.4.9.dev629+g68266e24a/tests
+2025-02-28T15:24:38.0235611Z copying tests/utils.py -> travertino-0.4.9.dev629+g68266e24a/tests
+2025-02-28T15:24:38.0237346Z copying tests/colors/__init__.py -> travertino-0.4.9.dev629+g68266e24a/tests/colors
+2025-02-28T15:24:38.0238996Z copying tests/colors/test_alpha_blending.py -> travertino-0.4.9.dev629+g68266e24a/tests/colors
+2025-02-28T15:24:38.0241112Z copying tests/colors/test_color_conversion.py -> travertino-0.4.9.dev629+g68266e24a/tests/colors
+2025-02-28T15:24:38.0242965Z copying tests/colors/test_constructor.py -> travertino-0.4.9.dev629+g68266e24a/tests/colors
+2025-02-28T15:24:38.0244705Z copying tests/colors/test_parsing.py -> travertino-0.4.9.dev629+g68266e24a/tests/colors
+2025-02-28T15:24:38.0246468Z copying src/travertino.egg-info/SOURCES.txt -> travertino-0.4.9.dev629+g68266e24a/src/travertino.egg-info
+2025-02-28T15:24:38.0261514Z Writing travertino-0.4.9.dev629+g68266e24a/setup.cfg
+2025-02-28T15:24:38.0263348Z Creating tar archive
+2025-02-28T15:24:38.0483141Z removing 'travertino-0.4.9.dev629+g68266e24a' (and everything under it)
+2025-02-28T15:24:38.0967917Z [1mBuilding wheel from source distribution...[0m
+2025-02-28T15:24:38.5554230Z running egg_info
+2025-02-28T15:24:38.5574494Z writing src/travertino.egg-info/PKG-INFO
+2025-02-28T15:24:38.5586899Z writing dependency_links to src/travertino.egg-info/dependency_links.txt
+2025-02-28T15:24:38.5594763Z writing requirements to src/travertino.egg-info/requires.txt
+2025-02-28T15:24:38.5596226Z writing top-level names to src/travertino.egg-info/top_level.txt
+2025-02-28T15:24:38.5742808Z ERROR setuptools_scm._file_finders.git listing git files failed - pretending there aren't any
+2025-02-28T15:24:38.7552870Z reading manifest file 'src/travertino.egg-info/SOURCES.txt'
+2025-02-28T15:24:38.7559187Z adding license file 'LICENSE'
+2025-02-28T15:24:38.7559779Z adding license file 'AUTHORS'
+2025-02-28T15:24:38.7569597Z writing manifest file 'src/travertino.egg-info/SOURCES.txt'
+2025-02-28T15:24:38.9560694Z running bdist_wheel
+2025-02-28T15:24:38.9649336Z running build
+2025-02-28T15:24:38.9650002Z running build_py
+2025-02-28T15:24:38.9667872Z creating build/lib/travertino
+2025-02-28T15:24:38.9671309Z copying src/travertino/node.py -> build/lib/travertino
+2025-02-28T15:24:38.9673774Z copying src/travertino/colors.py -> build/lib/travertino
+2025-02-28T15:24:38.9676138Z copying src/travertino/constants.py -> build/lib/travertino
+2025-02-28T15:24:38.9677906Z copying src/travertino/layout.py -> build/lib/travertino
+2025-02-28T15:24:38.9679742Z copying src/travertino/declaration.py -> build/lib/travertino
+2025-02-28T15:24:38.9681543Z copying src/travertino/__init__.py -> build/lib/travertino
+2025-02-28T15:24:38.9683271Z copying src/travertino/fonts.py -> build/lib/travertino
+2025-02-28T15:24:38.9685094Z copying src/travertino/style.py -> build/lib/travertino
+2025-02-28T15:24:38.9687025Z copying src/travertino/size.py -> build/lib/travertino
+2025-02-28T15:24:38.9690399Z creating build/lib/travertino/properties
+2025-02-28T15:24:38.9692015Z copying src/travertino/properties/choices.py -> build/lib/travertino/properties
+2025-02-28T15:24:38.9694462Z copying src/travertino/properties/immutablelist.py -> build/lib/travertino/properties
+2025-02-28T15:24:38.9696552Z copying src/travertino/properties/shorthand.py -> build/lib/travertino/properties
+2025-02-28T15:24:38.9698751Z copying src/travertino/properties/validated.py -> build/lib/travertino/properties
+2025-02-28T15:24:38.9699915Z running egg_info
+2025-02-28T15:24:38.9716489Z writing src/travertino.egg-info/PKG-INFO
+2025-02-28T15:24:38.9730750Z writing dependency_links to src/travertino.egg-info/dependency_links.txt
+2025-02-28T15:24:38.9737644Z writing requirements to src/travertino.egg-info/requires.txt
+2025-02-28T15:24:38.9739010Z writing top-level names to src/travertino.egg-info/top_level.txt
+2025-02-28T15:24:38.9824808Z ERROR setuptools_scm._file_finders.git listing git files failed - pretending there aren't any
+2025-02-28T15:24:39.1186852Z reading manifest file 'src/travertino.egg-info/SOURCES.txt'
+2025-02-28T15:24:39.1193307Z adding license file 'LICENSE'
+2025-02-28T15:24:39.1203825Z adding license file 'AUTHORS'
+2025-02-28T15:24:39.1204305Z writing manifest file 'src/travertino.egg-info/SOURCES.txt'
+2025-02-28T15:24:39.1243640Z installing to build/bdist.linux-x86_64/wheel
+2025-02-28T15:24:39.1244131Z running install
+2025-02-28T15:24:39.1307320Z running install_lib
+2025-02-28T15:24:39.1325090Z creating build/bdist.linux-x86_64/wheel
+2025-02-28T15:24:39.1327912Z creating build/bdist.linux-x86_64/wheel/travertino
+2025-02-28T15:24:39.1330009Z copying build/lib/travertino/node.py -> build/bdist.linux-x86_64/wheel/./travertino
+2025-02-28T15:24:39.1331858Z copying build/lib/travertino/colors.py -> build/bdist.linux-x86_64/wheel/./travertino
+2025-02-28T15:24:39.1334134Z creating build/bdist.linux-x86_64/wheel/travertino/properties
+2025-02-28T15:24:39.1336078Z copying build/lib/travertino/properties/choices.py -> build/bdist.linux-x86_64/wheel/./travertino/properties
+2025-02-28T15:24:39.1337774Z copying build/lib/travertino/properties/immutablelist.py -> build/bdist.linux-x86_64/wheel/./travertino/properties
+2025-02-28T15:24:39.1340013Z copying build/lib/travertino/properties/shorthand.py -> build/bdist.linux-x86_64/wheel/./travertino/properties
+2025-02-28T15:24:39.1341799Z copying build/lib/travertino/properties/validated.py -> build/bdist.linux-x86_64/wheel/./travertino/properties
+2025-02-28T15:24:39.1343519Z copying build/lib/travertino/constants.py -> build/bdist.linux-x86_64/wheel/./travertino
+2025-02-28T15:24:39.1345299Z copying build/lib/travertino/layout.py -> build/bdist.linux-x86_64/wheel/./travertino
+2025-02-28T15:24:39.1347178Z copying build/lib/travertino/declaration.py -> build/bdist.linux-x86_64/wheel/./travertino
+2025-02-28T15:24:39.1349022Z copying build/lib/travertino/__init__.py -> build/bdist.linux-x86_64/wheel/./travertino
+2025-02-28T15:24:39.1350682Z copying build/lib/travertino/fonts.py -> build/bdist.linux-x86_64/wheel/./travertino
+2025-02-28T15:24:39.1352865Z copying build/lib/travertino/style.py -> build/bdist.linux-x86_64/wheel/./travertino
+2025-02-28T15:24:39.1354570Z copying build/lib/travertino/size.py -> build/bdist.linux-x86_64/wheel/./travertino
+2025-02-28T15:24:39.1355614Z running install_egg_info
+2025-02-28T15:24:39.1372721Z Copying src/travertino.egg-info to build/bdist.linux-x86_64/wheel/./travertino-0.4.9.dev629+g68266e24a-py3.12.egg-info
+2025-02-28T15:24:39.1380263Z running install_scripts
+2025-02-28T15:24:39.1391034Z creating build/bdist.linux-x86_64/wheel/travertino-0.4.9.dev629+g68266e24a.dist-info/WHEEL
+2025-02-28T15:24:39.1396083Z creating '/tmp/baipp/dist/.tmp-nhte9_ww/travertino-0.4.9.dev629+g68266e24a-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+2025-02-28T15:24:39.1400024Z adding 'travertino/__init__.py'
+2025-02-28T15:24:39.1407244Z adding 'travertino/colors.py'
+2025-02-28T15:24:39.1410993Z adding 'travertino/constants.py'
+2025-02-28T15:24:39.1412977Z adding 'travertino/declaration.py'
+2025-02-28T15:24:39.1415482Z adding 'travertino/fonts.py'
+2025-02-28T15:24:39.1418126Z adding 'travertino/layout.py'
+2025-02-28T15:24:39.1421706Z adding 'travertino/node.py'
+2025-02-28T15:24:39.1423535Z adding 'travertino/size.py'
+2025-02-28T15:24:39.1426626Z adding 'travertino/style.py'
+2025-02-28T15:24:39.1428979Z adding 'travertino/properties/choices.py'
+2025-02-28T15:24:39.1430864Z adding 'travertino/properties/immutablelist.py'
+2025-02-28T15:24:39.1432731Z adding 'travertino/properties/shorthand.py'
+2025-02-28T15:24:39.1435079Z adding 'travertino/properties/validated.py'
+2025-02-28T15:24:39.1437952Z adding 'travertino-0.4.9.dev629+g68266e24a.dist-info/AUTHORS'
+2025-02-28T15:24:39.1439414Z adding 'travertino-0.4.9.dev629+g68266e24a.dist-info/LICENSE'
+2025-02-28T15:24:39.1441646Z adding 'travertino-0.4.9.dev629+g68266e24a.dist-info/METADATA'
+2025-02-28T15:24:39.1442756Z adding 'travertino-0.4.9.dev629+g68266e24a.dist-info/WHEEL'
+2025-02-28T15:24:39.1444265Z adding 'travertino-0.4.9.dev629+g68266e24a.dist-info/top_level.txt'
+2025-02-28T15:24:39.1446530Z adding 'travertino-0.4.9.dev629+g68266e24a.dist-info/RECORD'
+2025-02-28T15:24:39.1448091Z removing build/bdist.linux-x86_64/wheel
+2025-02-28T15:24:39.1849820Z Successfully built [36m[1m/tmp/baipp/dist/travertino-0.4.9.dev629+g68266e24a.tar.gz[0m[39m
+2025-02-28T15:24:39.1851252Z Successfully built [36m[1m/tmp/baipp/dist/travertino-0.4.9.dev629+g68266e24a-py3-none-any.whl[0m[39m
+2025-02-28T15:24:39.1916412Z ##[group]Run uv cache prune --ci
+2025-02-28T15:24:39.1916699Z [36;1muv cache prune --ci[0m
+2025-02-28T15:24:39.1963351Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:39.1963682Z env:
+2025-02-28T15:24:39.1963858Z   FORCE_COLOR: 1
+2025-02-28T15:24:39.1964068Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:39.1964443Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:39.1964796Z ##[endgroup]
+2025-02-28T15:24:39.2089065Z Pruning cache at: [36m/tmp/baipp-uv_cache_dir[39m
+2025-02-28T15:24:39.2561284Z Removed 2110 files ([32m37.1MiB[39m)
+2025-02-28T15:24:39.2601242Z ##[group]Run echo -e '\n### Package Contents' >> $GITHUB_STEP_SUMMARY
+2025-02-28T15:24:39.2601665Z [36;1mecho -e '\n### Package Contents' >> $GITHUB_STEP_SUMMARY[0m
+2025-02-28T15:24:39.2647655Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:39.2647989Z env:
+2025-02-28T15:24:39.2648160Z   FORCE_COLOR: 1
+2025-02-28T15:24:39.2648375Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:39.2648975Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:39.2649456Z ##[endgroup]
+2025-02-28T15:24:39.2748753Z ##[group]Run echo "dist=/tmp/baipp/dist" >>$GITHUB_OUTPUT
+2025-02-28T15:24:39.2749362Z [36;1mecho "dist=/tmp/baipp/dist" >>$GITHUB_OUTPUT[0m
+2025-02-28T15:24:39.2795252Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:39.2795577Z env:
+2025-02-28T15:24:39.2795753Z   FORCE_COLOR: 1
+2025-02-28T15:24:39.2795965Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:39.2796336Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:39.2796696Z ##[endgroup]
+2025-02-28T15:24:39.2889021Z ##[group]Run ls -l /tmp/baipp/dist
+2025-02-28T15:24:39.2889365Z [36;1mls -l /tmp/baipp/dist[0m
+2025-02-28T15:24:39.2935281Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:39.2935611Z env:
+2025-02-28T15:24:39.2935794Z   FORCE_COLOR: 1
+2025-02-28T15:24:39.2936009Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:39.2936396Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:39.2936774Z ##[endgroup]
+2025-02-28T15:24:39.3022575Z total 68
+2025-02-28T15:24:39.3023236Z -rw-r--r-- 1 runner docker 22881 Feb 28 15:24 travertino-0.4.9.dev629+g68266e24a-py3-none-any.whl
+2025-02-28T15:24:39.3024197Z -rw-r--r-- 1 runner docker 41275 Feb 28 15:24 travertino-0.4.9.dev629+g68266e24a.tar.gz
+2025-02-28T15:24:39.3060483Z ##[group]Run actions/upload-artifact@v4
+2025-02-28T15:24:39.3060743Z with:
+2025-02-28T15:24:39.3060938Z   name: Packages-toga-travertino
+2025-02-28T15:24:39.3061189Z   path: /tmp/baipp/dist/*
+2025-02-28T15:24:39.3061411Z   if-no-files-found: warn
+2025-02-28T15:24:39.3061630Z   compression-level: 6
+2025-02-28T15:24:39.3061834Z   overwrite: false
+2025-02-28T15:24:39.3062038Z   include-hidden-files: false
+2025-02-28T15:24:39.3062260Z env:
+2025-02-28T15:24:39.3062428Z   FORCE_COLOR: 1
+2025-02-28T15:24:39.3062628Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:39.3063180Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:39.3063688Z ##[endgroup]
+2025-02-28T15:24:39.5285058Z With the provided path, there will be 2 files uploaded
+2025-02-28T15:24:39.5291117Z Artifact name is valid!
+2025-02-28T15:24:39.5292243Z Root directory input is valid!
+2025-02-28T15:24:39.6019230Z Beginning upload of artifact content to blob storage
+2025-02-28T15:24:39.6802465Z Uploaded bytes 62313
+2025-02-28T15:24:39.6978045Z Finished uploading artifact content to blob storage!
+2025-02-28T15:24:39.6981528Z SHA256 hash of uploaded artifact zip is 97e2232ccd1f857be82a37e65e75d71b79642c7c8216819d5fd1b4ce3dba57f7
+2025-02-28T15:24:39.6983789Z Finalizing artifact upload
+2025-02-28T15:24:39.7759753Z Artifact Packages-toga-travertino.zip successfully finalized. Artifact ID 2671286454
+2025-02-28T15:24:39.7761204Z Artifact Packages-toga-travertino has been successfully uploaded! Final size is 62313 bytes. Artifact ID is 2671286454
+2025-02-28T15:24:39.7768670Z Artifact download URL: https://github.com/beeware/toga/actions/runs/13591189051/artifacts/2671286454
+2025-02-28T15:24:39.7886193Z ##[group]Run if [[ "false" != 'true' ]]; then
+2025-02-28T15:24:39.7886724Z [36;1mif [[ "false" != 'true' ]]; then[0m
+2025-02-28T15:24:39.7887331Z [36;1m  /tmp/baipp/bin/check-wheel-contents /tmp/baipp/dist/*.whl[0m
+2025-02-28T15:24:39.7887976Z [36;1mfi[0m
+2025-02-28T15:24:39.7952489Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:39.7953056Z env:
+2025-02-28T15:24:39.7953355Z   FORCE_COLOR: 1
+2025-02-28T15:24:39.7953726Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:39.7954411Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:39.7955076Z ##[endgroup]
+2025-02-28T15:24:40.8439392Z /tmp/baipp/dist/travertino-0.4.9.dev629+g68266e24a-py3-none-any.whl: OK
+2025-02-28T15:24:40.8730496Z ##[group]Run /tmp/baipp/bin/python -m twine check --strict /tmp/baipp/dist/*
+2025-02-28T15:24:40.8731011Z [36;1m/tmp/baipp/bin/python -m twine check --strict /tmp/baipp/dist/*[0m
+2025-02-28T15:24:40.8777160Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:40.8777491Z env:
+2025-02-28T15:24:40.8777666Z   FORCE_COLOR: 1
+2025-02-28T15:24:40.8777885Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:40.8778251Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:40.8778617Z ##[endgroup]
+2025-02-28T15:24:42.1955387Z Checking /tmp/baipp/dist/travertino-0.4.9.dev629+g68266e24a-py3-none-any.whl: [32mPASSED[0m
+2025-02-28T15:24:42.2164129Z Checking /tmp/baipp/dist/travertino-0.4.9.dev629+g68266e24a.tar.gz: [32mPASSED[0m
+2025-02-28T15:24:42.2669435Z ##[group]Run cd /tmp/baipp/dist
+2025-02-28T15:24:42.2669731Z [36;1mcd /tmp/baipp/dist[0m
+2025-02-28T15:24:42.2670001Z [36;1mmkdir -p out/sdist[0m
+2025-02-28T15:24:42.2670248Z [36;1mtar xf *.tar.gz -C out/sdist[0m
+2025-02-28T15:24:42.2670498Z [36;1m[0m
+2025-02-28T15:24:42.2670714Z [36;1mif ! command -v tree &> /dev/null; then[0m
+2025-02-28T15:24:42.2671037Z [36;1m    sudo apt-get install tree[0m
+2025-02-28T15:24:42.2671281Z [36;1mfi[0m
+2025-02-28T15:24:42.2671451Z [36;1m[0m
+2025-02-28T15:24:42.2671761Z [36;1mecho -e '\n<details><summary>SDist contents</summary>\n' >> $GITHUB_STEP_SUMMARY[0m
+2025-02-28T15:24:42.2672345Z [36;1m(cd /tmp/baipp/dist/out/sdist && tree -Da --timefmt="%Y-%m-%dT%H:%M:%SZ" * | sed 's/^/    /' | tee -a $GITHUB_STEP_SUMMARY)[0m
+2025-02-28T15:24:42.2672835Z [36;1mecho -e '\n</details>\n' >> $GITHUB_STEP_SUMMARY[0m
+2025-02-28T15:24:42.2673101Z [36;1m[0m
+2025-02-28T15:24:42.2673281Z [36;1mif [[ "false" != 'true' ]]; then[0m
+2025-02-28T15:24:42.2673538Z [36;1m    mkdir -p out/wheels[0m
+2025-02-28T15:24:42.2673875Z [36;1m    /tmp/baipp/bin/python -m wheel unpack --dest out/wheels *.whl[0m
+2025-02-28T15:24:42.2674202Z [36;1m[0m
+2025-02-28T15:24:42.2674504Z [36;1m    echo -e '\n<details><summary>Wheel contents</summary>\n' >> $GITHUB_STEP_SUMMARY[0m
+2025-02-28T15:24:42.2675219Z [36;1m    (cd /tmp/baipp/dist/out/wheels && tree -a * | sed 's/^/    /' | tee -a $GITHUB_STEP_SUMMARY)[0m
+2025-02-28T15:24:42.2675794Z [36;1m    echo -e '\n</details>\n' >> $GITHUB_STEP_SUMMARY[0m
+2025-02-28T15:24:42.2676066Z [36;1mfi[0m
+2025-02-28T15:24:42.2676238Z [36;1m[0m
+2025-02-28T15:24:42.2676436Z [36;1mecho ----- Metadata Follows -----[0m
+2025-02-28T15:24:42.2676797Z [36;1mecho -e '\n<details><summary>Metadata</summary>\n' >> $GITHUB_STEP_SUMMARY[0m
+2025-02-28T15:24:42.2677257Z [36;1mcat out/sdist/*/PKG-INFO | sed 's/^/    /' | tee -a $GITHUB_STEP_SUMMARY[0m
+2025-02-28T15:24:42.2677642Z [36;1mecho -e '\n</details>\n' >> $GITHUB_STEP_SUMMARY[0m
+2025-02-28T15:24:42.2677942Z [36;1mecho ----- End of Metadata  -----[0m
+2025-02-28T15:24:42.2723938Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:42.2724264Z env:
+2025-02-28T15:24:42.2724442Z   FORCE_COLOR: 1
+2025-02-28T15:24:42.2724655Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:42.2725041Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:42.2725407Z ##[endgroup]
+2025-02-28T15:24:42.2976482Z     [2025-02-28T15:24:38Z]  travertino-0.4.9.dev629+g68266e24a
+2025-02-28T15:24:42.2977351Z     ├── [2025-02-28T15:24:33Z]  AUTHORS
+2025-02-28T15:24:42.2977932Z     ├── [2025-02-28T15:24:33Z]  CHANGELOG.rst
+2025-02-28T15:24:42.2978393Z     ├── [2025-02-28T15:24:33Z]  CONTRIBUTING.md
+2025-02-28T15:24:42.2978750Z     ├── [2025-02-28T15:24:33Z]  LICENSE
+2025-02-28T15:24:42.2979479Z     ├── [2025-02-28T15:24:38Z]  PKG-INFO
+2025-02-28T15:24:42.2979961Z     ├── [2025-02-28T15:24:33Z]  README.rst
+2025-02-28T15:24:42.2980508Z     ├── [2025-02-28T15:24:33Z]  pyproject.toml
+2025-02-28T15:24:42.2981121Z     ├── [2025-02-28T15:24:38Z]  setup.cfg
+2025-02-28T15:24:42.2981651Z     ├── [2025-02-28T15:24:38Z]  src
+2025-02-28T15:24:42.2982164Z     │   ├── [2025-02-28T15:24:38Z]  travertino
+2025-02-28T15:24:42.2982729Z     │   │   ├── [2025-02-28T15:24:33Z]  __init__.py
+2025-02-28T15:24:42.2983159Z     │   │   ├── [2025-02-28T15:24:33Z]  colors.py
+2025-02-28T15:24:42.2983670Z     │   │   ├── [2025-02-28T15:24:33Z]  constants.py
+2025-02-28T15:24:42.2984014Z     │   │   ├── [2025-02-28T15:24:33Z]  declaration.py
+2025-02-28T15:24:42.2984326Z     │   │   ├── [2025-02-28T15:24:33Z]  fonts.py
+2025-02-28T15:24:42.2984620Z     │   │   ├── [2025-02-28T15:24:33Z]  layout.py
+2025-02-28T15:24:42.2984920Z     │   │   ├── [2025-02-28T15:24:33Z]  node.py
+2025-02-28T15:24:42.2985228Z     │   │   ├── [2025-02-28T15:24:38Z]  properties
+2025-02-28T15:24:42.2985545Z     │   │   │   ├── [2025-02-28T15:24:33Z]  choices.py
+2025-02-28T15:24:42.2985873Z     │   │   │   ├── [2025-02-28T15:24:33Z]  immutablelist.py
+2025-02-28T15:24:42.2986200Z     │   │   │   ├── [2025-02-28T15:24:33Z]  shorthand.py
+2025-02-28T15:24:42.2986508Z     │   │   │   └── [2025-02-28T15:24:33Z]  validated.py
+2025-02-28T15:24:42.2986812Z     │   │   ├── [2025-02-28T15:24:33Z]  size.py
+2025-02-28T15:24:42.2987135Z     │   │   └── [2025-02-28T15:24:33Z]  style.py
+2025-02-28T15:24:42.2987489Z     │   └── [2025-02-28T15:24:38Z]  travertino.egg-info
+2025-02-28T15:24:42.2987803Z     │       ├── [2025-02-28T15:24:37Z]  PKG-INFO
+2025-02-28T15:24:42.2988111Z     │       ├── [2025-02-28T15:24:38Z]  SOURCES.txt
+2025-02-28T15:24:42.2988441Z     │       ├── [2025-02-28T15:24:37Z]  dependency_links.txt
+2025-02-28T15:24:42.2989010Z     │       ├── [2025-02-28T15:24:37Z]  requires.txt
+2025-02-28T15:24:42.2989407Z     │       └── [2025-02-28T15:24:37Z]  top_level.txt
+2025-02-28T15:24:42.2989707Z     └── [2025-02-28T15:24:38Z]  tests
+2025-02-28T15:24:42.2989991Z         ├── [2025-02-28T15:24:33Z]  __init__.py
+2025-02-28T15:24:42.2990285Z         ├── [2025-02-28T15:24:38Z]  colors
+2025-02-28T15:24:42.2990579Z         │   ├── [2025-02-28T15:24:33Z]  __init__.py
+2025-02-28T15:24:42.2990919Z         │   ├── [2025-02-28T15:24:33Z]  test_alpha_blending.py
+2025-02-28T15:24:42.2991293Z         │   ├── [2025-02-28T15:24:33Z]  test_color_conversion.py
+2025-02-28T15:24:42.2991901Z         │   ├── [2025-02-28T15:24:33Z]  test_constructor.py
+2025-02-28T15:24:42.2992388Z         │   └── [2025-02-28T15:24:33Z]  test_parsing.py
+2025-02-28T15:24:42.2992703Z         ├── [2025-02-28T15:24:33Z]  test_choices.py
+2025-02-28T15:24:42.2993010Z         ├── [2025-02-28T15:24:33Z]  test_fonts.py
+2025-02-28T15:24:42.2993315Z         ├── [2025-02-28T15:24:33Z]  test_layout.py
+2025-02-28T15:24:42.2993611Z         ├── [2025-02-28T15:24:33Z]  test_node.py
+2025-02-28T15:24:42.2993905Z         ├── [2025-02-28T15:24:33Z]  test_size.py
+2025-02-28T15:24:42.2994198Z         ├── [2025-02-28T15:24:33Z]  test_style.py
+2025-02-28T15:24:42.2994495Z         └── [2025-02-28T15:24:33Z]  utils.py
+2025-02-28T15:24:42.2994750Z     
+2025-02-28T15:24:42.2995063Z     7 directories, 39 files
+2025-02-28T15:24:42.3583928Z Unpacking to: out/wheels/travertino-0.4.9.dev629+g68266e24a...OK
+2025-02-28T15:24:42.3695666Z     travertino-0.4.9.dev629+g68266e24a
+2025-02-28T15:24:42.3696442Z     ├── travertino
+2025-02-28T15:24:42.3696848Z     │   ├── __init__.py
+2025-02-28T15:24:42.3697324Z     │   ├── colors.py
+2025-02-28T15:24:42.3697731Z     │   ├── constants.py
+2025-02-28T15:24:42.3698142Z     │   ├── declaration.py
+2025-02-28T15:24:42.3698569Z     │   ├── fonts.py
+2025-02-28T15:24:42.3699226Z     │   ├── layout.py
+2025-02-28T15:24:42.3699518Z     │   ├── node.py
+2025-02-28T15:24:42.3699763Z     │   ├── properties
+2025-02-28T15:24:42.3700163Z     │   │   ├── choices.py
+2025-02-28T15:24:42.3700531Z     │   │   ├── immutablelist.py
+2025-02-28T15:24:42.3700827Z     │   │   ├── shorthand.py
+2025-02-28T15:24:42.3701081Z     │   │   └── validated.py
+2025-02-28T15:24:42.3701316Z     │   ├── size.py
+2025-02-28T15:24:42.3701526Z     │   └── style.py
+2025-02-28T15:24:42.3701826Z     └── travertino-0.4.9.dev629+g68266e24a.dist-info
+2025-02-28T15:24:42.3702132Z         ├── AUTHORS
+2025-02-28T15:24:42.3702331Z         ├── LICENSE
+2025-02-28T15:24:42.3702533Z         ├── METADATA
+2025-02-28T15:24:42.3702741Z         ├── RECORD
+2025-02-28T15:24:42.3703039Z         ├── WHEEL
+2025-02-28T15:24:42.3703468Z         └── top_level.txt
+2025-02-28T15:24:42.3703796Z     
+2025-02-28T15:24:42.3704106Z     4 directories, 19 files
+2025-02-28T15:24:42.3704503Z ----- Metadata Follows -----
+2025-02-28T15:24:42.3716807Z     Metadata-Version: 2.2
+2025-02-28T15:24:42.3717226Z     Name: travertino
+2025-02-28T15:24:42.3717626Z     Version: 0.4.9.dev629+g68266e24a
+2025-02-28T15:24:42.3718254Z     Summary: A set of constants and base classes for describing user interface layouts.
+2025-02-28T15:24:42.3719257Z     Author-email: Russell Keith-Magee <russell@keith-magee.com>
+2025-02-28T15:24:42.3719921Z     Maintainer-email: BeeWare Team <team@beeware.org>
+2025-02-28T15:24:42.3720404Z     License: New BSD
+2025-02-28T15:24:42.3720902Z     Project-URL: Homepage, https://beeware.org/travertino
+2025-02-28T15:24:42.3721758Z     Project-URL: Funding, https://beeware.org/contributing/membership/
+2025-02-28T15:24:42.3722512Z     Project-URL: Tracker, https://github.com/beeware/travertino/issues
+2025-02-28T15:24:42.3723240Z     Project-URL: Source, https://github.com/beeware/travertino
+2025-02-28T15:24:42.3723798Z     Keywords: css,box model,layout
+2025-02-28T15:24:42.3724291Z     Classifier: Development Status :: 4 - Beta
+2025-02-28T15:24:42.3724789Z     Classifier: Intended Audience :: Developers
+2025-02-28T15:24:42.3725295Z     Classifier: License :: OSI Approved :: BSD License
+2025-02-28T15:24:42.3725842Z     Classifier: Operating System :: OS Independent
+2025-02-28T15:24:42.3726379Z     Classifier: Programming Language :: Python :: 3
+2025-02-28T15:24:42.3726854Z     Classifier: Programming Language :: Python :: 3.9
+2025-02-28T15:24:42.3727201Z     Classifier: Programming Language :: Python :: 3.10
+2025-02-28T15:24:42.3727523Z     Classifier: Programming Language :: Python :: 3.11
+2025-02-28T15:24:42.3727835Z     Classifier: Programming Language :: Python :: 3.12
+2025-02-28T15:24:42.3728151Z     Classifier: Programming Language :: Python :: 3.13
+2025-02-28T15:24:42.3728683Z     Classifier: Programming Language :: Python :: 3.14
+2025-02-28T15:24:42.3729413Z     Classifier: Programming Language :: Python :: 3 :: Only
+2025-02-28T15:24:42.3729762Z     Classifier: Topic :: Software Development
+2025-02-28T15:24:42.3730104Z     Classifier: Topic :: Software Development :: User Interfaces
+2025-02-28T15:24:42.3730446Z     Requires-Python: >=3.9
+2025-02-28T15:24:42.3730707Z     Description-Content-Type: text/x-rst
+2025-02-28T15:24:42.3730980Z     License-File: LICENSE
+2025-02-28T15:24:42.3731208Z     License-File: AUTHORS
+2025-02-28T15:24:42.3731431Z     Provides-Extra: dev
+2025-02-28T15:24:42.3731687Z     Requires-Dist: coverage[toml]==7.6.12; extra == "dev"
+2025-02-28T15:24:42.3732080Z     Requires-Dist: coverage-conditional-plugin==0.9.0; extra == "dev"
+2025-02-28T15:24:42.3732457Z     Requires-Dist: pytest==8.3.4; extra == "dev"
+2025-02-28T15:24:42.3732748Z     Requires-Dist: tox==4.24.1; extra == "dev"
+2025-02-28T15:24:42.3733151Z     Requires-Dist: typing-extensions==4.12.2; python_version < "3.10" and extra == "dev"
+2025-02-28T15:24:42.3733538Z     
+2025-02-28T15:24:42.3733804Z     .. |logo| image:: https://beeware.org/static/images/defaultlogo.png
+2025-02-28T15:24:42.3734132Z         :width: 72px
+2025-02-28T15:24:42.3734350Z         :target: https://beeware.org
+2025-02-28T15:24:42.3734583Z     
+2025-02-28T15:24:42.3734873Z     .. |pyversions| image:: https://img.shields.io/pypi/pyversions/travertino.svg
+2025-02-28T15:24:42.3735282Z         :target: https://pypi.python.org/pypi/travertino
+2025-02-28T15:24:42.3735576Z         :alt: Python Versions
+2025-02-28T15:24:42.3735787Z     
+2025-02-28T15:24:42.3736042Z     .. |version| image:: https://img.shields.io/pypi/v/travertino.svg
+2025-02-28T15:24:42.3736407Z         :target: https://pypi.python.org/pypi/travertino
+2025-02-28T15:24:42.3736688Z         :alt: Project version
+2025-02-28T15:24:42.3736897Z     
+2025-02-28T15:24:42.3737164Z     .. |maturity| image:: https://img.shields.io/pypi/status/travertino.svg
+2025-02-28T15:24:42.3737553Z         :target: https://pypi.python.org/pypi/travertino
+2025-02-28T15:24:42.3737841Z         :alt: Project status
+2025-02-28T15:24:42.3738042Z     
+2025-02-28T15:24:42.3738302Z     .. |license| image:: https://img.shields.io/pypi/l/travertino.svg
+2025-02-28T15:24:42.3738726Z         :target: https://github.com/beeware/toga/blob/main/travertino/LICENSE
+2025-02-28T15:24:42.3739301Z         :alt: BSD License
+2025-02-28T15:24:42.3739502Z     
+2025-02-28T15:24:42.3739798Z     .. |ci| image:: https://github.com/beeware/toga/workflows/CI/badge.svg?branch=main
+2025-02-28T15:24:42.3740202Z        :target: https://github.com/beeware/toga/actions
+2025-02-28T15:24:42.3740488Z        :alt: Build Status
+2025-02-28T15:24:42.3740687Z     
+2025-02-28T15:24:42.3741114Z     .. |social| image:: https://img.shields.io/discord/836455665257021440?label=Discord%20Chat&logo=discord&style=plastic
+2025-02-28T15:24:42.3741612Z        :target: https://beeware.org/bee/chat/
+2025-02-28T15:24:42.3741870Z        :alt: Discord server
+2025-02-28T15:24:42.3742077Z     
+2025-02-28T15:24:42.3742254Z     |logo|
+2025-02-28T15:24:42.3742422Z     
+2025-02-28T15:24:42.3742587Z     Travertino
+2025-02-28T15:24:42.3742786Z     ==========
+2025-02-28T15:24:42.3742950Z     
+2025-02-28T15:24:42.3743184Z     |pyversions| |version| |maturity| |license| |ci| |social|
+2025-02-28T15:24:42.3743475Z     
+2025-02-28T15:24:42.3743734Z     Travertino is a set of constants and utilities for describing user
+2025-02-28T15:24:42.3744072Z     interfaces, including:
+2025-02-28T15:24:42.3744274Z     
+2025-02-28T15:24:42.3744434Z     * colors
+2025-02-28T15:24:42.3744609Z     * directions
+2025-02-28T15:24:42.3744797Z     * text alignment
+2025-02-28T15:24:42.3744984Z     * sizes
+2025-02-28T15:24:42.3745145Z     
+2025-02-28T15:24:42.3745301Z     Usage
+2025-02-28T15:24:42.3745467Z     -----
+2025-02-28T15:24:42.3745627Z     
+2025-02-28T15:24:42.3745794Z     Install Travertino:
+2025-02-28T15:24:42.3745981Z     
+2025-02-28T15:24:42.3746156Z         $ pip install travertino
+2025-02-28T15:24:42.3746372Z     
+2025-02-28T15:24:42.3746894Z     Then in your python code, import and use it::
+2025-02-28T15:24:42.3747156Z     
+2025-02-28T15:24:42.3747353Z         >>> from travertino.colors import color, rgb,
+2025-02-28T15:24:42.3747614Z     
+2025-02-28T15:24:42.3747798Z         # Define a new color as an RGB triple
+2025-02-28T15:24:42.3748062Z         >>> red = rgb(0xff, 0x00, 0x00)
+2025-02-28T15:24:42.3748292Z     
+2025-02-28T15:24:42.3748476Z         # Parse a color from a string
+2025-02-28T15:24:42.3748724Z         >>> color('#dead00')
+2025-02-28T15:24:42.3749123Z         rgb(0xde, 0xad, 0x00)
+2025-02-28T15:24:42.3749332Z     
+2025-02-28T15:24:42.3749508Z         # Reference a pre-defined color
+2025-02-28T15:24:42.3749771Z         >>> color('RebeccaPurple')
+2025-02-28T15:24:42.3750007Z         rgb(102, 51, 153)
+2025-02-28T15:24:42.3750202Z     
+2025-02-28T15:24:42.3750372Z     
+2025-02-28T15:24:42.3750535Z     Community
+2025-02-28T15:24:42.3750713Z     ---------
+2025-02-28T15:24:42.3750887Z     
+2025-02-28T15:24:42.3751183Z     Travertino is part of the `BeeWare suite`_. You can talk to the community through:
+2025-02-28T15:24:42.3751548Z     
+2025-02-28T15:24:42.3751826Z     * `@beeware@fosstodon.org on Mastodon <https://fosstodon.org/@beeware>`__
+2025-02-28T15:24:42.3752171Z     
+2025-02-28T15:24:42.3752371Z     * `Discord <https://beeware.org/bee/chat/>`__
+2025-02-28T15:24:42.3752632Z     
+2025-02-28T15:24:42.3752884Z     We foster a welcoming and respectful community as described in our
+2025-02-28T15:24:42.3753230Z     `BeeWare Community Code of Conduct`_.
+2025-02-28T15:24:42.3753476Z     
+2025-02-28T15:24:42.3753639Z     Contributing
+2025-02-28T15:24:42.3753823Z     ------------
+2025-02-28T15:24:42.3754000Z     
+2025-02-28T15:24:42.3754276Z     If you experience problems with Travertino, `log them on GitHub`_. If you
+2025-02-28T15:24:42.3754741Z     want to contribute code, please `fork the code`_ and `submit a pull request`_.
+2025-02-28T15:24:42.3755090Z     
+2025-02-28T15:24:42.3755365Z     Travertino uses `Pre-commit <https://pre-commit.com/>`__ and  `TownCrier
+2025-02-28T15:24:42.3755838Z     <https://pypi.org/project/towncrier/>`__ to help maintain code quality. For
+2025-02-28T15:24:42.3756302Z     details on how to use these tools as part of your development environment, see
+2025-02-28T15:24:42.3756687Z     the `Briefcase code contribution guide
+2025-02-28T15:24:42.3757075Z     <https://briefcase.readthedocs.io/en/stable/how-to/contribute-code.html>`__.
+2025-02-28T15:24:42.3757568Z     Although that document is for a different project, the details about setting up
+2025-02-28T15:24:42.3757952Z     your development environment are the same.
+2025-02-28T15:24:42.3758203Z     
+2025-02-28T15:24:42.3758394Z     .. _BeeWare suite: https://beeware.org
+2025-02-28T15:24:42.3759126Z     .. _BeeWare Community Code of Conduct: https://beeware.org/community/behavior/
+2025-02-28T15:24:42.3759708Z     .. _log them on Github: https://github.com/beeware/toga/issues
+2025-02-28T15:24:42.3760054Z     .. _fork the code: https://github.com/beeware/toga
+2025-02-28T15:24:42.3760420Z     .. _submit a pull request: https://github.com/beeware/toga/pulls
+2025-02-28T15:24:42.3760744Z ----- End of Metadata -----
+2025-02-28T15:24:42.3821505Z ##[group]Run actions/upload-artifact@v4
+2025-02-28T15:24:42.3821774Z with:
+2025-02-28T15:24:42.3821976Z   name: Package Metadata-toga-travertino
+2025-02-28T15:24:42.3822267Z   path: /tmp/baipp/dist/out/sdist/*/PKG-INFO
+2025-02-28T15:24:42.3822560Z   if-no-files-found: warn
+2025-02-28T15:24:42.3822784Z   compression-level: 6
+2025-02-28T15:24:42.3822994Z   overwrite: false
+2025-02-28T15:24:42.3823200Z   include-hidden-files: false
+2025-02-28T15:24:42.3823428Z env:
+2025-02-28T15:24:42.3823599Z   FORCE_COLOR: 1
+2025-02-28T15:24:42.3823802Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:42.3824165Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:42.3824527Z ##[endgroup]
+2025-02-28T15:24:42.6097560Z With the provided path, there will be 1 file uploaded
+2025-02-28T15:24:42.6104058Z Artifact name is valid!
+2025-02-28T15:24:42.6104994Z Root directory input is valid!
+2025-02-28T15:24:42.6854691Z Beginning upload of artifact content to blob storage
+2025-02-28T15:24:42.7592686Z Uploaded bytes 1978
+2025-02-28T15:24:42.7768230Z Finished uploading artifact content to blob storage!
+2025-02-28T15:24:42.7771406Z SHA256 hash of uploaded artifact zip is e2155eb98751d8e18979bd38594ca8fff52648cd2d37f8438738b08e0319fb81
+2025-02-28T15:24:42.7772890Z Finalizing artifact upload
+2025-02-28T15:24:42.8518293Z Artifact Package Metadata-toga-travertino.zip successfully finalized. Artifact ID 2671286787
+2025-02-28T15:24:42.8519900Z Artifact Package Metadata-toga-travertino has been successfully uploaded! Final size is 1978 bytes. Artifact ID is 2671286787
+2025-02-28T15:24:42.8526925Z Artifact download URL: https://github.com/beeware/toga/actions/runs/13591189051/artifacts/2671286787
+2025-02-28T15:24:42.8626659Z ##[group]Run cat */PKG-INFO | python -c '
+2025-02-28T15:24:42.8627177Z [36;1mcat */PKG-INFO | python -c '[0m
+2025-02-28T15:24:42.8627649Z [36;1mimport email.parser[0m
+2025-02-28T15:24:42.8628016Z [36;1mimport sys[0m
+2025-02-28T15:24:42.8628340Z [36;1m[0m
+2025-02-28T15:24:42.8629023Z [36;1mem = email.parser.Parser().parsestr(sys.stdin.read())[0m
+2025-02-28T15:24:42.8629603Z [36;1msuffix = {[0m
+2025-02-28T15:24:42.8629967Z [36;1m    "text/markdown": "md",[0m
+2025-02-28T15:24:42.8630396Z [36;1m    "text/x-rst": "rst",[0m
+2025-02-28T15:24:42.8630865Z [36;1m}[em["Description-Content-Type"]][0m
+2025-02-28T15:24:42.8631412Z [36;1mwith open(f"PyPI-README.{suffix}", "w") as f:[0m
+2025-02-28T15:24:42.8631931Z [36;1m    f.write(em.get_payload())[0m
+2025-02-28T15:24:42.8632343Z [36;1m'[0m
+2025-02-28T15:24:42.8686734Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:42.8687064Z env:
+2025-02-28T15:24:42.8687243Z   FORCE_COLOR: 1
+2025-02-28T15:24:42.8687455Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:42.8687849Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:42.8688225Z ##[endgroup]
+2025-02-28T15:24:42.9163174Z ##[group]Run actions/upload-artifact@v4
+2025-02-28T15:24:42.9163439Z with:
+2025-02-28T15:24:42.9163631Z   name: PyPI README-toga-travertino
+2025-02-28T15:24:42.9163915Z   path: /tmp/baipp/dist/out/sdist/PyPI-README.*
+2025-02-28T15:24:42.9164202Z   if-no-files-found: warn
+2025-02-28T15:24:42.9164426Z   compression-level: 6
+2025-02-28T15:24:42.9164634Z   overwrite: false
+2025-02-28T15:24:42.9164839Z   include-hidden-files: false
+2025-02-28T15:24:42.9165061Z env:
+2025-02-28T15:24:42.9165228Z   FORCE_COLOR: 1
+2025-02-28T15:24:42.9165437Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:42.9165799Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:42.9166155Z ##[endgroup]
+2025-02-28T15:24:43.1389774Z With the provided path, there will be 1 file uploaded
+2025-02-28T15:24:43.1395340Z Artifact name is valid!
+2025-02-28T15:24:43.1396621Z Root directory input is valid!
+2025-02-28T15:24:43.2219041Z Beginning upload of artifact content to blob storage
+2025-02-28T15:24:43.2889293Z Uploaded bytes 1347
+2025-02-28T15:24:43.3069732Z Finished uploading artifact content to blob storage!
+2025-02-28T15:24:43.3072950Z SHA256 hash of uploaded artifact zip is 3a3a71483af9e0660396c1607ba339ad644b3443938a0b3f2fbbba3b62e03dbf
+2025-02-28T15:24:43.3075043Z Finalizing artifact upload
+2025-02-28T15:24:43.3805695Z Artifact PyPI README-toga-travertino.zip successfully finalized. Artifact ID 2671286847
+2025-02-28T15:24:43.3807104Z Artifact PyPI README-toga-travertino has been successfully uploaded! Final size is 1347 bytes. Artifact ID is 2671286847
+2025-02-28T15:24:43.3814580Z Artifact download URL: https://github.com/beeware/toga/actions/runs/13591189051/artifacts/2671286847
+2025-02-28T15:24:43.3903858Z ##[group]Run cat */PKG-INFO | python -c '
+2025-02-28T15:24:43.3904183Z [36;1mcat */PKG-INFO | python -c '[0m
+2025-02-28T15:24:43.3904455Z [36;1mimport email.parser[0m
+2025-02-28T15:24:43.3904993Z [36;1mimport json, re, sys[0m
+2025-02-28T15:24:43.3905215Z [36;1m[0m
+2025-02-28T15:24:43.3905483Z [36;1mpkg_info = email.parser.Parser().parsestr(sys.stdin.read())[0m
+2025-02-28T15:24:43.3905806Z [36;1m[0m
+2025-02-28T15:24:43.3905991Z [36;1mversion_tokens = [][0m
+2025-02-28T15:24:43.3906281Z [36;1mfor classifier in pkg_info.get_all("Classifier", []):[0m
+2025-02-28T15:24:43.3906714Z [36;1m    if match := re.match(r"Programming Language :: Python :: (\d+\.\d+)$", classifier):[0m
+2025-02-28T15:24:43.3907122Z [36;1m        version_tokens.append(match.group(1))[0m
+2025-02-28T15:24:43.3907392Z [36;1m[0m
+2025-02-28T15:24:43.3907633Z [36;1mpackage_version = pkg_info.get("Version", "0.0.0")[0m
+2025-02-28T15:24:43.3907925Z [36;1m[0m
+2025-02-28T15:24:43.3908137Z [36;1mprint(f"package_version={package_version}")[0m
+2025-02-28T15:24:43.3908562Z [36;1mprint(f"supported_python_classifiers_json_array={json.dumps(version_tokens)}")[0m
+2025-02-28T15:24:43.3909599Z [36;1mprint(f"""supported_python_classifiers_json_job_matrix_value={json.dumps({"python-version": version_tokens})}""")[0m
+2025-02-28T15:24:43.3910089Z [36;1m' >> $GITHUB_OUTPUT[0m
+2025-02-28T15:24:43.3956517Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:43.3956841Z env:
+2025-02-28T15:24:43.3957026Z   FORCE_COLOR: 1
+2025-02-28T15:24:43.3957246Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:43.3957629Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:43.3957983Z ##[endgroup]
+2025-02-28T15:24:43.4484880Z ##[group]Run # trim the differentiator to generate the artifact's basename
+2025-02-28T15:24:43.4485373Z [36;1m# trim the differentiator to generate the artifact's basename[0m
+2025-02-28T15:24:43.4485844Z [36;1mecho "basename=${BASENAME%-travertino}" | tee -a ${GITHUB_OUTPUT}[0m
+2025-02-28T15:24:43.4532437Z shell: /usr/bin/bash -e {0}
+2025-02-28T15:24:43.4532685Z env:
+2025-02-28T15:24:43.4532869Z   FORCE_COLOR: 1
+2025-02-28T15:24:43.4533082Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:43.4533476Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:43.4533870Z   BASENAME: Packages-toga-travertino
+2025-02-28T15:24:43.4534126Z ##[endgroup]
+2025-02-28T15:24:43.4615042Z basename=Packages-toga
+2025-02-28T15:24:43.4752252Z Post job cleanup.
+2025-02-28T15:24:43.4781240Z Post job cleanup.
+2025-02-28T15:24:43.6054716Z Cache hit occurred on the primary key baipp-3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f, not saving cache.
+2025-02-28T15:24:43.6132621Z Post job cleanup.
+2025-02-28T15:24:43.8038137Z Post job cleanup.
+2025-02-28T15:24:43.9049510Z [command]/usr/bin/git version
+2025-02-28T15:24:43.9094662Z git version 2.48.1
+2025-02-28T15:24:43.9142332Z Temporarily overriding HOME='/home/runner/work/_temp/8f7a1757-cf63-4584-a4c2-cbf51b5f5a11' before making global git config changes
+2025-02-28T15:24:43.9143628Z Adding repository directory to the temporary git global config as a safe directory
+2025-02-28T15:24:43.9158730Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/toga/toga
+2025-02-28T15:24:43.9204244Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-02-28T15:24:43.9245285Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-02-28T15:24:43.9533574Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-02-28T15:24:43.9561559Z http.https://github.com/.extraheader
+2025-02-28T15:24:43.9576473Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2025-02-28T15:24:43.9617748Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-02-28T15:24:44.0008109Z Evaluate and set job outputs
+2025-02-28T15:24:44.0013775Z Set output 'artifact-name'
+2025-02-28T15:24:44.0015459Z Set output 'artifact-basename'
+2025-02-28T15:24:44.0016610Z Cleaning up orphan processes

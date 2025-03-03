@@ -1,0 +1,1487 @@
+﻿2025-02-24T05:28:01.2170795Z Current runner version: '2.322.0'
+2025-02-24T05:28:01.2194607Z ##[group]Operating System
+2025-02-24T05:28:01.2195466Z Ubuntu
+2025-02-24T05:28:01.2195960Z 24.04.1
+2025-02-24T05:28:01.2196464Z LTS
+2025-02-24T05:28:01.2197002Z ##[endgroup]
+2025-02-24T05:28:01.2197537Z ##[group]Runner Image
+2025-02-24T05:28:01.2198081Z Image: ubuntu-24.04
+2025-02-24T05:28:01.2198645Z Version: 20250209.1.0
+2025-02-24T05:28:01.2199673Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20250209.1/images/ubuntu/Ubuntu2404-Readme.md
+2025-02-24T05:28:01.2201202Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250209.1
+2025-02-24T05:28:01.2202208Z ##[endgroup]
+2025-02-24T05:28:01.2202750Z ##[group]Runner Image Provisioner
+2025-02-24T05:28:01.2203392Z 2.0.422.1
+2025-02-24T05:28:01.2203872Z ##[endgroup]
+2025-02-24T05:28:01.2206040Z ##[group]GITHUB_TOKEN Permissions
+2025-02-24T05:28:01.2208003Z Actions: write
+2025-02-24T05:28:01.2208725Z Attestations: write
+2025-02-24T05:28:01.2209480Z Checks: write
+2025-02-24T05:28:01.2209956Z Contents: write
+2025-02-24T05:28:01.2210580Z Deployments: write
+2025-02-24T05:28:01.2211248Z Discussions: write
+2025-02-24T05:28:01.2211778Z Issues: write
+2025-02-24T05:28:01.2212359Z Metadata: read
+2025-02-24T05:28:01.2212867Z Packages: write
+2025-02-24T05:28:01.2213357Z Pages: write
+2025-02-24T05:28:01.2213918Z PullRequests: write
+2025-02-24T05:28:01.2214468Z RepositoryProjects: write
+2025-02-24T05:28:01.2215048Z SecurityEvents: write
+2025-02-24T05:28:01.2215651Z Statuses: write
+2025-02-24T05:28:01.2216168Z ##[endgroup]
+2025-02-24T05:28:01.2218902Z Secret source: Actions
+2025-02-24T05:28:01.2219743Z Prepare workflow directory
+2025-02-24T05:28:01.2595998Z Prepare all required actions
+2025-02-24T05:28:01.2632400Z Getting action download info
+2025-02-24T05:28:01.5194666Z ##[group]Download immutable action package 'actions/checkout@v4.2.2'
+2025-02-24T05:28:01.5195843Z Version: 4.2.2
+2025-02-24T05:28:01.5196837Z Digest: sha256:ccb2698953eaebd21c7bf6268a94f9c26518a7e38e27e0b83c1fe1ad049819b1
+2025-02-24T05:28:01.5198068Z Source commit SHA: 11bd71901bbe5b1630ceea73d27597364c9af683
+2025-02-24T05:28:01.5198835Z ##[endgroup]
+2025-02-24T05:28:01.6051995Z ##[group]Download immutable action package 'actions/setup-python@v5.4.0'
+2025-02-24T05:28:01.6052747Z Version: 5.4.0
+2025-02-24T05:28:01.6053373Z Digest: sha256:6003df952c8106bcd378d2ba997eef202da924317a57269dfa72449b135adb7f
+2025-02-24T05:28:01.6054213Z Source commit SHA: 42375524e23c412d93fb67b49958b491fce71c38
+2025-02-24T05:28:01.6054806Z ##[endgroup]
+2025-02-24T05:28:01.9134984Z Download action repository 'beeware/.github@main' (SHA:a66b93162808d34adf5280c28104b75f8e0d70d3)
+2025-02-24T05:28:02.2818951Z ##[group]Download immutable action package 'actions/download-artifact@v4.1.8'
+2025-02-24T05:28:02.2819690Z Version: 4.1.8
+2025-02-24T05:28:02.2820324Z Digest: sha256:917365d881f32f077924458e108599cbeed2ddd6092ee5edbe0da4d4b2eba355
+2025-02-24T05:28:02.2821422Z Source commit SHA: fa0a91b85d4f404e444e00e005971372dc801d16
+2025-02-24T05:28:02.2822035Z ##[endgroup]
+2025-02-24T05:28:02.5462866Z ##[group]Download immutable action package 'actions/upload-artifact@v4.6.1'
+2025-02-24T05:28:02.5464118Z Version: 4.6.1
+2025-02-24T05:28:02.5465232Z Digest: sha256:3f6a28e7a1e0b5c8e2249e28da121a049fa5b91863b04390a46a82e4f8e2da98
+2025-02-24T05:28:02.5466718Z Source commit SHA: 4cec3d8aa04e39d1a68397de0c4cd6fb9dce8ec1
+2025-02-24T05:28:02.5467798Z ##[endgroup]
+2025-02-24T05:28:02.9476514Z Getting action download info
+2025-02-24T05:28:03.1164944Z ##[group]Download immutable action package 'actions/checkout@v4.1.6'
+2025-02-24T05:28:03.1166501Z Version: 4.1.6
+2025-02-24T05:28:03.1167948Z Digest: sha256:e526265eed1c91edf7a595929d1ceb1bb44ffcb89ce44093c9d79ce6e2db4d81
+2025-02-24T05:28:03.1169882Z Source commit SHA: a5ac7e51b41094c92402da3b24376905380afc29
+2025-02-24T05:28:03.1171423Z ##[endgroup]
+2025-02-24T05:28:03.2355595Z Complete job name: Test travertino (ubuntu-latest, 3.9)
+2025-02-24T05:28:03.3088130Z ##[group]Run actions/checkout@v4.2.2
+2025-02-24T05:28:03.3089689Z with:
+2025-02-24T05:28:03.3090400Z   fetch-depth: 0
+2025-02-24T05:28:03.3091368Z   repository: beeware/toga
+2025-02-24T05:28:03.3092481Z   token: ***
+2025-02-24T05:28:03.3093217Z   ssh-strict: true
+2025-02-24T05:28:03.3093968Z   ssh-user: git
+2025-02-24T05:28:03.3094754Z   persist-credentials: true
+2025-02-24T05:28:03.3095617Z   clean: true
+2025-02-24T05:28:03.3096395Z   sparse-checkout-cone-mode: true
+2025-02-24T05:28:03.3097335Z   fetch-tags: false
+2025-02-24T05:28:03.3098106Z   show-progress: true
+2025-02-24T05:28:03.3098890Z   lfs: false
+2025-02-24T05:28:03.3099608Z   submodules: false
+2025-02-24T05:28:03.3100410Z   set-safe-directory: true
+2025-02-24T05:28:03.3101668Z env:
+2025-02-24T05:28:03.3102385Z   min_python_version: 3.9
+2025-02-24T05:28:03.3103266Z   max_python_version: 3.12
+2025-02-24T05:28:03.3104125Z   FORCE_COLOR: 1
+2025-02-24T05:28:03.3104871Z ##[endgroup]
+2025-02-24T05:28:03.4838650Z Syncing repository: beeware/toga
+2025-02-24T05:28:03.4841614Z ##[group]Getting Git version info
+2025-02-24T05:28:03.4842837Z Working directory is '/home/runner/work/toga/toga'
+2025-02-24T05:28:03.4844631Z [command]/usr/bin/git version
+2025-02-24T05:28:03.4874919Z git version 2.48.1
+2025-02-24T05:28:03.4904255Z ##[endgroup]
+2025-02-24T05:28:03.4917969Z Temporarily overriding HOME='/home/runner/work/_temp/11ac09f0-258f-4163-9e0e-cad76cfa4624' before making global git config changes
+2025-02-24T05:28:03.4920535Z Adding repository directory to the temporary git global config as a safe directory
+2025-02-24T05:28:03.4931349Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/toga/toga
+2025-02-24T05:28:03.4966443Z Deleting the contents of '/home/runner/work/toga/toga'
+2025-02-24T05:28:03.4970366Z ##[group]Initializing the repository
+2025-02-24T05:28:03.4976871Z [command]/usr/bin/git init /home/runner/work/toga/toga
+2025-02-24T05:28:03.5037404Z hint: Using 'master' as the name for the initial branch. This default branch name
+2025-02-24T05:28:03.5040227Z hint: is subject to change. To configure the initial branch name to use in all
+2025-02-24T05:28:03.5043345Z hint: of your new repositories, which will suppress this warning, call:
+2025-02-24T05:28:03.5044682Z hint:
+2025-02-24T05:28:03.5045591Z hint: 	git config --global init.defaultBranch <name>
+2025-02-24T05:28:03.5046693Z hint:
+2025-02-24T05:28:03.5048249Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2025-02-24T05:28:03.5049989Z hint: 'development'. The just-created branch can be renamed via this command:
+2025-02-24T05:28:03.5051670Z hint:
+2025-02-24T05:28:03.5052400Z hint: 	git branch -m <name>
+2025-02-24T05:28:03.5054089Z Initialized empty Git repository in /home/runner/work/toga/toga/.git/
+2025-02-24T05:28:03.5056831Z [command]/usr/bin/git remote add origin https://github.com/beeware/toga
+2025-02-24T05:28:03.5089840Z ##[endgroup]
+2025-02-24T05:28:03.5091583Z ##[group]Disabling automatic garbage collection
+2025-02-24T05:28:03.5093465Z [command]/usr/bin/git config --local gc.auto 0
+2025-02-24T05:28:03.5122753Z ##[endgroup]
+2025-02-24T05:28:03.5123998Z ##[group]Setting up auth
+2025-02-24T05:28:03.5129019Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-02-24T05:28:03.5163063Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-02-24T05:28:03.5445826Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-02-24T05:28:03.5476703Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-02-24T05:28:03.5707530Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2025-02-24T05:28:03.5746106Z ##[endgroup]
+2025-02-24T05:28:03.5747478Z ##[group]Fetching the repository
+2025-02-24T05:28:03.5756124Z [command]/usr/bin/git -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+2025-02-24T05:28:06.2305273Z From https://github.com/beeware/toga
+2025-02-24T05:28:06.2306807Z  * [new branch]          main         -> origin/main
+2025-02-24T05:28:06.2307579Z  * [new branch]          pre-0.5      -> origin/pre-0.5
+2025-02-24T05:28:06.2308180Z  * [new tag]             0.2.6        -> 0.2.6
+2025-02-24T05:28:06.2308739Z  * [new tag]             v0.0.1rc1    -> v0.0.1rc1
+2025-02-24T05:28:06.2309445Z  * [new tag]             v0.0.1rc10   -> v0.0.1rc10
+2025-02-24T05:28:06.2314125Z  * [new tag]             v0.0.1rc5    -> v0.0.1rc5
+2025-02-24T05:28:06.2314744Z  * [new tag]             v0.0.1rc6    -> v0.0.1rc6
+2025-02-24T05:28:06.2315215Z  * [new tag]             v0.1.0       -> v0.1.0
+2025-02-24T05:28:06.2315867Z  * [new tag]             v0.1.1       -> v0.1.1
+2025-02-24T05:28:06.2316962Z  * [new tag]             v0.1.2       -> v0.1.2
+2025-02-24T05:28:06.2318352Z  * [new tag]             v0.2.0       -> v0.2.0
+2025-02-24T05:28:06.2319720Z  * [new tag]             v0.2.0.dev1  -> v0.2.0.dev1
+2025-02-24T05:28:06.2321257Z  * [new tag]             v0.2.1       -> v0.2.1
+2025-02-24T05:28:06.2322544Z  * [new tag]             v0.2.10      -> v0.2.10
+2025-02-24T05:28:06.2324009Z  * [new tag]             v0.2.11      -> v0.2.11
+2025-02-24T05:28:06.2325582Z  * [new tag]             v0.2.12      -> v0.2.12
+2025-02-24T05:28:06.2326819Z  * [new tag]             v0.2.13      -> v0.2.13
+2025-02-24T05:28:06.2328361Z  * [new tag]             v0.2.14      -> v0.2.14
+2025-02-24T05:28:06.2329657Z  * [new tag]             v0.2.15      -> v0.2.15
+2025-02-24T05:28:06.2331119Z  * [new tag]             v0.2.2       -> v0.2.2
+2025-02-24T05:28:06.2332727Z  * [new tag]             v0.2.3       -> v0.2.3
+2025-02-24T05:28:06.2333890Z  * [new tag]             v0.2.4       -> v0.2.4
+2025-02-24T05:28:06.2335429Z  * [new tag]             v0.2.5       -> v0.2.5
+2025-02-24T05:28:06.2336502Z  * [new tag]             v0.2.6       -> v0.2.6
+2025-02-24T05:28:06.2338106Z  * [new tag]             v0.2.7       -> v0.2.7
+2025-02-24T05:28:06.2339392Z  * [new tag]             v0.2.8       -> v0.2.8
+2025-02-24T05:28:06.2341124Z  * [new tag]             v0.2.9       -> v0.2.9
+2025-02-24T05:28:06.2342553Z  * [new tag]             v0.3.0       -> v0.3.0
+2025-02-24T05:28:06.2344428Z  * [new tag]             v0.3.0.dev1  -> v0.3.0.dev1
+2025-02-24T05:28:06.2345573Z  * [new tag]             v0.3.0.dev10 -> v0.3.0.dev10
+2025-02-24T05:28:06.2347131Z  * [new tag]             v0.3.0.dev11 -> v0.3.0.dev11
+2025-02-24T05:28:06.2348465Z  * [new tag]             v0.3.0.dev12 -> v0.3.0.dev12
+2025-02-24T05:28:06.2350079Z  * [new tag]             v0.3.0.dev13 -> v0.3.0.dev13
+2025-02-24T05:28:06.2351532Z  * [new tag]             v0.3.0.dev14 -> v0.3.0.dev14
+2025-02-24T05:28:06.2352986Z  * [new tag]             v0.3.0.dev15 -> v0.3.0.dev15
+2025-02-24T05:28:06.2354487Z  * [new tag]             v0.3.0.dev16 -> v0.3.0.dev16
+2025-02-24T05:28:06.2355827Z  * [new tag]             v0.3.0.dev17 -> v0.3.0.dev17
+2025-02-24T05:28:06.2357391Z  * [new tag]             v0.3.0.dev18 -> v0.3.0.dev18
+2025-02-24T05:28:06.2358772Z  * [new tag]             v0.3.0.dev19 -> v0.3.0.dev19
+2025-02-24T05:28:06.2360382Z  * [new tag]             v0.3.0.dev2  -> v0.3.0.dev2
+2025-02-24T05:28:06.2361774Z  * [new tag]             v0.3.0.dev20 -> v0.3.0.dev20
+2025-02-24T05:28:06.2363355Z  * [new tag]             v0.3.0.dev21 -> v0.3.0.dev21
+2025-02-24T05:28:06.2364673Z  * [new tag]             v0.3.0.dev22 -> v0.3.0.dev22
+2025-02-24T05:28:06.2366271Z  * [new tag]             v0.3.0.dev23 -> v0.3.0.dev23
+2025-02-24T05:28:06.2367683Z  * [new tag]             v0.3.0.dev24 -> v0.3.0.dev24
+2025-02-24T05:28:06.2369074Z  * [new tag]             v0.3.0.dev25 -> v0.3.0.dev25
+2025-02-24T05:28:06.2370675Z  * [new tag]             v0.3.0.dev26 -> v0.3.0.dev26
+2025-02-24T05:28:06.2372608Z  * [new tag]             v0.3.0.dev27 -> v0.3.0.dev27
+2025-02-24T05:28:06.2373781Z  * [new tag]             v0.3.0.dev28 -> v0.3.0.dev28
+2025-02-24T05:28:06.2375165Z  * [new tag]             v0.3.0.dev29 -> v0.3.0.dev29
+2025-02-24T05:28:06.2376746Z  * [new tag]             v0.3.0.dev3  -> v0.3.0.dev3
+2025-02-24T05:28:06.2378129Z  * [new tag]             v0.3.0.dev30 -> v0.3.0.dev30
+2025-02-24T05:28:06.2379668Z  * [new tag]             v0.3.0.dev32 -> v0.3.0.dev32
+2025-02-24T05:28:06.2381177Z  * [new tag]             v0.3.0.dev33 -> v0.3.0.dev33
+2025-02-24T05:28:06.2382794Z  * [new tag]             v0.3.0.dev34 -> v0.3.0.dev34
+2025-02-24T05:28:06.2384069Z  * [new tag]             v0.3.0.dev35 -> v0.3.0.dev35
+2025-02-24T05:28:06.2385714Z  * [new tag]             v0.3.0.dev36 -> v0.3.0.dev36
+2025-02-24T05:28:06.2386986Z  * [new tag]             v0.3.0.dev37 -> v0.3.0.dev37
+2025-02-24T05:28:06.2388580Z  * [new tag]             v0.3.0.dev38 -> v0.3.0.dev38
+2025-02-24T05:28:06.2389966Z  * [new tag]             v0.3.0.dev39 -> v0.3.0.dev39
+2025-02-24T05:28:06.2391768Z  * [new tag]             v0.3.0.dev4  -> v0.3.0.dev4
+2025-02-24T05:28:06.2393168Z  * [new tag]             v0.3.0.dev5  -> v0.3.0.dev5
+2025-02-24T05:28:06.2394553Z  * [new tag]             v0.3.0.dev6  -> v0.3.0.dev6
+2025-02-24T05:28:06.2396132Z  * [new tag]             v0.3.0.dev7  -> v0.3.0.dev7
+2025-02-24T05:28:06.2397462Z  * [new tag]             v0.3.0.dev8  -> v0.3.0.dev8
+2025-02-24T05:28:06.2398896Z  * [new tag]             v0.3.0.dev9  -> v0.3.0.dev9
+2025-02-24T05:28:06.2400452Z  * [new tag]             v0.3.0rc0    -> v0.3.0rc0
+2025-02-24T05:28:06.2402281Z  * [new tag]             v0.3.1       -> v0.3.1
+2025-02-24T05:28:06.2403718Z  * [new tag]             v0.4.0       -> v0.4.0
+2025-02-24T05:28:06.2405380Z  * [new tag]             v0.4.1       -> v0.4.1
+2025-02-24T05:28:06.2406681Z  * [new tag]             v0.4.2       -> v0.4.2
+2025-02-24T05:28:06.2408342Z  * [new tag]             v0.4.3       -> v0.4.3
+2025-02-24T05:28:06.2409671Z  * [new tag]             v0.4.4       -> v0.4.4
+2025-02-24T05:28:06.2411363Z  * [new tag]             v0.4.5       -> v0.4.5
+2025-02-24T05:28:06.2412896Z  * [new tag]             v0.4.6       -> v0.4.6
+2025-02-24T05:28:06.2414486Z  * [new tag]             v0.4.7       -> v0.4.7
+2025-02-24T05:28:06.2415850Z  * [new tag]             v0.4.8       -> v0.4.8
+2025-02-24T05:28:06.2417056Z  * [new tag]             v0.4.9       -> v0.4.9
+2025-02-24T05:28:06.2464272Z [command]/usr/bin/git branch --list --remote origin/main
+2025-02-24T05:28:06.2488361Z   origin/main
+2025-02-24T05:28:06.2497639Z [command]/usr/bin/git rev-parse refs/remotes/origin/main
+2025-02-24T05:28:06.2517136Z 01152b56b9607a5cc1dabb9e94970cc589baff01
+2025-02-24T05:28:06.2522866Z ##[endgroup]
+2025-02-24T05:28:06.2523303Z ##[group]Determining the checkout info
+2025-02-24T05:28:06.2524143Z ##[endgroup]
+2025-02-24T05:28:06.2528560Z [command]/usr/bin/git sparse-checkout disable
+2025-02-24T05:28:06.2572616Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2025-02-24T05:28:06.2597308Z ##[group]Checking out the ref
+2025-02-24T05:28:06.2601321Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2025-02-24T05:28:06.4358295Z Switched to a new branch 'main'
+2025-02-24T05:28:06.4361831Z branch 'main' set up to track 'origin/main'.
+2025-02-24T05:28:06.4380485Z ##[endgroup]
+2025-02-24T05:28:06.4428327Z [command]/usr/bin/git log -1 --format=%H
+2025-02-24T05:28:06.4454917Z 01152b56b9607a5cc1dabb9e94970cc589baff01
+2025-02-24T05:28:06.4676048Z ##[group]Run actions/setup-python@v5.4.0
+2025-02-24T05:28:06.4676360Z with:
+2025-02-24T05:28:06.4676559Z   python-version: 3.9
+2025-02-24T05:28:06.4676793Z   allow-prereleases: true
+2025-02-24T05:28:06.4677023Z   check-latest: false
+2025-02-24T05:28:06.4677357Z   token: ***
+2025-02-24T05:28:06.4677563Z   update-environment: true
+2025-02-24T05:28:06.4677783Z env:
+2025-02-24T05:28:06.4677956Z   min_python_version: 3.9
+2025-02-24T05:28:06.4678175Z   max_python_version: 3.12
+2025-02-24T05:28:06.4678383Z   FORCE_COLOR: 1
+2025-02-24T05:28:06.4678574Z ##[endgroup]
+2025-02-24T05:28:06.6343809Z ##[group]Installed versions
+2025-02-24T05:28:06.6407218Z Successfully set up CPython (3.9.21)
+2025-02-24T05:28:06.6408046Z ##[endgroup]
+2025-02-24T05:28:06.6562288Z ##[group]Run beeware/.github/.github/actions/install-requirement@main
+2025-02-24T05:28:06.6562682Z with:
+2025-02-24T05:28:06.6562869Z   requirements: tox
+2025-02-24T05:28:06.6563065Z   extra: dev
+2025-02-24T05:28:06.6563261Z   project-root: travertino
+2025-02-24T05:28:06.6563506Z   workflow-repo: beeware/.github
+2025-02-24T05:28:06.6563731Z env:
+2025-02-24T05:28:06.6563900Z   min_python_version: 3.9
+2025-02-24T05:28:06.6564113Z   max_python_version: 3.12
+2025-02-24T05:28:06.6564321Z   FORCE_COLOR: 1
+2025-02-24T05:28:06.6564582Z   pythonLocation: /opt/hostedtoolcache/Python/3.9.21/x64
+2025-02-24T05:28:06.6565028Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.9.21/x64/lib/pkgconfig
+2025-02-24T05:28:06.6565419Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.21/x64
+2025-02-24T05:28:06.6565771Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.21/x64
+2025-02-24T05:28:06.6566134Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.21/x64
+2025-02-24T05:28:06.6566507Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.9.21/x64/lib
+2025-02-24T05:28:06.6566791Z ##[endgroup]
+2025-02-24T05:28:06.6687962Z ##[group]Run actions/checkout@v4.1.6
+2025-02-24T05:28:06.6688220Z with:
+2025-02-24T05:28:06.6688409Z   repository: beeware/.github
+2025-02-24T05:28:06.6688644Z   path: .github-beeware
+2025-02-24T05:28:06.6688972Z   token: ***
+2025-02-24T05:28:06.6689167Z   ssh-strict: true
+2025-02-24T05:28:06.6689355Z   ssh-user: git
+2025-02-24T05:28:06.6689557Z   persist-credentials: true
+2025-02-24T05:28:06.6689782Z   clean: true
+2025-02-24T05:28:06.6689984Z   sparse-checkout-cone-mode: true
+2025-02-24T05:28:06.6690219Z   fetch-depth: 1
+2025-02-24T05:28:06.6690410Z   fetch-tags: false
+2025-02-24T05:28:06.6690608Z   show-progress: true
+2025-02-24T05:28:06.6690808Z   lfs: false
+2025-02-24T05:28:06.6691118Z   submodules: false
+2025-02-24T05:28:06.6691327Z   set-safe-directory: true
+2025-02-24T05:28:06.6691539Z env:
+2025-02-24T05:28:06.6691712Z   min_python_version: 3.9
+2025-02-24T05:28:06.6691938Z   max_python_version: 3.12
+2025-02-24T05:28:06.6692143Z   FORCE_COLOR: 1
+2025-02-24T05:28:06.6692388Z   pythonLocation: /opt/hostedtoolcache/Python/3.9.21/x64
+2025-02-24T05:28:06.6692786Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.9.21/x64/lib/pkgconfig
+2025-02-24T05:28:06.6693170Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.21/x64
+2025-02-24T05:28:06.6693512Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.21/x64
+2025-02-24T05:28:06.6693849Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.21/x64
+2025-02-24T05:28:06.6694194Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.9.21/x64/lib
+2025-02-24T05:28:06.6694481Z ##[endgroup]
+2025-02-24T05:28:06.7611472Z Syncing repository: beeware/.github
+2025-02-24T05:28:06.7615999Z ##[group]Getting Git version info
+2025-02-24T05:28:06.7616698Z Working directory is '/home/runner/work/toga/toga/.github-beeware'
+2025-02-24T05:28:06.7659232Z [command]/usr/bin/git version
+2025-02-24T05:28:06.7697597Z git version 2.48.1
+2025-02-24T05:28:06.7723938Z ##[endgroup]
+2025-02-24T05:28:06.7737549Z Temporarily overriding HOME='/home/runner/work/_temp/d523acc7-0ad0-4f3c-9943-9fd3dea9ed89' before making global git config changes
+2025-02-24T05:28:06.7738933Z Adding repository directory to the temporary git global config as a safe directory
+2025-02-24T05:28:06.7750367Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/toga/toga/.github-beeware
+2025-02-24T05:28:06.7781534Z ##[group]Initializing the repository
+2025-02-24T05:28:06.7786408Z [command]/usr/bin/git init /home/runner/work/toga/toga/.github-beeware
+2025-02-24T05:28:06.7821944Z hint: Using 'master' as the name for the initial branch. This default branch name
+2025-02-24T05:28:06.7822882Z hint: is subject to change. To configure the initial branch name to use in all
+2025-02-24T05:28:06.7823692Z hint: of your new repositories, which will suppress this warning, call:
+2025-02-24T05:28:06.7824520Z hint:
+2025-02-24T05:28:06.7824917Z hint: 	git config --global init.defaultBranch <name>
+2025-02-24T05:28:06.7825494Z hint:
+2025-02-24T05:28:06.7825813Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2025-02-24T05:28:06.7826406Z hint: 'development'. The just-created branch can be renamed via this command:
+2025-02-24T05:28:06.7826776Z hint:
+2025-02-24T05:28:06.7826972Z hint: 	git branch -m <name>
+2025-02-24T05:28:06.7827367Z Initialized empty Git repository in /home/runner/work/toga/toga/.github-beeware/.git/
+2025-02-24T05:28:06.7834144Z [command]/usr/bin/git remote add origin https://github.com/beeware/.github
+2025-02-24T05:28:06.7863368Z ##[endgroup]
+2025-02-24T05:28:06.7863797Z ##[group]Disabling automatic garbage collection
+2025-02-24T05:28:06.7867939Z [command]/usr/bin/git config --local gc.auto 0
+2025-02-24T05:28:06.7896111Z ##[endgroup]
+2025-02-24T05:28:06.7896502Z ##[group]Setting up auth
+2025-02-24T05:28:06.7902459Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-02-24T05:28:06.7934019Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-02-24T05:28:06.8162521Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-02-24T05:28:06.8190468Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-02-24T05:28:06.8424093Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2025-02-24T05:28:06.8466806Z ##[endgroup]
+2025-02-24T05:28:06.8467262Z ##[group]Determining the default branch
+2025-02-24T05:28:06.8469869Z Retrieving the default branch name
+2025-02-24T05:28:07.1097549Z Default branch 'main'
+2025-02-24T05:28:07.1098434Z ##[endgroup]
+2025-02-24T05:28:07.1099099Z ##[group]Fetching the repository
+2025-02-24T05:28:07.1105839Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +refs/heads/main:refs/remotes/origin/main
+2025-02-24T05:28:07.6461417Z From https://github.com/beeware/.github
+2025-02-24T05:28:07.6461989Z  * [new branch]      main       -> origin/main
+2025-02-24T05:28:07.6486606Z ##[endgroup]
+2025-02-24T05:28:07.6487074Z ##[group]Determining the checkout info
+2025-02-24T05:28:07.6488571Z ##[endgroup]
+2025-02-24T05:28:07.6493967Z [command]/usr/bin/git sparse-checkout disable
+2025-02-24T05:28:07.6529340Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2025-02-24T05:28:07.6556791Z ##[group]Checking out the ref
+2025-02-24T05:28:07.6561052Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2025-02-24T05:28:07.6633656Z Switched to a new branch 'main'
+2025-02-24T05:28:07.6637111Z branch 'main' set up to track 'origin/main'.
+2025-02-24T05:28:07.6642480Z ##[endgroup]
+2025-02-24T05:28:07.6678939Z [command]/usr/bin/git log -1 --format='%H'
+2025-02-24T05:28:07.6703811Z 'a66b93162808d34adf5280c28104b75f8e0d70d3'
+2025-02-24T05:28:07.6821570Z ##[group]Run echo "project-root=$(cd "travertino"; pwd -P)" | tee -a ${GITHUB_OUTPUT}
+2025-02-24T05:28:07.6822163Z [36;1mecho "project-root=$(cd "travertino"; pwd -P)" | tee -a ${GITHUB_OUTPUT}[0m
+2025-02-24T05:28:07.6965909Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-24T05:28:07.6966238Z env:
+2025-02-24T05:28:07.6966426Z   min_python_version: 3.9
+2025-02-24T05:28:07.6966644Z   max_python_version: 3.12
+2025-02-24T05:28:07.6966854Z   FORCE_COLOR: 1
+2025-02-24T05:28:07.6967110Z   pythonLocation: /opt/hostedtoolcache/Python/3.9.21/x64
+2025-02-24T05:28:07.6967520Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.9.21/x64/lib/pkgconfig
+2025-02-24T05:28:07.6967924Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.21/x64
+2025-02-24T05:28:07.6968580Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.21/x64
+2025-02-24T05:28:07.6968938Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.21/x64
+2025-02-24T05:28:07.6969435Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.9.21/x64/lib
+2025-02-24T05:28:07.6969726Z ##[endgroup]
+2025-02-24T05:28:07.7075138Z project-root=/home/runner/work/toga/toga/travertino
+2025-02-24T05:28:07.7116971Z ##[group]Run python -m pip install --upgrade pip
+2025-02-24T05:28:07.7117420Z [36;1mpython -m pip install --upgrade pip[0m
+2025-02-24T05:28:07.7117871Z [36;1mpython -m pip install --upgrade setuptools build wheel[0m
+2025-02-24T05:28:07.7169427Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-24T05:28:07.7169888Z env:
+2025-02-24T05:28:07.7170180Z   min_python_version: 3.9
+2025-02-24T05:28:07.7170505Z   max_python_version: 3.12
+2025-02-24T05:28:07.7170802Z   FORCE_COLOR: 1
+2025-02-24T05:28:07.7171383Z   pythonLocation: /opt/hostedtoolcache/Python/3.9.21/x64
+2025-02-24T05:28:07.7193466Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.9.21/x64/lib/pkgconfig
+2025-02-24T05:28:07.7193911Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.21/x64
+2025-02-24T05:28:07.7194288Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.21/x64
+2025-02-24T05:28:07.7194636Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.21/x64
+2025-02-24T05:28:07.7194983Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.9.21/x64/lib
+2025-02-24T05:28:07.7195277Z ##[endgroup]
+2025-02-24T05:28:08.2933007Z Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.9.21/x64/lib/python3.9/site-packages (25.0.1)
+2025-02-24T05:28:08.7777144Z Requirement already satisfied: setuptools in /opt/hostedtoolcache/Python/3.9.21/x64/lib/python3.9/site-packages (58.1.0)
+2025-02-24T05:28:08.9171937Z Collecting setuptools
+2025-02-24T05:28:08.9518023Z   Downloading setuptools-75.8.0-py3-none-any.whl.metadata (6.7 kB)
+2025-02-24T05:28:08.9817276Z Collecting build
+2025-02-24T05:28:08.9849747Z   Downloading build-1.2.2.post1-py3-none-any.whl.metadata (6.5 kB)
+2025-02-24T05:28:09.0126315Z Collecting wheel
+2025-02-24T05:28:09.0166335Z   Downloading wheel-0.45.1-py3-none-any.whl.metadata (2.3 kB)
+2025-02-24T05:28:09.0357134Z Collecting packaging>=19.1 (from build)
+2025-02-24T05:28:09.0405130Z   Downloading packaging-24.2-py3-none-any.whl.metadata (3.2 kB)
+2025-02-24T05:28:09.0514490Z Collecting pyproject_hooks (from build)
+2025-02-24T05:28:09.0589883Z   Downloading pyproject_hooks-1.2.0-py3-none-any.whl.metadata (1.3 kB)
+2025-02-24T05:28:09.0917907Z Collecting importlib-metadata>=4.6 (from build)
+2025-02-24T05:28:09.0996797Z   Downloading importlib_metadata-8.6.1-py3-none-any.whl.metadata (4.7 kB)
+2025-02-24T05:28:09.1210402Z Collecting tomli>=1.1.0 (from build)
+2025-02-24T05:28:09.1308740Z   Downloading tomli-2.2.1-py3-none-any.whl.metadata (10 kB)
+2025-02-24T05:28:09.1506988Z Collecting zipp>=3.20 (from importlib-metadata>=4.6->build)
+2025-02-24T05:28:09.1556632Z   Downloading zipp-3.21.0-py3-none-any.whl.metadata (3.7 kB)
+2025-02-24T05:28:09.1710421Z Downloading setuptools-75.8.0-py3-none-any.whl (1.2 MB)
+2025-02-24T05:28:09.1862716Z [?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/1.2 MB[0m [31m?[0m eta [36m-:--:--[0m
+2025-02-24T05:28:09.1863878Z [2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1.2/1.2 MB[0m [31m119.6 MB/s[0m eta [36m0:00:00[0m
+2025-02-24T05:28:09.1900165Z [?25hDownloading build-1.2.2.post1-py3-none-any.whl (22 kB)
+2025-02-24T05:28:09.1956321Z Downloading wheel-0.45.1-py3-none-any.whl (72 kB)
+2025-02-24T05:28:09.2018273Z Downloading importlib_metadata-8.6.1-py3-none-any.whl (26 kB)
+2025-02-24T05:28:09.2072626Z Downloading packaging-24.2-py3-none-any.whl (65 kB)
+2025-02-24T05:28:09.2131786Z Downloading tomli-2.2.1-py3-none-any.whl (14 kB)
+2025-02-24T05:28:09.2185478Z Downloading pyproject_hooks-1.2.0-py3-none-any.whl (10 kB)
+2025-02-24T05:28:09.2244837Z Downloading zipp-3.21.0-py3-none-any.whl (9.6 kB)
+2025-02-24T05:28:09.2826435Z Installing collected packages: zipp, wheel, tomli, setuptools, pyproject_hooks, packaging, importlib-metadata, build
+2025-02-24T05:28:09.3457614Z   Attempting uninstall: setuptools
+2025-02-24T05:28:09.3464065Z     Found existing installation: setuptools 58.1.0
+2025-02-24T05:28:09.3613141Z     Uninstalling setuptools-58.1.0:
+2025-02-24T05:28:09.3700357Z       Successfully uninstalled setuptools-58.1.0
+2025-02-24T05:28:10.1153521Z Successfully installed build-1.2.2.post1 importlib-metadata-8.6.1 packaging-24.2 pyproject_hooks-1.2.0 setuptools-75.8.0 tomli-2.2.1 wheel-0.45.1 zipp-3.21.0
+2025-02-24T05:28:10.1657973Z ##[group]Run python -m install_requirement tox \
+2025-02-24T05:28:10.1658329Z [36;1mpython -m install_requirement tox \[0m
+2025-02-24T05:28:10.1658599Z [36;1m  --extra "dev" \[0m
+2025-02-24T05:28:10.1658943Z [36;1m  --project-root "$(printf -- "%q" "/home/runner/work/toga/toga/travertino")"[0m
+2025-02-24T05:28:10.1714687Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-24T05:28:10.1715008Z env:
+2025-02-24T05:28:10.1715198Z   min_python_version: 3.9
+2025-02-24T05:28:10.1715444Z   max_python_version: 3.12
+2025-02-24T05:28:10.1715655Z   FORCE_COLOR: 1
+2025-02-24T05:28:10.1715921Z   pythonLocation: /opt/hostedtoolcache/Python/3.9.21/x64
+2025-02-24T05:28:10.1716320Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.9.21/x64/lib/pkgconfig
+2025-02-24T05:28:10.1716715Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.21/x64
+2025-02-24T05:28:10.1717064Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.21/x64
+2025-02-24T05:28:10.1717416Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.21/x64
+2025-02-24T05:28:10.1717761Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.9.21/x64/lib
+2025-02-24T05:28:10.1718050Z ##[endgroup]
+2025-02-24T05:28:10.5076222Z Installing tox==4.24.1...
+2025-02-24T05:28:10.9057243Z Collecting tox==4.24.1
+2025-02-24T05:28:10.9145404Z   Downloading tox-4.24.1-py3-none-any.whl.metadata (3.7 kB)
+2025-02-24T05:28:10.9433813Z Collecting cachetools>=5.5 (from tox==4.24.1)
+2025-02-24T05:28:10.9471245Z   Downloading cachetools-5.5.2-py3-none-any.whl.metadata (5.4 kB)
+2025-02-24T05:28:10.9596550Z Collecting chardet>=5.2 (from tox==4.24.1)
+2025-02-24T05:28:10.9634878Z   Downloading chardet-5.2.0-py3-none-any.whl.metadata (3.4 kB)
+2025-02-24T05:28:10.9799086Z Collecting colorama>=0.4.6 (from tox==4.24.1)
+2025-02-24T05:28:10.9845333Z   Downloading colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+2025-02-24T05:28:11.0043514Z Collecting filelock>=3.16.1 (from tox==4.24.1)
+2025-02-24T05:28:11.0078853Z   Downloading filelock-3.17.0-py3-none-any.whl.metadata (2.9 kB)
+2025-02-24T05:28:11.0138032Z Requirement already satisfied: packaging>=24.2 in /opt/hostedtoolcache/Python/3.9.21/x64/lib/python3.9/site-packages (from tox==4.24.1) (24.2)
+2025-02-24T05:28:11.0279546Z Collecting platformdirs>=4.3.6 (from tox==4.24.1)
+2025-02-24T05:28:11.0325780Z   Downloading platformdirs-4.3.6-py3-none-any.whl.metadata (11 kB)
+2025-02-24T05:28:11.0484941Z Collecting pluggy>=1.5 (from tox==4.24.1)
+2025-02-24T05:28:11.0519162Z   Downloading pluggy-1.5.0-py3-none-any.whl.metadata (4.8 kB)
+2025-02-24T05:28:11.0655625Z Collecting pyproject-api>=1.8 (from tox==4.24.1)
+2025-02-24T05:28:11.0693078Z   Downloading pyproject_api-1.9.0-py3-none-any.whl.metadata (2.7 kB)
+2025-02-24T05:28:11.0745097Z Requirement already satisfied: tomli>=2.1 in /opt/hostedtoolcache/Python/3.9.21/x64/lib/python3.9/site-packages (from tox==4.24.1) (2.2.1)
+2025-02-24T05:28:11.0897094Z Collecting typing-extensions>=4.12.2 (from tox==4.24.1)
+2025-02-24T05:28:11.0933527Z   Downloading typing_extensions-4.12.2-py3-none-any.whl.metadata (3.0 kB)
+2025-02-24T05:28:11.1379227Z Collecting virtualenv>=20.27.1 (from tox==4.24.1)
+2025-02-24T05:28:11.1417702Z   Downloading virtualenv-20.29.2-py3-none-any.whl.metadata (4.5 kB)
+2025-02-24T05:28:11.1671768Z Collecting distlib<1,>=0.3.7 (from virtualenv>=20.27.1->tox==4.24.1)
+2025-02-24T05:28:11.1729976Z   Downloading distlib-0.3.9-py2.py3-none-any.whl.metadata (5.2 kB)
+2025-02-24T05:28:11.1908182Z Downloading tox-4.24.1-py3-none-any.whl (171 kB)
+2025-02-24T05:28:11.1986083Z Downloading cachetools-5.5.2-py3-none-any.whl (10 kB)
+2025-02-24T05:28:11.2044663Z Downloading chardet-5.2.0-py3-none-any.whl (199 kB)
+2025-02-24T05:28:11.2109055Z Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+2025-02-24T05:28:11.2169824Z Downloading filelock-3.17.0-py3-none-any.whl (16 kB)
+2025-02-24T05:28:11.2226892Z Downloading platformdirs-4.3.6-py3-none-any.whl (18 kB)
+2025-02-24T05:28:11.2283504Z Downloading pluggy-1.5.0-py3-none-any.whl (20 kB)
+2025-02-24T05:28:11.2339032Z Downloading pyproject_api-1.9.0-py3-none-any.whl (13 kB)
+2025-02-24T05:28:11.2391619Z Downloading typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+2025-02-24T05:28:11.2453941Z Downloading virtualenv-20.29.2-py3-none-any.whl (4.3 MB)
+2025-02-24T05:28:11.2811231Z [?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/4.3 MB[0m [31m?[0m eta [36m-:--:--[0m
+2025-02-24T05:28:11.2811959Z [2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m4.3/4.3 MB[0m [31m155.8 MB/s[0m eta [36m0:00:00[0m
+2025-02-24T05:28:11.2850259Z [?25hDownloading distlib-0.3.9-py2.py3-none-any.whl (468 kB)
+2025-02-24T05:28:11.3596152Z Installing collected packages: distlib, typing-extensions, pyproject-api, pluggy, platformdirs, filelock, colorama, chardet, cachetools, virtualenv, tox
+2025-02-24T05:28:11.9311948Z Successfully installed cachetools-5.5.2 chardet-5.2.0 colorama-0.4.6 distlib-0.3.9 filelock-3.17.0 platformdirs-4.3.6 pluggy-1.5.0 pyproject-api-1.9.0 tox-4.24.1 typing-extensions-4.12.2 virtualenv-20.29.2
+2025-02-24T05:28:11.9792770Z 
+2025-02-24T05:28:11.9793285Z Successfully installed:
+2025-02-24T05:28:11.9793768Z  tox==4.24.1
+2025-02-24T05:28:11.9963318Z ##[group]Run actions/download-artifact@v4.1.8
+2025-02-24T05:28:11.9963613Z with:
+2025-02-24T05:28:11.9963805Z   pattern: Packages-toga-*
+2025-02-24T05:28:11.9964039Z   merge-multiple: true
+2025-02-24T05:28:11.9964242Z   path: dist
+2025-02-24T05:28:11.9964431Z   repository: beeware/toga
+2025-02-24T05:28:11.9964643Z   run-id: 13491433041
+2025-02-24T05:28:11.9964839Z env:
+2025-02-24T05:28:11.9965011Z   min_python_version: 3.9
+2025-02-24T05:28:11.9965218Z   max_python_version: 3.12
+2025-02-24T05:28:11.9965424Z   FORCE_COLOR: 1
+2025-02-24T05:28:11.9965679Z   pythonLocation: /opt/hostedtoolcache/Python/3.9.21/x64
+2025-02-24T05:28:11.9966077Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.9.21/x64/lib/pkgconfig
+2025-02-24T05:28:11.9966460Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.21/x64
+2025-02-24T05:28:11.9966806Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.21/x64
+2025-02-24T05:28:11.9967142Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.21/x64
+2025-02-24T05:28:11.9967511Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.9.21/x64/lib
+2025-02-24T05:28:11.9967798Z ##[endgroup]
+2025-02-24T05:28:12.5235769Z Found 36 artifact(s)
+2025-02-24T05:28:12.5237286Z Filtering artifacts by pattern 'Packages-toga-*'
+2025-02-24T05:28:12.5257237Z Preparing to download the following artifacts:
+2025-02-24T05:28:12.5257808Z - Packages-toga-winforms (ID: 2639028467, Size: 912617)
+2025-02-24T05:28:12.5258400Z - Packages-toga-android (ID: 2639028440, Size: 138194)
+2025-02-24T05:28:12.5258945Z - Packages-toga-gtk (ID: 2639028386, Size: 142074)
+2025-02-24T05:28:12.5259461Z - Packages-toga-iOS (ID: 2639028383, Size: 872356)
+2025-02-24T05:28:12.5259977Z - Packages-toga-toga (ID: 2639028349, Size: 7274)
+2025-02-24T05:28:12.5260492Z - Packages-toga-core (ID: 2639028344, Size: 1153697)
+2025-02-24T05:28:12.5261168Z - Packages-toga-dummy (ID: 2639028309, Size: 148484)
+2025-02-24T05:28:12.5261685Z - Packages-toga-web (ID: 2639028241, Size: 34922)
+2025-02-24T05:28:12.5262215Z - Packages-toga-textual (ID: 2639028202, Size: 32035)
+2025-02-24T05:28:12.5262586Z - Packages-toga-travertino (ID: 2639028133, Size: 62305)
+2025-02-24T05:28:12.5262920Z - Packages-toga-demo (ID: 2639028110, Size: 1242381)
+2025-02-24T05:28:12.5263234Z - Packages-toga-cocoa (ID: 2639028073, Size: 929338)
+2025-02-24T05:28:12.7263199Z Redirecting to blob download url: https://productionresultssa12.blob.core.windows.net/actions-results/cf52b554-71be-4a91-94b2-8eec2b4d890b/workflow-job-run-3124742b-843a-5b41-b426-aef8afedb9f7/artifacts/442c3fefacaa5f4a317396d7241d3673a3eab28c29b7e651a0b97534d592e35d.zip
+2025-02-24T05:28:12.7269124Z Starting download of artifact to: /home/runner/work/toga/toga/dist
+2025-02-24T05:28:12.8727218Z Redirecting to blob download url: https://productionresultssa12.blob.core.windows.net/actions-results/cf52b554-71be-4a91-94b2-8eec2b4d890b/workflow-job-run-7815ca6b-1b41-513e-fbe7-8eccb083611a/artifacts/1660c57eb65463a413672e3e25e0e2a0d8c8794547115554b39228f20230f22e.zip
+2025-02-24T05:28:12.8729439Z Starting download of artifact to: /home/runner/work/toga/toga/dist
+2025-02-24T05:28:12.8797632Z Redirecting to blob download url: https://productionresultssa12.blob.core.windows.net/actions-results/cf52b554-71be-4a91-94b2-8eec2b4d890b/workflow-job-run-c851c84b-57ed-5071-9878-2279ccd891b8/artifacts/5eb57499beb40f05e15583bbf1c077df75bc75fa11156590733b79c2f9774e5a.zip
+2025-02-24T05:28:12.8799850Z Starting download of artifact to: /home/runner/work/toga/toga/dist
+2025-02-24T05:28:12.8813689Z Redirecting to blob download url: https://productionresultssa12.blob.core.windows.net/actions-results/cf52b554-71be-4a91-94b2-8eec2b4d890b/workflow-job-run-18bbcbc6-8763-5d15-2620-0ac883eea9b0/artifacts/42ca5e4547811af7883a91d6c65b481266e15c0cdc8d243ec9aae2b558253c02.zip
+2025-02-24T05:28:12.8815841Z Starting download of artifact to: /home/runner/work/toga/toga/dist
+2025-02-24T05:28:12.8826066Z Redirecting to blob download url: https://productionresultssa12.blob.core.windows.net/actions-results/cf52b554-71be-4a91-94b2-8eec2b4d890b/workflow-job-run-e2a6fa47-47a3-5188-27fb-56f4e71042c8/artifacts/5425332638acb926f3e0f42935440601f1f6cf4c943281c5f8b926bd1948bc25.zip
+2025-02-24T05:28:12.8827911Z Starting download of artifact to: /home/runner/work/toga/toga/dist
+2025-02-24T05:28:12.8858427Z Redirecting to blob download url: https://productionresultssa12.blob.core.windows.net/actions-results/cf52b554-71be-4a91-94b2-8eec2b4d890b/workflow-job-run-f1ed5179-285b-5126-8d3b-2df284d1f11c/artifacts/a55c024fa54bd7854415e2c7edfeb2c5046af07e859f8da7b852b08eadc84e2a.zip
+2025-02-24T05:28:12.8860693Z Starting download of artifact to: /home/runner/work/toga/toga/dist
+2025-02-24T05:28:12.8871354Z Redirecting to blob download url: https://productionresultssa12.blob.core.windows.net/actions-results/cf52b554-71be-4a91-94b2-8eec2b4d890b/workflow-job-run-137efbf3-bb9f-5901-016f-a9ca027ec083/artifacts/3f2c1a4e1441705d00c0abbd5f3913c6b215c2d9365be6ffa9fcc342e7742def.zip
+2025-02-24T05:28:12.8874618Z Starting download of artifact to: /home/runner/work/toga/toga/dist
+2025-02-24T05:28:12.8994111Z Redirecting to blob download url: https://productionresultssa12.blob.core.windows.net/actions-results/cf52b554-71be-4a91-94b2-8eec2b4d890b/workflow-job-run-832e8880-3eb6-5d89-0c04-ef547b46a59e/artifacts/dd722970e727682fe8f4f464e3511dbda02932b6586e5f2f8ac9f8f11f50cdc9.zip
+2025-02-24T05:28:12.8995365Z Starting download of artifact to: /home/runner/work/toga/toga/dist
+2025-02-24T05:28:12.9006370Z Redirecting to blob download url: https://productionresultssa12.blob.core.windows.net/actions-results/cf52b554-71be-4a91-94b2-8eec2b4d890b/workflow-job-run-996a8579-f179-559d-4190-0dfa80ff20d7/artifacts/78e64f25892d1e62a7fba16b04b2d38f38656067df6d708afd5432245debf794.zip
+2025-02-24T05:28:12.9007561Z Starting download of artifact to: /home/runner/work/toga/toga/dist
+2025-02-24T05:28:12.9016512Z Redirecting to blob download url: https://productionresultssa12.blob.core.windows.net/actions-results/cf52b554-71be-4a91-94b2-8eec2b4d890b/workflow-job-run-866e389a-a1a0-5c67-a00f-72c22223abfe/artifacts/b4bca85baf5c112d5a88797759fe2e27b3de49b97e7268608199152765d6405a.zip
+2025-02-24T05:28:12.9017705Z Starting download of artifact to: /home/runner/work/toga/toga/dist
+2025-02-24T05:28:12.9035814Z Redirecting to blob download url: https://productionresultssa12.blob.core.windows.net/actions-results/cf52b554-71be-4a91-94b2-8eec2b4d890b/workflow-job-run-46aa3184-e851-51af-58d5-831072cd673f/artifacts/485660db63ec446c9f562cc6bdf49c64bf27c37a329b95a30a2467812096f020.zip
+2025-02-24T05:28:12.9037212Z Starting download of artifact to: /home/runner/work/toga/toga/dist
+2025-02-24T05:28:12.9052689Z Redirecting to blob download url: https://productionresultssa12.blob.core.windows.net/actions-results/cf52b554-71be-4a91-94b2-8eec2b4d890b/workflow-job-run-98be74ae-5157-5c81-b7d0-b2ef5821a81e/artifacts/6e0cae3735cba3d010b2e4c6917aa1f2ffe72638fbddcfcf5e7d00e456e64178.zip
+2025-02-24T05:28:12.9053889Z Starting download of artifact to: /home/runner/work/toga/toga/dist
+2025-02-24T05:28:13.0854523Z (node:2059) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+2025-02-24T05:28:13.0856081Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2025-02-24T05:28:13.1715246Z Artifact download completed successfully.
+2025-02-24T05:28:13.2420705Z Artifact download completed successfully.
+2025-02-24T05:28:13.2849200Z Artifact download completed successfully.
+2025-02-24T05:28:13.3909514Z Artifact download completed successfully.
+2025-02-24T05:28:13.3999184Z Artifact download completed successfully.
+2025-02-24T05:28:13.4096483Z Artifact download completed successfully.
+2025-02-24T05:28:13.5451561Z Artifact download completed successfully.
+2025-02-24T05:28:13.5465989Z Artifact download completed successfully.
+2025-02-24T05:28:13.5799446Z Artifact download completed successfully.
+2025-02-24T05:28:13.7156944Z Artifact download completed successfully.
+2025-02-24T05:28:13.7485067Z Artifact download completed successfully.
+2025-02-24T05:28:13.8849608Z Artifact download completed successfully.
+2025-02-24T05:28:13.8850092Z Total of 12 artifact(s) downloaded
+2025-02-24T05:28:13.8857577Z Download artifact has finished successfully
+2025-02-24T05:28:13.8980703Z ##[group]Run # The $(ls ...) shell expansion is done in the Github environment; the value of
+2025-02-24T05:28:13.8981566Z [36;1m# The $(ls ...) shell expansion is done in the Github environment; the value of[0m
+2025-02-24T05:28:13.8982065Z [36;1m# TOGA_INSTALL_COMMAND will be a literal string without any shell expansions to[0m
+2025-02-24T05:28:13.8982545Z [36;1m# perform. We don't *explicitly* install the Travertino wheel; we provide the[0m
+2025-02-24T05:28:13.8982997Z [36;1m# dist dir as a source of wheels, and rely on pip to resolve the explicit[0m
+2025-02-24T05:28:13.8983401Z [36;1m# version match to the Travertino wheel in that folder.[0m
+2025-02-24T05:28:13.8984009Z [36;1mexport TOGA_INSTALL_COMMAND="python -m pip install --find-links ../dist ../$(ls dist/toga_core-*.whl)[dev] ../$(ls dist/toga_dummy-*.whl)"[0m
+2025-02-24T05:28:13.8984576Z [36;1mtox -e py-cov-trav[0m
+2025-02-24T05:28:13.8984880Z [36;1mtox -qe coverage$(tr -dc "0-9" <<< "3.9")-trav[0m
+2025-02-24T05:28:13.8985284Z [36;1mmv travertino/.coverage travertino/.coverage.ubuntu-latest.3.9[0m
+2025-02-24T05:28:13.9040690Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-24T05:28:13.9041150Z env:
+2025-02-24T05:28:13.9041335Z   min_python_version: 3.9
+2025-02-24T05:28:13.9041556Z   max_python_version: 3.12
+2025-02-24T05:28:13.9041767Z   FORCE_COLOR: 1
+2025-02-24T05:28:13.9042021Z   pythonLocation: /opt/hostedtoolcache/Python/3.9.21/x64
+2025-02-24T05:28:13.9042433Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.9.21/x64/lib/pkgconfig
+2025-02-24T05:28:13.9042818Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.21/x64
+2025-02-24T05:28:13.9043152Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.21/x64
+2025-02-24T05:28:13.9043485Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.21/x64
+2025-02-24T05:28:13.9043826Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.9.21/x64/lib
+2025-02-24T05:28:13.9044115Z ##[endgroup]
+2025-02-24T05:28:14.6280855Z [1m[35mpy-cov-trav:[0m[36m freeze[22m[2m>[0m python -m pip freeze --all[0m
+2025-02-24T05:28:15.1353645Z [1m[35mpy-cov-trav:[0m[36m pip==25.0.1,setuptools==75.8.0,wheel==0.45.1[0m
+2025-02-24T05:28:15.1375414Z [1m[35mpy-cov-trav:[0m[36m commands[0][22m /home/runner/work/toga/toga/travertino[2m>[0m python -m pip install --find-links ../dist '../dist/toga_core-0.4.9.dev608+g01152b56b-py3-none-any.whl[dev]' ../dist/toga_dummy-0.4.9.dev608+g01152b56b-py3-none-any.whl[0m
+2025-02-24T05:28:15.6356717Z Looking in links: ../dist
+2025-02-24T05:28:15.6413214Z Processing /home/runner/work/toga/toga/dist/toga_core-0.4.9.dev608+g01152b56b-py3-none-any.whl (from toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:15.6519403Z Processing /home/runner/work/toga/toga/dist/toga_dummy-0.4.9.dev608+g01152b56b-py3-none-any.whl
+2025-02-24T05:28:15.6759990Z Processing /home/runner/work/toga/toga/dist/travertino-0.4.9.dev608+g01152b56b-py3-none-any.whl (from toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:15.9335665Z Collecting coverage==7.6.12 (from coverage[toml]==7.6.12; extra == "dev"->toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:15.9611516Z   Downloading coverage-7.6.12-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (8.5 kB)
+2025-02-24T05:28:15.9741593Z Collecting coverage-conditional-plugin==0.9.0 (from toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:15.9894885Z   Downloading coverage_conditional_plugin-0.9.0-py3-none-any.whl.metadata (6.9 kB)
+2025-02-24T05:28:16.1286626Z Collecting Pillow==11.1.0 (from toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:16.1444628Z   Downloading pillow-11.1.0-cp39-cp39-manylinux_2_28_x86_64.whl.metadata (9.1 kB)
+2025-02-24T05:28:16.1863251Z Collecting pre-commit==4.1.0 (from toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:16.1941136Z   Downloading pre_commit-4.1.0-py2.py3-none-any.whl.metadata (1.3 kB)
+2025-02-24T05:28:16.2413106Z Collecting pytest==8.3.4 (from toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:16.2481742Z   Downloading pytest-8.3.4-py3-none-any.whl.metadata (7.5 kB)
+2025-02-24T05:28:16.2689769Z Collecting pytest-asyncio==0.25.3 (from toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:16.2893163Z   Downloading pytest_asyncio-0.25.3-py3-none-any.whl.metadata (3.9 kB)
+2025-02-24T05:28:16.3020201Z Collecting pytest-freezer==0.4.9 (from toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:16.3123147Z   Downloading pytest_freezer-0.4.9-py3-none-any.whl.metadata (2.1 kB)
+2025-02-24T05:28:16.3408148Z Collecting setuptools-scm==8.1.0 (from toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:16.3597626Z   Downloading setuptools_scm-8.1.0-py3-none-any.whl.metadata (6.6 kB)
+2025-02-24T05:28:16.4039708Z Collecting tox==4.24.1 (from toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:16.4052975Z   Using cached tox-4.24.1-py3-none-any.whl.metadata (3.7 kB)
+2025-02-24T05:28:16.4217786Z Collecting typing-extensions==4.12.2 (from toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:16.4230200Z   Using cached typing_extensions-4.12.2-py3-none-any.whl.metadata (3.0 kB)
+2025-02-24T05:28:16.4604828Z Collecting importlib_metadata (from coverage-conditional-plugin==0.9.0->toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:16.4618329Z   Using cached importlib_metadata-8.6.1-py3-none-any.whl.metadata (4.7 kB)
+2025-02-24T05:28:16.4805351Z Collecting packaging>=20.4 (from coverage-conditional-plugin==0.9.0->toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:16.4817628Z   Using cached packaging-24.2-py3-none-any.whl.metadata (3.2 kB)
+2025-02-24T05:28:16.4944671Z Collecting tomli (from coverage[toml]==7.6.12; extra == "dev"->toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:16.4956853Z   Using cached tomli-2.2.1-py3-none-any.whl.metadata (10 kB)
+2025-02-24T05:28:16.5087928Z Collecting cfgv>=2.0.0 (from pre-commit==4.1.0->toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:16.5201419Z   Downloading cfgv-3.4.0-py2.py3-none-any.whl.metadata (8.5 kB)
+2025-02-24T05:28:16.5627115Z Collecting identify>=1.0.0 (from pre-commit==4.1.0->toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:16.5686290Z   Downloading identify-2.6.8-py2.py3-none-any.whl.metadata (4.4 kB)
+2025-02-24T05:28:16.5865839Z Collecting nodeenv>=0.11.1 (from pre-commit==4.1.0->toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:16.5906714Z   Downloading nodeenv-1.9.1-py2.py3-none-any.whl.metadata (21 kB)
+2025-02-24T05:28:16.6264811Z Collecting pyyaml>=5.1 (from pre-commit==4.1.0->toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:16.6298276Z   Downloading PyYAML-6.0.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.1 kB)
+2025-02-24T05:28:16.6709111Z Collecting virtualenv>=20.10.0 (from pre-commit==4.1.0->toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:16.6722183Z   Using cached virtualenv-20.29.2-py3-none-any.whl.metadata (4.5 kB)
+2025-02-24T05:28:16.6887005Z Collecting exceptiongroup>=1.0.0rc8 (from pytest==8.3.4->toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:16.6920617Z   Downloading exceptiongroup-1.2.2-py3-none-any.whl.metadata (6.6 kB)
+2025-02-24T05:28:16.7007584Z Collecting iniconfig (from pytest==8.3.4->toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:16.7038524Z   Downloading iniconfig-2.0.0-py3-none-any.whl.metadata (2.6 kB)
+2025-02-24T05:28:16.7152656Z Collecting pluggy<2,>=1.5 (from pytest==8.3.4->toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:16.7165446Z   Using cached pluggy-1.5.0-py3-none-any.whl.metadata (4.8 kB)
+2025-02-24T05:28:16.7595651Z Collecting freezegun>=1.1 (from pytest-freezer==0.4.9->toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:16.7628380Z   Downloading freezegun-1.5.1-py3-none-any.whl.metadata (11 kB)
+2025-02-24T05:28:16.7721880Z Requirement already satisfied: setuptools in /home/runner/work/toga/toga/.tox/py-cov-trav/lib/python3.9/site-packages (from setuptools-scm==8.1.0->toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b) (75.8.0)
+2025-02-24T05:28:16.7933820Z Collecting cachetools>=5.5 (from tox==4.24.1->toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:16.7947042Z   Using cached cachetools-5.5.2-py3-none-any.whl.metadata (5.4 kB)
+2025-02-24T05:28:16.8027443Z Collecting chardet>=5.2 (from tox==4.24.1->toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:16.8040130Z   Using cached chardet-5.2.0-py3-none-any.whl.metadata (3.4 kB)
+2025-02-24T05:28:16.8162516Z Collecting colorama>=0.4.6 (from tox==4.24.1->toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:16.8175594Z   Using cached colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+2025-02-24T05:28:16.8337926Z Collecting filelock>=3.16.1 (from tox==4.24.1->toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:16.8350451Z   Using cached filelock-3.17.0-py3-none-any.whl.metadata (2.9 kB)
+2025-02-24T05:28:16.8552420Z Collecting platformdirs>=4.3.6 (from tox==4.24.1->toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:16.8565056Z   Using cached platformdirs-4.3.6-py3-none-any.whl.metadata (11 kB)
+2025-02-24T05:28:16.8695876Z Collecting pyproject-api>=1.8 (from tox==4.24.1->toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:16.8709335Z   Using cached pyproject_api-1.9.0-py3-none-any.whl.metadata (2.7 kB)
+2025-02-24T05:28:16.9081159Z Collecting python-dateutil>=2.7 (from freezegun>=1.1->pytest-freezer==0.4.9->toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:16.9110568Z   Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+2025-02-24T05:28:16.9384521Z Collecting distlib<1,>=0.3.7 (from virtualenv>=20.10.0->pre-commit==4.1.0->toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:16.9396763Z   Using cached distlib-0.3.9-py2.py3-none-any.whl.metadata (5.2 kB)
+2025-02-24T05:28:16.9687729Z Collecting zipp>=3.20 (from importlib_metadata->coverage-conditional-plugin==0.9.0->toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:16.9700826Z   Using cached zipp-3.21.0-py3-none-any.whl.metadata (3.7 kB)
+2025-02-24T05:28:17.0037949Z Collecting six>=1.5 (from python-dateutil>=2.7->freezegun>=1.1->pytest-freezer==0.4.9->toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:17.0109801Z   Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+2025-02-24T05:28:17.0242132Z Downloading coverage-7.6.12-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (236 kB)
+2025-02-24T05:28:17.0350286Z Downloading coverage_conditional_plugin-0.9.0-py3-none-any.whl (7.3 kB)
+2025-02-24T05:28:17.0405712Z Downloading pillow-11.1.0-cp39-cp39-manylinux_2_28_x86_64.whl (4.5 MB)
+2025-02-24T05:28:17.0932752Z [?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/4.5 MB[0m [31m?[0m eta [36m-:--:--[0m
+2025-02-24T05:28:17.0933791Z [2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m4.5/4.5 MB[0m [31m88.7 MB/s[0m eta [36m0:00:00[0m
+2025-02-24T05:28:17.0963818Z [?25hDownloading pre_commit-4.1.0-py2.py3-none-any.whl (220 kB)
+2025-02-24T05:28:17.1021656Z Downloading pytest-8.3.4-py3-none-any.whl (343 kB)
+2025-02-24T05:28:17.1086131Z Downloading pytest_asyncio-0.25.3-py3-none-any.whl (19 kB)
+2025-02-24T05:28:17.1154434Z Downloading pytest_freezer-0.4.9-py3-none-any.whl (3.2 kB)
+2025-02-24T05:28:17.1199401Z Downloading setuptools_scm-8.1.0-py3-none-any.whl (43 kB)
+2025-02-24T05:28:17.1235099Z Using cached tox-4.24.1-py3-none-any.whl (171 kB)
+2025-02-24T05:28:17.1249047Z Using cached typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+2025-02-24T05:28:17.1262070Z Using cached cachetools-5.5.2-py3-none-any.whl (10 kB)
+2025-02-24T05:28:17.1293183Z Downloading cfgv-3.4.0-py2.py3-none-any.whl (7.2 kB)
+2025-02-24T05:28:17.1324006Z Using cached chardet-5.2.0-py3-none-any.whl (199 kB)
+2025-02-24T05:28:17.1338094Z Using cached colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+2025-02-24T05:28:17.1368579Z Downloading exceptiongroup-1.2.2-py3-none-any.whl (16 kB)
+2025-02-24T05:28:17.1399286Z Using cached filelock-3.17.0-py3-none-any.whl (16 kB)
+2025-02-24T05:28:17.1606403Z Downloading freezegun-1.5.1-py3-none-any.whl (17 kB)
+2025-02-24T05:28:17.1661845Z Downloading identify-2.6.8-py2.py3-none-any.whl (99 kB)
+2025-02-24T05:28:17.1723920Z Downloading nodeenv-1.9.1-py2.py3-none-any.whl (22 kB)
+2025-02-24T05:28:17.1754213Z Using cached packaging-24.2-py3-none-any.whl (65 kB)
+2025-02-24T05:28:17.1767176Z Using cached platformdirs-4.3.6-py3-none-any.whl (18 kB)
+2025-02-24T05:28:17.1779479Z Using cached pluggy-1.5.0-py3-none-any.whl (20 kB)
+2025-02-24T05:28:17.1792248Z Using cached pyproject_api-1.9.0-py3-none-any.whl (13 kB)
+2025-02-24T05:28:17.1827727Z Downloading PyYAML-6.0.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (737 kB)
+2025-02-24T05:28:17.1925161Z [?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/737.4 kB[0m [31m?[0m eta [36m-:--:--[0m
+2025-02-24T05:28:17.1926313Z [2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m737.4/737.4 kB[0m [31m80.3 MB/s[0m eta [36m0:00:00[0m
+2025-02-24T05:28:17.1943847Z [?25hUsing cached tomli-2.2.1-py3-none-any.whl (14 kB)
+2025-02-24T05:28:17.1956921Z Using cached virtualenv-20.29.2-py3-none-any.whl (4.3 MB)
+2025-02-24T05:28:17.2001471Z Using cached importlib_metadata-8.6.1-py3-none-any.whl (26 kB)
+2025-02-24T05:28:17.2040565Z Downloading iniconfig-2.0.0-py3-none-any.whl (5.9 kB)
+2025-02-24T05:28:17.2071814Z Using cached distlib-0.3.9-py2.py3-none-any.whl (468 kB)
+2025-02-24T05:28:17.2116443Z Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+2025-02-24T05:28:17.2167227Z Using cached zipp-3.21.0-py3-none-any.whl (9.6 kB)
+2025-02-24T05:28:17.2207240Z Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+2025-02-24T05:28:17.3231534Z Installing collected packages: distlib, zipp, typing-extensions, travertino, tomli, six, pyyaml, pluggy, platformdirs, Pillow, packaging, nodeenv, iniconfig, identify, filelock, exceptiongroup, coverage, colorama, chardet, cfgv, cachetools, virtualenv, toga-core, setuptools-scm, python-dateutil, pytest, pyproject-api, importlib_metadata, tox, toga-dummy, pytest-asyncio, pre-commit, freezegun, coverage-conditional-plugin, pytest-freezer
+2025-02-24T05:28:18.9011648Z Successfully installed Pillow-11.1.0 cachetools-5.5.2 cfgv-3.4.0 chardet-5.2.0 colorama-0.4.6 coverage-7.6.12 coverage-conditional-plugin-0.9.0 distlib-0.3.9 exceptiongroup-1.2.2 filelock-3.17.0 freezegun-1.5.1 identify-2.6.8 importlib_metadata-8.6.1 iniconfig-2.0.0 nodeenv-1.9.1 packaging-24.2 platformdirs-4.3.6 pluggy-1.5.0 pre-commit-4.1.0 pyproject-api-1.9.0 pytest-8.3.4 pytest-asyncio-0.25.3 pytest-freezer-0.4.9 python-dateutil-2.9.0.post0 pyyaml-6.0.2 setuptools-scm-8.1.0 six-1.17.0 toga-core-0.4.9.dev608+g01152b56b toga-dummy-0.4.9.dev608+g01152b56b tomli-2.2.1 tox-4.24.1 travertino-0.4.9.dev608+g01152b56b typing-extensions-4.12.2 virtualenv-20.29.2 zipp-3.21.0
+2025-02-24T05:28:18.9805287Z [1m[35mpy-cov-trav:[0m[36m commands[1][22m /home/runner/work/toga/toga/travertino[2m>[0m python -m coverage run -m pytest -vv --color yes[0m
+2025-02-24T05:28:19.3871063Z [1m============================= test session starts ==============================[0m
+2025-02-24T05:28:19.3872481Z platform linux -- Python 3.9.21, pytest-8.3.4, pluggy-1.5.0 -- /home/runner/work/toga/toga/.tox/py-cov-trav/bin/python
+2025-02-24T05:28:19.3873589Z cachedir: /home/runner/work/toga/toga/.tox/py-cov-trav/.pytest_cache
+2025-02-24T05:28:19.3874321Z rootdir: /home/runner/work/toga/toga/travertino
+2025-02-24T05:28:19.3874843Z configfile: pyproject.toml
+2025-02-24T05:28:19.3875311Z plugins: asyncio-0.25.3, pytest_freezer-0.4.9
+2025-02-24T05:28:19.3876034Z asyncio: mode=strict, asyncio_default_fixture_loop_scope=function
+2025-02-24T05:28:20.0792256Z [1mcollecting ... [0mcollected 645 items
+2025-02-24T05:28:20.0792792Z 
+2025-02-24T05:28:20.0822098Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color0-back_color0-expected_blended_color0] [32mPASSED[0m[32m [  0%][0m
+2025-02-24T05:28:20.0839459Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color1-back_color1-expected_blended_color1] [32mPASSED[0m[32m [  0%][0m
+2025-02-24T05:28:20.0856875Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color2-back_color2-expected_blended_color2] [32mPASSED[0m[32m [  0%][0m
+2025-02-24T05:28:20.0873792Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color3-back_color3-expected_blended_color3] [32mPASSED[0m[32m [  0%][0m
+2025-02-24T05:28:20.0890349Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color4-back_color4-expected_blended_color4] [32mPASSED[0m[32m [  0%][0m
+2025-02-24T05:28:20.0912708Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color5-back_color5-expected_blended_color5] [32mPASSED[0m[32m [  0%][0m
+2025-02-24T05:28:20.0926030Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color6-back_color6-expected_blended_color6] [32mPASSED[0m[32m [  1%][0m
+2025-02-24T05:28:20.0944371Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color7-back_color7-expected_blended_color7] [32mPASSED[0m[32m [  1%][0m
+2025-02-24T05:28:20.0961475Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color8-back_color8-expected_blended_color8] [32mPASSED[0m[32m [  1%][0m
+2025-02-24T05:28:20.0977930Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color9-back_color9-expected_blended_color9] [32mPASSED[0m[32m [  1%][0m
+2025-02-24T05:28:20.0994781Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color10-back_color10-expected_blended_color10] [32mPASSED[0m[32m [  1%][0m
+2025-02-24T05:28:20.1011309Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color11-back_color11-expected_blended_color11] [32mPASSED[0m[32m [  1%][0m
+2025-02-24T05:28:20.1028084Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color12-back_color12-expected_blended_color12] [32mPASSED[0m[32m [  2%][0m
+2025-02-24T05:28:20.1045250Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color13-back_color13-expected_blended_color13] [32mPASSED[0m[32m [  2%][0m
+2025-02-24T05:28:20.1062709Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color14-back_color14-expected_blended_color14] [32mPASSED[0m[32m [  2%][0m
+2025-02-24T05:28:20.1079453Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color15-back_color15-expected_blended_color15] [32mPASSED[0m[32m [  2%][0m
+2025-02-24T05:28:20.1096327Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color16-back_color16-expected_blended_color16] [32mPASSED[0m[32m [  2%][0m
+2025-02-24T05:28:20.1113214Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color17-back_color17-expected_blended_color17] [32mPASSED[0m[32m [  2%][0m
+2025-02-24T05:28:20.1130471Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color18-back_color18-expected_blended_color18] [32mPASSED[0m[32m [  2%][0m
+2025-02-24T05:28:20.1147856Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color19-back_color19-expected_blended_color19] [32mPASSED[0m[32m [  3%][0m
+2025-02-24T05:28:20.1164476Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color20-back_color20-expected_blended_color20] [32mPASSED[0m[32m [  3%][0m
+2025-02-24T05:28:20.1181309Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color21-back_color21-expected_blended_color21] [32mPASSED[0m[32m [  3%][0m
+2025-02-24T05:28:20.1197878Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color22-back_color22-expected_blended_color22] [32mPASSED[0m[32m [  3%][0m
+2025-02-24T05:28:20.1215669Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color23-back_color23-expected_blended_color23] [32mPASSED[0m[32m [  3%][0m
+2025-02-24T05:28:20.1232171Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color24-back_color24-expected_blended_color24] [32mPASSED[0m[32m [  3%][0m
+2025-02-24T05:28:20.1248731Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color25-back_color25-expected_blended_color25] [32mPASSED[0m[32m [  4%][0m
+2025-02-24T05:28:20.1265403Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color26-back_color26-expected_blended_color26] [32mPASSED[0m[32m [  4%][0m
+2025-02-24T05:28:20.1282337Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color27-back_color27-expected_blended_color27] [32mPASSED[0m[32m [  4%][0m
+2025-02-24T05:28:20.1300403Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color28-back_color28-expected_blended_color28] [32mPASSED[0m[32m [  4%][0m
+2025-02-24T05:28:20.1317286Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color29-back_color29-expected_blended_color29] [32mPASSED[0m[32m [  4%][0m
+2025-02-24T05:28:20.1334562Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color30-back_color30-expected_blended_color30] [32mPASSED[0m[32m [  4%][0m
+2025-02-24T05:28:20.1352154Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color31-back_color31-expected_blended_color31] [32mPASSED[0m[32m [  4%][0m
+2025-02-24T05:28:20.1369864Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color32-back_color32-expected_blended_color32] [32mPASSED[0m[32m [  5%][0m
+2025-02-24T05:28:20.1387031Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color33-back_color33-expected_blended_color33] [32mPASSED[0m[32m [  5%][0m
+2025-02-24T05:28:20.1403760Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color34-back_color34-expected_blended_color34] [32mPASSED[0m[32m [  5%][0m
+2025-02-24T05:28:20.1419983Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color35-back_color35-expected_blended_color35] [32mPASSED[0m[32m [  5%][0m
+2025-02-24T05:28:20.1436589Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color36-back_color36-expected_blended_color36] [32mPASSED[0m[32m [  5%][0m
+2025-02-24T05:28:20.1453605Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color37-back_color37-expected_blended_color37] [32mPASSED[0m[32m [  5%][0m
+2025-02-24T05:28:20.1470021Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color38-back_color38-expected_blended_color38] [32mPASSED[0m[32m [  6%][0m
+2025-02-24T05:28:20.1486748Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color39-back_color39-expected_blended_color39] [32mPASSED[0m[32m [  6%][0m
+2025-02-24T05:28:20.1503327Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color40-back_color40-expected_blended_color40] [32mPASSED[0m[32m [  6%][0m
+2025-02-24T05:28:20.1519631Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color41-back_color41-expected_blended_color41] [32mPASSED[0m[32m [  6%][0m
+2025-02-24T05:28:20.1536188Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color42-back_color42-expected_blended_color42] [32mPASSED[0m[32m [  6%][0m
+2025-02-24T05:28:20.1553017Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color43-back_color43-expected_blended_color43] [32mPASSED[0m[32m [  6%][0m
+2025-02-24T05:28:20.1569480Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color44-back_color44-expected_blended_color44] [32mPASSED[0m[32m [  6%][0m
+2025-02-24T05:28:20.1586085Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color45-back_color45-expected_blended_color45] [32mPASSED[0m[32m [  7%][0m
+2025-02-24T05:28:20.1602641Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color46-back_color46-expected_blended_color46] [32mPASSED[0m[32m [  7%][0m
+2025-02-24T05:28:20.1618862Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color47-back_color47-expected_blended_color47] [32mPASSED[0m[32m [  7%][0m
+2025-02-24T05:28:20.1635560Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color48-back_color48-expected_blended_color48] [32mPASSED[0m[32m [  7%][0m
+2025-02-24T05:28:20.1652157Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color49-back_color49-expected_blended_color49] [32mPASSED[0m[32m [  7%][0m
+2025-02-24T05:28:20.1668337Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color50-back_color50-expected_blended_color50] [32mPASSED[0m[32m [  7%][0m
+2025-02-24T05:28:20.1684827Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color51-back_color51-expected_blended_color51] [32mPASSED[0m[32m [  8%][0m
+2025-02-24T05:28:20.1701152Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color52-back_color52-expected_blended_color52] [32mPASSED[0m[32m [  8%][0m
+2025-02-24T05:28:20.1717385Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color53-back_color53-expected_blended_color53] [32mPASSED[0m[32m [  8%][0m
+2025-02-24T05:28:20.1733829Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color54-back_color54-expected_blended_color54] [32mPASSED[0m[32m [  8%][0m
+2025-02-24T05:28:20.1750282Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color55-back_color55-expected_blended_color55] [32mPASSED[0m[32m [  8%][0m
+2025-02-24T05:28:20.1766800Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color56-back_color56-expected_blended_color56] [32mPASSED[0m[32m [  8%][0m
+2025-02-24T05:28:20.1782995Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color57-back_color57-expected_blended_color57] [32mPASSED[0m[32m [  8%][0m
+2025-02-24T05:28:20.1799219Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color58-back_color58-expected_blended_color58] [32mPASSED[0m[32m [  9%][0m
+2025-02-24T05:28:20.1815988Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color59-back_color59-expected_blended_color59] [32mPASSED[0m[32m [  9%][0m
+2025-02-24T05:28:20.1832439Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color60-back_color60-expected_blended_color60] [32mPASSED[0m[32m [  9%][0m
+2025-02-24T05:28:20.1850095Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color61-back_color61-expected_blended_color61] [32mPASSED[0m[32m [  9%][0m
+2025-02-24T05:28:20.1867045Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color62-back_color62-expected_blended_color62] [32mPASSED[0m[32m [  9%][0m
+2025-02-24T05:28:20.1883743Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color63-back_color63-expected_blended_color63] [32mPASSED[0m[32m [  9%][0m
+2025-02-24T05:28:20.1899877Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color64-back_color64-expected_blended_color64] [32mPASSED[0m[32m [ 10%][0m
+2025-02-24T05:28:20.1916577Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color65-back_color65-expected_blended_color65] [32mPASSED[0m[32m [ 10%][0m
+2025-02-24T05:28:20.1933090Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color66-back_color66-expected_blended_color66] [32mPASSED[0m[32m [ 10%][0m
+2025-02-24T05:28:20.1950108Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color67-back_color67-expected_blended_color67] [32mPASSED[0m[32m [ 10%][0m
+2025-02-24T05:28:20.1967270Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color68-back_color68-expected_blended_color68] [32mPASSED[0m[32m [ 10%][0m
+2025-02-24T05:28:20.1984678Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color69-back_color69-expected_blended_color69] [32mPASSED[0m[32m [ 10%][0m
+2025-02-24T05:28:20.2001488Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color70-back_color70-expected_blended_color70] [32mPASSED[0m[32m [ 11%][0m
+2025-02-24T05:28:20.2017601Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color71-back_color71-expected_blended_color71] [32mPASSED[0m[32m [ 11%][0m
+2025-02-24T05:28:20.2034262Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color72-back_color72-expected_blended_color72] [32mPASSED[0m[32m [ 11%][0m
+2025-02-24T05:28:20.2050713Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color73-back_color73-expected_blended_color73] [32mPASSED[0m[32m [ 11%][0m
+2025-02-24T05:28:20.2067134Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color74-back_color74-expected_blended_color74] [32mPASSED[0m[32m [ 11%][0m
+2025-02-24T05:28:20.2083846Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color75-back_color75-expected_blended_color75] [32mPASSED[0m[32m [ 11%][0m
+2025-02-24T05:28:20.2100235Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color76-back_color76-expected_blended_color76] [32mPASSED[0m[32m [ 11%][0m
+2025-02-24T05:28:20.2117249Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color77-back_color77-expected_blended_color77] [32mPASSED[0m[32m [ 12%][0m
+2025-02-24T05:28:20.2134150Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color78-back_color78-expected_blended_color78] [32mPASSED[0m[32m [ 12%][0m
+2025-02-24T05:28:20.2150819Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color79-back_color79-expected_blended_color79] [32mPASSED[0m[32m [ 12%][0m
+2025-02-24T05:28:20.2167726Z tests/colors/test_alpha_blending.py::test_alpha_blending_over[front_color80-back_color80-expected_blended_color80] [32mPASSED[0m[32m [ 12%][0m
+2025-02-24T05:28:20.2191271Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color0-back_color0] [32mPASSED[0m[32m [ 12%][0m
+2025-02-24T05:28:20.2207913Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color1-back_color1] [32mPASSED[0m[32m [ 12%][0m
+2025-02-24T05:28:20.2224457Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color2-back_color2] [32mPASSED[0m[32m [ 13%][0m
+2025-02-24T05:28:20.2240413Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color3-back_color3] [32mPASSED[0m[32m [ 13%][0m
+2025-02-24T05:28:20.2256954Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color4-back_color4] [32mPASSED[0m[32m [ 13%][0m
+2025-02-24T05:28:20.2273878Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color5-back_color5] [32mPASSED[0m[32m [ 13%][0m
+2025-02-24T05:28:20.2290086Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color6-back_color6] [32mPASSED[0m[32m [ 13%][0m
+2025-02-24T05:28:20.2305487Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color7-back_color7] [32mPASSED[0m[32m [ 13%][0m
+2025-02-24T05:28:20.2321754Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color8-back_color8] [32mPASSED[0m[32m [ 13%][0m
+2025-02-24T05:28:20.2337824Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color9-back_color9] [32mPASSED[0m[32m [ 14%][0m
+2025-02-24T05:28:20.2354790Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color10-back_color10] [32mPASSED[0m[32m [ 14%][0m
+2025-02-24T05:28:20.2372048Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color11-back_color11] [32mPASSED[0m[32m [ 14%][0m
+2025-02-24T05:28:20.2388352Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color12-back_color12] [32mPASSED[0m[32m [ 14%][0m
+2025-02-24T05:28:20.2405060Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color13-back_color13] [32mPASSED[0m[32m [ 14%][0m
+2025-02-24T05:28:20.2421351Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color14-back_color14] [32mPASSED[0m[32m [ 14%][0m
+2025-02-24T05:28:20.2437759Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color15-back_color15] [32mPASSED[0m[32m [ 15%][0m
+2025-02-24T05:28:20.2455233Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color16-back_color16] [32mPASSED[0m[32m [ 15%][0m
+2025-02-24T05:28:20.2471713Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color17-back_color17] [32mPASSED[0m[32m [ 15%][0m
+2025-02-24T05:28:20.2487813Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color18-back_color18] [32mPASSED[0m[32m [ 15%][0m
+2025-02-24T05:28:20.2504102Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color19-back_color19] [32mPASSED[0m[32m [ 15%][0m
+2025-02-24T05:28:20.2520149Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color20-back_color20] [32mPASSED[0m[32m [ 15%][0m
+2025-02-24T05:28:20.2536518Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color21-back_color21] [32mPASSED[0m[32m [ 15%][0m
+2025-02-24T05:28:20.2553166Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color22-back_color22] [32mPASSED[0m[32m [ 16%][0m
+2025-02-24T05:28:20.2569820Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color23-back_color23] [32mPASSED[0m[32m [ 16%][0m
+2025-02-24T05:28:20.2586411Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color24-back_color24] [32mPASSED[0m[32m [ 16%][0m
+2025-02-24T05:28:20.2602784Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color25-back_color25] [32mPASSED[0m[32m [ 16%][0m
+2025-02-24T05:28:20.2619161Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color26-back_color26] [32mPASSED[0m[32m [ 16%][0m
+2025-02-24T05:28:20.2635721Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color27-back_color27] [32mPASSED[0m[32m [ 16%][0m
+2025-02-24T05:28:20.2652258Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color28-back_color28] [32mPASSED[0m[32m [ 17%][0m
+2025-02-24T05:28:20.2668992Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color29-back_color29] [32mPASSED[0m[32m [ 17%][0m
+2025-02-24T05:28:20.2684668Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color30-back_color30] [32mPASSED[0m[32m [ 17%][0m
+2025-02-24T05:28:20.2701131Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color31-back_color31] [32mPASSED[0m[32m [ 17%][0m
+2025-02-24T05:28:20.2718074Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color32-back_color32] [32mPASSED[0m[32m [ 17%][0m
+2025-02-24T05:28:20.2734830Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color33-back_color33] [32mPASSED[0m[32m [ 17%][0m
+2025-02-24T05:28:20.2751322Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color34-back_color34] [32mPASSED[0m[32m [ 17%][0m
+2025-02-24T05:28:20.2767345Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color35-back_color35] [32mPASSED[0m[32m [ 18%][0m
+2025-02-24T05:28:20.2784830Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color36-back_color36] [32mPASSED[0m[32m [ 18%][0m
+2025-02-24T05:28:20.2800003Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color37-back_color37] [32mPASSED[0m[32m [ 18%][0m
+2025-02-24T05:28:20.2816662Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color38-back_color38] [32mPASSED[0m[32m [ 18%][0m
+2025-02-24T05:28:20.2833603Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color39-back_color39] [32mPASSED[0m[32m [ 18%][0m
+2025-02-24T05:28:20.2849664Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color40-back_color40] [32mPASSED[0m[32m [ 18%][0m
+2025-02-24T05:28:20.2866569Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color41-back_color41] [32mPASSED[0m[32m [ 19%][0m
+2025-02-24T05:28:20.2884209Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color42-back_color42] [32mPASSED[0m[32m [ 19%][0m
+2025-02-24T05:28:20.2901177Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color43-back_color43] [32mPASSED[0m[32m [ 19%][0m
+2025-02-24T05:28:20.2917585Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color44-back_color44] [32mPASSED[0m[32m [ 19%][0m
+2025-02-24T05:28:20.2935072Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color45-back_color45] [32mPASSED[0m[32m [ 19%][0m
+2025-02-24T05:28:20.2951616Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color46-back_color46] [32mPASSED[0m[32m [ 19%][0m
+2025-02-24T05:28:20.2967693Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color47-back_color47] [32mPASSED[0m[32m [ 20%][0m
+2025-02-24T05:28:20.2984189Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color48-back_color48] [32mPASSED[0m[32m [ 20%][0m
+2025-02-24T05:28:20.3000404Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color49-back_color49] [32mPASSED[0m[32m [ 20%][0m
+2025-02-24T05:28:20.3016885Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color50-back_color50] [32mPASSED[0m[32m [ 20%][0m
+2025-02-24T05:28:20.3033360Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color51-back_color51] [32mPASSED[0m[32m [ 20%][0m
+2025-02-24T05:28:20.3049581Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color52-back_color52] [32mPASSED[0m[32m [ 20%][0m
+2025-02-24T05:28:20.3066143Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color53-back_color53] [32mPASSED[0m[32m [ 20%][0m
+2025-02-24T05:28:20.3083213Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color54-back_color54] [32mPASSED[0m[32m [ 21%][0m
+2025-02-24T05:28:20.3099483Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color55-back_color55] [32mPASSED[0m[32m [ 21%][0m
+2025-02-24T05:28:20.3115911Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color56-back_color56] [32mPASSED[0m[32m [ 21%][0m
+2025-02-24T05:28:20.3132001Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color57-back_color57] [32mPASSED[0m[32m [ 21%][0m
+2025-02-24T05:28:20.3147878Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color58-back_color58] [32mPASSED[0m[32m [ 21%][0m
+2025-02-24T05:28:20.3164110Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color59-back_color59] [32mPASSED[0m[32m [ 21%][0m
+2025-02-24T05:28:20.3180309Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color60-back_color60] [32mPASSED[0m[32m [ 22%][0m
+2025-02-24T05:28:20.3196605Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color61-back_color61] [32mPASSED[0m[32m [ 22%][0m
+2025-02-24T05:28:20.3213020Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color62-back_color62] [32mPASSED[0m[32m [ 22%][0m
+2025-02-24T05:28:20.3229023Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color63-back_color63] [32mPASSED[0m[32m [ 22%][0m
+2025-02-24T05:28:20.3245898Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color64-back_color64] [32mPASSED[0m[32m [ 22%][0m
+2025-02-24T05:28:20.3261891Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color65-back_color65] [32mPASSED[0m[32m [ 22%][0m
+2025-02-24T05:28:20.3278578Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color66-back_color66] [32mPASSED[0m[32m [ 22%][0m
+2025-02-24T05:28:20.3294157Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color67-back_color67] [32mPASSED[0m[32m [ 23%][0m
+2025-02-24T05:28:20.3310138Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color68-back_color68] [32mPASSED[0m[32m [ 23%][0m
+2025-02-24T05:28:20.3326597Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color69-back_color69] [32mPASSED[0m[32m [ 23%][0m
+2025-02-24T05:28:20.3342592Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color70-back_color70] [32mPASSED[0m[32m [ 23%][0m
+2025-02-24T05:28:20.3359060Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color71-back_color71] [32mPASSED[0m[32m [ 23%][0m
+2025-02-24T05:28:20.3375522Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color72-back_color72] [32mPASSED[0m[32m [ 23%][0m
+2025-02-24T05:28:20.3391723Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color73-back_color73] [32mPASSED[0m[32m [ 24%][0m
+2025-02-24T05:28:20.3408130Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color74-back_color74] [32mPASSED[0m[32m [ 24%][0m
+2025-02-24T05:28:20.3425245Z tests/colors/test_alpha_blending.py::test_alpha_unblend_over[front_color75-back_color75] [32mPASSED[0m[32m [ 24%][0m
+2025-02-24T05:28:20.3440437Z tests/colors/test_color_conversion.py::test_rgba_to_rgb[input_color0-expected_color0] [32mPASSED[0m[32m [ 24%][0m
+2025-02-24T05:28:20.3456450Z tests/colors/test_color_conversion.py::test_rgba_to_rgb[input_color1-expected_color1] [32mPASSED[0m[32m [ 24%][0m
+2025-02-24T05:28:20.3472073Z tests/colors/test_color_conversion.py::test_rgba_to_rgb[input_color2-expected_color2] [32mPASSED[0m[32m [ 24%][0m
+2025-02-24T05:28:20.3487108Z tests/colors/test_color_conversion.py::test_rgba_to_rgb[input_color3-expected_color3] [32mPASSED[0m[32m [ 24%][0m
+2025-02-24T05:28:20.3502308Z tests/colors/test_color_conversion.py::test_rgba_to_rgb[input_color4-expected_color4] [32mPASSED[0m[32m [ 25%][0m
+2025-02-24T05:28:20.3518026Z tests/colors/test_color_conversion.py::test_rgba_to_rgb[input_color5-expected_color5] [32mPASSED[0m[32m [ 25%][0m
+2025-02-24T05:28:20.3533468Z tests/colors/test_color_conversion.py::test_rgba_to_rgb[input_color6-expected_color6] [32mPASSED[0m[32m [ 25%][0m
+2025-02-24T05:28:20.3548365Z tests/colors/test_color_conversion.py::test_rgba_to_rgb[input_color7-expected_color7] [32mPASSED[0m[32m [ 25%][0m
+2025-02-24T05:28:20.3563637Z tests/colors/test_color_conversion.py::test_rgba_to_rgb[input_color8-expected_color8] [32mPASSED[0m[32m [ 25%][0m
+2025-02-24T05:28:20.3578511Z tests/colors/test_color_conversion.py::test_rgba_to_rgb[input_color9-expected_color9] [32mPASSED[0m[32m [ 25%][0m
+2025-02-24T05:28:20.3593804Z tests/colors/test_color_conversion.py::test_rgba_to_rgb[input_color10-expected_color10] [32mPASSED[0m[32m [ 26%][0m
+2025-02-24T05:28:20.3609220Z tests/colors/test_color_conversion.py::test_rgba_to_rgb[input_color11-expected_color11] [32mPASSED[0m[32m [ 26%][0m
+2025-02-24T05:28:20.3624474Z tests/colors/test_color_conversion.py::test_rgba_to_rgb[input_color12-expected_color12] [32mPASSED[0m[32m [ 26%][0m
+2025-02-24T05:28:20.3639626Z tests/colors/test_color_conversion.py::test_rgba_to_rgb[input_color13-expected_color13] [32mPASSED[0m[32m [ 26%][0m
+2025-02-24T05:28:20.3654789Z tests/colors/test_color_conversion.py::test_rgba_to_rgb[input_color14-expected_color14] [32mPASSED[0m[32m [ 26%][0m
+2025-02-24T05:28:20.3670371Z tests/colors/test_color_conversion.py::test_rgba_to_rgb[input_color15-expected_color15] [32mPASSED[0m[32m [ 26%][0m
+2025-02-24T05:28:20.3686694Z tests/colors/test_color_conversion.py::test_rgba_to_hsla[input_color0-expected_color0] [32mPASSED[0m[32m [ 26%][0m
+2025-02-24T05:28:20.3702213Z tests/colors/test_color_conversion.py::test_rgba_to_hsla[input_color1-expected_color1] [32mPASSED[0m[32m [ 27%][0m
+2025-02-24T05:28:20.3717471Z tests/colors/test_color_conversion.py::test_rgba_to_hsla[input_color2-expected_color2] [32mPASSED[0m[32m [ 27%][0m
+2025-02-24T05:28:20.3733335Z tests/colors/test_color_conversion.py::test_rgba_to_hsla[input_color3-expected_color3] [32mPASSED[0m[32m [ 27%][0m
+2025-02-24T05:28:20.3748961Z tests/colors/test_color_conversion.py::test_rgba_to_hsla[input_color4-expected_color4] [32mPASSED[0m[32m [ 27%][0m
+2025-02-24T05:28:20.3764863Z tests/colors/test_color_conversion.py::test_rgba_to_hsla[input_color5-expected_color5] [32mPASSED[0m[32m [ 27%][0m
+2025-02-24T05:28:20.3779845Z tests/colors/test_color_conversion.py::test_rgba_to_hsla[input_color6-expected_color6] [32mPASSED[0m[32m [ 27%][0m
+2025-02-24T05:28:20.3795272Z tests/colors/test_color_conversion.py::test_rgba_to_hsla[input_color7-expected_color7] [32mPASSED[0m[32m [ 28%][0m
+2025-02-24T05:28:20.3810378Z tests/colors/test_color_conversion.py::test_rgba_to_hsla[input_color8-expected_color8] [32mPASSED[0m[32m [ 28%][0m
+2025-02-24T05:28:20.3825922Z tests/colors/test_color_conversion.py::test_rgba_to_hsla[input_color9-expected_color9] [32mPASSED[0m[32m [ 28%][0m
+2025-02-24T05:28:20.3841729Z tests/colors/test_color_conversion.py::test_rgba_to_hsla[input_color10-expected_color10] [32mPASSED[0m[32m [ 28%][0m
+2025-02-24T05:28:20.3857210Z tests/colors/test_color_conversion.py::test_rgba_to_hsla[input_color11-expected_color11] [32mPASSED[0m[32m [ 28%][0m
+2025-02-24T05:28:20.3872739Z tests/colors/test_color_conversion.py::test_rgba_to_hsla[input_color12-expected_color12] [32mPASSED[0m[32m [ 28%][0m
+2025-02-24T05:28:20.3888135Z tests/colors/test_color_conversion.py::test_rgba_to_hsla[input_color13-expected_color13] [32mPASSED[0m[32m [ 28%][0m
+2025-02-24T05:28:20.3903792Z tests/colors/test_color_conversion.py::test_rgba_to_hsla[input_color14-expected_color14] [32mPASSED[0m[32m [ 29%][0m
+2025-02-24T05:28:20.3919603Z tests/colors/test_color_conversion.py::test_rgba_to_hsla[input_color15-expected_color15] [32mPASSED[0m[32m [ 29%][0m
+2025-02-24T05:28:20.3935637Z tests/colors/test_color_conversion.py::test_rgba_to_hsl[input_color0-expected_color0] [32mPASSED[0m[32m [ 29%][0m
+2025-02-24T05:28:20.3950720Z tests/colors/test_color_conversion.py::test_rgba_to_hsl[input_color1-expected_color1] [32mPASSED[0m[32m [ 29%][0m
+2025-02-24T05:28:20.3966697Z tests/colors/test_color_conversion.py::test_rgba_to_hsl[input_color2-expected_color2] [32mPASSED[0m[32m [ 29%][0m
+2025-02-24T05:28:20.3982460Z tests/colors/test_color_conversion.py::test_rgba_to_hsl[input_color3-expected_color3] [32mPASSED[0m[32m [ 29%][0m
+2025-02-24T05:28:20.3997325Z tests/colors/test_color_conversion.py::test_rgba_to_hsl[input_color4-expected_color4] [32mPASSED[0m[32m [ 30%][0m
+2025-02-24T05:28:20.4012705Z tests/colors/test_color_conversion.py::test_rgba_to_hsl[input_color5-expected_color5] [32mPASSED[0m[32m [ 30%][0m
+2025-02-24T05:28:20.4028055Z tests/colors/test_color_conversion.py::test_rgba_to_hsl[input_color6-expected_color6] [32mPASSED[0m[32m [ 30%][0m
+2025-02-24T05:28:20.4043520Z tests/colors/test_color_conversion.py::test_rgba_to_hsl[input_color7-expected_color7] [32mPASSED[0m[32m [ 30%][0m
+2025-02-24T05:28:20.4058690Z tests/colors/test_color_conversion.py::test_rgba_to_hsl[input_color8-expected_color8] [32mPASSED[0m[32m [ 30%][0m
+2025-02-24T05:28:20.4074204Z tests/colors/test_color_conversion.py::test_rgba_to_hsl[input_color9-expected_color9] [32mPASSED[0m[32m [ 30%][0m
+2025-02-24T05:28:20.4089257Z tests/colors/test_color_conversion.py::test_rgba_to_hsl[input_color10-expected_color10] [32mPASSED[0m[32m [ 31%][0m
+2025-02-24T05:28:20.4105124Z tests/colors/test_color_conversion.py::test_rgba_to_hsl[input_color11-expected_color11] [32mPASSED[0m[32m [ 31%][0m
+2025-02-24T05:28:20.4120348Z tests/colors/test_color_conversion.py::test_rgba_to_hsl[input_color12-expected_color12] [32mPASSED[0m[32m [ 31%][0m
+2025-02-24T05:28:20.4135448Z tests/colors/test_color_conversion.py::test_rgba_to_hsl[input_color13-expected_color13] [32mPASSED[0m[32m [ 31%][0m
+2025-02-24T05:28:20.4150597Z tests/colors/test_color_conversion.py::test_rgba_to_hsl[input_color14-expected_color14] [32mPASSED[0m[32m [ 31%][0m
+2025-02-24T05:28:20.4166785Z tests/colors/test_color_conversion.py::test_rgba_to_hsl[input_color15-expected_color15] [32mPASSED[0m[32m [ 31%][0m
+2025-02-24T05:28:20.4181903Z tests/colors/test_color_conversion.py::test_rgb_to_rgba[input_color0-expected_color0] [32mPASSED[0m[32m [ 31%][0m
+2025-02-24T05:28:20.4196893Z tests/colors/test_color_conversion.py::test_rgb_to_rgba[input_color1-expected_color1] [32mPASSED[0m[32m [ 32%][0m
+2025-02-24T05:28:20.4211960Z tests/colors/test_color_conversion.py::test_rgb_to_rgba[input_color2-expected_color2] [32mPASSED[0m[32m [ 32%][0m
+2025-02-24T05:28:20.4226930Z tests/colors/test_color_conversion.py::test_rgb_to_rgba[input_color3-expected_color3] [32mPASSED[0m[32m [ 32%][0m
+2025-02-24T05:28:20.4242017Z tests/colors/test_color_conversion.py::test_rgb_to_rgba[input_color4-expected_color4] [32mPASSED[0m[32m [ 32%][0m
+2025-02-24T05:28:20.4256786Z tests/colors/test_color_conversion.py::test_rgb_to_rgba[input_color5-expected_color5] [32mPASSED[0m[32m [ 32%][0m
+2025-02-24T05:28:20.4272030Z tests/colors/test_color_conversion.py::test_rgb_to_rgba[input_color6-expected_color6] [32mPASSED[0m[32m [ 32%][0m
+2025-02-24T05:28:20.4286644Z tests/colors/test_color_conversion.py::test_rgb_to_rgba[input_color7-expected_color7] [32mPASSED[0m[32m [ 33%][0m
+2025-02-24T05:28:20.4301806Z tests/colors/test_color_conversion.py::test_rgb_to_rgba[input_color8-expected_color8] [32mPASSED[0m[32m [ 33%][0m
+2025-02-24T05:28:20.4316601Z tests/colors/test_color_conversion.py::test_rgb_to_rgba[input_color9-expected_color9] [32mPASSED[0m[32m [ 33%][0m
+2025-02-24T05:28:20.4331889Z tests/colors/test_color_conversion.py::test_rgb_to_rgba[input_color10-expected_color10] [32mPASSED[0m[32m [ 33%][0m
+2025-02-24T05:28:20.4346477Z tests/colors/test_color_conversion.py::test_rgb_to_rgba[input_color11-expected_color11] [32mPASSED[0m[32m [ 33%][0m
+2025-02-24T05:28:20.4361787Z tests/colors/test_color_conversion.py::test_rgb_to_hsla[input_color0-expected_color0] [32mPASSED[0m[32m [ 33%][0m
+2025-02-24T05:28:20.4377120Z tests/colors/test_color_conversion.py::test_rgb_to_hsla[input_color1-expected_color1] [32mPASSED[0m[32m [ 33%][0m
+2025-02-24T05:28:20.4393220Z tests/colors/test_color_conversion.py::test_rgb_to_hsla[input_color2-expected_color2] [32mPASSED[0m[32m [ 34%][0m
+2025-02-24T05:28:20.4408325Z tests/colors/test_color_conversion.py::test_rgb_to_hsla[input_color3-expected_color3] [32mPASSED[0m[32m [ 34%][0m
+2025-02-24T05:28:20.4423979Z tests/colors/test_color_conversion.py::test_rgb_to_hsla[input_color4-expected_color4] [32mPASSED[0m[32m [ 34%][0m
+2025-02-24T05:28:20.4439254Z tests/colors/test_color_conversion.py::test_rgb_to_hsla[input_color5-expected_color5] [32mPASSED[0m[32m [ 34%][0m
+2025-02-24T05:28:20.4454721Z tests/colors/test_color_conversion.py::test_rgb_to_hsla[input_color6-expected_color6] [32mPASSED[0m[32m [ 34%][0m
+2025-02-24T05:28:20.4470152Z tests/colors/test_color_conversion.py::test_rgb_to_hsla[input_color7-expected_color7] [32mPASSED[0m[32m [ 34%][0m
+2025-02-24T05:28:20.4485918Z tests/colors/test_color_conversion.py::test_rgb_to_hsla[input_color8-expected_color8] [32mPASSED[0m[32m [ 35%][0m
+2025-02-24T05:28:20.4501950Z tests/colors/test_color_conversion.py::test_rgb_to_hsla[input_color9-expected_color9] [32mPASSED[0m[32m [ 35%][0m
+2025-02-24T05:28:20.4517233Z tests/colors/test_color_conversion.py::test_rgb_to_hsla[input_color10-expected_color10] [32mPASSED[0m[32m [ 35%][0m
+2025-02-24T05:28:20.4532711Z tests/colors/test_color_conversion.py::test_rgb_to_hsla[input_color11-expected_color11] [32mPASSED[0m[32m [ 35%][0m
+2025-02-24T05:28:20.4548621Z tests/colors/test_color_conversion.py::test_rgb_to_hsl[input_color0-expected_color0] [32mPASSED[0m[32m [ 35%][0m
+2025-02-24T05:28:20.4564215Z tests/colors/test_color_conversion.py::test_rgb_to_hsl[input_color1-expected_color1] [32mPASSED[0m[32m [ 35%][0m
+2025-02-24T05:28:20.4579714Z tests/colors/test_color_conversion.py::test_rgb_to_hsl[input_color2-expected_color2] [32mPASSED[0m[32m [ 35%][0m
+2025-02-24T05:28:20.4595115Z tests/colors/test_color_conversion.py::test_rgb_to_hsl[input_color3-expected_color3] [32mPASSED[0m[32m [ 36%][0m
+2025-02-24T05:28:20.4610163Z tests/colors/test_color_conversion.py::test_rgb_to_hsl[input_color4-expected_color4] [32mPASSED[0m[32m [ 36%][0m
+2025-02-24T05:28:20.4625451Z tests/colors/test_color_conversion.py::test_rgb_to_hsl[input_color5-expected_color5] [32mPASSED[0m[32m [ 36%][0m
+2025-02-24T05:28:20.4640564Z tests/colors/test_color_conversion.py::test_rgb_to_hsl[input_color6-expected_color6] [32mPASSED[0m[32m [ 36%][0m
+2025-02-24T05:28:20.4656258Z tests/colors/test_color_conversion.py::test_rgb_to_hsl[input_color7-expected_color7] [32mPASSED[0m[32m [ 36%][0m
+2025-02-24T05:28:20.4671672Z tests/colors/test_color_conversion.py::test_rgb_to_hsl[input_color8-expected_color8] [32mPASSED[0m[32m [ 36%][0m
+2025-02-24T05:28:20.4688249Z tests/colors/test_color_conversion.py::test_rgb_to_hsl[input_color9-expected_color9] [32mPASSED[0m[32m [ 37%][0m
+2025-02-24T05:28:20.4704217Z tests/colors/test_color_conversion.py::test_rgb_to_hsl[input_color10-expected_color10] [32mPASSED[0m[32m [ 37%][0m
+2025-02-24T05:28:20.4719956Z tests/colors/test_color_conversion.py::test_rgb_to_hsl[input_color11-expected_color11] [32mPASSED[0m[32m [ 37%][0m
+2025-02-24T05:28:20.4735566Z tests/colors/test_color_conversion.py::test_hsla_to_hsl[input_color0-expected_color0] [32mPASSED[0m[32m [ 37%][0m
+2025-02-24T05:28:20.4751020Z tests/colors/test_color_conversion.py::test_hsla_to_hsl[input_color1-expected_color1] [32mPASSED[0m[32m [ 37%][0m
+2025-02-24T05:28:20.4767098Z tests/colors/test_color_conversion.py::test_hsla_to_hsl[input_color2-expected_color2] [32mPASSED[0m[32m [ 37%][0m
+2025-02-24T05:28:20.4782576Z tests/colors/test_color_conversion.py::test_hsla_to_hsl[input_color3-expected_color3] [32mPASSED[0m[32m [ 37%][0m
+2025-02-24T05:28:20.4797780Z tests/colors/test_color_conversion.py::test_hsla_to_hsl[input_color4-expected_color4] [32mPASSED[0m[32m [ 38%][0m
+2025-02-24T05:28:20.4813417Z tests/colors/test_color_conversion.py::test_hsla_to_hsl[input_color5-expected_color5] [32mPASSED[0m[32m [ 38%][0m
+2025-02-24T05:28:20.4829143Z tests/colors/test_color_conversion.py::test_hsla_to_hsl[input_color6-expected_color6] [32mPASSED[0m[32m [ 38%][0m
+2025-02-24T05:28:20.4844775Z tests/colors/test_color_conversion.py::test_hsla_to_hsl[input_color7-expected_color7] [32mPASSED[0m[32m [ 38%][0m
+2025-02-24T05:28:20.4860184Z tests/colors/test_color_conversion.py::test_hsla_to_hsl[input_color8-expected_color8] [32mPASSED[0m[32m [ 38%][0m
+2025-02-24T05:28:20.4876186Z tests/colors/test_color_conversion.py::test_hsla_to_hsl[input_color9-expected_color9] [32mPASSED[0m[32m [ 38%][0m
+2025-02-24T05:28:20.4892315Z tests/colors/test_color_conversion.py::test_hsla_to_hsl[input_color10-expected_color10] [32mPASSED[0m[32m [ 39%][0m
+2025-02-24T05:28:20.4907652Z tests/colors/test_color_conversion.py::test_hsla_to_hsl[input_color11-expected_color11] [32mPASSED[0m[32m [ 39%][0m
+2025-02-24T05:28:20.4923635Z tests/colors/test_color_conversion.py::test_hsla_to_hsl[input_color12-expected_color12] [32mPASSED[0m[32m [ 39%][0m
+2025-02-24T05:28:20.4939214Z tests/colors/test_color_conversion.py::test_hsla_to_hsl[input_color13-expected_color13] [32mPASSED[0m[32m [ 39%][0m
+2025-02-24T05:28:20.4955044Z tests/colors/test_color_conversion.py::test_hsla_to_hsl[input_color14-expected_color14] [32mPASSED[0m[32m [ 39%][0m
+2025-02-24T05:28:20.4971082Z tests/colors/test_color_conversion.py::test_hsla_to_hsl[input_color15-expected_color15] [32mPASSED[0m[32m [ 39%][0m
+2025-02-24T05:28:20.4986541Z tests/colors/test_color_conversion.py::test_hsla_to_rgba[input_color0-expected_color0] [32mPASSED[0m[32m [ 40%][0m
+2025-02-24T05:28:20.5002956Z tests/colors/test_color_conversion.py::test_hsla_to_rgba[input_color1-expected_color1] [32mPASSED[0m[32m [ 40%][0m
+2025-02-24T05:28:20.5018569Z tests/colors/test_color_conversion.py::test_hsla_to_rgba[input_color2-expected_color2] [32mPASSED[0m[32m [ 40%][0m
+2025-02-24T05:28:20.5034312Z tests/colors/test_color_conversion.py::test_hsla_to_rgba[input_color3-expected_color3] [32mPASSED[0m[32m [ 40%][0m
+2025-02-24T05:28:20.5050018Z tests/colors/test_color_conversion.py::test_hsla_to_rgba[input_color4-expected_color4] [32mPASSED[0m[32m [ 40%][0m
+2025-02-24T05:28:20.5065505Z tests/colors/test_color_conversion.py::test_hsla_to_rgba[input_color5-expected_color5] [32mPASSED[0m[32m [ 40%][0m
+2025-02-24T05:28:20.5080600Z tests/colors/test_color_conversion.py::test_hsla_to_rgba[input_color6-expected_color6] [32mPASSED[0m[32m [ 40%][0m
+2025-02-24T05:28:20.5095962Z tests/colors/test_color_conversion.py::test_hsla_to_rgba[input_color7-expected_color7] [32mPASSED[0m[32m [ 41%][0m
+2025-02-24T05:28:20.5111257Z tests/colors/test_color_conversion.py::test_hsla_to_rgba[input_color8-expected_color8] [32mPASSED[0m[32m [ 41%][0m
+2025-02-24T05:28:20.5126767Z tests/colors/test_color_conversion.py::test_hsla_to_rgba[input_color9-expected_color9] [32mPASSED[0m[32m [ 41%][0m
+2025-02-24T05:28:20.5142382Z tests/colors/test_color_conversion.py::test_hsla_to_rgba[input_color10-expected_color10] [32mPASSED[0m[32m [ 41%][0m
+2025-02-24T05:28:20.5158065Z tests/colors/test_color_conversion.py::test_hsla_to_rgba[input_color11-expected_color11] [32mPASSED[0m[32m [ 41%][0m
+2025-02-24T05:28:20.5174085Z tests/colors/test_color_conversion.py::test_hsla_to_rgba[input_color12-expected_color12] [32mPASSED[0m[32m [ 41%][0m
+2025-02-24T05:28:20.5189718Z tests/colors/test_color_conversion.py::test_hsla_to_rgba[input_color13-expected_color13] [32mPASSED[0m[32m [ 42%][0m
+2025-02-24T05:28:20.5205817Z tests/colors/test_color_conversion.py::test_hsla_to_rgba[input_color14-expected_color14] [32mPASSED[0m[32m [ 42%][0m
+2025-02-24T05:28:20.5221829Z tests/colors/test_color_conversion.py::test_hsla_to_rgba[input_color15-expected_color15] [32mPASSED[0m[32m [ 42%][0m
+2025-02-24T05:28:20.5237741Z tests/colors/test_color_conversion.py::test_hsla_to_rgb[input_color0-expected_color0] [32mPASSED[0m[32m [ 42%][0m
+2025-02-24T05:28:20.5254005Z tests/colors/test_color_conversion.py::test_hsla_to_rgb[input_color1-expected_color1] [32mPASSED[0m[32m [ 42%][0m
+2025-02-24T05:28:20.5269699Z tests/colors/test_color_conversion.py::test_hsla_to_rgb[input_color2-expected_color2] [32mPASSED[0m[32m [ 42%][0m
+2025-02-24T05:28:20.5285680Z tests/colors/test_color_conversion.py::test_hsla_to_rgb[input_color3-expected_color3] [32mPASSED[0m[32m [ 42%][0m
+2025-02-24T05:28:20.5301818Z tests/colors/test_color_conversion.py::test_hsla_to_rgb[input_color4-expected_color4] [32mPASSED[0m[32m [ 43%][0m
+2025-02-24T05:28:20.5317147Z tests/colors/test_color_conversion.py::test_hsla_to_rgb[input_color5-expected_color5] [32mPASSED[0m[32m [ 43%][0m
+2025-02-24T05:28:20.5332294Z tests/colors/test_color_conversion.py::test_hsla_to_rgb[input_color6-expected_color6] [32mPASSED[0m[32m [ 43%][0m
+2025-02-24T05:28:20.5348227Z tests/colors/test_color_conversion.py::test_hsla_to_rgb[input_color7-expected_color7] [32mPASSED[0m[32m [ 43%][0m
+2025-02-24T05:28:20.5363441Z tests/colors/test_color_conversion.py::test_hsla_to_rgb[input_color8-expected_color8] [32mPASSED[0m[32m [ 43%][0m
+2025-02-24T05:28:20.5378423Z tests/colors/test_color_conversion.py::test_hsla_to_rgb[input_color9-expected_color9] [32mPASSED[0m[32m [ 43%][0m
+2025-02-24T05:28:20.5393591Z tests/colors/test_color_conversion.py::test_hsla_to_rgb[input_color10-expected_color10] [32mPASSED[0m[32m [ 44%][0m
+2025-02-24T05:28:20.5408819Z tests/colors/test_color_conversion.py::test_hsla_to_rgb[input_color11-expected_color11] [32mPASSED[0m[32m [ 44%][0m
+2025-02-24T05:28:20.5424097Z tests/colors/test_color_conversion.py::test_hsla_to_rgb[input_color12-expected_color12] [32mPASSED[0m[32m [ 44%][0m
+2025-02-24T05:28:20.5438924Z tests/colors/test_color_conversion.py::test_hsla_to_rgb[input_color13-expected_color13] [32mPASSED[0m[32m [ 44%][0m
+2025-02-24T05:28:20.5454164Z tests/colors/test_color_conversion.py::test_hsla_to_rgb[input_color14-expected_color14] [32mPASSED[0m[32m [ 44%][0m
+2025-02-24T05:28:20.5469175Z tests/colors/test_color_conversion.py::test_hsla_to_rgb[input_color15-expected_color15] [32mPASSED[0m[32m [ 44%][0m
+2025-02-24T05:28:20.5484222Z tests/colors/test_color_conversion.py::test_hsl_to_hsla[input_color0-expected_color0] [32mPASSED[0m[32m [ 44%][0m
+2025-02-24T05:28:20.5499777Z tests/colors/test_color_conversion.py::test_hsl_to_hsla[input_color1-expected_color1] [32mPASSED[0m[32m [ 45%][0m
+2025-02-24T05:28:20.5515363Z tests/colors/test_color_conversion.py::test_hsl_to_hsla[input_color2-expected_color2] [32mPASSED[0m[32m [ 45%][0m
+2025-02-24T05:28:20.5530460Z tests/colors/test_color_conversion.py::test_hsl_to_hsla[input_color3-expected_color3] [32mPASSED[0m[32m [ 45%][0m
+2025-02-24T05:28:20.5546006Z tests/colors/test_color_conversion.py::test_hsl_to_hsla[input_color4-expected_color4] [32mPASSED[0m[32m [ 45%][0m
+2025-02-24T05:28:20.5561962Z tests/colors/test_color_conversion.py::test_hsl_to_hsla[input_color5-expected_color5] [32mPASSED[0m[32m [ 45%][0m
+2025-02-24T05:28:20.5576967Z tests/colors/test_color_conversion.py::test_hsl_to_hsla[input_color6-expected_color6] [32mPASSED[0m[32m [ 45%][0m
+2025-02-24T05:28:20.5592061Z tests/colors/test_color_conversion.py::test_hsl_to_hsla[input_color7-expected_color7] [32mPASSED[0m[32m [ 46%][0m
+2025-02-24T05:28:20.5607490Z tests/colors/test_color_conversion.py::test_hsl_to_hsla[input_color8-expected_color8] [32mPASSED[0m[32m [ 46%][0m
+2025-02-24T05:28:20.5622739Z tests/colors/test_color_conversion.py::test_hsl_to_hsla[input_color9-expected_color9] [32mPASSED[0m[32m [ 46%][0m
+2025-02-24T05:28:20.5637536Z tests/colors/test_color_conversion.py::test_hsl_to_hsla[input_color10-expected_color10] [32mPASSED[0m[32m [ 46%][0m
+2025-02-24T05:28:20.5652562Z tests/colors/test_color_conversion.py::test_hsl_to_hsla[input_color11-expected_color11] [32mPASSED[0m[32m [ 46%][0m
+2025-02-24T05:28:20.5667575Z tests/colors/test_color_conversion.py::test_hsl_to_rgba[input_color0-expected_color0] [32mPASSED[0m[32m [ 46%][0m
+2025-02-24T05:28:20.5683088Z tests/colors/test_color_conversion.py::test_hsl_to_rgba[input_color1-expected_color1] [32mPASSED[0m[32m [ 46%][0m
+2025-02-24T05:28:20.5698258Z tests/colors/test_color_conversion.py::test_hsl_to_rgba[input_color2-expected_color2] [32mPASSED[0m[32m [ 47%][0m
+2025-02-24T05:28:20.5714496Z tests/colors/test_color_conversion.py::test_hsl_to_rgba[input_color3-expected_color3] [32mPASSED[0m[32m [ 47%][0m
+2025-02-24T05:28:20.5729727Z tests/colors/test_color_conversion.py::test_hsl_to_rgba[input_color4-expected_color4] [32mPASSED[0m[32m [ 47%][0m
+2025-02-24T05:28:20.5745244Z tests/colors/test_color_conversion.py::test_hsl_to_rgba[input_color5-expected_color5] [32mPASSED[0m[32m [ 47%][0m
+2025-02-24T05:28:20.5761166Z tests/colors/test_color_conversion.py::test_hsl_to_rgba[input_color6-expected_color6] [32mPASSED[0m[32m [ 47%][0m
+2025-02-24T05:28:20.5776511Z tests/colors/test_color_conversion.py::test_hsl_to_rgba[input_color7-expected_color7] [32mPASSED[0m[32m [ 47%][0m
+2025-02-24T05:28:20.5791813Z tests/colors/test_color_conversion.py::test_hsl_to_rgba[input_color8-expected_color8] [32mPASSED[0m[32m [ 48%][0m
+2025-02-24T05:28:20.5807030Z tests/colors/test_color_conversion.py::test_hsl_to_rgba[input_color9-expected_color9] [32mPASSED[0m[32m [ 48%][0m
+2025-02-24T05:28:20.5822307Z tests/colors/test_color_conversion.py::test_hsl_to_rgba[input_color10-expected_color10] [32mPASSED[0m[32m [ 48%][0m
+2025-02-24T05:28:20.5838256Z tests/colors/test_color_conversion.py::test_hsl_to_rgba[input_color11-expected_color11] [32mPASSED[0m[32m [ 48%][0m
+2025-02-24T05:28:20.5853521Z tests/colors/test_color_conversion.py::test_hsl_to_rgb[input_color0-expected_color0] [32mPASSED[0m[32m [ 48%][0m
+2025-02-24T05:28:20.5868595Z tests/colors/test_color_conversion.py::test_hsl_to_rgb[input_color1-expected_color1] [32mPASSED[0m[32m [ 48%][0m
+2025-02-24T05:28:20.5884668Z tests/colors/test_color_conversion.py::test_hsl_to_rgb[input_color2-expected_color2] [32mPASSED[0m[32m [ 48%][0m
+2025-02-24T05:28:20.5899861Z tests/colors/test_color_conversion.py::test_hsl_to_rgb[input_color3-expected_color3] [32mPASSED[0m[32m [ 49%][0m
+2025-02-24T05:28:20.5915278Z tests/colors/test_color_conversion.py::test_hsl_to_rgb[input_color4-expected_color4] [32mPASSED[0m[32m [ 49%][0m
+2025-02-24T05:28:20.5930346Z tests/colors/test_color_conversion.py::test_hsl_to_rgb[input_color5-expected_color5] [32mPASSED[0m[32m [ 49%][0m
+2025-02-24T05:28:20.5945736Z tests/colors/test_color_conversion.py::test_hsl_to_rgb[input_color6-expected_color6] [32mPASSED[0m[32m [ 49%][0m
+2025-02-24T05:28:20.5960718Z tests/colors/test_color_conversion.py::test_hsl_to_rgb[input_color7-expected_color7] [32mPASSED[0m[32m [ 49%][0m
+2025-02-24T05:28:20.5975912Z tests/colors/test_color_conversion.py::test_hsl_to_rgb[input_color8-expected_color8] [32mPASSED[0m[32m [ 49%][0m
+2025-02-24T05:28:20.5991080Z tests/colors/test_color_conversion.py::test_hsl_to_rgb[input_color9-expected_color9] [32mPASSED[0m[32m [ 50%][0m
+2025-02-24T05:28:20.6006278Z tests/colors/test_color_conversion.py::test_hsl_to_rgb[input_color10-expected_color10] [32mPASSED[0m[32m [ 50%][0m
+2025-02-24T05:28:20.6022238Z tests/colors/test_color_conversion.py::test_hsl_to_rgb[input_color11-expected_color11] [32mPASSED[0m[32m [ 50%][0m
+2025-02-24T05:28:20.6036819Z tests/colors/test_constructor.py::test_repr[rgb-value0-rgb(10, 20, 30)] [32mPASSED[0m[32m [ 50%][0m
+2025-02-24T05:28:20.6051603Z tests/colors/test_constructor.py::test_repr[rgba-value1-rgba(10, 20, 30, 0.5)] [32mPASSED[0m[32m [ 50%][0m
+2025-02-24T05:28:20.6066873Z tests/colors/test_constructor.py::test_repr[hsl-value2-hsl(10, 0.2, 0.3)] [32mPASSED[0m[32m [ 50%][0m
+2025-02-24T05:28:20.6081732Z tests/colors/test_constructor.py::test_repr[hsla-value3-hsla(10, 0.2, 0.3, 0.5)] [32mPASSED[0m[32m [ 51%][0m
+2025-02-24T05:28:20.6094097Z tests/colors/test_constructor.py::test_rgb_hash [32mPASSED[0m[32m                   [ 51%][0m
+2025-02-24T05:28:20.6106796Z tests/colors/test_constructor.py::test_rgba_hash [32mPASSED[0m[32m                  [ 51%][0m
+2025-02-24T05:28:20.6119303Z tests/colors/test_constructor.py::test_hsl_hash [32mPASSED[0m[32m                   [ 51%][0m
+2025-02-24T05:28:20.6132273Z tests/colors/test_constructor.py::test_hsla_hash [32mPASSED[0m[32m                  [ 51%][0m
+2025-02-24T05:28:20.6147292Z tests/colors/test_constructor.py::test_hsl[value0-expected0] [32mPASSED[0m[32m      [ 51%][0m
+2025-02-24T05:28:20.6162258Z tests/colors/test_constructor.py::test_hsl[value1-expected1] [32mPASSED[0m[32m      [ 51%][0m
+2025-02-24T05:28:20.6177176Z tests/colors/test_constructor.py::test_hsl[value2-expected2] [32mPASSED[0m[32m      [ 52%][0m
+2025-02-24T05:28:20.6193318Z tests/colors/test_constructor.py::test_hsl[value3-expected3] [32mPASSED[0m[32m      [ 52%][0m
+2025-02-24T05:28:20.6209166Z tests/colors/test_constructor.py::test_hsl[value4-expected4] [32mPASSED[0m[32m      [ 52%][0m
+2025-02-24T05:28:20.6225881Z tests/colors/test_constructor.py::test_hsl[value5-expected5] [32mPASSED[0m[32m      [ 52%][0m
+2025-02-24T05:28:20.6241278Z tests/colors/test_constructor.py::test_hsl[value6-expected6] [32mPASSED[0m[32m      [ 52%][0m
+2025-02-24T05:28:20.6256248Z tests/colors/test_constructor.py::test_hsl[value7-expected7] [32mPASSED[0m[32m      [ 52%][0m
+2025-02-24T05:28:20.6271658Z tests/colors/test_constructor.py::test_hsl[value8-expected8] [32mPASSED[0m[32m      [ 53%][0m
+2025-02-24T05:28:20.6286682Z tests/colors/test_constructor.py::test_hsl[value9-expected9] [32mPASSED[0m[32m      [ 53%][0m
+2025-02-24T05:28:20.6301311Z tests/colors/test_constructor.py::test_hsl[value10-expected10] [32mPASSED[0m[32m    [ 53%][0m
+2025-02-24T05:28:20.6316206Z tests/colors/test_constructor.py::test_hsl[value11-expected11] [32mPASSED[0m[32m    [ 53%][0m
+2025-02-24T05:28:20.6330845Z tests/colors/test_constructor.py::test_hsl[value12-expected12] [32mPASSED[0m[32m    [ 53%][0m
+2025-02-24T05:28:20.6345604Z tests/colors/test_constructor.py::test_hsl[value13-expected13] [32mPASSED[0m[32m    [ 53%][0m
+2025-02-24T05:28:20.6360408Z tests/colors/test_constructor.py::test_hsl[value14-expected14] [32mPASSED[0m[32m    [ 53%][0m
+2025-02-24T05:28:20.6375588Z tests/colors/test_constructor.py::test_hsl[value15-expected15] [32mPASSED[0m[32m    [ 54%][0m
+2025-02-24T05:28:20.6390213Z tests/colors/test_constructor.py::test_hsl[value16-expected16] [32mPASSED[0m[32m    [ 54%][0m
+2025-02-24T05:28:20.6412342Z tests/colors/test_constructor.py::test_hsl[value17-expected17] [32mPASSED[0m[32m    [ 54%][0m
+2025-02-24T05:28:20.6427244Z tests/colors/test_constructor.py::test_hsl[value18-expected18] [32mPASSED[0m[32m    [ 54%][0m
+2025-02-24T05:28:20.6442218Z tests/colors/test_constructor.py::test_hsl[value19-expected19] [32mPASSED[0m[32m    [ 54%][0m
+2025-02-24T05:28:20.6456833Z tests/colors/test_constructor.py::test_hsl[value20-expected20] [32mPASSED[0m[32m    [ 54%][0m
+2025-02-24T05:28:20.6471762Z tests/colors/test_constructor.py::test_hsl[value21-expected21] [32mPASSED[0m[32m    [ 55%][0m
+2025-02-24T05:28:20.6486523Z tests/colors/test_constructor.py::test_hsl[value22-expected22] [32mPASSED[0m[32m    [ 55%][0m
+2025-02-24T05:28:20.6501372Z tests/colors/test_constructor.py::test_hsl[value23-expected23] [32mPASSED[0m[32m    [ 55%][0m
+2025-02-24T05:28:20.6516169Z tests/colors/test_constructor.py::test_hsl[value24-expected24] [32mPASSED[0m[32m    [ 55%][0m
+2025-02-24T05:28:20.6531128Z tests/colors/test_constructor.py::test_hsl[value25-expected25] [32mPASSED[0m[32m    [ 55%][0m
+2025-02-24T05:28:20.6546077Z tests/colors/test_constructor.py::test_hsl[value26-expected26] [32mPASSED[0m[32m    [ 55%][0m
+2025-02-24T05:28:20.6560795Z tests/colors/test_constructor.py::test_hsl[value27-expected27] [32mPASSED[0m[32m    [ 55%][0m
+2025-02-24T05:28:20.6575947Z tests/colors/test_constructor.py::test_hsl[value28-expected28] [32mPASSED[0m[32m    [ 56%][0m
+2025-02-24T05:28:20.6590857Z tests/colors/test_constructor.py::test_hsl[value29-expected29] [32mPASSED[0m[32m    [ 56%][0m
+2025-02-24T05:28:20.6605737Z tests/colors/test_constructor.py::test_hsl[value30-expected30] [32mPASSED[0m[32m    [ 56%][0m
+2025-02-24T05:28:20.6621192Z tests/colors/test_constructor.py::test_hsl[value31-expected31] [32mPASSED[0m[32m    [ 56%][0m
+2025-02-24T05:28:20.6635921Z tests/colors/test_constructor.py::test_hsl[value32-expected32] [32mPASSED[0m[32m    [ 56%][0m
+2025-02-24T05:28:20.6650688Z tests/colors/test_constructor.py::test_hsl[value33-expected33] [32mPASSED[0m[32m    [ 56%][0m
+2025-02-24T05:28:20.6665680Z tests/colors/test_constructor.py::test_hsl[value34-expected34] [32mPASSED[0m[32m    [ 57%][0m
+2025-02-24T05:28:20.6680376Z tests/colors/test_constructor.py::test_hsl[value35-expected35] [32mPASSED[0m[32m    [ 57%][0m
+2025-02-24T05:28:20.6695399Z tests/colors/test_constructor.py::test_hsl[value36-expected36] [32mPASSED[0m[32m    [ 57%][0m
+2025-02-24T05:28:20.6710199Z tests/colors/test_constructor.py::test_hsl[value37-expected37] [32mPASSED[0m[32m    [ 57%][0m
+2025-02-24T05:28:20.6725415Z tests/colors/test_constructor.py::test_hsl[value38-expected38] [32mPASSED[0m[32m    [ 57%][0m
+2025-02-24T05:28:20.6740088Z tests/colors/test_constructor.py::test_hsl[value39-expected39] [32mPASSED[0m[32m    [ 57%][0m
+2025-02-24T05:28:20.6755206Z tests/colors/test_constructor.py::test_hsl[value40-expected40] [32mPASSED[0m[32m    [ 57%][0m
+2025-02-24T05:28:20.6770177Z tests/colors/test_constructor.py::test_hsl[value41-expected41] [32mPASSED[0m[32m    [ 58%][0m
+2025-02-24T05:28:20.6784744Z tests/colors/test_constructor.py::test_hsl[value42-expected42] [32mPASSED[0m[32m    [ 58%][0m
+2025-02-24T05:28:20.6799422Z tests/colors/test_constructor.py::test_hsl[value43-expected43] [32mPASSED[0m[32m    [ 58%][0m
+2025-02-24T05:28:20.6814520Z tests/colors/test_constructor.py::test_hsl[value44-expected44] [32mPASSED[0m[32m    [ 58%][0m
+2025-02-24T05:28:20.6829425Z tests/colors/test_constructor.py::test_hsl[value45-expected45] [32mPASSED[0m[32m    [ 58%][0m
+2025-02-24T05:28:20.6844363Z tests/colors/test_constructor.py::test_hsl[value46-expected46] [32mPASSED[0m[32m    [ 58%][0m
+2025-02-24T05:28:20.6859118Z tests/colors/test_constructor.py::test_hsl[value47-expected47] [32mPASSED[0m[32m    [ 59%][0m
+2025-02-24T05:28:20.6874821Z tests/colors/test_constructor.py::test_hsl[value48-expected48] [32mPASSED[0m[32m    [ 59%][0m
+2025-02-24T05:28:20.6890127Z tests/colors/test_constructor.py::test_hsl[value49-expected49] [32mPASSED[0m[32m    [ 59%][0m
+2025-02-24T05:28:20.6905267Z tests/colors/test_constructor.py::test_hsl_alpha[value0-expected0] [32mPASSED[0m[32m [ 59%][0m
+2025-02-24T05:28:20.6920255Z tests/colors/test_constructor.py::test_hsl_alpha[value1-expected1] [32mPASSED[0m[32m [ 59%][0m
+2025-02-24T05:28:20.6935543Z tests/colors/test_constructor.py::test_hsl_alpha[value2-expected2] [32mPASSED[0m[32m [ 59%][0m
+2025-02-24T05:28:20.6950364Z tests/colors/test_constructor.py::test_hsl_alpha[value3-expected3] [32mPASSED[0m[32m [ 60%][0m
+2025-02-24T05:28:20.6965369Z tests/colors/test_constructor.py::test_hsl_alpha[value4-expected4] [32mPASSED[0m[32m [ 60%][0m
+2025-02-24T05:28:20.6980054Z tests/colors/test_constructor.py::test_hsl_alpha[value5-expected5] [32mPASSED[0m[32m [ 60%][0m
+2025-02-24T05:28:20.6995170Z tests/colors/test_constructor.py::test_hsl_alpha[value6-expected6] [32mPASSED[0m[32m [ 60%][0m
+2025-02-24T05:28:20.7015290Z tests/colors/test_constructor.py::test_invalid_color_constructor[rgb-value0-red-0-255--1] [32mPASSED[0m[32m [ 60%][0m
+2025-02-24T05:28:20.7034870Z tests/colors/test_constructor.py::test_invalid_color_constructor[rgb-value1-red-0-255-256] [32mPASSED[0m[32m [ 60%][0m
+2025-02-24T05:28:20.7054226Z tests/colors/test_constructor.py::test_invalid_color_constructor[rgb-value2-green-0-255--1] [32mPASSED[0m[32m [ 60%][0m
+2025-02-24T05:28:20.7073599Z tests/colors/test_constructor.py::test_invalid_color_constructor[rgb-value3-green-0-255-256] [32mPASSED[0m[32m [ 61%][0m
+2025-02-24T05:28:20.7093306Z tests/colors/test_constructor.py::test_invalid_color_constructor[rgb-value4-blue-0-255--1] [32mPASSED[0m[32m [ 61%][0m
+2025-02-24T05:28:20.7112584Z tests/colors/test_constructor.py::test_invalid_color_constructor[rgb-value5-blue-0-255-256] [32mPASSED[0m[32m [ 61%][0m
+2025-02-24T05:28:20.7129384Z tests/colors/test_constructor.py::test_invalid_color_constructor[rgba-value6-red-0-255--1] [32mPASSED[0m[32m [ 61%][0m
+2025-02-24T05:28:20.7146494Z tests/colors/test_constructor.py::test_invalid_color_constructor[rgba-value7-red-0-255-256] [32mPASSED[0m[32m [ 61%][0m
+2025-02-24T05:28:20.7163649Z tests/colors/test_constructor.py::test_invalid_color_constructor[rgba-value8-green-0-255--1] [32mPASSED[0m[32m [ 61%][0m
+2025-02-24T05:28:20.7180246Z tests/colors/test_constructor.py::test_invalid_color_constructor[rgba-value9-green-0-255-256] [32mPASSED[0m[32m [ 62%][0m
+2025-02-24T05:28:20.7199295Z tests/colors/test_constructor.py::test_invalid_color_constructor[rgba-value10-blue-0-255--1] [32mPASSED[0m[32m [ 62%][0m
+2025-02-24T05:28:20.7216910Z tests/colors/test_constructor.py::test_invalid_color_constructor[rgba-value11-blue-0-255-256] [32mPASSED[0m[32m [ 62%][0m
+2025-02-24T05:28:20.7237561Z tests/colors/test_constructor.py::test_invalid_color_constructor[rgba-value12-alpha-0-1--0.5] [32mPASSED[0m[32m [ 62%][0m
+2025-02-24T05:28:20.7257331Z tests/colors/test_constructor.py::test_invalid_color_constructor[rgba-value13-alpha-0-1-1.1] [32mPASSED[0m[32m [ 62%][0m
+2025-02-24T05:28:20.7276390Z tests/colors/test_constructor.py::test_invalid_color_constructor[hsl-value14-hue-0-360--1] [32mPASSED[0m[32m [ 62%][0m
+2025-02-24T05:28:20.7296720Z tests/colors/test_constructor.py::test_invalid_color_constructor[hsl-value15-hue-0-360-361] [32mPASSED[0m[32m [ 62%][0m
+2025-02-24T05:28:20.7316584Z tests/colors/test_constructor.py::test_invalid_color_constructor[hsl-value16-saturation-0-1--0.1] [32mPASSED[0m[32m [ 63%][0m
+2025-02-24T05:28:20.7337171Z tests/colors/test_constructor.py::test_invalid_color_constructor[hsl-value17-saturation-0-1-1.1] [32mPASSED[0m[32m [ 63%][0m
+2025-02-24T05:28:20.7357343Z tests/colors/test_constructor.py::test_invalid_color_constructor[hsl-value18-lightness-0-1--0.1] [32mPASSED[0m[32m [ 63%][0m
+2025-02-24T05:28:20.7377019Z tests/colors/test_constructor.py::test_invalid_color_constructor[hsl-value19-lightness-0-1-1.1] [32mPASSED[0m[32m [ 63%][0m
+2025-02-24T05:28:20.7394265Z tests/colors/test_constructor.py::test_invalid_color_constructor[hsla-value20-hue-0-360--1] [32mPASSED[0m[32m [ 63%][0m
+2025-02-24T05:28:20.7411285Z tests/colors/test_constructor.py::test_invalid_color_constructor[hsla-value21-hue-0-360-361] [32mPASSED[0m[32m [ 63%][0m
+2025-02-24T05:28:20.7427664Z tests/colors/test_constructor.py::test_invalid_color_constructor[hsla-value22-saturation-0-1--0.1] [32mPASSED[0m[32m [ 64%][0m
+2025-02-24T05:28:20.7444806Z tests/colors/test_constructor.py::test_invalid_color_constructor[hsla-value23-saturation-0-1-1.1] [32mPASSED[0m[32m [ 64%][0m
+2025-02-24T05:28:20.7462412Z tests/colors/test_constructor.py::test_invalid_color_constructor[hsla-value24-lightness-0-1--0.1] [32mPASSED[0m[32m [ 64%][0m
+2025-02-24T05:28:20.7479030Z tests/colors/test_constructor.py::test_invalid_color_constructor[hsla-value25-lightness-0-1-1.1] [32mPASSED[0m[32m [ 64%][0m
+2025-02-24T05:28:20.7498700Z tests/colors/test_constructor.py::test_invalid_color_constructor[hsla-value26-alpha-0-1--0.1] [32mPASSED[0m[32m [ 64%][0m
+2025-02-24T05:28:20.7517532Z tests/colors/test_constructor.py::test_invalid_color_constructor[hsla-value27-alpha-0-1-1.1] [32mPASSED[0m[32m [ 64%][0m
+2025-02-24T05:28:20.7529912Z tests/colors/test_parsing.py::test_noop [32mPASSED[0m[32m                           [ 64%][0m
+2025-02-24T05:28:20.7544556Z tests/colors/test_parsing.py::test_rgb[rgb(1,2,3)-expected0] [32mPASSED[0m[32m      [ 65%][0m
+2025-02-24T05:28:20.7559098Z tests/colors/test_parsing.py::test_rgb[rgb(1, 2, 3)-expected1] [32mPASSED[0m[32m    [ 65%][0m
+2025-02-24T05:28:20.7573749Z tests/colors/test_parsing.py::test_rgb[rgb( 1 , 2 , 3)-expected2] [32mPASSED[0m[32m [ 65%][0m
+2025-02-24T05:28:20.7587667Z tests/colors/test_parsing.py::test_rgb[#123-expected3] [32mPASSED[0m[32m            [ 65%][0m
+2025-02-24T05:28:20.7601680Z tests/colors/test_parsing.py::test_rgb[#112233-expected4] [32mPASSED[0m[32m         [ 65%][0m
+2025-02-24T05:28:20.7615837Z tests/colors/test_parsing.py::test_rgb[#abc-expected5] [32mPASSED[0m[32m            [ 65%][0m
+2025-02-24T05:28:20.7629659Z tests/colors/test_parsing.py::test_rgb[#ABC-expected6] [32mPASSED[0m[32m            [ 66%][0m
+2025-02-24T05:28:20.7643760Z tests/colors/test_parsing.py::test_rgb[#abcdef-expected7] [32mPASSED[0m[32m         [ 66%][0m
+2025-02-24T05:28:20.7657668Z tests/colors/test_parsing.py::test_rgb[#ABCDEF-expected8] [32mPASSED[0m[32m         [ 66%][0m
+2025-02-24T05:28:20.7670634Z tests/colors/test_parsing.py::test_rgb_invalid[10, 20] [32mPASSED[0m[32m            [ 66%][0m
+2025-02-24T05:28:20.7683806Z tests/colors/test_parsing.py::test_rgb_invalid[a, 10, 20] [32mPASSED[0m[32m         [ 66%][0m
+2025-02-24T05:28:20.7696754Z tests/colors/test_parsing.py::test_rgb_invalid[10, b, 20] [32mPASSED[0m[32m         [ 66%][0m
+2025-02-24T05:28:20.7710049Z tests/colors/test_parsing.py::test_rgb_invalid[10, 20, c] [32mPASSED[0m[32m         [ 66%][0m
+2025-02-24T05:28:20.7724171Z tests/colors/test_parsing.py::test_rgb_invalid[10, 20, 30, 0.5] [32mPASSED[0m[32m   [ 67%][0m
+2025-02-24T05:28:20.7738079Z tests/colors/test_parsing.py::test_rgba[rgba(1,2,3,0.5)-expected0] [32mPASSED[0m[32m [ 67%][0m
+2025-02-24T05:28:20.7752401Z tests/colors/test_parsing.py::test_rgba[rgba(1, 2, 3, 0.5)-expected1] [32mPASSED[0m[32m [ 67%][0m
+2025-02-24T05:28:20.7767182Z tests/colors/test_parsing.py::test_rgba[rgba( 1 , 2 , 3 , 0.5)-expected2] [32mPASSED[0m[32m [ 67%][0m
+2025-02-24T05:28:20.7781632Z tests/colors/test_parsing.py::test_rgba[#1234-expected3] [32mPASSED[0m[32m          [ 67%][0m
+2025-02-24T05:28:20.7795828Z tests/colors/test_parsing.py::test_rgba[#11223344-expected4] [32mPASSED[0m[32m      [ 67%][0m
+2025-02-24T05:28:20.7809956Z tests/colors/test_parsing.py::test_rgba[#abcd-expected5] [32mPASSED[0m[32m          [ 68%][0m
+2025-02-24T05:28:20.7824895Z tests/colors/test_parsing.py::test_rgba[#ABCD-expected6] [32mPASSED[0m[32m          [ 68%][0m
+2025-02-24T05:28:20.7839394Z tests/colors/test_parsing.py::test_rgba[#abcdefba-expected7] [32mPASSED[0m[32m      [ 68%][0m
+2025-02-24T05:28:20.7853864Z tests/colors/test_parsing.py::test_rgba[#ABCDEFBA-expected8] [32mPASSED[0m[32m      [ 68%][0m
+2025-02-24T05:28:20.7867259Z tests/colors/test_parsing.py::test_rgba_invalid[10, 20, 30] [32mPASSED[0m[32m       [ 68%][0m
+2025-02-24T05:28:20.7880573Z tests/colors/test_parsing.py::test_rgba_invalid[a, 10, 20, 0.5] [32mPASSED[0m[32m   [ 68%][0m
+2025-02-24T05:28:20.7893730Z tests/colors/test_parsing.py::test_rgba_invalid[10, b, 20, 0.5] [32mPASSED[0m[32m   [ 68%][0m
+2025-02-24T05:28:20.7906977Z tests/colors/test_parsing.py::test_rgba_invalid[10, 20, c, 0.5] [32mPASSED[0m[32m   [ 69%][0m
+2025-02-24T05:28:20.7920203Z tests/colors/test_parsing.py::test_rgba_invalid[10, 20, 30, c] [32mPASSED[0m[32m    [ 69%][0m
+2025-02-24T05:28:20.7933560Z tests/colors/test_parsing.py::test_rgba_invalid[10, 20, 30, 0.5, 5] [32mPASSED[0m[32m [ 69%][0m
+2025-02-24T05:28:20.7947291Z tests/colors/test_parsing.py::test_hsl[1,20%,30%] [32mPASSED[0m[32m                 [ 69%][0m
+2025-02-24T05:28:20.7960809Z tests/colors/test_parsing.py::test_hsl[1, 20%, 30%] [32mPASSED[0m[32m               [ 69%][0m
+2025-02-24T05:28:20.7974643Z tests/colors/test_parsing.py::test_hsl[1, 20% , 30%] [32mPASSED[0m[32m              [ 69%][0m
+2025-02-24T05:28:20.7987729Z tests/colors/test_parsing.py::test_hsl_invalid[1, 20%] [32mPASSED[0m[32m            [ 70%][0m
+2025-02-24T05:28:20.8001333Z tests/colors/test_parsing.py::test_hsl_invalid[a, 20%, 30%] [32mPASSED[0m[32m       [ 70%][0m
+2025-02-24T05:28:20.8014633Z tests/colors/test_parsing.py::test_hsl_invalid[1, a, 30%] [32mPASSED[0m[32m         [ 70%][0m
+2025-02-24T05:28:20.8027816Z tests/colors/test_parsing.py::test_hsl_invalid[1, 20%, a)] [32mPASSED[0m[32m        [ 70%][0m
+2025-02-24T05:28:20.8040735Z tests/colors/test_parsing.py::test_hsl_invalid[1, 20%, 30%, 0.5)] [32mPASSED[0m[32m [ 70%][0m
+2025-02-24T05:28:20.8054809Z tests/colors/test_parsing.py::test_hsla[1,20%,30%,0.5] [32mPASSED[0m[32m            [ 70%][0m
+2025-02-24T05:28:20.8068533Z tests/colors/test_parsing.py::test_hsla[1, 20%, 30%, 0.5] [32mPASSED[0m[32m         [ 71%][0m
+2025-02-24T05:28:20.8082185Z tests/colors/test_parsing.py::test_hsla[ 1, 20% , 30% , 0.5] [32mPASSED[0m[32m      [ 71%][0m
+2025-02-24T05:28:20.8095256Z tests/colors/test_parsing.py::test_hsla_invalid[1, 20%, 30%] [32mPASSED[0m[32m      [ 71%][0m
+2025-02-24T05:28:20.8108448Z tests/colors/test_parsing.py::test_hsla_invalid[a, 20%, 30%, 0.5] [32mPASSED[0m[32m [ 71%][0m
+2025-02-24T05:28:20.8121718Z tests/colors/test_parsing.py::test_hsla_invalid[1, a, 30%, 0.5] [32mPASSED[0m[32m   [ 71%][0m
+2025-02-24T05:28:20.8134910Z tests/colors/test_parsing.py::test_hsla_invalid[1, 20%, a, 0.5] [32mPASSED[0m[32m   [ 71%][0m
+2025-02-24T05:28:20.8148040Z tests/colors/test_parsing.py::test_hsla_invalid[1, 20%, 30%, a] [32mPASSED[0m[32m   [ 71%][0m
+2025-02-24T05:28:20.8161478Z tests/colors/test_parsing.py::test_hsla_invalid[1, 20%, 30%, 0.5, 5] [32mPASSED[0m[32m [ 72%][0m
+2025-02-24T05:28:20.8175232Z tests/colors/test_parsing.py::test_named_color[Red-expected0] [32mPASSED[0m[32m     [ 72%][0m
+2025-02-24T05:28:20.8189257Z tests/colors/test_parsing.py::test_named_color[RED-expected1] [32mPASSED[0m[32m     [ 72%][0m
+2025-02-24T05:28:20.8203410Z tests/colors/test_parsing.py::test_named_color[red-expected2] [32mPASSED[0m[32m     [ 72%][0m
+2025-02-24T05:28:20.8216908Z tests/colors/test_parsing.py::test_named_color[rEd-expected3] [32mPASSED[0m[32m     [ 72%][0m
+2025-02-24T05:28:20.8231197Z tests/colors/test_parsing.py::test_named_color[CornflowerBlue-expected4] [32mPASSED[0m[32m [ 72%][0m
+2025-02-24T05:28:20.8245333Z tests/colors/test_parsing.py::test_named_color[cornflowerblue-expected5] [32mPASSED[0m[32m [ 73%][0m
+2025-02-24T05:28:20.8259325Z tests/colors/test_parsing.py::test_named_color[CORNFLOWERBLUE-expected6] [32mPASSED[0m[32m [ 73%][0m
+2025-02-24T05:28:20.8273729Z tests/colors/test_parsing.py::test_named_color[Cornflowerblue-expected7] [32mPASSED[0m[32m [ 73%][0m
+2025-02-24T05:28:20.8287503Z tests/colors/test_parsing.py::test_named_color[CoRnFlOwErBlUe-expected8] [32mPASSED[0m[32m [ 73%][0m
+2025-02-24T05:28:20.8299727Z tests/colors/test_parsing.py::test_named_color_invalid [32mPASSED[0m[32m            [ 73%][0m
+2025-02-24T05:28:20.8313605Z tests/colors/test_parsing.py::test_hash_mark_invalid[1] [32mPASSED[0m[32m           [ 73%][0m
+2025-02-24T05:28:20.8327094Z tests/colors/test_parsing.py::test_hash_mark_invalid[2] [32mPASSED[0m[32m           [ 73%][0m
+2025-02-24T05:28:20.8340057Z tests/colors/test_parsing.py::test_hash_mark_invalid[5] [32mPASSED[0m[32m           [ 74%][0m
+2025-02-24T05:28:20.8353426Z tests/colors/test_parsing.py::test_hash_mark_invalid[7] [32mPASSED[0m[32m           [ 74%][0m
+2025-02-24T05:28:20.8366373Z tests/colors/test_parsing.py::test_hash_mark_invalid[9] [32mPASSED[0m[32m           [ 74%][0m
+2025-02-24T05:28:20.8382107Z tests/colors/test_parsing.py::test_hash_mark_invalid[10] [32mPASSED[0m[32m          [ 74%][0m
+2025-02-24T05:28:20.8406433Z tests/test_choices.py::test_none[Style] [32mPASSED[0m[32m                           [ 74%][0m
+2025-02-24T05:28:20.8425858Z tests/test_choices.py::test_none[DeprecatedStyle] [32mPASSED[0m[32m                 [ 74%][0m
+2025-02-24T05:28:20.8449049Z tests/test_choices.py::test_allow_string[Style] [32mPASSED[0m[32m                   [ 75%][0m
+2025-02-24T05:28:20.8468915Z tests/test_choices.py::test_allow_string[DeprecatedStyle] [32mPASSED[0m[32m         [ 75%][0m
+2025-02-24T05:28:20.8491955Z tests/test_choices.py::test_allow_integer[Style] [32mPASSED[0m[32m                  [ 75%][0m
+2025-02-24T05:28:20.8511093Z tests/test_choices.py::test_allow_integer[DeprecatedStyle] [32mPASSED[0m[32m        [ 75%][0m
+2025-02-24T05:28:20.8533712Z tests/test_choices.py::test_allow_number[Style] [32mPASSED[0m[32m                   [ 75%][0m
+2025-02-24T05:28:20.8552415Z tests/test_choices.py::test_allow_number[DeprecatedStyle] [32mPASSED[0m[32m         [ 75%][0m
+2025-02-24T05:28:20.8577168Z tests/test_choices.py::test_allow_color[Style] [32mPASSED[0m[32m                    [ 75%][0m
+2025-02-24T05:28:20.8599045Z tests/test_choices.py::test_allow_color[DeprecatedStyle] [32mPASSED[0m[32m          [ 76%][0m
+2025-02-24T05:28:20.8623426Z tests/test_choices.py::test_values[Style] [32mPASSED[0m[32m                         [ 76%][0m
+2025-02-24T05:28:20.8643153Z tests/test_choices.py::test_values[DeprecatedStyle] [32mPASSED[0m[32m               [ 76%][0m
+2025-02-24T05:28:20.8670510Z tests/test_choices.py::test_multiple_choices[Style] [32mPASSED[0m[32m               [ 76%][0m
+2025-02-24T05:28:20.8693748Z tests/test_choices.py::test_multiple_choices[DeprecatedStyle] [32mPASSED[0m[32m     [ 76%][0m
+2025-02-24T05:28:20.8711035Z tests/test_choices.py::test_string_symbol[Style] [32mPASSED[0m[32m                  [ 76%][0m
+2025-02-24T05:28:20.8729014Z tests/test_choices.py::test_string_symbol[DeprecatedStyle] [32mPASSED[0m[32m        [ 77%][0m
+2025-02-24T05:28:20.8742852Z tests/test_fonts.py::test_equality[font0] [32mPASSED[0m[32m                         [ 77%][0m
+2025-02-24T05:28:20.8755746Z tests/test_fonts.py::test_equality[font1] [32mPASSED[0m[32m                         [ 77%][0m
+2025-02-24T05:28:20.8768516Z tests/test_fonts.py::test_equality[font2] [32mPASSED[0m[32m                         [ 77%][0m
+2025-02-24T05:28:20.8781749Z tests/test_fonts.py::test_inqequality[font0] [32mPASSED[0m[32m                      [ 77%][0m
+2025-02-24T05:28:20.8794594Z tests/test_fonts.py::test_inqequality[font1] [32mPASSED[0m[32m                      [ 77%][0m
+2025-02-24T05:28:20.8807863Z tests/test_fonts.py::test_inqequality[font2] [32mPASSED[0m[32m                      [ 77%][0m
+2025-02-24T05:28:20.8821434Z tests/test_fonts.py::test_inqequality[a string] [32mPASSED[0m[32m                   [ 78%][0m
+2025-02-24T05:28:20.8835117Z tests/test_fonts.py::test_inqequality[5] [32mPASSED[0m[32m                          [ 78%][0m
+2025-02-24T05:28:20.8847686Z tests/test_fonts.py::test_hash [32mPASSED[0m[32m                                    [ 78%][0m
+2025-02-24T05:28:20.8863013Z tests/test_fonts.py::test_repr[12-kwargs0-12pt] [32mPASSED[0m[32m                   [ 78%][0m
+2025-02-24T05:28:20.8878241Z tests/test_fonts.py::test_repr[12-kwargs1-italic 12pt] [32mPASSED[0m[32m            [ 78%][0m
+2025-02-24T05:28:20.8893255Z tests/test_fonts.py::test_repr[12-kwargs2-italic small-caps 12pt] [32mPASSED[0m[32m [ 78%][0m
+2025-02-24T05:28:20.8908181Z tests/test_fonts.py::test_repr[12-kwargs3-italic small-caps bold 12pt] [32mPASSED[0m[32m [ 79%][0m
+2025-02-24T05:28:20.8923398Z tests/test_fonts.py::test_repr[12-kwargs4-small-caps bold 12pt] [32mPASSED[0m[32m   [ 79%][0m
+2025-02-24T05:28:20.8938263Z tests/test_fonts.py::test_repr[12-kwargs5-bold 12pt] [32mPASSED[0m[32m              [ 79%][0m
+2025-02-24T05:28:20.8953785Z tests/test_fonts.py::test_repr[12-kwargs6-italic bold 12pt] [32mPASSED[0m[32m       [ 79%][0m
+2025-02-24T05:28:20.8968917Z tests/test_fonts.py::test_repr[-1-kwargs7-system default size] [32mPASSED[0m[32m    [ 79%][0m
+2025-02-24T05:28:20.8983654Z tests/test_fonts.py::test_repr[-1-kwargs8-italic system default size] [32mPASSED[0m[32m [ 79%][0m
+2025-02-24T05:28:20.8996255Z tests/test_fonts.py::test_simple_construction[12_0] [32mPASSED[0m[32m               [ 80%][0m
+2025-02-24T05:28:20.9009006Z tests/test_fonts.py::test_simple_construction[12_1] [32mPASSED[0m[32m               [ 80%][0m
+2025-02-24T05:28:20.9023368Z tests/test_fonts.py::test_simple_construction[12pt] [32mPASSED[0m[32m               [ 80%][0m
+2025-02-24T05:28:20.9036375Z tests/test_fonts.py::test_simple_construction[12 pt] [32mPASSED[0m[32m              [ 80%][0m
+2025-02-24T05:28:20.9048425Z tests/test_fonts.py::test_invalid_construction [32mPASSED[0m[32m                    [ 80%][0m
+2025-02-24T05:28:20.9061717Z tests/test_fonts.py::test_family[Comics Sans] [32mPASSED[0m[32m                     [ 80%][0m
+2025-02-24T05:28:20.9074928Z tests/test_fonts.py::test_family[Wingdings] [32mPASSED[0m[32m                       [ 80%][0m
+2025-02-24T05:28:20.9087702Z tests/test_fonts.py::test_family['Comic Sans'] [32mPASSED[0m[32m                    [ 81%][0m
+2025-02-24T05:28:20.9101300Z tests/test_fonts.py::test_family["Comic Sans"] [32mPASSED[0m[32m                    [ 81%][0m
+2025-02-24T05:28:20.9115277Z tests/test_fonts.py::test_style[italic-italic0] [32mPASSED[0m[32m                   [ 81%][0m
+2025-02-24T05:28:20.9128968Z tests/test_fonts.py::test_style[italic-italic1] [32mPASSED[0m[32m                   [ 81%][0m
+2025-02-24T05:28:20.9142638Z tests/test_fonts.py::test_style[oblique-oblique0] [32mPASSED[0m[32m                 [ 81%][0m
+2025-02-24T05:28:20.9156670Z tests/test_fonts.py::test_style[oblique-oblique1] [32mPASSED[0m[32m                 [ 81%][0m
+2025-02-24T05:28:20.9170565Z tests/test_fonts.py::test_style[something else-normal] [32mPASSED[0m[32m            [ 82%][0m
+2025-02-24T05:28:20.9183353Z tests/test_fonts.py::test_make_normal_style[kwargs0] [32mPASSED[0m[32m              [ 82%][0m
+2025-02-24T05:28:20.9196550Z tests/test_fonts.py::test_make_normal_style[kwargs1] [32mPASSED[0m[32m              [ 82%][0m
+2025-02-24T05:28:20.9210551Z tests/test_fonts.py::test_make_slanted[italic-italic] [32mPASSED[0m[32m             [ 82%][0m
+2025-02-24T05:28:20.9224291Z tests/test_fonts.py::test_make_slanted[oblique-oblique] [32mPASSED[0m[32m           [ 82%][0m
+2025-02-24T05:28:20.9238270Z tests/test_fonts.py::test_variant[small-caps-small-caps0] [32mPASSED[0m[32m         [ 82%][0m
+2025-02-24T05:28:20.9252136Z tests/test_fonts.py::test_variant[small-caps-small-caps1] [32mPASSED[0m[32m         [ 82%][0m
+2025-02-24T05:28:20.9265484Z tests/test_fonts.py::test_variant[something else-normal] [32mPASSED[0m[32m          [ 83%][0m
+2025-02-24T05:28:20.9279153Z tests/test_fonts.py::test_make_normal_variant[kwargs0] [32mPASSED[0m[32m            [ 83%][0m
+2025-02-24T05:28:20.9292245Z tests/test_fonts.py::test_make_normal_variant[kwargs1] [32mPASSED[0m[32m            [ 83%][0m
+2025-02-24T05:28:20.9304788Z tests/test_fonts.py::test_make_small_caps [32mPASSED[0m[32m                         [ 83%][0m
+2025-02-24T05:28:20.9318519Z tests/test_fonts.py::test_weight[bold-bold0] [32mPASSED[0m[32m                      [ 83%][0m
+2025-02-24T05:28:20.9332135Z tests/test_fonts.py::test_weight[bold-bold1] [32mPASSED[0m[32m                      [ 83%][0m
+2025-02-24T05:28:20.9345367Z tests/test_fonts.py::test_weight[something else-normal] [32mPASSED[0m[32m           [ 84%][0m
+2025-02-24T05:28:20.9358033Z tests/test_fonts.py::test_make_normal_weight[kwargs0] [32mPASSED[0m[32m             [ 84%][0m
+2025-02-24T05:28:20.9370770Z tests/test_fonts.py::test_make_normal_weight[kwargs1] [32mPASSED[0m[32m             [ 84%][0m
+2025-02-24T05:28:20.9383410Z tests/test_fonts.py::test_make_bold [32mPASSED[0m[32m                               [ 84%][0m
+2025-02-24T05:28:20.9395287Z tests/test_layout.py::test_viewport_default [32mPASSED[0m[32m                       [ 84%][0m
+2025-02-24T05:28:20.9407455Z tests/test_layout.py::test_viewport_constructor [32mPASSED[0m[32m                   [ 84%][0m
+2025-02-24T05:28:20.9423002Z tests/test_layout.py::test_repr [32mPASSED[0m[32m                                   [ 84%][0m
+2025-02-24T05:28:20.9437587Z tests/test_layout.py::test_initial [32mPASSED[0m[32m                                [ 85%][0m
+2025-02-24T05:28:20.9457199Z tests/test_layout.py::test_set_content_dimension[content_top-5-expected10-7-expected20] [32mPASSED[0m[32m [ 85%][0m
+2025-02-24T05:28:20.9476296Z tests/test_layout.py::test_set_content_dimension[content_left-5-expected11-7-expected21] [32mPASSED[0m[32m [ 85%][0m
+2025-02-24T05:28:20.9494765Z tests/test_layout.py::test_set_content_dimension[min_content_width-8-expected12-9-expected22] [32mPASSED[0m[32m [ 85%][0m
+2025-02-24T05:28:20.9513188Z tests/test_layout.py::test_set_content_dimension[content_width-5-expected13-7-expected23] [32mPASSED[0m[32m [ 85%][0m
+2025-02-24T05:28:20.9532524Z tests/test_layout.py::test_set_content_dimension[min_content_height-7-expected14-8-expected24] [32mPASSED[0m[32m [ 85%][0m
+2025-02-24T05:28:20.9552217Z tests/test_layout.py::test_set_content_dimension[content_height-10-expected15-12-expected25] [32mPASSED[0m[32m [ 86%][0m
+2025-02-24T05:28:20.9568479Z tests/test_layout.py::test_descendent_offsets [32mPASSED[0m[32m                     [ 86%][0m
+2025-02-24T05:28:20.9585244Z tests/test_layout.py::test_absolute_equalities [32mPASSED[0m[32m                    [ 86%][0m
+2025-02-24T05:28:20.9602062Z tests/test_node.py::test_create_leaf [32mPASSED[0m[32m                              [ 86%][0m
+2025-02-24T05:28:20.9623158Z tests/test_node.py::test_create_node [32mPASSED[0m[32m                              [ 86%][0m
+2025-02-24T05:28:20.9650329Z tests/test_node.py::test_refresh[Style] [32mPASSED[0m[32m                           [ 86%][0m
+2025-02-24T05:28:20.9681704Z tests/test_node.py::test_refresh[OldStyle] [32mPASSED[0m[32m                        [ 86%][0m
+2025-02-24T05:28:20.9699437Z tests/test_node.py::test_refresh_no_op [32mPASSED[0m[32m                            [ 87%][0m
+2025-02-24T05:28:20.9721361Z tests/test_node.py::test_type_error_in_layout[TypeErrorStyle] [32mPASSED[0m[32m     [ 87%][0m
+2025-02-24T05:28:20.9742623Z tests/test_node.py::test_type_error_in_layout[OldTypeErrorStyle] [32mPASSED[0m[32m  [ 87%][0m
+2025-02-24T05:28:20.9758779Z tests/test_node.py::test_add [32mPASSED[0m[32m                                      [ 87%][0m
+2025-02-24T05:28:20.9779163Z tests/test_node.py::test_insert [32mPASSED[0m[32m                                   [ 87%][0m
+2025-02-24T05:28:20.9797986Z tests/test_node.py::test_insert_leaf [32mPASSED[0m[32m                              [ 87%][0m
+2025-02-24T05:28:20.9817100Z tests/test_node.py::test_remove [32mPASSED[0m[32m                                   [ 88%][0m
+2025-02-24T05:28:20.9836244Z tests/test_node.py::test_remove_leaf [32mPASSED[0m[32m                              [ 88%][0m
+2025-02-24T05:28:20.9855733Z tests/test_node.py::test_clear [32mPASSED[0m[32m                                    [ 88%][0m
+2025-02-24T05:28:20.9870457Z tests/test_node.py::test_clear_leaf [32mPASSED[0m[32m                               [ 88%][0m
+2025-02-24T05:28:20.9888610Z tests/test_node.py::test_create_with_no_applicator [32mPASSED[0m[32m                [ 88%][0m
+2025-02-24T05:28:20.9907989Z tests/test_node.py::test_create_with_applicator [32mPASSED[0m[32m                   [ 88%][0m
+2025-02-24T05:28:20.9923971Z tests/test_node.py::test_assign_applicator[node0] [32mPASSED[0m[32m                 [ 88%][0m
+2025-02-24T05:28:20.9938879Z tests/test_node.py::test_assign_applicator[node1] [32mPASSED[0m[32m                 [ 89%][0m
+2025-02-24T05:28:20.9952064Z tests/test_node.py::test_assign_applicator_none[node0] [32mPASSED[0m[32m            [ 89%][0m
+2025-02-24T05:28:20.9966954Z tests/test_node.py::test_assign_applicator_none[node1] [32mPASSED[0m[32m            [ 89%][0m
+2025-02-24T05:28:20.9991796Z tests/test_node.py::test_assign_style_with_applicator [32mPASSED[0m[32m             [ 89%][0m
+2025-02-24T05:28:21.0015245Z tests/test_node.py::test_assign_style_with_no_applicator [32mPASSED[0m[32m          [ 89%][0m
+2025-02-24T05:28:21.0030694Z tests/test_node.py::test_apply_before_node_is_ready [32mPASSED[0m[32m               [ 89%][0m
+2025-02-24T05:28:21.0045579Z tests/test_node.py::test_applicator_has_node_reference [32mPASSED[0m[32m            [ 90%][0m
+2025-02-24T05:28:21.0058226Z tests/test_size.py::test_at_least_repr [32mPASSED[0m[32m                            [ 90%][0m
+2025-02-24T05:28:21.0070427Z tests/test_size.py::test_at_least_eq [32mPASSED[0m[32m                              [ 90%][0m
+2025-02-24T05:28:21.0084074Z tests/test_size.py::test_size_repr [32mPASSED[0m[32m                                [ 90%][0m
+2025-02-24T05:28:21.0096842Z tests/test_style.py::test_invalid_style [32mPASSED[0m[32m                           [ 90%][0m
+2025-02-24T05:28:21.0115135Z tests/test_style.py::test_positional_argument[Style] [32mPASSED[0m[32m              [ 90%][0m
+2025-02-24T05:28:21.0129993Z tests/test_style.py::test_positional_argument[DeprecatedStyle] [32mPASSED[0m[32m    [ 91%][0m
+2025-02-24T05:28:21.0150258Z tests/test_style.py::test_create_and_copy[Style] [32mPASSED[0m[32m                  [ 91%][0m
+2025-02-24T05:28:21.0170202Z tests/test_style.py::test_create_and_copy[DeprecatedStyle] [32mPASSED[0m[32m        [ 91%][0m
+2025-02-24T05:28:21.0186575Z tests/test_style.py::test_deprecated_copy [32mPASSED[0m[32m                         [ 91%][0m
+2025-02-24T05:28:21.0203732Z tests/test_style.py::test_apply[Style] [32mPASSED[0m[32m                            [ 91%][0m
+2025-02-24T05:28:21.0222332Z tests/test_style.py::test_apply[DeprecatedStyle] [32mPASSED[0m[32m                  [ 91%][0m
+2025-02-24T05:28:21.0240281Z tests/test_style.py::test_property_with_explicit_const[Style] [32mPASSED[0m[32m     [ 91%][0m
+2025-02-24T05:28:21.0257486Z tests/test_style.py::test_property_with_explicit_const[DeprecatedStyle] [32mPASSED[0m[32m [ 92%][0m
+2025-02-24T05:28:21.0274667Z tests/test_style.py::test_property_with_explicit_value[Style] [32mPASSED[0m[32m     [ 92%][0m
+2025-02-24T05:28:21.0291760Z tests/test_style.py::test_property_with_explicit_value[DeprecatedStyle] [32mPASSED[0m[32m [ 92%][0m
+2025-02-24T05:28:21.0308796Z tests/test_style.py::test_property_with_explicit_none[Style] [32mPASSED[0m[32m      [ 92%][0m
+2025-02-24T05:28:21.0325906Z tests/test_style.py::test_property_with_explicit_none[DeprecatedStyle] [32mPASSED[0m[32m [ 92%][0m
+2025-02-24T05:28:21.0343155Z tests/test_style.py::test_property_with_implicit_default[Style] [32mPASSED[0m[32m   [ 92%][0m
+2025-02-24T05:28:21.0360238Z tests/test_style.py::test_property_with_implicit_default[DeprecatedStyle] [32mPASSED[0m[32m [ 93%][0m
+2025-02-24T05:28:21.0375126Z tests/test_style.py::test_set_initial_no_apply[Style] [32mPASSED[0m[32m             [ 93%][0m
+2025-02-24T05:28:21.0389515Z tests/test_style.py::test_set_initial_no_apply[DeprecatedStyle] [32mPASSED[0m[32m   [ 93%][0m
+2025-02-24T05:28:21.0416384Z tests/test_style.py::test_directional_property[Style] [32mPASSED[0m[32m             [ 93%][0m
+2025-02-24T05:28:21.0443589Z tests/test_style.py::test_directional_property[DeprecatedStyle] [32mPASSED[0m[32m   [ 93%][0m
+2025-02-24T05:28:21.0460437Z tests/test_style.py::test_list_property[value0-expected0] [32mPASSED[0m[32m         [ 93%][0m
+2025-02-24T05:28:21.0477369Z tests/test_style.py::test_list_property[value1-expected1] [32mPASSED[0m[32m         [ 93%][0m
+2025-02-24T05:28:21.0494163Z tests/test_style.py::test_list_property[value2-expected2] [32mPASSED[0m[32m         [ 94%][0m
+2025-02-24T05:28:21.0510780Z tests/test_style.py::test_list_property[value3-expected3] [32mPASSED[0m[32m         [ 94%][0m
+2025-02-24T05:28:21.0527694Z tests/test_style.py::test_list_property[value4-expected4] [32mPASSED[0m[32m         [ 94%][0m
+2025-02-24T05:28:21.0544599Z tests/test_style.py::test_list_property[value5-expected5] [32mPASSED[0m[32m         [ 94%][0m
+2025-02-24T05:28:21.0562476Z tests/test_style.py::test_list_property[value6-expected6] [32mPASSED[0m[32m         [ 94%][0m
+2025-02-24T05:28:21.0582009Z tests/test_style.py::test_list_property_invalid[5-TypeError-Value for list property list_prop must be a sequence\\.] [32mPASSED[0m[32m [ 94%][0m
+2025-02-24T05:28:21.0601449Z tests/test_style.py::test_list_property_invalid[<genexpr>-TypeError-Value for list property list_prop must be a sequence.] [32mPASSED[0m[32m [ 95%][0m
+2025-02-24T05:28:21.0623906Z tests/test_style.py::test_list_property_invalid[value2-ValueError-Invalid item value 'bogus' for list property list_prop; Valid values are: none, value1, value2, value3, <integer>] [32mPASSED[0m[32m [ 95%][0m
+2025-02-24T05:28:21.0645206Z tests/test_style.py::test_list_property_invalid[value3-ValueError-List properties cannot be set to an empty sequence; to reset a property, use del `style.list_prop`\\.] [32mPASSED[0m[32m [ 95%][0m
+2025-02-24T05:28:21.0661480Z tests/test_style.py::test_list_property_invalid[value4-ValueError-List properties cannot be set to an empty sequence; to reset a property, use del `style.list_prop`\\.] [32mPASSED[0m[32m [ 95%][0m
+2025-02-24T05:28:21.0682933Z tests/test_style.py::test_list_property_immutable [32mPASSED[0m[32m                 [ 95%][0m
+2025-02-24T05:28:21.0698182Z tests/test_style.py::test_list_property_list_like [32mPASSED[0m[32m                 [ 95%][0m
+2025-02-24T05:28:21.0716529Z tests/test_style.py::test_set_multiple_properties[Style] [32mPASSED[0m[32m          [ 95%][0m
+2025-02-24T05:28:21.0735147Z tests/test_style.py::test_set_multiple_properties[DeprecatedStyle] [32mPASSED[0m[32m [ 96%][0m
+2025-02-24T05:28:21.0753400Z tests/test_style.py::test_str[Style] [32mPASSED[0m[32m                              [ 96%][0m
+2025-02-24T05:28:21.0771268Z tests/test_style.py::test_str[DeprecatedStyle] [32mPASSED[0m[32m                    [ 96%][0m
+2025-02-24T05:28:21.0795387Z tests/test_style.py::test_dict[Style] [32mPASSED[0m[32m                             [ 96%][0m
+2025-02-24T05:28:21.0819213Z tests/test_style.py::test_dict[DeprecatedStyle] [32mPASSED[0m[32m                   [ 96%][0m
+2025-02-24T05:28:21.0845764Z tests/test_style.py::test_set_to_initial[Style] [32mPASSED[0m[32m                   [ 96%][0m
+2025-02-24T05:28:21.0870299Z tests/test_style.py::test_set_to_initial[DeprecatedStyle] [32mPASSED[0m[32m         [ 97%][0m
+2025-02-24T05:28:21.0896456Z tests/test_style.py::test_union_operators[True-Style] [32mPASSED[0m[32m             [ 97%][0m
+2025-02-24T05:28:21.0922280Z tests/test_style.py::test_union_operators[True-DeprecatedStyle] [32mPASSED[0m[32m   [ 97%][0m
+2025-02-24T05:28:21.0944383Z tests/test_style.py::test_union_operators[False-Style] [32mPASSED[0m[32m            [ 97%][0m
+2025-02-24T05:28:21.0966271Z tests/test_style.py::test_union_operators[False-DeprecatedStyle] [32mPASSED[0m[32m  [ 97%][0m
+2025-02-24T05:28:21.0984973Z tests/test_style.py::test_union_operators_invalid_type[Style-StyleSubclass] [32mPASSED[0m[32m [ 97%][0m
+2025-02-24T05:28:21.1000399Z tests/test_style.py::test_union_operators_invalid_type[Style-Sibling] [32mPASSED[0m[32m [ 97%][0m
+2025-02-24T05:28:21.1016170Z tests/test_style.py::test_union_operators_invalid_type[Style-int] [32mPASSED[0m[32m [ 98%][0m
+2025-02-24T05:28:21.1031791Z tests/test_style.py::test_union_operators_invalid_type[Style-list] [32mPASSED[0m[32m [ 98%][0m
+2025-02-24T05:28:21.1048623Z tests/test_style.py::test_union_operators_invalid_type[DeprecatedStyle-DeprecatedStyleSubclass] [32mPASSED[0m[32m [ 98%][0m
+2025-02-24T05:28:21.1064186Z tests/test_style.py::test_union_operators_invalid_type[DeprecatedStyle-Sibling] [32mPASSED[0m[32m [ 98%][0m
+2025-02-24T05:28:21.1079413Z tests/test_style.py::test_union_operators_invalid_type[DeprecatedStyle-int] [32mPASSED[0m[32m [ 98%][0m
+2025-02-24T05:28:21.1094991Z tests/test_style.py::test_union_operators_invalid_type[DeprecatedStyle-list] [32mPASSED[0m[32m [ 98%][0m
+2025-02-24T05:28:21.1114471Z tests/test_style.py::test_union_operators_invalid_key_value[right0-ValueError-Style] [32mPASSED[0m[32m [ 99%][0m
+2025-02-24T05:28:21.1132578Z tests/test_style.py::test_union_operators_invalid_key_value[right0-ValueError-DeprecatedStyle] [32mPASSED[0m[32m [ 99%][0m
+2025-02-24T05:28:21.1150466Z tests/test_style.py::test_union_operators_invalid_key_value[right1-NameError-Style] [32mPASSED[0m[32m [ 99%][0m
+2025-02-24T05:28:21.1168342Z tests/test_style.py::test_union_operators_invalid_key_value[right1-NameError-DeprecatedStyle] [32mPASSED[0m[32m [ 99%][0m
+2025-02-24T05:28:21.1181936Z tests/test_style.py::test_deprecated_class_methods [32mPASSED[0m[32m                [ 99%][0m
+2025-02-24T05:28:21.1197159Z tests/test_style.py::test_deprecated_reapply [32mPASSED[0m[32m                      [ 99%][0m
+2025-02-24T05:28:21.1238493Z tests/test_style.py::test_deprecated_import [32mPASSED[0m[32m                       [100%][0m
+2025-02-24T05:28:21.1238949Z 
+2025-02-24T05:28:21.1239253Z [32m============================= [32m[1m645 passed[0m[32m in 1.75s[0m[32m ==============================[0m
+2025-02-24T05:28:21.1699151Z   py-cov-trav: OK (6.90=setup[0.87]+cmd[3.84,2.19] seconds)
+2025-02-24T05:28:21.1699510Z   congratulations :) (7.11 seconds)
+2025-02-24T05:28:22.1924523Z Python 3.9.21
+2025-02-24T05:28:22.6853971Z Looking in links: ../dist
+2025-02-24T05:28:22.6911363Z Processing /home/runner/work/toga/toga/dist/toga_core-0.4.9.dev608+g01152b56b-py3-none-any.whl (from toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:22.7016238Z Processing /home/runner/work/toga/toga/dist/toga_dummy-0.4.9.dev608+g01152b56b-py3-none-any.whl
+2025-02-24T05:28:22.7254564Z Processing /home/runner/work/toga/toga/dist/travertino-0.4.9.dev608+g01152b56b-py3-none-any.whl (from toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:22.9786539Z Collecting coverage==7.6.12 (from coverage[toml]==7.6.12; extra == "dev"->toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:22.9802278Z   Using cached coverage-7.6.12-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (8.5 kB)
+2025-02-24T05:28:22.9906936Z Collecting coverage-conditional-plugin==0.9.0 (from toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:22.9919996Z   Using cached coverage_conditional_plugin-0.9.0-py3-none-any.whl.metadata (6.9 kB)
+2025-02-24T05:28:23.1272940Z Collecting Pillow==11.1.0 (from toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:23.1286843Z   Using cached pillow-11.1.0-cp39-cp39-manylinux_2_28_x86_64.whl.metadata (9.1 kB)
+2025-02-24T05:28:23.1684746Z Collecting pre-commit==4.1.0 (from toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:23.1697456Z   Using cached pre_commit-4.1.0-py2.py3-none-any.whl.metadata (1.3 kB)
+2025-02-24T05:28:23.2135359Z Collecting pytest==8.3.4 (from toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:23.2148293Z   Using cached pytest-8.3.4-py3-none-any.whl.metadata (7.5 kB)
+2025-02-24T05:28:23.2340505Z Collecting pytest-asyncio==0.25.3 (from toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:23.2353732Z   Using cached pytest_asyncio-0.25.3-py3-none-any.whl.metadata (3.9 kB)
+2025-02-24T05:28:23.3041803Z Collecting pytest-freezer==0.4.9 (from toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:23.3068603Z   Using cached pytest_freezer-0.4.9-py3-none-any.whl.metadata (2.1 kB)
+2025-02-24T05:28:23.3317989Z Collecting setuptools-scm==8.1.0 (from toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:23.3330224Z   Using cached setuptools_scm-8.1.0-py3-none-any.whl.metadata (6.6 kB)
+2025-02-24T05:28:23.3776050Z Collecting tox==4.24.1 (from toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:23.3788366Z   Using cached tox-4.24.1-py3-none-any.whl.metadata (3.7 kB)
+2025-02-24T05:28:23.3944633Z Collecting typing-extensions==4.12.2 (from toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:23.3957192Z   Using cached typing_extensions-4.12.2-py3-none-any.whl.metadata (3.0 kB)
+2025-02-24T05:28:23.4335396Z Collecting importlib_metadata (from coverage-conditional-plugin==0.9.0->toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:23.4348421Z   Using cached importlib_metadata-8.6.1-py3-none-any.whl.metadata (4.7 kB)
+2025-02-24T05:28:23.4536698Z Collecting packaging>=20.4 (from coverage-conditional-plugin==0.9.0->toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:23.4549497Z   Using cached packaging-24.2-py3-none-any.whl.metadata (3.2 kB)
+2025-02-24T05:28:23.4682631Z Collecting tomli (from coverage[toml]==7.6.12; extra == "dev"->toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:23.4694660Z   Using cached tomli-2.2.1-py3-none-any.whl.metadata (10 kB)
+2025-02-24T05:28:23.4818657Z Collecting cfgv>=2.0.0 (from pre-commit==4.1.0->toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:23.4830643Z   Using cached cfgv-3.4.0-py2.py3-none-any.whl.metadata (8.5 kB)
+2025-02-24T05:28:23.5247606Z Collecting identify>=1.0.0 (from pre-commit==4.1.0->toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:23.5259804Z   Using cached identify-2.6.8-py2.py3-none-any.whl.metadata (4.4 kB)
+2025-02-24T05:28:23.5409815Z Collecting nodeenv>=0.11.1 (from pre-commit==4.1.0->toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:23.5422618Z   Using cached nodeenv-1.9.1-py2.py3-none-any.whl.metadata (21 kB)
+2025-02-24T05:28:23.5779501Z Collecting pyyaml>=5.1 (from pre-commit==4.1.0->toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:23.5792377Z   Using cached PyYAML-6.0.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.1 kB)
+2025-02-24T05:28:23.6465613Z Collecting virtualenv>=20.10.0 (from pre-commit==4.1.0->toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:23.6479125Z   Using cached virtualenv-20.29.2-py3-none-any.whl.metadata (4.5 kB)
+2025-02-24T05:28:23.6646908Z Collecting exceptiongroup>=1.0.0rc8 (from pytest==8.3.4->toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:23.6659488Z   Using cached exceptiongroup-1.2.2-py3-none-any.whl.metadata (6.6 kB)
+2025-02-24T05:28:23.6733858Z Collecting iniconfig (from pytest==8.3.4->toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:23.6746419Z   Using cached iniconfig-2.0.0-py3-none-any.whl.metadata (2.6 kB)
+2025-02-24T05:28:23.6846753Z Collecting pluggy<2,>=1.5 (from pytest==8.3.4->toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:23.6858931Z   Using cached pluggy-1.5.0-py3-none-any.whl.metadata (4.8 kB)
+2025-02-24T05:28:23.7327017Z Collecting freezegun>=1.1 (from pytest-freezer==0.4.9->toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:23.7339833Z   Using cached freezegun-1.5.1-py3-none-any.whl.metadata (11 kB)
+2025-02-24T05:28:23.7409032Z Requirement already satisfied: setuptools in /home/runner/work/toga/toga/.tox/coverage39-trav/lib/python3.9/site-packages (from setuptools-scm==8.1.0->toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b) (75.8.0)
+2025-02-24T05:28:23.7560680Z Collecting cachetools>=5.5 (from tox==4.24.1->toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:23.7574772Z   Using cached cachetools-5.5.2-py3-none-any.whl.metadata (5.4 kB)
+2025-02-24T05:28:23.7657962Z Collecting chardet>=5.2 (from tox==4.24.1->toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:23.7670023Z   Using cached chardet-5.2.0-py3-none-any.whl.metadata (3.4 kB)
+2025-02-24T05:28:23.7797983Z Collecting colorama>=0.4.6 (from tox==4.24.1->toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:23.7810236Z   Using cached colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+2025-02-24T05:28:23.7975238Z Collecting filelock>=3.16.1 (from tox==4.24.1->toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:23.7987458Z   Using cached filelock-3.17.0-py3-none-any.whl.metadata (2.9 kB)
+2025-02-24T05:28:23.8174708Z Collecting platformdirs>=4.3.6 (from tox==4.24.1->toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:23.8186975Z   Using cached platformdirs-4.3.6-py3-none-any.whl.metadata (11 kB)
+2025-02-24T05:28:23.8313973Z Collecting pyproject-api>=1.8 (from tox==4.24.1->toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:23.8326170Z   Using cached pyproject_api-1.9.0-py3-none-any.whl.metadata (2.7 kB)
+2025-02-24T05:28:23.8724580Z Collecting python-dateutil>=2.7 (from freezegun>=1.1->pytest-freezer==0.4.9->toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:23.8737824Z   Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+2025-02-24T05:28:23.9007019Z Collecting distlib<1,>=0.3.7 (from virtualenv>=20.10.0->pre-commit==4.1.0->toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:23.9019059Z   Using cached distlib-0.3.9-py2.py3-none-any.whl.metadata (5.2 kB)
+2025-02-24T05:28:23.9270564Z Collecting zipp>=3.20 (from importlib_metadata->coverage-conditional-plugin==0.9.0->toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:23.9282782Z   Using cached zipp-3.21.0-py3-none-any.whl.metadata (3.7 kB)
+2025-02-24T05:28:23.9618920Z Collecting six>=1.5 (from python-dateutil>=2.7->freezegun>=1.1->pytest-freezer==0.4.9->toga-core==0.4.9.dev608+g01152b56b->toga-core==0.4.9.dev608+g01152b56b)
+2025-02-24T05:28:23.9632411Z   Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+2025-02-24T05:28:23.9715068Z Using cached coverage-7.6.12-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (236 kB)
+2025-02-24T05:28:23.9729562Z Using cached coverage_conditional_plugin-0.9.0-py3-none-any.whl (7.3 kB)
+2025-02-24T05:28:23.9743241Z Using cached pillow-11.1.0-cp39-cp39-manylinux_2_28_x86_64.whl (4.5 MB)
+2025-02-24T05:28:23.9791272Z Using cached pre_commit-4.1.0-py2.py3-none-any.whl (220 kB)
+2025-02-24T05:28:23.9805822Z Using cached pytest-8.3.4-py3-none-any.whl (343 kB)
+2025-02-24T05:28:23.9821127Z Using cached pytest_asyncio-0.25.3-py3-none-any.whl (19 kB)
+2025-02-24T05:28:23.9833951Z Using cached pytest_freezer-0.4.9-py3-none-any.whl (3.2 kB)
+2025-02-24T05:28:23.9846518Z Using cached setuptools_scm-8.1.0-py3-none-any.whl (43 kB)
+2025-02-24T05:28:23.9859007Z Using cached tox-4.24.1-py3-none-any.whl (171 kB)
+2025-02-24T05:28:23.9873353Z Using cached typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+2025-02-24T05:28:23.9885682Z Using cached cachetools-5.5.2-py3-none-any.whl (10 kB)
+2025-02-24T05:28:23.9898622Z Using cached cfgv-3.4.0-py2.py3-none-any.whl (7.2 kB)
+2025-02-24T05:28:23.9911299Z Using cached chardet-5.2.0-py3-none-any.whl (199 kB)
+2025-02-24T05:28:23.9925023Z Using cached colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+2025-02-24T05:28:23.9937475Z Using cached exceptiongroup-1.2.2-py3-none-any.whl (16 kB)
+2025-02-24T05:28:23.9949748Z Using cached filelock-3.17.0-py3-none-any.whl (16 kB)
+2025-02-24T05:28:23.9962431Z Using cached freezegun-1.5.1-py3-none-any.whl (17 kB)
+2025-02-24T05:28:23.9974683Z Using cached identify-2.6.8-py2.py3-none-any.whl (99 kB)
+2025-02-24T05:28:23.9987691Z Using cached nodeenv-1.9.1-py2.py3-none-any.whl (22 kB)
+2025-02-24T05:28:24.0000633Z Using cached packaging-24.2-py3-none-any.whl (65 kB)
+2025-02-24T05:28:24.0013409Z Using cached platformdirs-4.3.6-py3-none-any.whl (18 kB)
+2025-02-24T05:28:24.0025701Z Using cached pluggy-1.5.0-py3-none-any.whl (20 kB)
+2025-02-24T05:28:24.0038286Z Using cached pyproject_api-1.9.0-py3-none-any.whl (13 kB)
+2025-02-24T05:28:24.0050815Z Using cached PyYAML-6.0.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (737 kB)
+2025-02-24T05:28:24.0068963Z Using cached tomli-2.2.1-py3-none-any.whl (14 kB)
+2025-02-24T05:28:24.0081729Z Using cached virtualenv-20.29.2-py3-none-any.whl (4.3 MB)
+2025-02-24T05:28:24.0126017Z Using cached importlib_metadata-8.6.1-py3-none-any.whl (26 kB)
+2025-02-24T05:28:24.0138836Z Using cached iniconfig-2.0.0-py3-none-any.whl (5.9 kB)
+2025-02-24T05:28:24.0151426Z Using cached distlib-0.3.9-py2.py3-none-any.whl (468 kB)
+2025-02-24T05:28:24.0168105Z Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+2025-02-24T05:28:24.0181851Z Using cached zipp-3.21.0-py3-none-any.whl (9.6 kB)
+2025-02-24T05:28:24.0194567Z Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+2025-02-24T05:28:24.1180417Z Installing collected packages: distlib, zipp, typing-extensions, travertino, tomli, six, pyyaml, pluggy, platformdirs, Pillow, packaging, nodeenv, iniconfig, identify, filelock, exceptiongroup, coverage, colorama, chardet, cfgv, cachetools, virtualenv, toga-core, setuptools-scm, python-dateutil, pytest, pyproject-api, importlib_metadata, tox, toga-dummy, pytest-asyncio, pre-commit, freezegun, coverage-conditional-plugin, pytest-freezer
+2025-02-24T05:28:25.6874458Z Successfully installed Pillow-11.1.0 cachetools-5.5.2 cfgv-3.4.0 chardet-5.2.0 colorama-0.4.6 coverage-7.6.12 coverage-conditional-plugin-0.9.0 distlib-0.3.9 exceptiongroup-1.2.2 filelock-3.17.0 freezegun-1.5.1 identify-2.6.8 importlib_metadata-8.6.1 iniconfig-2.0.0 nodeenv-1.9.1 packaging-24.2 platformdirs-4.3.6 pluggy-1.5.0 pre-commit-4.1.0 pyproject-api-1.9.0 pytest-8.3.4 pytest-asyncio-0.25.3 pytest-freezer-0.4.9 python-dateutil-2.9.0.post0 pyyaml-6.0.2 setuptools-scm-8.1.0 six-1.17.0 toga-core-0.4.9.dev608+g01152b56b toga-dummy-0.4.9.dev608+g01152b56b tomli-2.2.1 tox-4.24.1 travertino-0.4.9.dev608+g01152b56b typing-extensions-4.12.2 virtualenv-20.29.2 zipp-3.21.0
+2025-02-24T05:28:25.8580710Z Combined data file .coverage.fv-az1694-59.2224.XvFGGIzx
+2025-02-24T05:28:26.2196580Z Name                                     Stmts   Miss Branch BrPart  Cover   Missing
+2025-02-24T05:28:26.2197535Z ------------------------------------------------------------------------------------
+2025-02-24T05:28:26.2198313Z src/travertino/properties/shorthand.py      27      1     12      1  94.9%   38
+2025-02-24T05:28:26.2199154Z src/travertino/properties/validated.py      61      1     20      1  97.5%   47
+2025-02-24T05:28:26.2199829Z ------------------------------------------------------------------------------------
+2025-02-24T05:28:26.2200346Z TOTAL                                      874      2    180      2  99.6%
+2025-02-24T05:28:26.2200683Z 
+2025-02-24T05:28:26.2200853Z 11 files skipped due to complete coverage.
+2025-02-24T05:28:26.2452439Z   coverage39-trav: OK (4.72 seconds)
+2025-02-24T05:28:26.2452927Z   congratulations :) (4.91 seconds)
+2025-02-24T05:28:26.2910747Z ##[group]Run actions/upload-artifact@v4.6.1
+2025-02-24T05:28:26.2911246Z with:
+2025-02-24T05:28:26.2911495Z   name: travertino-coverage-data-ubuntu-latest-3.9
+2025-02-24T05:28:26.2911813Z   path: travertino/.coverage.*
+2025-02-24T05:28:26.2912062Z   if-no-files-found: error
+2025-02-24T05:28:26.2912291Z   include-hidden-files: true
+2025-02-24T05:28:26.2912524Z   compression-level: 6
+2025-02-24T05:28:26.2912732Z   overwrite: false
+2025-02-24T05:28:26.2912910Z env:
+2025-02-24T05:28:26.2913091Z   min_python_version: 3.9
+2025-02-24T05:28:26.2913308Z   max_python_version: 3.12
+2025-02-24T05:28:26.2913518Z   FORCE_COLOR: 1
+2025-02-24T05:28:26.2913780Z   pythonLocation: /opt/hostedtoolcache/Python/3.9.21/x64
+2025-02-24T05:28:26.2914193Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.9.21/x64/lib/pkgconfig
+2025-02-24T05:28:26.2914604Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.21/x64
+2025-02-24T05:28:26.2914958Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.21/x64
+2025-02-24T05:28:26.2915516Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.21/x64
+2025-02-24T05:28:26.2915877Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.9.21/x64/lib
+2025-02-24T05:28:26.2916173Z ##[endgroup]
+2025-02-24T05:28:26.5013469Z With the provided path, there will be 1 file uploaded
+2025-02-24T05:28:26.5018381Z Artifact name is valid!
+2025-02-24T05:28:26.5019678Z Root directory input is valid!
+2025-02-24T05:28:26.7844037Z Beginning upload of artifact content to blob storage
+2025-02-24T05:28:27.2805658Z Uploaded bytes 28339
+2025-02-24T05:28:27.3836594Z Finished uploading artifact content to blob storage!
+2025-02-24T05:28:27.3840342Z SHA256 hash of uploaded artifact zip is 7402e6f5050fbea59f39c80a401c98e2e68818d831ad647ccc4f97570374586a
+2025-02-24T05:28:27.3842180Z Finalizing artifact upload
+2025-02-24T05:28:27.5219739Z Artifact travertino-coverage-data-ubuntu-latest-3.9.zip successfully finalized. Artifact ID 2639030439
+2025-02-24T05:28:27.5222089Z Artifact travertino-coverage-data-ubuntu-latest-3.9 has been successfully uploaded! Final size is 28339 bytes. Artifact ID is 2639030439
+2025-02-24T05:28:27.5228371Z Artifact download URL: https://github.com/beeware/toga/actions/runs/13491433041/artifacts/2639030439
+2025-02-24T05:28:27.5354763Z Post job cleanup.
+2025-02-24T05:28:27.5391389Z Post job cleanup.
+2025-02-24T05:28:27.6319377Z [command]/usr/bin/git version
+2025-02-24T05:28:27.6357918Z git version 2.48.1
+2025-02-24T05:28:27.6402048Z Temporarily overriding HOME='/home/runner/work/_temp/2343c14e-098d-4aaf-bdc0-f7f6690d4255' before making global git config changes
+2025-02-24T05:28:27.6404128Z Adding repository directory to the temporary git global config as a safe directory
+2025-02-24T05:28:27.6416072Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/toga/toga/.github-beeware
+2025-02-24T05:28:27.6455281Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-02-24T05:28:27.6488388Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-02-24T05:28:27.6723861Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-02-24T05:28:27.6745145Z http.https://github.com/.extraheader
+2025-02-24T05:28:27.6757324Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2025-02-24T05:28:27.6787990Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-02-24T05:28:27.7115010Z Post job cleanup.
+2025-02-24T05:28:27.8728496Z Post job cleanup.
+2025-02-24T05:28:27.9667835Z [command]/usr/bin/git version
+2025-02-24T05:28:27.9706270Z git version 2.48.1
+2025-02-24T05:28:27.9749538Z Temporarily overriding HOME='/home/runner/work/_temp/5bebf12c-345e-4a96-9b36-a339a51338e5' before making global git config changes
+2025-02-24T05:28:27.9751144Z Adding repository directory to the temporary git global config as a safe directory
+2025-02-24T05:28:27.9756209Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/toga/toga
+2025-02-24T05:28:27.9792805Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-02-24T05:28:27.9825348Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-02-24T05:28:28.0058473Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-02-24T05:28:28.0079404Z http.https://github.com/.extraheader
+2025-02-24T05:28:28.0092034Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2025-02-24T05:28:28.0122532Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-02-24T05:28:28.0451706Z Cleaning up orphan processes

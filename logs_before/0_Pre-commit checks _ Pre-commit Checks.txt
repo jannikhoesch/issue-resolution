@@ -1,0 +1,344 @@
+﻿2025-02-24T05:27:17.2979357Z Current runner version: '2.322.0'
+2025-02-24T05:27:17.3003510Z ##[group]Operating System
+2025-02-24T05:27:17.3004405Z Ubuntu
+2025-02-24T05:27:17.3004942Z 24.04.1
+2025-02-24T05:27:17.3005454Z LTS
+2025-02-24T05:27:17.3005973Z ##[endgroup]
+2025-02-24T05:27:17.3006550Z ##[group]Runner Image
+2025-02-24T05:27:17.3007105Z Image: ubuntu-24.04
+2025-02-24T05:27:17.3007633Z Version: 20250209.1.0
+2025-02-24T05:27:17.3008685Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20250209.1/images/ubuntu/Ubuntu2404-Readme.md
+2025-02-24T05:27:17.3010054Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250209.1
+2025-02-24T05:27:17.3011346Z ##[endgroup]
+2025-02-24T05:27:17.3011945Z ##[group]Runner Image Provisioner
+2025-02-24T05:27:17.3012532Z 2.0.422.1
+2025-02-24T05:27:17.3013063Z ##[endgroup]
+2025-02-24T05:27:17.3015280Z ##[group]GITHUB_TOKEN Permissions
+2025-02-24T05:27:17.3017262Z Actions: write
+2025-02-24T05:27:17.3018012Z Attestations: write
+2025-02-24T05:27:17.3018679Z Checks: write
+2025-02-24T05:27:17.3019186Z Contents: write
+2025-02-24T05:27:17.3019756Z Deployments: write
+2025-02-24T05:27:17.3020263Z Discussions: write
+2025-02-24T05:27:17.3020958Z Issues: write
+2025-02-24T05:27:17.3021523Z Metadata: read
+2025-02-24T05:27:17.3022051Z Packages: write
+2025-02-24T05:27:17.3022577Z Pages: write
+2025-02-24T05:27:17.3023073Z PullRequests: write
+2025-02-24T05:27:17.3023634Z RepositoryProjects: write
+2025-02-24T05:27:17.3024223Z SecurityEvents: write
+2025-02-24T05:27:17.3024800Z Statuses: write
+2025-02-24T05:27:17.3025298Z ##[endgroup]
+2025-02-24T05:27:17.3028034Z Secret source: Actions
+2025-02-24T05:27:17.3028836Z Prepare workflow directory
+2025-02-24T05:27:17.3395387Z Prepare all required actions
+2025-02-24T05:27:17.3431464Z Getting action download info
+2025-02-24T05:27:17.5191359Z ##[group]Download immutable action package 'actions/checkout@v4.2.2'
+2025-02-24T05:27:17.5192472Z Version: 4.2.2
+2025-02-24T05:27:17.5193546Z Digest: sha256:ccb2698953eaebd21c7bf6268a94f9c26518a7e38e27e0b83c1fe1ad049819b1
+2025-02-24T05:27:17.5194899Z Source commit SHA: 11bd71901bbe5b1630ceea73d27597364c9af683
+2025-02-24T05:27:17.5195633Z ##[endgroup]
+2025-02-24T05:27:17.6064929Z ##[group]Download immutable action package 'actions/setup-python@v5.4.0'
+2025-02-24T05:27:17.6065663Z Version: 5.4.0
+2025-02-24T05:27:17.6066322Z Digest: sha256:6003df952c8106bcd378d2ba997eef202da924317a57269dfa72449b135adb7f
+2025-02-24T05:27:17.6067160Z Source commit SHA: 42375524e23c412d93fb67b49958b491fce71c38
+2025-02-24T05:27:17.6067773Z ##[endgroup]
+2025-02-24T05:27:17.8359824Z ##[group]Download immutable action package 'actions/cache@v4.2.1'
+2025-02-24T05:27:17.8360544Z Version: 4.2.1
+2025-02-24T05:27:17.8361398Z Digest: sha256:b0404c9628d43aa6855629075b28f32cadf8efc5c26198438149f78500112940
+2025-02-24T05:27:17.8362258Z Source commit SHA: 0c907a75c2c80ebcb7f088228285e798b750cf8f
+2025-02-24T05:27:17.8362857Z ##[endgroup]
+2025-02-24T05:27:18.1393845Z Uses: beeware/.github/.github/workflows/pre-commit-run.yml@refs/heads/main (a66b93162808d34adf5280c28104b75f8e0d70d3)
+2025-02-24T05:27:18.1396404Z ##[group] Inputs
+2025-02-24T05:27:18.1396899Z   python-version: 3.x
+2025-02-24T05:27:18.1397369Z   repository: beeware/toga
+2025-02-24T05:27:18.1397880Z   pre-commit-source: ./travertino ./core[dev]
+2025-02-24T05:27:18.1398449Z   runner-os: ubuntu-latest
+2025-02-24T05:27:18.1398915Z ##[endgroup]
+2025-02-24T05:27:18.1399409Z Complete job name: Pre-commit checks / Pre-commit Checks
+2025-02-24T05:27:18.2124571Z ##[group]Run actions/checkout@v4.2.2
+2025-02-24T05:27:18.2125906Z with:
+2025-02-24T05:27:18.2126583Z   repository: beeware/toga
+2025-02-24T05:27:18.2127586Z   token: ***
+2025-02-24T05:27:18.2128219Z   ssh-strict: true
+2025-02-24T05:27:18.2128899Z   ssh-user: git
+2025-02-24T05:27:18.2129584Z   persist-credentials: true
+2025-02-24T05:27:18.2130331Z   clean: true
+2025-02-24T05:27:18.2131230Z   sparse-checkout-cone-mode: true
+2025-02-24T05:27:18.2132094Z   fetch-depth: 1
+2025-02-24T05:27:18.2132843Z   fetch-tags: false
+2025-02-24T05:27:18.2133813Z   show-progress: true
+2025-02-24T05:27:18.2134455Z   lfs: false
+2025-02-24T05:27:18.2135102Z   submodules: false
+2025-02-24T05:27:18.2135833Z   set-safe-directory: true
+2025-02-24T05:27:18.2136937Z ##[endgroup]
+2025-02-24T05:27:18.4184255Z Syncing repository: beeware/toga
+2025-02-24T05:27:18.4186051Z ##[group]Getting Git version info
+2025-02-24T05:27:18.4186691Z Working directory is '/home/runner/work/toga/toga'
+2025-02-24T05:27:18.4187627Z [command]/usr/bin/git version
+2025-02-24T05:27:18.4256602Z git version 2.48.1
+2025-02-24T05:27:18.4303680Z ##[endgroup]
+2025-02-24T05:27:18.4317297Z Temporarily overriding HOME='/home/runner/work/_temp/cfbcb08d-4445-48d3-88b4-08349235ea5a' before making global git config changes
+2025-02-24T05:27:18.4329351Z Adding repository directory to the temporary git global config as a safe directory
+2025-02-24T05:27:18.4330828Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/toga/toga
+2025-02-24T05:27:18.4366809Z Deleting the contents of '/home/runner/work/toga/toga'
+2025-02-24T05:27:18.4371100Z ##[group]Initializing the repository
+2025-02-24T05:27:18.4375258Z [command]/usr/bin/git init /home/runner/work/toga/toga
+2025-02-24T05:27:18.4457051Z hint: Using 'master' as the name for the initial branch. This default branch name
+2025-02-24T05:27:18.4458198Z hint: is subject to change. To configure the initial branch name to use in all
+2025-02-24T05:27:18.4459107Z hint: of your new repositories, which will suppress this warning, call:
+2025-02-24T05:27:18.4459776Z hint:
+2025-02-24T05:27:18.4460253Z hint: 	git config --global init.defaultBranch <name>
+2025-02-24T05:27:18.4461040Z hint:
+2025-02-24T05:27:18.4461685Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2025-02-24T05:27:18.4462586Z hint: 'development'. The just-created branch can be renamed via this command:
+2025-02-24T05:27:18.4463283Z hint:
+2025-02-24T05:27:18.4463671Z hint: 	git branch -m <name>
+2025-02-24T05:27:18.4464710Z Initialized empty Git repository in /home/runner/work/toga/toga/.git/
+2025-02-24T05:27:18.4475728Z [command]/usr/bin/git remote add origin https://github.com/beeware/toga
+2025-02-24T05:27:18.4508485Z ##[endgroup]
+2025-02-24T05:27:18.4509699Z ##[group]Disabling automatic garbage collection
+2025-02-24T05:27:18.4513705Z [command]/usr/bin/git config --local gc.auto 0
+2025-02-24T05:27:18.4543171Z ##[endgroup]
+2025-02-24T05:27:18.4544226Z ##[group]Setting up auth
+2025-02-24T05:27:18.4550021Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-02-24T05:27:18.4579517Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-02-24T05:27:18.4894738Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-02-24T05:27:18.4924147Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-02-24T05:27:18.5152690Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2025-02-24T05:27:18.5187585Z ##[endgroup]
+2025-02-24T05:27:18.5188575Z ##[group]Fetching the repository
+2025-02-24T05:27:18.5198525Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +01152b56b9607a5cc1dabb9e94970cc589baff01:refs/remotes/origin/main
+2025-02-24T05:27:19.2903903Z From https://github.com/beeware/toga
+2025-02-24T05:27:19.2905718Z  * [new ref]         01152b56b9607a5cc1dabb9e94970cc589baff01 -> origin/main
+2025-02-24T05:27:19.2931733Z ##[endgroup]
+2025-02-24T05:27:19.3029479Z ##[group]Determining the checkout info
+2025-02-24T05:27:19.3031711Z ##[endgroup]
+2025-02-24T05:27:19.3032576Z [command]/usr/bin/git sparse-checkout disable
+2025-02-24T05:27:19.3034756Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2025-02-24T05:27:19.3038032Z ##[group]Checking out the ref
+2025-02-24T05:27:19.3039396Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2025-02-24T05:27:19.4765387Z Switched to a new branch 'main'
+2025-02-24T05:27:19.4766492Z branch 'main' set up to track 'origin/main'.
+2025-02-24T05:27:19.4779813Z ##[endgroup]
+2025-02-24T05:27:19.4820004Z [command]/usr/bin/git log -1 --format=%H
+2025-02-24T05:27:19.4844174Z 01152b56b9607a5cc1dabb9e94970cc589baff01
+2025-02-24T05:27:19.5070868Z ##[group]Run actions/setup-python@v5.4.0
+2025-02-24T05:27:19.5071538Z with:
+2025-02-24T05:27:19.5071932Z   python-version: 3.x
+2025-02-24T05:27:19.5072397Z   allow-prereleases: true
+2025-02-24T05:27:19.5072871Z   cache: pip
+2025-02-24T05:27:19.5073567Z   cache-dependency-path: **/setup.cfg
+**/pyproject.toml
+.pre-commit-config.yaml
+
+2025-02-24T05:27:19.5074423Z   check-latest: false
+2025-02-24T05:27:19.5075023Z   token: ***
+2025-02-24T05:27:19.5075445Z   update-environment: true
+2025-02-24T05:27:19.5075966Z ##[endgroup]
+2025-02-24T05:27:19.6780381Z ##[group]Installed versions
+2025-02-24T05:27:19.6838113Z Successfully set up CPython (3.13.2)
+2025-02-24T05:27:19.6840519Z ##[endgroup]
+2025-02-24T05:27:19.9504538Z [command]/opt/hostedtoolcache/Python/3.13.2/x64/bin/pip cache dir
+2025-02-24T05:27:20.2208086Z /home/runner/.cache/pip
+2025-02-24T05:27:20.3601530Z Cache hit for: setup-python-Linux-x64-24.04-Ubuntu-python-3.13.2-pip-a608e33e2a70d33446988c3c37cc262869f17ea1ddc0d3a4bee45dbe7c42d91a
+2025-02-24T05:27:20.5821123Z Received 18038451 of 18038451 (100.0%), 90.1 MBs/sec
+2025-02-24T05:27:20.5823106Z Cache Size: ~17 MB (18038451 B)
+2025-02-24T05:27:20.5847383Z [command]/usr/bin/tar -xf /home/runner/work/_temp/bf08585a-ae0d-4092-9db2-b5804f922a0e/cache.tzst -P -C /home/runner/work/toga/toga --use-compress-program unzstd
+2025-02-24T05:27:20.6553926Z Cache restored successfully
+2025-02-24T05:27:20.6596903Z Cache restored from key: setup-python-Linux-x64-24.04-Ubuntu-python-3.13.2-pip-a608e33e2a70d33446988c3c37cc262869f17ea1ddc0d3a4bee45dbe7c42d91a
+2025-02-24T05:27:20.7313192Z ##[group]Run actions/cache@v4.2.1
+2025-02-24T05:27:20.7313498Z with:
+2025-02-24T05:27:20.7313697Z   path: ~/.cache/pre-commit
+2025-02-24T05:27:20.7314202Z   key: pre-commit-3|/opt/hostedtoolcache/Python/3.13.2/x64|e7e7508366b5872393f47afe24c282c4906bba80a1e68744536f11ee3d6157fc
+2025-02-24T05:27:20.7314751Z   enableCrossOsArchive: false
+2025-02-24T05:27:20.7314994Z   fail-on-cache-miss: false
+2025-02-24T05:27:20.7315212Z   lookup-only: false
+2025-02-24T05:27:20.7315460Z   save-always: false
+2025-02-24T05:27:20.7315669Z env:
+2025-02-24T05:27:20.7315924Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.2/x64
+2025-02-24T05:27:20.7316372Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.2/x64/lib/pkgconfig
+2025-02-24T05:27:20.7316767Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.2/x64
+2025-02-24T05:27:20.7317115Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.2/x64
+2025-02-24T05:27:20.7317461Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.2/x64
+2025-02-24T05:27:20.7317864Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.2/x64/lib
+2025-02-24T05:27:20.7318163Z ##[endgroup]
+2025-02-24T05:27:20.9316962Z Cache hit for: pre-commit-3|/opt/hostedtoolcache/Python/3.13.2/x64|e7e7508366b5872393f47afe24c282c4906bba80a1e68744536f11ee3d6157fc
+2025-02-24T05:27:21.1771260Z Received 26674480 of 26674480 (100.0%), 120.6 MBs/sec
+2025-02-24T05:27:21.1772184Z Cache Size: ~25 MB (26674480 B)
+2025-02-24T05:27:21.1801309Z [command]/usr/bin/tar -xf /home/runner/work/_temp/6b3a55d8-d10e-4f71-8092-471e5c830019/cache.tzst -P -C /home/runner/work/toga/toga --use-compress-program unzstd
+2025-02-24T05:27:21.5643166Z Cache restored successfully
+2025-02-24T05:27:21.5878641Z Cache restored from key: pre-commit-3|/opt/hostedtoolcache/Python/3.13.2/x64|e7e7508366b5872393f47afe24c282c4906bba80a1e68744536f11ee3d6157fc
+2025-02-24T05:27:21.5990500Z ##[group]Run python -m pip install -U pip
+2025-02-24T05:27:21.5991342Z [36;1mpython -m pip install -U pip[0m
+2025-02-24T05:27:21.6145735Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-24T05:27:21.6146073Z env:
+2025-02-24T05:27:21.6146328Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.2/x64
+2025-02-24T05:27:21.6146733Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.2/x64/lib/pkgconfig
+2025-02-24T05:27:21.6147146Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.2/x64
+2025-02-24T05:27:21.6147493Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.2/x64
+2025-02-24T05:27:21.6147843Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.2/x64
+2025-02-24T05:27:21.6148200Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.2/x64/lib
+2025-02-24T05:27:21.6148493Z ##[endgroup]
+2025-02-24T05:27:22.1547353Z Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.13.2/x64/lib/python3.13/site-packages (25.0.1)
+2025-02-24T05:27:22.3176141Z ##[group]Run python -m pip install ./travertino ./core[dev]
+2025-02-24T05:27:22.3176613Z [36;1mpython -m pip install ./travertino ./core[dev][0m
+2025-02-24T05:27:22.3233895Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-24T05:27:22.3234227Z env:
+2025-02-24T05:27:22.3234474Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.2/x64
+2025-02-24T05:27:22.3234875Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.2/x64/lib/pkgconfig
+2025-02-24T05:27:22.3235253Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.2/x64
+2025-02-24T05:27:22.3235596Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.2/x64
+2025-02-24T05:27:22.3235942Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.2/x64
+2025-02-24T05:27:22.3236291Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.2/x64/lib
+2025-02-24T05:27:22.3236584Z ##[endgroup]
+2025-02-24T05:27:22.6929494Z Processing ./travertino
+2025-02-24T05:27:22.6949979Z   Installing build dependencies: started
+2025-02-24T05:27:24.2408278Z   Installing build dependencies: finished with status 'done'
+2025-02-24T05:27:24.2414595Z   Getting requirements to build wheel: started
+2025-02-24T05:27:24.7571208Z   Getting requirements to build wheel: finished with status 'done'
+2025-02-24T05:27:24.7580190Z   Preparing metadata (pyproject.toml): started
+2025-02-24T05:27:25.1454895Z   Preparing metadata (pyproject.toml): finished with status 'done'
+2025-02-24T05:27:25.1485049Z Processing ./core
+2025-02-24T05:27:25.1505064Z   Installing build dependencies: started
+2025-02-24T05:27:26.7198567Z   Installing build dependencies: finished with status 'done'
+2025-02-24T05:27:26.7204783Z   Getting requirements to build wheel: started
+2025-02-24T05:27:27.1289147Z   Getting requirements to build wheel: finished with status 'done'
+2025-02-24T05:27:27.1297698Z   Preparing metadata (pyproject.toml): started
+2025-02-24T05:27:27.5466598Z   Preparing metadata (pyproject.toml): finished with status 'done'
+2025-02-24T05:27:27.7861293Z Collecting coverage==7.6.12 (from coverage[toml]==7.6.12; extra == "dev"->toga-core==0.1.dev1+g01152b5)
+2025-02-24T05:27:27.7875793Z   Using cached coverage-7.6.12-cp313-cp313-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (8.5 kB)
+2025-02-24T05:27:27.8031112Z Collecting coverage-conditional-plugin==0.9.0 (from toga-core==0.1.dev1+g01152b5)
+2025-02-24T05:27:27.8041963Z   Using cached coverage_conditional_plugin-0.9.0-py3-none-any.whl.metadata (6.9 kB)
+2025-02-24T05:27:27.9126844Z Collecting Pillow==11.1.0 (from toga-core==0.1.dev1+g01152b5)
+2025-02-24T05:27:27.9138248Z   Using cached pillow-11.1.0-cp313-cp313-manylinux_2_28_x86_64.whl.metadata (9.1 kB)
+2025-02-24T05:27:27.9492473Z Collecting pre-commit==4.1.0 (from toga-core==0.1.dev1+g01152b5)
+2025-02-24T05:27:27.9504005Z   Using cached pre_commit-4.1.0-py2.py3-none-any.whl.metadata (1.3 kB)
+2025-02-24T05:27:27.9822268Z Collecting pytest==8.3.4 (from toga-core==0.1.dev1+g01152b5)
+2025-02-24T05:27:27.9833172Z   Using cached pytest-8.3.4-py3-none-any.whl.metadata (7.5 kB)
+2025-02-24T05:27:28.0032982Z Collecting pytest-asyncio==0.25.3 (from toga-core==0.1.dev1+g01152b5)
+2025-02-24T05:27:28.0043758Z   Using cached pytest_asyncio-0.25.3-py3-none-any.whl.metadata (3.9 kB)
+2025-02-24T05:27:28.0184071Z Collecting pytest-freezer==0.4.9 (from toga-core==0.1.dev1+g01152b5)
+2025-02-24T05:27:28.0194515Z   Using cached pytest_freezer-0.4.9-py3-none-any.whl.metadata (2.1 kB)
+2025-02-24T05:27:28.0473478Z Collecting setuptools-scm==8.1.0 (from toga-core==0.1.dev1+g01152b5)
+2025-02-24T05:27:28.0485697Z   Using cached setuptools_scm-8.1.0-py3-none-any.whl.metadata (6.6 kB)
+2025-02-24T05:27:28.0886816Z Collecting tox==4.24.1 (from toga-core==0.1.dev1+g01152b5)
+2025-02-24T05:27:28.0897588Z   Using cached tox-4.24.1-py3-none-any.whl.metadata (3.7 kB)
+2025-02-24T05:27:28.1135766Z Collecting packaging>=20.4 (from coverage-conditional-plugin==0.9.0->toga-core==0.1.dev1+g01152b5)
+2025-02-24T05:27:28.1146216Z   Using cached packaging-24.2-py3-none-any.whl.metadata (3.2 kB)
+2025-02-24T05:27:28.1298147Z Collecting cfgv>=2.0.0 (from pre-commit==4.1.0->toga-core==0.1.dev1+g01152b5)
+2025-02-24T05:27:28.1308484Z   Using cached cfgv-3.4.0-py2.py3-none-any.whl.metadata (8.5 kB)
+2025-02-24T05:27:28.1677076Z Collecting identify>=1.0.0 (from pre-commit==4.1.0->toga-core==0.1.dev1+g01152b5)
+2025-02-24T05:27:28.1687493Z   Using cached identify-2.6.8-py2.py3-none-any.whl.metadata (4.4 kB)
+2025-02-24T05:27:28.1856707Z Collecting nodeenv>=0.11.1 (from pre-commit==4.1.0->toga-core==0.1.dev1+g01152b5)
+2025-02-24T05:27:28.1867088Z   Using cached nodeenv-1.9.1-py2.py3-none-any.whl.metadata (21 kB)
+2025-02-24T05:27:28.2160777Z Collecting pyyaml>=5.1 (from pre-commit==4.1.0->toga-core==0.1.dev1+g01152b5)
+2025-02-24T05:27:28.2172063Z   Using cached PyYAML-6.0.2-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.1 kB)
+2025-02-24T05:27:28.2552861Z Collecting virtualenv>=20.10.0 (from pre-commit==4.1.0->toga-core==0.1.dev1+g01152b5)
+2025-02-24T05:27:28.2563981Z   Using cached virtualenv-20.29.2-py3-none-any.whl.metadata (4.5 kB)
+2025-02-24T05:27:28.2710241Z Collecting iniconfig (from pytest==8.3.4->toga-core==0.1.dev1+g01152b5)
+2025-02-24T05:27:28.2721239Z   Using cached iniconfig-2.0.0-py3-none-any.whl.metadata (2.6 kB)
+2025-02-24T05:27:28.2855931Z Collecting pluggy<2,>=1.5 (from pytest==8.3.4->toga-core==0.1.dev1+g01152b5)
+2025-02-24T05:27:28.2866722Z   Using cached pluggy-1.5.0-py3-none-any.whl.metadata (4.8 kB)
+2025-02-24T05:27:28.3206542Z Collecting freezegun>=1.1 (from pytest-freezer==0.4.9->toga-core==0.1.dev1+g01152b5)
+2025-02-24T05:27:28.3217654Z   Using cached freezegun-1.5.1-py3-none-any.whl.metadata (11 kB)
+2025-02-24T05:27:28.4217121Z Collecting setuptools (from setuptools-scm==8.1.0->toga-core==0.1.dev1+g01152b5)
+2025-02-24T05:27:28.4228898Z   Using cached setuptools-75.8.0-py3-none-any.whl.metadata (6.7 kB)
+2025-02-24T05:27:28.4482637Z Collecting cachetools>=5.5 (from tox==4.24.1->toga-core==0.1.dev1+g01152b5)
+2025-02-24T05:27:28.4493764Z   Using cached cachetools-5.5.2-py3-none-any.whl.metadata (5.4 kB)
+2025-02-24T05:27:28.4617090Z Collecting chardet>=5.2 (from tox==4.24.1->toga-core==0.1.dev1+g01152b5)
+2025-02-24T05:27:28.4628152Z   Using cached chardet-5.2.0-py3-none-any.whl.metadata (3.4 kB)
+2025-02-24T05:27:28.4788488Z Collecting colorama>=0.4.6 (from tox==4.24.1->toga-core==0.1.dev1+g01152b5)
+2025-02-24T05:27:28.4799471Z   Using cached colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+2025-02-24T05:27:28.4986266Z Collecting filelock>=3.16.1 (from tox==4.24.1->toga-core==0.1.dev1+g01152b5)
+2025-02-24T05:27:28.4997261Z   Using cached filelock-3.17.0-py3-none-any.whl.metadata (2.9 kB)
+2025-02-24T05:27:28.5200886Z Collecting platformdirs>=4.3.6 (from tox==4.24.1->toga-core==0.1.dev1+g01152b5)
+2025-02-24T05:27:28.5211894Z   Using cached platformdirs-4.3.6-py3-none-any.whl.metadata (11 kB)
+2025-02-24T05:27:28.5362151Z Collecting pyproject-api>=1.8 (from tox==4.24.1->toga-core==0.1.dev1+g01152b5)
+2025-02-24T05:27:28.5373010Z   Using cached pyproject_api-1.9.0-py3-none-any.whl.metadata (2.7 kB)
+2025-02-24T05:27:28.5668997Z Collecting python-dateutil>=2.7 (from freezegun>=1.1->pytest-freezer==0.4.9->toga-core==0.1.dev1+g01152b5)
+2025-02-24T05:27:28.5680164Z   Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+2025-02-24T05:27:28.5910380Z Collecting distlib<1,>=0.3.7 (from virtualenv>=20.10.0->pre-commit==4.1.0->toga-core==0.1.dev1+g01152b5)
+2025-02-24T05:27:28.5921413Z   Using cached distlib-0.3.9-py2.py3-none-any.whl.metadata (5.2 kB)
+2025-02-24T05:27:28.6210231Z Collecting six>=1.5 (from python-dateutil>=2.7->freezegun>=1.1->pytest-freezer==0.4.9->toga-core==0.1.dev1+g01152b5)
+2025-02-24T05:27:28.6221044Z   Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+2025-02-24T05:27:28.6278317Z Using cached coverage-7.6.12-cp313-cp313-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (241 kB)
+2025-02-24T05:27:28.6290958Z Using cached coverage_conditional_plugin-0.9.0-py3-none-any.whl (7.3 kB)
+2025-02-24T05:27:28.6302229Z Using cached pillow-11.1.0-cp313-cp313-manylinux_2_28_x86_64.whl (4.5 MB)
+2025-02-24T05:27:28.6346380Z Using cached pre_commit-4.1.0-py2.py3-none-any.whl (220 kB)
+2025-02-24T05:27:28.6358649Z Using cached pytest-8.3.4-py3-none-any.whl (343 kB)
+2025-02-24T05:27:28.6371894Z Using cached pytest_asyncio-0.25.3-py3-none-any.whl (19 kB)
+2025-02-24T05:27:28.6382781Z Using cached pytest_freezer-0.4.9-py3-none-any.whl (3.2 kB)
+2025-02-24T05:27:28.6393312Z Using cached setuptools_scm-8.1.0-py3-none-any.whl (43 kB)
+2025-02-24T05:27:28.6404214Z Using cached tox-4.24.1-py3-none-any.whl (171 kB)
+2025-02-24T05:27:28.6416045Z Using cached cachetools-5.5.2-py3-none-any.whl (10 kB)
+2025-02-24T05:27:28.6426913Z Using cached cfgv-3.4.0-py2.py3-none-any.whl (7.2 kB)
+2025-02-24T05:27:28.6437425Z Using cached chardet-5.2.0-py3-none-any.whl (199 kB)
+2025-02-24T05:27:28.6449492Z Using cached colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+2025-02-24T05:27:28.6460244Z Using cached filelock-3.17.0-py3-none-any.whl (16 kB)
+2025-02-24T05:27:28.6471112Z Using cached freezegun-1.5.1-py3-none-any.whl (17 kB)
+2025-02-24T05:27:28.6481788Z Using cached identify-2.6.8-py2.py3-none-any.whl (99 kB)
+2025-02-24T05:27:28.6493081Z Using cached nodeenv-1.9.1-py2.py3-none-any.whl (22 kB)
+2025-02-24T05:27:28.6504104Z Using cached packaging-24.2-py3-none-any.whl (65 kB)
+2025-02-24T05:27:28.6515249Z Using cached platformdirs-4.3.6-py3-none-any.whl (18 kB)
+2025-02-24T05:27:28.6526001Z Using cached pluggy-1.5.0-py3-none-any.whl (20 kB)
+2025-02-24T05:27:28.6536773Z Using cached pyproject_api-1.9.0-py3-none-any.whl (13 kB)
+2025-02-24T05:27:28.6547824Z Using cached PyYAML-6.0.2-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (759 kB)
+2025-02-24T05:27:28.6564498Z Using cached virtualenv-20.29.2-py3-none-any.whl (4.3 MB)
+2025-02-24T05:27:28.6607166Z Using cached iniconfig-2.0.0-py3-none-any.whl (5.9 kB)
+2025-02-24T05:27:28.6618093Z Using cached setuptools-75.8.0-py3-none-any.whl (1.2 MB)
+2025-02-24T05:27:28.6637788Z Using cached distlib-0.3.9-py2.py3-none-any.whl (468 kB)
+2025-02-24T05:27:28.6652246Z Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+2025-02-24T05:27:28.6664709Z Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+2025-02-24T05:27:28.7002402Z Building wheels for collected packages: travertino, toga-core
+2025-02-24T05:27:28.7011024Z   Building wheel for travertino (pyproject.toml): started
+2025-02-24T05:27:29.1158803Z   Building wheel for travertino (pyproject.toml): finished with status 'done'
+2025-02-24T05:27:29.1165783Z   Created wheel for travertino: filename=travertino-0.1.dev1+g01152b5-py3-none-any.whl size=22797 sha256=0efc3f1de6d9afc023506679a988998df5312b415295c3bed4daa769800fb5e4
+2025-02-24T05:27:29.1167691Z   Stored in directory: /tmp/pip-ephem-wheel-cache-f19h69nw/wheels/75/8f/47/ac68d41b47435b7a5a31ce0be0a05f40e799080de36bd153be
+2025-02-24T05:27:29.1197090Z   Building wheel for toga-core (pyproject.toml): started
+2025-02-24T05:27:29.5969608Z   Building wheel for toga-core (pyproject.toml): finished with status 'done'
+2025-02-24T05:27:29.5976740Z   Created wheel for toga-core: filename=toga_core-0.1.dev1+g01152b5-py3-none-any.whl size=142756 sha256=f873934ece3a2c39109d6f2b5255208c1ba1aa31b2bde23990d0fd58dd1ccb97
+2025-02-24T05:27:29.5978689Z   Stored in directory: /tmp/pip-ephem-wheel-cache-f19h69nw/wheels/77/12/ab/46c238fca3af0efb4cd35aa618b270cb2f95488e48c466fe64
+2025-02-24T05:27:29.6003068Z Successfully built travertino toga-core
+2025-02-24T05:27:29.6466599Z Installing collected packages: distlib, travertino, six, setuptools, pyyaml, pluggy, platformdirs, Pillow, packaging, nodeenv, iniconfig, identify, filelock, coverage, colorama, chardet, cfgv, cachetools, virtualenv, toga-core, setuptools-scm, python-dateutil, pytest, pyproject-api, coverage-conditional-plugin, tox, pytest-asyncio, pre-commit, freezegun, pytest-freezer
+2025-02-24T05:27:32.1101889Z Successfully installed Pillow-11.1.0 cachetools-5.5.2 cfgv-3.4.0 chardet-5.2.0 colorama-0.4.6 coverage-7.6.12 coverage-conditional-plugin-0.9.0 distlib-0.3.9 filelock-3.17.0 freezegun-1.5.1 identify-2.6.8 iniconfig-2.0.0 nodeenv-1.9.1 packaging-24.2 platformdirs-4.3.6 pluggy-1.5.0 pre-commit-4.1.0 pyproject-api-1.9.0 pytest-8.3.4 pytest-asyncio-0.25.3 pytest-freezer-0.4.9 python-dateutil-2.9.0.post0 pyyaml-6.0.2 setuptools-75.8.0 setuptools-scm-8.1.0 six-1.17.0 toga-core-0.1.dev1+g01152b5 tox-4.24.1 travertino-0.1.dev1+g01152b5 virtualenv-20.29.2
+2025-02-24T05:27:32.2779807Z ##[group]Run pre-commit run --show-diff-on-failure --color=always --all-files
+2025-02-24T05:27:32.2780374Z [36;1mpre-commit run --show-diff-on-failure --color=always --all-files[0m
+2025-02-24T05:27:32.2838265Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-24T05:27:32.2838582Z env:
+2025-02-24T05:27:32.2838820Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.2/x64
+2025-02-24T05:27:32.2839231Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.2/x64/lib/pkgconfig
+2025-02-24T05:27:32.2839620Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.2/x64
+2025-02-24T05:27:32.2839977Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.2/x64
+2025-02-24T05:27:32.2840320Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.2/x64
+2025-02-24T05:27:32.2840854Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.2/x64/lib
+2025-02-24T05:27:32.2841151Z ##[endgroup]
+2025-02-24T05:27:32.6390500Z check toml...............................................................[42mPassed[m
+2025-02-24T05:27:32.7437637Z check yaml...............................................................[42mPassed[m
+2025-02-24T05:27:32.8214390Z check for case conflicts.................................................[42mPassed[m
+2025-02-24T05:27:33.1897678Z check docstring is first.................................................[42mPassed[m
+2025-02-24T05:27:33.2577742Z fix end of files.........................................................[42mPassed[m
+2025-02-24T05:27:33.3523687Z trim trailing whitespace.................................................[42mPassed[m
+2025-02-24T05:27:35.1299282Z pyupgrade................................................................[42mPassed[m
+2025-02-24T05:27:35.2857762Z isort....................................................................[42mPassed[m
+2025-02-24T05:27:36.3997493Z isort....................................................................[42mPassed[m
+2025-02-24T05:27:44.0528324Z black....................................................................[42mPassed[m
+2025-02-24T05:27:48.6870545Z flake8...................................................................[42mPassed[m
+2025-02-24T05:27:49.2009267Z codespell................................................................[42mPassed[m
+2025-02-24T05:27:49.2764445Z Post job cleanup.
+2025-02-24T05:27:49.4011959Z Cache hit occurred on the primary key pre-commit-3|/opt/hostedtoolcache/Python/3.13.2/x64|e7e7508366b5872393f47afe24c282c4906bba80a1e68744536f11ee3d6157fc, not saving cache.
+2025-02-24T05:27:49.4098409Z Post job cleanup.
+2025-02-24T05:27:49.5615603Z Cache hit occurred on the primary key setup-python-Linux-x64-24.04-Ubuntu-python-3.13.2-pip-a608e33e2a70d33446988c3c37cc262869f17ea1ddc0d3a4bee45dbe7c42d91a, not saving cache.
+2025-02-24T05:27:49.5747496Z Post job cleanup.
+2025-02-24T05:27:49.6709640Z [command]/usr/bin/git version
+2025-02-24T05:27:49.6761544Z git version 2.48.1
+2025-02-24T05:27:49.6796769Z Temporarily overriding HOME='/home/runner/work/_temp/97017c87-400b-4963-a88d-334f0235fef5' before making global git config changes
+2025-02-24T05:27:49.6797886Z Adding repository directory to the temporary git global config as a safe directory
+2025-02-24T05:27:49.6802723Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/toga/toga
+2025-02-24T05:27:49.6837801Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-02-24T05:27:49.6869935Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-02-24T05:27:49.7109592Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-02-24T05:27:49.7130175Z http.https://github.com/.extraheader
+2025-02-24T05:27:49.7142860Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2025-02-24T05:27:49.7173402Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-02-24T05:27:49.7509014Z Cleaning up orphan processes

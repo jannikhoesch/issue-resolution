@@ -1,0 +1,675 @@
+﻿2025-02-24T05:29:47.9267010Z Current runner version: '2.322.0'
+2025-02-24T05:29:47.9282740Z ##[group]Operating System
+2025-02-24T05:29:47.9283510Z macOS
+2025-02-24T05:29:47.9283900Z 14.7.2
+2025-02-24T05:29:47.9284330Z 23H311
+2025-02-24T05:29:47.9284680Z ##[endgroup]
+2025-02-24T05:29:47.9285100Z ##[group]Runner Image
+2025-02-24T05:29:47.9285520Z Image: macos-14-arm64
+2025-02-24T05:29:47.9285920Z Version: 20250120.774
+2025-02-24T05:29:47.9286750Z Included Software: https://github.com/actions/runner-images/blob/macos-14-arm64/20250120.774/images/macos/macos-14-arm64-Readme.md
+2025-02-24T05:29:47.9287790Z Image Release: https://github.com/actions/runner-images/releases/tag/macos-14-arm64%2F20250120.774
+2025-02-24T05:29:47.9288540Z ##[endgroup]
+2025-02-24T05:29:47.9288970Z ##[group]Runner Image Provisioner
+2025-02-24T05:29:47.9289460Z 2.0.417.1+9319b8b0d2fead581272b7201c667f076e8e53f6
+2025-02-24T05:29:47.9289930Z ##[endgroup]
+2025-02-24T05:29:47.9291570Z ##[group]GITHUB_TOKEN Permissions
+2025-02-24T05:29:47.9293720Z Actions: write
+2025-02-24T05:29:47.9294150Z Attestations: write
+2025-02-24T05:29:47.9294570Z Checks: write
+2025-02-24T05:29:47.9295010Z Contents: write
+2025-02-24T05:29:47.9383550Z Deployments: write
+2025-02-24T05:29:47.9384260Z Discussions: write
+2025-02-24T05:29:47.9385500Z Issues: write
+2025-02-24T05:29:47.9385840Z Metadata: read
+2025-02-24T05:29:47.9386190Z Packages: write
+2025-02-24T05:29:47.9386520Z Pages: write
+2025-02-24T05:29:47.9386840Z PullRequests: write
+2025-02-24T05:29:47.9387260Z RepositoryProjects: write
+2025-02-24T05:29:47.9387630Z SecurityEvents: write
+2025-02-24T05:29:47.9387970Z Statuses: write
+2025-02-24T05:29:47.9388290Z ##[endgroup]
+2025-02-24T05:29:47.9392350Z Secret source: Actions
+2025-02-24T05:29:47.9392830Z Prepare workflow directory
+2025-02-24T05:29:47.9732990Z Prepare all required actions
+2025-02-24T05:29:47.9761890Z Getting action download info
+2025-02-24T05:29:48.1819570Z Download action repository 'smorimoto/tune-github-hosted-runner-network@v1.0.0' (SHA:bb252dcb5c8609a31087e7993daa086f5a1c0069)
+2025-02-24T05:29:49.3068880Z ##[group]Download immutable action package 'actions/checkout@v4.2.2'
+2025-02-24T05:29:49.3070290Z Version: 4.2.2
+2025-02-24T05:29:49.3071060Z Digest: sha256:ccb2698953eaebd21c7bf6268a94f9c26518a7e38e27e0b83c1fe1ad049819b1
+2025-02-24T05:29:49.3071860Z Source commit SHA: 11bd71901bbe5b1630ceea73d27597364c9af683
+2025-02-24T05:29:49.3072460Z ##[endgroup]
+2025-02-24T05:29:49.4087820Z ##[group]Download immutable action package 'actions/setup-python@v5.4.0'
+2025-02-24T05:29:49.4088660Z Version: 5.4.0
+2025-02-24T05:29:49.4089270Z Digest: sha256:6003df952c8106bcd378d2ba997eef202da924317a57269dfa72449b135adb7f
+2025-02-24T05:29:49.4090190Z Source commit SHA: 42375524e23c412d93fb67b49958b491fce71c38
+2025-02-24T05:29:49.4090800Z ##[endgroup]
+2025-02-24T05:29:49.9649970Z ##[group]Download immutable action package 'actions/download-artifact@v4.1.8'
+2025-02-24T05:29:49.9650800Z Version: 4.1.8
+2025-02-24T05:29:49.9651560Z Digest: sha256:917365d881f32f077924458e108599cbeed2ddd6092ee5edbe0da4d4b2eba355
+2025-02-24T05:29:49.9652530Z Source commit SHA: fa0a91b85d4f404e444e00e005971372dc801d16
+2025-02-24T05:29:49.9653200Z ##[endgroup]
+2025-02-24T05:29:50.5178560Z ##[group]Download immutable action package 'actions/upload-artifact@v4.6.1'
+2025-02-24T05:29:50.5179910Z Version: 4.6.1
+2025-02-24T05:29:50.5181050Z Digest: sha256:3f6a28e7a1e0b5c8e2249e28da121a049fa5b91863b04390a46a82e4f8e2da98
+2025-02-24T05:29:50.5182640Z Source commit SHA: 4cec3d8aa04e39d1a68397de0c4cd6fb9dce8ec1
+2025-02-24T05:29:50.5183710Z ##[endgroup]
+2025-02-24T05:29:51.2586480Z Complete job name: Testbed (textual-macOS)
+2025-02-24T05:29:51.2934520Z ##[group]Run smorimoto/tune-github-hosted-runner-network@v1.0.0
+2025-02-24T05:29:51.2935280Z env:
+2025-02-24T05:29:51.2935450Z   min_python_version: 3.9
+2025-02-24T05:29:51.2935650Z   max_python_version: 3.12
+2025-02-24T05:29:51.2935840Z   FORCE_COLOR: 1
+2025-02-24T05:29:51.2935990Z ##[endgroup]
+2025-02-24T05:29:51.3030020Z ##[group]Run sudo sysctl -w net.link.generic.system.hwcksum_tx=0
+2025-02-24T05:29:51.3031040Z [36;1msudo sysctl -w net.link.generic.system.hwcksum_tx=0[0m
+2025-02-24T05:29:51.3031460Z [36;1msudo sysctl -w net.link.generic.system.hwcksum_rx=0[0m
+2025-02-24T05:29:51.3097440Z shell: /bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-24T05:29:51.3097790Z env:
+2025-02-24T05:29:51.3097970Z   min_python_version: 3.9
+2025-02-24T05:29:51.3098180Z   max_python_version: 3.12
+2025-02-24T05:29:51.3113330Z   FORCE_COLOR: 1
+2025-02-24T05:29:51.3113540Z ##[endgroup]
+2025-02-24T05:29:51.3582700Z net.link.generic.system.hwcksum_tx: 1 -> 0
+2025-02-24T05:29:51.3666710Z net.link.generic.system.hwcksum_rx: 1 -> 0
+2025-02-24T05:29:51.3785980Z ##[group]Run actions/checkout@v4.2.2
+2025-02-24T05:29:51.3786250Z with:
+2025-02-24T05:29:51.3786410Z   fetch-depth: 0
+2025-02-24T05:29:51.3786590Z   repository: beeware/toga
+2025-02-24T05:29:51.3786930Z   token: ***
+2025-02-24T05:29:51.3787100Z   ssh-strict: true
+2025-02-24T05:29:51.3787280Z   ssh-user: git
+2025-02-24T05:29:51.3787460Z   persist-credentials: true
+2025-02-24T05:29:51.3787700Z   clean: true
+2025-02-24T05:29:51.3787890Z   sparse-checkout-cone-mode: true
+2025-02-24T05:29:51.3788110Z   fetch-tags: false
+2025-02-24T05:29:51.3788290Z   show-progress: true
+2025-02-24T05:29:51.3788470Z   lfs: false
+2025-02-24T05:29:51.3788630Z   submodules: false
+2025-02-24T05:29:51.3788850Z   set-safe-directory: true
+2025-02-24T05:29:51.3789050Z env:
+2025-02-24T05:29:51.3789210Z   min_python_version: 3.9
+2025-02-24T05:29:51.3789500Z   max_python_version: 3.12
+2025-02-24T05:29:51.3789690Z   FORCE_COLOR: 1
+2025-02-24T05:29:51.3789850Z ##[endgroup]
+2025-02-24T05:29:51.5499380Z Syncing repository: beeware/toga
+2025-02-24T05:29:51.5500560Z ##[group]Getting Git version info
+2025-02-24T05:29:51.5500850Z Working directory is '/Users/runner/work/toga/toga'
+2025-02-24T05:29:51.5501290Z [command]/opt/homebrew/bin/git version
+2025-02-24T05:29:51.6042120Z git version 2.48.1
+2025-02-24T05:29:51.6059430Z ##[endgroup]
+2025-02-24T05:29:51.6073480Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/b3c4a788-bc02-4ccf-83d1-75b03fdb18d9/.gitconfig'
+2025-02-24T05:29:51.6075820Z Temporarily overriding HOME='/Users/runner/work/_temp/b3c4a788-bc02-4ccf-83d1-75b03fdb18d9' before making global git config changes
+2025-02-24T05:29:51.6077450Z Adding repository directory to the temporary git global config as a safe directory
+2025-02-24T05:29:51.6088260Z [command]/opt/homebrew/bin/git config --global --add safe.directory /Users/runner/work/toga/toga
+2025-02-24T05:29:51.6199010Z Deleting the contents of '/Users/runner/work/toga/toga'
+2025-02-24T05:29:51.6201740Z ##[group]Initializing the repository
+2025-02-24T05:29:51.6206940Z [command]/opt/homebrew/bin/git init /Users/runner/work/toga/toga
+2025-02-24T05:29:51.6600230Z hint: Using 'master' as the name for the initial branch. This default branch name
+2025-02-24T05:29:51.6638740Z hint: is subject to change. To configure the initial branch name to use in all
+2025-02-24T05:29:51.6639490Z hint: of your new repositories, which will suppress this warning, call:
+2025-02-24T05:29:51.6639890Z hint:
+2025-02-24T05:29:51.6640230Z hint: 	git config --global init.defaultBranch <name>
+2025-02-24T05:29:51.6640580Z hint:
+2025-02-24T05:29:51.6640900Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2025-02-24T05:29:51.6641380Z hint: 'development'. The just-created branch can be renamed via this command:
+2025-02-24T05:29:51.6641750Z hint:
+2025-02-24T05:29:51.6641990Z hint: 	git branch -m <name>
+2025-02-24T05:29:51.6642620Z Initialized empty Git repository in /Users/runner/work/toga/toga/.git/
+2025-02-24T05:29:51.6645320Z [command]/opt/homebrew/bin/git remote add origin https://github.com/beeware/toga
+2025-02-24T05:29:51.6817560Z ##[endgroup]
+2025-02-24T05:29:51.6836530Z ##[group]Disabling automatic garbage collection
+2025-02-24T05:29:51.6937970Z [command]/opt/homebrew/bin/git config --local gc.auto 0
+2025-02-24T05:29:51.7242530Z ##[endgroup]
+2025-02-24T05:29:51.7344030Z ##[group]Setting up auth
+2025-02-24T05:29:51.7445490Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-02-24T05:29:51.7751630Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-02-24T05:29:51.8356390Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-02-24T05:29:51.8662220Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-02-24T05:29:51.9552730Z [command]/opt/homebrew/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2025-02-24T05:29:51.9686720Z ##[endgroup]
+2025-02-24T05:29:51.9720630Z ##[group]Fetching the repository
+2025-02-24T05:29:51.9766110Z [command]/opt/homebrew/bin/git -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+2025-02-24T05:29:55.1220910Z From https://github.com/beeware/toga
+2025-02-24T05:29:55.1221660Z  * [new branch]          main         -> origin/main
+2025-02-24T05:29:55.1223780Z  * [new branch]          pre-0.5      -> origin/pre-0.5
+2025-02-24T05:29:55.1224120Z  * [new tag]             0.2.6        -> 0.2.6
+2025-02-24T05:29:55.1224640Z  * [new tag]             v0.0.1rc1    -> v0.0.1rc1
+2025-02-24T05:29:55.1224970Z  * [new tag]             v0.0.1rc10   -> v0.0.1rc10
+2025-02-24T05:29:55.1226950Z  * [new tag]             v0.0.1rc5    -> v0.0.1rc5
+2025-02-24T05:29:55.1229490Z  * [new tag]             v0.0.1rc6    -> v0.0.1rc6
+2025-02-24T05:29:55.1229810Z  * [new tag]             v0.1.0       -> v0.1.0
+2025-02-24T05:29:55.1231280Z  * [new tag]             v0.1.1       -> v0.1.1
+2025-02-24T05:29:55.1232380Z  * [new tag]             v0.1.2       -> v0.1.2
+2025-02-24T05:29:55.1234460Z  * [new tag]             v0.2.0       -> v0.2.0
+2025-02-24T05:29:55.1235640Z  * [new tag]             v0.2.0.dev1  -> v0.2.0.dev1
+2025-02-24T05:29:55.1237310Z  * [new tag]             v0.2.1       -> v0.2.1
+2025-02-24T05:29:55.1239260Z  * [new tag]             v0.2.10      -> v0.2.10
+2025-02-24T05:29:55.1241050Z  * [new tag]             v0.2.11      -> v0.2.11
+2025-02-24T05:29:55.1242750Z  * [new tag]             v0.2.12      -> v0.2.12
+2025-02-24T05:29:55.1244210Z  * [new tag]             v0.2.13      -> v0.2.13
+2025-02-24T05:29:55.1245660Z  * [new tag]             v0.2.14      -> v0.2.14
+2025-02-24T05:29:55.1247560Z  * [new tag]             v0.2.15      -> v0.2.15
+2025-02-24T05:29:55.1251820Z  * [new tag]             v0.2.2       -> v0.2.2
+2025-02-24T05:29:55.1257200Z  * [new tag]             v0.2.3       -> v0.2.3
+2025-02-24T05:29:55.1261570Z  * [new tag]             v0.2.4       -> v0.2.4
+2025-02-24T05:29:55.1265950Z  * [new tag]             v0.2.5       -> v0.2.5
+2025-02-24T05:29:55.1277030Z  * [new tag]             v0.2.6       -> v0.2.6
+2025-02-24T05:29:55.1282800Z  * [new tag]             v0.2.7       -> v0.2.7
+2025-02-24T05:29:55.1284550Z  * [new tag]             v0.2.8       -> v0.2.8
+2025-02-24T05:29:55.1285870Z  * [new tag]             v0.2.9       -> v0.2.9
+2025-02-24T05:29:55.1287440Z  * [new tag]             v0.3.0       -> v0.3.0
+2025-02-24T05:29:55.1289950Z  * [new tag]             v0.3.0.dev1  -> v0.3.0.dev1
+2025-02-24T05:29:55.1291940Z  * [new tag]             v0.3.0.dev10 -> v0.3.0.dev10
+2025-02-24T05:29:55.1294420Z  * [new tag]             v0.3.0.dev11 -> v0.3.0.dev11
+2025-02-24T05:29:55.1300290Z  * [new tag]             v0.3.0.dev12 -> v0.3.0.dev12
+2025-02-24T05:29:55.1302210Z  * [new tag]             v0.3.0.dev13 -> v0.3.0.dev13
+2025-02-24T05:29:55.1304330Z  * [new tag]             v0.3.0.dev14 -> v0.3.0.dev14
+2025-02-24T05:29:55.1305240Z  * [new tag]             v0.3.0.dev15 -> v0.3.0.dev15
+2025-02-24T05:29:55.1306090Z  * [new tag]             v0.3.0.dev16 -> v0.3.0.dev16
+2025-02-24T05:29:55.1307280Z  * [new tag]             v0.3.0.dev17 -> v0.3.0.dev17
+2025-02-24T05:29:55.1309860Z  * [new tag]             v0.3.0.dev18 -> v0.3.0.dev18
+2025-02-24T05:29:55.1310520Z  * [new tag]             v0.3.0.dev19 -> v0.3.0.dev19
+2025-02-24T05:29:55.1311650Z  * [new tag]             v0.3.0.dev2  -> v0.3.0.dev2
+2025-02-24T05:29:55.1314040Z  * [new tag]             v0.3.0.dev20 -> v0.3.0.dev20
+2025-02-24T05:29:55.1316460Z  * [new tag]             v0.3.0.dev21 -> v0.3.0.dev21
+2025-02-24T05:29:55.1317350Z  * [new tag]             v0.3.0.dev22 -> v0.3.0.dev22
+2025-02-24T05:29:55.1319030Z  * [new tag]             v0.3.0.dev23 -> v0.3.0.dev23
+2025-02-24T05:29:55.1320900Z  * [new tag]             v0.3.0.dev24 -> v0.3.0.dev24
+2025-02-24T05:29:55.1321840Z  * [new tag]             v0.3.0.dev25 -> v0.3.0.dev25
+2025-02-24T05:29:55.1323280Z  * [new tag]             v0.3.0.dev26 -> v0.3.0.dev26
+2025-02-24T05:29:55.1325080Z  * [new tag]             v0.3.0.dev27 -> v0.3.0.dev27
+2025-02-24T05:29:55.1326220Z  * [new tag]             v0.3.0.dev28 -> v0.3.0.dev28
+2025-02-24T05:29:55.1328000Z  * [new tag]             v0.3.0.dev29 -> v0.3.0.dev29
+2025-02-24T05:29:55.1329270Z  * [new tag]             v0.3.0.dev3  -> v0.3.0.dev3
+2025-02-24T05:29:55.1330690Z  * [new tag]             v0.3.0.dev30 -> v0.3.0.dev30
+2025-02-24T05:29:55.1333170Z  * [new tag]             v0.3.0.dev32 -> v0.3.0.dev32
+2025-02-24T05:29:55.1333750Z  * [new tag]             v0.3.0.dev33 -> v0.3.0.dev33
+2025-02-24T05:29:55.1335380Z  * [new tag]             v0.3.0.dev34 -> v0.3.0.dev34
+2025-02-24T05:29:55.1338130Z  * [new tag]             v0.3.0.dev35 -> v0.3.0.dev35
+2025-02-24T05:29:55.1339720Z  * [new tag]             v0.3.0.dev36 -> v0.3.0.dev36
+2025-02-24T05:29:55.1341290Z  * [new tag]             v0.3.0.dev37 -> v0.3.0.dev37
+2025-02-24T05:29:55.1342720Z  * [new tag]             v0.3.0.dev38 -> v0.3.0.dev38
+2025-02-24T05:29:55.1344050Z  * [new tag]             v0.3.0.dev39 -> v0.3.0.dev39
+2025-02-24T05:29:55.1346390Z  * [new tag]             v0.3.0.dev4  -> v0.3.0.dev4
+2025-02-24T05:29:55.1347950Z  * [new tag]             v0.3.0.dev5  -> v0.3.0.dev5
+2025-02-24T05:29:55.1349590Z  * [new tag]             v0.3.0.dev6  -> v0.3.0.dev6
+2025-02-24T05:29:55.1350810Z  * [new tag]             v0.3.0.dev7  -> v0.3.0.dev7
+2025-02-24T05:29:55.1352290Z  * [new tag]             v0.3.0.dev8  -> v0.3.0.dev8
+2025-02-24T05:29:55.1354030Z  * [new tag]             v0.3.0.dev9  -> v0.3.0.dev9
+2025-02-24T05:29:55.1355700Z  * [new tag]             v0.3.0rc0    -> v0.3.0rc0
+2025-02-24T05:29:55.1357210Z  * [new tag]             v0.3.1       -> v0.3.1
+2025-02-24T05:29:55.1358800Z  * [new tag]             v0.4.0       -> v0.4.0
+2025-02-24T05:29:55.1360280Z  * [new tag]             v0.4.1       -> v0.4.1
+2025-02-24T05:29:55.1361490Z  * [new tag]             v0.4.2       -> v0.4.2
+2025-02-24T05:29:55.1363160Z  * [new tag]             v0.4.3       -> v0.4.3
+2025-02-24T05:29:55.1365130Z  * [new tag]             v0.4.4       -> v0.4.4
+2025-02-24T05:29:55.1366470Z  * [new tag]             v0.4.5       -> v0.4.5
+2025-02-24T05:29:55.1367810Z  * [new tag]             v0.4.6       -> v0.4.6
+2025-02-24T05:29:55.1369320Z  * [new tag]             v0.4.7       -> v0.4.7
+2025-02-24T05:29:55.1370540Z  * [new tag]             v0.4.8       -> v0.4.8
+2025-02-24T05:29:55.1372210Z  * [new tag]             v0.4.9       -> v0.4.9
+2025-02-24T05:29:55.1467870Z [command]/opt/homebrew/bin/git branch --list --remote origin/main
+2025-02-24T05:29:55.1534940Z   origin/main
+2025-02-24T05:29:55.1542610Z [command]/opt/homebrew/bin/git rev-parse refs/remotes/origin/main
+2025-02-24T05:29:55.1582450Z 01152b56b9607a5cc1dabb9e94970cc589baff01
+2025-02-24T05:29:55.1590520Z ##[endgroup]
+2025-02-24T05:29:55.1590880Z ##[group]Determining the checkout info
+2025-02-24T05:29:55.1593000Z ##[endgroup]
+2025-02-24T05:29:55.1601230Z [command]/opt/homebrew/bin/git sparse-checkout disable
+2025-02-24T05:29:55.1691220Z [command]/opt/homebrew/bin/git config --local --unset-all extensions.worktreeConfig
+2025-02-24T05:29:55.1744780Z ##[group]Checking out the ref
+2025-02-24T05:29:55.1756310Z [command]/opt/homebrew/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2025-02-24T05:29:55.5364010Z Switched to a new branch 'main'
+2025-02-24T05:29:55.5365810Z branch 'main' set up to track 'origin/main'.
+2025-02-24T05:29:55.5388250Z ##[endgroup]
+2025-02-24T05:29:55.5506690Z [command]/opt/homebrew/bin/git log -1 --format=%H
+2025-02-24T05:29:55.5551570Z 01152b56b9607a5cc1dabb9e94970cc589baff01
+2025-02-24T05:29:55.5758480Z ##[group]Run actions/setup-python@v5.4.0
+2025-02-24T05:29:55.5759060Z with:
+2025-02-24T05:29:55.5759450Z   python-version: 3.12
+2025-02-24T05:29:55.5759870Z   check-latest: false
+2025-02-24T05:29:55.5760680Z   token: ***
+2025-02-24T05:29:55.5761080Z   update-environment: true
+2025-02-24T05:29:55.5761590Z   allow-prereleases: false
+2025-02-24T05:29:55.5762220Z env:
+2025-02-24T05:29:55.5762620Z   min_python_version: 3.9
+2025-02-24T05:29:55.5763040Z   max_python_version: 3.12
+2025-02-24T05:29:55.5763580Z   FORCE_COLOR: 1
+2025-02-24T05:29:55.5764130Z ##[endgroup]
+2025-02-24T05:29:55.7277250Z ##[group]Installed versions
+2025-02-24T05:29:55.7399850Z Successfully set up CPython (3.12.8)
+2025-02-24T05:29:55.7400500Z ##[endgroup]
+2025-02-24T05:29:55.7492430Z ##[group]Run # Use the development version of Briefcase
+2025-02-24T05:29:55.7492710Z [36;1m[0m
+2025-02-24T05:29:55.7492890Z [36;1m# Use the development version of Briefcase[0m
+2025-02-24T05:29:55.7493130Z [36;1mpython -m pip install -U pip[0m
+2025-02-24T05:29:55.7493480Z [36;1mpython -m pip install git+https://github.com/beeware/briefcase.git[0m
+2025-02-24T05:29:55.7586450Z shell: /bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-24T05:29:55.7587180Z env:
+2025-02-24T05:29:55.7587570Z   min_python_version: 3.9
+2025-02-24T05:29:55.7588050Z   max_python_version: 3.12
+2025-02-24T05:29:55.7588480Z   FORCE_COLOR: 1
+2025-02-24T05:29:55.7589220Z   pythonLocation: /Users/runner/hostedtoolcache/Python/3.12.8/arm64
+2025-02-24T05:29:55.7590250Z   PKG_CONFIG_PATH: /Users/runner/hostedtoolcache/Python/3.12.8/arm64/lib/pkgconfig
+2025-02-24T05:29:55.7591320Z   Python_ROOT_DIR: /Users/runner/hostedtoolcache/Python/3.12.8/arm64
+2025-02-24T05:29:55.7592340Z   Python2_ROOT_DIR: /Users/runner/hostedtoolcache/Python/3.12.8/arm64
+2025-02-24T05:29:55.7593270Z   Python3_ROOT_DIR: /Users/runner/hostedtoolcache/Python/3.12.8/arm64
+2025-02-24T05:29:55.7594030Z   PIP_BREAK_SYSTEM_PACKAGES: 1
+2025-02-24T05:29:55.7594560Z ##[endgroup]
+2025-02-24T05:29:57.2088400Z Requirement already satisfied: pip in /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages (24.3.1)
+2025-02-24T05:29:57.4139470Z Collecting pip
+2025-02-24T05:29:57.4403570Z   Downloading pip-25.0.1-py3-none-any.whl.metadata (3.7 kB)
+2025-02-24T05:29:57.4509920Z Downloading pip-25.0.1-py3-none-any.whl (1.8 MB)
+2025-02-24T05:29:57.4949270Z [?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/1.8 MB[0m [31m?[0m eta [36m-:--:--[0m
+2025-02-24T05:29:57.4950640Z [2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1.8/1.8 MB[0m [31m40.3 MB/s[0m eta [36m0:00:00[0m
+2025-02-24T05:29:57.5073820Z [?25hInstalling collected packages: pip
+2025-02-24T05:29:57.5075070Z   Attempting uninstall: pip
+2025-02-24T05:29:57.5086000Z     Found existing installation: pip 24.3.1
+2025-02-24T05:29:57.5290040Z     Uninstalling pip-24.3.1:
+2025-02-24T05:29:57.6710900Z       Successfully uninstalled pip-24.3.1
+2025-02-24T05:29:58.4804390Z Successfully installed pip-25.0.1
+2025-02-24T05:29:58.9727670Z Collecting git+https://github.com/beeware/briefcase.git
+2025-02-24T05:29:58.9731780Z   Cloning https://github.com/beeware/briefcase.git to /private/var/folders/2s/h6hvv9ps03xgz_krkkstvq_r0000gn/T/pip-req-build-4mflnp3u
+2025-02-24T05:29:58.9789760Z   Running command git clone --filter=blob:none --quiet https://github.com/beeware/briefcase.git /private/var/folders/2s/h6hvv9ps03xgz_krkkstvq_r0000gn/T/pip-req-build-4mflnp3u
+2025-02-24T05:30:01.5996120Z   Resolved https://github.com/beeware/briefcase.git to commit 647c8ff5965677d4cee5cccaa37536b2d744096e
+2025-02-24T05:30:01.6153210Z   Installing build dependencies: started
+2025-02-24T05:30:02.7894800Z   Installing build dependencies: finished with status 'done'
+2025-02-24T05:30:02.7902310Z   Getting requirements to build wheel: started
+2025-02-24T05:30:03.0854870Z   Getting requirements to build wheel: finished with status 'done'
+2025-02-24T05:30:03.0858200Z   Preparing metadata (pyproject.toml): started
+2025-02-24T05:30:03.5388520Z   Preparing metadata (pyproject.toml): finished with status 'done'
+2025-02-24T05:30:03.5716210Z Collecting packaging>=24.2 (from briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:03.5734740Z   Using cached packaging-24.2-py3-none-any.whl.metadata (3.2 kB)
+2025-02-24T05:30:03.5753420Z Requirement already satisfied: pip>=24.3 in /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages (from briefcase==0.3.23.dev11+g647c8ff5) (25.0.1)
+2025-02-24T05:30:03.6429810Z Collecting setuptools>=60 (from briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:03.6440590Z   Using cached setuptools-75.8.0-py3-none-any.whl.metadata (6.7 kB)
+2025-02-24T05:30:03.6701740Z Collecting wheel>=0.37 (from briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:03.6822760Z   Downloading wheel-0.45.1-py3-none-any.whl.metadata (2.3 kB)
+2025-02-24T05:30:03.6945770Z Collecting build>=0.10 (from briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:03.6976340Z   Downloading build-1.2.2.post1-py3-none-any.whl.metadata (6.5 kB)
+2025-02-24T05:30:03.7125660Z Collecting cookiecutter<3.0,>=2.6.0 (from briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:03.7156180Z   Downloading cookiecutter-2.6.0-py3-none-any.whl.metadata (7.3 kB)
+2025-02-24T05:30:03.7266400Z Collecting dmgbuild<2.0,>=1.6.4 (from briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:03.7300590Z   Downloading dmgbuild-1.6.4-py3-none-any.whl.metadata (3.2 kB)
+2025-02-24T05:30:03.7480070Z Collecting GitPython<4.0,>=3.1 (from briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:03.7514640Z   Downloading GitPython-3.1.44-py3-none-any.whl.metadata (13 kB)
+2025-02-24T05:30:03.7656740Z Collecting platformdirs<5.0,>=2.6 (from briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:03.7686710Z   Downloading platformdirs-4.3.6-py3-none-any.whl.metadata (11 kB)
+2025-02-24T05:30:03.8056700Z Collecting psutil<8.0,>=5.9 (from briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:03.8119900Z   Downloading psutil-7.0.0-cp36-abi3-macosx_11_0_arm64.whl.metadata (22 kB)
+2025-02-24T05:30:03.8268440Z Collecting python-dateutil>=2.9.0.post0 (from briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:03.8299920Z   Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+2025-02-24T05:30:03.8463860Z Collecting httpx<1.0,>=0.20 (from briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:03.8491640Z   Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+2025-02-24T05:30:03.8760890Z Collecting rich<14.0,>=12.6 (from briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:03.8805550Z   Downloading rich-13.9.4-py3-none-any.whl.metadata (18 kB)
+2025-02-24T05:30:03.9024640Z Collecting tomli_w<2.0,>=1.0 (from briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:03.9074710Z   Downloading tomli_w-1.2.0-py3-none-any.whl.metadata (5.7 kB)
+2025-02-24T05:30:03.9253210Z Collecting pyproject_hooks (from build>=0.10->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:03.9280760Z   Downloading pyproject_hooks-1.2.0-py3-none-any.whl.metadata (1.3 kB)
+2025-02-24T05:30:03.9394020Z Collecting binaryornot>=0.4.4 (from cookiecutter<3.0,>=2.6.0->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:03.9425030Z   Downloading binaryornot-0.4.4-py2.py3-none-any.whl.metadata (6.0 kB)
+2025-02-24T05:30:03.9618380Z Collecting Jinja2<4.0.0,>=2.7 (from cookiecutter<3.0,>=2.6.0->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:03.9650750Z   Downloading jinja2-3.1.5-py3-none-any.whl.metadata (2.6 kB)
+2025-02-24T05:30:03.9804640Z Collecting click<9.0.0,>=7.0 (from cookiecutter<3.0,>=2.6.0->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:03.9833570Z   Downloading click-8.1.8-py3-none-any.whl.metadata (2.3 kB)
+2025-02-24T05:30:04.0064670Z Collecting pyyaml>=5.3.1 (from cookiecutter<3.0,>=2.6.0->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:04.0107530Z   Downloading PyYAML-6.0.2-cp312-cp312-macosx_11_0_arm64.whl.metadata (2.1 kB)
+2025-02-24T05:30:04.0229250Z Collecting python-slugify>=4.0.0 (from cookiecutter<3.0,>=2.6.0->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:04.0264190Z   Downloading python_slugify-8.0.4-py2.py3-none-any.whl.metadata (8.5 kB)
+2025-02-24T05:30:04.0448500Z Collecting requests>=2.23.0 (from cookiecutter<3.0,>=2.6.0->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:04.0479030Z   Downloading requests-2.32.3-py3-none-any.whl.metadata (4.6 kB)
+2025-02-24T05:30:04.0613340Z Collecting arrow (from cookiecutter<3.0,>=2.6.0->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:04.0641440Z   Downloading arrow-1.3.0-py3-none-any.whl.metadata (7.5 kB)
+2025-02-24T05:30:04.0767690Z Collecting ds_store>=1.1.0 (from dmgbuild<2.0,>=1.6.4->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:04.0808350Z   Downloading ds_store-1.3.1-py3-none-any.whl.metadata (3.0 kB)
+2025-02-24T05:30:04.0924030Z Collecting mac_alias>=2.0.1 (from dmgbuild<2.0,>=1.6.4->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:04.0974510Z   Downloading mac_alias-2.2.2-py3-none-any.whl.metadata (3.1 kB)
+2025-02-24T05:30:04.1109120Z Collecting gitdb<5,>=4.0.1 (from GitPython<4.0,>=3.1->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:04.1135240Z   Downloading gitdb-4.0.12-py3-none-any.whl.metadata (1.2 kB)
+2025-02-24T05:30:04.1281780Z Collecting anyio (from httpx<1.0,>=0.20->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:04.1314660Z   Downloading anyio-4.8.0-py3-none-any.whl.metadata (4.6 kB)
+2025-02-24T05:30:04.1380470Z Requirement already satisfied: certifi in /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages (from httpx<1.0,>=0.20->briefcase==0.3.23.dev11+g647c8ff5) (2024.12.14)
+2025-02-24T05:30:04.1488380Z Collecting httpcore==1.* (from httpx<1.0,>=0.20->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:04.1520870Z   Downloading httpcore-1.0.7-py3-none-any.whl.metadata (21 kB)
+2025-02-24T05:30:04.1687350Z Collecting idna (from httpx<1.0,>=0.20->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:04.1724690Z   Downloading idna-3.10-py3-none-any.whl.metadata (10 kB)
+2025-02-24T05:30:04.1872630Z Collecting h11<0.15,>=0.13 (from httpcore==1.*->httpx<1.0,>=0.20->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:04.1911370Z   Downloading h11-0.14.0-py3-none-any.whl.metadata (8.2 kB)
+2025-02-24T05:30:04.2068060Z Collecting six>=1.5 (from python-dateutil>=2.9.0.post0->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:04.2101900Z   Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+2025-02-24T05:30:04.2231950Z Collecting markdown-it-py>=2.2.0 (from rich<14.0,>=12.6->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:04.2264420Z   Downloading markdown_it_py-3.0.0-py3-none-any.whl.metadata (6.9 kB)
+2025-02-24T05:30:04.2428810Z Collecting pygments<3.0.0,>=2.13.0 (from rich<14.0,>=12.6->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:04.2466500Z   Downloading pygments-2.19.1-py3-none-any.whl.metadata (2.5 kB)
+2025-02-24T05:30:04.2621350Z Collecting chardet>=3.0.2 (from binaryornot>=0.4.4->cookiecutter<3.0,>=2.6.0->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:04.2650060Z   Downloading chardet-5.2.0-py3-none-any.whl.metadata (3.4 kB)
+2025-02-24T05:30:04.2812440Z Collecting smmap<6,>=3.0.1 (from gitdb<5,>=4.0.1->GitPython<4.0,>=3.1->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:04.2848160Z   Downloading smmap-5.0.2-py3-none-any.whl.metadata (4.3 kB)
+2025-02-24T05:30:04.3139060Z Collecting MarkupSafe>=2.0 (from Jinja2<4.0.0,>=2.7->cookiecutter<3.0,>=2.6.0->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:04.3184910Z   Downloading MarkupSafe-3.0.2-cp312-cp312-macosx_11_0_arm64.whl.metadata (4.0 kB)
+2025-02-24T05:30:04.3309700Z Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich<14.0,>=12.6->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:04.3338580Z   Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+2025-02-24T05:30:04.3693040Z Collecting text-unidecode>=1.3 (from python-slugify>=4.0.0->cookiecutter<3.0,>=2.6.0->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:04.3732940Z   Downloading text_unidecode-1.3-py2.py3-none-any.whl.metadata (2.4 kB)
+2025-02-24T05:30:04.4102450Z Collecting charset-normalizer<4,>=2 (from requests>=2.23.0->cookiecutter<3.0,>=2.6.0->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:04.4147230Z   Downloading charset_normalizer-3.4.1-cp312-cp312-macosx_10_13_universal2.whl.metadata (35 kB)
+2025-02-24T05:30:04.4344700Z Collecting urllib3<3,>=1.21.1 (from requests>=2.23.0->cookiecutter<3.0,>=2.6.0->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:04.4390500Z   Downloading urllib3-2.3.0-py3-none-any.whl.metadata (6.5 kB)
+2025-02-24T05:30:04.4536320Z Collecting sniffio>=1.1 (from anyio->httpx<1.0,>=0.20->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:04.4575630Z   Downloading sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+2025-02-24T05:30:04.4706620Z Collecting typing_extensions>=4.5 (from anyio->httpx<1.0,>=0.20->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:04.4766480Z   Downloading typing_extensions-4.12.2-py3-none-any.whl.metadata (3.0 kB)
+2025-02-24T05:30:04.4938290Z Collecting types-python-dateutil>=2.8.10 (from arrow->cookiecutter<3.0,>=2.6.0->briefcase==0.3.23.dev11+g647c8ff5)
+2025-02-24T05:30:04.4971280Z   Downloading types_python_dateutil-2.9.0.20241206-py3-none-any.whl.metadata (2.1 kB)
+2025-02-24T05:30:04.5123030Z Downloading build-1.2.2.post1-py3-none-any.whl (22 kB)
+2025-02-24T05:30:04.5185230Z Downloading cookiecutter-2.6.0-py3-none-any.whl (39 kB)
+2025-02-24T05:30:04.5284790Z Downloading dmgbuild-1.6.4-py3-none-any.whl (34 kB)
+2025-02-24T05:30:04.5383660Z Downloading GitPython-3.1.44-py3-none-any.whl (207 kB)
+2025-02-24T05:30:04.5483830Z Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+2025-02-24T05:30:04.5576020Z Downloading httpcore-1.0.7-py3-none-any.whl (78 kB)
+2025-02-24T05:30:04.5632860Z Using cached packaging-24.2-py3-none-any.whl (65 kB)
+2025-02-24T05:30:04.5682980Z Downloading platformdirs-4.3.6-py3-none-any.whl (18 kB)
+2025-02-24T05:30:04.5812600Z Downloading psutil-7.0.0-cp36-abi3-macosx_11_0_arm64.whl (239 kB)
+2025-02-24T05:30:04.6183980Z Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+2025-02-24T05:30:04.6319630Z Downloading rich-13.9.4-py3-none-any.whl (242 kB)
+2025-02-24T05:30:04.6370570Z Using cached setuptools-75.8.0-py3-none-any.whl (1.2 MB)
+2025-02-24T05:30:04.6412600Z Downloading tomli_w-1.2.0-py3-none-any.whl (6.7 kB)
+2025-02-24T05:30:04.6525800Z Downloading wheel-0.45.1-py3-none-any.whl (72 kB)
+2025-02-24T05:30:04.6611900Z Downloading binaryornot-0.4.4-py2.py3-none-any.whl (9.0 kB)
+2025-02-24T05:30:04.6704550Z Downloading click-8.1.8-py3-none-any.whl (98 kB)
+2025-02-24T05:30:04.6835400Z Downloading ds_store-1.3.1-py3-none-any.whl (16 kB)
+2025-02-24T05:30:04.6922390Z Downloading gitdb-4.0.12-py3-none-any.whl (62 kB)
+2025-02-24T05:30:04.6986200Z Downloading jinja2-3.1.5-py3-none-any.whl (134 kB)
+2025-02-24T05:30:04.7120710Z Downloading mac_alias-2.2.2-py3-none-any.whl (21 kB)
+2025-02-24T05:30:04.7190780Z Downloading markdown_it_py-3.0.0-py3-none-any.whl (87 kB)
+2025-02-24T05:30:04.7262790Z Downloading pygments-2.19.1-py3-none-any.whl (1.2 MB)
+2025-02-24T05:30:04.7408490Z [?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/1.2 MB[0m [31m?[0m eta [36m-:--:--[0m
+2025-02-24T05:30:04.7411560Z [2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1.2/1.2 MB[0m [31m76.1 MB/s[0m eta [36m0:00:00[0m
+2025-02-24T05:30:04.7449580Z [?25hDownloading python_slugify-8.0.4-py2.py3-none-any.whl (10 kB)
+2025-02-24T05:30:04.7531250Z Downloading PyYAML-6.0.2-cp312-cp312-macosx_11_0_arm64.whl (173 kB)
+2025-02-24T05:30:04.7619130Z Downloading requests-2.32.3-py3-none-any.whl (64 kB)
+2025-02-24T05:30:04.7685490Z Downloading idna-3.10-py3-none-any.whl (70 kB)
+2025-02-24T05:30:04.7766470Z Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+2025-02-24T05:30:04.7821060Z Downloading anyio-4.8.0-py3-none-any.whl (96 kB)
+2025-02-24T05:30:04.7872610Z Downloading arrow-1.3.0-py3-none-any.whl (66 kB)
+2025-02-24T05:30:04.7925420Z Downloading pyproject_hooks-1.2.0-py3-none-any.whl (10 kB)
+2025-02-24T05:30:04.7976850Z Downloading chardet-5.2.0-py3-none-any.whl (199 kB)
+2025-02-24T05:30:04.8053380Z Downloading charset_normalizer-3.4.1-cp312-cp312-macosx_10_13_universal2.whl (196 kB)
+2025-02-24T05:30:04.8110270Z Downloading h11-0.14.0-py3-none-any.whl (58 kB)
+2025-02-24T05:30:04.8177900Z Downloading MarkupSafe-3.0.2-cp312-cp312-macosx_11_0_arm64.whl (12 kB)
+2025-02-24T05:30:04.8226140Z Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+2025-02-24T05:30:04.8273310Z Downloading smmap-5.0.2-py3-none-any.whl (24 kB)
+2025-02-24T05:30:04.8332640Z Downloading sniffio-1.3.1-py3-none-any.whl (10 kB)
+2025-02-24T05:30:04.8378880Z Downloading text_unidecode-1.3-py2.py3-none-any.whl (78 kB)
+2025-02-24T05:30:04.8430510Z Downloading types_python_dateutil-2.9.0.20241206-py3-none-any.whl (14 kB)
+2025-02-24T05:30:04.8482040Z Downloading typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+2025-02-24T05:30:04.8544260Z Downloading urllib3-2.3.0-py3-none-any.whl (128 kB)
+2025-02-24T05:30:04.8798900Z Building wheels for collected packages: briefcase
+2025-02-24T05:30:04.8802420Z   Building wheel for briefcase (pyproject.toml): started
+2025-02-24T05:30:05.2806640Z   Building wheel for briefcase (pyproject.toml): finished with status 'done'
+2025-02-24T05:30:05.2822410Z   Created wheel for briefcase: filename=briefcase-0.3.23.dev11+g647c8ff5-py3-none-any.whl size=240736 sha256=0cab3237d548128ed8aa590eb7acc092bdfe61c75b361a091e00dc39419dd4a8
+2025-02-24T05:30:05.2825440Z   Stored in directory: /private/var/folders/2s/h6hvv9ps03xgz_krkkstvq_r0000gn/T/pip-ephem-wheel-cache-726o5wcc/wheels/c5/04/18/55524f7f66d67aa89c0ad161b560d13d7948240e6934e45f7e
+2025-02-24T05:30:05.2844820Z Successfully built briefcase
+2025-02-24T05:30:05.3188600Z Installing collected packages: text-unidecode, wheel, urllib3, typing_extensions, types-python-dateutil, tomli_w, sniffio, smmap, six, setuptools, pyyaml, python-slugify, pyproject_hooks, pygments, psutil, platformdirs, packaging, mdurl, MarkupSafe, mac_alias, idna, h11, click, charset-normalizer, chardet, requests, python-dateutil, markdown-it-py, Jinja2, httpcore, gitdb, ds_store, build, binaryornot, anyio, rich, httpx, GitPython, dmgbuild, arrow, cookiecutter, briefcase
+2025-02-24T05:30:07.7008350Z Successfully installed GitPython-3.1.44 Jinja2-3.1.5 MarkupSafe-3.0.2 anyio-4.8.0 arrow-1.3.0 binaryornot-0.4.4 briefcase-0.3.23.dev11+g647c8ff5 build-1.2.2.post1 chardet-5.2.0 charset-normalizer-3.4.1 click-8.1.8 cookiecutter-2.6.0 dmgbuild-1.6.4 ds_store-1.3.1 gitdb-4.0.12 h11-0.14.0 httpcore-1.0.7 httpx-0.28.1 idna-3.10 mac_alias-2.2.2 markdown-it-py-3.0.0 mdurl-0.1.2 packaging-24.2 platformdirs-4.3.6 psutil-7.0.0 pygments-2.19.1 pyproject_hooks-1.2.0 python-dateutil-2.9.0.post0 python-slugify-8.0.4 pyyaml-6.0.2 requests-2.32.3 rich-13.9.4 setuptools-75.8.0 six-1.17.0 smmap-5.0.2 sniffio-1.3.1 text-unidecode-1.3 tomli_w-1.2.0 types-python-dateutil-2.9.0.20241206 typing_extensions-4.12.2 urllib3-2.3.0 wheel-0.45.1
+2025-02-24T05:30:07.9019980Z ##[group]Run actions/download-artifact@v4.1.8
+2025-02-24T05:30:07.9020210Z with:
+2025-02-24T05:30:07.9020370Z   pattern: Packages-toga-*
+2025-02-24T05:30:07.9020540Z   merge-multiple: true
+2025-02-24T05:30:07.9020680Z   path: dist
+2025-02-24T05:30:07.9020810Z   repository: beeware/toga
+2025-02-24T05:30:07.9020950Z   run-id: 13491433041
+2025-02-24T05:30:07.9021080Z env:
+2025-02-24T05:30:07.9021220Z   min_python_version: 3.9
+2025-02-24T05:30:07.9021380Z   max_python_version: 3.12
+2025-02-24T05:30:07.9021540Z   FORCE_COLOR: 1
+2025-02-24T05:30:07.9021770Z   pythonLocation: /Users/runner/hostedtoolcache/Python/3.12.8/arm64
+2025-02-24T05:30:07.9022150Z   PKG_CONFIG_PATH: /Users/runner/hostedtoolcache/Python/3.12.8/arm64/lib/pkgconfig
+2025-02-24T05:30:07.9022520Z   Python_ROOT_DIR: /Users/runner/hostedtoolcache/Python/3.12.8/arm64
+2025-02-24T05:30:07.9022850Z   Python2_ROOT_DIR: /Users/runner/hostedtoolcache/Python/3.12.8/arm64
+2025-02-24T05:30:07.9023590Z   Python3_ROOT_DIR: /Users/runner/hostedtoolcache/Python/3.12.8/arm64
+2025-02-24T05:30:07.9023840Z ##[endgroup]
+2025-02-24T05:30:08.1455300Z Found 56 artifact(s)
+2025-02-24T05:30:08.1457480Z Filtering artifacts by pattern 'Packages-toga-*'
+2025-02-24T05:30:08.1474400Z Preparing to download the following artifacts:
+2025-02-24T05:30:08.1475510Z - Packages-toga-winforms (ID: 2639028467, Size: 912617)
+2025-02-24T05:30:08.1476450Z - Packages-toga-android (ID: 2639028440, Size: 138194)
+2025-02-24T05:30:08.1477380Z - Packages-toga-gtk (ID: 2639028386, Size: 142074)
+2025-02-24T05:30:08.1479900Z - Packages-toga-iOS (ID: 2639028383, Size: 872356)
+2025-02-24T05:30:08.1481820Z - Packages-toga-toga (ID: 2639028349, Size: 7274)
+2025-02-24T05:30:08.1482990Z - Packages-toga-core (ID: 2639028344, Size: 1153697)
+2025-02-24T05:30:08.1483870Z - Packages-toga-dummy (ID: 2639028309, Size: 148484)
+2025-02-24T05:30:08.1484740Z - Packages-toga-web (ID: 2639028241, Size: 34922)
+2025-02-24T05:30:08.1488340Z - Packages-toga-textual (ID: 2639028202, Size: 32035)
+2025-02-24T05:30:08.1489600Z - Packages-toga-travertino (ID: 2639028133, Size: 62305)
+2025-02-24T05:30:08.1490690Z - Packages-toga-demo (ID: 2639028110, Size: 1242381)
+2025-02-24T05:30:08.1499900Z - Packages-toga-cocoa (ID: 2639028073, Size: 929338)
+2025-02-24T05:30:08.2161080Z Redirecting to blob download url: https://productionresultssa12.blob.core.windows.net/actions-results/cf52b554-71be-4a91-94b2-8eec2b4d890b/workflow-job-run-866e389a-a1a0-5c67-a00f-72c22223abfe/artifacts/b4bca85baf5c112d5a88797759fe2e27b3de49b97e7268608199152765d6405a.zip
+2025-02-24T05:30:08.2163800Z Starting download of artifact to: /Users/runner/work/toga/toga/dist
+2025-02-24T05:30:08.2326040Z Redirecting to blob download url: https://productionresultssa12.blob.core.windows.net/actions-results/cf52b554-71be-4a91-94b2-8eec2b4d890b/workflow-job-run-3124742b-843a-5b41-b426-aef8afedb9f7/artifacts/442c3fefacaa5f4a317396d7241d3673a3eab28c29b7e651a0b97534d592e35d.zip
+2025-02-24T05:30:08.2328640Z Starting download of artifact to: /Users/runner/work/toga/toga/dist
+2025-02-24T05:30:08.2346290Z Redirecting to blob download url: https://productionresultssa12.blob.core.windows.net/actions-results/cf52b554-71be-4a91-94b2-8eec2b4d890b/workflow-job-run-c851c84b-57ed-5071-9878-2279ccd891b8/artifacts/5eb57499beb40f05e15583bbf1c077df75bc75fa11156590733b79c2f9774e5a.zip
+2025-02-24T05:30:08.2347350Z Starting download of artifact to: /Users/runner/work/toga/toga/dist
+2025-02-24T05:30:08.2372570Z Redirecting to blob download url: https://productionresultssa12.blob.core.windows.net/actions-results/cf52b554-71be-4a91-94b2-8eec2b4d890b/workflow-job-run-7815ca6b-1b41-513e-fbe7-8eccb083611a/artifacts/1660c57eb65463a413672e3e25e0e2a0d8c8794547115554b39228f20230f22e.zip
+2025-02-24T05:30:08.2373560Z Starting download of artifact to: /Users/runner/work/toga/toga/dist
+2025-02-24T05:30:08.2453500Z (node:2749) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+2025-02-24T05:30:08.2455470Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2025-02-24T05:30:08.2492620Z Redirecting to blob download url: https://productionresultssa12.blob.core.windows.net/actions-results/cf52b554-71be-4a91-94b2-8eec2b4d890b/workflow-job-run-46aa3184-e851-51af-58d5-831072cd673f/artifacts/485660db63ec446c9f562cc6bdf49c64bf27c37a329b95a30a2467812096f020.zip
+2025-02-24T05:30:08.2495250Z Starting download of artifact to: /Users/runner/work/toga/toga/dist
+2025-02-24T05:30:08.2496590Z Redirecting to blob download url: https://productionresultssa12.blob.core.windows.net/actions-results/cf52b554-71be-4a91-94b2-8eec2b4d890b/workflow-job-run-f1ed5179-285b-5126-8d3b-2df284d1f11c/artifacts/a55c024fa54bd7854415e2c7edfeb2c5046af07e859f8da7b852b08eadc84e2a.zip
+2025-02-24T05:30:08.2497500Z Starting download of artifact to: /Users/runner/work/toga/toga/dist
+2025-02-24T05:30:08.2500070Z Redirecting to blob download url: https://productionresultssa12.blob.core.windows.net/actions-results/cf52b554-71be-4a91-94b2-8eec2b4d890b/workflow-job-run-832e8880-3eb6-5d89-0c04-ef547b46a59e/artifacts/dd722970e727682fe8f4f464e3511dbda02932b6586e5f2f8ac9f8f11f50cdc9.zip
+2025-02-24T05:30:08.2500960Z Starting download of artifact to: /Users/runner/work/toga/toga/dist
+2025-02-24T05:30:08.2511350Z Redirecting to blob download url: https://productionresultssa12.blob.core.windows.net/actions-results/cf52b554-71be-4a91-94b2-8eec2b4d890b/workflow-job-run-18bbcbc6-8763-5d15-2620-0ac883eea9b0/artifacts/42ca5e4547811af7883a91d6c65b481266e15c0cdc8d243ec9aae2b558253c02.zip
+2025-02-24T05:30:08.2512310Z Starting download of artifact to: /Users/runner/work/toga/toga/dist
+2025-02-24T05:30:08.2524070Z Redirecting to blob download url: https://productionresultssa12.blob.core.windows.net/actions-results/cf52b554-71be-4a91-94b2-8eec2b4d890b/workflow-job-run-98be74ae-5157-5c81-b7d0-b2ef5821a81e/artifacts/6e0cae3735cba3d010b2e4c6917aa1f2ffe72638fbddcfcf5e7d00e456e64178.zip
+2025-02-24T05:30:08.2525060Z Starting download of artifact to: /Users/runner/work/toga/toga/dist
+2025-02-24T05:30:08.2605700Z Redirecting to blob download url: https://productionresultssa12.blob.core.windows.net/actions-results/cf52b554-71be-4a91-94b2-8eec2b4d890b/workflow-job-run-e2a6fa47-47a3-5188-27fb-56f4e71042c8/artifacts/5425332638acb926f3e0f42935440601f1f6cf4c943281c5f8b926bd1948bc25.zip
+2025-02-24T05:30:08.2607300Z Starting download of artifact to: /Users/runner/work/toga/toga/dist
+2025-02-24T05:30:08.2818190Z Redirecting to blob download url: https://productionresultssa12.blob.core.windows.net/actions-results/cf52b554-71be-4a91-94b2-8eec2b4d890b/workflow-job-run-996a8579-f179-559d-4190-0dfa80ff20d7/artifacts/78e64f25892d1e62a7fba16b04b2d38f38656067df6d708afd5432245debf794.zip
+2025-02-24T05:30:08.2819430Z Starting download of artifact to: /Users/runner/work/toga/toga/dist
+2025-02-24T05:30:08.2823290Z Redirecting to blob download url: https://productionresultssa12.blob.core.windows.net/actions-results/cf52b554-71be-4a91-94b2-8eec2b4d890b/workflow-job-run-137efbf3-bb9f-5901-016f-a9ca027ec083/artifacts/3f2c1a4e1441705d00c0abbd5f3913c6b215c2d9365be6ffa9fcc342e7742def.zip
+2025-02-24T05:30:08.2824440Z Starting download of artifact to: /Users/runner/work/toga/toga/dist
+2025-02-24T05:30:08.3083150Z Artifact download completed successfully.
+2025-02-24T05:30:08.3178670Z Artifact download completed successfully.
+2025-02-24T05:30:08.3181370Z Artifact download completed successfully.
+2025-02-24T05:30:08.3185100Z Artifact download completed successfully.
+2025-02-24T05:30:08.3190290Z Artifact download completed successfully.
+2025-02-24T05:30:08.3303250Z Artifact download completed successfully.
+2025-02-24T05:30:08.3335170Z Artifact download completed successfully.
+2025-02-24T05:30:08.3583030Z Artifact download completed successfully.
+2025-02-24T05:30:08.3601420Z Artifact download completed successfully.
+2025-02-24T05:30:08.3669970Z Artifact download completed successfully.
+2025-02-24T05:30:08.3698140Z Artifact download completed successfully.
+2025-02-24T05:30:08.3718550Z Artifact download completed successfully.
+2025-02-24T05:30:08.3719350Z Total of 12 artifact(s) downloaded
+2025-02-24T05:30:08.3719670Z Download artifact has finished successfully
+2025-02-24T05:30:08.3797280Z ##[group]Run \
+2025-02-24T05:30:08.3797440Z [36;1m \[0m
+2025-02-24T05:30:08.3797780Z [36;1m  briefcase run macOS --log --test --config 'requires=["toga-core", "toga-textual"]' --config 'console_app=true' -- --ci[0m
+2025-02-24T05:30:08.3853010Z shell: /bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-24T05:30:08.3853250Z env:
+2025-02-24T05:30:08.3853390Z   min_python_version: 3.9
+2025-02-24T05:30:08.3853550Z   max_python_version: 3.12
+2025-02-24T05:30:08.3853720Z   FORCE_COLOR: 1
+2025-02-24T05:30:08.3853950Z   pythonLocation: /Users/runner/hostedtoolcache/Python/3.12.8/arm64
+2025-02-24T05:30:08.3854340Z   PKG_CONFIG_PATH: /Users/runner/hostedtoolcache/Python/3.12.8/arm64/lib/pkgconfig
+2025-02-24T05:30:08.3855000Z   Python_ROOT_DIR: /Users/runner/hostedtoolcache/Python/3.12.8/arm64
+2025-02-24T05:30:08.3855370Z   Python2_ROOT_DIR: /Users/runner/hostedtoolcache/Python/3.12.8/arm64
+2025-02-24T05:30:08.3855780Z   Python3_ROOT_DIR: /Users/runner/hostedtoolcache/Python/3.12.8/arm64
+2025-02-24T05:30:08.3856030Z ##[endgroup]
+2025-02-24T05:30:08.7250070Z 
+2025-02-24T05:30:08.7257850Z [2m[testbed][0m Generating application template...
+2025-02-24T05:30:08.7270880Z Using app template: [4;94mhttps://github.com/beeware/briefcase-macOS-app-template.git,[0m branch v0.3.23
+2025-02-24T05:30:08.7274890Z Cloning template '[4;94mhttps://github.com/beeware/briefcase-macOS-app-template.git[0m'...
+2025-02-24T05:30:10.0551830Z Template branch v0.3.23 not found; falling back to development template
+2025-02-24T05:30:10.5810010Z Using existing template (sha e8082ea4d3310d7605e12f4ab1fa7ff7b637b974, updated Thu Jan 23 22:43:48 2025)
+2025-02-24T05:30:11.4767200Z 
+2025-02-24T05:30:11.4773150Z [2m[testbed][0m Installing support package...
+2025-02-24T05:30:11.4779570Z Using support package [4;94mhttps://briefcase-support.s3.amazonaws.com/python/3.12/macOS/Python-3.12-macOS-support.b6.tar.gz[0m
+2025-02-24T05:30:11.8336600Z Downloading Python-3.12-macOS-support.b6.tar.gz...
+2025-02-24T05:30:13.1238990Z Unpacking support package... started
+2025-02-24T05:30:14.2652920Z Unpacking support package... done
+2025-02-24T05:30:14.2658010Z Copying standard library into app bundle... started
+2025-02-24T05:30:15.0453290Z Copying standard library into app bundle... done
+2025-02-24T05:30:15.0462180Z 
+2025-02-24T05:30:15.0468820Z [2m[testbed][0m Installing stub binary...
+2025-02-24T05:30:15.0474080Z Using stub binary [4;94mhttps://briefcase-support.s3.amazonaws.com/python/3.12/macOS/Console-Stub-3.12-b10.zip[0m
+2025-02-24T05:30:15.3512850Z Downloading Console-Stub-3.12-b10.zip...
+2025-02-24T05:30:15.3536500Z Installing stub binary... started
+2025-02-24T05:30:15.3551690Z Installing stub binary... done
+2025-02-24T05:30:15.3552180Z 
+2025-02-24T05:30:15.3573500Z [2m[testbed][0m Installing application code...
+2025-02-24T05:30:15.3582160Z Installing src/testbed... started
+2025-02-24T05:30:15.4056600Z Installing src/testbed... done
+2025-02-24T05:30:15.4064820Z Installing tests... started
+2025-02-24T05:30:15.4276040Z Installing tests... done
+2025-02-24T05:30:15.4280250Z Installing ../cocoa/tests_backend... started
+2025-02-24T05:30:15.4465500Z Installing ../cocoa/tests_backend... done
+2025-02-24T05:30:15.4474980Z 
+2025-02-24T05:30:15.4479150Z [2m[testbed][0m Installing requirements...
+2025-02-24T05:30:15.4483080Z Installing app requirements... started
+2025-02-24T05:30:16.3535850Z Looking in links: /Users/runner/work/toga/toga/dist
+2025-02-24T05:30:16.3536630Z Ignoring fonttools: markers 'sys_platform == "linux"' don't match your environment
+2025-02-24T05:30:16.4387540Z Collecting toga-core
+2025-02-24T05:30:16.4550500Z   Downloading toga_core-0.4.9-py3-none-any.whl.metadata (5.3 kB)
+2025-02-24T05:30:16.4739530Z Collecting toga-textual
+2025-02-24T05:30:16.4786850Z   Downloading toga_textual-0.4.9-py3-none-any.whl.metadata (3.1 kB)
+2025-02-24T05:30:16.5986690Z Collecting coverage==7.6.12
+2025-02-24T05:30:16.6032990Z   Downloading coverage-7.6.12-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.5 kB)
+2025-02-24T05:30:16.6236160Z Collecting coverage-conditional-plugin==0.9.0
+2025-02-24T05:30:16.6337530Z   Downloading coverage_conditional_plugin-0.9.0-py3-none-any.whl.metadata (6.9 kB)
+2025-02-24T05:30:16.6855760Z Collecting pillow==11.0.0
+2025-02-24T05:30:16.6892430Z   Downloading pillow-11.0.0-cp312-cp312-macosx_11_0_arm64.whl.metadata (9.1 kB)
+2025-02-24T05:30:16.7090930Z Collecting pytest==8.3.4
+2025-02-24T05:30:16.7116150Z   Downloading pytest-8.3.4-py3-none-any.whl.metadata (7.5 kB)
+2025-02-24T05:30:16.7256090Z Collecting pytest-asyncio==0.25.3
+2025-02-24T05:30:16.7283780Z   Downloading pytest_asyncio-0.25.3-py3-none-any.whl.metadata (3.9 kB)
+2025-02-24T05:30:16.7407530Z Collecting packaging>=20.4 (from coverage-conditional-plugin==0.9.0)
+2025-02-24T05:30:16.7423630Z   Using cached packaging-24.2-py3-none-any.whl.metadata (3.2 kB)
+2025-02-24T05:30:16.7501500Z Collecting iniconfig (from pytest==8.3.4)
+2025-02-24T05:30:16.7526370Z   Downloading iniconfig-2.0.0-py3-none-any.whl.metadata (2.6 kB)
+2025-02-24T05:30:16.7641700Z Collecting pluggy<2,>=1.5 (from pytest==8.3.4)
+2025-02-24T05:30:16.7684040Z   Downloading pluggy-1.5.0-py3-none-any.whl.metadata (4.8 kB)
+2025-02-24T05:30:16.7942470Z Collecting travertino<0.4.0,>=0.3.0 (from toga-core)
+2025-02-24T05:30:16.8002600Z   Downloading travertino-0.3.0-py3-none-any.whl.metadata (4.3 kB)
+2025-02-24T05:30:16.8928690Z Collecting textual>=0.44.0 (from toga-textual)
+2025-02-24T05:30:16.9029890Z   Downloading textual-2.1.1-py3-none-any.whl.metadata (9.0 kB)
+2025-02-24T05:30:16.9164690Z Collecting markdown-it-py>=2.1.0 (from markdown-it-py[linkify,plugins]>=2.1.0->textual>=0.44.0->toga-textual)
+2025-02-24T05:30:16.9187180Z   Using cached markdown_it_py-3.0.0-py3-none-any.whl.metadata (6.9 kB)
+2025-02-24T05:30:16.9417560Z Collecting platformdirs<5,>=3.6.0 (from textual>=0.44.0->toga-textual)
+2025-02-24T05:30:16.9443210Z   Using cached platformdirs-4.3.6-py3-none-any.whl.metadata (11 kB)
+2025-02-24T05:30:16.9786630Z Collecting rich>=13.3.3 (from textual>=0.44.0->toga-textual)
+2025-02-24T05:30:16.9808950Z   Using cached rich-13.9.4-py3-none-any.whl.metadata (18 kB)
+2025-02-24T05:30:17.0077890Z Collecting typing-extensions<5.0.0,>=4.4.0 (from textual>=0.44.0->toga-textual)
+2025-02-24T05:30:17.0118840Z   Using cached typing_extensions-4.12.2-py3-none-any.whl.metadata (3.0 kB)
+2025-02-24T05:30:17.0272740Z Collecting mdurl~=0.1 (from markdown-it-py>=2.1.0->markdown-it-py[linkify,plugins]>=2.1.0->textual>=0.44.0->toga-textual)
+2025-02-24T05:30:17.0296480Z   Using cached mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+2025-02-24T05:30:17.0537450Z Collecting linkify-it-py<3,>=1 (from markdown-it-py[linkify,plugins]>=2.1.0->textual>=0.44.0->toga-textual)
+2025-02-24T05:30:17.0641150Z   Downloading linkify_it_py-2.0.3-py3-none-any.whl.metadata (8.5 kB)
+2025-02-24T05:30:17.1301040Z Collecting mdit-py-plugins (from markdown-it-py[linkify,plugins]>=2.1.0->textual>=0.44.0->toga-textual)
+2025-02-24T05:30:17.1360830Z   Downloading mdit_py_plugins-0.4.2-py3-none-any.whl.metadata (2.8 kB)
+2025-02-24T05:30:17.1699160Z Collecting pygments<3.0.0,>=2.13.0 (from rich>=13.3.3->textual>=0.44.0->toga-textual)
+2025-02-24T05:30:17.1726880Z   Using cached pygments-2.19.1-py3-none-any.whl.metadata (2.5 kB)
+2025-02-24T05:30:17.1949150Z Collecting uc-micro-py (from linkify-it-py<3,>=1->markdown-it-py[linkify,plugins]>=2.1.0->textual>=0.44.0->toga-textual)
+2025-02-24T05:30:17.2045180Z   Downloading uc_micro_py-1.0.3-py3-none-any.whl.metadata (2.0 kB)
+2025-02-24T05:30:17.2399850Z Downloading coverage-7.6.12-cp312-cp312-macosx_11_0_arm64.whl (208 kB)
+2025-02-24T05:30:17.2613440Z Downloading coverage_conditional_plugin-0.9.0-py3-none-any.whl (7.3 kB)
+2025-02-24T05:30:17.2799030Z Downloading pillow-11.0.0-cp312-cp312-macosx_11_0_arm64.whl (3.0 MB)
+2025-02-24T05:30:17.3594280Z [?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/3.0 MB[0m [31m?[0m eta [36m-:--:--[0m
+2025-02-24T05:30:17.3598410Z [2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m3.0/3.0 MB[0m [31m47.3 MB/s[0m eta [36m0:00:00[0m
+2025-02-24T05:30:17.3654860Z [?25hDownloading pytest-8.3.4-py3-none-any.whl (343 kB)
+2025-02-24T05:30:17.3777790Z Downloading pytest_asyncio-0.25.3-py3-none-any.whl (19 kB)
+2025-02-24T05:30:17.3930110Z Downloading toga_core-0.4.9-py3-none-any.whl (140 kB)
+2025-02-24T05:30:17.4037810Z Downloading toga_textual-0.4.9-py3-none-any.whl (17 kB)
+2025-02-24T05:30:17.4153090Z Using cached packaging-24.2-py3-none-any.whl (65 kB)
+2025-02-24T05:30:17.4191610Z Downloading pluggy-1.5.0-py3-none-any.whl (20 kB)
+2025-02-24T05:30:17.4327770Z Downloading textual-2.1.1-py3-none-any.whl (679 kB)
+2025-02-24T05:30:17.4437210Z [?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/679.9 kB[0m [31m?[0m eta [36m-:--:--[0m
+2025-02-24T05:30:17.4446130Z [2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m679.9/679.9 kB[0m [31m57.7 MB/s[0m eta [36m0:00:00[0m
+2025-02-24T05:30:17.4493050Z [?25hDownloading travertino-0.3.0-py3-none-any.whl (16 kB)
+2025-02-24T05:30:17.4609110Z Downloading iniconfig-2.0.0-py3-none-any.whl (5.9 kB)
+2025-02-24T05:30:17.4698550Z Using cached markdown_it_py-3.0.0-py3-none-any.whl (87 kB)
+2025-02-24T05:30:17.4731270Z Using cached platformdirs-4.3.6-py3-none-any.whl (18 kB)
+2025-02-24T05:30:17.4780080Z Using cached rich-13.9.4-py3-none-any.whl (242 kB)
+2025-02-24T05:30:17.4790410Z Using cached typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+2025-02-24T05:30:17.4854840Z Downloading linkify_it_py-2.0.3-py3-none-any.whl (19 kB)
+2025-02-24T05:30:17.4944040Z Using cached mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+2025-02-24T05:30:17.4976900Z Using cached pygments-2.19.1-py3-none-any.whl (1.2 MB)
+2025-02-24T05:30:17.5053260Z Downloading mdit_py_plugins-0.4.2-py3-none-any.whl (55 kB)
+2025-02-24T05:30:17.5159360Z Downloading uc_micro_py-1.0.3-py3-none-any.whl (6.2 kB)
+2025-02-24T05:30:17.6613080Z Installing collected packages: uc-micro-py, typing-extensions, travertino, pygments, pluggy, platformdirs, pillow, packaging, mdurl, iniconfig, coverage, toga-core, pytest, markdown-it-py, linkify-it-py, coverage-conditional-plugin, rich, pytest-asyncio, mdit-py-plugins, textual, toga-textual
+2025-02-24T05:30:20.0559590Z Successfully installed coverage-7.6.12 coverage-conditional-plugin-0.9.0 iniconfig-2.0.0 linkify-it-py-2.0.3 markdown-it-py-3.0.0 mdit-py-plugins-0.4.2 mdurl-0.1.2 packaging-24.2 pillow-11.0.0 platformdirs-4.3.6 pluggy-1.5.0 pygments-2.19.1 pytest-8.3.4 pytest-asyncio-0.25.3 rich-13.9.4 textual-2.1.1 toga-core-0.4.9 toga-textual-0.4.9 travertino-0.3.0 typing-extensions-4.12.2 uc-micro-py-1.0.3
+2025-02-24T05:30:20.2461980Z Installing app requirements... done
+2025-02-24T05:30:20.2526760Z Installing binary app requirements for x86_64... started
+2025-02-24T05:30:20.6271750Z Looking in links: /Users/runner/work/toga/toga/dist
+2025-02-24T05:30:20.8057440Z Collecting coverage==7.6.12
+2025-02-24T05:30:20.8259260Z   Downloading coverage-7.6.12-cp312-cp312-macosx_10_13_x86_64.whl.metadata (8.5 kB)
+2025-02-24T05:30:20.9302510Z Collecting pillow==11.0.0
+2025-02-24T05:30:20.9408950Z   Downloading pillow-11.0.0-cp312-cp312-macosx_10_13_x86_64.whl.metadata (9.1 kB)
+2025-02-24T05:30:20.9766100Z Downloading coverage-7.6.12-cp312-cp312-macosx_10_13_x86_64.whl (208 kB)
+2025-02-24T05:30:20.9974340Z Downloading pillow-11.0.0-cp312-cp312-macosx_10_13_x86_64.whl (3.1 MB)
+2025-02-24T05:30:21.0237430Z [?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/3.1 MB[0m [31m?[0m eta [36m-:--:--[0m
+2025-02-24T05:30:21.0263370Z [2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m3.1/3.1 MB[0m [31m94.3 MB/s[0m eta [36m0:00:00[0m
+2025-02-24T05:30:21.0301900Z [?25hInstalling collected packages: pillow, coverage
+2025-02-24T05:30:21.4332360Z Successfully installed coverage-7.6.12 pillow-11.0.0
+2025-02-24T05:30:21.5385390Z Installing binary app requirements for x86_64... done
+2025-02-24T05:30:21.5486630Z Thinning libraries in app_packages.x86_64...
+2025-02-24T05:30:26.3714630Z Merging app_packages.arm64... started
+2025-02-24T05:30:27.5007530Z Merging app_packages.arm64... done
+2025-02-24T05:30:27.5015110Z Merging app_packages.x86_64... started
+2025-02-24T05:30:27.5275800Z Merging app_packages.x86_64... done
+2025-02-24T05:30:27.5280440Z Merging libraries...
+2025-02-24T05:30:28.2401010Z 
+2025-02-24T05:30:28.2502190Z [2m[testbed][0m Installing application resources...
+2025-02-24T05:30:28.2602300Z Installing icons/testbed.icns as application icon... started
+2025-02-24T05:30:28.2703660Z Installing icons/testbed.icns as application icon... done
+2025-02-24T05:30:28.2804560Z 
+2025-02-24T05:30:28.2905710Z [2m[testbed][0m Removing unneeded app content...
+2025-02-24T05:30:28.3006800Z Removing unneeded app bundle content... started
+2025-02-24T05:30:28.7013900Z Removing unneeded app bundle content... done
+2025-02-24T05:30:28.7114760Z 
+2025-02-24T05:30:28.7149960Z [2m[testbed][0m Created build/testbed/macos/app
+2025-02-24T05:30:28.7150410Z 
+2025-02-24T05:30:28.7150690Z [2m[testbed][0m Building App...
+2025-02-24T05:30:28.7151030Z Renaming stub binary... started
+2025-02-24T05:30:28.7151360Z Renaming stub binary... done
+2025-02-24T05:30:28.7151680Z 
+2025-02-24T05:30:28.7151900Z [2m[testbed][0m Ad-hoc signing app...
+2025-02-24T05:30:34.0479090Z 
+2025-02-24T05:30:34.0485520Z [2m[testbed][0m Built build/testbed/macos/app/Toga Testbed.app (test mode)
+2025-02-24T05:30:34.0493940Z 
+2025-02-24T05:30:34.0500080Z [2m[testbed][0m Starting test_suite...
+2025-02-24T05:30:34.0591500Z ===========================================================================
+2025-02-24T05:30:35.9744530Z Waiting for app to be ready for testing... /Users/runner/work/toga/toga/testbed/build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app_packages/toga/__init__.py:62: NotImplementedWarning: [Textual] Not implemented: Status Icons
+2025-02-24T05:30:35.9846600Z   warnings.warn(NotImplementedWarning(f"[{platform}] Not implemented: {feature}"))
+2025-02-24T05:30:35.9947550Z --ci: Don't know how to open documents with extension 
+2025-02-24T05:30:36.0048690Z /Users/runner/work/toga/toga/testbed/build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app_packages/toga/__init__.py:62: NotImplementedWarning: [Textual] Not implemented: App.create_menus()
+2025-02-24T05:30:36.0149490Z   warnings.warn(NotImplementedWarning(f"[{platform}] Not implemented: {feature}"))
+2025-02-24T05:30:36.0250350Z /Users/runner/work/toga/toga/testbed/build/testbed/macos/app/Toga Testbed.app/Contents/Resources/app_packages/toga/__init__.py:62: NotImplementedWarning: [Textual] Not implemented: Window.create_toolbar()
+2025-02-24T05:30:36.0352490Z   warnings.warn(NotImplementedWarning(f"[{platform}] Not implemented: {feature}"))
+2025-02-24T05:30:36.1560530Z ready.
+2025-02-24T05:30:40.4599550Z 
+2025-02-24T05:30:40.4611490Z [2m[testbed][0m Test suite passed!
+2025-02-24T05:30:40.4616820Z Saving log... started
+2025-02-24T05:30:40.4623640Z 
+2025-02-24T05:30:40.4854990Z [1;33mLog saved to /Users/runner/work/toga/toga/testbed/logs/briefcase.2025_02_24-05_30_40.run.log[0m[1;33m
+2025-02-24T05:30:40.4864370Z [0m
+2025-02-24T05:30:40.4864990Z Saving log... done
+2025-02-24T05:30:40.5831550Z Post job cleanup.
+2025-02-24T05:30:40.9975290Z Post job cleanup.
+2025-02-24T05:30:41.1149340Z [command]/opt/homebrew/bin/git version
+2025-02-24T05:30:41.1346440Z git version 2.48.1
+2025-02-24T05:30:41.1397700Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/b6524698-d8e1-47af-9b6c-740de660763d/.gitconfig'
+2025-02-24T05:30:41.1398510Z Temporarily overriding HOME='/Users/runner/work/_temp/b6524698-d8e1-47af-9b6c-740de660763d' before making global git config changes
+2025-02-24T05:30:41.1399210Z Adding repository directory to the temporary git global config as a safe directory
+2025-02-24T05:30:41.1409710Z [command]/opt/homebrew/bin/git config --global --add safe.directory /Users/runner/work/toga/toga
+2025-02-24T05:30:41.1568110Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-02-24T05:30:41.1580490Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-02-24T05:30:41.2372820Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-02-24T05:30:41.2411280Z http.https://github.com/.extraheader
+2025-02-24T05:30:41.2419660Z [command]/opt/homebrew/bin/git config --local --unset-all http.https://github.com/.extraheader
+2025-02-24T05:30:41.2464600Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-02-24T05:30:41.3048230Z Cleaning up orphan processes

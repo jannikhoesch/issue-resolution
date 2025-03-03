@@ -1,0 +1,1206 @@
+﻿2025-02-28T15:24:28.2342092Z Current runner version: '2.322.0'
+2025-02-28T15:24:28.2368018Z ##[group]Operating System
+2025-02-28T15:24:28.2368838Z Ubuntu
+2025-02-28T15:24:28.2369379Z 24.04.2
+2025-02-28T15:24:28.2369889Z LTS
+2025-02-28T15:24:28.2370818Z ##[endgroup]
+2025-02-28T15:24:28.2371363Z ##[group]Runner Image
+2025-02-28T15:24:28.2372008Z Image: ubuntu-24.04
+2025-02-28T15:24:28.2372538Z Version: 20250223.1.0
+2025-02-28T15:24:28.2373560Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20250223.1/images/ubuntu/Ubuntu2404-Readme.md
+2025-02-28T15:24:28.2375038Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250223.1
+2025-02-28T15:24:28.2375975Z ##[endgroup]
+2025-02-28T15:24:28.2376511Z ##[group]Runner Image Provisioner
+2025-02-28T15:24:28.2377198Z 2.0.422.1
+2025-02-28T15:24:28.2377747Z ##[endgroup]
+2025-02-28T15:24:28.2378934Z ##[group]GITHUB_TOKEN Permissions
+2025-02-28T15:24:28.2380924Z Attestations: read
+2025-02-28T15:24:28.2381742Z Contents: read
+2025-02-28T15:24:28.2382428Z Metadata: read
+2025-02-28T15:24:28.2382954Z ##[endgroup]
+2025-02-28T15:24:28.2385964Z Secret source: None
+2025-02-28T15:24:28.2386636Z Prepare workflow directory
+2025-02-28T15:24:28.2866800Z Prepare all required actions
+2025-02-28T15:24:28.2904310Z Getting action download info
+2025-02-28T15:24:28.4307422Z Download action repository 'actions/checkout@v4.2.2' (SHA:11bd71901bbe5b1630ceea73d27597364c9af683)
+2025-02-28T15:24:28.5243596Z Download action repository 'hynek/build-and-inspect-python-package@v2.12.0' (SHA:b5076c307dc91924a82ad150cdd1533b444d3310)
+2025-02-28T15:24:28.8614843Z Getting action download info
+2025-02-28T15:24:29.0705492Z Download action repository 'actions/setup-python@v5' (SHA:42375524e23c412d93fb67b49958b491fce71c38)
+2025-02-28T15:24:29.1614064Z Download action repository 'actions/cache@v4' (SHA:d4323d4df104b026a6aa633fdb11d772146be0bf)
+2025-02-28T15:24:29.4656047Z Download action repository 'actions/attest-build-provenance@v1' (SHA:ef244123eb79f2f7a7e75d99086184180e6d0018)
+2025-02-28T15:24:29.6482109Z Download action repository 'actions/upload-artifact@v4' (SHA:4cec3d8aa04e39d1a68397de0c4cd6fb9dce8ec1)
+2025-02-28T15:24:29.9730244Z Getting action download info
+2025-02-28T15:24:30.1074015Z Download action repository 'actions/attest-build-provenance@36fa7d009e22618ca7cd599486979b8150596c74' (SHA:36fa7d009e22618ca7cd599486979b8150596c74)
+2025-02-28T15:24:30.3121505Z Download action repository 'actions/attest@67422f5511b7ff725f4dbd6fb9bd2cd925c65a8d' (SHA:67422f5511b7ff725f4dbd6fb9bd2cd925c65a8d)
+2025-02-28T15:24:30.6051110Z Uses: beeware/.github/.github/workflows/python-package-create.yml@refs/heads/main (a66b93162808d34adf5280c28104b75f8e0d70d3)
+2025-02-28T15:24:30.6054669Z ##[group] Inputs
+2025-02-28T15:24:30.6055569Z   repository: beeware/toga
+2025-02-28T15:24:30.6056491Z   build-subdirectory: android
+2025-02-28T15:24:30.6057398Z   attest: 
+2025-02-28T15:24:30.6058125Z ##[endgroup]
+2025-02-28T15:24:30.6059223Z Complete job name: Package Toga (android) / Create Python Package
+2025-02-28T15:24:30.6836238Z ##[group]Run echo "repo-name=$(basename "${REPO}")" | tee -a ${GITHUB_OUTPUT}
+2025-02-28T15:24:30.6838056Z [36;1mecho "repo-name=$(basename "${REPO}")" | tee -a ${GITHUB_OUTPUT}[0m
+2025-02-28T15:24:30.6839728Z [36;1mecho "differentiator=${DIFFERENTIATOR}" | tee -a ${GITHUB_OUTPUT}[0m
+2025-02-28T15:24:30.6902939Z shell: /usr/bin/bash -e {0}
+2025-02-28T15:24:30.6904736Z env:
+2025-02-28T15:24:30.6905902Z   FORCE_COLOR: 1
+2025-02-28T15:24:30.6907034Z   REPO: beeware/toga
+2025-02-28T15:24:30.6907928Z   DIFFERENTIATOR: -android
+2025-02-28T15:24:30.6908990Z ##[endgroup]
+2025-02-28T15:24:30.7089138Z repo-name=toga
+2025-02-28T15:24:30.7091056Z differentiator=-android
+2025-02-28T15:24:30.7340986Z ##[group]Run actions/checkout@v4.2.2
+2025-02-28T15:24:30.7342034Z with:
+2025-02-28T15:24:30.7342754Z   repository: beeware/toga
+2025-02-28T15:24:30.7343621Z   fetch-depth: 0
+2025-02-28T15:24:30.7344676Z   token: ***
+2025-02-28T15:24:30.7345412Z   ssh-strict: true
+2025-02-28T15:24:30.7346168Z   ssh-user: git
+2025-02-28T15:24:30.7347205Z   persist-credentials: true
+2025-02-28T15:24:30.7348061Z   clean: true
+2025-02-28T15:24:30.7348840Z   sparse-checkout-cone-mode: true
+2025-02-28T15:24:30.7349768Z   fetch-tags: false
+2025-02-28T15:24:30.7350689Z   show-progress: true
+2025-02-28T15:24:30.7351473Z   lfs: false
+2025-02-28T15:24:30.7352195Z   submodules: false
+2025-02-28T15:24:30.7352995Z   set-safe-directory: true
+2025-02-28T15:24:30.7353823Z env:
+2025-02-28T15:24:30.7354507Z   FORCE_COLOR: 1
+2025-02-28T15:24:30.7355238Z ##[endgroup]
+2025-02-28T15:24:30.9232320Z Syncing repository: beeware/toga
+2025-02-28T15:24:30.9234748Z ##[group]Getting Git version info
+2025-02-28T15:24:30.9235970Z Working directory is '/home/runner/work/toga/toga'
+2025-02-28T15:24:30.9237614Z [command]/usr/bin/git version
+2025-02-28T15:24:30.9283508Z git version 2.48.1
+2025-02-28T15:24:30.9312038Z ##[endgroup]
+2025-02-28T15:24:30.9326808Z Temporarily overriding HOME='/home/runner/work/_temp/9c1e129d-f9c4-4cb3-905c-60631155dc5d' before making global git config changes
+2025-02-28T15:24:30.9329385Z Adding repository directory to the temporary git global config as a safe directory
+2025-02-28T15:24:30.9332025Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/toga/toga
+2025-02-28T15:24:30.9369327Z Deleting the contents of '/home/runner/work/toga/toga'
+2025-02-28T15:24:30.9373611Z ##[group]Initializing the repository
+2025-02-28T15:24:30.9377360Z [command]/usr/bin/git init /home/runner/work/toga/toga
+2025-02-28T15:24:30.9456989Z hint: Using 'master' as the name for the initial branch. This default branch name
+2025-02-28T15:24:30.9459443Z hint: is subject to change. To configure the initial branch name to use in all
+2025-02-28T15:24:30.9462568Z hint: of your new repositories, which will suppress this warning, call:
+2025-02-28T15:24:30.9464798Z hint:
+2025-02-28T15:24:30.9465696Z hint: 	git config --global init.defaultBranch <name>
+2025-02-28T15:24:30.9466791Z hint:
+2025-02-28T15:24:30.9467819Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2025-02-28T15:24:30.9470201Z hint: 'development'. The just-created branch can be renamed via this command:
+2025-02-28T15:24:30.9471616Z hint:
+2025-02-28T15:24:30.9472345Z hint: 	git branch -m <name>
+2025-02-28T15:24:30.9473611Z Initialized empty Git repository in /home/runner/work/toga/toga/.git/
+2025-02-28T15:24:30.9476888Z [command]/usr/bin/git remote add origin https://github.com/beeware/toga
+2025-02-28T15:24:30.9509258Z ##[endgroup]
+2025-02-28T15:24:30.9511033Z ##[group]Disabling automatic garbage collection
+2025-02-28T15:24:30.9512926Z [command]/usr/bin/git config --local gc.auto 0
+2025-02-28T15:24:30.9543675Z ##[endgroup]
+2025-02-28T15:24:30.9544970Z ##[group]Setting up auth
+2025-02-28T15:24:30.9550787Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-02-28T15:24:30.9589667Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-02-28T15:24:30.9953330Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-02-28T15:24:30.9989186Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-02-28T15:24:31.0230439Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2025-02-28T15:24:31.0270816Z ##[endgroup]
+2025-02-28T15:24:31.0272413Z ##[group]Fetching the repository
+2025-02-28T15:24:31.0281481Z [command]/usr/bin/git -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/* +68266e24a68fb42fbbeefb9a1fc4181dfda30fbe:refs/remotes/pull/3217/merge
+2025-02-28T15:24:33.2185721Z From https://github.com/beeware/toga
+2025-02-28T15:24:33.2187470Z  * [new branch]          main         -> origin/main
+2025-02-28T15:24:33.2188852Z  * [new branch]          pre-0.5      -> origin/pre-0.5
+2025-02-28T15:24:33.2189650Z  * [new tag]             0.2.6        -> 0.2.6
+2025-02-28T15:24:33.2190523Z  * [new tag]             v0.0.1rc1    -> v0.0.1rc1
+2025-02-28T15:24:33.2191165Z  * [new tag]             v0.0.1rc10   -> v0.0.1rc10
+2025-02-28T15:24:33.2193740Z  * [new tag]             v0.0.1rc5    -> v0.0.1rc5
+2025-02-28T15:24:33.2195021Z  * [new tag]             v0.0.1rc6    -> v0.0.1rc6
+2025-02-28T15:24:33.2195626Z  * [new tag]             v0.1.0       -> v0.1.0
+2025-02-28T15:24:33.2196262Z  * [new tag]             v0.1.1       -> v0.1.1
+2025-02-28T15:24:33.2196847Z  * [new tag]             v0.1.2       -> v0.1.2
+2025-02-28T15:24:33.2197503Z  * [new tag]             v0.2.0       -> v0.2.0
+2025-02-28T15:24:33.2199595Z  * [new tag]             v0.2.0.dev1  -> v0.2.0.dev1
+2025-02-28T15:24:33.2200812Z  * [new tag]             v0.2.1       -> v0.2.1
+2025-02-28T15:24:33.2201606Z  * [new tag]             v0.2.10      -> v0.2.10
+2025-02-28T15:24:33.2204136Z  * [new tag]             v0.2.11      -> v0.2.11
+2025-02-28T15:24:33.2207112Z  * [new tag]             v0.2.12      -> v0.2.12
+2025-02-28T15:24:33.2207832Z  * [new tag]             v0.2.13      -> v0.2.13
+2025-02-28T15:24:33.2208518Z  * [new tag]             v0.2.14      -> v0.2.14
+2025-02-28T15:24:33.2209091Z  * [new tag]             v0.2.15      -> v0.2.15
+2025-02-28T15:24:33.2209701Z  * [new tag]             v0.2.2       -> v0.2.2
+2025-02-28T15:24:33.2210497Z  * [new tag]             v0.2.3       -> v0.2.3
+2025-02-28T15:24:33.2211371Z  * [new tag]             v0.2.4       -> v0.2.4
+2025-02-28T15:24:33.2213474Z  * [new tag]             v0.2.5       -> v0.2.5
+2025-02-28T15:24:33.2214352Z  * [new tag]             v0.2.6       -> v0.2.6
+2025-02-28T15:24:33.2215573Z  * [new tag]             v0.2.7       -> v0.2.7
+2025-02-28T15:24:33.2217099Z  * [new tag]             v0.2.8       -> v0.2.8
+2025-02-28T15:24:33.2219191Z  * [new tag]             v0.2.9       -> v0.2.9
+2025-02-28T15:24:33.2220268Z  * [new tag]             v0.3.0       -> v0.3.0
+2025-02-28T15:24:33.2221827Z  * [new tag]             v0.3.0.dev1  -> v0.3.0.dev1
+2025-02-28T15:24:33.2222946Z  * [new tag]             v0.3.0.dev10 -> v0.3.0.dev10
+2025-02-28T15:24:33.2224224Z  * [new tag]             v0.3.0.dev11 -> v0.3.0.dev11
+2025-02-28T15:24:33.2225711Z  * [new tag]             v0.3.0.dev12 -> v0.3.0.dev12
+2025-02-28T15:24:33.2227171Z  * [new tag]             v0.3.0.dev13 -> v0.3.0.dev13
+2025-02-28T15:24:33.2228581Z  * [new tag]             v0.3.0.dev14 -> v0.3.0.dev14
+2025-02-28T15:24:33.2230325Z  * [new tag]             v0.3.0.dev15 -> v0.3.0.dev15
+2025-02-28T15:24:33.2232947Z  * [new tag]             v0.3.0.dev16 -> v0.3.0.dev16
+2025-02-28T15:24:33.2233839Z  * [new tag]             v0.3.0.dev17 -> v0.3.0.dev17
+2025-02-28T15:24:33.2234907Z  * [new tag]             v0.3.0.dev18 -> v0.3.0.dev18
+2025-02-28T15:24:33.2236570Z  * [new tag]             v0.3.0.dev19 -> v0.3.0.dev19
+2025-02-28T15:24:33.2237825Z  * [new tag]             v0.3.0.dev2  -> v0.3.0.dev2
+2025-02-28T15:24:33.2239465Z  * [new tag]             v0.3.0.dev20 -> v0.3.0.dev20
+2025-02-28T15:24:33.2241245Z  * [new tag]             v0.3.0.dev21 -> v0.3.0.dev21
+2025-02-28T15:24:33.2242746Z  * [new tag]             v0.3.0.dev22 -> v0.3.0.dev22
+2025-02-28T15:24:33.2244297Z  * [new tag]             v0.3.0.dev23 -> v0.3.0.dev23
+2025-02-28T15:24:33.2245964Z  * [new tag]             v0.3.0.dev24 -> v0.3.0.dev24
+2025-02-28T15:24:33.2247244Z  * [new tag]             v0.3.0.dev25 -> v0.3.0.dev25
+2025-02-28T15:24:33.2248711Z  * [new tag]             v0.3.0.dev26 -> v0.3.0.dev26
+2025-02-28T15:24:33.2250632Z  * [new tag]             v0.3.0.dev27 -> v0.3.0.dev27
+2025-02-28T15:24:33.2251836Z  * [new tag]             v0.3.0.dev28 -> v0.3.0.dev28
+2025-02-28T15:24:33.2253282Z  * [new tag]             v0.3.0.dev29 -> v0.3.0.dev29
+2025-02-28T15:24:33.2254745Z  * [new tag]             v0.3.0.dev3  -> v0.3.0.dev3
+2025-02-28T15:24:33.2256203Z  * [new tag]             v0.3.0.dev30 -> v0.3.0.dev30
+2025-02-28T15:24:33.2257732Z  * [new tag]             v0.3.0.dev32 -> v0.3.0.dev32
+2025-02-28T15:24:33.2259176Z  * [new tag]             v0.3.0.dev33 -> v0.3.0.dev33
+2025-02-28T15:24:33.2260833Z  * [new tag]             v0.3.0.dev34 -> v0.3.0.dev34
+2025-02-28T15:24:33.2262324Z  * [new tag]             v0.3.0.dev35 -> v0.3.0.dev35
+2025-02-28T15:24:33.2263780Z  * [new tag]             v0.3.0.dev36 -> v0.3.0.dev36
+2025-02-28T15:24:33.2265236Z  * [new tag]             v0.3.0.dev37 -> v0.3.0.dev37
+2025-02-28T15:24:33.2266648Z  * [new tag]             v0.3.0.dev38 -> v0.3.0.dev38
+2025-02-28T15:24:33.2268093Z  * [new tag]             v0.3.0.dev39 -> v0.3.0.dev39
+2025-02-28T15:24:33.2270549Z  * [new tag]             v0.3.0.dev4  -> v0.3.0.dev4
+2025-02-28T15:24:33.2271334Z  * [new tag]             v0.3.0.dev5  -> v0.3.0.dev5
+2025-02-28T15:24:33.2272784Z  * [new tag]             v0.3.0.dev6  -> v0.3.0.dev6
+2025-02-28T15:24:33.2274217Z  * [new tag]             v0.3.0.dev7  -> v0.3.0.dev7
+2025-02-28T15:24:33.2275748Z  * [new tag]             v0.3.0.dev8  -> v0.3.0.dev8
+2025-02-28T15:24:33.2277226Z  * [new tag]             v0.3.0.dev9  -> v0.3.0.dev9
+2025-02-28T15:24:33.2278789Z  * [new tag]             v0.3.0rc0    -> v0.3.0rc0
+2025-02-28T15:24:33.2280396Z  * [new tag]             v0.3.1       -> v0.3.1
+2025-02-28T15:24:33.2282063Z  * [new tag]             v0.4.0       -> v0.4.0
+2025-02-28T15:24:33.2283767Z  * [new tag]             v0.4.1       -> v0.4.1
+2025-02-28T15:24:33.2285547Z  * [new tag]             v0.4.2       -> v0.4.2
+2025-02-28T15:24:33.2287083Z  * [new tag]             v0.4.3       -> v0.4.3
+2025-02-28T15:24:33.2288744Z  * [new tag]             v0.4.4       -> v0.4.4
+2025-02-28T15:24:33.2290716Z  * [new tag]             v0.4.5       -> v0.4.5
+2025-02-28T15:24:33.2292329Z  * [new tag]             v0.4.6       -> v0.4.6
+2025-02-28T15:24:33.2293971Z  * [new tag]             v0.4.7       -> v0.4.7
+2025-02-28T15:24:33.2295586Z  * [new tag]             v0.4.8       -> v0.4.8
+2025-02-28T15:24:33.2297007Z  * [new tag]             v0.4.9       -> v0.4.9
+2025-02-28T15:24:33.2302003Z  * [new ref]             68266e24a68fb42fbbeefb9a1fc4181dfda30fbe -> pull/3217/merge
+2025-02-28T15:24:33.2352919Z ##[endgroup]
+2025-02-28T15:24:33.2353743Z ##[group]Determining the checkout info
+2025-02-28T15:24:33.2354895Z ##[endgroup]
+2025-02-28T15:24:33.2360714Z [command]/usr/bin/git sparse-checkout disable
+2025-02-28T15:24:33.2400279Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2025-02-28T15:24:33.2428019Z ##[group]Checking out the ref
+2025-02-28T15:24:33.2431951Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/3217/merge
+2025-02-28T15:24:33.4239920Z Note: switching to 'refs/remotes/pull/3217/merge'.
+2025-02-28T15:24:33.4240784Z 
+2025-02-28T15:24:33.4241290Z You are in 'detached HEAD' state. You can look around, make experimental
+2025-02-28T15:24:33.4242071Z changes and commit them, and you can discard any commits you make in this
+2025-02-28T15:24:33.4242790Z state without impacting any branches by switching back to a branch.
+2025-02-28T15:24:33.4243203Z 
+2025-02-28T15:24:33.4243522Z If you want to create a new branch to retain commits you create, you may
+2025-02-28T15:24:33.4244176Z do so (now or later) by using -c with the switch command. Example:
+2025-02-28T15:24:33.4244537Z 
+2025-02-28T15:24:33.4244721Z   git switch -c <new-branch-name>
+2025-02-28T15:24:33.4244984Z 
+2025-02-28T15:24:33.4245156Z Or undo this operation with:
+2025-02-28T15:24:33.4245400Z 
+2025-02-28T15:24:33.4245542Z   git switch -
+2025-02-28T15:24:33.4245727Z 
+2025-02-28T15:24:33.4246103Z Turn off this advice by setting config variable advice.detachedHead to false
+2025-02-28T15:24:33.4246756Z 
+2025-02-28T15:24:33.4247279Z HEAD is now at 68266e24a Merge ee512b602a87bb9213021e3ceab7c75b22852c2d into 39458b6f220cd2eeafe9dcf5d470bd504914850a
+2025-02-28T15:24:33.4264040Z ##[endgroup]
+2025-02-28T15:24:33.4308336Z [command]/usr/bin/git log -1 --format=%H
+2025-02-28T15:24:33.4334858Z 68266e24a68fb42fbbeefb9a1fc4181dfda30fbe
+2025-02-28T15:24:33.4676356Z ##[group]Run hynek/build-and-inspect-python-package@v2.12.0
+2025-02-28T15:24:33.4676741Z with:
+2025-02-28T15:24:33.4676934Z   path: android
+2025-02-28T15:24:33.4677176Z   upload-name-suffix: -toga-android
+2025-02-28T15:24:33.4677430Z   skip-wheel: false
+2025-02-28T15:24:33.4677634Z env:
+2025-02-28T15:24:33.4677805Z   FORCE_COLOR: 1
+2025-02-28T15:24:33.4677997Z ##[endgroup]
+2025-02-28T15:24:33.4807334Z ##[group]Run actions/setup-python@v5
+2025-02-28T15:24:33.4807619Z with:
+2025-02-28T15:24:33.4807811Z   python-version: 3.x
+2025-02-28T15:24:33.4808039Z   update-environment: false
+2025-02-28T15:24:33.4808272Z   check-latest: false
+2025-02-28T15:24:33.4808591Z   token: ***
+2025-02-28T15:24:33.4808801Z   allow-prereleases: false
+2025-02-28T15:24:33.4809023Z env:
+2025-02-28T15:24:33.4809202Z   FORCE_COLOR: 1
+2025-02-28T15:24:33.4809392Z ##[endgroup]
+2025-02-28T15:24:33.6677701Z ##[group]Installed versions
+2025-02-28T15:24:33.6733706Z Successfully set up CPython (3.13.2)
+2025-02-28T15:24:33.6734651Z ##[endgroup]
+2025-02-28T15:24:33.6853145Z ##[group]Run curl --location --silent --show-error --fail --proto '=https' --tlsv1.2 https://astral.sh/uv/install.sh | bash
+2025-02-28T15:24:33.6854082Z [36;1mcurl --location --silent --show-error --fail --proto '=https' --tlsv1.2 https://astral.sh/uv/install.sh | bash[0m
+2025-02-28T15:24:33.6907230Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:33.6907582Z env:
+2025-02-28T15:24:33.6907852Z   FORCE_COLOR: 1
+2025-02-28T15:24:33.6908099Z ##[endgroup]
+2025-02-28T15:24:34.0103125Z downloading uv 0.6.3 x86_64-unknown-linux-gnu
+2025-02-28T15:24:34.2427596Z no checksums to verify
+2025-02-28T15:24:34.5465143Z installing to /home/runner/.local/bin
+2025-02-28T15:24:34.5521299Z   uv
+2025-02-28T15:24:34.5550875Z   uvx
+2025-02-28T15:24:34.5551213Z everything's installed!
+2025-02-28T15:24:34.5656069Z ##[group]Run echo "UV_CACHE_DIR=/tmp/baipp-uv_cache_dir" >>$GITHUB_ENV
+2025-02-28T15:24:34.5656539Z [36;1mecho "UV_CACHE_DIR=/tmp/baipp-uv_cache_dir" >>$GITHUB_ENV[0m
+2025-02-28T15:24:34.5656871Z [36;1m[0m
+2025-02-28T15:24:34.5657477Z [36;1mecho "REQS_HASH=$(sha256sum /home/runner/work/_actions/hynek/build-and-inspect-python-package/v2.12.0/requirements/tools.txt | cut -d' ' -f1)" >>$GITHUB_ENV[0m
+2025-02-28T15:24:34.5705562Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:34.5705885Z env:
+2025-02-28T15:24:34.5706068Z   FORCE_COLOR: 1
+2025-02-28T15:24:34.5706270Z ##[endgroup]
+2025-02-28T15:24:34.5845607Z ##[group]Run actions/cache@v4
+2025-02-28T15:24:34.5845841Z with:
+2025-02-28T15:24:34.5846037Z   path: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:34.5846404Z   key: baipp-3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:34.5846785Z   enableCrossOsArchive: false
+2025-02-28T15:24:34.5847026Z   fail-on-cache-miss: false
+2025-02-28T15:24:34.5847245Z   lookup-only: false
+2025-02-28T15:24:34.5847445Z   save-always: false
+2025-02-28T15:24:34.5847636Z env:
+2025-02-28T15:24:34.5847817Z   FORCE_COLOR: 1
+2025-02-28T15:24:34.5848047Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:34.5848407Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:34.5848758Z ##[endgroup]
+2025-02-28T15:24:34.8067392Z Cache hit for: baipp-3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:34.9034826Z Received 2634960 of 2634960 (100.0%), 45.7 MBs/sec
+2025-02-28T15:24:34.9035383Z Cache Size: ~3 MB (2634960 B)
+2025-02-28T15:24:34.9070522Z [command]/usr/bin/tar -xf /home/runner/work/_temp/cb65eb47-035c-48cd-ba38-fe49c6b51f8e/cache.tzst -P -C /home/runner/work/toga/toga --use-compress-program unzstd
+2025-02-28T15:24:34.9328713Z Cache restored successfully
+2025-02-28T15:24:34.9514931Z Cache restored from key: baipp-3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:34.9587896Z ##[group]Run unset UV_SYSTEM_PYTHON
+2025-02-28T15:24:34.9588196Z [36;1munset UV_SYSTEM_PYTHON[0m
+2025-02-28T15:24:34.9588622Z [36;1m[0m
+2025-02-28T15:24:34.9588936Z [36;1muv venv \[0m
+2025-02-28T15:24:34.9589130Z [36;1m  /tmp/baipp \[0m
+2025-02-28T15:24:34.9589443Z [36;1m  --python /opt/hostedtoolcache/Python/3.13.2/x64/bin/python[0m
+2025-02-28T15:24:34.9637118Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:34.9637437Z env:
+2025-02-28T15:24:34.9637611Z   FORCE_COLOR: 1
+2025-02-28T15:24:34.9637824Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:34.9638192Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:34.9638557Z ##[endgroup]
+2025-02-28T15:24:35.0551698Z Using CPython 3.13.2 interpreter at: [36m/opt/hostedtoolcache/Python/3.13.2/x64/bin/python[39m
+2025-02-28T15:24:35.0552309Z Creating virtual environment at: [36m/tmp/baipp[39m
+2025-02-28T15:24:35.0604497Z ##[group]Run unset UV_SYSTEM_PYTHON
+2025-02-28T15:24:35.0605014Z [36;1munset UV_SYSTEM_PYTHON[0m
+2025-02-28T15:24:35.0605414Z [36;1m[0m
+2025-02-28T15:24:35.0605755Z [36;1muv pip sync \[0m
+2025-02-28T15:24:35.0606565Z [36;1m  /home/runner/work/_actions/hynek/build-and-inspect-python-package/v2.12.0/requirements/tools.txt[0m
+2025-02-28T15:24:35.0674550Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:35.0675128Z env:
+2025-02-28T15:24:35.0675872Z   FORCE_COLOR: 1
+2025-02-28T15:24:35.0676412Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:35.0677269Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:35.0678281Z   VIRTUAL_ENV: /tmp/baipp
+2025-02-28T15:24:35.0678911Z ##[endgroup]
+2025-02-28T15:24:35.1463855Z [2mUsing Python 3.13.2 environment at: /tmp/baipp[0m
+2025-02-28T15:24:35.3156509Z [2mResolved [1m36 packages[0m [2min 168ms[0m[0m
+2025-02-28T15:24:35.3545080Z [36m[1mDownloading[0m[39m pygments [2m(1.2MiB)[0m
+2025-02-28T15:24:35.3593072Z [36m[1mDownloading[0m[39m cryptography [2m(4.0MiB)[0m
+2025-02-28T15:24:35.3597144Z [36m[1mDownloading[0m[39m pydantic-core [2m(1.9MiB)[0m
+2025-02-28T15:24:35.4274783Z  [32m[1mDownloaded[0m[39m pydantic-core
+2025-02-28T15:24:35.5131321Z  [32m[1mDownloaded[0m[39m cryptography
+2025-02-28T15:24:35.5456592Z  [32m[1mDownloaded[0m[39m pygments
+2025-02-28T15:24:35.5458270Z [2mPrepared [1m36 packages[0m [2min 230ms[0m[0m
+2025-02-28T15:24:35.5651939Z [2mInstalled [1m36 packages[0m [2min 19ms[0m[0m
+2025-02-28T15:24:35.5652667Z  [32m+[39m [1mannotated-types[0m[2m==0.7.0[0m
+2025-02-28T15:24:35.5653230Z  [32m+[39m [1mattrs[0m[2m==24.3.0[0m
+2025-02-28T15:24:35.5653770Z  [32m+[39m [1mcertifi[0m[2m==2024.12.14[0m
+2025-02-28T15:24:35.5654293Z  [32m+[39m [1mcffi[0m[2m==1.17.1[0m
+2025-02-28T15:24:35.5654870Z  [32m+[39m [1mcharset-normalizer[0m[2m==3.4.1[0m
+2025-02-28T15:24:35.5655534Z  [32m+[39m [1mcheck-wheel-contents[0m[2m==0.6.1[0m
+2025-02-28T15:24:35.5656080Z  [32m+[39m [1mclick[0m[2m==8.1.8[0m
+2025-02-28T15:24:35.5656609Z  [32m+[39m [1mcryptography[0m[2m==44.0.0[0m
+2025-02-28T15:24:35.5657186Z  [32m+[39m [1mdocutils[0m[2m==0.21.2[0m
+2025-02-28T15:24:35.5657710Z  [32m+[39m [1mid[0m[2m==1.5.0[0m
+2025-02-28T15:24:35.5658184Z  [32m+[39m [1midna[0m[2m==3.10[0m
+2025-02-28T15:24:35.5658710Z  [32m+[39m [1mjaraco-classes[0m[2m==3.4.0[0m
+2025-02-28T15:24:35.5659223Z  [32m+[39m [1mjaraco-context[0m[2m==6.0.1[0m
+2025-02-28T15:24:35.5659752Z  [32m+[39m [1mjaraco-functools[0m[2m==4.1.0[0m
+2025-02-28T15:24:35.5660453Z  [32m+[39m [1mjeepney[0m[2m==0.8.0[0m
+2025-02-28T15:24:35.5660955Z  [32m+[39m [1mkeyring[0m[2m==25.6.0[0m
+2025-02-28T15:24:35.5661473Z  [32m+[39m [1mmarkdown-it-py[0m[2m==3.0.0[0m
+2025-02-28T15:24:35.5661955Z  [32m+[39m [1mmdurl[0m[2m==0.1.2[0m
+2025-02-28T15:24:35.5662469Z  [32m+[39m [1mmore-itertools[0m[2m==10.6.0[0m
+2025-02-28T15:24:35.5662940Z  [32m+[39m [1mnh3[0m[2m==0.2.20[0m
+2025-02-28T15:24:35.5663417Z  [32m+[39m [1mpackaging[0m[2m==24.2[0m
+2025-02-28T15:24:35.5663866Z  [32m+[39m [1mpycparser[0m[2m==2.22[0m
+2025-02-28T15:24:35.5664881Z  [32m+[39m [1mpydantic[0m[2m==2.10.5[0m
+2025-02-28T15:24:35.5665426Z  [32m+[39m [1mpydantic-core[0m[2m==2.27.2[0m
+2025-02-28T15:24:35.5665974Z  [32m+[39m [1mpygments[0m[2m==2.19.1[0m
+2025-02-28T15:24:35.5666645Z  [32m+[39m [1mreadme-renderer[0m[2m==44.0[0m
+2025-02-28T15:24:35.5667148Z  [32m+[39m [1mrequests[0m[2m==2.32.3[0m
+2025-02-28T15:24:35.5667697Z  [32m+[39m [1mrequests-toolbelt[0m[2m==1.0.0[0m
+2025-02-28T15:24:35.5668239Z  [32m+[39m [1mrfc3986[0m[2m==2.0.0[0m
+2025-02-28T15:24:35.5668746Z  [32m+[39m [1mrich[0m[2m==13.9.4[0m
+2025-02-28T15:24:35.5669275Z  [32m+[39m [1msecretstorage[0m[2m==3.3.3[0m
+2025-02-28T15:24:35.5669791Z  [32m+[39m [1mtwine[0m[2m==6.1.0[0m
+2025-02-28T15:24:35.5670521Z  [32m+[39m [1mtyping-extensions[0m[2m==4.12.2[0m
+2025-02-28T15:24:35.5671064Z  [32m+[39m [1murllib3[0m[2m==2.3.0[0m
+2025-02-28T15:24:35.5671546Z  [32m+[39m [1mwheel[0m[2m==0.45.1[0m
+2025-02-28T15:24:35.5672064Z  [32m+[39m [1mwheel-filename[0m[2m==1.4.2[0m
+2025-02-28T15:24:35.5737227Z ##[group]Run echo "name=Packages-toga-android" >>${GITHUB_OUTPUT}
+2025-02-28T15:24:35.5737657Z [36;1mecho "name=Packages-toga-android" >>${GITHUB_OUTPUT}[0m
+2025-02-28T15:24:35.5784172Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:35.5784496Z env:
+2025-02-28T15:24:35.5784666Z   FORCE_COLOR: 1
+2025-02-28T15:24:35.5784883Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:35.5785257Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:35.5785628Z ##[endgroup]
+2025-02-28T15:24:35.5875117Z ##[group]Run unset UV_SYSTEM_PYTHON
+2025-02-28T15:24:35.5875407Z [36;1munset UV_SYSTEM_PYTHON[0m
+2025-02-28T15:24:35.5875656Z [36;1m[0m
+2025-02-28T15:24:35.5875995Z [36;1mecho Setting SOURCE_DATE_EPOCH to $(git log -1 --pretty=%ct).[0m
+2025-02-28T15:24:35.5876433Z [36;1mexport SOURCE_DATE_EPOCH=$(git log -1 --pretty=%ct)[0m
+2025-02-28T15:24:35.5876816Z [36;1m[0m
+2025-02-28T15:24:35.5877034Z [36;1mif [[ "false" == "true" ]]; then[0m
+2025-02-28T15:24:35.5877402Z [36;1m  uv build --sdist --out-dir /tmp/baipp/dist[0m
+2025-02-28T15:24:35.5877689Z [36;1melse[0m
+2025-02-28T15:24:35.5877909Z [36;1m  uv build --out-dir /tmp/baipp/dist[0m
+2025-02-28T15:24:35.5878164Z [36;1mfi[0m
+2025-02-28T15:24:35.5878406Z [36;1m[0m
+2025-02-28T15:24:35.5878689Z [36;1m# We don't need .gitignores and it litters the provenance output.[0m
+2025-02-28T15:24:35.5879049Z [36;1mrm -f /tmp/baipp/dist/.gitignore[0m
+2025-02-28T15:24:35.5922437Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:35.5922851Z env:
+2025-02-28T15:24:35.5923279Z   FORCE_COLOR: 1
+2025-02-28T15:24:35.5923603Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:35.5924059Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:35.5924548Z ##[endgroup]
+2025-02-28T15:24:35.6010743Z Setting SOURCE_DATE_EPOCH to 1740756255.
+2025-02-28T15:24:35.6578680Z [1mBuilding source distribution...[0m
+2025-02-28T15:24:36.4044116Z running egg_info
+2025-02-28T15:24:36.4072040Z creating src/toga_android.egg-info
+2025-02-28T15:24:36.4073344Z writing src/toga_android.egg-info/PKG-INFO
+2025-02-28T15:24:36.4078043Z writing dependency_links to src/toga_android.egg-info/dependency_links.txt
+2025-02-28T15:24:36.4080886Z writing entry points to src/toga_android.egg-info/entry_points.txt
+2025-02-28T15:24:36.4082910Z writing requirements to src/toga_android.egg-info/requires.txt
+2025-02-28T15:24:36.4084006Z writing top-level names to src/toga_android.egg-info/top_level.txt
+2025-02-28T15:24:36.4085890Z writing manifest file 'src/toga_android.egg-info/SOURCES.txt'
+2025-02-28T15:24:36.5715198Z adding license file 'LICENSE'
+2025-02-28T15:24:36.5729189Z writing manifest file 'src/toga_android.egg-info/SOURCES.txt'
+2025-02-28T15:24:36.8181398Z running sdist
+2025-02-28T15:24:36.8181981Z running egg_info
+2025-02-28T15:24:36.8227125Z writing src/toga_android.egg-info/PKG-INFO
+2025-02-28T15:24:36.8232986Z writing dependency_links to src/toga_android.egg-info/dependency_links.txt
+2025-02-28T15:24:36.8236267Z writing entry points to src/toga_android.egg-info/entry_points.txt
+2025-02-28T15:24:36.8238455Z writing requirements to src/toga_android.egg-info/requires.txt
+2025-02-28T15:24:36.8239944Z writing top-level names to src/toga_android.egg-info/top_level.txt
+2025-02-28T15:24:36.9775707Z adding license file 'LICENSE'
+2025-02-28T15:24:36.9790436Z writing manifest file 'src/toga_android.egg-info/SOURCES.txt'
+2025-02-28T15:24:36.9793314Z running check
+2025-02-28T15:24:36.9827043Z creating toga_android-0.4.9.dev629+g68266e24a
+2025-02-28T15:24:36.9830379Z creating toga_android-0.4.9.dev629+g68266e24a/src/toga_android
+2025-02-28T15:24:36.9832957Z creating toga_android-0.4.9.dev629+g68266e24a/src/toga_android.egg-info
+2025-02-28T15:24:36.9834340Z creating toga_android-0.4.9.dev629+g68266e24a/src/toga_android/hardware
+2025-02-28T15:24:36.9835924Z creating toga_android-0.4.9.dev629+g68266e24a/src/toga_android/libs
+2025-02-28T15:24:36.9837553Z creating toga_android-0.4.9.dev629+g68266e24a/src/toga_android/resources
+2025-02-28T15:24:36.9839215Z creating toga_android-0.4.9.dev629+g68266e24a/src/toga_android/widgets
+2025-02-28T15:24:36.9841058Z creating toga_android-0.4.9.dev629+g68266e24a/src/toga_android/widgets/internal
+2025-02-28T15:24:36.9842571Z creating toga_android-0.4.9.dev629+g68266e24a/tests_backend
+2025-02-28T15:24:36.9844186Z creating toga_android-0.4.9.dev629+g68266e24a/tests_backend/hardware
+2025-02-28T15:24:36.9845766Z creating toga_android-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:36.9846881Z copying files to toga_android-0.4.9.dev629+g68266e24a...
+2025-02-28T15:24:36.9847816Z copying CONTRIBUTING.md -> toga_android-0.4.9.dev629+g68266e24a
+2025-02-28T15:24:36.9849606Z copying LICENSE -> toga_android-0.4.9.dev629+g68266e24a
+2025-02-28T15:24:36.9851814Z copying README.rst -> toga_android-0.4.9.dev629+g68266e24a
+2025-02-28T15:24:36.9853359Z copying pyproject.toml -> toga_android-0.4.9.dev629+g68266e24a
+2025-02-28T15:24:36.9855258Z copying src/toga_android/__init__.py -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android
+2025-02-28T15:24:36.9856861Z copying src/toga_android/app.py -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android
+2025-02-28T15:24:36.9858799Z copying src/toga_android/colors.py -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android
+2025-02-28T15:24:36.9860674Z copying src/toga_android/command.py -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android
+2025-02-28T15:24:36.9862385Z copying src/toga_android/container.py -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android
+2025-02-28T15:24:36.9864067Z copying src/toga_android/dialogs.py -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android
+2025-02-28T15:24:36.9865596Z copying src/toga_android/factory.py -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android
+2025-02-28T15:24:36.9867278Z copying src/toga_android/fonts.py -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android
+2025-02-28T15:24:36.9869117Z copying src/toga_android/icons.py -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android
+2025-02-28T15:24:36.9870873Z copying src/toga_android/images.py -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android
+2025-02-28T15:24:36.9872567Z copying src/toga_android/keys.py -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android
+2025-02-28T15:24:36.9874467Z copying src/toga_android/paths.py -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android
+2025-02-28T15:24:36.9875956Z copying src/toga_android/screens.py -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android
+2025-02-28T15:24:36.9877628Z copying src/toga_android/statusicons.py -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android
+2025-02-28T15:24:36.9879233Z copying src/toga_android/window.py -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android
+2025-02-28T15:24:36.9881232Z copying src/toga_android.egg-info/PKG-INFO -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android.egg-info
+2025-02-28T15:24:36.9883152Z copying src/toga_android.egg-info/SOURCES.txt -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android.egg-info
+2025-02-28T15:24:36.9885022Z copying src/toga_android.egg-info/dependency_links.txt -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android.egg-info
+2025-02-28T15:24:36.9886614Z copying src/toga_android.egg-info/entry_points.txt -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android.egg-info
+2025-02-28T15:24:36.9888200Z copying src/toga_android.egg-info/requires.txt -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android.egg-info
+2025-02-28T15:24:36.9889747Z copying src/toga_android.egg-info/top_level.txt -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android.egg-info
+2025-02-28T15:24:36.9891413Z copying src/toga_android/hardware/__init__.py -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android/hardware
+2025-02-28T15:24:36.9893056Z copying src/toga_android/hardware/camera.py -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android/hardware
+2025-02-28T15:24:36.9894870Z copying src/toga_android/hardware/location.py -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android/hardware
+2025-02-28T15:24:36.9896295Z copying src/toga_android/libs/__init__.py -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android/libs
+2025-02-28T15:24:36.9897902Z copying src/toga_android/libs/events.py -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android/libs
+2025-02-28T15:24:36.9899686Z copying src/toga_android/resources/marker.png -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android/resources
+2025-02-28T15:24:36.9901760Z copying src/toga_android/resources/optioncontainer-tab.png -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android/resources
+2025-02-28T15:24:36.9903491Z copying src/toga_android/resources/toga.png -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android/resources
+2025-02-28T15:24:36.9904945Z copying src/toga_android/widgets/__init__.py -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android/widgets
+2025-02-28T15:24:36.9906484Z copying src/toga_android/widgets/base.py -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android/widgets
+2025-02-28T15:24:36.9907964Z copying src/toga_android/widgets/box.py -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android/widgets
+2025-02-28T15:24:36.9909556Z copying src/toga_android/widgets/button.py -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android/widgets
+2025-02-28T15:24:36.9911538Z copying src/toga_android/widgets/canvas.py -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android/widgets
+2025-02-28T15:24:36.9913180Z copying src/toga_android/widgets/dateinput.py -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android/widgets
+2025-02-28T15:24:36.9914933Z copying src/toga_android/widgets/detailedlist.py -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android/widgets
+2025-02-28T15:24:36.9916401Z copying src/toga_android/widgets/divider.py -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android/widgets
+2025-02-28T15:24:36.9917881Z copying src/toga_android/widgets/imageview.py -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android/widgets
+2025-02-28T15:24:36.9919741Z copying src/toga_android/widgets/label.py -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android/widgets
+2025-02-28T15:24:36.9921381Z copying src/toga_android/widgets/mapview.py -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android/widgets
+2025-02-28T15:24:36.9923253Z copying src/toga_android/widgets/multilinetextinput.py -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android/widgets
+2025-02-28T15:24:36.9924866Z copying src/toga_android/widgets/numberinput.py -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android/widgets
+2025-02-28T15:24:36.9926481Z copying src/toga_android/widgets/optioncontainer.py -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android/widgets
+2025-02-28T15:24:36.9928210Z copying src/toga_android/widgets/passwordinput.py -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android/widgets
+2025-02-28T15:24:36.9929752Z copying src/toga_android/widgets/progressbar.py -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android/widgets
+2025-02-28T15:24:36.9932101Z copying src/toga_android/widgets/scrollcontainer.py -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android/widgets
+2025-02-28T15:24:36.9934473Z copying src/toga_android/widgets/selection.py -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android/widgets
+2025-02-28T15:24:36.9935499Z copying src/toga_android/widgets/slider.py -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android/widgets
+2025-02-28T15:24:36.9936421Z copying src/toga_android/widgets/switch.py -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android/widgets
+2025-02-28T15:24:36.9938211Z copying src/toga_android/widgets/table.py -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android/widgets
+2025-02-28T15:24:36.9939978Z copying src/toga_android/widgets/textinput.py -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android/widgets
+2025-02-28T15:24:36.9941905Z copying src/toga_android/widgets/timeinput.py -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android/widgets
+2025-02-28T15:24:36.9943344Z copying src/toga_android/widgets/webview.py -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android/widgets
+2025-02-28T15:24:36.9945158Z copying src/toga_android/widgets/internal/__init__.py -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android/widgets/internal
+2025-02-28T15:24:36.9946916Z copying src/toga_android/widgets/internal/pickers.py -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android/widgets/internal
+2025-02-28T15:24:36.9948610Z copying tests_backend/__init__.py -> toga_android-0.4.9.dev629+g68266e24a/tests_backend
+2025-02-28T15:24:36.9949723Z copying tests_backend/app.py -> toga_android-0.4.9.dev629+g68266e24a/tests_backend
+2025-02-28T15:24:36.9951763Z copying tests_backend/dialogs.py -> toga_android-0.4.9.dev629+g68266e24a/tests_backend
+2025-02-28T15:24:36.9953292Z copying tests_backend/fonts.py -> toga_android-0.4.9.dev629+g68266e24a/tests_backend
+2025-02-28T15:24:36.9955048Z copying tests_backend/icons.py -> toga_android-0.4.9.dev629+g68266e24a/tests_backend
+2025-02-28T15:24:36.9956869Z copying tests_backend/images.py -> toga_android-0.4.9.dev629+g68266e24a/tests_backend
+2025-02-28T15:24:36.9958481Z copying tests_backend/probe.py -> toga_android-0.4.9.dev629+g68266e24a/tests_backend
+2025-02-28T15:24:36.9960332Z copying tests_backend/screens.py -> toga_android-0.4.9.dev629+g68266e24a/tests_backend
+2025-02-28T15:24:36.9962088Z copying tests_backend/window.py -> toga_android-0.4.9.dev629+g68266e24a/tests_backend
+2025-02-28T15:24:36.9963938Z copying tests_backend/hardware/__init__.py -> toga_android-0.4.9.dev629+g68266e24a/tests_backend/hardware
+2025-02-28T15:24:36.9965481Z copying tests_backend/hardware/camera.py -> toga_android-0.4.9.dev629+g68266e24a/tests_backend/hardware
+2025-02-28T15:24:36.9966921Z copying tests_backend/hardware/hardware.py -> toga_android-0.4.9.dev629+g68266e24a/tests_backend/hardware
+2025-02-28T15:24:36.9968561Z copying tests_backend/hardware/location.py -> toga_android-0.4.9.dev629+g68266e24a/tests_backend/hardware
+2025-02-28T15:24:36.9970513Z copying tests_backend/widgets/__init__.py -> toga_android-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:36.9971967Z copying tests_backend/widgets/base.py -> toga_android-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:36.9973626Z copying tests_backend/widgets/box.py -> toga_android-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:36.9975385Z copying tests_backend/widgets/button.py -> toga_android-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:36.9977009Z copying tests_backend/widgets/canvas.py -> toga_android-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:36.9978656Z copying tests_backend/widgets/dateinput.py -> toga_android-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:36.9980432Z copying tests_backend/widgets/detailedlist.py -> toga_android-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:36.9982129Z copying tests_backend/widgets/divider.py -> toga_android-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:36.9984052Z copying tests_backend/widgets/imageview.py -> toga_android-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:36.9985759Z copying tests_backend/widgets/label.py -> toga_android-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:36.9987142Z copying tests_backend/widgets/mapview.py -> toga_android-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:36.9988613Z copying tests_backend/widgets/multilinetextinput.py -> toga_android-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:36.9989975Z copying tests_backend/widgets/numberinput.py -> toga_android-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:36.9991882Z copying tests_backend/widgets/optioncontainer.py -> toga_android-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:36.9993479Z copying tests_backend/widgets/passwordinput.py -> toga_android-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:36.9995219Z copying tests_backend/widgets/progressbar.py -> toga_android-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:36.9996681Z copying tests_backend/widgets/properties.py -> toga_android-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:36.9998410Z copying tests_backend/widgets/scrollcontainer.py -> toga_android-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:36.9999998Z copying tests_backend/widgets/selection.py -> toga_android-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:37.0001788Z copying tests_backend/widgets/slider.py -> toga_android-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:37.0003445Z copying tests_backend/widgets/switch.py -> toga_android-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:37.0005149Z copying tests_backend/widgets/table.py -> toga_android-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:37.0006780Z copying tests_backend/widgets/textinput.py -> toga_android-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:37.0008386Z copying tests_backend/widgets/timeinput.py -> toga_android-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:37.0010230Z copying tests_backend/widgets/webview.py -> toga_android-0.4.9.dev629+g68266e24a/tests_backend/widgets
+2025-02-28T15:24:37.0011995Z copying src/toga_android.egg-info/SOURCES.txt -> toga_android-0.4.9.dev629+g68266e24a/src/toga_android.egg-info
+2025-02-28T15:24:37.0017985Z Writing toga_android-0.4.9.dev629+g68266e24a/setup.cfg
+2025-02-28T15:24:37.0019939Z Creating tar archive
+2025-02-28T15:24:37.0403913Z removing 'toga_android-0.4.9.dev629+g68266e24a' (and everything under it)
+2025-02-28T15:24:37.0905700Z [1mBuilding wheel from source distribution...[0m
+2025-02-28T15:24:37.5404355Z running egg_info
+2025-02-28T15:24:37.5425883Z writing src/toga_android.egg-info/PKG-INFO
+2025-02-28T15:24:37.5431334Z writing dependency_links to src/toga_android.egg-info/dependency_links.txt
+2025-02-28T15:24:37.5434246Z writing entry points to src/toga_android.egg-info/entry_points.txt
+2025-02-28T15:24:37.5436543Z writing requirements to src/toga_android.egg-info/requires.txt
+2025-02-28T15:24:37.5437813Z writing top-level names to src/toga_android.egg-info/top_level.txt
+2025-02-28T15:24:37.5588550Z ERROR setuptools_scm._file_finders.git listing git files failed - pretending there aren't any
+2025-02-28T15:24:37.7458561Z reading manifest file 'src/toga_android.egg-info/SOURCES.txt'
+2025-02-28T15:24:37.7471037Z adding license file 'LICENSE'
+2025-02-28T15:24:37.7485078Z writing manifest file 'src/toga_android.egg-info/SOURCES.txt'
+2025-02-28T15:24:37.9386865Z running bdist_wheel
+2025-02-28T15:24:37.9472653Z running build
+2025-02-28T15:24:37.9473047Z running build_py
+2025-02-28T15:24:37.9491890Z creating build/lib/toga_android
+2025-02-28T15:24:37.9494445Z copying src/toga_android/images.py -> build/lib/toga_android
+2025-02-28T15:24:37.9496611Z copying src/toga_android/colors.py -> build/lib/toga_android
+2025-02-28T15:24:37.9498749Z copying src/toga_android/screens.py -> build/lib/toga_android
+2025-02-28T15:24:37.9501017Z copying src/toga_android/dialogs.py -> build/lib/toga_android
+2025-02-28T15:24:37.9502868Z copying src/toga_android/window.py -> build/lib/toga_android
+2025-02-28T15:24:37.9504426Z copying src/toga_android/factory.py -> build/lib/toga_android
+2025-02-28T15:24:37.9506338Z copying src/toga_android/statusicons.py -> build/lib/toga_android
+2025-02-28T15:24:37.9507995Z copying src/toga_android/keys.py -> build/lib/toga_android
+2025-02-28T15:24:37.9509871Z copying src/toga_android/command.py -> build/lib/toga_android
+2025-02-28T15:24:37.9511869Z copying src/toga_android/app.py -> build/lib/toga_android
+2025-02-28T15:24:37.9513810Z copying src/toga_android/icons.py -> build/lib/toga_android
+2025-02-28T15:24:37.9515567Z copying src/toga_android/paths.py -> build/lib/toga_android
+2025-02-28T15:24:37.9517302Z copying src/toga_android/__init__.py -> build/lib/toga_android
+2025-02-28T15:24:37.9519040Z copying src/toga_android/container.py -> build/lib/toga_android
+2025-02-28T15:24:37.9520633Z copying src/toga_android/fonts.py -> build/lib/toga_android
+2025-02-28T15:24:37.9523436Z creating build/lib/toga_android/hardware
+2025-02-28T15:24:37.9524805Z copying src/toga_android/hardware/camera.py -> build/lib/toga_android/hardware
+2025-02-28T15:24:37.9527107Z copying src/toga_android/hardware/location.py -> build/lib/toga_android/hardware
+2025-02-28T15:24:37.9529236Z copying src/toga_android/hardware/__init__.py -> build/lib/toga_android/hardware
+2025-02-28T15:24:37.9533596Z creating build/lib/toga_android/widgets
+2025-02-28T15:24:37.9535414Z copying src/toga_android/widgets/timeinput.py -> build/lib/toga_android/widgets
+2025-02-28T15:24:37.9537013Z copying src/toga_android/widgets/box.py -> build/lib/toga_android/widgets
+2025-02-28T15:24:37.9538949Z copying src/toga_android/widgets/multilinetextinput.py -> build/lib/toga_android/widgets
+2025-02-28T15:24:37.9540841Z copying src/toga_android/widgets/dateinput.py -> build/lib/toga_android/widgets
+2025-02-28T15:24:37.9542679Z copying src/toga_android/widgets/detailedlist.py -> build/lib/toga_android/widgets
+2025-02-28T15:24:37.9544872Z copying src/toga_android/widgets/base.py -> build/lib/toga_android/widgets
+2025-02-28T15:24:37.9546957Z copying src/toga_android/widgets/progressbar.py -> build/lib/toga_android/widgets
+2025-02-28T15:24:37.9549055Z copying src/toga_android/widgets/optioncontainer.py -> build/lib/toga_android/widgets
+2025-02-28T15:24:37.9551420Z copying src/toga_android/widgets/numberinput.py -> build/lib/toga_android/widgets
+2025-02-28T15:24:37.9553472Z copying src/toga_android/widgets/textinput.py -> build/lib/toga_android/widgets
+2025-02-28T15:24:37.9555516Z copying src/toga_android/widgets/canvas.py -> build/lib/toga_android/widgets
+2025-02-28T15:24:37.9557641Z copying src/toga_android/widgets/selection.py -> build/lib/toga_android/widgets
+2025-02-28T15:24:37.9559695Z copying src/toga_android/widgets/table.py -> build/lib/toga_android/widgets
+2025-02-28T15:24:37.9562030Z copying src/toga_android/widgets/button.py -> build/lib/toga_android/widgets
+2025-02-28T15:24:37.9564157Z copying src/toga_android/widgets/__init__.py -> build/lib/toga_android/widgets
+2025-02-28T15:24:37.9566206Z copying src/toga_android/widgets/scrollcontainer.py -> build/lib/toga_android/widgets
+2025-02-28T15:24:37.9568232Z copying src/toga_android/widgets/imageview.py -> build/lib/toga_android/widgets
+2025-02-28T15:24:37.9570405Z copying src/toga_android/widgets/switch.py -> build/lib/toga_android/widgets
+2025-02-28T15:24:37.9572545Z copying src/toga_android/widgets/mapview.py -> build/lib/toga_android/widgets
+2025-02-28T15:24:37.9574637Z copying src/toga_android/widgets/webview.py -> build/lib/toga_android/widgets
+2025-02-28T15:24:37.9576742Z copying src/toga_android/widgets/passwordinput.py -> build/lib/toga_android/widgets
+2025-02-28T15:24:37.9578797Z copying src/toga_android/widgets/divider.py -> build/lib/toga_android/widgets
+2025-02-28T15:24:37.9580875Z copying src/toga_android/widgets/label.py -> build/lib/toga_android/widgets
+2025-02-28T15:24:37.9583090Z copying src/toga_android/widgets/slider.py -> build/lib/toga_android/widgets
+2025-02-28T15:24:37.9586009Z creating build/lib/toga_android/libs
+2025-02-28T15:24:37.9587722Z copying src/toga_android/libs/__init__.py -> build/lib/toga_android/libs
+2025-02-28T15:24:37.9589208Z copying src/toga_android/libs/events.py -> build/lib/toga_android/libs
+2025-02-28T15:24:37.9591996Z creating build/lib/toga_android/widgets/internal
+2025-02-28T15:24:37.9593365Z copying src/toga_android/widgets/internal/pickers.py -> build/lib/toga_android/widgets/internal
+2025-02-28T15:24:37.9595570Z copying src/toga_android/widgets/internal/__init__.py -> build/lib/toga_android/widgets/internal
+2025-02-28T15:24:37.9597146Z running egg_info
+2025-02-28T15:24:37.9615431Z writing src/toga_android.egg-info/PKG-INFO
+2025-02-28T15:24:37.9620784Z writing dependency_links to src/toga_android.egg-info/dependency_links.txt
+2025-02-28T15:24:37.9624182Z writing entry points to src/toga_android.egg-info/entry_points.txt
+2025-02-28T15:24:37.9626538Z writing requirements to src/toga_android.egg-info/requires.txt
+2025-02-28T15:24:37.9627899Z writing top-level names to src/toga_android.egg-info/top_level.txt
+2025-02-28T15:24:37.9718500Z ERROR setuptools_scm._file_finders.git listing git files failed - pretending there aren't any
+2025-02-28T15:24:38.1038339Z reading manifest file 'src/toga_android.egg-info/SOURCES.txt'
+2025-02-28T15:24:38.1052250Z adding license file 'LICENSE'
+2025-02-28T15:24:38.1066433Z writing manifest file 'src/toga_android.egg-info/SOURCES.txt'
+2025-02-28T15:24:38.1077697Z creating build/lib/toga_android/resources
+2025-02-28T15:24:38.1079375Z copying src/toga_android/resources/marker.png -> build/lib/toga_android/resources
+2025-02-28T15:24:38.1082589Z copying src/toga_android/resources/optioncontainer-tab.png -> build/lib/toga_android/resources
+2025-02-28T15:24:38.1084431Z copying src/toga_android/resources/toga.png -> build/lib/toga_android/resources
+2025-02-28T15:24:38.1125509Z installing to build/bdist.linux-x86_64/wheel
+2025-02-28T15:24:38.1126008Z running install
+2025-02-28T15:24:38.1190353Z running install_lib
+2025-02-28T15:24:38.1208240Z creating build/bdist.linux-x86_64/wheel
+2025-02-28T15:24:38.1211380Z creating build/bdist.linux-x86_64/wheel/toga_android
+2025-02-28T15:24:38.1212922Z copying build/lib/toga_android/images.py -> build/bdist.linux-x86_64/wheel/./toga_android
+2025-02-28T15:24:38.1214721Z copying build/lib/toga_android/colors.py -> build/bdist.linux-x86_64/wheel/./toga_android
+2025-02-28T15:24:38.1216383Z copying build/lib/toga_android/screens.py -> build/bdist.linux-x86_64/wheel/./toga_android
+2025-02-28T15:24:38.1218048Z copying build/lib/toga_android/dialogs.py -> build/bdist.linux-x86_64/wheel/./toga_android
+2025-02-28T15:24:38.1219677Z copying build/lib/toga_android/window.py -> build/bdist.linux-x86_64/wheel/./toga_android
+2025-02-28T15:24:38.1221665Z copying build/lib/toga_android/factory.py -> build/bdist.linux-x86_64/wheel/./toga_android
+2025-02-28T15:24:38.1223338Z copying build/lib/toga_android/statusicons.py -> build/bdist.linux-x86_64/wheel/./toga_android
+2025-02-28T15:24:38.1225721Z creating build/bdist.linux-x86_64/wheel/toga_android/hardware
+2025-02-28T15:24:38.1227315Z copying build/lib/toga_android/hardware/camera.py -> build/bdist.linux-x86_64/wheel/./toga_android/hardware
+2025-02-28T15:24:38.1229051Z copying build/lib/toga_android/hardware/location.py -> build/bdist.linux-x86_64/wheel/./toga_android/hardware
+2025-02-28T15:24:38.1231008Z copying build/lib/toga_android/hardware/__init__.py -> build/bdist.linux-x86_64/wheel/./toga_android/hardware
+2025-02-28T15:24:38.1232462Z copying build/lib/toga_android/keys.py -> build/bdist.linux-x86_64/wheel/./toga_android
+2025-02-28T15:24:38.1234266Z copying build/lib/toga_android/command.py -> build/bdist.linux-x86_64/wheel/./toga_android
+2025-02-28T15:24:38.1235829Z copying build/lib/toga_android/app.py -> build/bdist.linux-x86_64/wheel/./toga_android
+2025-02-28T15:24:38.1237681Z copying build/lib/toga_android/icons.py -> build/bdist.linux-x86_64/wheel/./toga_android
+2025-02-28T15:24:38.1240222Z creating build/bdist.linux-x86_64/wheel/toga_android/resources
+2025-02-28T15:24:38.1242387Z copying build/lib/toga_android/resources/optioncontainer-tab.png -> build/bdist.linux-x86_64/wheel/./toga_android/resources
+2025-02-28T15:24:38.1244072Z copying build/lib/toga_android/resources/toga.png -> build/bdist.linux-x86_64/wheel/./toga_android/resources
+2025-02-28T15:24:38.1245382Z copying build/lib/toga_android/resources/marker.png -> build/bdist.linux-x86_64/wheel/./toga_android/resources
+2025-02-28T15:24:38.1247967Z creating build/bdist.linux-x86_64/wheel/toga_android/widgets
+2025-02-28T15:24:38.1249562Z copying build/lib/toga_android/widgets/timeinput.py -> build/bdist.linux-x86_64/wheel/./toga_android/widgets
+2025-02-28T15:24:38.1251489Z copying build/lib/toga_android/widgets/box.py -> build/bdist.linux-x86_64/wheel/./toga_android/widgets
+2025-02-28T15:24:38.1253284Z copying build/lib/toga_android/widgets/multilinetextinput.py -> build/bdist.linux-x86_64/wheel/./toga_android/widgets
+2025-02-28T15:24:38.1255038Z copying build/lib/toga_android/widgets/dateinput.py -> build/bdist.linux-x86_64/wheel/./toga_android/widgets
+2025-02-28T15:24:38.1256293Z copying build/lib/toga_android/widgets/detailedlist.py -> build/bdist.linux-x86_64/wheel/./toga_android/widgets
+2025-02-28T15:24:38.1258623Z creating build/bdist.linux-x86_64/wheel/toga_android/widgets/internal
+2025-02-28T15:24:38.1260350Z copying build/lib/toga_android/widgets/internal/pickers.py -> build/bdist.linux-x86_64/wheel/./toga_android/widgets/internal
+2025-02-28T15:24:38.1262140Z copying build/lib/toga_android/widgets/internal/__init__.py -> build/bdist.linux-x86_64/wheel/./toga_android/widgets/internal
+2025-02-28T15:24:38.1263560Z copying build/lib/toga_android/widgets/base.py -> build/bdist.linux-x86_64/wheel/./toga_android/widgets
+2025-02-28T15:24:38.1265470Z copying build/lib/toga_android/widgets/progressbar.py -> build/bdist.linux-x86_64/wheel/./toga_android/widgets
+2025-02-28T15:24:38.1267199Z copying build/lib/toga_android/widgets/optioncontainer.py -> build/bdist.linux-x86_64/wheel/./toga_android/widgets
+2025-02-28T15:24:38.1268948Z copying build/lib/toga_android/widgets/numberinput.py -> build/bdist.linux-x86_64/wheel/./toga_android/widgets
+2025-02-28T15:24:38.1270687Z copying build/lib/toga_android/widgets/textinput.py -> build/bdist.linux-x86_64/wheel/./toga_android/widgets
+2025-02-28T15:24:38.1272517Z copying build/lib/toga_android/widgets/canvas.py -> build/bdist.linux-x86_64/wheel/./toga_android/widgets
+2025-02-28T15:24:38.1274329Z copying build/lib/toga_android/widgets/selection.py -> build/bdist.linux-x86_64/wheel/./toga_android/widgets
+2025-02-28T15:24:38.1276026Z copying build/lib/toga_android/widgets/table.py -> build/bdist.linux-x86_64/wheel/./toga_android/widgets
+2025-02-28T15:24:38.1277785Z copying build/lib/toga_android/widgets/button.py -> build/bdist.linux-x86_64/wheel/./toga_android/widgets
+2025-02-28T15:24:38.1279507Z copying build/lib/toga_android/widgets/__init__.py -> build/bdist.linux-x86_64/wheel/./toga_android/widgets
+2025-02-28T15:24:38.1281711Z copying build/lib/toga_android/widgets/scrollcontainer.py -> build/bdist.linux-x86_64/wheel/./toga_android/widgets
+2025-02-28T15:24:38.1282809Z copying build/lib/toga_android/widgets/imageview.py -> build/bdist.linux-x86_64/wheel/./toga_android/widgets
+2025-02-28T15:24:38.1284661Z copying build/lib/toga_android/widgets/switch.py -> build/bdist.linux-x86_64/wheel/./toga_android/widgets
+2025-02-28T15:24:38.1286085Z copying build/lib/toga_android/widgets/mapview.py -> build/bdist.linux-x86_64/wheel/./toga_android/widgets
+2025-02-28T15:24:38.1288062Z copying build/lib/toga_android/widgets/webview.py -> build/bdist.linux-x86_64/wheel/./toga_android/widgets
+2025-02-28T15:24:38.1289860Z copying build/lib/toga_android/widgets/passwordinput.py -> build/bdist.linux-x86_64/wheel/./toga_android/widgets
+2025-02-28T15:24:38.1291774Z copying build/lib/toga_android/widgets/divider.py -> build/bdist.linux-x86_64/wheel/./toga_android/widgets
+2025-02-28T15:24:38.1293469Z copying build/lib/toga_android/widgets/label.py -> build/bdist.linux-x86_64/wheel/./toga_android/widgets
+2025-02-28T15:24:38.1295461Z copying build/lib/toga_android/widgets/slider.py -> build/bdist.linux-x86_64/wheel/./toga_android/widgets
+2025-02-28T15:24:38.1297487Z creating build/bdist.linux-x86_64/wheel/toga_android/libs
+2025-02-28T15:24:38.1299468Z copying build/lib/toga_android/libs/__init__.py -> build/bdist.linux-x86_64/wheel/./toga_android/libs
+2025-02-28T15:24:38.1300734Z copying build/lib/toga_android/libs/events.py -> build/bdist.linux-x86_64/wheel/./toga_android/libs
+2025-02-28T15:24:38.1302675Z copying build/lib/toga_android/paths.py -> build/bdist.linux-x86_64/wheel/./toga_android
+2025-02-28T15:24:38.1304355Z copying build/lib/toga_android/__init__.py -> build/bdist.linux-x86_64/wheel/./toga_android
+2025-02-28T15:24:38.1306087Z copying build/lib/toga_android/container.py -> build/bdist.linux-x86_64/wheel/./toga_android
+2025-02-28T15:24:38.1307805Z copying build/lib/toga_android/fonts.py -> build/bdist.linux-x86_64/wheel/./toga_android
+2025-02-28T15:24:38.1309390Z running install_egg_info
+2025-02-28T15:24:38.1328540Z Copying src/toga_android.egg-info to build/bdist.linux-x86_64/wheel/./toga_android-0.4.9.dev629+g68266e24a-py3.12.egg-info
+2025-02-28T15:24:38.1336977Z running install_scripts
+2025-02-28T15:24:38.1348054Z creating build/bdist.linux-x86_64/wheel/toga_android-0.4.9.dev629+g68266e24a.dist-info/WHEEL
+2025-02-28T15:24:38.1352434Z creating '/tmp/baipp/dist/.tmp-rb0mzass/toga_android-0.4.9.dev629+g68266e24a-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+2025-02-28T15:24:38.1356066Z adding 'toga_android/__init__.py'
+2025-02-28T15:24:38.1362597Z adding 'toga_android/app.py'
+2025-02-28T15:24:38.1364789Z adding 'toga_android/colors.py'
+2025-02-28T15:24:38.1366810Z adding 'toga_android/command.py'
+2025-02-28T15:24:38.1369352Z adding 'toga_android/container.py'
+2025-02-28T15:24:38.1372138Z adding 'toga_android/dialogs.py'
+2025-02-28T15:24:38.1374375Z adding 'toga_android/factory.py'
+2025-02-28T15:24:38.1377169Z adding 'toga_android/fonts.py'
+2025-02-28T15:24:38.1379117Z adding 'toga_android/icons.py'
+2025-02-28T15:24:38.1381671Z adding 'toga_android/images.py'
+2025-02-28T15:24:38.1384898Z adding 'toga_android/keys.py'
+2025-02-28T15:24:38.1386908Z adding 'toga_android/paths.py'
+2025-02-28T15:24:38.1389064Z adding 'toga_android/screens.py'
+2025-02-28T15:24:38.1391172Z adding 'toga_android/statusicons.py'
+2025-02-28T15:24:38.1394622Z adding 'toga_android/window.py'
+2025-02-28T15:24:38.1396885Z adding 'toga_android/hardware/__init__.py'
+2025-02-28T15:24:38.1399836Z adding 'toga_android/hardware/camera.py'
+2025-02-28T15:24:38.1403054Z adding 'toga_android/hardware/location.py'
+2025-02-28T15:24:38.1404941Z adding 'toga_android/libs/__init__.py'
+2025-02-28T15:24:38.1411454Z adding 'toga_android/libs/events.py'
+2025-02-28T15:24:38.1414744Z adding 'toga_android/resources/marker.png'
+2025-02-28T15:24:38.1417482Z adding 'toga_android/resources/optioncontainer-tab.png'
+2025-02-28T15:24:38.1419654Z adding 'toga_android/resources/toga.png'
+2025-02-28T15:24:38.1422267Z adding 'toga_android/widgets/__init__.py'
+2025-02-28T15:24:38.1425416Z adding 'toga_android/widgets/base.py'
+2025-02-28T15:24:38.1427200Z adding 'toga_android/widgets/box.py'
+2025-02-28T15:24:38.1429662Z adding 'toga_android/widgets/button.py'
+2025-02-28T15:24:38.1433540Z adding 'toga_android/widgets/canvas.py'
+2025-02-28T15:24:38.1435807Z adding 'toga_android/widgets/dateinput.py'
+2025-02-28T15:24:38.1439321Z adding 'toga_android/widgets/detailedlist.py'
+2025-02-28T15:24:38.1441633Z adding 'toga_android/widgets/divider.py'
+2025-02-28T15:24:38.1443838Z adding 'toga_android/widgets/imageview.py'
+2025-02-28T15:24:38.1446301Z adding 'toga_android/widgets/label.py'
+2025-02-28T15:24:38.1449054Z adding 'toga_android/widgets/mapview.py'
+2025-02-28T15:24:38.1451381Z adding 'toga_android/widgets/multilinetextinput.py'
+2025-02-28T15:24:38.1453271Z adding 'toga_android/widgets/numberinput.py'
+2025-02-28T15:24:38.1456706Z adding 'toga_android/widgets/optioncontainer.py'
+2025-02-28T15:24:38.1458306Z adding 'toga_android/widgets/passwordinput.py'
+2025-02-28T15:24:38.1461565Z adding 'toga_android/widgets/progressbar.py'
+2025-02-28T15:24:38.1463714Z adding 'toga_android/widgets/scrollcontainer.py'
+2025-02-28T15:24:38.1466368Z adding 'toga_android/widgets/selection.py'
+2025-02-28T15:24:38.1468579Z adding 'toga_android/widgets/slider.py'
+2025-02-28T15:24:38.1471043Z adding 'toga_android/widgets/switch.py'
+2025-02-28T15:24:38.1474269Z adding 'toga_android/widgets/table.py'
+2025-02-28T15:24:38.1476862Z adding 'toga_android/widgets/textinput.py'
+2025-02-28T15:24:38.1479066Z adding 'toga_android/widgets/timeinput.py'
+2025-02-28T15:24:38.1481802Z adding 'toga_android/widgets/webview.py'
+2025-02-28T15:24:38.1483920Z adding 'toga_android/widgets/internal/__init__.py'
+2025-02-28T15:24:38.1486010Z adding 'toga_android/widgets/internal/pickers.py'
+2025-02-28T15:24:38.1489507Z adding 'toga_android-0.4.9.dev629+g68266e24a.dist-info/LICENSE'
+2025-02-28T15:24:38.1491838Z adding 'toga_android-0.4.9.dev629+g68266e24a.dist-info/METADATA'
+2025-02-28T15:24:38.1493095Z adding 'toga_android-0.4.9.dev629+g68266e24a.dist-info/WHEEL'
+2025-02-28T15:24:38.1494539Z adding 'toga_android-0.4.9.dev629+g68266e24a.dist-info/entry_points.txt'
+2025-02-28T15:24:38.1495751Z adding 'toga_android-0.4.9.dev629+g68266e24a.dist-info/top_level.txt'
+2025-02-28T15:24:38.1499837Z adding 'toga_android-0.4.9.dev629+g68266e24a.dist-info/RECORD'
+2025-02-28T15:24:38.1503069Z removing build/bdist.linux-x86_64/wheel
+2025-02-28T15:24:38.1893022Z Successfully built [36m[1m/tmp/baipp/dist/toga_android-0.4.9.dev629+g68266e24a.tar.gz[0m[39m
+2025-02-28T15:24:38.1894653Z Successfully built [36m[1m/tmp/baipp/dist/toga_android-0.4.9.dev629+g68266e24a-py3-none-any.whl[0m[39m
+2025-02-28T15:24:38.1964980Z ##[group]Run uv cache prune --ci
+2025-02-28T15:24:38.1965339Z [36;1muv cache prune --ci[0m
+2025-02-28T15:24:38.2012203Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:38.2012532Z env:
+2025-02-28T15:24:38.2012712Z   FORCE_COLOR: 1
+2025-02-28T15:24:38.2012927Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:38.2013313Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:38.2013681Z ##[endgroup]
+2025-02-28T15:24:38.2136632Z Pruning cache at: [36m/tmp/baipp-uv_cache_dir[39m
+2025-02-28T15:24:38.2629085Z Removed 2121 files ([32m37.1MiB[39m)
+2025-02-28T15:24:38.2672128Z ##[group]Run echo -e '\n### Package Contents' >> $GITHUB_STEP_SUMMARY
+2025-02-28T15:24:38.2672536Z [36;1mecho -e '\n### Package Contents' >> $GITHUB_STEP_SUMMARY[0m
+2025-02-28T15:24:38.2718552Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:38.2718877Z env:
+2025-02-28T15:24:38.2719046Z   FORCE_COLOR: 1
+2025-02-28T15:24:38.2719258Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:38.2719642Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:38.2720003Z ##[endgroup]
+2025-02-28T15:24:38.2841317Z ##[group]Run echo "dist=/tmp/baipp/dist" >>$GITHUB_OUTPUT
+2025-02-28T15:24:38.2841687Z [36;1mecho "dist=/tmp/baipp/dist" >>$GITHUB_OUTPUT[0m
+2025-02-28T15:24:38.2886435Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:38.2886760Z env:
+2025-02-28T15:24:38.2886935Z   FORCE_COLOR: 1
+2025-02-28T15:24:38.2887147Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:38.2887519Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:38.2887873Z ##[endgroup]
+2025-02-28T15:24:38.2975691Z ##[group]Run ls -l /tmp/baipp/dist
+2025-02-28T15:24:38.2975964Z [36;1mls -l /tmp/baipp/dist[0m
+2025-02-28T15:24:38.3020308Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:38.3020635Z env:
+2025-02-28T15:24:38.3020807Z   FORCE_COLOR: 1
+2025-02-28T15:24:38.3021023Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:38.3021394Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:38.3021751Z ##[endgroup]
+2025-02-28T15:24:38.3098554Z total 144
+2025-02-28T15:24:38.3099493Z -rw-r--r-- 1 runner docker 68913 Feb 28 15:24 toga_android-0.4.9.dev629+g68266e24a-py3-none-any.whl
+2025-02-28T15:24:38.3100769Z -rw-r--r-- 1 runner docker 74181 Feb 28 15:24 toga_android-0.4.9.dev629+g68266e24a.tar.gz
+2025-02-28T15:24:38.3134397Z ##[group]Run actions/upload-artifact@v4
+2025-02-28T15:24:38.3134653Z with:
+2025-02-28T15:24:38.3134841Z   name: Packages-toga-android
+2025-02-28T15:24:38.3135078Z   path: /tmp/baipp/dist/*
+2025-02-28T15:24:38.3135299Z   if-no-files-found: warn
+2025-02-28T15:24:38.3135513Z   compression-level: 6
+2025-02-28T15:24:38.3135713Z   overwrite: false
+2025-02-28T15:24:38.3135907Z   include-hidden-files: false
+2025-02-28T15:24:38.3136120Z env:
+2025-02-28T15:24:38.3136289Z   FORCE_COLOR: 1
+2025-02-28T15:24:38.3136492Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:38.3136858Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:38.3137209Z ##[endgroup]
+2025-02-28T15:24:38.5295887Z With the provided path, there will be 2 files uploaded
+2025-02-28T15:24:38.5300739Z Artifact name is valid!
+2025-02-28T15:24:38.5302035Z Root directory input is valid!
+2025-02-28T15:24:38.6279137Z Beginning upload of artifact content to blob storage
+2025-02-28T15:24:38.6848197Z Uploaded bytes 138242
+2025-02-28T15:24:38.6988624Z Finished uploading artifact content to blob storage!
+2025-02-28T15:24:38.6992150Z SHA256 hash of uploaded artifact zip is 3a88a5220d7d3324488ef45767bb6293d6368c676840ab743299e66d893e14a6
+2025-02-28T15:24:38.6994321Z Finalizing artifact upload
+2025-02-28T15:24:38.7850944Z Artifact Packages-toga-android.zip successfully finalized. Artifact ID 2671286345
+2025-02-28T15:24:38.7852307Z Artifact Packages-toga-android has been successfully uploaded! Final size is 138242 bytes. Artifact ID is 2671286345
+2025-02-28T15:24:38.7859344Z Artifact download URL: https://github.com/beeware/toga/actions/runs/13591189051/artifacts/2671286345
+2025-02-28T15:24:38.7952903Z ##[group]Run if [[ "false" != 'true' ]]; then
+2025-02-28T15:24:38.7953209Z [36;1mif [[ "false" != 'true' ]]; then[0m
+2025-02-28T15:24:38.7953590Z [36;1m  /tmp/baipp/bin/check-wheel-contents /tmp/baipp/dist/*.whl[0m
+2025-02-28T15:24:38.7953935Z [36;1mfi[0m
+2025-02-28T15:24:38.8000000Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:38.8000548Z env:
+2025-02-28T15:24:38.8000729Z   FORCE_COLOR: 1
+2025-02-28T15:24:38.8000939Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:38.8001313Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:38.8001674Z ##[endgroup]
+2025-02-28T15:24:39.3455229Z /tmp/baipp/dist/toga_android-0.4.9.dev629+g68266e24a-py3-none-any.whl: OK
+2025-02-28T15:24:39.3701516Z ##[group]Run /tmp/baipp/bin/python -m twine check --strict /tmp/baipp/dist/*
+2025-02-28T15:24:39.3702017Z [36;1m/tmp/baipp/bin/python -m twine check --strict /tmp/baipp/dist/*[0m
+2025-02-28T15:24:39.3748042Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:39.3748366Z env:
+2025-02-28T15:24:39.3748540Z   FORCE_COLOR: 1
+2025-02-28T15:24:39.3748770Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:39.3749154Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:39.3749508Z ##[endgroup]
+2025-02-28T15:24:40.2657963Z Checking /tmp/baipp/dist/toga_android-0.4.9.dev629+g68266e24a-py3-none-any.whl: [32mPASSED[0m
+2025-02-28T15:24:40.2839023Z Checking /tmp/baipp/dist/toga_android-0.4.9.dev629+g68266e24a.tar.gz: [32mPASSED[0m
+2025-02-28T15:24:40.3291518Z ##[group]Run cd /tmp/baipp/dist
+2025-02-28T15:24:40.3291820Z [36;1mcd /tmp/baipp/dist[0m
+2025-02-28T15:24:40.3292065Z [36;1mmkdir -p out/sdist[0m
+2025-02-28T15:24:40.3292304Z [36;1mtar xf *.tar.gz -C out/sdist[0m
+2025-02-28T15:24:40.3292589Z [36;1m[0m
+2025-02-28T15:24:40.3292803Z [36;1mif ! command -v tree &> /dev/null; then[0m
+2025-02-28T15:24:40.3293086Z [36;1m    sudo apt-get install tree[0m
+2025-02-28T15:24:40.3293328Z [36;1mfi[0m
+2025-02-28T15:24:40.3293501Z [36;1m[0m
+2025-02-28T15:24:40.3294142Z [36;1mecho -e '\n<details><summary>SDist contents</summary>\n' >> $GITHUB_STEP_SUMMARY[0m
+2025-02-28T15:24:40.3294917Z [36;1m(cd /tmp/baipp/dist/out/sdist && tree -Da --timefmt="%Y-%m-%dT%H:%M:%SZ" * | sed 's/^/    /' | tee -a $GITHUB_STEP_SUMMARY)[0m
+2025-02-28T15:24:40.3295424Z [36;1mecho -e '\n</details>\n' >> $GITHUB_STEP_SUMMARY[0m
+2025-02-28T15:24:40.3295699Z [36;1m[0m
+2025-02-28T15:24:40.3295885Z [36;1mif [[ "false" != 'true' ]]; then[0m
+2025-02-28T15:24:40.3296145Z [36;1m    mkdir -p out/wheels[0m
+2025-02-28T15:24:40.3296483Z [36;1m    /tmp/baipp/bin/python -m wheel unpack --dest out/wheels *.whl[0m
+2025-02-28T15:24:40.3296814Z [36;1m[0m
+2025-02-28T15:24:40.3297112Z [36;1m    echo -e '\n<details><summary>Wheel contents</summary>\n' >> $GITHUB_STEP_SUMMARY[0m
+2025-02-28T15:24:40.3297632Z [36;1m    (cd /tmp/baipp/dist/out/wheels && tree -a * | sed 's/^/    /' | tee -a $GITHUB_STEP_SUMMARY)[0m
+2025-02-28T15:24:40.3298064Z [36;1m    echo -e '\n</details>\n' >> $GITHUB_STEP_SUMMARY[0m
+2025-02-28T15:24:40.3298336Z [36;1mfi[0m
+2025-02-28T15:24:40.3298521Z [36;1m[0m
+2025-02-28T15:24:40.3298715Z [36;1mecho ----- Metadata Follows -----[0m
+2025-02-28T15:24:40.3299086Z [36;1mecho -e '\n<details><summary>Metadata</summary>\n' >> $GITHUB_STEP_SUMMARY[0m
+2025-02-28T15:24:40.3299552Z [36;1mcat out/sdist/*/PKG-INFO | sed 's/^/    /' | tee -a $GITHUB_STEP_SUMMARY[0m
+2025-02-28T15:24:40.3299947Z [36;1mecho -e '\n</details>\n' >> $GITHUB_STEP_SUMMARY[0m
+2025-02-28T15:24:40.3300433Z [36;1mecho ----- End of Metadata  -----[0m
+2025-02-28T15:24:40.3346207Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:40.3346526Z env:
+2025-02-28T15:24:40.3346701Z   FORCE_COLOR: 1
+2025-02-28T15:24:40.3346912Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:40.3347274Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:40.3347634Z ##[endgroup]
+2025-02-28T15:24:40.3592061Z     [2025-02-28T15:24:37Z]  toga_android-0.4.9.dev629+g68266e24a
+2025-02-28T15:24:40.3593105Z     ├── [2025-02-28T15:24:33Z]  CONTRIBUTING.md
+2025-02-28T15:24:40.3593886Z     ├── [2025-02-28T15:24:33Z]  LICENSE
+2025-02-28T15:24:40.3594493Z     ├── [2025-02-28T15:24:37Z]  PKG-INFO
+2025-02-28T15:24:40.3595096Z     ├── [2025-02-28T15:24:33Z]  README.rst
+2025-02-28T15:24:40.3595733Z     ├── [2025-02-28T15:24:33Z]  pyproject.toml
+2025-02-28T15:24:40.3596333Z     ├── [2025-02-28T15:24:37Z]  setup.cfg
+2025-02-28T15:24:40.3596883Z     ├── [2025-02-28T15:24:36Z]  src
+2025-02-28T15:24:40.3597371Z     │   ├── [2025-02-28T15:24:36Z]  toga_android
+2025-02-28T15:24:40.3597911Z     │   │   ├── [2025-02-28T15:24:33Z]  __init__.py
+2025-02-28T15:24:40.3598477Z     │   │   ├── [2025-02-28T15:24:33Z]  app.py
+2025-02-28T15:24:40.3599009Z     │   │   ├── [2025-02-28T15:24:33Z]  colors.py
+2025-02-28T15:24:40.3599533Z     │   │   ├── [2025-02-28T15:24:33Z]  command.py
+2025-02-28T15:24:40.3600247Z     │   │   ├── [2025-02-28T15:24:33Z]  container.py
+2025-02-28T15:24:40.3600806Z     │   │   ├── [2025-02-28T15:24:33Z]  dialogs.py
+2025-02-28T15:24:40.3601387Z     │   │   ├── [2025-02-28T15:24:33Z]  factory.py
+2025-02-28T15:24:40.3601906Z     │   │   ├── [2025-02-28T15:24:33Z]  fonts.py
+2025-02-28T15:24:40.3602372Z     │   │   ├── [2025-02-28T15:24:36Z]  hardware
+2025-02-28T15:24:40.3602694Z     │   │   │   ├── [2025-02-28T15:24:33Z]  __init__.py
+2025-02-28T15:24:40.3603071Z     │   │   │   ├── [2025-02-28T15:24:33Z]  camera.py
+2025-02-28T15:24:40.3603530Z     │   │   │   └── [2025-02-28T15:24:33Z]  location.py
+2025-02-28T15:24:40.3603849Z     │   │   ├── [2025-02-28T15:24:33Z]  icons.py
+2025-02-28T15:24:40.3604154Z     │   │   ├── [2025-02-28T15:24:33Z]  images.py
+2025-02-28T15:24:40.3604447Z     │   │   ├── [2025-02-28T15:24:33Z]  keys.py
+2025-02-28T15:24:40.3604744Z     │   │   ├── [2025-02-28T15:24:36Z]  libs
+2025-02-28T15:24:40.3605046Z     │   │   │   ├── [2025-02-28T15:24:33Z]  __init__.py
+2025-02-28T15:24:40.3605359Z     │   │   │   └── [2025-02-28T15:24:33Z]  events.py
+2025-02-28T15:24:40.3605881Z     │   │   ├── [2025-02-28T15:24:33Z]  paths.py
+2025-02-28T15:24:40.3606327Z     │   │   ├── [2025-02-28T15:24:36Z]  resources
+2025-02-28T15:24:40.3606630Z     │   │   │   ├── [2025-02-28T15:24:33Z]  marker.png
+2025-02-28T15:24:40.3606993Z     │   │   │   ├── [2025-02-28T15:24:33Z]  optioncontainer-tab.png
+2025-02-28T15:24:40.3607354Z     │   │   │   └── [2025-02-28T15:24:33Z]  toga.png
+2025-02-28T15:24:40.3607666Z     │   │   ├── [2025-02-28T15:24:33Z]  screens.py
+2025-02-28T15:24:40.3607983Z     │   │   ├── [2025-02-28T15:24:33Z]  statusicons.py
+2025-02-28T15:24:40.3608284Z     │   │   ├── [2025-02-28T15:24:36Z]  widgets
+2025-02-28T15:24:40.3608592Z     │   │   │   ├── [2025-02-28T15:24:33Z]  __init__.py
+2025-02-28T15:24:40.3608907Z     │   │   │   ├── [2025-02-28T15:24:33Z]  base.py
+2025-02-28T15:24:40.3609210Z     │   │   │   ├── [2025-02-28T15:24:33Z]  box.py
+2025-02-28T15:24:40.3609513Z     │   │   │   ├── [2025-02-28T15:24:33Z]  button.py
+2025-02-28T15:24:40.3609817Z     │   │   │   ├── [2025-02-28T15:24:33Z]  canvas.py
+2025-02-28T15:24:40.3610622Z     │   │   │   ├── [2025-02-28T15:24:33Z]  dateinput.py
+2025-02-28T15:24:40.3610994Z     │   │   │   ├── [2025-02-28T15:24:33Z]  detailedlist.py
+2025-02-28T15:24:40.3611337Z     │   │   │   ├── [2025-02-28T15:24:33Z]  divider.py
+2025-02-28T15:24:40.3611661Z     │   │   │   ├── [2025-02-28T15:24:33Z]  imageview.py
+2025-02-28T15:24:40.3611987Z     │   │   │   ├── [2025-02-28T15:24:36Z]  internal
+2025-02-28T15:24:40.3612301Z     │   │   │   │   ├── [2025-02-28T15:24:33Z]  __init__.py
+2025-02-28T15:24:40.3612631Z     │   │   │   │   └── [2025-02-28T15:24:33Z]  pickers.py
+2025-02-28T15:24:40.3612960Z     │   │   │   ├── [2025-02-28T15:24:33Z]  label.py
+2025-02-28T15:24:40.3613276Z     │   │   │   ├── [2025-02-28T15:24:33Z]  mapview.py
+2025-02-28T15:24:40.3613626Z     │   │   │   ├── [2025-02-28T15:24:33Z]  multilinetextinput.py
+2025-02-28T15:24:40.3613978Z     │   │   │   ├── [2025-02-28T15:24:33Z]  numberinput.py
+2025-02-28T15:24:40.3614309Z     │   │   │   ├── [2025-02-28T15:24:33Z]  optioncontainer.py
+2025-02-28T15:24:40.3614698Z     │   │   │   ├── [2025-02-28T15:24:33Z]  passwordinput.py
+2025-02-28T15:24:40.3615040Z     │   │   │   ├── [2025-02-28T15:24:33Z]  progressbar.py
+2025-02-28T15:24:40.3615381Z     │   │   │   ├── [2025-02-28T15:24:33Z]  scrollcontainer.py
+2025-02-28T15:24:40.3615792Z     │   │   │   ├── [2025-02-28T15:24:33Z]  selection.py
+2025-02-28T15:24:40.3616170Z     │   │   │   ├── [2025-02-28T15:24:33Z]  slider.py
+2025-02-28T15:24:40.3616492Z     │   │   │   ├── [2025-02-28T15:24:33Z]  switch.py
+2025-02-28T15:24:40.3616800Z     │   │   │   ├── [2025-02-28T15:24:33Z]  table.py
+2025-02-28T15:24:40.3617113Z     │   │   │   ├── [2025-02-28T15:24:33Z]  textinput.py
+2025-02-28T15:24:40.3617450Z     │   │   │   ├── [2025-02-28T15:24:33Z]  timeinput.py
+2025-02-28T15:24:40.3617770Z     │   │   │   └── [2025-02-28T15:24:33Z]  webview.py
+2025-02-28T15:24:40.3618072Z     │   │   └── [2025-02-28T15:24:33Z]  window.py
+2025-02-28T15:24:40.3618402Z     │   └── [2025-02-28T15:24:37Z]  toga_android.egg-info
+2025-02-28T15:24:40.3618770Z     │       ├── [2025-02-28T15:24:36Z]  PKG-INFO
+2025-02-28T15:24:40.3619081Z     │       ├── [2025-02-28T15:24:36Z]  SOURCES.txt
+2025-02-28T15:24:40.3619412Z     │       ├── [2025-02-28T15:24:36Z]  dependency_links.txt
+2025-02-28T15:24:40.3619743Z     │       ├── [2025-02-28T15:24:36Z]  entry_points.txt
+2025-02-28T15:24:40.3620688Z     │       ├── [2025-02-28T15:24:36Z]  requires.txt
+2025-02-28T15:24:40.3621230Z     │       └── [2025-02-28T15:24:36Z]  top_level.txt
+2025-02-28T15:24:40.3621553Z     └── [2025-02-28T15:24:36Z]  tests_backend
+2025-02-28T15:24:40.3621861Z         ├── [2025-02-28T15:24:33Z]  __init__.py
+2025-02-28T15:24:40.3622162Z         ├── [2025-02-28T15:24:33Z]  app.py
+2025-02-28T15:24:40.3622452Z         ├── [2025-02-28T15:24:33Z]  dialogs.py
+2025-02-28T15:24:40.3622746Z         ├── [2025-02-28T15:24:33Z]  fonts.py
+2025-02-28T15:24:40.3623030Z         ├── [2025-02-28T15:24:36Z]  hardware
+2025-02-28T15:24:40.3623532Z         │   ├── [2025-02-28T15:24:33Z]  __init__.py
+2025-02-28T15:24:40.3623984Z         │   ├── [2025-02-28T15:24:33Z]  camera.py
+2025-02-28T15:24:40.3624284Z         │   ├── [2025-02-28T15:24:33Z]  hardware.py
+2025-02-28T15:24:40.3624587Z         │   └── [2025-02-28T15:24:33Z]  location.py
+2025-02-28T15:24:40.3624878Z         ├── [2025-02-28T15:24:33Z]  icons.py
+2025-02-28T15:24:40.3625165Z         ├── [2025-02-28T15:24:33Z]  images.py
+2025-02-28T15:24:40.3625450Z         ├── [2025-02-28T15:24:33Z]  probe.py
+2025-02-28T15:24:40.3625738Z         ├── [2025-02-28T15:24:33Z]  screens.py
+2025-02-28T15:24:40.3626022Z         ├── [2025-02-28T15:24:36Z]  widgets
+2025-02-28T15:24:40.3626320Z         │   ├── [2025-02-28T15:24:33Z]  __init__.py
+2025-02-28T15:24:40.3626617Z         │   ├── [2025-02-28T15:24:33Z]  base.py
+2025-02-28T15:24:40.3626912Z         │   ├── [2025-02-28T15:24:33Z]  box.py
+2025-02-28T15:24:40.3627211Z         │   ├── [2025-02-28T15:24:33Z]  button.py
+2025-02-28T15:24:40.3627506Z         │   ├── [2025-02-28T15:24:33Z]  canvas.py
+2025-02-28T15:24:40.3627839Z         │   ├── [2025-02-28T15:24:33Z]  dateinput.py
+2025-02-28T15:24:40.3628166Z         │   ├── [2025-02-28T15:24:33Z]  detailedlist.py
+2025-02-28T15:24:40.3628482Z         │   ├── [2025-02-28T15:24:33Z]  divider.py
+2025-02-28T15:24:40.3628790Z         │   ├── [2025-02-28T15:24:33Z]  imageview.py
+2025-02-28T15:24:40.3629088Z         │   ├── [2025-02-28T15:24:33Z]  label.py
+2025-02-28T15:24:40.3629393Z         │   ├── [2025-02-28T15:24:33Z]  mapview.py
+2025-02-28T15:24:40.3629727Z         │   ├── [2025-02-28T15:24:33Z]  multilinetextinput.py
+2025-02-28T15:24:40.3630491Z         │   ├── [2025-02-28T15:24:33Z]  numberinput.py
+2025-02-28T15:24:40.3630853Z         │   ├── [2025-02-28T15:24:33Z]  optioncontainer.py
+2025-02-28T15:24:40.3631195Z         │   ├── [2025-02-28T15:24:33Z]  passwordinput.py
+2025-02-28T15:24:40.3631515Z         │   ├── [2025-02-28T15:24:33Z]  progressbar.py
+2025-02-28T15:24:40.3631833Z         │   ├── [2025-02-28T15:24:33Z]  properties.py
+2025-02-28T15:24:40.3632181Z         │   ├── [2025-02-28T15:24:33Z]  scrollcontainer.py
+2025-02-28T15:24:40.3632519Z         │   ├── [2025-02-28T15:24:33Z]  selection.py
+2025-02-28T15:24:40.3632820Z         │   ├── [2025-02-28T15:24:33Z]  slider.py
+2025-02-28T15:24:40.3633113Z         │   ├── [2025-02-28T15:24:33Z]  switch.py
+2025-02-28T15:24:40.3633418Z         │   ├── [2025-02-28T15:24:33Z]  table.py
+2025-02-28T15:24:40.3633726Z         │   ├── [2025-02-28T15:24:33Z]  textinput.py
+2025-02-28T15:24:40.3634033Z         │   ├── [2025-02-28T15:24:33Z]  timeinput.py
+2025-02-28T15:24:40.3634333Z         │   └── [2025-02-28T15:24:33Z]  webview.py
+2025-02-28T15:24:40.3634630Z         └── [2025-02-28T15:24:33Z]  window.py
+2025-02-28T15:24:40.3634863Z     
+2025-02-28T15:24:40.3635043Z     12 directories, 99 files
+2025-02-28T15:24:40.4187847Z Unpacking to: out/wheels/toga_android-0.4.9.dev629+g68266e24a...OK
+2025-02-28T15:24:40.4290589Z     toga_android-0.4.9.dev629+g68266e24a
+2025-02-28T15:24:40.4291338Z     ├── toga_android
+2025-02-28T15:24:40.4292261Z     │   ├── __init__.py
+2025-02-28T15:24:40.4292645Z     │   ├── app.py
+2025-02-28T15:24:40.4293007Z     │   ├── colors.py
+2025-02-28T15:24:40.4293379Z     │   ├── command.py
+2025-02-28T15:24:40.4293769Z     │   ├── container.py
+2025-02-28T15:24:40.4294114Z     │   ├── dialogs.py
+2025-02-28T15:24:40.4294494Z     │   ├── factory.py
+2025-02-28T15:24:40.4294855Z     │   ├── fonts.py
+2025-02-28T15:24:40.4295185Z     │   ├── hardware
+2025-02-28T15:24:40.4295418Z     │   │   ├── __init__.py
+2025-02-28T15:24:40.4295670Z     │   │   ├── camera.py
+2025-02-28T15:24:40.4295901Z     │   │   └── location.py
+2025-02-28T15:24:40.4296131Z     │   ├── icons.py
+2025-02-28T15:24:40.4296343Z     │   ├── images.py
+2025-02-28T15:24:40.4296555Z     │   ├── keys.py
+2025-02-28T15:24:40.4296809Z     │   ├── libs
+2025-02-28T15:24:40.4297181Z     │   │   ├── __init__.py
+2025-02-28T15:24:40.4297588Z     │   │   └── events.py
+2025-02-28T15:24:40.4297990Z     │   ├── paths.py
+2025-02-28T15:24:40.4298363Z     │   ├── resources
+2025-02-28T15:24:40.4298802Z     │   │   ├── marker.png
+2025-02-28T15:24:40.4299247Z     │   │   ├── optioncontainer-tab.png
+2025-02-28T15:24:40.4299731Z     │   │   └── toga.png
+2025-02-28T15:24:40.4300299Z     │   ├── screens.py
+2025-02-28T15:24:40.4300707Z     │   ├── statusicons.py
+2025-02-28T15:24:40.4301130Z     │   ├── widgets
+2025-02-28T15:24:40.4301512Z     │   │   ├── __init__.py
+2025-02-28T15:24:40.4301959Z     │   │   ├── base.py
+2025-02-28T15:24:40.4302421Z     │   │   ├── box.py
+2025-02-28T15:24:40.4302828Z     │   │   ├── button.py
+2025-02-28T15:24:40.4303241Z     │   │   ├── canvas.py
+2025-02-28T15:24:40.4303677Z     │   │   ├── dateinput.py
+2025-02-28T15:24:40.4304134Z     │   │   ├── detailedlist.py
+2025-02-28T15:24:40.4304585Z     │   │   ├── divider.py
+2025-02-28T15:24:40.4305019Z     │   │   ├── imageview.py
+2025-02-28T15:24:40.4305442Z     │   │   ├── internal
+2025-02-28T15:24:40.4305852Z     │   │   │   ├── __init__.py
+2025-02-28T15:24:40.4306305Z     │   │   │   └── pickers.py
+2025-02-28T15:24:40.4306802Z     │   │   ├── label.py
+2025-02-28T15:24:40.4307219Z     │   │   ├── mapview.py
+2025-02-28T15:24:40.4307679Z     │   │   ├── multilinetextinput.py
+2025-02-28T15:24:40.4308201Z     │   │   ├── numberinput.py
+2025-02-28T15:24:40.4308676Z     │   │   ├── optioncontainer.py
+2025-02-28T15:24:40.4309184Z     │   │   ├── passwordinput.py
+2025-02-28T15:24:40.4309662Z     │   │   ├── progressbar.py
+2025-02-28T15:24:40.4310367Z     │   │   ├── scrollcontainer.py
+2025-02-28T15:24:40.4310886Z     │   │   ├── selection.py
+2025-02-28T15:24:40.4311329Z     │   │   ├── slider.py
+2025-02-28T15:24:40.4311752Z     │   │   ├── switch.py
+2025-02-28T15:24:40.4312170Z     │   │   ├── table.py
+2025-02-28T15:24:40.4312562Z     │   │   ├── textinput.py
+2025-02-28T15:24:40.4312985Z     │   │   ├── timeinput.py
+2025-02-28T15:24:40.4313394Z     │   │   └── webview.py
+2025-02-28T15:24:40.4313762Z     │   └── window.py
+2025-02-28T15:24:40.4314074Z     └── toga_android-0.4.9.dev629+g68266e24a.dist-info
+2025-02-28T15:24:40.4314875Z         ├── LICENSE
+2025-02-28T15:24:40.4315115Z         ├── METADATA
+2025-02-28T15:24:40.4315327Z         ├── RECORD
+2025-02-28T15:24:40.4315542Z         ├── WHEEL
+2025-02-28T15:24:40.4315768Z         ├── entry_points.txt
+2025-02-28T15:24:40.4316010Z         └── top_level.txt
+2025-02-28T15:24:40.4316209Z     
+2025-02-28T15:24:40.4316394Z     8 directories, 55 files
+2025-02-28T15:24:40.4316654Z ----- Metadata Follows -----
+2025-02-28T15:24:40.4316986Z     Metadata-Version: 2.2
+2025-02-28T15:24:40.4317342Z     Name: toga-android
+2025-02-28T15:24:40.4317691Z     Version: 0.4.9.dev629+g68266e24a
+2025-02-28T15:24:40.4318199Z     Summary: An Android backend for the Toga widget toolkit.
+2025-02-28T15:24:40.4318836Z     Author-email: Russell Keith-Magee <russell@keith-magee.com>
+2025-02-28T15:24:40.4319441Z     Maintainer-email: BeeWare Team <team@beeware.org>
+2025-02-28T15:24:40.4319917Z     License: New BSD
+2025-02-28T15:24:40.4320685Z     Project-URL: Homepage, https://beeware.org/project/projects/libraries/toga/
+2025-02-28T15:24:40.4321437Z     Project-URL: Funding, https://beeware.org/contributing/membership/
+2025-02-28T15:24:40.4321856Z     Project-URL: Documentation, https://toga.readthedocs.io/
+2025-02-28T15:24:40.4322241Z     Project-URL: Tracker, https://github.com/beeware/toga/issues
+2025-02-28T15:24:40.4322616Z     Project-URL: Source, https://github.com/beeware/toga
+2025-02-28T15:24:40.4323104Z     Project-URL: Changelog, https://toga.readthedocs.io/en/stable/background/project/releases.html
+2025-02-28T15:24:40.4323604Z     Keywords: gui,widget,cross-platform,toga,mobile,android
+2025-02-28T15:24:40.4323996Z     Classifier: Development Status :: 4 - Beta
+2025-02-28T15:24:40.4324303Z     Classifier: Intended Audience :: Developers
+2025-02-28T15:24:40.4324618Z     Classifier: License :: OSI Approved :: BSD License
+2025-02-28T15:24:40.4324937Z     Classifier: Operating System :: OS Independent
+2025-02-28T15:24:40.4325249Z     Classifier: Programming Language :: Python :: 3
+2025-02-28T15:24:40.4325568Z     Classifier: Programming Language :: Python :: 3.9
+2025-02-28T15:24:40.4325894Z     Classifier: Programming Language :: Python :: 3.10
+2025-02-28T15:24:40.4326210Z     Classifier: Programming Language :: Python :: 3.11
+2025-02-28T15:24:40.4326528Z     Classifier: Programming Language :: Python :: 3.12
+2025-02-28T15:24:40.4326861Z     Classifier: Programming Language :: Python :: 3.13
+2025-02-28T15:24:40.4327202Z     Classifier: Programming Language :: Python :: 3 :: Only
+2025-02-28T15:24:40.4327520Z     Classifier: Topic :: Software Development
+2025-02-28T15:24:40.4327854Z     Classifier: Topic :: Software Development :: User Interfaces
+2025-02-28T15:24:40.4328223Z     Classifier: Topic :: Software Development :: Widget Sets
+2025-02-28T15:24:40.4328532Z     Requires-Python: >=3.9
+2025-02-28T15:24:40.4328786Z     Description-Content-Type: text/x-rst
+2025-02-28T15:24:40.4329058Z     License-File: LICENSE
+2025-02-28T15:24:40.4329315Z     Requires-Dist: toga-core==0.4.9.dev629+g68266e24a
+2025-02-28T15:24:40.4329625Z     Dynamic: requires-dist
+2025-02-28T15:24:40.4329840Z     
+2025-02-28T15:24:40.4330006Z     toga-android
+2025-02-28T15:24:40.4330651Z     ============
+2025-02-28T15:24:40.4330843Z     
+2025-02-28T15:24:40.4331063Z     An Android backend for the `Toga widget toolkit`_.
+2025-02-28T15:24:40.4331333Z     
+2025-02-28T15:24:40.4331655Z     This package isn't much use by itself; it needs to be combined with `the core Toga library`_,
+2025-02-28T15:24:40.4332026Z     
+2025-02-28T15:24:40.4332290Z     For platform requirements, see the `Android platform documentation
+2025-02-28T15:24:40.4332842Z     <https://toga.readthedocs.io/en/latest/reference/platforms/android.html#prerequisites>`__.
+2025-02-28T15:24:40.4333261Z     
+2025-02-28T15:24:40.4333510Z     For more details, see the `Toga project on Github`_.
+2025-02-28T15:24:40.4333785Z     
+2025-02-28T15:24:40.4333988Z     .. _Toga widget toolkit: https://beeware.org/toga
+2025-02-28T15:24:40.4334517Z     .. _the core Toga library: https://pypi.python.org/pypi/toga-core
+2025-02-28T15:24:40.4335012Z     .. _Toga project on Github: https://github.com/beeware/toga
+2025-02-28T15:24:40.4357818Z     
+2025-02-28T15:24:40.4358048Z     Community
+2025-02-28T15:24:40.4358239Z     ---------
+2025-02-28T15:24:40.4358416Z     
+2025-02-28T15:24:40.4358713Z     Toga is part of the `BeeWare suite`_. You can talk to the community through:
+2025-02-28T15:24:40.4359052Z     
+2025-02-28T15:24:40.4359246Z     * `@beeware@fosstodon.org on Mastodon`_
+2025-02-28T15:24:40.4359497Z     * `Discord`_
+2025-02-28T15:24:40.4359699Z     * The Toga `Github Discussions forum`_
+2025-02-28T15:24:40.4359932Z     
+2025-02-28T15:24:40.4360463Z     We foster a welcoming and respectful community as described in our
+2025-02-28T15:24:40.4360927Z     `BeeWare Community Code of Conduct`_.
+2025-02-28T15:24:40.4361161Z     
+2025-02-28T15:24:40.4361351Z     .. _BeeWare suite: https://beeware.org
+2025-02-28T15:24:40.4361710Z     .. _@beeware@fosstodon.org on Mastodon: https://fosstodon.org/@beeware
+2025-02-28T15:24:40.4362095Z     .. _Discord: https://beeware.org/bee/chat/
+2025-02-28T15:24:40.4362456Z     .. _Github Discussions forum: https://github.com/beeware/toga/discussions
+2025-02-28T15:24:40.4362916Z     .. _BeeWare Community Code of Conduct: https://beeware.org/community/behavior/
+2025-02-28T15:24:40.4363253Z     
+2025-02-28T15:24:40.4363410Z     Contributing
+2025-02-28T15:24:40.4363592Z     ------------
+2025-02-28T15:24:40.4363759Z     
+2025-02-28T15:24:40.4364036Z     If you experience problems with this backend, `log them on GitHub`_. If you
+2025-02-28T15:24:40.4364502Z     want to contribute code, please `fork the code`_ and `submit a pull request`_.
+2025-02-28T15:24:40.4364840Z     
+2025-02-28T15:24:40.4365073Z     .. _log them on Github: https://github.com/beeware/toga/issues
+2025-02-28T15:24:40.4365417Z     .. _fork the code: https://github.com/beeware/toga
+2025-02-28T15:24:40.4365767Z     .. _submit a pull request: https://github.com/beeware/toga/pulls
+2025-02-28T15:24:40.4366084Z ----- End of Metadata -----
+2025-02-28T15:24:40.4429810Z ##[group]Run actions/upload-artifact@v4
+2025-02-28T15:24:40.4430308Z with:
+2025-02-28T15:24:40.4430535Z   name: Package Metadata-toga-android
+2025-02-28T15:24:40.4430813Z   path: /tmp/baipp/dist/out/sdist/*/PKG-INFO
+2025-02-28T15:24:40.4431087Z   if-no-files-found: warn
+2025-02-28T15:24:40.4431321Z   compression-level: 6
+2025-02-28T15:24:40.4431525Z   overwrite: false
+2025-02-28T15:24:40.4431727Z   include-hidden-files: false
+2025-02-28T15:24:40.4431941Z env:
+2025-02-28T15:24:40.4432108Z   FORCE_COLOR: 1
+2025-02-28T15:24:40.4432313Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:40.4432680Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:40.4433037Z ##[endgroup]
+2025-02-28T15:24:40.6601015Z With the provided path, there will be 1 file uploaded
+2025-02-28T15:24:40.6605668Z Artifact name is valid!
+2025-02-28T15:24:40.6606982Z Root directory input is valid!
+2025-02-28T15:24:40.7659437Z Beginning upload of artifact content to blob storage
+2025-02-28T15:24:40.8235514Z Uploaded bytes 1370
+2025-02-28T15:24:40.8367202Z Finished uploading artifact content to blob storage!
+2025-02-28T15:24:40.8370593Z SHA256 hash of uploaded artifact zip is a051a1b9ba3307b099b3d1a3a05325411c726412854bf97283aaa43f3a2f14ed
+2025-02-28T15:24:40.8372694Z Finalizing artifact upload
+2025-02-28T15:24:40.9153701Z Artifact Package Metadata-toga-android.zip successfully finalized. Artifact ID 2671286587
+2025-02-28T15:24:40.9154993Z Artifact Package Metadata-toga-android has been successfully uploaded! Final size is 1370 bytes. Artifact ID is 2671286587
+2025-02-28T15:24:40.9161875Z Artifact download URL: https://github.com/beeware/toga/actions/runs/13591189051/artifacts/2671286587
+2025-02-28T15:24:40.9255073Z ##[group]Run cat */PKG-INFO | python -c '
+2025-02-28T15:24:40.9255403Z [36;1mcat */PKG-INFO | python -c '[0m
+2025-02-28T15:24:40.9255674Z [36;1mimport email.parser[0m
+2025-02-28T15:24:40.9255895Z [36;1mimport sys[0m
+2025-02-28T15:24:40.9256096Z [36;1m[0m
+2025-02-28T15:24:40.9256703Z [36;1mem = email.parser.Parser().parsestr(sys.stdin.read())[0m
+2025-02-28T15:24:40.9257028Z [36;1msuffix = {[0m
+2025-02-28T15:24:40.9257235Z [36;1m    "text/markdown": "md",[0m
+2025-02-28T15:24:40.9257471Z [36;1m    "text/x-rst": "rst",[0m
+2025-02-28T15:24:40.9257734Z [36;1m}[em["Description-Content-Type"]][0m
+2025-02-28T15:24:40.9258050Z [36;1mwith open(f"PyPI-README.{suffix}", "w") as f:[0m
+2025-02-28T15:24:40.9258360Z [36;1m    f.write(em.get_payload())[0m
+2025-02-28T15:24:40.9258598Z [36;1m'[0m
+2025-02-28T15:24:40.9306506Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:40.9306844Z env:
+2025-02-28T15:24:40.9307047Z   FORCE_COLOR: 1
+2025-02-28T15:24:40.9307261Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:40.9307635Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:40.9307997Z ##[endgroup]
+2025-02-28T15:24:40.9795488Z ##[group]Run actions/upload-artifact@v4
+2025-02-28T15:24:40.9795775Z with:
+2025-02-28T15:24:40.9795973Z   name: PyPI README-toga-android
+2025-02-28T15:24:40.9796249Z   path: /tmp/baipp/dist/out/sdist/PyPI-README.*
+2025-02-28T15:24:40.9796540Z   if-no-files-found: warn
+2025-02-28T15:24:40.9796762Z   compression-level: 6
+2025-02-28T15:24:40.9796966Z   overwrite: false
+2025-02-28T15:24:40.9797170Z   include-hidden-files: false
+2025-02-28T15:24:40.9797391Z env:
+2025-02-28T15:24:40.9797562Z   FORCE_COLOR: 1
+2025-02-28T15:24:40.9797776Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:40.9798141Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:40.9798495Z ##[endgroup]
+2025-02-28T15:24:41.1974377Z With the provided path, there will be 1 file uploaded
+2025-02-28T15:24:41.1979935Z Artifact name is valid!
+2025-02-28T15:24:41.1981572Z Root directory input is valid!
+2025-02-28T15:24:41.2829625Z Beginning upload of artifact content to blob storage
+2025-02-28T15:24:41.3281481Z Uploaded bytes 779
+2025-02-28T15:24:41.3417336Z Finished uploading artifact content to blob storage!
+2025-02-28T15:24:41.3420625Z SHA256 hash of uploaded artifact zip is fbb55fd61e315c75999d19512bee6372de7a257239562a5cdf83051da1fb4623
+2025-02-28T15:24:41.3422562Z Finalizing artifact upload
+2025-02-28T15:24:41.4150376Z Artifact PyPI README-toga-android.zip successfully finalized. Artifact ID 2671286637
+2025-02-28T15:24:41.4151883Z Artifact PyPI README-toga-android has been successfully uploaded! Final size is 779 bytes. Artifact ID is 2671286637
+2025-02-28T15:24:41.4159110Z Artifact download URL: https://github.com/beeware/toga/actions/runs/13591189051/artifacts/2671286637
+2025-02-28T15:24:41.4251778Z ##[group]Run cat */PKG-INFO | python -c '
+2025-02-28T15:24:41.4252106Z [36;1mcat */PKG-INFO | python -c '[0m
+2025-02-28T15:24:41.4252368Z [36;1mimport email.parser[0m
+2025-02-28T15:24:41.4252602Z [36;1mimport json, re, sys[0m
+2025-02-28T15:24:41.4252822Z [36;1m[0m
+2025-02-28T15:24:41.4253108Z [36;1mpkg_info = email.parser.Parser().parsestr(sys.stdin.read())[0m
+2025-02-28T15:24:41.4253464Z [36;1m[0m
+2025-02-28T15:24:41.4253640Z [36;1mversion_tokens = [][0m
+2025-02-28T15:24:41.4253942Z [36;1mfor classifier in pkg_info.get_all("Classifier", []):[0m
+2025-02-28T15:24:41.4254389Z [36;1m    if match := re.match(r"Programming Language :: Python :: (\d+\.\d+)$", classifier):[0m
+2025-02-28T15:24:41.4254804Z [36;1m        version_tokens.append(match.group(1))[0m
+2025-02-28T15:24:41.4255069Z [36;1m[0m
+2025-02-28T15:24:41.4255296Z [36;1mpackage_version = pkg_info.get("Version", "0.0.0")[0m
+2025-02-28T15:24:41.4255584Z [36;1m[0m
+2025-02-28T15:24:41.4255794Z [36;1mprint(f"package_version={package_version}")[0m
+2025-02-28T15:24:41.4256215Z [36;1mprint(f"supported_python_classifiers_json_array={json.dumps(version_tokens)}")[0m
+2025-02-28T15:24:41.4256832Z [36;1mprint(f"""supported_python_classifiers_json_job_matrix_value={json.dumps({"python-version": version_tokens})}""")[0m
+2025-02-28T15:24:41.4257311Z [36;1m' >> $GITHUB_OUTPUT[0m
+2025-02-28T15:24:41.4303252Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-28T15:24:41.4303578Z env:
+2025-02-28T15:24:41.4303752Z   FORCE_COLOR: 1
+2025-02-28T15:24:41.4303962Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:41.4304335Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:41.4304702Z ##[endgroup]
+2025-02-28T15:24:41.4823212Z ##[group]Run # trim the differentiator to generate the artifact's basename
+2025-02-28T15:24:41.4823712Z [36;1m# trim the differentiator to generate the artifact's basename[0m
+2025-02-28T15:24:41.4824163Z [36;1mecho "basename=${BASENAME%-android}" | tee -a ${GITHUB_OUTPUT}[0m
+2025-02-28T15:24:41.4872750Z shell: /usr/bin/bash -e {0}
+2025-02-28T15:24:41.4873009Z env:
+2025-02-28T15:24:41.4873192Z   FORCE_COLOR: 1
+2025-02-28T15:24:41.4873410Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-28T15:24:41.4873786Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-28T15:24:41.4874169Z   BASENAME: Packages-toga-android
+2025-02-28T15:24:41.4874433Z ##[endgroup]
+2025-02-28T15:24:41.4958713Z basename=Packages-toga
+2025-02-28T15:24:41.5114868Z Post job cleanup.
+2025-02-28T15:24:41.5144381Z Post job cleanup.
+2025-02-28T15:24:41.6456736Z Cache hit occurred on the primary key baipp-3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f, not saving cache.
+2025-02-28T15:24:41.6541279Z Post job cleanup.
+2025-02-28T15:24:41.8258272Z Post job cleanup.
+2025-02-28T15:24:41.9245216Z [command]/usr/bin/git version
+2025-02-28T15:24:41.9283624Z git version 2.48.1
+2025-02-28T15:24:41.9337783Z Temporarily overriding HOME='/home/runner/work/_temp/69dea317-5dbe-4a41-a428-82bd5798b887' before making global git config changes
+2025-02-28T15:24:41.9339050Z Adding repository directory to the temporary git global config as a safe directory
+2025-02-28T15:24:41.9344530Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/toga/toga
+2025-02-28T15:24:41.9383622Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-02-28T15:24:41.9419356Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-02-28T15:24:41.9665169Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-02-28T15:24:41.9691299Z http.https://github.com/.extraheader
+2025-02-28T15:24:41.9705859Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2025-02-28T15:24:41.9740776Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-02-28T15:24:42.0087365Z Evaluate and set job outputs
+2025-02-28T15:24:42.0092049Z Set output 'artifact-name'
+2025-02-28T15:24:42.0093907Z Set output 'artifact-basename'
+2025-02-28T15:24:42.0095041Z Cleaning up orphan processes

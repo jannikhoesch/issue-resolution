@@ -1,0 +1,949 @@
+﻿2025-02-24T05:27:18.7902378Z Current runner version: '2.322.0'
+2025-02-24T05:27:18.7927051Z ##[group]Operating System
+2025-02-24T05:27:18.7927810Z Ubuntu
+2025-02-24T05:27:18.7928306Z 24.04.1
+2025-02-24T05:27:18.7928877Z LTS
+2025-02-24T05:27:18.7929366Z ##[endgroup]
+2025-02-24T05:27:18.7929888Z ##[group]Runner Image
+2025-02-24T05:27:18.7930453Z Image: ubuntu-24.04
+2025-02-24T05:27:18.7930987Z Version: 20250209.1.0
+2025-02-24T05:27:18.7932030Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20250209.1/images/ubuntu/Ubuntu2404-Readme.md
+2025-02-24T05:27:18.7933479Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250209.1
+2025-02-24T05:27:18.7934585Z ##[endgroup]
+2025-02-24T05:27:18.7935101Z ##[group]Runner Image Provisioner
+2025-02-24T05:27:18.7935742Z 2.0.422.1
+2025-02-24T05:27:18.7936241Z ##[endgroup]
+2025-02-24T05:27:18.7937374Z ##[group]GITHUB_TOKEN Permissions
+2025-02-24T05:27:18.7939202Z Attestations: write
+2025-02-24T05:27:18.7940001Z Contents: read
+2025-02-24T05:27:18.7940592Z Metadata: read
+2025-02-24T05:27:18.7941077Z ##[endgroup]
+2025-02-24T05:27:18.7944067Z Secret source: Actions
+2025-02-24T05:27:18.7944784Z Prepare workflow directory
+2025-02-24T05:27:18.8303984Z Prepare all required actions
+2025-02-24T05:27:18.8340267Z Getting action download info
+2025-02-24T05:27:18.9846383Z ##[group]Download immutable action package 'actions/checkout@v4.2.2'
+2025-02-24T05:27:18.9847567Z Version: 4.2.2
+2025-02-24T05:27:18.9848530Z Digest: sha256:ccb2698953eaebd21c7bf6268a94f9c26518a7e38e27e0b83c1fe1ad049819b1
+2025-02-24T05:27:18.9849615Z Source commit SHA: 11bd71901bbe5b1630ceea73d27597364c9af683
+2025-02-24T05:27:18.9850443Z ##[endgroup]
+2025-02-24T05:27:19.0638980Z Download action repository 'hynek/build-and-inspect-python-package@v2.12.0' (SHA:b5076c307dc91924a82ad150cdd1533b444d3310)
+2025-02-24T05:27:19.3384681Z Getting action download info
+2025-02-24T05:27:19.5138071Z ##[group]Download immutable action package 'actions/setup-python@v5'
+2025-02-24T05:27:19.5139130Z Version: 5.4.0
+2025-02-24T05:27:19.5140089Z Digest: sha256:6003df952c8106bcd378d2ba997eef202da924317a57269dfa72449b135adb7f
+2025-02-24T05:27:19.5141370Z Source commit SHA: 42375524e23c412d93fb67b49958b491fce71c38
+2025-02-24T05:27:19.5142257Z ##[endgroup]
+2025-02-24T05:27:19.6819272Z ##[group]Download immutable action package 'actions/cache@v4'
+2025-02-24T05:27:19.6820058Z Version: 4.2.1
+2025-02-24T05:27:19.6820758Z Digest: sha256:b0404c9628d43aa6855629075b28f32cadf8efc5c26198438149f78500112940
+2025-02-24T05:27:19.6821732Z Source commit SHA: 0c907a75c2c80ebcb7f088228285e798b750cf8f
+2025-02-24T05:27:19.6822416Z ##[endgroup]
+2025-02-24T05:27:19.8784719Z ##[group]Download immutable action package 'actions/attest-build-provenance@v1'
+2025-02-24T05:27:19.8785731Z Version: 1.4.4
+2025-02-24T05:27:19.8786564Z Digest: sha256:d7299ad8c2a3f956532d6e8204e559d00a18d56d3620a1298c82fc122475c4a1
+2025-02-24T05:27:19.8787629Z Source commit SHA: ef244123eb79f2f7a7e75d99086184180e6d0018
+2025-02-24T05:27:19.8788403Z ##[endgroup]
+2025-02-24T05:27:20.0002090Z ##[group]Download immutable action package 'actions/upload-artifact@v4'
+2025-02-24T05:27:20.0002901Z Version: 4.6.1
+2025-02-24T05:27:20.0003605Z Digest: sha256:3f6a28e7a1e0b5c8e2249e28da121a049fa5b91863b04390a46a82e4f8e2da98
+2025-02-24T05:27:20.0004862Z Source commit SHA: 4cec3d8aa04e39d1a68397de0c4cd6fb9dce8ec1
+2025-02-24T05:27:20.0005532Z ##[endgroup]
+2025-02-24T05:27:20.2168089Z Getting action download info
+2025-02-24T05:27:20.3161423Z Download action repository 'actions/attest-build-provenance@36fa7d009e22618ca7cd599486979b8150596c74' (SHA:36fa7d009e22618ca7cd599486979b8150596c74)
+2025-02-24T05:27:20.4545109Z Download action repository 'actions/attest@67422f5511b7ff725f4dbd6fb9bd2cd925c65a8d' (SHA:67422f5511b7ff725f4dbd6fb9bd2cd925c65a8d)
+2025-02-24T05:27:20.7002195Z Uses: beeware/.github/.github/workflows/python-package-create.yml@refs/heads/main (a66b93162808d34adf5280c28104b75f8e0d70d3)
+2025-02-24T05:27:20.7005812Z ##[group] Inputs
+2025-02-24T05:27:20.7007022Z   repository: beeware/toga
+2025-02-24T05:27:20.7008111Z   build-subdirectory: textual
+2025-02-24T05:27:20.7009023Z   attest: 
+2025-02-24T05:27:20.7009744Z ##[endgroup]
+2025-02-24T05:27:20.7010819Z Complete job name: Package Toga (textual) / Create Python Package
+2025-02-24T05:27:20.7760140Z ##[group]Run echo "repo-name=$(basename "${REPO}")" | tee -a ${GITHUB_OUTPUT}
+2025-02-24T05:27:20.7761974Z [36;1mecho "repo-name=$(basename "${REPO}")" | tee -a ${GITHUB_OUTPUT}[0m
+2025-02-24T05:27:20.7763678Z [36;1mecho "differentiator=${DIFFERENTIATOR}" | tee -a ${GITHUB_OUTPUT}[0m
+2025-02-24T05:27:20.7965988Z shell: /usr/bin/bash -e {0}
+2025-02-24T05:27:20.7967902Z env:
+2025-02-24T05:27:20.7969277Z   FORCE_COLOR: 1
+2025-02-24T05:27:20.7970671Z   REPO: beeware/toga
+2025-02-24T05:27:20.7972179Z   DIFFERENTIATOR: -textual
+2025-02-24T05:27:20.7973744Z ##[endgroup]
+2025-02-24T05:27:20.8210844Z repo-name=toga
+2025-02-24T05:27:20.8217710Z differentiator=-textual
+2025-02-24T05:27:20.8495989Z ##[group]Run actions/checkout@v4.2.2
+2025-02-24T05:27:20.8497425Z with:
+2025-02-24T05:27:20.8498251Z   repository: beeware/toga
+2025-02-24T05:27:20.8499165Z   fetch-depth: 0
+2025-02-24T05:27:20.8500213Z   token: ***
+2025-02-24T05:27:20.8500990Z   ssh-strict: true
+2025-02-24T05:27:20.8501774Z   ssh-user: git
+2025-02-24T05:27:20.8502589Z   persist-credentials: true
+2025-02-24T05:27:20.8503473Z   clean: true
+2025-02-24T05:27:20.8504531Z   sparse-checkout-cone-mode: true
+2025-02-24T05:27:20.8505864Z   fetch-tags: false
+2025-02-24T05:27:20.8506909Z   show-progress: true
+2025-02-24T05:27:20.8508262Z   lfs: false
+2025-02-24T05:27:20.8509504Z   submodules: false
+2025-02-24T05:27:20.8510540Z   set-safe-directory: true
+2025-02-24T05:27:20.8511507Z env:
+2025-02-24T05:27:20.8512300Z   FORCE_COLOR: 1
+2025-02-24T05:27:20.8513145Z ##[endgroup]
+2025-02-24T05:27:21.0136803Z Syncing repository: beeware/toga
+2025-02-24T05:27:21.0139221Z ##[group]Getting Git version info
+2025-02-24T05:27:21.0140456Z Working directory is '/home/runner/work/toga/toga'
+2025-02-24T05:27:21.0142154Z [command]/usr/bin/git version
+2025-02-24T05:27:21.0180034Z git version 2.48.1
+2025-02-24T05:27:21.0208947Z ##[endgroup]
+2025-02-24T05:27:21.0221676Z Temporarily overriding HOME='/home/runner/work/_temp/44f7e36c-7782-493b-9da9-b935db4343a3' before making global git config changes
+2025-02-24T05:27:21.0224537Z Adding repository directory to the temporary git global config as a safe directory
+2025-02-24T05:27:21.0233714Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/toga/toga
+2025-02-24T05:27:21.0270270Z Deleting the contents of '/home/runner/work/toga/toga'
+2025-02-24T05:27:21.0274539Z ##[group]Initializing the repository
+2025-02-24T05:27:21.0279552Z [command]/usr/bin/git init /home/runner/work/toga/toga
+2025-02-24T05:27:21.0339724Z hint: Using 'master' as the name for the initial branch. This default branch name
+2025-02-24T05:27:21.0341891Z hint: is subject to change. To configure the initial branch name to use in all
+2025-02-24T05:27:21.0344551Z hint: of your new repositories, which will suppress this warning, call:
+2025-02-24T05:27:21.0345909Z hint:
+2025-02-24T05:27:21.0346828Z hint: 	git config --global init.defaultBranch <name>
+2025-02-24T05:27:21.0347945Z hint:
+2025-02-24T05:27:21.0349306Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2025-02-24T05:27:21.0351308Z hint: 'development'. The just-created branch can be renamed via this command:
+2025-02-24T05:27:21.0352827Z hint:
+2025-02-24T05:27:21.0353579Z hint: 	git branch -m <name>
+2025-02-24T05:27:21.0355476Z Initialized empty Git repository in /home/runner/work/toga/toga/.git/
+2025-02-24T05:27:21.0358260Z [command]/usr/bin/git remote add origin https://github.com/beeware/toga
+2025-02-24T05:27:21.0388607Z ##[endgroup]
+2025-02-24T05:27:21.0390136Z ##[group]Disabling automatic garbage collection
+2025-02-24T05:27:21.0391778Z [command]/usr/bin/git config --local gc.auto 0
+2025-02-24T05:27:21.0421244Z ##[endgroup]
+2025-02-24T05:27:21.0422552Z ##[group]Setting up auth
+2025-02-24T05:27:21.0427705Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-02-24T05:27:21.0457418Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-02-24T05:27:21.0740481Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-02-24T05:27:21.0771628Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-02-24T05:27:21.1001960Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2025-02-24T05:27:21.1047644Z ##[endgroup]
+2025-02-24T05:27:21.1049647Z ##[group]Fetching the repository
+2025-02-24T05:27:21.1056427Z [command]/usr/bin/git -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+2025-02-24T05:27:23.2047790Z From https://github.com/beeware/toga
+2025-02-24T05:27:23.2048746Z  * [new branch]          main         -> origin/main
+2025-02-24T05:27:23.2049826Z  * [new branch]          pre-0.5      -> origin/pre-0.5
+2025-02-24T05:27:23.2050695Z  * [new tag]             0.2.6        -> 0.2.6
+2025-02-24T05:27:23.2051482Z  * [new tag]             v0.0.1rc1    -> v0.0.1rc1
+2025-02-24T05:27:23.2052326Z  * [new tag]             v0.0.1rc10   -> v0.0.1rc10
+2025-02-24T05:27:23.2053486Z  * [new tag]             v0.0.1rc5    -> v0.0.1rc5
+2025-02-24T05:27:23.2055788Z  * [new tag]             v0.0.1rc6    -> v0.0.1rc6
+2025-02-24T05:27:23.2056438Z  * [new tag]             v0.1.0       -> v0.1.0
+2025-02-24T05:27:23.2058994Z  * [new tag]             v0.1.1       -> v0.1.1
+2025-02-24T05:27:23.2060759Z  * [new tag]             v0.1.2       -> v0.1.2
+2025-02-24T05:27:23.2061418Z  * [new tag]             v0.2.0       -> v0.2.0
+2025-02-24T05:27:23.2062019Z  * [new tag]             v0.2.0.dev1  -> v0.2.0.dev1
+2025-02-24T05:27:23.2062727Z  * [new tag]             v0.2.1       -> v0.2.1
+2025-02-24T05:27:23.2063383Z  * [new tag]             v0.2.10      -> v0.2.10
+2025-02-24T05:27:23.2066893Z  * [new tag]             v0.2.11      -> v0.2.11
+2025-02-24T05:27:23.2067925Z  * [new tag]             v0.2.12      -> v0.2.12
+2025-02-24T05:27:23.2070047Z  * [new tag]             v0.2.13      -> v0.2.13
+2025-02-24T05:27:23.2070922Z  * [new tag]             v0.2.14      -> v0.2.14
+2025-02-24T05:27:23.2071667Z  * [new tag]             v0.2.15      -> v0.2.15
+2025-02-24T05:27:23.2072606Z  * [new tag]             v0.2.2       -> v0.2.2
+2025-02-24T05:27:23.2074975Z  * [new tag]             v0.2.3       -> v0.2.3
+2025-02-24T05:27:23.2075618Z  * [new tag]             v0.2.4       -> v0.2.4
+2025-02-24T05:27:23.2077061Z  * [new tag]             v0.2.5       -> v0.2.5
+2025-02-24T05:27:23.2078018Z  * [new tag]             v0.2.6       -> v0.2.6
+2025-02-24T05:27:23.2080271Z  * [new tag]             v0.2.7       -> v0.2.7
+2025-02-24T05:27:23.2081268Z  * [new tag]             v0.2.8       -> v0.2.8
+2025-02-24T05:27:23.2083707Z  * [new tag]             v0.2.9       -> v0.2.9
+2025-02-24T05:27:23.2084543Z  * [new tag]             v0.3.0       -> v0.3.0
+2025-02-24T05:27:23.2087170Z  * [new tag]             v0.3.0.dev1  -> v0.3.0.dev1
+2025-02-24T05:27:23.2087936Z  * [new tag]             v0.3.0.dev10 -> v0.3.0.dev10
+2025-02-24T05:27:23.2089338Z  * [new tag]             v0.3.0.dev11 -> v0.3.0.dev11
+2025-02-24T05:27:23.2090272Z  * [new tag]             v0.3.0.dev12 -> v0.3.0.dev12
+2025-02-24T05:27:23.2092138Z  * [new tag]             v0.3.0.dev13 -> v0.3.0.dev13
+2025-02-24T05:27:23.2093079Z  * [new tag]             v0.3.0.dev14 -> v0.3.0.dev14
+2025-02-24T05:27:23.2095212Z  * [new tag]             v0.3.0.dev15 -> v0.3.0.dev15
+2025-02-24T05:27:23.2097625Z  * [new tag]             v0.3.0.dev16 -> v0.3.0.dev16
+2025-02-24T05:27:23.2098371Z  * [new tag]             v0.3.0.dev17 -> v0.3.0.dev17
+2025-02-24T05:27:23.2099908Z  * [new tag]             v0.3.0.dev18 -> v0.3.0.dev18
+2025-02-24T05:27:23.2101320Z  * [new tag]             v0.3.0.dev19 -> v0.3.0.dev19
+2025-02-24T05:27:23.2104647Z  * [new tag]             v0.3.0.dev2  -> v0.3.0.dev2
+2025-02-24T05:27:23.2105290Z  * [new tag]             v0.3.0.dev20 -> v0.3.0.dev20
+2025-02-24T05:27:23.2106128Z  * [new tag]             v0.3.0.dev21 -> v0.3.0.dev21
+2025-02-24T05:27:23.2106792Z  * [new tag]             v0.3.0.dev22 -> v0.3.0.dev22
+2025-02-24T05:27:23.2108454Z  * [new tag]             v0.3.0.dev23 -> v0.3.0.dev23
+2025-02-24T05:27:23.2110829Z  * [new tag]             v0.3.0.dev24 -> v0.3.0.dev24
+2025-02-24T05:27:23.2111814Z  * [new tag]             v0.3.0.dev25 -> v0.3.0.dev25
+2025-02-24T05:27:23.2113081Z  * [new tag]             v0.3.0.dev26 -> v0.3.0.dev26
+2025-02-24T05:27:23.2114964Z  * [new tag]             v0.3.0.dev27 -> v0.3.0.dev27
+2025-02-24T05:27:23.2116562Z  * [new tag]             v0.3.0.dev28 -> v0.3.0.dev28
+2025-02-24T05:27:23.2117815Z  * [new tag]             v0.3.0.dev29 -> v0.3.0.dev29
+2025-02-24T05:27:23.2119173Z  * [new tag]             v0.3.0.dev3  -> v0.3.0.dev3
+2025-02-24T05:27:23.2120980Z  * [new tag]             v0.3.0.dev30 -> v0.3.0.dev30
+2025-02-24T05:27:23.2122213Z  * [new tag]             v0.3.0.dev32 -> v0.3.0.dev32
+2025-02-24T05:27:23.2124007Z  * [new tag]             v0.3.0.dev33 -> v0.3.0.dev33
+2025-02-24T05:27:23.2125369Z  * [new tag]             v0.3.0.dev34 -> v0.3.0.dev34
+2025-02-24T05:27:23.2126882Z  * [new tag]             v0.3.0.dev35 -> v0.3.0.dev35
+2025-02-24T05:27:23.2128257Z  * [new tag]             v0.3.0.dev36 -> v0.3.0.dev36
+2025-02-24T05:27:23.2129790Z  * [new tag]             v0.3.0.dev37 -> v0.3.0.dev37
+2025-02-24T05:27:23.2131105Z  * [new tag]             v0.3.0.dev38 -> v0.3.0.dev38
+2025-02-24T05:27:23.2132642Z  * [new tag]             v0.3.0.dev39 -> v0.3.0.dev39
+2025-02-24T05:27:23.2134154Z  * [new tag]             v0.3.0.dev4  -> v0.3.0.dev4
+2025-02-24T05:27:23.2135748Z  * [new tag]             v0.3.0.dev5  -> v0.3.0.dev5
+2025-02-24T05:27:23.2137021Z  * [new tag]             v0.3.0.dev6  -> v0.3.0.dev6
+2025-02-24T05:27:23.2138597Z  * [new tag]             v0.3.0.dev7  -> v0.3.0.dev7
+2025-02-24T05:27:23.2139883Z  * [new tag]             v0.3.0.dev8  -> v0.3.0.dev8
+2025-02-24T05:27:23.2141507Z  * [new tag]             v0.3.0.dev9  -> v0.3.0.dev9
+2025-02-24T05:27:23.2142773Z  * [new tag]             v0.3.0rc0    -> v0.3.0rc0
+2025-02-24T05:27:23.2144693Z  * [new tag]             v0.3.1       -> v0.3.1
+2025-02-24T05:27:23.2146332Z  * [new tag]             v0.4.0       -> v0.4.0
+2025-02-24T05:27:23.2147665Z  * [new tag]             v0.4.1       -> v0.4.1
+2025-02-24T05:27:23.2149325Z  * [new tag]             v0.4.2       -> v0.4.2
+2025-02-24T05:27:23.2150674Z  * [new tag]             v0.4.3       -> v0.4.3
+2025-02-24T05:27:23.2152307Z  * [new tag]             v0.4.4       -> v0.4.4
+2025-02-24T05:27:23.2153611Z  * [new tag]             v0.4.5       -> v0.4.5
+2025-02-24T05:27:23.2155542Z  * [new tag]             v0.4.6       -> v0.4.6
+2025-02-24T05:27:23.2156959Z  * [new tag]             v0.4.7       -> v0.4.7
+2025-02-24T05:27:23.2158544Z  * [new tag]             v0.4.8       -> v0.4.8
+2025-02-24T05:27:23.2159620Z  * [new tag]             v0.4.9       -> v0.4.9
+2025-02-24T05:27:23.2210744Z [command]/usr/bin/git branch --list --remote origin/main
+2025-02-24T05:27:23.2235548Z   origin/main
+2025-02-24T05:27:23.2245371Z [command]/usr/bin/git rev-parse refs/remotes/origin/main
+2025-02-24T05:27:23.2266413Z 01152b56b9607a5cc1dabb9e94970cc589baff01
+2025-02-24T05:27:23.2272245Z ##[endgroup]
+2025-02-24T05:27:23.2273061Z ##[group]Determining the checkout info
+2025-02-24T05:27:23.2274182Z ##[endgroup]
+2025-02-24T05:27:23.2278872Z [command]/usr/bin/git sparse-checkout disable
+2025-02-24T05:27:23.2315152Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2025-02-24T05:27:23.2340508Z ##[group]Checking out the ref
+2025-02-24T05:27:23.2344835Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2025-02-24T05:27:23.4121586Z Switched to a new branch 'main'
+2025-02-24T05:27:23.4124653Z branch 'main' set up to track 'origin/main'.
+2025-02-24T05:27:23.4146077Z ##[endgroup]
+2025-02-24T05:27:23.4187817Z [command]/usr/bin/git log -1 --format=%H
+2025-02-24T05:27:23.4212242Z 01152b56b9607a5cc1dabb9e94970cc589baff01
+2025-02-24T05:27:23.4553753Z ##[group]Run hynek/build-and-inspect-python-package@v2.12.0
+2025-02-24T05:27:23.4554297Z with:
+2025-02-24T05:27:23.4554483Z   path: textual
+2025-02-24T05:27:23.4554703Z   upload-name-suffix: -toga-textual
+2025-02-24T05:27:23.4554958Z   skip-wheel: false
+2025-02-24T05:27:23.4555144Z env:
+2025-02-24T05:27:23.4555314Z   FORCE_COLOR: 1
+2025-02-24T05:27:23.4555498Z ##[endgroup]
+2025-02-24T05:27:23.4669260Z ##[group]Run actions/setup-python@v5
+2025-02-24T05:27:23.4669517Z with:
+2025-02-24T05:27:23.4669699Z   python-version: 3.x
+2025-02-24T05:27:23.4669917Z   update-environment: false
+2025-02-24T05:27:23.4670150Z   check-latest: false
+2025-02-24T05:27:23.4670463Z   token: ***
+2025-02-24T05:27:23.4670668Z   allow-prereleases: false
+2025-02-24T05:27:23.4670882Z env:
+2025-02-24T05:27:23.4671052Z   FORCE_COLOR: 1
+2025-02-24T05:27:23.4671232Z ##[endgroup]
+2025-02-24T05:27:23.6455982Z ##[group]Installed versions
+2025-02-24T05:27:23.6526924Z Successfully set up CPython (3.13.2)
+2025-02-24T05:27:23.6528535Z ##[endgroup]
+2025-02-24T05:27:23.6624528Z ##[group]Run curl --location --silent --show-error --fail --proto '=https' --tlsv1.2 https://astral.sh/uv/install.sh | bash
+2025-02-24T05:27:23.6625358Z [36;1mcurl --location --silent --show-error --fail --proto '=https' --tlsv1.2 https://astral.sh/uv/install.sh | bash[0m
+2025-02-24T05:27:23.6682892Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-24T05:27:23.6683220Z env:
+2025-02-24T05:27:23.6683394Z   FORCE_COLOR: 1
+2025-02-24T05:27:23.6683590Z ##[endgroup]
+2025-02-24T05:27:23.8657428Z downloading uv 0.6.2 x86_64-unknown-linux-gnu
+2025-02-24T05:27:24.0015600Z no checksums to verify
+2025-02-24T05:27:24.2943433Z installing to /home/runner/.local/bin
+2025-02-24T05:27:24.3001662Z   uv
+2025-02-24T05:27:24.3033145Z   uvx
+2025-02-24T05:27:24.3033520Z everything's installed!
+2025-02-24T05:27:24.3150753Z ##[group]Run echo "UV_CACHE_DIR=/tmp/baipp-uv_cache_dir" >>$GITHUB_ENV
+2025-02-24T05:27:24.3151514Z [36;1mecho "UV_CACHE_DIR=/tmp/baipp-uv_cache_dir" >>$GITHUB_ENV[0m
+2025-02-24T05:27:24.3152045Z [36;1m[0m
+2025-02-24T05:27:24.3153089Z [36;1mecho "REQS_HASH=$(sha256sum /home/runner/work/_actions/hynek/build-and-inspect-python-package/v2.12.0/requirements/tools.txt | cut -d' ' -f1)" >>$GITHUB_ENV[0m
+2025-02-24T05:27:24.3235705Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-24T05:27:24.3236238Z env:
+2025-02-24T05:27:24.3236520Z   FORCE_COLOR: 1
+2025-02-24T05:27:24.3236836Z ##[endgroup]
+2025-02-24T05:27:24.3572388Z ##[group]Run actions/cache@v4
+2025-02-24T05:27:24.3572605Z with:
+2025-02-24T05:27:24.3572799Z   path: /tmp/baipp-uv_cache_dir
+2025-02-24T05:27:24.3573158Z   key: baipp-3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-24T05:27:24.3573550Z   enableCrossOsArchive: false
+2025-02-24T05:27:24.3573792Z   fail-on-cache-miss: false
+2025-02-24T05:27:24.3574270Z   lookup-only: false
+2025-02-24T05:27:24.3574460Z   save-always: false
+2025-02-24T05:27:24.3574642Z env:
+2025-02-24T05:27:24.3574811Z   FORCE_COLOR: 1
+2025-02-24T05:27:24.3575012Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-24T05:27:24.3575366Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-24T05:27:24.3575707Z ##[endgroup]
+2025-02-24T05:27:24.5902267Z Cache hit for: baipp-3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-24T05:27:24.7339015Z Received 2634960 of 2634960 (100.0%), 30.3 MBs/sec
+2025-02-24T05:27:24.7339609Z Cache Size: ~3 MB (2634960 B)
+2025-02-24T05:27:24.7368217Z [command]/usr/bin/tar -xf /home/runner/work/_temp/6ae5e36c-f830-4392-bc9e-e484c63dab9e/cache.tzst -P -C /home/runner/work/toga/toga --use-compress-program unzstd
+2025-02-24T05:27:24.7836152Z Cache restored successfully
+2025-02-24T05:27:24.9318263Z Cache restored from key: baipp-3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-24T05:27:24.9400259Z ##[group]Run unset UV_SYSTEM_PYTHON
+2025-02-24T05:27:24.9400593Z [36;1munset UV_SYSTEM_PYTHON[0m
+2025-02-24T05:27:24.9401066Z [36;1m[0m
+2025-02-24T05:27:24.9401274Z [36;1muv venv \[0m
+2025-02-24T05:27:24.9401507Z [36;1m  /tmp/baipp \[0m
+2025-02-24T05:27:24.9401872Z [36;1m  --python /opt/hostedtoolcache/Python/3.13.2/x64/bin/python[0m
+2025-02-24T05:27:24.9456770Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-24T05:27:24.9457144Z env:
+2025-02-24T05:27:24.9457340Z   FORCE_COLOR: 1
+2025-02-24T05:27:24.9457590Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-24T05:27:24.9458034Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-24T05:27:24.9458449Z ##[endgroup]
+2025-02-24T05:27:25.4469943Z Using CPython 3.13.2 interpreter at: [36m/opt/hostedtoolcache/Python/3.13.2/x64/bin/python[39m
+2025-02-24T05:27:25.4470588Z Creating virtual environment at: [36m/tmp/baipp[39m
+2025-02-24T05:27:25.4514660Z ##[group]Run unset UV_SYSTEM_PYTHON
+2025-02-24T05:27:25.4514990Z [36;1munset UV_SYSTEM_PYTHON[0m
+2025-02-24T05:27:25.4515228Z [36;1m[0m
+2025-02-24T05:27:25.4515417Z [36;1muv pip sync \[0m
+2025-02-24T05:27:25.4515862Z [36;1m  /home/runner/work/_actions/hynek/build-and-inspect-python-package/v2.12.0/requirements/tools.txt[0m
+2025-02-24T05:27:25.4570711Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-24T05:27:25.4571057Z env:
+2025-02-24T05:27:25.4571243Z   FORCE_COLOR: 1
+2025-02-24T05:27:25.4571469Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-24T05:27:25.4571879Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-24T05:27:25.4572276Z   VIRTUAL_ENV: /tmp/baipp
+2025-02-24T05:27:25.4572503Z ##[endgroup]
+2025-02-24T05:27:25.6219620Z [2mUsing Python 3.13.2 environment at: /tmp/baipp[0m
+2025-02-24T05:27:25.6748806Z [2mResolved [1m36 packages[0m [2min 52ms[0m[0m
+2025-02-24T05:27:25.7048132Z [36m[1mDownloading[0m[39m pydantic-core [2m(1.9MiB)[0m
+2025-02-24T05:27:25.7049007Z [36m[1mDownloading[0m[39m cryptography [2m(4.0MiB)[0m
+2025-02-24T05:27:25.7056896Z [36m[1mDownloading[0m[39m pygments [2m(1.2MiB)[0m
+2025-02-24T05:27:25.7860676Z  [32m[1mDownloaded[0m[39m pydantic-core
+2025-02-24T05:27:25.8717702Z  [32m[1mDownloaded[0m[39m cryptography
+2025-02-24T05:27:25.9089452Z  [32m[1mDownloaded[0m[39m pygments
+2025-02-24T05:27:25.9091887Z [2mPrepared [1m36 packages[0m [2min 233ms[0m[0m
+2025-02-24T05:27:25.9522241Z [2mInstalled [1m36 packages[0m [2min 42ms[0m[0m
+2025-02-24T05:27:25.9522942Z  [32m+[39m [1mannotated-types[0m[2m==0.7.0[0m
+2025-02-24T05:27:25.9523508Z  [32m+[39m [1mattrs[0m[2m==24.3.0[0m
+2025-02-24T05:27:25.9524262Z  [32m+[39m [1mcertifi[0m[2m==2024.12.14[0m
+2025-02-24T05:27:25.9524919Z  [32m+[39m [1mcffi[0m[2m==1.17.1[0m
+2025-02-24T05:27:25.9525462Z  [32m+[39m [1mcharset-normalizer[0m[2m==3.4.1[0m
+2025-02-24T05:27:25.9526117Z  [32m+[39m [1mcheck-wheel-contents[0m[2m==0.6.1[0m
+2025-02-24T05:27:25.9526647Z  [32m+[39m [1mclick[0m[2m==8.1.8[0m
+2025-02-24T05:27:25.9527172Z  [32m+[39m [1mcryptography[0m[2m==44.0.0[0m
+2025-02-24T05:27:25.9527757Z  [32m+[39m [1mdocutils[0m[2m==0.21.2[0m
+2025-02-24T05:27:25.9528275Z  [32m+[39m [1mid[0m[2m==1.5.0[0m
+2025-02-24T05:27:25.9528806Z  [32m+[39m [1midna[0m[2m==3.10[0m
+2025-02-24T05:27:25.9529365Z  [32m+[39m [1mjaraco-classes[0m[2m==3.4.0[0m
+2025-02-24T05:27:25.9529948Z  [32m+[39m [1mjaraco-context[0m[2m==6.0.1[0m
+2025-02-24T05:27:25.9530545Z  [32m+[39m [1mjaraco-functools[0m[2m==4.1.0[0m
+2025-02-24T05:27:25.9532684Z  [32m+[39m [1mjeepney[0m[2m==0.8.0[0m
+2025-02-24T05:27:25.9533246Z  [32m+[39m [1mkeyring[0m[2m==25.6.0[0m
+2025-02-24T05:27:25.9533793Z  [32m+[39m [1mmarkdown-it-py[0m[2m==3.0.0[0m
+2025-02-24T05:27:25.9534513Z  [32m+[39m [1mmdurl[0m[2m==0.1.2[0m
+2025-02-24T05:27:25.9535327Z  [32m+[39m [1mmore-itertools[0m[2m==10.6.0[0m
+2025-02-24T05:27:25.9535869Z  [32m+[39m [1mnh3[0m[2m==0.2.20[0m
+2025-02-24T05:27:25.9536465Z  [32m+[39m [1mpackaging[0m[2m==24.2[0m
+2025-02-24T05:27:25.9536976Z  [32m+[39m [1mpycparser[0m[2m==2.22[0m
+2025-02-24T05:27:25.9537747Z  [32m+[39m [1mpydantic[0m[2m==2.10.5[0m
+2025-02-24T05:27:25.9538343Z  [32m+[39m [1mpydantic-core[0m[2m==2.27.2[0m
+2025-02-24T05:27:25.9538900Z  [32m+[39m [1mpygments[0m[2m==2.19.1[0m
+2025-02-24T05:27:25.9539441Z  [32m+[39m [1mreadme-renderer[0m[2m==44.0[0m
+2025-02-24T05:27:25.9539981Z  [32m+[39m [1mrequests[0m[2m==2.32.3[0m
+2025-02-24T05:27:25.9540549Z  [32m+[39m [1mrequests-toolbelt[0m[2m==1.0.0[0m
+2025-02-24T05:27:25.9541091Z  [32m+[39m [1mrfc3986[0m[2m==2.0.0[0m
+2025-02-24T05:27:25.9541584Z  [32m+[39m [1mrich[0m[2m==13.9.4[0m
+2025-02-24T05:27:25.9542138Z  [32m+[39m [1msecretstorage[0m[2m==3.3.3[0m
+2025-02-24T05:27:25.9542657Z  [32m+[39m [1mtwine[0m[2m==6.1.0[0m
+2025-02-24T05:27:25.9543239Z  [32m+[39m [1mtyping-extensions[0m[2m==4.12.2[0m
+2025-02-24T05:27:25.9543786Z  [32m+[39m [1murllib3[0m[2m==2.3.0[0m
+2025-02-24T05:27:25.9544530Z  [32m+[39m [1mwheel[0m[2m==0.45.1[0m
+2025-02-24T05:27:25.9545186Z  [32m+[39m [1mwheel-filename[0m[2m==1.4.2[0m
+2025-02-24T05:27:25.9605675Z ##[group]Run echo "name=Packages-toga-textual" >>${GITHUB_OUTPUT}
+2025-02-24T05:27:25.9606102Z [36;1mecho "name=Packages-toga-textual" >>${GITHUB_OUTPUT}[0m
+2025-02-24T05:27:25.9661393Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-24T05:27:25.9661858Z env:
+2025-02-24T05:27:25.9662239Z   FORCE_COLOR: 1
+2025-02-24T05:27:25.9662578Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-24T05:27:25.9663108Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-24T05:27:25.9663719Z ##[endgroup]
+2025-02-24T05:27:25.9779130Z ##[group]Run unset UV_SYSTEM_PYTHON
+2025-02-24T05:27:25.9779413Z [36;1munset UV_SYSTEM_PYTHON[0m
+2025-02-24T05:27:25.9779643Z [36;1m[0m
+2025-02-24T05:27:25.9779920Z [36;1mecho Setting SOURCE_DATE_EPOCH to $(git log -1 --pretty=%ct).[0m
+2025-02-24T05:27:25.9780320Z [36;1mexport SOURCE_DATE_EPOCH=$(git log -1 --pretty=%ct)[0m
+2025-02-24T05:27:25.9780617Z [36;1m[0m
+2025-02-24T05:27:25.9780802Z [36;1mif [[ "false" == "true" ]]; then[0m
+2025-02-24T05:27:25.9781094Z [36;1m  uv build --sdist --out-dir /tmp/baipp/dist[0m
+2025-02-24T05:27:25.9781368Z [36;1melse[0m
+2025-02-24T05:27:25.9781565Z [36;1m  uv build --out-dir /tmp/baipp/dist[0m
+2025-02-24T05:27:25.9781815Z [36;1mfi[0m
+2025-02-24T05:27:25.9781979Z [36;1m[0m
+2025-02-24T05:27:25.9782250Z [36;1m# We don't need .gitignores and it litters the provenance output.[0m
+2025-02-24T05:27:25.9782600Z [36;1mrm -f /tmp/baipp/dist/.gitignore[0m
+2025-02-24T05:27:25.9831156Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-24T05:27:25.9831518Z env:
+2025-02-24T05:27:25.9831696Z   FORCE_COLOR: 1
+2025-02-24T05:27:25.9831937Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-24T05:27:25.9832321Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-24T05:27:25.9832690Z ##[endgroup]
+2025-02-24T05:27:25.9923178Z Setting SOURCE_DATE_EPOCH to 1740374826.
+2025-02-24T05:27:26.0461527Z [1mBuilding source distribution...[0m
+2025-02-24T05:27:26.8316770Z running egg_info
+2025-02-24T05:27:26.8336271Z creating src/toga_textual.egg-info
+2025-02-24T05:27:26.8338089Z writing src/toga_textual.egg-info/PKG-INFO
+2025-02-24T05:27:26.8341753Z writing dependency_links to src/toga_textual.egg-info/dependency_links.txt
+2025-02-24T05:27:26.8344342Z writing entry points to src/toga_textual.egg-info/entry_points.txt
+2025-02-24T05:27:26.8345895Z writing requirements to src/toga_textual.egg-info/requires.txt
+2025-02-24T05:27:26.8347025Z writing top-level names to src/toga_textual.egg-info/top_level.txt
+2025-02-24T05:27:26.8348233Z writing manifest file 'src/toga_textual.egg-info/SOURCES.txt'
+2025-02-24T05:27:26.9857354Z writing manifest file 'src/toga_textual.egg-info/SOURCES.txt'
+2025-02-24T05:27:27.2237512Z running sdist
+2025-02-24T05:27:27.2238015Z running egg_info
+2025-02-24T05:27:27.2273266Z writing src/toga_textual.egg-info/PKG-INFO
+2025-02-24T05:27:27.2278714Z writing dependency_links to src/toga_textual.egg-info/dependency_links.txt
+2025-02-24T05:27:27.2282061Z writing entry points to src/toga_textual.egg-info/entry_points.txt
+2025-02-24T05:27:27.2283779Z writing requirements to src/toga_textual.egg-info/requires.txt
+2025-02-24T05:27:27.2285536Z writing top-level names to src/toga_textual.egg-info/top_level.txt
+2025-02-24T05:27:27.3817554Z writing manifest file 'src/toga_textual.egg-info/SOURCES.txt'
+2025-02-24T05:27:27.3818911Z running check
+2025-02-24T05:27:27.3851175Z creating toga_textual-0.4.9.dev608+g01152b56b
+2025-02-24T05:27:27.3853610Z creating toga_textual-0.4.9.dev608+g01152b56b/src/toga_textual
+2025-02-24T05:27:27.3856040Z creating toga_textual-0.4.9.dev608+g01152b56b/src/toga_textual.egg-info
+2025-02-24T05:27:27.3857248Z creating toga_textual-0.4.9.dev608+g01152b56b/src/toga_textual/resources
+2025-02-24T05:27:27.3859028Z creating toga_textual-0.4.9.dev608+g01152b56b/src/toga_textual/widgets
+2025-02-24T05:27:27.3860632Z creating toga_textual-0.4.9.dev608+g01152b56b/tests_backend
+2025-02-24T05:27:27.3862394Z creating toga_textual-0.4.9.dev608+g01152b56b/tests_backend/widgets
+2025-02-24T05:27:27.3863432Z copying files to toga_textual-0.4.9.dev608+g01152b56b...
+2025-02-24T05:27:27.3864643Z copying CONTRIBUTING.md -> toga_textual-0.4.9.dev608+g01152b56b
+2025-02-24T05:27:27.3866738Z copying README.rst -> toga_textual-0.4.9.dev608+g01152b56b
+2025-02-24T05:27:27.3868274Z copying pyproject.toml -> toga_textual-0.4.9.dev608+g01152b56b
+2025-02-24T05:27:27.3870021Z copying src/toga_textual/__init__.py -> toga_textual-0.4.9.dev608+g01152b56b/src/toga_textual
+2025-02-24T05:27:27.3871626Z copying src/toga_textual/app.py -> toga_textual-0.4.9.dev608+g01152b56b/src/toga_textual
+2025-02-24T05:27:27.3873426Z copying src/toga_textual/command.py -> toga_textual-0.4.9.dev608+g01152b56b/src/toga_textual
+2025-02-24T05:27:27.3875329Z copying src/toga_textual/container.py -> toga_textual-0.4.9.dev608+g01152b56b/src/toga_textual
+2025-02-24T05:27:27.3876896Z copying src/toga_textual/dialogs.py -> toga_textual-0.4.9.dev608+g01152b56b/src/toga_textual
+2025-02-24T05:27:27.3878597Z copying src/toga_textual/factory.py -> toga_textual-0.4.9.dev608+g01152b56b/src/toga_textual
+2025-02-24T05:27:27.3880199Z copying src/toga_textual/fonts.py -> toga_textual-0.4.9.dev608+g01152b56b/src/toga_textual
+2025-02-24T05:27:27.3881785Z copying src/toga_textual/icons.py -> toga_textual-0.4.9.dev608+g01152b56b/src/toga_textual
+2025-02-24T05:27:27.3883369Z copying src/toga_textual/paths.py -> toga_textual-0.4.9.dev608+g01152b56b/src/toga_textual
+2025-02-24T05:27:27.3885189Z copying src/toga_textual/screens.py -> toga_textual-0.4.9.dev608+g01152b56b/src/toga_textual
+2025-02-24T05:27:27.3886818Z copying src/toga_textual/statusicons.py -> toga_textual-0.4.9.dev608+g01152b56b/src/toga_textual
+2025-02-24T05:27:27.3888377Z copying src/toga_textual/window.py -> toga_textual-0.4.9.dev608+g01152b56b/src/toga_textual
+2025-02-24T05:27:27.3890129Z copying src/toga_textual.egg-info/PKG-INFO -> toga_textual-0.4.9.dev608+g01152b56b/src/toga_textual.egg-info
+2025-02-24T05:27:27.3891757Z copying src/toga_textual.egg-info/SOURCES.txt -> toga_textual-0.4.9.dev608+g01152b56b/src/toga_textual.egg-info
+2025-02-24T05:27:27.3893532Z copying src/toga_textual.egg-info/dependency_links.txt -> toga_textual-0.4.9.dev608+g01152b56b/src/toga_textual.egg-info
+2025-02-24T05:27:27.3895385Z copying src/toga_textual.egg-info/entry_points.txt -> toga_textual-0.4.9.dev608+g01152b56b/src/toga_textual.egg-info
+2025-02-24T05:27:27.3896947Z copying src/toga_textual.egg-info/requires.txt -> toga_textual-0.4.9.dev608+g01152b56b/src/toga_textual.egg-info
+2025-02-24T05:27:27.3898688Z copying src/toga_textual.egg-info/top_level.txt -> toga_textual-0.4.9.dev608+g01152b56b/src/toga_textual.egg-info
+2025-02-24T05:27:27.3900326Z copying src/toga_textual/resources/toga.png -> toga_textual-0.4.9.dev608+g01152b56b/src/toga_textual/resources
+2025-02-24T05:27:27.3901929Z copying src/toga_textual/widgets/__init__.py -> toga_textual-0.4.9.dev608+g01152b56b/src/toga_textual/widgets
+2025-02-24T05:27:27.3903577Z copying src/toga_textual/widgets/base.py -> toga_textual-0.4.9.dev608+g01152b56b/src/toga_textual/widgets
+2025-02-24T05:27:27.3905290Z copying src/toga_textual/widgets/box.py -> toga_textual-0.4.9.dev608+g01152b56b/src/toga_textual/widgets
+2025-02-24T05:27:27.3906955Z copying src/toga_textual/widgets/button.py -> toga_textual-0.4.9.dev608+g01152b56b/src/toga_textual/widgets
+2025-02-24T05:27:27.3908543Z copying src/toga_textual/widgets/label.py -> toga_textual-0.4.9.dev608+g01152b56b/src/toga_textual/widgets
+2025-02-24T05:27:27.3910206Z copying src/toga_textual/widgets/textinput.py -> toga_textual-0.4.9.dev608+g01152b56b/src/toga_textual/widgets
+2025-02-24T05:27:27.3911614Z copying tests_backend/__init__.py -> toga_textual-0.4.9.dev608+g01152b56b/tests_backend
+2025-02-24T05:27:27.3913194Z copying tests_backend/app.py -> toga_textual-0.4.9.dev608+g01152b56b/tests_backend
+2025-02-24T05:27:27.3914687Z copying tests_backend/images.py -> toga_textual-0.4.9.dev608+g01152b56b/tests_backend
+2025-02-24T05:27:27.3916372Z copying tests_backend/probe.py -> toga_textual-0.4.9.dev608+g01152b56b/tests_backend
+2025-02-24T05:27:27.3917720Z copying tests_backend/screens.py -> toga_textual-0.4.9.dev608+g01152b56b/tests_backend
+2025-02-24T05:27:27.3919375Z copying tests_backend/widgets/__init__.py -> toga_textual-0.4.9.dev608+g01152b56b/tests_backend/widgets
+2025-02-24T05:27:27.3920786Z copying tests_backend/widgets/base.py -> toga_textual-0.4.9.dev608+g01152b56b/tests_backend/widgets
+2025-02-24T05:27:27.3922202Z copying tests_backend/widgets/box.py -> toga_textual-0.4.9.dev608+g01152b56b/tests_backend/widgets
+2025-02-24T05:27:27.3923657Z copying tests_backend/widgets/button.py -> toga_textual-0.4.9.dev608+g01152b56b/tests_backend/widgets
+2025-02-24T05:27:27.3925485Z copying src/toga_textual.egg-info/SOURCES.txt -> toga_textual-0.4.9.dev608+g01152b56b/src/toga_textual.egg-info
+2025-02-24T05:27:27.3931390Z Writing toga_textual-0.4.9.dev608+g01152b56b/setup.cfg
+2025-02-24T05:27:27.3932785Z Creating tar archive
+2025-02-24T05:27:27.4046122Z removing 'toga_textual-0.4.9.dev608+g01152b56b' (and everything under it)
+2025-02-24T05:27:27.4479443Z [1mBuilding wheel from source distribution...[0m
+2025-02-24T05:27:27.9151538Z running egg_info
+2025-02-24T05:27:27.9171098Z writing src/toga_textual.egg-info/PKG-INFO
+2025-02-24T05:27:27.9175474Z writing dependency_links to src/toga_textual.egg-info/dependency_links.txt
+2025-02-24T05:27:27.9178991Z writing entry points to src/toga_textual.egg-info/entry_points.txt
+2025-02-24T05:27:27.9181179Z writing requirements to src/toga_textual.egg-info/requires.txt
+2025-02-24T05:27:27.9182645Z writing top-level names to src/toga_textual.egg-info/top_level.txt
+2025-02-24T05:27:27.9313164Z ERROR setuptools_scm._file_finders.git listing git files failed - pretending there aren't any
+2025-02-24T05:27:29.3098196Z reading manifest file 'src/toga_textual.egg-info/SOURCES.txt'
+2025-02-24T05:27:29.3113407Z writing manifest file 'src/toga_textual.egg-info/SOURCES.txt'
+2025-02-24T05:27:29.4985826Z running bdist_wheel
+2025-02-24T05:27:29.5063647Z running build
+2025-02-24T05:27:29.5064409Z running build_py
+2025-02-24T05:27:29.5083276Z creating build/lib/toga_textual
+2025-02-24T05:27:29.5085780Z copying src/toga_textual/container.py -> build/lib/toga_textual
+2025-02-24T05:27:29.5087897Z copying src/toga_textual/factory.py -> build/lib/toga_textual
+2025-02-24T05:27:29.5089550Z copying src/toga_textual/icons.py -> build/lib/toga_textual
+2025-02-24T05:27:29.5091720Z copying src/toga_textual/statusicons.py -> build/lib/toga_textual
+2025-02-24T05:27:29.5093338Z copying src/toga_textual/__init__.py -> build/lib/toga_textual
+2025-02-24T05:27:29.5095410Z copying src/toga_textual/paths.py -> build/lib/toga_textual
+2025-02-24T05:27:29.5097102Z copying src/toga_textual/dialogs.py -> build/lib/toga_textual
+2025-02-24T05:27:29.5099176Z copying src/toga_textual/screens.py -> build/lib/toga_textual
+2025-02-24T05:27:29.5100771Z copying src/toga_textual/app.py -> build/lib/toga_textual
+2025-02-24T05:27:29.5102849Z copying src/toga_textual/window.py -> build/lib/toga_textual
+2025-02-24T05:27:29.5104387Z copying src/toga_textual/command.py -> build/lib/toga_textual
+2025-02-24T05:27:29.5106334Z copying src/toga_textual/fonts.py -> build/lib/toga_textual
+2025-02-24T05:27:29.5109492Z creating build/lib/toga_textual/widgets
+2025-02-24T05:27:29.5110852Z copying src/toga_textual/widgets/__init__.py -> build/lib/toga_textual/widgets
+2025-02-24T05:27:29.5112901Z copying src/toga_textual/widgets/base.py -> build/lib/toga_textual/widgets
+2025-02-24T05:27:29.5115301Z copying src/toga_textual/widgets/button.py -> build/lib/toga_textual/widgets
+2025-02-24T05:27:29.5117404Z copying src/toga_textual/widgets/box.py -> build/lib/toga_textual/widgets
+2025-02-24T05:27:29.5119570Z copying src/toga_textual/widgets/textinput.py -> build/lib/toga_textual/widgets
+2025-02-24T05:27:29.5121595Z copying src/toga_textual/widgets/label.py -> build/lib/toga_textual/widgets
+2025-02-24T05:27:29.5123172Z running egg_info
+2025-02-24T05:27:29.5140827Z writing src/toga_textual.egg-info/PKG-INFO
+2025-02-24T05:27:29.5145045Z writing dependency_links to src/toga_textual.egg-info/dependency_links.txt
+2025-02-24T05:27:29.5148338Z writing entry points to src/toga_textual.egg-info/entry_points.txt
+2025-02-24T05:27:29.5150566Z writing requirements to src/toga_textual.egg-info/requires.txt
+2025-02-24T05:27:29.5151822Z writing top-level names to src/toga_textual.egg-info/top_level.txt
+2025-02-24T05:27:29.5232696Z ERROR setuptools_scm._file_finders.git listing git files failed - pretending there aren't any
+2025-02-24T05:27:29.6504310Z reading manifest file 'src/toga_textual.egg-info/SOURCES.txt'
+2025-02-24T05:27:29.6519519Z writing manifest file 'src/toga_textual.egg-info/SOURCES.txt'
+2025-02-24T05:27:29.6526791Z creating build/lib/toga_textual/resources
+2025-02-24T05:27:29.6528547Z copying src/toga_textual/resources/toga.png -> build/lib/toga_textual/resources
+2025-02-24T05:27:29.6565020Z installing to build/bdist.linux-x86_64/wheel
+2025-02-24T05:27:29.6565444Z running install
+2025-02-24T05:27:29.6628262Z running install_lib
+2025-02-24T05:27:29.6645921Z creating build/bdist.linux-x86_64/wheel
+2025-02-24T05:27:29.6648704Z creating build/bdist.linux-x86_64/wheel/toga_textual
+2025-02-24T05:27:29.6650857Z copying build/lib/toga_textual/container.py -> build/bdist.linux-x86_64/wheel/./toga_textual
+2025-02-24T05:27:29.6652042Z copying build/lib/toga_textual/factory.py -> build/bdist.linux-x86_64/wheel/./toga_textual
+2025-02-24T05:27:29.6654230Z copying build/lib/toga_textual/icons.py -> build/bdist.linux-x86_64/wheel/./toga_textual
+2025-02-24T05:27:29.6656042Z copying build/lib/toga_textual/statusicons.py -> build/bdist.linux-x86_64/wheel/./toga_textual
+2025-02-24T05:27:29.6657586Z copying build/lib/toga_textual/__init__.py -> build/bdist.linux-x86_64/wheel/./toga_textual
+2025-02-24T05:27:29.6659534Z copying build/lib/toga_textual/paths.py -> build/bdist.linux-x86_64/wheel/./toga_textual
+2025-02-24T05:27:29.6661294Z copying build/lib/toga_textual/dialogs.py -> build/bdist.linux-x86_64/wheel/./toga_textual
+2025-02-24T05:27:29.6663528Z creating build/bdist.linux-x86_64/wheel/toga_textual/resources
+2025-02-24T05:27:29.6665553Z copying build/lib/toga_textual/resources/toga.png -> build/bdist.linux-x86_64/wheel/./toga_textual/resources
+2025-02-24T05:27:29.6667409Z copying build/lib/toga_textual/screens.py -> build/bdist.linux-x86_64/wheel/./toga_textual
+2025-02-24T05:27:29.6669168Z copying build/lib/toga_textual/app.py -> build/bdist.linux-x86_64/wheel/./toga_textual
+2025-02-24T05:27:29.6670956Z copying build/lib/toga_textual/window.py -> build/bdist.linux-x86_64/wheel/./toga_textual
+2025-02-24T05:27:29.6672770Z copying build/lib/toga_textual/command.py -> build/bdist.linux-x86_64/wheel/./toga_textual
+2025-02-24T05:27:29.6675611Z creating build/bdist.linux-x86_64/wheel/toga_textual/widgets
+2025-02-24T05:27:29.6677274Z copying build/lib/toga_textual/widgets/__init__.py -> build/bdist.linux-x86_64/wheel/./toga_textual/widgets
+2025-02-24T05:27:29.6679242Z copying build/lib/toga_textual/widgets/base.py -> build/bdist.linux-x86_64/wheel/./toga_textual/widgets
+2025-02-24T05:27:29.6680573Z copying build/lib/toga_textual/widgets/button.py -> build/bdist.linux-x86_64/wheel/./toga_textual/widgets
+2025-02-24T05:27:29.6682167Z copying build/lib/toga_textual/widgets/box.py -> build/bdist.linux-x86_64/wheel/./toga_textual/widgets
+2025-02-24T05:27:29.6684106Z copying build/lib/toga_textual/widgets/textinput.py -> build/bdist.linux-x86_64/wheel/./toga_textual/widgets
+2025-02-24T05:27:29.6685686Z copying build/lib/toga_textual/widgets/label.py -> build/bdist.linux-x86_64/wheel/./toga_textual/widgets
+2025-02-24T05:27:29.6687219Z copying build/lib/toga_textual/fonts.py -> build/bdist.linux-x86_64/wheel/./toga_textual
+2025-02-24T05:27:29.6688523Z running install_egg_info
+2025-02-24T05:27:29.6706802Z Copying src/toga_textual.egg-info to build/bdist.linux-x86_64/wheel/./toga_textual-0.4.9.dev608+g01152b56b-py3.12.egg-info
+2025-02-24T05:27:29.6715163Z running install_scripts
+2025-02-24T05:27:29.6732603Z creating build/bdist.linux-x86_64/wheel/toga_textual-0.4.9.dev608+g01152b56b.dist-info/WHEEL
+2025-02-24T05:27:29.6736837Z creating '/tmp/baipp/dist/.tmp-ezengdpu/toga_textual-0.4.9.dev608+g01152b56b-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+2025-02-24T05:27:29.6740001Z adding 'toga_textual/__init__.py'
+2025-02-24T05:27:29.6743290Z adding 'toga_textual/app.py'
+2025-02-24T05:27:29.6745667Z adding 'toga_textual/command.py'
+2025-02-24T05:27:29.6747726Z adding 'toga_textual/container.py'
+2025-02-24T05:27:29.6751445Z adding 'toga_textual/dialogs.py'
+2025-02-24T05:27:29.6754122Z adding 'toga_textual/factory.py'
+2025-02-24T05:27:29.6755928Z adding 'toga_textual/fonts.py'
+2025-02-24T05:27:29.6757365Z adding 'toga_textual/icons.py'
+2025-02-24T05:27:29.6759728Z adding 'toga_textual/paths.py'
+2025-02-24T05:27:29.6761728Z adding 'toga_textual/screens.py'
+2025-02-24T05:27:29.6763631Z adding 'toga_textual/statusicons.py'
+2025-02-24T05:27:29.6766791Z adding 'toga_textual/window.py'
+2025-02-24T05:27:29.6769701Z adding 'toga_textual/resources/toga.png'
+2025-02-24T05:27:29.6771618Z adding 'toga_textual/widgets/__init__.py'
+2025-02-24T05:27:29.6775094Z adding 'toga_textual/widgets/base.py'
+2025-02-24T05:27:29.6777115Z adding 'toga_textual/widgets/box.py'
+2025-02-24T05:27:29.6779252Z adding 'toga_textual/widgets/button.py'
+2025-02-24T05:27:29.6781122Z adding 'toga_textual/widgets/label.py'
+2025-02-24T05:27:29.6783239Z adding 'toga_textual/widgets/textinput.py'
+2025-02-24T05:27:29.6787021Z adding 'toga_textual-0.4.9.dev608+g01152b56b.dist-info/METADATA'
+2025-02-24T05:27:29.6788135Z adding 'toga_textual-0.4.9.dev608+g01152b56b.dist-info/WHEEL'
+2025-02-24T05:27:29.6789634Z adding 'toga_textual-0.4.9.dev608+g01152b56b.dist-info/entry_points.txt'
+2025-02-24T05:27:29.6790918Z adding 'toga_textual-0.4.9.dev608+g01152b56b.dist-info/top_level.txt'
+2025-02-24T05:27:29.6794009Z adding 'toga_textual-0.4.9.dev608+g01152b56b.dist-info/RECORD'
+2025-02-24T05:27:29.6795904Z removing build/bdist.linux-x86_64/wheel
+2025-02-24T05:27:29.7162256Z Successfully built [36m[1m/tmp/baipp/dist/toga_textual-0.4.9.dev608+g01152b56b.tar.gz[0m[39m
+2025-02-24T05:27:29.7164152Z Successfully built [36m[1m/tmp/baipp/dist/toga_textual-0.4.9.dev608+g01152b56b-py3-none-any.whl[0m[39m
+2025-02-24T05:27:29.7228245Z ##[group]Run uv cache prune --ci
+2025-02-24T05:27:29.7228548Z [36;1muv cache prune --ci[0m
+2025-02-24T05:27:29.7283007Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-24T05:27:29.7283340Z env:
+2025-02-24T05:27:29.7283528Z   FORCE_COLOR: 1
+2025-02-24T05:27:29.7283755Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-24T05:27:29.7284378Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-24T05:27:29.7284799Z ##[endgroup]
+2025-02-24T05:27:29.7408855Z Pruning cache at: [36m/tmp/baipp-uv_cache_dir[39m
+2025-02-24T05:27:29.7881038Z Removed 2122 files ([32m37.1MiB[39m)
+2025-02-24T05:27:29.7921371Z ##[group]Run echo -e '\n### Package Contents' >> $GITHUB_STEP_SUMMARY
+2025-02-24T05:27:29.7921944Z [36;1mecho -e '\n### Package Contents' >> $GITHUB_STEP_SUMMARY[0m
+2025-02-24T05:27:29.7976506Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-24T05:27:29.7976850Z env:
+2025-02-24T05:27:29.7977031Z   FORCE_COLOR: 1
+2025-02-24T05:27:29.7977258Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-24T05:27:29.7977680Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-24T05:27:29.7978079Z ##[endgroup]
+2025-02-24T05:27:29.8072868Z ##[group]Run echo "dist=/tmp/baipp/dist" >>$GITHUB_OUTPUT
+2025-02-24T05:27:29.8073225Z [36;1mecho "dist=/tmp/baipp/dist" >>$GITHUB_OUTPUT[0m
+2025-02-24T05:27:29.8121199Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-24T05:27:29.8121528Z env:
+2025-02-24T05:27:29.8121710Z   FORCE_COLOR: 1
+2025-02-24T05:27:29.8121924Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-24T05:27:29.8122294Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-24T05:27:29.8122653Z ##[endgroup]
+2025-02-24T05:27:29.8207221Z ##[group]Run ls -l /tmp/baipp/dist
+2025-02-24T05:27:29.8207512Z [36;1mls -l /tmp/baipp/dist[0m
+2025-02-24T05:27:29.8255188Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-24T05:27:29.8255523Z env:
+2025-02-24T05:27:29.8255694Z   FORCE_COLOR: 1
+2025-02-24T05:27:29.8255916Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-24T05:27:29.8256318Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-24T05:27:29.8256717Z ##[endgroup]
+2025-02-24T05:27:29.8337768Z total 36
+2025-02-24T05:27:29.8338395Z -rw-r--r-- 1 runner docker 18118 Feb 24 05:27 toga_textual-0.4.9.dev608+g01152b56b-py3-none-any.whl
+2025-02-24T05:27:29.8339262Z -rw-r--r-- 1 runner docker 15942 Feb 24 05:27 toga_textual-0.4.9.dev608+g01152b56b.tar.gz
+2025-02-24T05:27:29.8372360Z ##[group]Run actions/upload-artifact@v4
+2025-02-24T05:27:29.8372612Z with:
+2025-02-24T05:27:29.8372794Z   name: Packages-toga-textual
+2025-02-24T05:27:29.8373031Z   path: /tmp/baipp/dist/*
+2025-02-24T05:27:29.8373254Z   if-no-files-found: warn
+2025-02-24T05:27:29.8373483Z   compression-level: 6
+2025-02-24T05:27:29.8373686Z   overwrite: false
+2025-02-24T05:27:29.8374125Z   include-hidden-files: false
+2025-02-24T05:27:29.8374346Z env:
+2025-02-24T05:27:29.8374507Z   FORCE_COLOR: 1
+2025-02-24T05:27:29.8374707Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-24T05:27:29.8375067Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-24T05:27:29.8375414Z ##[endgroup]
+2025-02-24T05:27:30.0478840Z With the provided path, there will be 2 files uploaded
+2025-02-24T05:27:30.0484060Z Artifact name is valid!
+2025-02-24T05:27:30.0485456Z Root directory input is valid!
+2025-02-24T05:27:30.1358902Z Beginning upload of artifact content to blob storage
+2025-02-24T05:27:30.1899604Z Uploaded bytes 32035
+2025-02-24T05:27:30.2060470Z Finished uploading artifact content to blob storage!
+2025-02-24T05:27:30.2063663Z SHA256 hash of uploaded artifact zip is 98f2e276ad356c295dbae4eac69fca4b4f6500c3b3c3440bf7652406ce9e120e
+2025-02-24T05:27:30.2065406Z Finalizing artifact upload
+2025-02-24T05:27:30.2668970Z Artifact Packages-toga-textual.zip successfully finalized. Artifact ID 2639028202
+2025-02-24T05:27:30.2670348Z Artifact Packages-toga-textual has been successfully uploaded! Final size is 32035 bytes. Artifact ID is 2639028202
+2025-02-24T05:27:30.2676331Z Artifact download URL: https://github.com/beeware/toga/actions/runs/13491433041/artifacts/2639028202
+2025-02-24T05:27:30.2767709Z ##[group]Run if [[ "false" != 'true' ]]; then
+2025-02-24T05:27:30.2768034Z [36;1mif [[ "false" != 'true' ]]; then[0m
+2025-02-24T05:27:30.2768408Z [36;1m  /tmp/baipp/bin/check-wheel-contents /tmp/baipp/dist/*.whl[0m
+2025-02-24T05:27:30.2768787Z [36;1mfi[0m
+2025-02-24T05:27:30.2824024Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-24T05:27:30.2824423Z env:
+2025-02-24T05:27:30.2824624Z   FORCE_COLOR: 1
+2025-02-24T05:27:30.2824866Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-24T05:27:30.2825476Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-24T05:27:30.2825911Z ##[endgroup]
+2025-02-24T05:27:31.2669900Z /tmp/baipp/dist/toga_textual-0.4.9.dev608+g01152b56b-py3-none-any.whl: OK
+2025-02-24T05:27:31.2939593Z ##[group]Run /tmp/baipp/bin/python -m twine check --strict /tmp/baipp/dist/*
+2025-02-24T05:27:31.2940123Z [36;1m/tmp/baipp/bin/python -m twine check --strict /tmp/baipp/dist/*[0m
+2025-02-24T05:27:31.2995509Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-24T05:27:31.2995890Z env:
+2025-02-24T05:27:31.2996087Z   FORCE_COLOR: 1
+2025-02-24T05:27:31.2996326Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-24T05:27:31.2996753Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-24T05:27:31.2997187Z ##[endgroup]
+2025-02-24T05:27:32.9928619Z Checking /tmp/baipp/dist/toga_textual-0.4.9.dev608+g01152b56b-py3-none-any.whl: [32mPASSED[0m
+2025-02-24T05:27:33.0050004Z Checking /tmp/baipp/dist/toga_textual-0.4.9.dev608+g01152b56b.tar.gz: [32mPASSED[0m
+2025-02-24T05:27:33.0497354Z ##[group]Run cd /tmp/baipp/dist
+2025-02-24T05:27:33.0497664Z [36;1mcd /tmp/baipp/dist[0m
+2025-02-24T05:27:33.0497897Z [36;1mmkdir -p out/sdist[0m
+2025-02-24T05:27:33.0498137Z [36;1mtar xf *.tar.gz -C out/sdist[0m
+2025-02-24T05:27:33.0498383Z [36;1m[0m
+2025-02-24T05:27:33.0498592Z [36;1mif ! command -v tree &> /dev/null; then[0m
+2025-02-24T05:27:33.0498884Z [36;1m    sudo apt-get install tree[0m
+2025-02-24T05:27:33.0499123Z [36;1mfi[0m
+2025-02-24T05:27:33.0499291Z [36;1m[0m
+2025-02-24T05:27:33.0499608Z [36;1mecho -e '\n<details><summary>SDist contents</summary>\n' >> $GITHUB_STEP_SUMMARY[0m
+2025-02-24T05:27:33.0500253Z [36;1m(cd /tmp/baipp/dist/out/sdist && tree -Da --timefmt="%Y-%m-%dT%H:%M:%SZ" * | sed 's/^/    /' | tee -a $GITHUB_STEP_SUMMARY)[0m
+2025-02-24T05:27:33.0500801Z [36;1mecho -e '\n</details>\n' >> $GITHUB_STEP_SUMMARY[0m
+2025-02-24T05:27:33.0501094Z [36;1m[0m
+2025-02-24T05:27:33.0501278Z [36;1mif [[ "false" != 'true' ]]; then[0m
+2025-02-24T05:27:33.0501550Z [36;1m    mkdir -p out/wheels[0m
+2025-02-24T05:27:33.0501905Z [36;1m    /tmp/baipp/bin/python -m wheel unpack --dest out/wheels *.whl[0m
+2025-02-24T05:27:33.0502248Z [36;1m[0m
+2025-02-24T05:27:33.0502558Z [36;1m    echo -e '\n<details><summary>Wheel contents</summary>\n' >> $GITHUB_STEP_SUMMARY[0m
+2025-02-24T05:27:33.0503102Z [36;1m    (cd /tmp/baipp/dist/out/wheels && tree -a * | sed 's/^/    /' | tee -a $GITHUB_STEP_SUMMARY)[0m
+2025-02-24T05:27:33.0503557Z [36;1m    echo -e '\n</details>\n' >> $GITHUB_STEP_SUMMARY[0m
+2025-02-24T05:27:33.0504030Z [36;1mfi[0m
+2025-02-24T05:27:33.0504213Z [36;1m[0m
+2025-02-24T05:27:33.0504414Z [36;1mecho ----- Metadata Follows -----[0m
+2025-02-24T05:27:33.0504811Z [36;1mecho -e '\n<details><summary>Metadata</summary>\n' >> $GITHUB_STEP_SUMMARY[0m
+2025-02-24T05:27:33.0505297Z [36;1mcat out/sdist/*/PKG-INFO | sed 's/^/    /' | tee -a $GITHUB_STEP_SUMMARY[0m
+2025-02-24T05:27:33.0505708Z [36;1mecho -e '\n</details>\n' >> $GITHUB_STEP_SUMMARY[0m
+2025-02-24T05:27:33.0506026Z [36;1mecho ----- End of Metadata  -----[0m
+2025-02-24T05:27:33.0561083Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-24T05:27:33.0561412Z env:
+2025-02-24T05:27:33.0561583Z   FORCE_COLOR: 1
+2025-02-24T05:27:33.0561800Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-24T05:27:33.0562173Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-24T05:27:33.0562530Z ##[endgroup]
+2025-02-24T05:27:33.1006548Z     [2025-02-24T05:27:27Z]  toga_textual-0.4.9.dev608+g01152b56b
+2025-02-24T05:27:33.1007698Z     ├── [2025-02-24T05:27:23Z]  CONTRIBUTING.md
+2025-02-24T05:27:33.1008336Z     ├── [2025-02-24T05:27:27Z]  PKG-INFO
+2025-02-24T05:27:33.1009078Z     ├── [2025-02-24T05:27:23Z]  README.rst
+2025-02-24T05:27:33.1010104Z     ├── [2025-02-24T05:27:23Z]  pyproject.toml
+2025-02-24T05:27:33.1010676Z     ├── [2025-02-24T05:27:27Z]  setup.cfg
+2025-02-24T05:27:33.1011240Z     ├── [2025-02-24T05:27:27Z]  src
+2025-02-24T05:27:33.1012232Z     │   ├── [2025-02-24T05:27:27Z]  toga_textual
+2025-02-24T05:27:33.1013011Z     │   │   ├── [2025-02-24T05:27:23Z]  __init__.py
+2025-02-24T05:27:33.1013689Z     │   │   ├── [2025-02-24T05:27:23Z]  app.py
+2025-02-24T05:27:33.1014450Z     │   │   ├── [2025-02-24T05:27:23Z]  command.py
+2025-02-24T05:27:33.1015020Z     │   │   ├── [2025-02-24T05:27:23Z]  container.py
+2025-02-24T05:27:33.1015584Z     │   │   ├── [2025-02-24T05:27:23Z]  dialogs.py
+2025-02-24T05:27:33.1016100Z     │   │   ├── [2025-02-24T05:27:23Z]  factory.py
+2025-02-24T05:27:33.1016535Z     │   │   ├── [2025-02-24T05:27:23Z]  fonts.py
+2025-02-24T05:27:33.1016945Z     │   │   ├── [2025-02-24T05:27:23Z]  icons.py
+2025-02-24T05:27:33.1017360Z     │   │   ├── [2025-02-24T05:27:23Z]  paths.py
+2025-02-24T05:27:33.1017794Z     │   │   ├── [2025-02-24T05:27:27Z]  resources
+2025-02-24T05:27:33.1018218Z     │   │   │   └── [2025-02-24T05:27:23Z]  toga.png
+2025-02-24T05:27:33.1018638Z     │   │   ├── [2025-02-24T05:27:23Z]  screens.py
+2025-02-24T05:27:33.1019087Z     │   │   ├── [2025-02-24T05:27:23Z]  statusicons.py
+2025-02-24T05:27:33.1019491Z     │   │   ├── [2025-02-24T05:27:27Z]  widgets
+2025-02-24T05:27:33.1019801Z     │   │   │   ├── [2025-02-24T05:27:23Z]  __init__.py
+2025-02-24T05:27:33.1020106Z     │   │   │   ├── [2025-02-24T05:27:23Z]  base.py
+2025-02-24T05:27:33.1020400Z     │   │   │   ├── [2025-02-24T05:27:23Z]  box.py
+2025-02-24T05:27:33.1020694Z     │   │   │   ├── [2025-02-24T05:27:23Z]  button.py
+2025-02-24T05:27:33.1020984Z     │   │   │   ├── [2025-02-24T05:27:23Z]  label.py
+2025-02-24T05:27:33.1021304Z     │   │   │   └── [2025-02-24T05:27:23Z]  textinput.py
+2025-02-24T05:27:33.1021628Z     │   │   └── [2025-02-24T05:27:23Z]  window.py
+2025-02-24T05:27:33.1021969Z     │   └── [2025-02-24T05:27:27Z]  toga_textual.egg-info
+2025-02-24T05:27:33.1022287Z     │       ├── [2025-02-24T05:27:27Z]  PKG-INFO
+2025-02-24T05:27:33.1022581Z     │       ├── [2025-02-24T05:27:27Z]  SOURCES.txt
+2025-02-24T05:27:33.1022912Z     │       ├── [2025-02-24T05:27:27Z]  dependency_links.txt
+2025-02-24T05:27:33.1023242Z     │       ├── [2025-02-24T05:27:27Z]  entry_points.txt
+2025-02-24T05:27:33.1023546Z     │       ├── [2025-02-24T05:27:27Z]  requires.txt
+2025-02-24T05:27:33.1024042Z     │       └── [2025-02-24T05:27:27Z]  top_level.txt
+2025-02-24T05:27:33.1024359Z     └── [2025-02-24T05:27:27Z]  tests_backend
+2025-02-24T05:27:33.1024657Z         ├── [2025-02-24T05:27:23Z]  __init__.py
+2025-02-24T05:27:33.1024955Z         ├── [2025-02-24T05:27:23Z]  app.py
+2025-02-24T05:27:33.1025241Z         ├── [2025-02-24T05:27:23Z]  images.py
+2025-02-24T05:27:33.1025525Z         ├── [2025-02-24T05:27:23Z]  probe.py
+2025-02-24T05:27:33.1025812Z         ├── [2025-02-24T05:27:23Z]  screens.py
+2025-02-24T05:27:33.1026102Z         └── [2025-02-24T05:27:27Z]  widgets
+2025-02-24T05:27:33.1026439Z             ├── [2025-02-24T05:27:23Z]  __init__.py
+2025-02-24T05:27:33.1026988Z             ├── [2025-02-24T05:27:23Z]  base.py
+2025-02-24T05:27:33.1027511Z             ├── [2025-02-24T05:27:23Z]  box.py
+2025-02-24T05:27:33.1028055Z             └── [2025-02-24T05:27:23Z]  button.py
+2025-02-24T05:27:33.1028489Z     
+2025-02-24T05:27:33.1028797Z     8 directories, 39 files
+2025-02-24T05:27:33.1547486Z Unpacking to: out/wheels/toga_textual-0.4.9.dev608+g01152b56b...OK
+2025-02-24T05:27:33.1635289Z     toga_textual-0.4.9.dev608+g01152b56b
+2025-02-24T05:27:33.1635998Z     ├── toga_textual
+2025-02-24T05:27:33.1636411Z     │   ├── __init__.py
+2025-02-24T05:27:33.1636814Z     │   ├── app.py
+2025-02-24T05:27:33.1637202Z     │   ├── command.py
+2025-02-24T05:27:33.1637607Z     │   ├── container.py
+2025-02-24T05:27:33.1638010Z     │   ├── dialogs.py
+2025-02-24T05:27:33.1638403Z     │   ├── factory.py
+2025-02-24T05:27:33.1638800Z     │   ├── fonts.py
+2025-02-24T05:27:33.1639570Z     │   ├── icons.py
+2025-02-24T05:27:33.1640020Z     │   ├── paths.py
+2025-02-24T05:27:33.1640447Z     │   ├── resources
+2025-02-24T05:27:33.1640867Z     │   │   └── toga.png
+2025-02-24T05:27:33.1641204Z     │   ├── screens.py
+2025-02-24T05:27:33.1641649Z     │   ├── statusicons.py
+2025-02-24T05:27:33.1642045Z     │   ├── widgets
+2025-02-24T05:27:33.1642462Z     │   │   ├── __init__.py
+2025-02-24T05:27:33.1642862Z     │   │   ├── base.py
+2025-02-24T05:27:33.1643114Z     │   │   ├── box.py
+2025-02-24T05:27:33.1643490Z     │   │   ├── button.py
+2025-02-24T05:27:33.1644073Z     │   │   ├── label.py
+2025-02-24T05:27:33.1644533Z     │   │   └── textinput.py
+2025-02-24T05:27:33.1644991Z     │   └── window.py
+2025-02-24T05:27:33.1645537Z     └── toga_textual-0.4.9.dev608+g01152b56b.dist-info
+2025-02-24T05:27:33.1646113Z         ├── METADATA
+2025-02-24T05:27:33.1646493Z         ├── RECORD
+2025-02-24T05:27:33.1646882Z         ├── WHEEL
+2025-02-24T05:27:33.1647349Z         ├── entry_points.txt
+2025-02-24T05:27:33.1647881Z         └── top_level.txt
+2025-02-24T05:27:33.1648256Z     
+2025-02-24T05:27:33.1648572Z     5 directories, 24 files
+2025-02-24T05:27:33.1648999Z ----- Metadata Follows -----
+2025-02-24T05:27:33.1659183Z     Metadata-Version: 2.1
+2025-02-24T05:27:33.1659614Z     Name: toga-textual
+2025-02-24T05:27:33.1659978Z     Version: 0.4.9.dev608+g01152b56b
+2025-02-24T05:27:33.1660472Z     Summary: A Textual backend for the Toga widget toolkit.
+2025-02-24T05:27:33.1661101Z     Author-email: Russell Keith-Magee <russell@keith-magee.com>
+2025-02-24T05:27:33.1661706Z     Maintainer-email: BeeWare Team <team@beeware.org>
+2025-02-24T05:27:33.1662180Z     License: New BSD
+2025-02-24T05:27:33.1662745Z     Project-URL: Homepage, https://beeware.org/project/projects/libraries/toga/
+2025-02-24T05:27:33.1663530Z     Project-URL: Funding, https://beeware.org/contributing/membership/
+2025-02-24T05:27:33.1664417Z     Project-URL: Documentation, https://toga.readthedocs.io/
+2025-02-24T05:27:33.1665102Z     Project-URL: Tracker, https://github.com/beeware/toga/issues
+2025-02-24T05:27:33.1665796Z     Project-URL: Source, https://github.com/beeware/toga
+2025-02-24T05:27:33.1666646Z     Project-URL: Changelog, https://toga.readthedocs.io/en/stable/background/project/releases.html
+2025-02-24T05:27:33.1667566Z     Keywords: gui,widget,cross-platform,toga,desktop,console,textual
+2025-02-24T05:27:33.1668339Z     Classifier: Development Status :: 4 - Beta
+2025-02-24T05:27:33.1669019Z     Classifier: Intended Audience :: Developers
+2025-02-24T05:27:33.1669452Z     Classifier: License :: OSI Approved :: BSD License
+2025-02-24T05:27:33.1669768Z     Classifier: Operating System :: OS Independent
+2025-02-24T05:27:33.1670101Z     Classifier: Programming Language :: Python :: 3
+2025-02-24T05:27:33.1670410Z     Classifier: Programming Language :: Python :: 3.9
+2025-02-24T05:27:33.1670728Z     Classifier: Programming Language :: Python :: 3.10
+2025-02-24T05:27:33.1671052Z     Classifier: Programming Language :: Python :: 3.11
+2025-02-24T05:27:33.1671375Z     Classifier: Programming Language :: Python :: 3.12
+2025-02-24T05:27:33.1671680Z     Classifier: Programming Language :: Python :: 3.13
+2025-02-24T05:27:33.1671998Z     Classifier: Programming Language :: Python :: 3 :: Only
+2025-02-24T05:27:33.1672317Z     Classifier: Topic :: Software Development
+2025-02-24T05:27:33.1672657Z     Classifier: Topic :: Software Development :: User Interfaces
+2025-02-24T05:27:33.1673024Z     Classifier: Topic :: Software Development :: Widget Sets
+2025-02-24T05:27:33.1673328Z     Requires-Python: >=3.9
+2025-02-24T05:27:33.1673568Z     Description-Content-Type: text/x-rst
+2025-02-24T05:27:33.1674072Z     Requires-Dist: textual>=0.44.0
+2025-02-24T05:27:33.1674384Z     Requires-Dist: toga-core==0.4.9.dev608+g01152b56b
+2025-02-24T05:27:33.1674646Z     
+2025-02-24T05:27:33.1674804Z     toga-textual
+2025-02-24T05:27:33.1674977Z     ============
+2025-02-24T05:27:33.1675140Z     
+2025-02-24T05:27:33.1675331Z     A Textual backend for the `Toga widget toolkit`_.
+2025-02-24T05:27:33.1675780Z     
+2025-02-24T05:27:33.1676095Z     This package isn't much use by itself; it needs to be combined with `the core Toga library`_.
+2025-02-24T05:27:33.1676465Z     
+2025-02-24T05:27:33.1676837Z     For platform requirements, see the `Terminal platform documentation
+2025-02-24T05:27:33.1677380Z     <https://toga.readthedocs.io/en/latest/reference/platforms/terminal.html#prerequisites>`__.
+2025-02-24T05:27:33.1677791Z     
+2025-02-24T05:27:33.1677997Z     For more details, see the `Toga project on Github`_.
+2025-02-24T05:27:33.1678264Z     
+2025-02-24T05:27:33.1678464Z     .. _Toga widget toolkit: https://beeware.org/toga
+2025-02-24T05:27:33.1678814Z     .. _the core Toga library: https://pypi.python.org/pypi/toga-core
+2025-02-24T05:27:33.1679194Z     .. _Toga project on Github: https://github.com/beeware/toga
+2025-02-24T05:27:33.1679471Z     
+2025-02-24T05:27:33.1679619Z     Community
+2025-02-24T05:27:33.1679787Z     ---------
+2025-02-24T05:27:33.1679953Z     
+2025-02-24T05:27:33.1680222Z     Toga is part of the `BeeWare suite`_. You can talk to the community through:
+2025-02-24T05:27:33.1680543Z     
+2025-02-24T05:27:33.1680727Z     * `@beeware@fosstodon.org on Mastodon`_
+2025-02-24T05:27:33.1680968Z     * `Discord`_
+2025-02-24T05:27:33.1681175Z     * The Toga `Github Discussions forum`_
+2025-02-24T05:27:33.1681410Z     
+2025-02-24T05:27:33.1681660Z     We foster a welcoming and respectful community as described in our
+2025-02-24T05:27:33.1682000Z     `BeeWare Community Code of Conduct`_.
+2025-02-24T05:27:33.1682229Z     
+2025-02-24T05:27:33.1682403Z     .. _BeeWare suite: https://beeware.org
+2025-02-24T05:27:33.1682750Z     .. _@beeware@fosstodon.org on Mastodon: https://fosstodon.org/@beeware
+2025-02-24T05:27:33.1683113Z     .. _Discord: https://beeware.org/bee/chat/
+2025-02-24T05:27:33.1683468Z     .. _Github Discussions forum: https://github.com/beeware/toga/discussions
+2025-02-24T05:27:33.1684093Z     .. _BeeWare Community Code of Conduct: https://beeware.org/community/behavior/
+2025-02-24T05:27:33.1684436Z     
+2025-02-24T05:27:33.1684592Z     Contributing
+2025-02-24T05:27:33.1684768Z     ------------
+2025-02-24T05:27:33.1684935Z     
+2025-02-24T05:27:33.1685198Z     If you experience problems with this backend, `log them on GitHub`_. If you
+2025-02-24T05:27:33.1685648Z     want to contribute code, please `fork the code`_ and `submit a pull request`_.
+2025-02-24T05:27:33.1685988Z     
+2025-02-24T05:27:33.1686215Z     .. _log them on Github: https://github.com/beeware/toga/issues
+2025-02-24T05:27:33.1686557Z     .. _fork the code: https://github.com/beeware/toga
+2025-02-24T05:27:33.1686901Z     .. _submit a pull request: https://github.com/beeware/toga/pulls
+2025-02-24T05:27:33.1687226Z ----- End of Metadata -----
+2025-02-24T05:27:33.1737348Z ##[group]Run actions/upload-artifact@v4
+2025-02-24T05:27:33.1737628Z with:
+2025-02-24T05:27:33.1737817Z   name: Package Metadata-toga-textual
+2025-02-24T05:27:33.1738095Z   path: /tmp/baipp/dist/out/sdist/*/PKG-INFO
+2025-02-24T05:27:33.1738372Z   if-no-files-found: warn
+2025-02-24T05:27:33.1738589Z   compression-level: 6
+2025-02-24T05:27:33.1738789Z   overwrite: false
+2025-02-24T05:27:33.1738982Z   include-hidden-files: false
+2025-02-24T05:27:33.1739195Z env:
+2025-02-24T05:27:33.1739361Z   FORCE_COLOR: 1
+2025-02-24T05:27:33.1739572Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-24T05:27:33.1739946Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-24T05:27:33.1740296Z ##[endgroup]
+2025-02-24T05:27:33.3846587Z With the provided path, there will be 1 file uploaded
+2025-02-24T05:27:33.3851817Z Artifact name is valid!
+2025-02-24T05:27:33.3853195Z Root directory input is valid!
+2025-02-24T05:27:33.4596867Z Beginning upload of artifact content to blob storage
+2025-02-24T05:27:33.5019785Z Uploaded bytes 1362
+2025-02-24T05:27:33.5167394Z Finished uploading artifact content to blob storage!
+2025-02-24T05:27:33.5171380Z SHA256 hash of uploaded artifact zip is b2f778cec64f4f21e35706503fec3166a2e27d47787cc25e4133770c5ca3bb83
+2025-02-24T05:27:33.5173289Z Finalizing artifact upload
+2025-02-24T05:27:33.5931913Z Artifact Package Metadata-toga-textual.zip successfully finalized. Artifact ID 2639028346
+2025-02-24T05:27:33.5934677Z Artifact Package Metadata-toga-textual has been successfully uploaded! Final size is 1362 bytes. Artifact ID is 2639028346
+2025-02-24T05:27:33.5941884Z Artifact download URL: https://github.com/beeware/toga/actions/runs/13491433041/artifacts/2639028346
+2025-02-24T05:27:33.6033468Z ##[group]Run cat */PKG-INFO | python -c '
+2025-02-24T05:27:33.6033796Z [36;1mcat */PKG-INFO | python -c '[0m
+2025-02-24T05:27:33.6034417Z [36;1mimport email.parser[0m
+2025-02-24T05:27:33.6034653Z [36;1mimport sys[0m
+2025-02-24T05:27:33.6034847Z [36;1m[0m
+2025-02-24T05:27:33.6035108Z [36;1mem = email.parser.Parser().parsestr(sys.stdin.read())[0m
+2025-02-24T05:27:33.6035440Z [36;1msuffix = {[0m
+2025-02-24T05:27:33.6035654Z [36;1m    "text/markdown": "md",[0m
+2025-02-24T05:27:33.6035902Z [36;1m    "text/x-rst": "rst",[0m
+2025-02-24T05:27:33.6036184Z [36;1m}[em["Description-Content-Type"]][0m
+2025-02-24T05:27:33.6036505Z [36;1mwith open(f"PyPI-README.{suffix}", "w") as f:[0m
+2025-02-24T05:27:33.6036808Z [36;1m    f.write(em.get_payload())[0m
+2025-02-24T05:27:33.6037058Z [36;1m'[0m
+2025-02-24T05:27:33.6091438Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-24T05:27:33.6091782Z env:
+2025-02-24T05:27:33.6091973Z   FORCE_COLOR: 1
+2025-02-24T05:27:33.6092197Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-24T05:27:33.6092604Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-24T05:27:33.6093008Z ##[endgroup]
+2025-02-24T05:27:33.6565152Z ##[group]Run actions/upload-artifact@v4
+2025-02-24T05:27:33.6565578Z with:
+2025-02-24T05:27:33.6565902Z   name: PyPI README-toga-textual
+2025-02-24T05:27:33.6566374Z   path: /tmp/baipp/dist/out/sdist/PyPI-README.*
+2025-02-24T05:27:33.6566847Z   if-no-files-found: warn
+2025-02-24T05:27:33.6567227Z   compression-level: 6
+2025-02-24T05:27:33.6567581Z   overwrite: false
+2025-02-24T05:27:33.6567927Z   include-hidden-files: false
+2025-02-24T05:27:33.6568306Z env:
+2025-02-24T05:27:33.6568584Z   FORCE_COLOR: 1
+2025-02-24T05:27:33.6568963Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-24T05:27:33.6569699Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-24T05:27:33.6570337Z ##[endgroup]
+2025-02-24T05:27:33.8671370Z With the provided path, there will be 1 file uploaded
+2025-02-24T05:27:33.8676890Z Artifact name is valid!
+2025-02-24T05:27:33.8677965Z Root directory input is valid!
+2025-02-24T05:27:33.9351941Z Beginning upload of artifact content to blob storage
+2025-02-24T05:27:33.9770898Z Uploaded bytes 778
+2025-02-24T05:27:33.9909602Z Finished uploading artifact content to blob storage!
+2025-02-24T05:27:33.9913415Z SHA256 hash of uploaded artifact zip is 3d5317d0079519897300f98c0a893fc9ef88261cefb8685edf6462e2dc9d2e31
+2025-02-24T05:27:33.9915570Z Finalizing artifact upload
+2025-02-24T05:27:34.0485265Z Artifact PyPI README-toga-textual.zip successfully finalized. Artifact ID 2639028364
+2025-02-24T05:27:34.0486909Z Artifact PyPI README-toga-textual has been successfully uploaded! Final size is 778 bytes. Artifact ID is 2639028364
+2025-02-24T05:27:34.0494162Z Artifact download URL: https://github.com/beeware/toga/actions/runs/13491433041/artifacts/2639028364
+2025-02-24T05:27:34.0580756Z ##[group]Run cat */PKG-INFO | python -c '
+2025-02-24T05:27:34.0581089Z [36;1mcat */PKG-INFO | python -c '[0m
+2025-02-24T05:27:34.0581369Z [36;1mimport email.parser[0m
+2025-02-24T05:27:34.0581610Z [36;1mimport json, re, sys[0m
+2025-02-24T05:27:34.0581836Z [36;1m[0m
+2025-02-24T05:27:34.0582113Z [36;1mpkg_info = email.parser.Parser().parsestr(sys.stdin.read())[0m
+2025-02-24T05:27:34.0582461Z [36;1m[0m
+2025-02-24T05:27:34.0582642Z [36;1mversion_tokens = [][0m
+2025-02-24T05:27:34.0582945Z [36;1mfor classifier in pkg_info.get_all("Classifier", []):[0m
+2025-02-24T05:27:34.0583401Z [36;1m    if match := re.match(r"Programming Language :: Python :: (\d+\.\d+)$", classifier):[0m
+2025-02-24T05:27:34.0584260Z [36;1m        version_tokens.append(match.group(1))[0m
+2025-02-24T05:27:34.0584543Z [36;1m[0m
+2025-02-24T05:27:34.0585026Z [36;1mpackage_version = pkg_info.get("Version", "0.0.0")[0m
+2025-02-24T05:27:34.0598520Z [36;1m[0m
+2025-02-24T05:27:34.0598783Z [36;1mprint(f"package_version={package_version}")[0m
+2025-02-24T05:27:34.0599240Z [36;1mprint(f"supported_python_classifiers_json_array={json.dumps(version_tokens)}")[0m
+2025-02-24T05:27:34.0599886Z [36;1mprint(f"""supported_python_classifiers_json_job_matrix_value={json.dumps({"python-version": version_tokens})}""")[0m
+2025-02-24T05:27:34.0600389Z [36;1m' >> $GITHUB_OUTPUT[0m
+2025-02-24T05:27:34.0655408Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2025-02-24T05:27:34.0655752Z env:
+2025-02-24T05:27:34.0655933Z   FORCE_COLOR: 1
+2025-02-24T05:27:34.0656162Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-24T05:27:34.0656618Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-24T05:27:34.0657044Z ##[endgroup]
+2025-02-24T05:27:34.1163055Z ##[group]Run # trim the differentiator to generate the artifact's basename
+2025-02-24T05:27:34.1163560Z [36;1m# trim the differentiator to generate the artifact's basename[0m
+2025-02-24T05:27:34.1164217Z [36;1mecho "basename=${BASENAME%-textual}" | tee -a ${GITHUB_OUTPUT}[0m
+2025-02-24T05:27:34.1219262Z shell: /usr/bin/bash -e {0}
+2025-02-24T05:27:34.1219511Z env:
+2025-02-24T05:27:34.1219695Z   FORCE_COLOR: 1
+2025-02-24T05:27:34.1219929Z   UV_CACHE_DIR: /tmp/baipp-uv_cache_dir
+2025-02-24T05:27:34.1220354Z   REQS_HASH: 3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f
+2025-02-24T05:27:34.1220778Z   BASENAME: Packages-toga-textual
+2025-02-24T05:27:34.1221034Z ##[endgroup]
+2025-02-24T05:27:34.1303592Z basename=Packages-toga
+2025-02-24T05:27:34.1436027Z Post job cleanup.
+2025-02-24T05:27:34.1461689Z Post job cleanup.
+2025-02-24T05:27:34.2713514Z Cache hit occurred on the primary key baipp-3f90074aa1ae051ed85c628263149fee339611d3ee83927a5845d19345dcfa4f, not saving cache.
+2025-02-24T05:27:34.2793550Z Post job cleanup.
+2025-02-24T05:27:34.4430693Z Post job cleanup.
+2025-02-24T05:27:34.5368774Z [command]/usr/bin/git version
+2025-02-24T05:27:34.5413435Z git version 2.48.1
+2025-02-24T05:27:34.5474419Z Temporarily overriding HOME='/home/runner/work/_temp/93264da1-01d8-4a39-ab43-0deb6ca544ed' before making global git config changes
+2025-02-24T05:27:34.5475320Z Adding repository directory to the temporary git global config as a safe directory
+2025-02-24T05:27:34.5480179Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/toga/toga
+2025-02-24T05:27:34.5518931Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-02-24T05:27:34.5552592Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-02-24T05:27:34.5804234Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-02-24T05:27:34.5825360Z http.https://github.com/.extraheader
+2025-02-24T05:27:34.5838330Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2025-02-24T05:27:34.5869279Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-02-24T05:27:34.6201747Z Evaluate and set job outputs
+2025-02-24T05:27:34.6206706Z Set output 'artifact-name'
+2025-02-24T05:27:34.6208757Z Set output 'artifact-basename'
+2025-02-24T05:27:34.6209707Z Cleaning up orphan processes
