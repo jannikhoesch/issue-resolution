@@ -104,13 +104,13 @@ After: [Logs](logs_after)
 
 ### Key changes/classes affected
 
-Optional (point 1): Architectural overview.
-
 #### Core API - Canvas:
 ![classes_canvas](https://github.com/user-attachments/assets/fd89b88f-3903-46b6-a68f-579c1ca343ec)
 
 #### Backend - Windows:
 ![classes_windows](https://github.com/user-attachments/assets/4599bf39-775a-4073-9195-c8398f44fbb5)
+
+Optional (point 1): Architectural overview.
 
 Optional (point 2): relation to design pattern(s).
 
