@@ -120,6 +120,12 @@ Futhermore, we gained experience of working with different backend implementatio
 ### How did you grow as a team, using the Essence standard to evaluate yourself?
 We still evaluate ourselves to be in the "In Place"-state according to the Essence standard. We have become much more comfortable using Git but there are still times where we have to think more about what we do and therefore do we not believe that we are on the next step yet. However, while reflecting on the course, we do see a clear improvement in both our skills and teamwork since the begining of the course.
 
-Optional (point 6): How would you put your work in context with best software engineering practice?
+### Optional (point 6): How would you put your work in context with best software engineering practice?
+
+We focus on the most relevant alphas from the SEMAT kernel: 
+	1.	Opportunity – Switching from the unmaintained project that we used for the previous assignment to the well-maintained toga project was a good choice in terms of delivering a value with our work. The toga project serves a purpose to many users and implementing a new feature - even a small one like in our case - has a bigger impact than solving big issues in not used projects.
+ 	2.	Stakeholders – The stakeholders of the project are both the maintainers and the users of toga. In the issue description the maintainer mentioned that the first issue we worked on would be less complex than the second issue but less helpful for most users and the second issue would be more complex to implement but also more helpful for the users. While we wanted to solve an issue that would deliver value for more users, we first started with the simpler one to at least get something done.
+  3.	Requirements – The issue descriptions were quite detailed and made it easy to understand the functional requirements. During our work we also mostly focused on these functional requirements. To be more professional we could have also defined non-functional requirements before we started with the implementation.
+  4.	Software System – The whole software system was well maintained with extensive documentation. To contribute to the project the pull request had to pass CI tests that extensively tested both the core API and the different backends. While the support for a variety of backends is very well integrated some backends (e.g. textual) were less supported and missed certain functionality so that we could not implement our feature into them.
 
 Optional (point 7): Is there something special you want to mention here?
