@@ -77,7 +77,7 @@ Optional (point 3): trace tests to requirements.
 
 (copy your changes or the add git command to show them)
 
-git diff 01152b56b9607a5cc1dabb9e94970cc589baff01 {current commit}  
+```git diff 01152b56b9607a5cc1dabb9e94970cc589baff01 {current commit}```  
 Optional (point 4): the patch is clean.
 
 Optional (point 5): considered for acceptance (passes all automated checks).
