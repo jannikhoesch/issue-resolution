@@ -80,10 +80,10 @@ Optional (point 3): trace tests to requirements.
 ```git diff 01152b56b9607a5cc1dabb9e94970cc589baff01 c61fb7e643c1fb361b34c8b184731cfad1570968```  
 (The second one is the most recent commit, have have to be updated)
 
-Optional (point 4): the patch is clean.
+Optional (point 4): the patch is clean.  
 This point should be fulfilled.
 
-Optional (point 5): considered for acceptance (passes all automated checks).
+Optional (point 5): considered for acceptance (passes all automated checks).  
 [Pull Request](https://github.com/beeware/toga/pull/3217)
 
 ## Test results
