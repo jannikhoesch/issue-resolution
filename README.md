@@ -20,15 +20,15 @@ The time spent by each person during this project is presented in the table belo
 
 |     | Jannik | Harald | Zyad | Karin | Amanda |
 | --- | :----: | :----: | :--: | :---: | :----: |
-| 1. Plenary discussions/meetings          | | | | | |
-| 2. Discussions within parts of the group | | | | | |
-| 3. Reading documentation                 | | | | | |
-| 4. Configuration and setup               | | | | | |
-| 5. Analyzing code/output                 | | | | | |
-| 6. Writing documentation                 | | | | | | 
-| 7. Writing code                          | | | | | |
-| 8. Running code                          | | | | | |
-| Total:                                   | | | | | |
+| 1. Plenary discussions/meetings          | |2h| | | |
+| 2. Discussions within parts of the group | |4h| | | |
+| 3. Reading documentation                 | |2h 30min | | | |
+| 4. Configuration and setup               | |1h | | | |
+| 5. Analyzing code/output                 | |4h 50min| | | |
+| 6. Writing documentation                 | |1h | | | | 
+| 7. Writing code                          | |3h 40min| | | |
+| 8. Running code                          | |1h 20min| | | |
+| Total:                                   | |20h 20min| | | |
 
 For setting up tools and libraries (step 4), enumerate all dependencies
 you took care of and where you spent your time, if that time exceeds
@@ -77,10 +77,14 @@ Optional (point 3): trace tests to requirements.
 
 (copy your changes or the add git command to show them)
 
-```git diff 01152b56b9607a5cc1dabb9e94970cc589baff01 {current commit}```  
+```git diff 01152b56b9607a5cc1dabb9e94970cc589baff01 c61fb7e643c1fb361b34c8b184731cfad1570968```  
+(The second one is the most recent commit, have have to be updated)
+
 Optional (point 4): the patch is clean.
+This point should be fulfilled.
 
 Optional (point 5): considered for acceptance (passes all automated checks).
+[Pull Request](https://github.com/beeware/toga/pull/3217)
 
 ## Test results
 
