@@ -98,8 +98,10 @@ To add a line height functionality in the Label widget, the interface- and imple
 Optional (point 3): trace tests to requirements.
 | Test Method | Requirement |
 | --- | ---- |
-| test_measure_text |Canvas can measure rendered text size.|
-| test_write_text |A write text operation can be added|
+| core: test_measure_text |Canvas can measure rendered text size.|
+| core: test_write_text |A write text operation can be added|
+| core: test_measure_text_multiline| Canvas can measure rendered text size of a multiline string|
+| testbed: test_multiline_text | The generated canvas with modified line height looks the same as the testbed image (including line height)|
 
 ## Code changes
 
