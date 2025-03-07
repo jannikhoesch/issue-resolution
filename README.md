@@ -86,6 +86,10 @@ To add a line height functionality in the Label widget, the interface- and imple
 ## Requirements for the new feature or requirements affected by functionality being refactored
 
 Optional (point 3): trace tests to requirements.
+| Test Method | Requirement |
+| --- | ---- |
+| test_measure_text |Canvas can measure rendered text size.|
+| test_write_text |A write text operation can be added|
 
 ## Code changes
 
@@ -123,7 +127,36 @@ After: [Logs](logs_after)
 #### Backend - Windows:
 ![classes_windows](https://github.com/user-attachments/assets/4599bf39-775a-4073-9195-c8398f44fbb5)
 
-Optional (point 1): Architectural overview.
+## Optional (point 1): Architectural overview.
+
+![b52fc442-7092-4122-8161-dff80d6350de](https://github.com/user-attachments/assets/3d914702-30c1-4bf2-a5a8-c193b179ab17)
+
+Toga’s widget architecture consists of three primary layers:
+
+#### 1. Interface Layer
+At the highest level, the Interface Layer defines a unified API (toga.Widget) for all GUI components. This layer is independent of any specific platform, allowing developers to write platform-agnostic code.
+
+#### 2. Implementation Layer
+This layer provides platform-specific implementations of the widgets defined in the Interface Layer. Each platform has its own backend module:
+	•	toga-cocoa (for macOS)
+	•	toga-gtk (for Linux via GTK)
+	•	toga-winforms (for Windows)
+	•	toga-ios (for iOS)
+	•	toga-android (for Android)
+	•	toga-web (for web-based applications)
+	•	toga-terminal (for terminal-based UI)
+These implementations ensure that the widgets behave correctly and integrate natively with the underlying operating system.
+
+#### 3. Native Layer
+At the lowest level, the Native Layer contains actual widget implementations for each supported platform. For example:
+	•	macOS Widgets are implemented using Cocoa.
+	•	GTK Widgets are based on the GTK framework for Linux.
+	•	Windows Widgets rely on WinForms.
+	•	iOS Widgets use native iOS UI components.
+	•	Android Widgets leverage Android’s native UI framework.
+	•	Web Widgets provide HTML-based components.
+	•	Terminal Widgets enable text-based UI components.
+Each native implementation includes common widgets such as Button, Label, TextInput, ProgressBar, TreeView, Canvas, and more.
 
 Optional (point 2): relation to design pattern(s).
 
