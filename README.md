@@ -79,6 +79,9 @@ To add a line height functionality in the Label widget, the interface- and imple
 ## Requirements for the new feature or requirements affected by functionality being refactored
 
 Optional (point 3): trace tests to requirements.
+| Test Method | Requirement |
+| test_measure_text |Canvas can measure rendered text size.|
+| test_write_text |A write text operation can be added|
 
 ## Code changes
 
