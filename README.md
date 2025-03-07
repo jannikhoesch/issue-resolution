@@ -118,6 +118,8 @@ After: [Logs](logs_after)
 
 Optional (point 1): Architectural overview.
 
+![b52fc442-7092-4122-8161-dff80d6350de](https://github.com/user-attachments/assets/3d914702-30c1-4bf2-a5a8-c193b179ab17)
+
 Optional (point 2): relation to design pattern(s).
 
 ## Overall experience
