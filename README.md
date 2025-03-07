@@ -103,6 +103,9 @@ Optional (point 3): trace tests to requirements.
 | core: test_measure_text_multiline| Canvas can measure rendered text size of a multiline string|
 | testbed: test_multiline_text | The generated canvas with modified line height looks the same as the testbed image (including line height)|
 
+<img width="435" alt="image" src="https://github.com/user-attachments/assets/0c54c4cf-21dc-4151-ad13-fbfc0e90ebe9" />
+
+
 ## Code changes
 
 ### Patch
