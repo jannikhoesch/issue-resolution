@@ -92,7 +92,7 @@ The Label widget accepts multiple lines, but there's no way to control their spa
 #### Scope (functionality and code affected):
 To add a line height functionality in the Label widget, the interface- and implementation layer had to be changed here as well. In contrast to the Canvas widget (#2144), the Label widget does not have line height support from the native layer (the lowest layer) which uses the widget toolkit from the user's system. In this case the interface layer was changed by adding a method for setting the line height to the Style class. In the Windows backend, the reqiured height was manually calculated, the Label size was changed accordingly and then the Label text was manually written out. 
 
-#### Plan if we were to continue
+#### Plan if we were to continue:
 This issue is not fully resolved. The core is updated and should be finished and the Windows backend implementation have been partially implemented. However as for right now, the line alignment (i.e. left-alignment, centered and right-alignment) is not fixed. If we were to continue with this issue we would:
 - implement custom line alignment. This can be done by changing the custom_point method in label.py in WinForms and adding a method for calculating which offset the text should have. 
 - implement the property for the other backends
