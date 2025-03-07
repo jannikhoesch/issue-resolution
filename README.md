@@ -121,8 +121,7 @@ Optional (point 3): trace tests to requirements.
 (copy your changes or the add git command to show them)
 
 For Issue #2144:
-```git diff 01152b56b9607a5cc1dabb9e94970cc589baff01 c61fb7e643c1fb361b34c8b184731cfad1570968```  
-(The second one is the most recent commit, have have to be updated)
+```git diff 90d5bb30efb0c06011aa1fbf24b8905c3aab93b5 8823ce54402daaae29f5dc9c3d9a5f8e3aca3ed7```  
 
 Optional (point 4): the patch is clean.  
 This point should be fulfilled.
