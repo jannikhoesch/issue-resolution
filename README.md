@@ -22,10 +22,10 @@ The time spent by each person during this project is presented in the table belo
 | --- | :----: | :----: | :--: | :---: | :----: |
 | 1. Plenary discussions/meetings          |3h |2h| | 2h 45m |2h|
 | 2. Discussions within parts of the group |3h 30min |4h| | 1h |3h 30min|
-| 3. Reading documentation                 |2h |2h 30min | | 2h |2h|
+| 3. Reading documentation                 |2h |2h | | 2h |2h|
 | 4. Configuration and setup               |30min |1h**| | 2h 15m*** |1h*|
 | 5. Analyzing code/output                 |3h |4h50min| | 4h | 3h |
-| 6. Writing documentation                 |1h 30min |1h | | 45m | 2h 30min | 
+| 6. Writing documentation                 |1h 30min |1h 30min | | 45m | 2h 30min | 
 | 7. Writing code                          |5h 30min |3h 40min| | 5h 45m | 5h |
 | 8. Running code                          |1h 30min |1h 20min| | 2h 30m |1h|
 | Total:                                   |20h |20h 20min| | 21h |20h|
