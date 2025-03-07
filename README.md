@@ -20,15 +20,15 @@ The time spent by each person during this project is presented in the table belo
 
 |     | Jannik | Harald | Zyad | Karin | Amanda |
 | --- | :----: | :----: | :--: | :---: | :----: |
-| 1. Plenary discussions/meetings          |3h |2h| | |2h|
-| 2. Discussions within parts of the group |3h 30min |4h| | |3h 30min|
-| 3. Reading documentation                 |2h |2h 30min | | |2h|
-| 4. Configuration and setup               |30min |1h**| | |1h*|
-| 5. Analyzing code/output                 |3h |4h50min| | |3h|
-| 6. Writing documentation                 |1h 30min |1h | | |2h 30min| 
-| 7. Writing code                          |5h 30min |3h 40min| | |5h|
-| 8. Running code                          |1h 30min |1h 20min| | |1h|
-| Total:                                   |20h |20h 20min| | |20h|
+| 1. Plenary discussions/meetings          |3h |2h| | 2h 45m |2h|
+| 2. Discussions within parts of the group |3h 30min |4h| | 1h |3h 30min|
+| 3. Reading documentation                 |2h |2h 30min | | 2h |2h|
+| 4. Configuration and setup               |30min |1h**| | 2h 15m*** |1h*|
+| 5. Analyzing code/output                 |3h |4h50min| | 4h | 3h |
+| 6. Writing documentation                 |1h 30min |1h | | 45m | 2h 30min | 
+| 7. Writing code                          |5h 30min |3h 40min| | 5h 45m | 5h |
+| 8. Running code                          |1h 30min |1h 20min| | 2h 30m |1h|
+| Total:                                   |20h |20h 20min| | 21h |20h|
 
 For setting up tools and libraries (step 4), enumerate all dependencies
 you took care of and where you spent your time, if that time exceeds
@@ -42,6 +42,13 @@ you took care of and where you spent your time, if that time exceeds
 ~10 min reading setup documentation  
 ~15 min running setup commands (in total multiple attempts)  
 ~35 min debugging why setup didn't work (eventually found out that the Python I had installed was not meant for my OS (windows), which made the file structure of my virtual environment incorrect, so I reinstalled it which solved the problem).
+
+***(Karin's setup):
+~30 min downloading and configuring git/repo (includes reading 'Contributing to Toga' startup guide)
+~15 min setting up testing environment
+~30 min trying to configure python to run examples, this is where everything started getting complicated for my ubuntu setup. I was getting strange issues with the program finding python build tools but not python runtime. Thought there could be a problem with my virtual environment.
+~30 min trying to figure which dependencies were missing from cryptic error messages.
+~30 min trying to get android tests working and realizing that my OS used an older (incompatible) version of glib. I attempted to upgrade my OS and the entire system broke when the upgrade failed unexpectedly. A lot more time was actually spent doing a fresh install of ubuntu and eventually I was able to get everything working correctly.
 
 ## Overview of issue(s) and work done.
 
