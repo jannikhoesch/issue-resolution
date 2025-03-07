@@ -23,7 +23,7 @@ The time spent by each person during this project is presented in the table belo
 | 1. Plenary discussions/meetings          |3h |2h| | |2h|
 | 2. Discussions within parts of the group |3h 30min |4h| | |3h 30min|
 | 3. Reading documentation                 |2h |2h 30min | | |2h|
-| 4. Configuration and setup               |30min |1h | | |1h*|
+| 4. Configuration and setup               |30min |1h**| | |1h*|
 | 5. Analyzing code/output                 |3h |4h50min| | |3h|
 | 6. Writing documentation                 |1h 30min |1h | | |2h 30min| 
 | 7. Writing code                          |5h 30min |3h 40min| | |5h|
@@ -38,6 +38,10 @@ you took care of and where you spent your time, if that time exceeds
 ~40 min for getting python to work. The commands that Toga specified for Windows did not work for me. It was an easy fix, but it took some time to figure out that I needed to switch python3 and pip3 for python and pip. 
 ~20 min for the virtual environment. I needed to install the travertino-package as well, which wasn’t specified in the command. 
 
+**(Harald's setup)
+~10 min reading setup documentation
+~15 min running setup commands (in total multiple attempts)
+~35 min debugging why setup didn't work (eventually found out that the Python I had installed was not meant for my OS (windows), so I reinstalled it which solved the problem).
 
 ## Overview of issue(s) and work done.
 
