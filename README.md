@@ -170,6 +170,7 @@ This layer provides platform-specific implementations of the widgets defined in 
 	•	toga-terminal (for terminal-based UI)
 These implementations ensure that the widgets behave correctly and integrate natively with the underlying operating system.
 
+#### 3. Native Layer
 At the lowest level, the Native Layer contains the actual widget implementations for each supported platform. These are retrieved from the widget-toolkits of the user's system. For example:
 	•	macOS Widgets are implemented using Cocoa.
 	•	GTK Widgets are based on the GTK framework for Linux.
