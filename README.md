@@ -102,12 +102,16 @@ This issue is not fully resolved. The core is updated and should be finished and
 ## Requirements for the new feature or requirements affected by functionality being refactored
 
 Optional (point 3): trace tests to requirements.
-| Test Method | Requirement |
-| --- | ---- |
-| core: test_measure_text |Canvas can measure rendered text size.|
-| core: test_write_text |A write text operation can be added|
-| core: test_measure_text_multiline| Canvas can measure rendered text size of a multiline string|
-| testbed: test_multiline_text | The generated canvas with modified line height looks the same as the testbed image (including line height)|
+| Test Method | Requirement Name | Requirement Description |
+| --- | ---- |-------- |
+| core: test_measure_text | Can measure text |Canvas can measure rendered text size on a single line.|
+| core: test_write_text |Canvas can write text |A write text operation can be added, which modifies the text content of the canvas correctly.|
+| core: test_measure_text_multiline |Can measure multiline text | Canvas can measure rendered text size of a multiline string and the measurements are correct.|
+| testbed: test_multiline_text | Multiline canvas appearence is correct| The generated canvas with modified line height looks the same as the testbed image (including line height).|  
+
+Untested requirement at the moment:
+Name: CSS definition of line-height
+Description: Uses the CSS definition of line-height, which is a ratio of the font size. The default is usually somewhere around 1.2, but it depends on the font.
 
 <img width="435" alt="image" src="https://github.com/user-attachments/assets/0c54c4cf-21dc-4151-ad13-fbfc0e90ebe9" />
 
