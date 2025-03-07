@@ -173,8 +173,6 @@ At the lowest level, the Native Layer contains the actual widget implementations
 Each native implementation includes common widgets such as Button, Label, TextInput, ProgressBar, TreeView, Canvas, and more.
 
 
-Optional (point 2): relation to design pattern(s).
-
 ## Overall experience
 
 ### What are your main take-aways from this project? What did you learn?
@@ -196,5 +194,3 @@ The stakeholders of the project are both the maintainers and the users of toga. 
 The issue descriptions were quite detailed and made it easy to understand the functional requirements. During our work we also mostly focused on these functional requirements. To be more professional we could have also defined non-functional requirements before we started with the implementation.
 #### 4.	Software System
 The whole software system was well maintained with extensive documentation. To contribute to the project the pull request had to pass CI tests that extensively tested both the core API and the different backends. While the support for a variety of backends is very well integrated some backends (e.g. textual) were less supported and missed certain functionality so that we could not implement our feature into them.
-
-Optional (point 7): Is there something special you want to mention here?
