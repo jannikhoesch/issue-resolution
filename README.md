@@ -35,13 +35,13 @@ you took care of and where you spent your time, if that time exceeds
 30 minutes.
 
 *(Amanda’s setup):
-~40 min for getting python to work. The commands that Toga specified for Windows did not work for me. It was an easy fix, but it took some time to figure out that I needed to switch python3 and pip3 for python and pip. 
-~20 min for the virtual environment. I needed to install the travertino-package as well, which wasn’t specified in the command. 
+~40 min for getting python to work. The commands that Toga specified for Windows did not work for me. It was an easy fix, but it took some time to figure out that I needed to switch python3 and pip3 for python and pip.  
+~20 min for the virtual environment. I needed to install the travertino-package as well, which wasn’t specified in the command.  
 
 **(Harald's setup)
-~10 min reading setup documentation
-~15 min running setup commands (in total multiple attempts)
-~35 min debugging why setup didn't work (eventually found out that the Python I had installed was not meant for my OS (windows), so I reinstalled it which solved the problem).
+~10 min reading setup documentation  
+~15 min running setup commands (in total multiple attempts)  
+~35 min debugging why setup didn't work (eventually found out that the Python I had installed was not meant for my OS (windows), which made the file structure of my virtual environment incorrect, so I reinstalled it which solved the problem).
 
 ## Overview of issue(s) and work done.
 
