@@ -35,19 +35,29 @@ you took care of and where you spent your time, if that time exceeds
 30 minutes.
 
 *(Amanda’s setup):
+
 ~40 min for getting python to work. The commands that Toga specified for Windows did not work for me. It was an easy fix, but it took some time to figure out that I needed to switch python3 and pip3 for python and pip.  
+
 ~20 min for the virtual environment. I needed to install the travertino-package as well, which wasn’t specified in the command.  
 
 **(Harald's setup)
+
 ~10 min reading setup documentation  
+
 ~15 min running setup commands (in total multiple attempts)  
+
 ~35 min debugging why setup didn't work (eventually found out that the Python I had installed was not meant for my OS (windows), which made the file structure of my virtual environment incorrect, so I reinstalled it which solved the problem).
 
 ***(Karin's setup):
+
 ~30 min downloading and configuring git/repo (includes reading 'Contributing to Toga' startup guide)
+
 ~15 min setting up testing environment
+
 ~30 min trying to configure python to run examples, this is where everything started getting complicated for my ubuntu setup. I was getting strange issues with the program finding python build tools but not python runtime. Thought there could be a problem with my virtual environment.
+
 ~30 min trying to figure which dependencies were missing from cryptic error messages.
+
 ~30 min trying to get android tests working and realizing that my OS used an older (incompatible) version of glib. I attempted to upgrade my OS and the entire system broke when the upgrade failed unexpectedly. A lot more time was actually spent doing a fresh install of ubuntu and eventually I was able to get everything working correctly.
 
 ## Overview of issue(s) and work done.
