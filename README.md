@@ -161,24 +161,24 @@ At the highest level, the Interface Layer defines a unified API (toga.Widget) fo
 
 #### 2. Implementation Layer
 This layer provides platform-specific implementations of the widgets defined in the Interface Layer. Each platform has its own backend module:
-	•	toga-cocoa (for macOS)
-	•	toga-gtk (for Linux via GTK)
-	•	toga-winforms (for Windows)
-	•	toga-ios (for iOS)
-	•	toga-android (for Android)
-	•	toga-web (for web-based applications)
-	•	toga-terminal (for terminal-based UI)
+ * toga-cocoa (for macOS)
+ * toga-gtk (for Linux via GTK)
+ * toga-winforms (for Windows)
+ * toga-ios (for iOS)
+ * toga-android (for Android)
+ * toga-web (for web-based applications)
+ * toga-terminal (for terminal-based UI)
 These implementations ensure that the widgets behave correctly and integrate natively with the underlying operating system.
 
 #### 3. Native Layer
 At the lowest level, the Native Layer contains the actual widget implementations for each supported platform. These are retrieved from the widget-toolkits of the user's system. For example:
-	•	macOS Widgets are implemented using Cocoa.
-	•	GTK Widgets are based on the GTK framework for Linux.
-	•	Windows Widgets rely on WinForms.
-	•	iOS Widgets use native iOS UI components.
-	•	Android Widgets leverage Android’s native UI framework.
-	•	Web Widgets provide HTML-based components.
-	•	Terminal Widgets enable text-based UI components.
+ * macOS Widgets are implemented using Cocoa.
+ * GTK Widgets are based on the GTK framework for Linux.
+ * Windows Widgets rely on WinForms.
+ * iOS Widgets use native iOS UI components.
+ * Android Widgets leverage Android’s native UI framework.
+ * Web Widgets provide HTML-based components.
+ * Terminal Widgets enable text-based UI components.
 Each native implementation includes common widgets such as Button, Label, TextInput, ProgressBar, TreeView, Canvas, and more.
 
 
